@@ -1,0 +1,3380 @@
+{
+  "meta": {
+    "title": "FlyUp — \"Pilot Profile\" Situational Judgment Test",
+    "language": "en",
+    "testType": "situational_judgment",
+    "inspiredBy": "TD12 (not a reproduction of the proprietary instrument)",
+    "totalItems": 100,
+    "controlItems": 10,
+    "disclaimer": "Training tool inspired by the TD12 format. It has no clinical diagnostic value and is not a reproduction of an existing proprietary test."
+  },
+  "dimensions": [
+    {
+      "code": "COM",
+      "label": "Communication / Crew CRM"
+    },
+    {
+      "code": "DEC",
+      "label": "Operational decision-making"
+    },
+    {
+      "code": "URG",
+      "label": "Emergency management"
+    },
+    {
+      "code": "FAT",
+      "label": "Fatigue / Human factors"
+    },
+    {
+      "code": "DISC",
+      "label": "Discipline / Procedure compliance"
+    },
+    {
+      "code": "HIER",
+      "label": "Hierarchical relations / Assertiveness"
+    },
+    {
+      "code": "ETH",
+      "label": "Ethics / Safety vs. commercial pressure"
+    },
+    {
+      "code": "CONF",
+      "label": "Conflict management"
+    },
+    {
+      "code": "LEAD",
+      "label": "Situational leadership"
+    },
+    {
+      "code": "JUG",
+      "label": "Judgment in degraded conditions"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DEC",
+      "situation": "Two technical solutions exist for a failure: one well known but longer, the other faster but less mastered.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You hesitate for a long time without deciding, delaying necessary action.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You choose the well-mastered solution even if it takes longer.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You choose the fast solution if the documentation clearly validates it.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You choose the fast solution because time is pressing.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "JUG",
+      "situation": "A strong crosswind makes the landing borderline relative to the aircraft's limits.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You attempt the landing while staying ready to go around if needed.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You attempt the landing without reassessing the limits on final approach.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You continue without paying particular attention to the wind parameter.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You precisely assess the limits and go around or divert if they are exceeded.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DISC",
+      "situation": "You notice a minor anomaly during the pre-flight walkaround.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You decide on your own that it's not serious and depart without reporting it.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You don't mention it to anyone.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You report it and wait for resolution before departure if necessary.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You note it for reporting after the flight.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "COM",
+      "situation": "A cabin crew member reports a doubt about whether a door is properly closed.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You request a check but continue other tasks in parallel.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You have it checked immediately and wait for confirmation before proceeding.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You ignore the remark since it doesn't come from the flight deck.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You tell them it's probably nothing, without further verification.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "CONF",
+      "situation": "An internal client (another company department) pressures you on an operational decision.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You calmly explain the operational constraints and maintain your decision if justified.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You partially give in to ease the tension.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You dig in and refuse any dialogue.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You give in entirely to avoid conflict.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "JUG",
+      "situation": "A discrepancy appears between the weather forecast and what you actually observe in flight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You continue according to the original forecast without factoring in the observation.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You hesitate for a long time between the two sources without deciding.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You ignore the discrepancy, since forecasts are generally reliable.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You trust your direct observation and adjust your decision accordingly.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "FAT",
+      "situation": "You feel a drop in concentration during a repetitive monitoring task in cruise.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You continue without changing anything, the situation isn't critical.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You wait for the fatigue to pass on its own.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You consciously vary your monitoring activity and involve your crew.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You let your attention lapse without realizing it.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "FAT",
+      "situation": "You notice repeated mistakes on your part toward the end of duty.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You carry on as normal, they're minor mistakes in your view.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You try harder on your own without reporting it.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You pay no attention to it.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You tell your crew and reinforce cross-checking.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "ETH",
+      "situation": "You made a minor mistake that had no visible consequence.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You deliberately conceal it to avoid any consequence for yourself.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You report it for review, even without a visible consequence.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You note it for yourself without officially reporting it.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You don't report it, judging it unimportant.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "LEAD",
+      "situation": "You need to motivate a tired crew for the final leg of a difficult day.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You downplay the fatigue so as not to demotivate the crew further.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You pile on the pressure without acknowledging the difficulty experienced.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You acknowledge the shared fatigue while refocusing on the rigor needed through to the end.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You let everyone manage their own motivation individually.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DISC",
+      "situation": "An internal quality audit flags a minor deviation in your practice.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You take the remark into account and adjust your practice accordingly.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You note the remark without immediately changing your practice.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You dispute the remark without really analyzing it.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You ignore it, assuming it doesn't really concern you.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "COM",
+      "situation": "Your first officer quietly mentions a doubt about the safety altitude, without pressing the point.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You pay no attention, assuming they would have insisted if it were important.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You ask them to state it clearly as soon as possible, without interrupting the current maneuver.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You immediately ask for clarification and verify the point together before continuing.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You note the information, telling yourself you'll come back to it later.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "LEAD",
+      "situation": "A decision must be made quickly but the crew is divided on the course of action.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You decide without listening to opinions, for lack of time.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You briefly listen to the views then decide clearly, explaining why.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You let the debate continue without deciding, risking wasted time.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You ask someone else to decide in your place.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "ETH",
+      "situation": "An important passenger insists on preferential treatment that bends safety rules.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You grant a small allowance so as not to upset the passenger.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You fully give in to their request.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You refuse any exception to the safety rules, regardless of the passenger's status.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You politely but firmly explain that you cannot deviate from the rule.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "COM",
+      "situation": "During the pre-flight briefing, you have an important technical point to convey but the crew seems in a hurry.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You summarize the point in one quick sentence and offer to revisit it in flight if needed.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You postpone the point to avoid delaying departure.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You drop the point, assuming it's probably not essential.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You take the time needed to convey the key point despite the time pressure.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "CONF",
+      "situation": "There is personal tension with a colleague you have to fly with.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You limit exchanges to the strict minimum without resolving the tension.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You set the personal disagreement aside and adopt a strictly professional stance.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You ask to be replaced without looking for another solution.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You let the tension affect in-flight communication.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DEC",
+      "situation": "You must choose between two possible procedures for a failure, without absolute certainty about the best option.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You let your first officer decide alone so as not to make a mistake.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You quickly choose the option that seems simplest to execute.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You wait until you have all the information before deciding, even if it takes time.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You choose the safest option based on the available information and consult if possible.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "FAT",
+      "situation": "You notice your first officer seems drowsy during cruise.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You don't notice the situation.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You let it be, without intervening, it's not your place.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You start a conversation and propose an adapted task split.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You take on more tasks yourself without telling them.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "FAT",
+      "situation": "The airline offers you a duty extension at the end of the day.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You objectively assess your fatigue level before accepting or declining.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You systematically accept so as not to disrupt the schedule.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You systematically decline on principle, without assessing your real state.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You decide on a whim, depending on your mood at the moment.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DEC",
+      "situation": "A minor alarm triggers during a stable cruise phase.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You ignore the alarm if it doesn't seem serious.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You methodically analyze the situation before acting, following the appropriate procedure.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You act quickly based on your first impression.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You wait to see if the alarm recurs before acting.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "HIER",
+      "situation": "A collective crew decision differs from the personal opinion you expressed beforehand.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You carry it out half-heartedly, keeping your reservations to yourself.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You keep arguing for your position instead of executing the decision made.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You support the collective decision while staying alert during its execution.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You quietly undermine the execution of the decision.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "FAT",
+      "situation": "A duty involves reduced rest before a sensitive early-morning flight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You organize your rest as a priority to be fit for duty.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You count on coffee and preparation before the flight to compensate.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You accept personal activities that further reduce your rest.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You change nothing about your sleep habits.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DISC",
+      "situation": "You're alone to perform a technical check normally done by two people.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You wait for a second checker to be available as required by the procedure.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You perform the check alone with extra care.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You skip the check due to unavailability.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You perform the check alone without any particular precaution.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "URG",
+      "situation": "A passenger has a serious medical emergency in flight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You let the cabin crew handle the situation alone.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You wait for a doctor on board's opinion before any decision.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You continue to the original destination while monitoring the situation.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You assess the need for a medical diversion with the crew and decide quickly.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "FAT",
+      "situation": "You feel tired at the start of the last leg of a long day.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You completely ignore your state, it's not a big deal in your view.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You carry on as normal without mentioning it, thinking it will pass.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You downplay your fatigue so as not to delay the flight.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You inform your crew and increase your vigilance on key points.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DISC",
+      "situation": "A checklist is taking longer than expected and the flight is running late.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You complete the checklist in full despite the schedule pressure.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You skip some points you consider secondary to save time.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You read it faster without skipping any steps.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You run through the checklist from memory without the paper support.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "HIER",
+      "situation": "Your line manager asks you to justify a decision you made alone in flight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You stay vague about your reasoning.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You clearly explain your reasoning and the factors that drove it.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You shift the responsibility onto another crew member.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You downplay your role in the decision to avoid scrutiny.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "URG",
+      "situation": "Smoke appears in the cabin during the flight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You monitor the situation for a few minutes before deciding on a diversion.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You apply the smoke/fire procedure and consider a diversion without delay.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You wait for instructions from the cabin before acting.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You continue to the planned destination if the smoke seems to be clearing.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "LEAD",
+      "situation": "An unexpected event temporarily unsettles your crew.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You calmly take back the initiative, structure priorities and reassure the crew.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You wait for the situation to settle on its own before intervening.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You let everyone react individually without coordination.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You show your own worry without structuring a response.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DISC",
+      "situation": "The procedure requires a cross-check you consider redundant in this specific case.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You skip it, judging it useless in this particular case.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You perform it quickly, somewhat less thoroughly than usual.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You ask your first officer to do it in your place without checking.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You perform it anyway, since the procedure exists for a reason.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DISC",
+      "situation": "You're pressed for time and an administrative step before the flight seems superfluous.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You complete it in full despite the time constraint.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You postpone it until after the flight.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You complete a simplified but substantively complete version of it.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You don't complete it at all.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "HIER",
+      "situation": "The captain makes a decision that seems risky to you.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You carry out the decision without reacting, even in deep disagreement.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You stay silent, assuming they have good reasons.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You make a cautious remark without pressing further.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You clearly state your disagreement and your reasons, assertively.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "COM",
+      "situation": "Important information needs to be passed to the cabin crew just before landing.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You pass it on quickly without asking for confirmation of receipt.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You don't pass it on, judging it not to be a priority.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You pass it on only if time allows.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You communicate it clearly and confirm it has been received.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DEC",
+      "situation": "You must choose between saving time by taking a slight risk or strictly respecting the planned safety margin.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You slightly reduce the margin while staying within strict regulatory limits.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You systematically take the fastest option.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You take the risk if the probability of a problem seems low to you.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You respect the safety margin even if it costs time.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "URG",
+      "situation": "An emergency occurs while you're tired at the end of a duty period.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You handle it alone so as not to overload an equally tired crew.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You rigorously apply the procedure while actively involving your crew.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You deliberately slow down your decision-making out of excessive caution.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You downplay the situation, hoping it resolves itself.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "HIER",
+      "situation": "A junior first officer makes a relevant remark about your own flying.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You downplay the remark due to their lack of experience.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You dismiss it because it comes from a junior first officer.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You politely accept the remark without really taking it into account.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You listen carefully and take it into account if it's justified.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "HIER",
+      "situation": "You notice your captain seems tired and less responsive than usual.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You talk to them directly and suggest adjusting the task split.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You quietly compensate without telling them.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You discuss it with other colleagues rather than with them.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You say nothing out of respect for the hierarchy.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "FAT",
+      "situation": "You realize your food and water intake has been insufficient during a long flying day.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You correct it as soon as possible and factor it into your vigilance.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You wait until the end of duty to address it.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You don't think about it at all.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You carry on without giving it much thought.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "URG",
+      "situation": "A partial double electrical failure reduces the available systems.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You let the system stabilize on its own before intervening.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You prioritize essential tasks according to the procedure and manage workload with your crew.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You focus on a single system while neglecting the priorities.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You try to restore all systems at once as fast as possible.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "COM",
+      "situation": "You need to relay bad operational news (delay, diversion) to the passengers.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You give minimal information while waiting to learn more.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You delay the announcement, hoping the situation resolves itself.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You let the cabin crew handle the communication without stepping in.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You communicate the information clearly, honestly and reassuringly.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "HIER",
+      "situation": "An instructor asks you to apply a different method than the one you consider safest.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You apply their method without expressing your disagreement.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You apply your own method without informing them.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You flatly refuse without discussion.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You explain your point of view while remaining open to their explanations.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DEC",
+      "situation": "You must decide on a point of no return (continue or abort the takeoff/approach) within a very short window.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You follow your gut feeling without reference to the prepared criterion.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You quickly assess the available elements before deciding.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You wait for an additional signal before deciding, risking passing the decision point.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You apply the decision criterion prepared in advance, without hesitation.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "LEAD",
+      "situation": "Your crew doubts the relevance of a decision you just made.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You ignore the doubt expressed by the crew.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You reverse your decision purely to avoid the doubt expressed.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You explain your reasoning to reassure them and win their support.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You impose the decision without explanation.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DISC",
+      "situation": "A new procedure has just been published but you're not yet fully comfortable with it.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You improvise your own version of the procedure.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You take the time to review it before applying it and ask for advice if needed.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You keep applying the old procedure out of habit.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You apply it directly, referring to the reference material if a doubt arises.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "URG",
+      "situation": "You need to evacuate the aircraft on the ground following an alert.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You order the evacuation immediately per procedure without unnecessary delay.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You take time to confirm the severity before deciding.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You wait for instructions from ground services before acting.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You delay the evacuation to avoid panicking the passengers.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "JUG",
+      "situation": "A storm forms along the planned track shortly before the aircraft's expected passage.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You keep the original track, hoping the storm moves away.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You cross the area while simply reducing speed.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You plan a sufficiently wide deviation while anticipating how it will develop.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You adjust the track at the last moment based on what you observe.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DISC",
+      "situation": "An experienced colleague suggests a shortcut not covered by the official procedure.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You systematically follow shortcuts suggested by your colleagues.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You follow the shortcut because the person is experienced.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You politely decline and follow the official procedure.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You accept if the shortcut seems logical to you, without further verification.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "COM",
+      "situation": "Your first officer stays silent during a critical phase although they usually call out parameters.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You carry on as normal, assuming they're handling it.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You ask them directly to understand their silence and check on their state.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You call out the parameters yourself in their place without asking why.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You say nothing, it isn't your concern.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "URG",
+      "situation": "An engine failure occurs shortly after takeoff.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You immediately apply the memorized procedure, then the associated checklist.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You wait for your first officer's confirmation before any action.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You take a few seconds to properly identify the issue before acting.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You improvise a response without referring to the known procedure.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "HIER",
+      "situation": "You disagree with a company instruction regarding an operational procedure.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You apply the instruction without ever voicing your opinion.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You quietly bypass the instruction based on your own judgment.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You openly refuse to apply the instruction without formal explanation.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You apply the instruction while escalating your disagreement through the proper channels.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "ETH",
+      "situation": "An ambiguous situation allows for either a favorable or unfavorable interpretation of your responsibility.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You present the facts from the most favorable angle for you, without distorting them.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You report the facts objectively, without trying to steer the interpretation.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You alter the facts to clear yourself.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You omit certain awkward details in your report.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "LEAD",
+      "situation": "An incident affects your crew's morale during a long flying day.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You let morale drop without intervening.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You ignore the human aspect and focus only on the technical tasks.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You acknowledge the difficulty, remotivate the team and refocus on priorities.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You downplay the incident without discussing it again with the team.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "URG",
+      "situation": "An engine fire is confirmed by several indications.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You apply the memorized extinguishing procedure without delay.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You double-check the indications a second time before acting.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You wait until you're on the ground to deal with the problem.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You reduce power on the engine while waiting for other signs.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "CONF",
+      "situation": "An air traffic controller gives you an instruction you consider unsuited to the situation.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You don't carry out the instruction without informing the controller.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You carry out the instruction without comment while staying alert.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You politely voice your concern and suggest an alternative.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You firmly dispute the instruction without proposing an alternative.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "URG",
+      "situation": "You lose radio communication in controlled airspace.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You continue as normal, waiting for communication to return.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You try several frequencies before considering a specific procedure.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You change your route without following any defined procedure.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You apply the planned lost-communication (NORDO) procedure.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "HIER",
+      "situation": "An experienced captain dismisses a safety remark you made.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You stay silent to avoid creating tension.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You act on your own without bringing it up with them again.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You drop it after one attempt.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You restate your remark more firmly, explaining the safety stakes.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "JUG",
+      "situation": "A shorter than usual runway is offered for landing due to works.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You systematically refuse any unusual runway without assessment.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You recalculate the landing performance before accepting the proposed runway.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You accept without a specific check, since the runway is certified.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You accept the runway based on your general experience.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "ETH",
+      "situation": "An incident involving you could, if reported, affect your professional evaluation.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You don't report it if you think you can avoid it without consequence.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You report it in full despite the possible consequences for you.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You actively conceal it.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You report it in a downplayed way to limit the impact.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DEC",
+      "situation": "You must quickly decide whether or not to interrupt an ongoing maneuver due to a doubt.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You interrupt the maneuver as a precaution until the doubt is clarified.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You continue because interrupting seems riskier than useful.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You continue while staying ready to interrupt if the doubt is confirmed.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You continue without reassessing, the doubt seeming minor.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "JUG",
+      "situation": "A low cloud ceiling complicates a visual approach that was initially planned.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You continue the visual approach hoping for an improvement.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You continue without reassessing which type of approach is best suited.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You try to maintain visual references for as long as possible.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You switch to an appropriate instrument procedure without hesitation.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "CONF",
+      "situation": "Two members of your crew are in open conflict during preparation.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You ignore the conflict as long as it doesn't directly affect the flight.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You take one person's side without trying to ease the situation.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You let the two people sort out their differences on their own.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You step in to refocus the team on the mission and ease the tension.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "FAT",
+      "situation": "A flying day turns out longer than planned due to a significant delay.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You carry on without reassessing, since the original plan was approved.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You let the airline decide alone without giving your opinion.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You assess the impact on fatigue with your crew and adjust if needed.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You push to complete the planned schedule no matter what.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DISC",
+      "situation": "A regulatory document on board recently expired.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You report it and take the necessary steps to regularize it before the flight.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You don't check that kind of document out of habit.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You ask someone else to take care of it without confirming it's done.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You fly, planning to regularize it after the flight.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "LEAD",
+      "situation": "You need to assign extra tasks following an operational disruption.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You let everyone choose freely without coordination.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You take on all the extra tasks yourself.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You clearly assign the tasks based on each person's skills and workload.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You assign the tasks randomly without particular consideration.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "CONF",
+      "situation": "You need to correct a colleague on inappropriate behavior in flight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You wait until the end of the flight to raise it, once things are calm.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You discuss it with other colleagues rather than with the person concerned.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You raise the issue directly, factually and respectfully.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You avoid raising the issue so as not to create awkwardness.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "JUG",
+      "situation": "Icing builds up faster than expected in flight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You carry on as normal, hoping to quickly exit the area.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You immediately apply the appropriate anti-icing procedure and reassess the route if needed.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You ignore the phenomenon if it doesn't yet seem significant.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You monitor how it develops before acting.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "CONF",
+      "situation": "A technical disagreement arises with your first officer during the flight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You avoid the subject so as not to inflame the situation.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You leave the disagreement unresolved and each act on your own.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You calmly lay out each person's arguments and look for a fact-based solution.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You impose your view as captain without discussion.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "CONF",
+      "situation": "A passenger becomes aggressive toward the cabin crew.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You downplay the incident to avoid making the situation worse.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You let the cabin crew handle it alone without intervening.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You avoid getting directly involved.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You firmly back the cabin crew and apply the procedure planned for this type of situation.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "LEAD",
+      "situation": "A junior crew member lacks confidence in a technical task.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You do the task in their place to save time.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You criticize them for their lack of confidence.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You let them figure it out alone without support.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You guide them step by step while progressively giving them more responsibility.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "URG",
+      "situation": "A decompression occurs at altitude.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You wait for confirmation from the cabin crew before acting.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You first assess the severity before deciding on a descent.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You continue the flight while monitoring the cabin pressure trend.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You immediately don the masks and initiate an emergency descent per procedure.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "ETH",
+      "situation": "You discover that a colleague altered a report to avoid a remark.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You also cover up the information so as not to harm your colleague.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You encourage them to officially correct the report and report it if necessary.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You say nothing, it's not your problem.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You talk to them privately without making an official report.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "CONF",
+      "situation": "You receive criticism from a superior that you consider unfair.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You strongly dispute it without arguing on the substance.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You calmly present your point of view with factual elements.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You keep your disagreement to yourself and build resentment.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You accept the criticism without reacting, even in disagreement.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "JUG",
+      "situation": "The remaining fuel becomes tighter than planned due to an unexpected delay.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You precisely recalculate the endurance and consider an early diversion if needed.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You closely monitor consumption while continuing to the planned destination.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You continue as normal without a specific recalculation.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You wait until the last minute to assess the fuel situation.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "HIER",
+      "situation": "The captain asks you to speed up a safety procedure to make up for lost time.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You comply without discussion, even though it feels risky to you.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You speed up slightly without omitting any essential step.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You skip steps to meet the request.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You refuse to compromise safety and clearly explain why.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "COM",
+      "situation": "After a minor in-flight incident, a debrief with the crew is suggested but time is tight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You give a quick verbal recap with no particular structure.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You postpone the debrief to another occasion.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You take a few minutes for a structured debrief despite the limited time.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You skip the debrief entirely since the incident was minor.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "COM",
+      "situation": "You notice a discrepancy between what you understood and what the controller seems to have said.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You apply your first understanding without checking.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You wait for the controller to speak again to clarify on their own.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You immediately ask for confirmation by reading back the instruction.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You apply what you think you understood while staying alert for a correction.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "LEAD",
+      "situation": "You take over from a captain in a situation that is already underway.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You wait a long time before actually taking on the responsibility.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You ask for a clear situation report before taking over the controls.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You immediately take the controls without a clear handover.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You leave it ambiguous as to who is actually flying.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "HIER",
+      "situation": "You must give critical feedback to a colleague more experienced than you.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You phrase your feedback factually, respectfully and directly.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You discuss it with others rather than with them directly.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You avoid raising the subject directly.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You phrase the feedback very softly to avoid any discomfort.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "ETH",
+      "situation": "Strong commercial pressure is applied to shorten preparation time before a technical flight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You reduce the preparation to meet the pressure.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You streamline the preparation time without skipping an essential step.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You remove preparation steps deemed secondary.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You maintain the preparation time required for safety.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DEC",
+      "situation": "The weather deteriorates rapidly on approach to your destination.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You follow air traffic control's decision without any personal assessment.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You wait until the last minute to decide on a diversion.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You assess the alternatives (divert, hold) before the safety margin shrinks further.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You continue the approach hoping the weather improves.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "COM",
+      "situation": "A new first officer hesitates to speak up even though they've spotted an anomaly.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You carry on without prompting them, waiting for them to dare speak.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You don't notice their hesitation and carry on.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You explicitly encourage them to speak and value their observation.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You ask what they noticed once the critical phase is over.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "FAT",
+      "situation": "You must decide whether you're fit to fly a duty after a short night's sleep.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You go on the flight thinking you can manage despite the fatigue.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You don't even ask yourself the question.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You honestly assess your state and report unfitness if necessary.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You downplay your state so as not to disrupt the schedule.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "URG",
+      "situation": "The landing gear doesn't confirm it's down via the usual indicator lights.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You land normally, hoping the gear is indeed down.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You apply the alternate verification procedure before any decision.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You attempt another extension cycle without consulting the procedure.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You wait for the tower's opinion without checking on board.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "FAT",
+      "situation": "Significant jet lag disrupts your sleep before a duty period.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You adjust your rest and report excessive fatigue before the flight if necessary.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You fly, hoping the fatigue will fade during the flight.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You compensate with coffee and fly as normal.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You change nothing about your habits.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "JUG",
+      "situation": "Visibility drops sharply during an approach phase.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You continue without reassessing the applicable minima.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You reassess the feasibility of the approach against the minima and decide accordingly.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You continue relying solely on your personal experience.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You continue the approach while staying very attentive to visual references.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "LEAD",
+      "situation": "A team member suggests an idea different from yours to solve a problem.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You seriously evaluate the suggestion before deciding whether to adopt it.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You don't react to the suggestion at all.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You systematically adopt it without evaluating it, just to value the initiative.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You dismiss it quickly because it differs from your initial idea.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DEC",
+      "situation": "A technical parameter is slightly out of range but no alarm is associated with it.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You monitor its evolution while continuing the mission.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You ignore the parameter, it's not your role to analyze it.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You investigate the cause before continuing normally.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You carry on without paying attention, reassured by the absence of an alarm.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "ETH",
+      "situation": "The airline insists on operating the flight despite an unresolved minor technical doubt.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You give in to the pressure to avoid a conflict with the airline.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You hold your safety position and refuse to depart until the doubt is resolved.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You agree to depart while increasing your monitoring of the doubtful item.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You depart without reassessing the technical issue in question.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "JUG",
+      "situation": "Severe, unexpected turbulence occurs during cruise.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You reduce speed per procedure and immediately secure the cabin.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You speed up to get out of the turbulent area faster.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You wait for the turbulence to pass before adjusting anything.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You continue without any configuration change.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "ETH",
+      "situation": "You're asked to overlook a slight regulatory breach to save time.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You firmly refuse and comply with the regulation.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You voice your discomfort but let it slide this one time.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You start proposing this kind of arrangement yourself in the future.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You accept if the breach seems genuinely minor to you.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "ETH",
+      "situation": "A commercial instruction is in direct tension with a safety instruction.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You look for a compromise that preserves safety as the priority.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You systematically prioritize safety over the commercial instruction.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You prioritize the commercial instruction to avoid complications.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You try to satisfy both instructions even if it reduces the safety margin.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "LEAD",
+      "situation": "An exceptional situation requires a quick reorganization of roles on board.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You keep the usual organization even though it no longer fits.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You let everyone guess their role amid the urgency.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You take on all the roles yourself.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You clearly redefine who does what and check everyone has understood.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DISC",
+      "situation": "A standard procedure seems poorly suited to the current situation.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You do neither the procedure nor an alternative.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You ignore it entirely because you believe you have a better solution.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You follow the procedure while flagging your observation for later review.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You slightly adapt the procedure based on your personal experience.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "COM",
+      "situation": "You notice that you and your first officer are interpreting an ATC clearance differently.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You each continue on your own without coordinating.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You stop the action and clarify together before continuing.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You let your first officer proceed without voicing your disagreement.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You follow your own interpretation while telling your first officer of your choice.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "CONF",
+      "situation": "A cabin crew member openly challenges one of your decisions in front of the passengers.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You give in immediately to avoid a scene in front of the passengers.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You completely ignore the public remark.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You stay calm, defer the discussion to private and maintain your decision if justified.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You respond firmly on the spot to close the matter quickly.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DEC",
+      "situation": "Conflicting information arrives from two different sources (ATC and onboard system).",
+      "options": [
+        {
+          "key": "A",
+          "text": "You cross-check the information and ask for confirmation before acting.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You favor whichever source seems most reliable in the moment.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You pick one of the two sources at random to save time.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You ignore both pieces of information and carry on regardless.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "JUG",
+      "situation": "The runway is reported contaminated (rain, slush) on arrival.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You land without a specific recalculation, trusting your experience.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You ignore the information about the runway condition.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You recalculate the landing performance before confirming feasibility.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You land normally while applying a general margin of caution.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "CONF",
+      "situation": "A difference of opinion emerges within the crew about the best way to handle a minor unexpected event.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You decide quickly based on your own opinion without discussion.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You facilitate a brief, rational exchange to converge on a shared decision.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You let the debate drag on without structuring it.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You avoid deciding and leave the unexpected event without a clear response.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "ETH",
+      "situation": "A significant delay could be avoided by slightly reducing a tolerated safety margin.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You refuse to reduce the safety margin despite the commercial pressure.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You slightly reduce the margin if it still seems acceptable to you.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You look for an alternative solution that doesn't compromise safety.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You systematically prioritize on-time performance over the safety margin.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "isControl": false,
+      "controlOf": null,
+      "dimension": "DEC",
+      "situation": "A sensor shows an outlying value that could be a false alarm.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You reset the system without prior analysis.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You cross-check with other indications before ruling on the sensor's reliability.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You ignore the value, assuming a sensor error.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You apply the procedure linked to that alert as a precaution.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "isControl": true,
+      "controlOf": 2,
+      "dimension": "JUG",
+      "situation": "A strong crosswind makes the landing borderline relative to the aircraft's limits.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You attempt the landing while staying ready to go around if needed.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You attempt the landing without reassessing the limits on final approach.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You continue without paying particular attention to the wind parameter.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You precisely assess the limits and go around or divert if they are exceeded.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "isControl": true,
+      "controlOf": 3,
+      "dimension": "DISC",
+      "situation": "You notice a minor anomaly during the pre-flight walkaround.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You decide on your own that it's not serious and depart without reporting it.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You don't mention it to anyone.",
+          "rank": 4
+        },
+        {
+          "key": "C",
+          "text": "You report it and wait for resolution before departure if necessary.",
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "text": "You note it for reporting after the flight.",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "isControl": true,
+      "controlOf": 4,
+      "dimension": "COM",
+      "situation": "A cabin crew member reports a doubt about whether a door is properly closed.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You request a check but continue other tasks in parallel.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You have it checked immediately and wait for confirmation before proceeding.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You ignore the remark since it doesn't come from the flight deck.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You tell them it's probably nothing, without further verification.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "isControl": true,
+      "controlOf": 8,
+      "dimension": "FAT",
+      "situation": "You notice repeated mistakes on your part toward the end of duty.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You carry on as normal, they're minor mistakes in your view.",
+          "rank": 3
+        },
+        {
+          "key": "B",
+          "text": "You try harder on your own without reporting it.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You pay no attention to it.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You tell your crew and reinforce cross-checking.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "isControl": true,
+      "controlOf": 9,
+      "dimension": "ETH",
+      "situation": "You made a minor mistake that had no visible consequence.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You deliberately conceal it to avoid any consequence for yourself.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You report it for review, even without a visible consequence.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You note it for yourself without officially reporting it.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You don't report it, judging it unimportant.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "isControl": true,
+      "controlOf": 17,
+      "dimension": "DEC",
+      "situation": "You must choose between two possible procedures for a failure, without absolute certainty about the best option.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You let your first officer decide alone so as not to make a mistake.",
+          "rank": 4
+        },
+        {
+          "key": "B",
+          "text": "You quickly choose the option that seems simplest to execute.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You wait until you have all the information before deciding, even if it takes time.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You choose the safest option based on the available information and consult if possible.",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "isControl": true,
+      "controlOf": 23,
+      "dimension": "DISC",
+      "situation": "You're alone to perform a technical check normally done by two people.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You wait for a second checker to be available as required by the procedure.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You perform the check alone with extra care.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You skip the check due to unavailability.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You perform the check alone without any particular precaution.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "isControl": true,
+      "controlOf": 26,
+      "dimension": "DISC",
+      "situation": "A checklist is taking longer than expected and the flight is running late.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You complete the checklist in full despite the schedule pressure.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You skip some points you consider secondary to save time.",
+          "rank": 3
+        },
+        {
+          "key": "C",
+          "text": "You read it faster without skipping any steps.",
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "text": "You run through the checklist from memory without the paper support.",
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "isControl": true,
+      "controlOf": 28,
+      "dimension": "URG",
+      "situation": "Smoke appears in the cabin during the flight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You monitor the situation for a few minutes before deciding on a diversion.",
+          "rank": 2
+        },
+        {
+          "key": "B",
+          "text": "You apply the smoke/fire procedure and consider a diversion without delay.",
+          "rank": 1
+        },
+        {
+          "key": "C",
+          "text": "You wait for instructions from the cabin before acting.",
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "text": "You continue to the planned destination if the smoke seems to be clearing.",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "isControl": true,
+      "controlOf": 29,
+      "dimension": "LEAD",
+      "situation": "An unexpected event temporarily unsettles your crew.",
+      "options": [
+        {
+          "key": "A",
+          "text": "You calmly take back the initiative, structure priorities and reassure the crew.",
+          "rank": 1
+        },
+        {
+          "key": "B",
+          "text": "You wait for the situation to settle on its own before intervening.",
+          "rank": 2
+        },
+        {
+          "key": "C",
+          "text": "You let everyone react individually without coordination.",
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "text": "You show your own worry without structuring a response.",
+          "rank": 4
+        }
+      ]
+    }
+  ],
+  "scoringRules": {
+    "itemScore": {
+      "description": "Each option has a rank from 1 (most appropriate) to 4 (least appropriate). Points for the chosen option = 5 - rank (rank1=4pts, rank2=3pts, rank3=2pts, rank4=1pt)."
+    },
+    "dimensionScore": {
+      "description": "For each dimension, sum the points earned on items 1-100 (control items excluded) belonging to that dimension, divide by (number of items in that dimension x 4)."
+    },
+    "overallScore": {
+      "description": "Sum of points earned across all 100 items, divided by 400 (100 items x 4 max points)."
+    },
+    "consistencyCheck": {
+      "description": "For each control item (id 101-110), compare the letter chosen to the letter chosen on the item with the same id as controlOf. Consistency score = matches / 10.",
+      "thresholds": {
+        "stable": ">=0.8",
+        "moderate": "0.6-0.79",
+        "low": "<0.6"
+      }
+    },
+    "socialDesirabilityCheck": {
+      "description": "Share of answers (items 1-100) where the chosen option has rank == 1. Flag if outside 0.15-0.85 (over-optimized / atypical responding).",
+      "thresholds": {
+        "flagAbove": 0.85,
+        "flagBelow": 0.15
+      }
+    }
+  },
+  "report": {
+    "description": "Narrative report generator: for each dimension, pick the band ('Low' if dimensionScore < 0.5, 'Mid' if <= 0.75, else 'High') and use report[code].bands[band] as the paragraph, plus the static strengths/suitableWork/tips lines. For the overall summary: if (max dimension score - min dimension score) < 0.2, use a 'homogeneous judgment' message; otherwise name the dimension with the max score as strongest and the one with the min score as the priority area to work on. Note: unlike SOSIE (a trait continuum), TD12 band thresholds are calibrated around the ~62.5% score expected from random guessing on a 4-option ranked item, so 'Low' here reflects a genuine below-chance judgment pattern rather than a personality pole.",
+    "bandThresholds": {
+      "lowBelow": 0.5,
+      "midUpTo": 0.75
+    },
+    "dimensions": {
+      "COM": {
+        "bands": {
+          "Low": "Your answer choices depart fairly often from best practice in crew communication. This area is worth specific attention: in the tested situations, information flows better when a doubt is checked and shared immediately rather than deferred.",
+          "Mid": "You generally identify the right CRM communication reflexes, with a few situations where a more cautious or more direct response would have been preferable.",
+          "High": "You consistently identify the responses that favor clear communication and immediate verification of a doubt — a clear strength in CRM."
+        },
+        "strengths": "Your ability to identify the right CRM communication reflexes is a direct safety asset.",
+        "suitableWork": "Roles with a strong CRM component and frequent crew communication.",
+        "tips": "Practice voicing a doubt immediately and explicitly, even under high workload."
+      },
+      "DEC": {
+        "bands": {
+          "Low": "Facing uncertainty, your choices sometimes lean toward speed at the expense of analysis. Taking time for a methodical assessment, even a brief one, is an area for improvement here.",
+          "Mid": "You generally make reasonable decision-making choices, with a few situations where deeper analysis before acting would have been preferable.",
+          "High": "You consistently identify the responses that favor methodical analysis before acting, while still deciding within the available time."
+        },
+        "strengths": "Your ability to identify a methodical decision under uncertainty is an operational asset.",
+        "suitableWork": "High decision-responsibility roles (captain, instructor).",
+        "tips": "Keep structuring your analysis even in time-pressured situations."
+      },
+      "URG": {
+        "bands": {
+          "Low": "In emergency scenarios, your choices sometimes depart from the strict, immediate application of memorized procedures. This is a core safety point and deserves priority attention.",
+          "Mid": "You generally apply the right emergency reflexes, with a few situations where the procedure should have been applied more immediately.",
+          "High": "You consistently identify fast, rigorous procedure application as the appropriate response in an emergency — an essential strength."
+        },
+        "strengths": "Your ability to identify rigorous application of emergency procedures is a safety strength.",
+        "suitableWork": "Any role exposed to emergency situation management.",
+        "tips": "Regularly review memorized procedures to keep this reflex sharp under real pressure."
+      },
+      "FAT": {
+        "bands": {
+          "Low": "Your choices in fatigue-related situations tend to underestimate its impact on performance. Better recognition of fatigue signals, in yourself as much as in the crew, is a useful area to work on.",
+          "Mid": "You generally recognize the impact of fatigue well, with a few situations where heightened vigilance would have been preferable.",
+          "High": "You consistently identify the responses that proactively account for fatigue — a strength for human-factors management."
+        },
+        "strengths": "Your ability to identify fatigue's impact on performance is an asset for human-factors management.",
+        "suitableWork": "Long rotations, night flying, missions with frequent time-zone changes.",
+        "tips": "Apply this vigilance to yourself too, not just in theory."
+      },
+      "DISC": {
+        "bands": {
+          "Low": "Your choices show a tendency to accept procedural deviations in some pressure contexts. This area is fundamental to safety and deserves particular attention.",
+          "Mid": "You generally respect procedures well, with a few situations where a shortcut was wrongly favored.",
+          "High": "You consistently identify full procedure compliance as the appropriate response, even under time pressure — a solid strength."
+        },
+        "strengths": "Your ability to identify full procedure compliance is a pillar of operational safety.",
+        "suitableWork": "Any technical role requiring strict compliance.",
+        "tips": "Stay alert to this reflex even in high time-pressure contexts."
+      },
+      "HIER": {
+        "bands": {
+          "Low": "Facing a hierarchical disagreement, your choices sometimes lean toward avoidance rather than clearly voicing disagreement. Developing constructive assertiveness is a useful area to work on.",
+          "Mid": "You generally voice disagreement appropriately, with a few situations where a firmer stance would have helped.",
+          "High": "You consistently identify clear, respectful expression of disagreement as the appropriate response, even facing an experienced captain."
+        },
+        "strengths": "Your ability to identify a clear expression of disagreement is a CRM safety asset.",
+        "suitableWork": "Crew roles requiring frequent upward communication.",
+        "tips": "Practice phrasing disagreement factually and non-confrontationally."
+      },
+      "ETH": {
+        "bands": {
+          "Low": "Your choices show a tendency to give in to commercial pressure at safety's expense in some scenarios. This point is central and deserves priority attention.",
+          "Mid": "You generally prioritize safety over commercial pressure well, with a few situations where a compromise was wrongly accepted.",
+          "High": "You consistently identify prioritizing safety over any other consideration — an essential strength in this profession."
+        },
+        "strengths": "Your ability to identify consistent prioritization of safety is a solid foundation for this profession.",
+        "suitableWork": "Any role exposed to commercial pressure (line, charter).",
+        "tips": "Keep reinforcing this reflex, especially in scenarios involving strong hierarchical or commercial pressure."
+      },
+      "CONF": {
+        "bands": {
+          "Low": "Facing conflict, your choices sometimes lean toward avoidance or confrontation rather than seeking a fact-based solution. This area is worth specific attention.",
+          "Mid": "You generally handle tension well, with a few situations where a calmer approach would have been preferable.",
+          "High": "You consistently identify the responses that defuse tension through a factual, composed approach — a strength in conflict management."
+        },
+        "strengths": "Your ability to identify composed conflict management is an asset for crew cohesion.",
+        "suitableWork": "Roles requiring frequent mediation (captain, cabin manager).",
+        "tips": "Practice separating the substance of a disagreement from the relational tension it can generate."
+      },
+      "LEAD": {
+        "bands": {
+          "Low": "In situations calling for situational leadership, your choices don't always reflect the most effective way to structure the team. This area is worth specific attention.",
+          "Mid": "You generally identify the right leadership reflexes, with a few situations where clearer role structuring would have been preferable.",
+          "High": "You consistently identify the responses that effectively structure the team and remotivate the group — a clear strength in situational leadership."
+        },
+        "strengths": "Your ability to identify effective team structuring in exceptional situations is a leadership asset.",
+        "suitableWork": "Command or training roles, crew management in degraded situations.",
+        "tips": "Keep explicitly clarifying everyone's role as soon as a reorganization is needed."
+      },
+      "JUG": {
+        "bands": {
+          "Low": "Facing degraded conditions (weather, technical), your choices sometimes depart from a rigorous reassessment of the situation. This point is central to flight safety.",
+          "Mid": "You generally reassess the situation well in degraded conditions, with a few situations where a more systematic recalculation would have helped.",
+          "High": "You consistently identify rigorous reassessment and systematic recalculation as the appropriate response in degraded conditions — a solid strength."
+        },
+        "strengths": "Your ability to identify the need for rigorous reassessment in degraded conditions is a flight-safety strength.",
+        "suitableWork": "Long-haul flights, operations in marginal weather conditions.",
+        "tips": "Keep the reflex of systematically recalculating performance/limits even under time pressure."
+      }
+    }
+  }
+}

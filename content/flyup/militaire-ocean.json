@@ -1,0 +1,137 @@
+{
+  "testId": "militaire_ocean",
+  "title": "Profil Militaire — Big Five (OCEAN)",
+  "instructions": "Réponds à chaque affirmation avec le plus de spontanéité possible, sur une échelle de « Pas du tout d'accord » à « Tout à fait d'accord ».",
+  "scale": [
+    { "label": "Tout à fait d'accord", "value": 5 },
+    { "label": "Plutôt d'accord", "value": 4 },
+    { "label": "Neutre", "value": 3 },
+    { "label": "Plutôt pas d'accord", "value": 2 },
+    { "label": "Pas du tout d'accord", "value": 1 }
+  ],
+  "dimensions": [
+    { "key": "dim_1", "name": "Ouverture d'esprit", "questionRange": [1, 10] },
+    { "key": "dim_2", "name": "Rigueur & Organisation", "questionRange": [11, 20] },
+    { "key": "dim_3", "name": "Extraversion & Aisance sociale", "questionRange": [21, 30] },
+    { "key": "dim_4", "name": "Coopération & Esprit d'équipe", "questionRange": [31, 40] },
+    { "key": "dim_5", "name": "Stabilité émotionnelle", "questionRange": [41, 50] }
+  ],
+  "levels": [
+    { "maxPercent": 0.4, "label": "Axe de développement prioritaire" },
+    { "maxPercent": 0.6, "label": "Compétence en construction" },
+    { "maxPercent": 0.8, "label": "Compétence solide" },
+    { "maxPercent": 1.01, "label": "Point fort marqué" }
+  ],
+  "report": {
+    "bandThresholds": { "lowBelow": 0.4, "midUpTo": 0.65 },
+    "dimensions": {
+      "dim_1": {
+        "bands": {
+          "Low": "Tu évolues avec aisance dans un cadre connu et stable, et tu apprécies les méthodes déjà éprouvées. Cette prévisibilité est un vrai atout dans un environnement où les procédures doivent être appliquées à la lettre. Reste toutefois attentif à ne pas te fermer face à une situation réellement nouvelle ou un imprévu qui sortirait du cadre habituel.",
+          "Mid": "Tu sais t'adapter quand la situation l'exige, sans pour autant rechercher le changement pour lui-même. Cet équilibre entre stabilité et flexibilité te permet de faire face à l'imprévu sans perdre tes repères.",
+          "High": "Tu es à l'aise pour sortir des sentiers battus, apprendre vite et t'adapter à des environnements changeants. C'est un atout réel face à des missions imprévisibles, à condition de rester rigoureux sur le respect des procédures non négociables."
+        },
+        "strengths": "Curiosité, adaptabilité, ouverture à la nouveauté.",
+        "suitableWork": "Selon le niveau : environnements stables et procéduraux, ou au contraire missions changeantes demandant une adaptation rapide.",
+        "tips": "Entraîne-toi à formuler au moins une alternative face à un imprévu, même si tu choisis finalement l'option la plus classique."
+      },
+      "dim_2": {
+        "bands": {
+          "Low": "Tu fonctionnes plutôt à l'instinct et tu peux te sentir freiné par une planification trop stricte. Cette souplesse peut être utile face à l'imprévu, mais un cadre aussi exigeant que le métier militaire demande une rigueur dans l'exécution qui sera à travailler en priorité.",
+          "Mid": "Tu sais t'organiser et respecter un cadre, sans que cela devienne systématique ni rigide. Cette rigueur mesurée est cohérente avec les exigences d'un environnement où les procédures structurent la sécurité.",
+          "High": "Tu es quelqu'un de méthodique, fiable et attentif aux détails. C'est une qualité particulièrement recherchée dans un cadre où la moindre négligence peut avoir des conséquences importantes. Veille simplement à conserver une marge de manœuvre quand une situation exige de s'écarter du plan initial."
+        },
+        "strengths": "Fiabilité, sens du détail, discipline d'exécution.",
+        "suitableWork": "Fonctions à forte exigence de rigueur et de sécurité, comme le pilotage ou la maintenance.",
+        "tips": "Mets en place des routines simples de vérification pour sécuriser les tâches critiques, même quand la motivation à planifier est basse."
+      },
+      "dim_3": {
+        "bands": {
+          "Low": "Tu es plutôt réservé(e) et tu préfères observer avant d'intervenir dans un groupe. Cela ne t'empêche pas d'être efficace en équipe, mais tu devras montrer, notamment à l'oral, que tu sais t'affirmer quand la situation l'exige.",
+          "Mid": "Tu es à l'aise en groupe sans pour autant chercher à être au centre de l'attention. Tu sais aussi bien écouter que t'exprimer selon le contexte, ce qui est un bon point d'équilibre pour évoluer en équipe opérationnelle.",
+          "High": "Tu es à l'aise pour t'exprimer, prendre la parole et interagir avec un groupe, même sous pression. C'est un vrai atout dans un environnement où la communication doit être claire et immédiate. Veille cependant à laisser aussi de la place à l'écoute des autres membres de l'équipe."
+        },
+        "strengths": "Aisance relationnelle, communication claire, énergie sociale.",
+        "suitableWork": "Rôles d'équipage ou d'encadrement où la communication doit être fluide et immédiate.",
+        "tips": "Entraîne-toi à laisser un temps de silence après avoir parlé, pour donner l'espace aux retours des autres."
+      },
+      "dim_4": {
+        "bands": {
+          "Low": "Tu as un fonctionnement plutôt indépendant et tu n'hésites pas à défendre ton point de vue, même face au groupe. C'est utile pour ne pas te laisser influencer à tort, mais il sera important de montrer que tu sais aussi faire des compromis pour l'intérêt collectif.",
+          "Mid": "Tu sais collaborer et faire des compromis quand c'est nécessaire, tout en gardant ton propre jugement. Cet équilibre entre coopération et esprit critique est cohérent avec le fonctionnement d'une équipe opérationnelle.",
+          "High": "Tu places naturellement l'intérêt du groupe au-dessus du tien et tu sais créer un climat de confiance. C'est un vrai atout pour l'esprit d'équipage, à condition de rester capable de t'affirmer quand une décision engage la sécurité de tous."
+        },
+        "strengths": "Esprit d'équipe, capacité à créer de la confiance, coopération.",
+        "suitableWork": "Fonctions fortement collectives, où la cohésion d'équipage est déterminante.",
+        "tips": "Entraîne-toi à exprimer un désaccord de façon constructive plutôt que de le taire pour préserver l'harmonie du groupe."
+      },
+      "dim_5": {
+        "bands": {
+          "Low": "Tu peux être plus sensible au stress et aux imprévus que la moyenne, avec des réactions émotionnelles parfois marquées. Ce n'est pas un problème en soi, mais dans un métier où la gestion du stress est centrale, ce point mérite un travail spécifique avant la sélection.",
+          "Mid": "Tu gères plutôt bien la pression au quotidien, avec des réactions proportionnées face aux imprévus. Cette stabilité mesurée est cohérente avec les exigences d'un environnement exigeant, sans être exceptionnelle.",
+          "High": "Tu gardes ton calme et ton jugement même sous forte pression, et tu récupères vite après un imprévu ou une erreur. C'est une qualité déterminante pour un métier où la clarté du jugement en situation d'urgence peut faire toute la différence."
+        },
+        "strengths": "Résistance au stress, stabilité émotionnelle, sang-froid.",
+        "suitableWork": "Fonctions opérationnelles à forte exposition au stress, comme le pilotage.",
+        "tips": "Travaille des techniques simples de gestion du stress (respiration, préparation mentale) avant les mises en situation à forte pression."
+      }
+    }
+  },
+  "items": [
+    { "id": 1, "dimension": "dim_1", "text": "J'aime apprendre de nouvelles méthodes même quand celles que je connais fonctionnent déjà bien." },
+    { "id": 2, "dimension": "dim_1", "text": "Je m'adapte facilement à un changement de plan de dernière minute." },
+    { "id": 3, "dimension": "dim_1", "text": "Je suis curieux(se) de comprendre le fonctionnement technique des systèmes que j'utilise." },
+    { "id": 4, "dimension": "dim_1", "text": "J'apprécie d'explorer des façons différentes de résoudre un même problème." },
+    { "id": 5, "dimension": "dim_1", "text": "Je me sens à l'aise pour remettre en question une procédure si elle ne me semble plus pertinente." },
+    { "id": 6, "dimension": "dim_1", "text": "J'aime découvrir des environnements ou des contextes que je ne connais pas encore." },
+    { "id": 7, "dimension": "dim_1", "text": "Je m'intéresse à des sujets variés, même hors de mon domaine principal." },
+    { "id": 8, "dimension": "dim_1", "text": "Je suis ouvert(e) aux retours qui remettent en cause ma façon de faire." },
+    { "id": 9, "dimension": "dim_1", "text": "J'aime imaginer plusieurs solutions avant de choisir la plus efficace." },
+    { "id": 10, "dimension": "dim_1", "text": "Je m'ennuie vite dans une routine qui ne change jamais." },
+
+    { "id": 11, "dimension": "dim_2", "text": "Je prépare systématiquement mes tâches importantes à l'avance." },
+    { "id": 12, "dimension": "dim_2", "text": "Je vérifie deux fois mon travail avant de le considérer terminé." },
+    { "id": 13, "dimension": "dim_2", "text": "Je respecte les délais que je me fixe, même sous pression." },
+    { "id": 14, "dimension": "dim_2", "text": "J'accorde une grande importance au respect strict des procédures." },
+    { "id": 15, "dimension": "dim_2", "text": "Je garde mon espace de travail organisé et structuré." },
+    { "id": 16, "dimension": "dim_2", "text": "Je termine ce que j'ai commencé, même quand la motivation baisse." },
+    { "id": 17, "dimension": "dim_2", "text": "Je planifie mes priorités avant de me lancer dans une tâche complexe." },
+    { "id": 18, "dimension": "dim_2", "text": "Je suis rarement pris(e) au dépourvu car j'anticipe les imprévus." },
+    { "id": 19, "dimension": "dim_2", "text": "Je fais preuve de constance dans la qualité de mon travail au fil du temps." },
+    { "id": 20, "dimension": "dim_2", "text": "Je considère qu'un détail négligé peut avoir des conséquences importantes." },
+
+    { "id": 21, "dimension": "dim_3", "text": "Je me sens à l'aise pour prendre la parole devant un groupe." },
+    { "id": 22, "dimension": "dim_3", "text": "Je préfère travailler en équipe plutôt que seul(e)." },
+    { "id": 23, "dimension": "dim_3", "text": "J'engage facilement la conversation avec des personnes que je ne connais pas." },
+    { "id": 24, "dimension": "dim_3", "text": "Je tire de l'énergie des interactions sociales plutôt que de m'en fatiguer." },
+    { "id": 25, "dimension": "dim_3", "text": "Je n'hésite pas à exprimer mon avis même dans un groupe nombreux." },
+    { "id": 26, "dimension": "dim_3", "text": "Je me sens naturellement à l'aise dans un rôle qui demande de la communication." },
+    { "id": 27, "dimension": "dim_3", "text": "J'aime être au centre de l'action plutôt qu'en retrait." },
+    { "id": 28, "dimension": "dim_3", "text": "Je m'exprime avec assurance, même sous le regard des autres." },
+    { "id": 29, "dimension": "dim_3", "text": "Je recherche activement le contact avec les autres au quotidien." },
+    { "id": 30, "dimension": "dim_3", "text": "Je m'adapte rapidement à un nouveau groupe de personnes." },
+
+    { "id": 31, "dimension": "dim_4", "text": "Je fais facilement confiance aux membres de mon équipe." },
+    { "id": 32, "dimension": "dim_4", "text": "Je privilégie l'intérêt du groupe même quand cela demande un compromis personnel." },
+    { "id": 33, "dimension": "dim_4", "text": "Je reste courtois(e) et posé(e), même en cas de désaccord." },
+    { "id": 34, "dimension": "dim_4", "text": "J'accepte volontiers de l'aide et j'en propose aussi facilement." },
+    { "id": 35, "dimension": "dim_4", "text": "Je cherche à comprendre le point de vue de l'autre avant de juger." },
+    { "id": 36, "dimension": "dim_4", "text": "Je gère les conflits en cherchant une solution plutôt qu'un rapport de force." },
+    { "id": 37, "dimension": "dim_4", "text": "J'accorde de l'importance au bien-être des personnes qui m'entourent." },
+    { "id": 38, "dimension": "dim_4", "text": "Je reconnais volontiers mes erreurs devant les autres." },
+    { "id": 39, "dimension": "dim_4", "text": "Je m'efforce de créer un climat de confiance dans un groupe." },
+    { "id": 40, "dimension": "dim_4", "text": "Je mets facilement mon ego de côté pour le succès collectif." },
+
+    { "id": 41, "dimension": "dim_5", "text": "Je garde mon calme face à une situation inattendue et stressante." },
+    { "id": 42, "dimension": "dim_5", "text": "Je ne me laisse pas déstabiliser par une critique inattendue." },
+    { "id": 43, "dimension": "dim_5", "text": "Je récupère rapidement après un échec ou une contrariété." },
+    { "id": 44, "dimension": "dim_5", "text": "Je reste concentré(e) même sous une forte pression de temps." },
+    { "id": 45, "dimension": "dim_5", "text": "Mes émotions ne prennent pas le dessus sur mon jugement dans l'urgence." },
+    { "id": 46, "dimension": "dim_5", "text": "Je dors bien même la veille d'un événement important." },
+    { "id": 47, "dimension": "dim_5", "text": "Je relativise facilement les petits contretemps du quotidien." },
+    { "id": 48, "dimension": "dim_5", "text": "Je garde une vision claire de la situation même quand tout va vite." },
+    { "id": 49, "dimension": "dim_5", "text": "Je ne rumine pas longtemps après une erreur." },
+    { "id": 50, "dimension": "dim_5", "text": "J'aborde les imprévus avec sang-froid plutôt qu'avec anxiété." }
+  ],
+  "profiles": []
+}

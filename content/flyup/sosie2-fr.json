@@ -1,0 +1,1616 @@
+{
+  "meta": {
+    "title": "FlyUp — Test de personnalité \"Profil Pilote\"",
+    "language": "fr",
+    "testType": "forced_choice_ipsative",
+    "inspiredBy": "SOSIE 2 (not a reproduction of the proprietary instrument)",
+    "totalItems": 100,
+    "controlItems": 10,
+    "disclaimer": "Outil d'entraînement inspiré du format SOSIE 2. Il n'a pas de valeur de diagnostic clinique et ne reproduit pas un test propriétaire existant."
+  },
+  "dimensions": [
+    {
+      "code": "LEAD",
+      "label": "Leadership / Prise de décision"
+    },
+    {
+      "code": "EQU",
+      "label": "Travail en équipe / CRM"
+    },
+    {
+      "code": "COM",
+      "label": "Communication / Assertivité"
+    },
+    {
+      "code": "RIG",
+      "label": "Rigueur / Organisation"
+    },
+    {
+      "code": "STR",
+      "label": "Gestion du stress / Maîtrise émotionnelle"
+    },
+    {
+      "code": "ADA",
+      "label": "Adaptabilité / Flexibilité"
+    },
+    {
+      "code": "CONF",
+      "label": "Confiance en soi"
+    },
+    {
+      "code": "RESP",
+      "label": "Sens des responsabilités / Éthique"
+    },
+    {
+      "code": "AUTO",
+      "label": "Autonomie / Initiative"
+    },
+    {
+      "code": "END",
+      "label": "Résistance à la pression / Endurance psychologique"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je me sens à l'aise pour donner des instructions claires à une équipe.",
+        "dimension": "LEAD"
+      },
+      "statementB": {
+        "text": "Je continue à donner le meilleur de moi-même même en fin de service.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 2,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je donne mon avis même quand il diffère de celui du groupe.",
+        "dimension": "COM"
+      },
+      "statementB": {
+        "text": "On me confie souvent la coordination d'un groupe.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 3,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Sous pression, je parviens à garder les idées claires.",
+        "dimension": "STR"
+      },
+      "statementB": {
+        "text": "Je donne mon avis même quand il diffère de celui du groupe.",
+        "dimension": "COM"
+      }
+    },
+    {
+      "id": 4,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je préfère apprendre en expérimentant par moi-même.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "Je dis la vérité même quand elle est inconfortable.",
+        "dimension": "RESP"
+      }
+    },
+    {
+      "id": 5,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je me débrouille seul face à un problème inhabituel.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "Je me repose volontiers sur les compétences des autres membres de l'équipe.",
+        "dimension": "EQU"
+      }
+    },
+    {
+      "id": 6,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je reste calme même quand la situation devient tendue.",
+        "dimension": "STR"
+      },
+      "statementB": {
+        "text": "Je ne doute pas longtemps de mes décisions une fois prises.",
+        "dimension": "CONF"
+      }
+    },
+    {
+      "id": 7,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je m'assure toujours que mon message a été bien reçu.",
+        "dimension": "COM"
+      },
+      "statementB": {
+        "text": "Je m'ajuste facilement à un nouvel environnement de travail.",
+        "dimension": "ADA"
+      }
+    },
+    {
+      "id": 8,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je me sens à l'aise pour partager mes doutes avec mon équipage.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "Je m'intègre rapidement dans un nouvel équipage.",
+        "dimension": "ADA"
+      }
+    },
+    {
+      "id": 9,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je reste concentré même quand plusieurs alarmes se déclenchent en même temps.",
+        "dimension": "STR"
+      },
+      "statementB": {
+        "text": "Je m'intègre rapidement dans un nouvel équipage.",
+        "dimension": "ADA"
+      }
+    },
+    {
+      "id": 10,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Les critiques ne m'ébranlent pas durablement.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Je pose des questions dès que quelque chose n'est pas clair pour moi.",
+        "dimension": "COM"
+      }
+    },
+    {
+      "id": 11,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "J'informe systématiquement les autres de mes intentions avant d'agir.",
+        "dimension": "COM"
+      },
+      "statementB": {
+        "text": "Les situations stressantes ne m'empêchent pas de réfléchir clairement.",
+        "dimension": "STR"
+      }
+    },
+    {
+      "id": 12,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je préfère proposer un plan d'action plutôt que d'en discuter longuement.",
+        "dimension": "LEAD"
+      },
+      "statementB": {
+        "text": "Je n'ai pas de mal à exprimer un désaccord avec un supérieur.",
+        "dimension": "COM"
+      }
+    },
+    {
+      "id": 13,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je révise volontiers mes plans si la situation l'exige.",
+        "dimension": "ADA"
+      },
+      "statementB": {
+        "text": "Les journées denses ne m'empêchent pas de rester attentif jusqu'au bout.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 14,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je me sens à l'aise pour partager mes doutes avec mon équipage.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "J'exprime mes besoins sans détour.",
+        "dimension": "COM"
+      }
+    },
+    {
+      "id": 15,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je m'accommode bien des situations ambiguës.",
+        "dimension": "ADA"
+      },
+      "statementB": {
+        "text": "Je me fixe mes propres objectifs sans qu'on me les impose.",
+        "dimension": "AUTO"
+      }
+    },
+    {
+      "id": 16,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je tiens la distance même lors de journées particulièrement longues.",
+        "dimension": "END"
+      },
+      "statementB": {
+        "text": "Je garde une voix posée même dans l'urgence.",
+        "dimension": "STR"
+      }
+    },
+    {
+      "id": 17,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "J'accorde une grande importance à l'avis de mes coéquipiers avant d'agir.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "Je préfère une méthode structurée à l'improvisation.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 18,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je prends des initiatives même si ce n'est pas explicitement demandé.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "Je ne craque pas facilement sous la charge de travail.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 19,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je préfère construire une décision avec les autres plutôt que seul.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "Je préfère apprendre en expérimentant par moi-même.",
+        "dimension": "AUTO"
+      }
+    },
+    {
+      "id": 20,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je n'attends pas qu'on me pose la question pour signaler un problème.",
+        "dimension": "COM"
+      },
+      "statementB": {
+        "text": "Je considère que la fin ne justifie jamais de contourner une procédure de sécurité.",
+        "dimension": "RESP"
+      }
+    },
+    {
+      "id": 21,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je préfère agir sans attendre des instructions détaillées.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "Je n'attends pas qu'on me pose la question pour signaler un problème.",
+        "dimension": "COM"
+      }
+    },
+    {
+      "id": 22,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je préviens toujours mes collègues quand quelque chose m'inquiète.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "Je n'ai pas de mal à exprimer un désaccord avec un supérieur.",
+        "dimension": "COM"
+      }
+    },
+    {
+      "id": 23,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je me fixe mes propres objectifs sans qu'on me les impose.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "Je planifie mes tâches avec précision.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 24,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je refuse de prendre un raccourci qui mettrait autrui en danger.",
+        "dimension": "RESP"
+      },
+      "statementB": {
+        "text": "Je m'accommode bien des situations ambiguës.",
+        "dimension": "ADA"
+      }
+    },
+    {
+      "id": 25,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je considère qu'un travail bien fait passe par une méthode rigoureuse.",
+        "dimension": "RIG"
+      },
+      "statementB": {
+        "text": "Je ne montre pas mon stress aux autres membres de l'équipage.",
+        "dimension": "STR"
+      }
+    },
+    {
+      "id": 26,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je crois en mes capacités même face à une tâche difficile.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Je ne craque pas facilement sous la charge de travail.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 27,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je sais dire non quand une demande me semble inappropriée.",
+        "dimension": "COM"
+      },
+      "statementB": {
+        "text": "J'accorde une grande importance à l'avis de mes coéquipiers avant d'agir.",
+        "dimension": "EQU"
+      }
+    },
+    {
+      "id": 28,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je me sens responsable du bien-être de mon équipage.",
+        "dimension": "RESP"
+      },
+      "statementB": {
+        "text": "Je n'hésite pas à recadrer quelqu'un si cela sert l'objectif commun.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 29,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je place l'intérêt collectif avant mon intérêt personnel.",
+        "dimension": "RESP"
+      },
+      "statementB": {
+        "text": "J'aime avoir la liberté d'organiser mon travail comme je l'entends.",
+        "dimension": "AUTO"
+      }
+    },
+    {
+      "id": 30,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je reste opérationnel même après plusieurs heures de tension soutenue.",
+        "dimension": "END"
+      },
+      "statementB": {
+        "text": "Je vérifie systématiquement mon travail avant de le considérer terminé.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 31,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je préfère proposer un plan d'action plutôt que d'en discuter longuement.",
+        "dimension": "LEAD"
+      },
+      "statementB": {
+        "text": "Je garde ma motivation même dans les périodes difficiles.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 32,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "J'assume mes choix sans chercher à me justifier sans cesse.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Je m'adapte facilement au style de travail des autres.",
+        "dimension": "EQU"
+      }
+    },
+    {
+      "id": 33,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je vérifie systématiquement mon travail avant de le considérer terminé.",
+        "dimension": "RIG"
+      },
+      "statementB": {
+        "text": "Je tiens la distance même lors de journées particulièrement longues.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 34,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je me repose volontiers sur les compétences des autres membres de l'équipe.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "J'aime que chaque chose soit à sa place et prévue à l'avance.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 35,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je m'adapte facilement au style de travail des autres.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "Je sais faire la part des choses entre urgence réelle et fausse alerte.",
+        "dimension": "STR"
+      }
+    },
+    {
+      "id": 36,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je me sens légitime dans mon rôle, quelles que soient les circonstances.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "J'aime la variété plus que la routine.",
+        "dimension": "ADA"
+      }
+    },
+    {
+      "id": 37,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je pose des questions dès que quelque chose n'est pas clair pour moi.",
+        "dimension": "COM"
+      },
+      "statementB": {
+        "text": "Je reste calme même quand la situation devient tendue.",
+        "dimension": "STR"
+      }
+    },
+    {
+      "id": 38,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je n'ai pas peur de me tromper devant les autres.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Je considère le changement comme une opportunité plutôt qu'une contrainte.",
+        "dimension": "ADA"
+      }
+    },
+    {
+      "id": 39,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je garde ma motivation même dans les périodes difficiles.",
+        "dimension": "END"
+      },
+      "statementB": {
+        "text": "Je passe facilement d'une tâche à une autre selon les priorités.",
+        "dimension": "ADA"
+      }
+    },
+    {
+      "id": 40,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je garde une voix posée même dans l'urgence.",
+        "dimension": "STR"
+      },
+      "statementB": {
+        "text": "Je signale un dysfonctionnement même si cela complique la journée.",
+        "dimension": "RESP"
+      }
+    },
+    {
+      "id": 41,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "J'aime la variété plus que la routine.",
+        "dimension": "ADA"
+      },
+      "statementB": {
+        "text": "Je sais gérer mon énergie sur la durée d'une mission longue.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 42,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je garde confiance en moi même après une erreur.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "J'aime porter la responsabilité finale d'une décision collective.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 43,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je prends les devants sans attendre qu'on me le demande.",
+        "dimension": "LEAD"
+      },
+      "statementB": {
+        "text": "La fatigue n'altère pas ma vigilance sur les points essentiels.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 44,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je fais confiance à mon jugement même quand il est contesté.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Les imprévus ne me déstabilisent pas longtemps.",
+        "dimension": "ADA"
+      }
+    },
+    {
+      "id": 45,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je sais gérer mon énergie sur la durée d'une mission longue.",
+        "dimension": "END"
+      },
+      "statementB": {
+        "text": "Je préviens toujours mes collègues quand quelque chose m'inquiète.",
+        "dimension": "EQU"
+      }
+    },
+    {
+      "id": 46,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je préfère une méthode structurée à l'improvisation.",
+        "dimension": "RIG"
+      },
+      "statementB": {
+        "text": "Je reconnais mes erreurs sans chercher d'excuses.",
+        "dimension": "RESP"
+      }
+    },
+    {
+      "id": 47,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je supporte la pression répétée sans m'épuiser rapidement.",
+        "dimension": "END"
+      },
+      "statementB": {
+        "text": "Je privilégie toujours la sécurité, même si cela retarde le programme.",
+        "dimension": "RESP"
+      }
+    },
+    {
+      "id": 48,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je préfère construire une décision avec les autres plutôt que seul.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "Je considère que la fin ne justifie jamais de contourner une procédure de sécurité.",
+        "dimension": "RESP"
+      }
+    },
+    {
+      "id": 49,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Les imprévus ne me déstabilisent pas longtemps.",
+        "dimension": "ADA"
+      },
+      "statementB": {
+        "text": "Je prends les devants sans attendre qu'on me le demande.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 50,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je préfère reformuler pour être sûr d'avoir bien compris.",
+        "dimension": "COM"
+      },
+      "statementB": {
+        "text": "Je préfère agir sans attendre des instructions détaillées.",
+        "dimension": "AUTO"
+      }
+    },
+    {
+      "id": 51,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Face à un imprévu, je respire et j'analyse avant de réagir.",
+        "dimension": "STR"
+      },
+      "statementB": {
+        "text": "Face à un choix difficile, je préfère trancher moi-même plutôt que d'attendre l'avis des autres.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 52,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je trouve rapidement une solution de repli si le plan A échoue.",
+        "dimension": "ADA"
+      },
+      "statementB": {
+        "text": "Je considère qu'un travail bien fait passe par une méthode rigoureuse.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 53,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je vais chercher l'information moi-même plutôt que d'attendre qu'on me la donne.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "J'assume les conséquences de mes décisions.",
+        "dimension": "RESP"
+      }
+    },
+    {
+      "id": 54,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je remarque facilement les détails qui ne sont pas conformes.",
+        "dimension": "RIG"
+      },
+      "statementB": {
+        "text": "J'aime avoir la liberté d'organiser mon travail comme je l'entends.",
+        "dimension": "AUTO"
+      }
+    },
+    {
+      "id": 55,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je préfère vérifier avec quelqu'un plutôt que d'agir seul dans le doute.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "J'aime anticiper chaque étape avant de commencer une action.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 56,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je signale un dysfonctionnement même si cela complique la journée.",
+        "dimension": "RESP"
+      },
+      "statementB": {
+        "text": "Je m'adapte facilement quand un plan change au dernier moment.",
+        "dimension": "ADA"
+      }
+    },
+    {
+      "id": 57,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je garde le contrôle de la situation même quand plusieurs choses se passent en même temps.",
+        "dimension": "LEAD"
+      },
+      "statementB": {
+        "text": "Je ne laisse pas mes émotions influencer mes décisions importantes.",
+        "dimension": "STR"
+      }
+    },
+    {
+      "id": 58,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je me sens légitime dans mon rôle, quelles que soient les circonstances.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Je respecte les règles même quand personne ne me surveille.",
+        "dimension": "RESP"
+      }
+    },
+    {
+      "id": 59,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je sais reconnaître mes qualités sans fausse modestie.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Je privilégie toujours la sécurité, même si cela retarde le programme.",
+        "dimension": "RESP"
+      }
+    },
+    {
+      "id": 60,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je suis mal à l'aise si une procédure n'est pas suivie à la lettre.",
+        "dimension": "RIG"
+      },
+      "statementB": {
+        "text": "Je n'ai pas besoin d'être rassuré en permanence pour agir.",
+        "dimension": "CONF"
+      }
+    },
+    {
+      "id": 61,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je trouve rapidement une solution de repli si le plan A échoue.",
+        "dimension": "ADA"
+      },
+      "statementB": {
+        "text": "Je prends naturellement les commandes quand une décision doit être prise rapidement.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 62,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je fais confiance à mon jugement même quand il est contesté.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Les checklists me rassurent, je les suis scrupuleusement.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 63,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je dis clairement ce que je pense même si cela dérange.",
+        "dimension": "COM"
+      },
+      "statementB": {
+        "text": "Les checklists me rassurent, je les suis scrupuleusement.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 64,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "J'aime anticiper chaque étape avant de commencer une action.",
+        "dimension": "RIG"
+      },
+      "statementB": {
+        "text": "Je trouve des solutions par moi-même avant de demander de l'aide.",
+        "dimension": "AUTO"
+      }
+    },
+    {
+      "id": 65,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je place l'intérêt collectif avant mon intérêt personnel.",
+        "dimension": "RESP"
+      },
+      "statementB": {
+        "text": "Je garde le contrôle de la situation même quand plusieurs choses se passent en même temps.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 66,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je n'ai pas besoin qu'on me dise quoi faire à chaque étape.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "J'aime porter la responsabilité finale d'une décision collective.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 67,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Sous pression, je parviens à garder les idées claires.",
+        "dimension": "STR"
+      },
+      "statementB": {
+        "text": "Je ne doute pas longtemps de mes décisions une fois prises.",
+        "dimension": "CONF"
+      }
+    },
+    {
+      "id": 68,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Les journées denses ne m'empêchent pas de rester attentif jusqu'au bout.",
+        "dimension": "END"
+      },
+      "statementB": {
+        "text": "Je considère le changement comme une opportunité plutôt qu'une contrainte.",
+        "dimension": "ADA"
+      }
+    },
+    {
+      "id": 69,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je trouve des solutions par moi-même avant de demander de l'aide.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "La fatigue n'altère pas ma vigilance sur les points essentiels.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 70,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je prends des initiatives même si ce n'est pas explicitement demandé.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "J'aime que chacun puisse s'exprimer avant de trancher.",
+        "dimension": "EQU"
+      }
+    },
+    {
+      "id": 71,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je révise volontiers mes plans si la situation l'exige.",
+        "dimension": "ADA"
+      },
+      "statementB": {
+        "text": "Je me débrouille seul face à un problème inhabituel.",
+        "dimension": "AUTO"
+      }
+    },
+    {
+      "id": 72,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je n'ai pas peur de me tromper devant les autres.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Je préfère reformuler pour être sûr d'avoir bien compris.",
+        "dimension": "COM"
+      }
+    },
+    {
+      "id": 73,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je supporte bien les horaires irréguliers et le décalage horaire.",
+        "dimension": "END"
+      },
+      "statementB": {
+        "text": "J'informe systématiquement les autres de mes intentions avant d'agir.",
+        "dimension": "COM"
+      }
+    },
+    {
+      "id": 74,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Quand une situation est confuse, c'est souvent moi qui structure l'action à suivre.",
+        "dimension": "LEAD"
+      },
+      "statementB": {
+        "text": "J'exprime mes besoins sans détour.",
+        "dimension": "COM"
+      }
+    },
+    {
+      "id": 75,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je reste concentré même quand plusieurs alarmes se déclenchent en même temps.",
+        "dimension": "STR"
+      },
+      "statementB": {
+        "text": "J'aime que chaque chose soit à sa place et prévue à l'avance.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 76,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "J'apprécie les décisions prises collectivement.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "Face à un imprévu, je respire et j'analyse avant de réagir.",
+        "dimension": "STR"
+      }
+    },
+    {
+      "id": 77,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je supporte bien les horaires irréguliers et le décalage horaire.",
+        "dimension": "END"
+      },
+      "statementB": {
+        "text": "J'assume les conséquences de mes décisions.",
+        "dimension": "RESP"
+      }
+    },
+    {
+      "id": 78,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je préfère prendre un peu plus de temps pour être sûr de ne rien oublier.",
+        "dimension": "RIG"
+      },
+      "statementB": {
+        "text": "Je préfère vérifier avec quelqu'un plutôt que d'agir seul dans le doute.",
+        "dimension": "EQU"
+      }
+    },
+    {
+      "id": 79,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je respecte les règles même quand personne ne me surveille.",
+        "dimension": "RESP"
+      },
+      "statementB": {
+        "text": "Je n'hésite pas à recadrer quelqu'un si cela sert l'objectif commun.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 80,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je refuse de prendre un raccourci qui mettrait autrui en danger.",
+        "dimension": "RESP"
+      },
+      "statementB": {
+        "text": "Je remarque facilement les détails qui ne sont pas conformes.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 81,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je crois en mes capacités même face à une tâche difficile.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "J'aime être force de proposition plutôt que d'exécuter seulement.",
+        "dimension": "AUTO"
+      }
+    },
+    {
+      "id": 82,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je ne laisse pas mes émotions influencer mes décisions importantes.",
+        "dimension": "STR"
+      },
+      "statementB": {
+        "text": "Je préfère prendre un peu plus de temps pour être sûr de ne rien oublier.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 83,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je supporte la pression répétée sans m'épuiser rapidement.",
+        "dimension": "END"
+      },
+      "statementB": {
+        "text": "Les situations stressantes ne m'empêchent pas de réfléchir clairement.",
+        "dimension": "STR"
+      }
+    },
+    {
+      "id": 84,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je sais reconnaître mes qualités sans fausse modestie.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Je sais faire la part des choses entre urgence réelle et fausse alerte.",
+        "dimension": "STR"
+      }
+    },
+    {
+      "id": 85,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je n'ai pas besoin qu'on me dise quoi faire à chaque étape.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "Je planifie mes tâches avec précision.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 86,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je suis mal à l'aise si une procédure n'est pas suivie à la lettre.",
+        "dimension": "RIG"
+      },
+      "statementB": {
+        "text": "Je récupère rapidement après un moment de tension.",
+        "dimension": "STR"
+      }
+    },
+    {
+      "id": 87,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je considère la cohésion du groupe aussi importante que le résultat.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "Je n'ai pas besoin d'être rassuré en permanence pour agir.",
+        "dimension": "CONF"
+      }
+    },
+    {
+      "id": 88,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je m'adapte facilement quand un plan change au dernier moment.",
+        "dimension": "ADA"
+      },
+      "statementB": {
+        "text": "Je continue à donner le meilleur de moi-même même en fin de service.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 89,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "J'aime que chacun puisse s'exprimer avant de trancher.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "Je me sens responsable du bien-être de mon équipage.",
+        "dimension": "RESP"
+      }
+    },
+    {
+      "id": 90,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je garde confiance en moi même après une erreur.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "J'apprécie les décisions prises collectivement.",
+        "dimension": "EQU"
+      }
+    },
+    {
+      "id": 91,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je vais chercher l'information moi-même plutôt que d'attendre qu'on me la donne.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "Je dis clairement ce que je pense même si cela dérange.",
+        "dimension": "COM"
+      }
+    },
+    {
+      "id": 92,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je récupère rapidement après un moment de tension.",
+        "dimension": "STR"
+      },
+      "statementB": {
+        "text": "Je reconnais mes erreurs sans chercher d'excuses.",
+        "dimension": "RESP"
+      }
+    },
+    {
+      "id": 93,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je prends naturellement les commandes quand une décision doit être prise rapidement.",
+        "dimension": "LEAD"
+      },
+      "statementB": {
+        "text": "Les critiques ne m'ébranlent pas durablement.",
+        "dimension": "CONF"
+      }
+    },
+    {
+      "id": 94,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "J'assume mes choix sans chercher à me justifier sans cesse.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Je me sens à l'aise pour donner des instructions claires à une équipe.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 95,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je m'ajuste facilement à un nouvel environnement de travail.",
+        "dimension": "ADA"
+      },
+      "statementB": {
+        "text": "Quand une situation est confuse, c'est souvent moi qui structure l'action à suivre.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 96,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je reste opérationnel même après plusieurs heures de tension soutenue.",
+        "dimension": "END"
+      },
+      "statementB": {
+        "text": "Je considère la cohésion du groupe aussi importante que le résultat.",
+        "dimension": "EQU"
+      }
+    },
+    {
+      "id": 97,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Face à un choix difficile, je préfère trancher moi-même plutôt que d'attendre l'avis des autres.",
+        "dimension": "LEAD"
+      },
+      "statementB": {
+        "text": "Je ne montre pas mon stress aux autres membres de l'équipage.",
+        "dimension": "STR"
+      }
+    },
+    {
+      "id": 98,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je m'assure toujours que mon message a été bien reçu.",
+        "dimension": "COM"
+      },
+      "statementB": {
+        "text": "Je passe facilement d'une tâche à une autre selon les priorités.",
+        "dimension": "ADA"
+      }
+    },
+    {
+      "id": 99,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je dis la vérité même quand elle est inconfortable.",
+        "dimension": "RESP"
+      },
+      "statementB": {
+        "text": "J'aime être force de proposition plutôt que d'exécuter seulement.",
+        "dimension": "AUTO"
+      }
+    },
+    {
+      "id": 100,
+      "isControl": false,
+      "controlOf": null,
+      "statementA": {
+        "text": "Je sais dire non quand une demande me semble inappropriée.",
+        "dimension": "COM"
+      },
+      "statementB": {
+        "text": "On me confie souvent la coordination d'un groupe.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 101,
+      "isControl": true,
+      "controlOf": 2,
+      "statementA": {
+        "text": "Je donne mon avis même quand il diffère de celui du groupe.",
+        "dimension": "COM"
+      },
+      "statementB": {
+        "text": "On me confie souvent la coordination d'un groupe.",
+        "dimension": "LEAD"
+      }
+    },
+    {
+      "id": 102,
+      "isControl": true,
+      "controlOf": 3,
+      "statementA": {
+        "text": "Sous pression, je parviens à garder les idées claires.",
+        "dimension": "STR"
+      },
+      "statementB": {
+        "text": "Je donne mon avis même quand il diffère de celui du groupe.",
+        "dimension": "COM"
+      }
+    },
+    {
+      "id": 103,
+      "isControl": true,
+      "controlOf": 5,
+      "statementA": {
+        "text": "Je me débrouille seul face à un problème inhabituel.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "Je me repose volontiers sur les compétences des autres membres de l'équipe.",
+        "dimension": "EQU"
+      }
+    },
+    {
+      "id": 104,
+      "isControl": true,
+      "controlOf": 10,
+      "statementA": {
+        "text": "Les critiques ne m'ébranlent pas durablement.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Je pose des questions dès que quelque chose n'est pas clair pour moi.",
+        "dimension": "COM"
+      }
+    },
+    {
+      "id": 105,
+      "isControl": true,
+      "controlOf": 11,
+      "statementA": {
+        "text": "J'informe systématiquement les autres de mes intentions avant d'agir.",
+        "dimension": "COM"
+      },
+      "statementB": {
+        "text": "Les situations stressantes ne m'empêchent pas de réfléchir clairement.",
+        "dimension": "STR"
+      }
+    },
+    {
+      "id": 106,
+      "isControl": true,
+      "controlOf": 13,
+      "statementA": {
+        "text": "Je révise volontiers mes plans si la situation l'exige.",
+        "dimension": "ADA"
+      },
+      "statementB": {
+        "text": "Les journées denses ne m'empêchent pas de rester attentif jusqu'au bout.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 107,
+      "isControl": true,
+      "controlOf": 17,
+      "statementA": {
+        "text": "J'accorde une grande importance à l'avis de mes coéquipiers avant d'agir.",
+        "dimension": "EQU"
+      },
+      "statementB": {
+        "text": "Je préfère une méthode structurée à l'improvisation.",
+        "dimension": "RIG"
+      }
+    },
+    {
+      "id": 108,
+      "isControl": true,
+      "controlOf": 18,
+      "statementA": {
+        "text": "Je prends des initiatives même si ce n'est pas explicitement demandé.",
+        "dimension": "AUTO"
+      },
+      "statementB": {
+        "text": "Je ne craque pas facilement sous la charge de travail.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 109,
+      "isControl": true,
+      "controlOf": 26,
+      "statementA": {
+        "text": "Je crois en mes capacités même face à une tâche difficile.",
+        "dimension": "CONF"
+      },
+      "statementB": {
+        "text": "Je ne craque pas facilement sous la charge de travail.",
+        "dimension": "END"
+      }
+    },
+    {
+      "id": 110,
+      "isControl": true,
+      "controlOf": 29,
+      "statementA": {
+        "text": "Je place l'intérêt collectif avant mon intérêt personnel.",
+        "dimension": "RESP"
+      },
+      "statementB": {
+        "text": "J'aime avoir la liberté d'organiser mon travail comme je l'entends.",
+        "dimension": "AUTO"
+      }
+    }
+  ],
+  "scoringRules": {
+    "dimensionScore": {
+      "description": "For each dimension, score = (number of times a statement from this dimension was chosen) / (number of times it was offered).",
+      "timesOffered": "count of items (id 1-100 only, excluding control items) where statementA.dimension == code OR statementB.dimension == code",
+      "timesChosen": "count of items where the chosen side's statement.dimension == code"
+    },
+    "consistencyCheck": {
+      "description": "For each control item (id 101-110), compare the answer given to the item with the same id as controlOf. Consistency score = matches / 10.",
+      "thresholds": {
+        "stable": ">=0.8",
+        "moderate": "0.6-0.79",
+        "low": "<0.6"
+      }
+    },
+    "responsePatternCheck": {
+      "description": "Share of 'A' answers among items 1-100 (control items excluded). Flag if outside 0.15-0.85 (under-differentiated / careless responding).",
+      "thresholds": {
+        "flagAbove": 0.85,
+        "flagBelow": 0.15
+      }
+    }
+  },
+  "report": {
+    "description": "Narrative report generator: for each dimension, pick the band ('Low' if dimensionScore < 0.4, 'Mid' if <= 0.6, else 'High') and use report[code].bands[band] as the paragraph, plus the static strengths/suitableWork/tips lines. For the overall summary: if (max dimension score - min dimension score) < 0.25, use a 'balanced profile' message; otherwise name the dimension with the max score as dominant and the one with the min score as weakest.",
+    "bandThresholds": {
+      "lowBelow": 0.4,
+      "midUpTo": 0.6
+    },
+    "dimensions": {
+      "LEAD": {
+        "bands": {
+          "Low": "Vous êtes plutôt à l'aise dans un rôle de soutien et préférez qu'un autre prenne l'initiative de la décision finale. Vous participez activement une fois le cadre posé, mais ne ressentez pas le besoin systématique de diriger. Cela facilite la collaboration, mais dans une situation d'urgence nécessitant une décision rapide et solitaire, vous pourriez avoir tendance à attendre une validation extérieure avant d'agir.",
+          "Mid": "Vous savez prendre les commandes quand la situation l'exige, sans chercher à diriger en permanence. Vous alternez naturellement entre un rôle de meneur et un rôle de coéquipier selon le contexte, ce qui vous permet de vous adapter à la dynamique du groupe.",
+          "High": "Vous prenez naturellement l'initiative et structurez l'action quand une décision doit être prise. Cette aisance à diriger est un atout en situation de crise, mais elle peut aussi vous conduire à trancher un peu vite ou à moins solliciter l'avis de votre équipage si vous n'y prêtez pas une attention particulière."
+        },
+        "strengths": "Vous savez structurer l'action et rassurer un équipage en période d'incertitude.",
+        "suitableWork": "Rôles nécessitant une prise de décision rapide et une coordination d'équipe (commandant de bord, formateur, chef de mission).",
+        "tips": "Continuez à solliciter l'avis de votre équipage avant de trancher, même quand vous êtes confiant dans votre décision."
+      },
+      "EQU": {
+        "bands": {
+          "Low": "Vous êtes à l'aise pour agir de façon autonome et ne dépendez pas nécessairement de la validation du groupe pour avancer. Cette indépendance est un atout en solo, mais elle peut, en équipage, se traduire par un partage d'information moins spontané si vous n'y êtes pas attentif.",
+          "Mid": "Vous équilibrez travail autonome et concertation avec votre équipage. Vous sollicitez les autres quand la situation le justifie, sans pour autant perdre en efficacité individuelle.",
+          "High": "Vous accordez une grande importance à la construction collective des décisions et à la cohésion du groupe. C'est un atout fort en CRM, mais attention à ne pas trop attendre la validation d'autrui dans les situations qui exigent une action individuelle rapide."
+        },
+        "strengths": "Votre esprit collectif favorise la cohésion et la confiance au sein de l'équipage.",
+        "suitableWork": "Environnements collaboratifs où le travail en binôme/équipage est central.",
+        "tips": "Entraînez-vous à agir vite et seul dans les situations qui l'exigent, sans attendre systématiquement la validation du groupe."
+      },
+      "COM": {
+        "bands": {
+          "Low": "Vous avez tendance à garder vos réserves pour vous plutôt qu'à les exprimer systématiquement, surtout face à une figure d'autorité. C'est une qualité de discrétion, mais en aéronautique, un doute non exprimé peut avoir des conséquences en matière de sécurité.",
+          "Mid": "Vous exprimez votre avis quand c'est nécessaire, tout en sachant doser votre franchise selon le contexte et l'interlocuteur.",
+          "High": "Vous dites clairement ce que vous pensez, y compris en désaccord avec une hiérarchie. C'est un atout majeur pour la sécurité (CRM), à condition de garder une formulation constructive pour ne pas braquer l'interlocuteur."
+        },
+        "strengths": "Votre capacité à formuler clairement vos observations est un atout de sécurité direct.",
+        "suitableWork": "Postes exigeant un CRM actif et une communication fréquente avec la hiérarchie ou le contrôle aérien.",
+        "tips": "Travaillez la formulation assertive mais non conflictuelle pour faire passer un message sensible."
+      },
+      "RIG": {
+        "bands": {
+          "Low": "Vous privilégiez le fond sur la forme et pouvez vous accommoder d'un cadre moins strict. Cette souplesse facilite l'adaptation, mais dans un métier où les procédures sont garantes de la sécurité, elle demande une vigilance particulière sur le respect systématique des checklists.",
+          "Mid": "Vous suivez les procédures avec sérieux tout en gardant une capacité d'adaptation si le contexte l'exige.",
+          "High": "Vous êtes rigoureux, méthodique, attentif aux détails. C'est un atout de sécurité évident, à condition que cette exigence ne se traduise pas par une perte de temps excessive dans les situations qui demandent de la réactivité."
+        },
+        "strengths": "Votre sérieux dans le suivi des procédures est un pilier de la sécurité opérationnelle.",
+        "suitableWork": "Tous les postes techniques où la conformité aux procédures est stricte (pilotage, maintenance, contrôle qualité).",
+        "tips": "Veillez à garder un temps de réaction suffisant même quand une checklist complète prend du temps."
+      },
+      "STR": {
+        "bands": {
+          "Low": "Vous pouvez être plus sensible que la moyenne aux situations tendues, ce qui vous rend particulièrement attentif aux signaux faibles. Un travail sur les techniques de gestion du stress peut être bénéfique pour gagner en sérénité dans les moments de forte charge.",
+          "Mid": "Vous gérez correctement la pression dans la majorité des situations, avec ponctuellement un besoin de reprendre son souffle avant de trancher.",
+          "High": "Vous restez calme et lucide même sous forte pression, un atout précieux en situation d'urgence. Veillez cependant à ne pas sous-estimer votre propre fatigue ou stress simplement parce que vous n'en montrez pas les signes extérieurs."
+        },
+        "strengths": "Votre lucidité sous pression est un atout direct en gestion d'urgence.",
+        "suitableWork": "Postes à forte charge opérationnelle ou décisionnelle (pilotage de ligne, instruction, gestion de crise).",
+        "tips": "Pratiquez des exercices de respiration ou de préparation mentale pour renforcer encore votre gestion du stress."
+      },
+      "ADA": {
+        "bands": {
+          "Low": "Vous appréciez la stabilité et les repères connus. Vous vous adaptez, mais avez besoin d'un peu plus de temps que la moyenne pour intégrer un changement de dernière minute.",
+          "Mid": "Vous vous ajustez sans difficulté majeure aux imprévus, tout en gardant une préférence pour un minimum de structure.",
+          "High": "Vous vous adaptez rapidement à l'imprévu et rebondissez facilement en cas de changement de plan. Cette agilité est précieuse en opérationnel, à condition de ne pas sous-investir la préparation en amont."
+        },
+        "strengths": "Votre agilité face à l'imprévu vous permet de rebondir rapidement en opérationnel.",
+        "suitableWork": "Environnements changeants (long-courrier, rotations variées, contextes multiculturels).",
+        "tips": "Gardez un minimum de structure de préparation pour ne pas sous-estimer l'anticipation."
+      },
+      "CONF": {
+        "bands": {
+          "Low": "Vous pouvez douter davantage de votre jugement face à la contestation, ce qui vous rend réceptif aux retours des autres — une qualité d'humilité utile, à condition qu'elle ne freine pas votre prise de décision autonome.",
+          "Mid": "Vous avez généralement confiance en votre jugement, tout en restant capable de le remettre en question si besoin.",
+          "High": "Vous avez une confiance solide dans vos décisions et ne vous laissez pas facilement déstabiliser par la critique. Un atout de stabilité, à condition de rester ouvert aux retours qui pourraient nuancer votre position."
+        },
+        "strengths": "Votre stabilité psychologique rassure l'équipage dans les moments difficiles.",
+        "suitableWork": "Rôles d'encadrement, d'instruction, ou de gestion de situations à enjeu élevé.",
+        "tips": "Restez à l'écoute des retours contradictoires, même quand votre conviction est forte."
+      },
+      "RESP": {
+        "bands": {
+          "Low": "Vous pouvez, dans certains contextes, privilégier la solution la plus simple ou la plus rapide plutôt que la plus rigoureuse sur le plan de la sécurité. Ce point mérite d'être travaillé, la priorité systématique à la sécurité étant un fondamental du métier.",
+          "Mid": "Vous placez généralement la sécurité et l'intégrité au cœur de vos décisions, avec une bonne conscience des enjeux collectifs.",
+          "High": "Vous placez systématiquement la sécurité et l'éthique au-dessus de toute autre considération, y compris commerciale. C'est un point fort essentiel dans ce métier."
+        },
+        "strengths": "Votre intégrité et votre priorité systématique à la sécurité sont un socle solide pour ce métier.",
+        "suitableWork": "L'ensemble des métiers aéronautiques, en particulier ceux exposés à la pression commerciale (ligne, charter).",
+        "tips": "Continuez à documenter et signaler systématiquement, même les écarts mineurs sans conséquence visible."
+      },
+      "AUTO": {
+        "bands": {
+          "Low": "Vous préférez généralement agir dans un cadre déjà défini par d'autres plutôt que d'être à l'origine des initiatives. Cela peut être un atout en environnement très procédural, mais demande d'être vigilant à prendre les devants quand la situation l'exige.",
+          "Mid": "Vous savez agir de façon autonome quand c'est nécessaire, sans pour autant chercher à tout initier vous-même.",
+          "High": "Vous prenez facilement les devants et n'attendez pas d'instructions détaillées pour agir. Cette autonomie est un atout, à condition de rester bien synchronisé avec le reste de l'équipage."
+        },
+        "strengths": "Votre capacité à agir sans attendre des instructions détaillées est un vrai gain de réactivité.",
+        "suitableWork": "Postes à responsabilité individuelle élevée (commandant, instructeur, poste isolé).",
+        "tips": "Assurez-vous de bien synchroniser vos initiatives avec le reste de l'équipe pour éviter les décisions en silo."
+      },
+      "END": {
+        "bands": {
+          "Low": "Vous pouvez ressentir la fatigue plus rapidement que la moyenne sur les journées longues ou les rotations denses. Une attention particulière à la gestion du repos et de la récupération sera un axe de progression utile.",
+          "Mid": "Vous tenez généralement la distance sur des journées de travail chargées, avec une bonne gestion de votre énergie.",
+          "High": "Vous maintenez un haut niveau de vigilance et de motivation même en fin de service ou sur des rotations denses. Un atout robuste, à condition de rester à l'écoute des premiers signes de fatigue malgré cette résistance apparente."
+        },
+        "strengths": "Votre endurance sur la durée est un atout pour les rotations longues et denses.",
+        "suitableWork": "Long-courrier, rotations à forte charge, missions avec décalage horaire fréquent.",
+        "tips": "Surveillez les signaux précoces de fatigue malgré votre bonne résistance apparente — l'hygiène de sommeil reste essentielle."
+      }
+    }
+  }
+}

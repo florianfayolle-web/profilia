@@ -1,0 +1,3157 @@
+{
+  "meta": {
+    "title": "FlyUp — \"Pilot Profile — ADAPT\" Personality Test",
+    "language": "en",
+    "testType": "forced_choice_quad_single_pick",
+    "inspiredBy": "Forced-choice quad personality questionnaires (APQ / OPQ / PAPI style), as used in the ADAPT battery (Symbiotics) — not a reproduction of the proprietary instrument.",
+    "totalItems": 100,
+    "controlItems": 10,
+    "optionsPerItem": 4,
+    "disclaimer": "Training tool inspired by forced-choice quad personality questionnaires (APQ / OPQ / PAPI style), as used in the ADAPT battery (Symbiotics). It has no clinical diagnostic value and is not a reproduction of an existing proprietary test."
+  },
+  "dimensions": [
+    {
+      "code": "AUTH",
+      "label": "Authority relationship (hierarchical assertiveness)"
+    },
+    {
+      "code": "SEC",
+      "label": "Safety values"
+    },
+    {
+      "code": "RESIL",
+      "label": "Resilience / stress management"
+    },
+    {
+      "code": "MOT",
+      "label": "Professional motivation"
+    },
+    {
+      "code": "COMM",
+      "label": "Communication / assertiveness"
+    },
+    {
+      "code": "DISC",
+      "label": "Discipline / procedural rigor"
+    },
+    {
+      "code": "FLEX",
+      "label": "Flexibility / adaptability"
+    },
+    {
+      "code": "CONF",
+      "label": "Self-confidence / decision-making"
+    },
+    {
+      "code": "TEAM",
+      "label": "Teamwork / CRM"
+    },
+    {
+      "code": "INTEG",
+      "label": "Professional integrity"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I don't hesitate to repeat an important message if I doubt it was heard.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "B",
+          "text": "I report even a minor anomaly, even if it delays everyone.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "C",
+          "text": "I bounce back quickly after a stressful surprise.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "D",
+          "text": "I'd rather follow a procedure to the letter than do things \"well enough.\"",
+          "dimension": "DISC"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I take the time to listen to a colleague even when I'm under pressure.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "B",
+          "text": "I ask questions without fear of looking incompetent.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "I don't need outside validation to act with conviction.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I double-check an important setting before moving to the next step.",
+          "dimension": "DISC"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I document the facts honestly, even when they don't work in my favor.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "B",
+          "text": "I consider crew harmony as important as technical skill.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "C",
+          "text": "I feel comfortable deciding alone when the situation calls for it.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I treat every task, even a repetitive one, as a chance to do well.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I think it's better to challenge an unclear instruction than to follow it blindly.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "B",
+          "text": "I make a decision even without complete information, if time is short.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "C",
+          "text": "I never treat a control step as secondary.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "D",
+          "text": "I stay focused even after making a mistake.",
+          "dimension": "RESIL"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I refuse a dishonest shortcut even if it would make my task easier.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "B",
+          "text": "Changing airport, aircraft, or procedure doesn't worry me much.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "C",
+          "text": "I report even a minor anomaly, even if it delays everyone.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "D",
+          "text": "I gladly share credit for a success with the whole team.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I share important information without waiting to be asked.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "B",
+          "text": "I correct an honest mistake even if it exposes me to criticism.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I find a workaround when the original plan stops working.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "D",
+          "text": "I never treat a control step as secondary.",
+          "dimension": "DISC"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I stay effective even when the usual framework suddenly changes.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "I take responsibility for the consequences of a hard decision I made alone.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "C",
+          "text": "I give direct feedback rather than letting ambiguity linger.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "D",
+          "text": "I follow a rule even when I'm sure no one is checking.",
+          "dimension": "INTEG"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Once I've made a decision, I fully own it in front of others.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "B",
+          "text": "A properly completed checklist matters more to me than saving time.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "C",
+          "text": "I give direct feedback rather than letting ambiguity linger.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "D",
+          "text": "I put in the same effort on a small task as on a high-profile project.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Under heavy pressure, I keep my ability to think clearly.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "I stick to a decision once made, unless something new comes up.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "C",
+          "text": "When tired, I keep the same level of rigor as when I'm fresh.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "D",
+          "text": "I'd rather waste time checking than risk a silent mistake.",
+          "dimension": "SEC"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "The job still feels meaningful to me, even in its routine.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "B",
+          "text": "I don't hesitate to repeat an important message if I doubt it was heard.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "I consider transparency non-negotiable in my work.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "D",
+          "text": "I question a routine practice if it seems to bypass a safety rule.",
+          "dimension": "SEC"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I never treat a control step as secondary.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "B",
+          "text": "I voice my disagreement even when the hierarchy doesn't particularly encourage it.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "C",
+          "text": "I easily accept a task split that doesn't particularly favor me.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "D",
+          "text": "I inform my team quickly whenever something changes the plan.",
+          "dimension": "COMM"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I always favor the most cautious option, even if it's slower.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "I make sure everyone on the team feels heard before a decision is made.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "C",
+          "text": "I'd rather face a negative consequence than hide a mistake.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "D",
+          "text": "I see failure as useful information rather than a judgment on myself.",
+          "dimension": "RESIL"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "A last-minute change of plan doesn't throw me off much.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "I hold myself to the same standard on a routine task as on a critical one.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "C",
+          "text": "Once I've made a decision, I fully own it in front of others.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I spontaneously help a struggling colleague, even if it's not my job.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I make sure everyone has the same information I do.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "B",
+          "text": "I'd rather face a negative consequence than hide a mistake.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I believe the \"just this once\" mindset is where accidents start.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "D",
+          "text": "I strictly follow the order of checks, even under time pressure.",
+          "dimension": "DISC"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I ask questions without fear of looking incompetent.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "B",
+          "text": "I switch easily between different ways of working depending on the situation.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "C",
+          "text": "I believe a subordinate has a duty to speak up, even if it's inconvenient.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "I put in the same effort on a small task as on a high-profile project.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I believe the \"just this once\" mindset is where accidents start.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "My commitment stays intact even after a rough patch.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "C",
+          "text": "Criticism doesn't affect my work for long.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "D",
+          "text": "I say clearly what I think, even if it might create tension.",
+          "dimension": "COMM"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Changing airport, aircraft, or procedure doesn't worry me much.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "I think it's better to challenge an unclear instruction than to follow it blindly.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "C",
+          "text": "I care about improving even when no one is asking me to.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "D",
+          "text": "I'd rather double-check something than rely on my memory.",
+          "dimension": "SEC"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I look forward enthusiastically to a long career in aviation.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "B",
+          "text": "I make sure everyone has the same information I do.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "I don't hesitate to interrupt a superior if I notice a mistake in progress.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "Criticism doesn't affect my work for long.",
+          "dimension": "RESIL"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Criticism doesn't affect my work for long.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "I report a mistake I made even if no one noticed it.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I believe no commercial pressure justifies skipping a safety step.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "D",
+          "text": "I'd rather follow a procedure to the letter than do things \"well enough.\"",
+          "dimension": "DISC"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I can set aside a personal frustration to stay operational.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "I consider crew harmony as important as technical skill.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "C",
+          "text": "I always favor the most cautious option, even if it's slower.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "D",
+          "text": "I make a decision even without complete information, if time is short.",
+          "dimension": "CONF"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I easily ask a more experienced person a question without fearing their judgment.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "B",
+          "text": "I keep my cool even when several problems pile up at once.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "C",
+          "text": "I rephrase what I'm told to make sure I understood correctly.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "D",
+          "text": "A last-minute surprise rarely leaves me feeling overwhelmed.",
+          "dimension": "FLEX"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I keep my commitments even when it's no longer in my interest to do so.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "B",
+          "text": "I rephrase what I'm told to make sure I understood correctly.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "I believe staying silent about a doubt is more dangerous than being a nuisance.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "I bounce back quickly after a stressful surprise.",
+          "dimension": "RESIL"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I follow a rule even when I'm sure no one is checking.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "B",
+          "text": "I document what I do systematically, even without a strict requirement.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "C",
+          "text": "I keep confidence in my analysis even against an unjustified opposing view.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "Changing airport, aircraft, or procedure doesn't worry me much.",
+          "dimension": "FLEX"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I strictly follow the order of checks, even under time pressure.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "B",
+          "text": "A last-minute change of plan doesn't throw me off much.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "C",
+          "text": "I don't hesitate to repeat an important message if I doubt it was heard.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "D",
+          "text": "I care about improving even when no one is asking me to.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I hold myself to the same standard on a routine task as on a critical one.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "B",
+          "text": "I document the facts honestly, even when they don't work in my favor.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I ask others for input before finalizing a decision that affects them.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "D",
+          "text": "I adapt quickly to a new crew or a new team.",
+          "dimension": "FLEX"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I see the unexpected as a challenge to solve rather than a problem.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "The job still feels meaningful to me, even in its routine.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "C",
+          "text": "I question a routine practice if it seems to bypass a safety rule.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "D",
+          "text": "I get involved in the group's success even on a task that isn't mine.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I'd rather face a negative consequence than hide a mistake.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "B",
+          "text": "I make sure everyone on the team feels heard before a decision is made.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "C",
+          "text": "I'd rather announce a delay than take a risky shortcut to stay on schedule.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "D",
+          "text": "I stay motivated even on the least rewarding flights or assignments.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I bounce back quickly after a stressful surprise.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "I say clearly what I think, even if it might create tension.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "I keep my commitments even when it's no longer in my interest to do so.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "D",
+          "text": "I adjust easily to a situation that changes mid-mission.",
+          "dimension": "FLEX"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I keep confidence in my analysis even against an unjustified opposing view.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "B",
+          "text": "I stay effective even when the usual framework suddenly changes.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "C",
+          "text": "I put the team's success ahead of my own individual recognition.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "D",
+          "text": "I document what I do systematically, even without a strict requirement.",
+          "dimension": "DISC"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I believe admitting a mistake in front of the team builds collective trust.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "B",
+          "text": "I easily ask a more experienced person a question without fearing their judgment.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "C",
+          "text": "I'd rather follow a procedure to the letter than do things \"well enough.\"",
+          "dimension": "DISC"
+        },
+        {
+          "key": "D",
+          "text": "I decide quickly when the situation demands it, without waiting for confirmation.",
+          "dimension": "CONF"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I accommodate a change of instructions mid-course without difficulty.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "I say clearly what I think, even if it might create tension.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "I regain my composure quickly after a tense moment.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "D",
+          "text": "I correct an honest mistake even if it exposes me to criticism.",
+          "dimension": "INTEG"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I rephrase what I'm told to make sure I understood correctly.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "B",
+          "text": "I keep functioning normally even when tired or upset.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "C",
+          "text": "I spontaneously help a struggling colleague, even if it's not my job.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "D",
+          "text": "When a superior's decision seems risky to me, I ask a question before executing it.",
+          "dimension": "AUTH"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I follow procedures in order, even when I know them by heart.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "B",
+          "text": "I refuse a dishonest shortcut even if it would make my task easier.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I don't hesitate to interrupt a superior if I notice a mistake in progress.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "I share important information without waiting to be asked.",
+          "dimension": "COMM"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I keep functioning normally even when tired or upset.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "I always make sure my message was actually understood.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "When a superior's decision seems risky to me, I ask a question before executing it.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "I stay motivated even on the least rewarding flights or assignments.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I easily ask a more experienced person a question without fearing their judgment.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "B",
+          "text": "I keep confidence in my analysis even against an unjustified opposing view.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "C",
+          "text": "I actively look for opportunities to improve technically.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "D",
+          "text": "A sudden workload spike doesn't stop me from keeping my priorities clear.",
+          "dimension": "RESIL"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I see the unexpected as a challenge to solve rather than a problem.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "Once I've made a decision, I fully own it in front of others.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "C",
+          "text": "I actively look for opportunities to improve technically.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "D",
+          "text": "I believe a good subordinate knows how to say no when it's justified.",
+          "dimension": "AUTH"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I'd rather double-check something than rely on my memory.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "I strictly follow the order of checks, even under time pressure.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "C",
+          "text": "A last-minute surprise rarely leaves me feeling overwhelmed.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "D",
+          "text": "I get involved in the group's success even on a task that isn't mine.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I'd rather waste time checking than risk a silent mistake.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "I share important information without waiting to be asked.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "A sudden workload spike doesn't stop me from keeping my priorities clear.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "D",
+          "text": "I see a cross-check as essential, even between experienced colleagues.",
+          "dimension": "DISC"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I question a routine practice if it seems to bypass a safety rule.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "My commitment stays intact even after a rough patch.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "C",
+          "text": "I take responsibility for the consequences of a hard decision I made alone.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I believe staying silent about a doubt is more dangerous than being a nuisance.",
+          "dimension": "AUTH"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I correct an honest mistake even if it exposes me to criticism.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "B",
+          "text": "I take the time to listen to a colleague even when I'm under pressure.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "C",
+          "text": "A clear career goal helps me push through difficult times.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "D",
+          "text": "A sudden workload spike doesn't stop me from keeping my priorities clear.",
+          "dimension": "RESIL"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I gladly share credit for a success with the whole team.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "B",
+          "text": "I follow a rule even when I'm sure no one is checking.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I look forward enthusiastically to a long career in aviation.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "D",
+          "text": "I'd rather follow a procedure to the letter than do things \"well enough.\"",
+          "dimension": "DISC"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I regain my composure quickly after a tense moment.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "I keep training even when it isn't required.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "C",
+          "text": "I get involved in the group's success even on a task that isn't mine.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "D",
+          "text": "I hold myself to the same standard on a routine task as on a critical one.",
+          "dimension": "DISC"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I believe a subordinate has a duty to speak up, even if it's inconvenient.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "B",
+          "text": "I never treat a control step as secondary.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "C",
+          "text": "I feel comfortable deciding alone when the situation calls for it.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I keep my commitments even when it's no longer in my interest to do so.",
+          "dimension": "INTEG"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I don't hesitate to interrupt a superior if I notice a mistake in progress.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "B",
+          "text": "I switch easily between different ways of working depending on the situation.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "C",
+          "text": "I feel comfortable deciding alone when the situation calls for it.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I believe no commercial pressure justifies skipping a safety step.",
+          "dimension": "SEC"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I adapt quickly to a new crew or a new team.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "When a superior's decision seems risky to me, I ask a question before executing it.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "C",
+          "text": "When tired, I keep the same level of rigor as when I'm fresh.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "D",
+          "text": "I stay focused even after making a mistake.",
+          "dimension": "RESIL"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Criticism doesn't affect my work for long.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "I make sure everyone on the team feels heard before a decision is made.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "C",
+          "text": "I strictly follow the order of checks, even under time pressure.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "D",
+          "text": "Facing an emergency, I choose an option rather than waiting for more information.",
+          "dimension": "CONF"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I react immediately if an instruction seems to go against safety.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "B",
+          "text": "I see a cross-check as essential, even between experienced colleagues.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "C",
+          "text": "Facing an emergency, I choose an option rather than waiting for more information.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I put in the same effort on a small task as on a high-profile project.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I spontaneously help a struggling colleague, even if it's not my job.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "B",
+          "text": "Changing airport, aircraft, or procedure doesn't worry me much.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "C",
+          "text": "I have no problem telling someone more senior than me that I disagree.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "I care about improving even when no one is asking me to.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I make a decision even without complete information, if time is short.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "B",
+          "text": "When tired, I keep the same level of rigor as when I'm fresh.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "C",
+          "text": "I switch easily between different ways of working depending on the situation.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "D",
+          "text": "I look forward enthusiastically to a long career in aviation.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I believe a good subordinate knows how to say no when it's justified.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "B",
+          "text": "I don't need outside validation to act with conviction.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "C",
+          "text": "I regain my composure quickly after a tense moment.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "D",
+          "text": "I keep training even when it isn't required.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I follow procedures in order, even when I know them by heart.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "B",
+          "text": "I can set aside a personal frustration to stay operational.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "C",
+          "text": "I document the facts honestly, even when they don't work in my favor.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "D",
+          "text": "I make sure everyone on the team feels heard before a decision is made.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I treat every task, even a repetitive one, as a chance to do well.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "B",
+          "text": "I keep my cool even when several problems pile up at once.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "C",
+          "text": "I react immediately if an instruction seems to go against safety.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "I'd rather waste time checking than risk a silent mistake.",
+          "dimension": "SEC"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "The job still feels meaningful to me, even in its routine.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "B",
+          "text": "I consider transparency non-negotiable in my work.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I always make sure my message was actually understood.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "D",
+          "text": "I always favor the most cautious option, even if it's slower.",
+          "dimension": "SEC"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I trust my judgment in an unfamiliar situation.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "B",
+          "text": "I consider transparency non-negotiable in my work.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "My commitment stays intact even after a rough patch.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "D",
+          "text": "I believe no performance goal should ever come before safety.",
+          "dimension": "SEC"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "A last-minute change of plan doesn't throw me off much.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "I tell the truth even when a lie would be more comfortable in the moment.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I document what I do systematically, even without a strict requirement.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "D",
+          "text": "I keep confidence in my analysis even against an unjustified opposing view.",
+          "dimension": "CONF"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I follow procedures in order, even when I know them by heart.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "B",
+          "text": "I keep functioning normally even when tired or upset.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "C",
+          "text": "I refuse to sign off on something I know is wrong, even under pressure.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "D",
+          "text": "When a superior's decision seems risky to me, I ask a question before executing it.",
+          "dimension": "AUTH"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I believe no commercial pressure justifies skipping a safety step.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "I adapt quickly to a new crew or a new team.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "C",
+          "text": "I make sure everyone has the same information I do.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "D",
+          "text": "I have no problem telling someone more senior than me that I disagree.",
+          "dimension": "AUTH"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I easily accept a task split that doesn't particularly favor me.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "B",
+          "text": "I bounce back quickly after a stressful surprise.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "C",
+          "text": "I take responsibility for the consequences of a hard decision I made alone.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I stay effective even when the usual framework suddenly changes.",
+          "dimension": "FLEX"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I easily ask a more experienced person a question without fearing their judgment.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "B",
+          "text": "I consider crew harmony as important as technical skill.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "C",
+          "text": "I look forward enthusiastically to a long career in aviation.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "D",
+          "text": "I see the unexpected as a challenge to solve rather than a problem.",
+          "dimension": "FLEX"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I believe no performance goal should ever come before safety.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "I stay focused even after making a mistake.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "C",
+          "text": "I report a mistake I made even if no one noticed it.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "D",
+          "text": "I put in the same effort on a small task as on a high-profile project.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I react immediately if an instruction seems to go against safety.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "B",
+          "text": "I stick to a decision once made, unless something new comes up.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "C",
+          "text": "I express myself clearly even in a tense situation.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "D",
+          "text": "Under heavy pressure, I keep my ability to think clearly.",
+          "dimension": "RESIL"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I see a cross-check as essential, even between experienced colleagues.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "B",
+          "text": "I report a mistake I made even if no one noticed it.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I think it's better to challenge an unclear instruction than to follow it blindly.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "I keep training even when it isn't required.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I can set aside a personal frustration to stay operational.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "I believe no performance goal should ever come before safety.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "C",
+          "text": "I rephrase what I'm told to make sure I understood correctly.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "D",
+          "text": "I take the time to listen to a colleague even when I'm under pressure.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I believe the \"just this once\" mindset is where accidents start.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "I correct an honest mistake even if it exposes me to criticism.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I see a cross-check as essential, even between experienced colleagues.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "D",
+          "text": "My commitment stays intact even after a rough patch.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I refuse a dishonest shortcut even if it would make my task easier.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "B",
+          "text": "I accommodate a change of instructions mid-course without difficulty.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "C",
+          "text": "I double-check an important setting before moving to the next step.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "D",
+          "text": "I report even a minor anomaly, even if it delays everyone.",
+          "dimension": "SEC"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I document the facts honestly, even when they don't work in my favor.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "B",
+          "text": "I accommodate a change of instructions mid-course without difficulty.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "C",
+          "text": "I decide quickly when the situation demands it, without waiting for confirmation.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I take the time to listen to a colleague even when I'm under pressure.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I'd rather waste time checking than risk a silent mistake.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "I stay focused even after making a mistake.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "C",
+          "text": "I find a workaround when the original plan stops working.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "D",
+          "text": "I gladly share credit for a success with the whole team.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "A last-minute surprise rarely leaves me feeling overwhelmed.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "I report even a minor anomaly, even if it delays everyone.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "C",
+          "text": "I tell the truth even when a lie would be more comfortable in the moment.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "D",
+          "text": "Facing an emergency, I choose an option rather than waiting for more information.",
+          "dimension": "CONF"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I see the unexpected as a challenge to solve rather than a problem.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "I ask questions without fear of looking incompetent.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "I believe no performance goal should ever come before safety.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "D",
+          "text": "I decide quickly when the situation demands it, without waiting for confirmation.",
+          "dimension": "CONF"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I'd rather double-check something than rely on my memory.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "I go back and re-check if I have the slightest doubt, even after the fact.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "C",
+          "text": "I say clearly what I think, even if it might create tension.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "D",
+          "text": "A clear career goal helps me push through difficult times.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I stay motivated even on the least rewarding flights or assignments.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "B",
+          "text": "I hold myself to the same standard on a routine task as on a critical one.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "C",
+          "text": "I switch easily between different ways of working depending on the situation.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "D",
+          "text": "I put the team's success ahead of my own individual recognition.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I keep training even when it isn't required.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "B",
+          "text": "I spontaneously help a struggling colleague, even if it's not my job.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "C",
+          "text": "I stick to a decision once made, unless something new comes up.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I voice my disagreement even when the hierarchy doesn't particularly encourage it.",
+          "dimension": "AUTH"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I'd rather double-check something than rely on my memory.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "I follow procedures in order, even when I know them by heart.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "C",
+          "text": "I have no problem telling someone more senior than me that I disagree.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "I decide quickly when the situation demands it, without waiting for confirmation.",
+          "dimension": "CONF"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I trust my judgment in an unfamiliar situation.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "B",
+          "text": "A sudden workload spike doesn't stop me from keeping my priorities clear.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "C",
+          "text": "I believe admitting a mistake in front of the team builds collective trust.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "D",
+          "text": "I share important information without waiting to be asked.",
+          "dimension": "COMM"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I double-check an important setting before moving to the next step.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "B",
+          "text": "I give direct feedback rather than letting ambiguity linger.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "I accommodate a change of instructions mid-course without difficulty.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "D",
+          "text": "I keep my cool even when several problems pile up at once.",
+          "dimension": "RESIL"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I can set aside a personal frustration to stay operational.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "I'd rather face a negative consequence than hide a mistake.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I question a routine practice if it seems to bypass a safety rule.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "D",
+          "text": "I double-check an important setting before moving to the next step.",
+          "dimension": "DISC"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I keep functioning normally even when tired or upset.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "The job still feels meaningful to me, even in its routine.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "C",
+          "text": "I make sure everyone has the same information I do.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "D",
+          "text": "I believe a good subordinate knows how to say no when it's justified.",
+          "dimension": "AUTH"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I express myself clearly even in a tense situation.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "B",
+          "text": "A properly completed checklist matters more to me than saving time.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "C",
+          "text": "A last-minute surprise rarely leaves me feeling overwhelmed.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "D",
+          "text": "I refuse to sign off on something I know is wrong, even under pressure.",
+          "dimension": "INTEG"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "A clear career goal helps me push through difficult times.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "B",
+          "text": "I adjust easily to a situation that changes mid-mission.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "C",
+          "text": "I gladly share credit for a success with the whole team.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "D",
+          "text": "I always make sure my message was actually understood.",
+          "dimension": "COMM"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I adapt quickly to a new crew or a new team.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "I refuse a dishonest shortcut even if it would make my task easier.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I stay motivated even on the least rewarding flights or assignments.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "D",
+          "text": "Facing an emergency, I choose an option rather than waiting for more information.",
+          "dimension": "CONF"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I believe admitting a mistake in front of the team builds collective trust.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "B",
+          "text": "I'd rather announce a delay than take a risky shortcut to stay on schedule.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "C",
+          "text": "I see failure as useful information rather than a judgment on myself.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "D",
+          "text": "I react immediately if an instruction seems to go against safety.",
+          "dimension": "AUTH"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I put the team's success ahead of my own individual recognition.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "B",
+          "text": "I go back and re-check if I have the slightest doubt, even after the fact.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "C",
+          "text": "I adjust easily to a situation that changes mid-mission.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "D",
+          "text": "I care about improving even when no one is asking me to.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I'd rather announce a delay than take a risky shortcut to stay on schedule.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "I document what I do systematically, even without a strict requirement.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "C",
+          "text": "I believe a subordinate has a duty to speak up, even if it's inconvenient.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "I tell the truth even when a lie would be more comfortable in the moment.",
+          "dimension": "INTEG"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I have no problem telling someone more senior than me that I disagree.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "B",
+          "text": "I ask others for input before finalizing a decision that affects them.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "C",
+          "text": "I take responsibility for the consequences of a hard decision I made alone.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I follow a rule even when I'm sure no one is checking.",
+          "dimension": "INTEG"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "A properly completed checklist matters more to me than saving time.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "I voice my disagreement even when the hierarchy doesn't particularly encourage it.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "C",
+          "text": "I go back and re-check if I have the slightest doubt, even after the fact.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "D",
+          "text": "I adjust easily to a situation that changes mid-mission.",
+          "dimension": "FLEX"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I'd rather announce a delay than take a risky shortcut to stay on schedule.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "B",
+          "text": "I trust my judgment in an unfamiliar situation.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "C",
+          "text": "I see failure as useful information rather than a judgment on myself.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "D",
+          "text": "I ask others for input before finalizing a decision that affects them.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I believe a subordinate has a duty to speak up, even if it's inconvenient.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "B",
+          "text": "I consider transparency non-negotiable in my work.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I don't need outside validation to act with conviction.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I consider crew harmony as important as technical skill.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I actively look for opportunities to improve technically.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "B",
+          "text": "I believe no commercial pressure justifies skipping a safety step.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "C",
+          "text": "I easily accept a task split that doesn't particularly favor me.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "D",
+          "text": "A last-minute change of plan doesn't throw me off much.",
+          "dimension": "FLEX"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I ask questions without fear of looking incompetent.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "B",
+          "text": "I report a mistake I made even if no one noticed it.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I make a decision even without complete information, if time is short.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "A properly completed checklist matters more to me than saving time.",
+          "dimension": "SEC"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I don't hesitate to repeat an important message if I doubt it was heard.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "B",
+          "text": "I believe staying silent about a doubt is more dangerous than being a nuisance.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "C",
+          "text": "I keep my commitments even when it's no longer in my interest to do so.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "D",
+          "text": "I easily accept a task split that doesn't particularly favor me.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I inform my team quickly whenever something changes the plan.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "B",
+          "text": "I believe a good subordinate knows how to say no when it's justified.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "C",
+          "text": "I feel comfortable deciding alone when the situation calls for it.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "When tired, I keep the same level of rigor as when I'm fresh.",
+          "dimension": "DISC"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I believe admitting a mistake in front of the team builds collective trust.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "B",
+          "text": "A clear career goal helps me push through difficult times.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "C",
+          "text": "I see failure as useful information rather than a judgment on myself.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "D",
+          "text": "I inform my team quickly whenever something changes the plan.",
+          "dimension": "COMM"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I regain my composure quickly after a tense moment.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "I express myself clearly even in a tense situation.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "Once I've made a decision, I fully own it in front of others.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "I find a workaround when the original plan stops working.",
+          "dimension": "FLEX"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I ask others for input before finalizing a decision that affects them.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "B",
+          "text": "I don't need outside validation to act with conviction.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "C",
+          "text": "I believe the \"just this once\" mindset is where accidents start.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "D",
+          "text": "I always make sure my message was actually understood.",
+          "dimension": "COMM"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I stick to a decision once made, unless something new comes up.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "B",
+          "text": "I inform my team quickly whenever something changes the plan.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "I find a workaround when the original plan stops working.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "D",
+          "text": "I keep my cool even when several problems pile up at once.",
+          "dimension": "RESIL"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I treat every task, even a repetitive one, as a chance to do well.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "B",
+          "text": "I always favor the most cautious option, even if it's slower.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "C",
+          "text": "I don't hesitate to interrupt a superior if I notice a mistake in progress.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "I put the team's success ahead of my own individual recognition.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I give direct feedback rather than letting ambiguity linger.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "B",
+          "text": "I tell the truth even when a lie would be more comfortable in the moment.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I think it's better to challenge an unclear instruction than to follow it blindly.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "I trust my judgment in an unfamiliar situation.",
+          "dimension": "CONF"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I refuse to sign off on something I know is wrong, even under pressure.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "B",
+          "text": "I actively look for opportunities to improve technically.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "C",
+          "text": "Under heavy pressure, I keep my ability to think clearly.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "D",
+          "text": "I express myself clearly even in a tense situation.",
+          "dimension": "COMM"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I stay effective even when the usual framework suddenly changes.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "I get involved in the group's success even on a task that isn't mine.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "C",
+          "text": "I refuse to sign off on something I know is wrong, even under pressure.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "D",
+          "text": "I believe staying silent about a doubt is more dangerous than being a nuisance.",
+          "dimension": "AUTH"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "isControl": false,
+      "controlOf": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "I go back and re-check if I have the slightest doubt, even after the fact.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "B",
+          "text": "I voice my disagreement even when the hierarchy doesn't particularly encourage it.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "C",
+          "text": "I treat every task, even a repetitive one, as a chance to do well.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "D",
+          "text": "Under heavy pressure, I keep my ability to think clearly.",
+          "dimension": "RESIL"
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "isControl": true,
+      "controlOf": 8,
+      "options": [
+        {
+          "key": "A",
+          "text": "Once I've made a decision, I fully own it in front of others.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "B",
+          "text": "A properly completed checklist matters more to me than saving time.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "C",
+          "text": "I give direct feedback rather than letting ambiguity linger.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "D",
+          "text": "I put in the same effort on a small task as on a high-profile project.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "isControl": true,
+      "controlOf": 9,
+      "options": [
+        {
+          "key": "A",
+          "text": "Under heavy pressure, I keep my ability to think clearly.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "I stick to a decision once made, unless something new comes up.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "C",
+          "text": "When tired, I keep the same level of rigor as when I'm fresh.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "D",
+          "text": "I'd rather waste time checking than risk a silent mistake.",
+          "dimension": "SEC"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "isControl": true,
+      "controlOf": 14,
+      "options": [
+        {
+          "key": "A",
+          "text": "I make sure everyone has the same information I do.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "B",
+          "text": "I'd rather face a negative consequence than hide a mistake.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I believe the \"just this once\" mindset is where accidents start.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "D",
+          "text": "I strictly follow the order of checks, even under time pressure.",
+          "dimension": "DISC"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "isControl": true,
+      "controlOf": 15,
+      "options": [
+        {
+          "key": "A",
+          "text": "I ask questions without fear of looking incompetent.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "B",
+          "text": "I switch easily between different ways of working depending on the situation.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "C",
+          "text": "I believe a subordinate has a duty to speak up, even if it's inconvenient.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "D",
+          "text": "I put in the same effort on a small task as on a high-profile project.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "isControl": true,
+      "controlOf": 21,
+      "options": [
+        {
+          "key": "A",
+          "text": "I easily ask a more experienced person a question without fearing their judgment.",
+          "dimension": "AUTH"
+        },
+        {
+          "key": "B",
+          "text": "I keep my cool even when several problems pile up at once.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "C",
+          "text": "I rephrase what I'm told to make sure I understood correctly.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "D",
+          "text": "A last-minute surprise rarely leaves me feeling overwhelmed.",
+          "dimension": "FLEX"
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "isControl": true,
+      "controlOf": 23,
+      "options": [
+        {
+          "key": "A",
+          "text": "I follow a rule even when I'm sure no one is checking.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "B",
+          "text": "I document what I do systematically, even without a strict requirement.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "C",
+          "text": "I keep confidence in my analysis even against an unjustified opposing view.",
+          "dimension": "CONF"
+        },
+        {
+          "key": "D",
+          "text": "Changing airport, aircraft, or procedure doesn't worry me much.",
+          "dimension": "FLEX"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "isControl": true,
+      "controlOf": 25,
+      "options": [
+        {
+          "key": "A",
+          "text": "I hold myself to the same standard on a routine task as on a critical one.",
+          "dimension": "DISC"
+        },
+        {
+          "key": "B",
+          "text": "I document the facts honestly, even when they don't work in my favor.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "C",
+          "text": "I ask others for input before finalizing a decision that affects them.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "D",
+          "text": "I adapt quickly to a new crew or a new team.",
+          "dimension": "FLEX"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "isControl": true,
+      "controlOf": 26,
+      "options": [
+        {
+          "key": "A",
+          "text": "I see the unexpected as a challenge to solve rather than a problem.",
+          "dimension": "FLEX"
+        },
+        {
+          "key": "B",
+          "text": "The job still feels meaningful to me, even in its routine.",
+          "dimension": "MOT"
+        },
+        {
+          "key": "C",
+          "text": "I question a routine practice if it seems to bypass a safety rule.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "D",
+          "text": "I get involved in the group's success even on a task that isn't mine.",
+          "dimension": "TEAM"
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "isControl": true,
+      "controlOf": 27,
+      "options": [
+        {
+          "key": "A",
+          "text": "I'd rather face a negative consequence than hide a mistake.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "B",
+          "text": "I make sure everyone on the team feels heard before a decision is made.",
+          "dimension": "TEAM"
+        },
+        {
+          "key": "C",
+          "text": "I'd rather announce a delay than take a risky shortcut to stay on schedule.",
+          "dimension": "SEC"
+        },
+        {
+          "key": "D",
+          "text": "I stay motivated even on the least rewarding flights or assignments.",
+          "dimension": "MOT"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "isControl": true,
+      "controlOf": 28,
+      "options": [
+        {
+          "key": "A",
+          "text": "I bounce back quickly after a stressful surprise.",
+          "dimension": "RESIL"
+        },
+        {
+          "key": "B",
+          "text": "I say clearly what I think, even if it might create tension.",
+          "dimension": "COMM"
+        },
+        {
+          "key": "C",
+          "text": "I keep my commitments even when it's no longer in my interest to do so.",
+          "dimension": "INTEG"
+        },
+        {
+          "key": "D",
+          "text": "I adjust easily to a situation that changes mid-mission.",
+          "dimension": "FLEX"
+        }
+      ]
+    }
+  ],
+  "scoringRules": {
+    "dimensionScore": {
+      "description": "For each dimension, score = (number of times the statement from this dimension was picked as 'most like me') / (number of times a statement from this dimension was offered). timesOffered is mathematically constant at 40 per dimension (10 statements x 4 appearances each), computed only over the 100 non-control items (isControl == false).",
+      "timesOffered": "always 40 for every dimension (10 statements x 4 repeats), ids 1-100 only",
+      "timesChosen": "count of items where the option whose dimension == code was picked"
+    },
+    "consistencyCheck": {
+      "description": "For each control item (id 101-110), compare the dimension of the option picked to the dimension of the option picked on the item with the same id as controlOf (option order is identical between the two, so comparing the chosen letter is equivalent to comparing the chosen dimension). Consistency score = matches / 10.",
+      "thresholds": {
+        "stable": ">=0.8",
+        "moderate": "0.6-0.79",
+        "low": "<0.6"
+      }
+    },
+    "responsePatternCheck": {
+      "description": "Share of each letter (A/B/C/D) chosen among items 1-100 (control items excluded). With 4 balanced options, chance level is 25% per letter. Flag if any single letter's share is outside 0.10-0.40 (position bias / careless responding).",
+      "thresholds": {
+        "flagAbove": 0.4,
+        "flagBelow": 0.1
+      }
+    }
+  },
+  "report": {
+    "description": "Narrative report generator: for each dimension, pick the band ('Low' if dimensionScore < 0.15, 'Mid' if <= 0.35, else 'High' — thresholds centred on the 25% chance level of a 4-option single pick, not 50%) and use report[code].bands[band] as the paragraph, plus the static strengths/suitableWork/tips lines. For the overall summary: if (max dimension score - min dimension score) < 0.15, use a 'balanced profile' message; otherwise name the dimension with the max score as dominant and the one with the min score as weakest.",
+    "bandThresholds": {
+      "lowBelow": 0.15,
+      "midUpTo": 0.35
+    },
+    "dimensions": {
+      "AUTH": {
+        "bands": {
+          "Low": "The authority relationship isn't the theme that stands out most in your answers: you identify less often with statements about challenging or speaking up to a superior. This may reflect a natural tendency to trust the chain of command rather than question it by default. Worth watching in CRM training: make sure this reserve doesn't turn into hesitation to speak up at the right moment.",
+          "Mid": "You sit in a middle zone on the authority relationship: you're able to speak up to a superior when the situation clearly calls for it, without making it a systematic reflex. This is a generally well-suited stance for the flight deck, where assertiveness should stay proportionate to context.",
+          "High": "The authority relationship clearly stands out in your answers: you often identify with statements that value questioning, raising a concern, or contradicting a superior when justified. This is an asset for flight safety, provided this assertiveness is always expressed with the tact and respect expected within a crew."
+        },
+        "strengths": "Ability to constructively speak up to the hierarchy when safety or work quality requires it.",
+        "suitableWork": "Roles that require challenging established decisions (flight safety, instruction, quality control).",
+        "tips": "Keep expressing disagreement with tact: substance matters as much as delivery in a cockpit."
+      },
+      "SEC": {
+        "bands": {
+          "Low": "Safety values come through less often than other themes in your choices. This doesn't mean a lack of concern for safety, just that this theme isn't what dominates your self-image compared to the nine other dimensions tested. A point to work on: make sure safety stays a priority automatically, without needing to think about it explicitly.",
+          "Mid": "Safety values hold a consistent place in your profile, neither dominant nor understated. You seem able to balance efficiency and caution depending on context, which fits a well-balanced stance for a future aviation professional.",
+          "High": "Safety values stand out strongly in your answers: you very often identify with statements placing safety above performance or schedule. This is a central strength for the pilot profession, provided you keep the ability to stay efficient day-to-day without this caution becoming excessive rigidity."
+        },
+        "strengths": "Natural priority given to safety, even under time or performance pressure.",
+        "suitableWork": "Any operational role where the smallest procedural shortcut has direct safety consequences.",
+        "tips": "Keep this vigilance without letting it slow down efficiency on tasks with no safety stakes."
+      },
+      "RESIL": {
+        "bands": {
+          "Low": "Resilience under stress isn't the most prominent trait in your profile: statements about staying calm under pressure or bouncing back quickly after an incident come through less often in your choices. Worth monitoring in training, especially during high-workload simulator sessions.",
+          "Mid": "Your stress resilience sits in a middle zone: you seem able to cope with pressure without it being systematically the trait that defines you most. This is consistent with a profile that manages stress case by case rather than through an unshakeable temperament.",
+          "High": "Resilience clearly stands out in your profile: you often identify with statements about staying calm under pressure, bouncing back quickly after an incident, and not being thrown off by failure. This is a valuable asset in a profession where stress management directly affects the safety of decisions."
+        },
+        "strengths": "Emotional stability and the ability to stay operational after a surprise or a mistake.",
+        "suitableWork": "Roles with high mental workload or repeated exposure to emergency situations.",
+        "tips": "Train regularly on high-workload simulator sessions to reinforce this strength."
+      },
+      "MOT": {
+        "bands": {
+          "Low": "Long-term professional motivation comes through less than other themes in your answers. This may simply reflect a profile where other dimensions (technical, relational) are more central to your self-image, without calling your actual commitment into question. Worth watching over time: the risk of burnout from routine.",
+          "Mid": "Your professional motivation sits in a middle zone: you seem engaged without this being the most prominent trait in your profile. This is a common and healthy stance that leaves room for other personal drivers.",
+          "High": "Professional motivation stands out strongly in your answers: you very often identify with statements about commitment, continuous training, and finding meaning in the job, including in its more routine aspects. This is a solid driver for sustaining a demanding career over time."
+        },
+        "strengths": "Lasting commitment to the profession, including its less rewarding aspects.",
+        "suitableWork": "Long career paths that require stable motivation over several years.",
+        "tips": "Set concrete progression goals to sustain this motivation over time."
+      },
+      "COMM": {
+        "bands": {
+          "Low": "Proactive, direct communication isn't the most present theme in your choices. You may be more reserved about spontaneously sharing information or disagreement. A point to work on for CRM: make sure essential information gets shared even without being explicitly asked.",
+          "Mid": "Your communication sits in a balanced zone: you share information and check for mutual understanding without it being systematically your first reflex. This is a solid foundation that can still grow with crew experience.",
+          "High": "Clear, proactive communication clearly stands out in your profile: you often identify with statements about sharing information without waiting, checking understanding, and expressing yourself clearly even under tension. This is an essential CRM skill in a multi-crew cockpit."
+        },
+        "strengths": "Clear, proactive communication, useful for crew coordination.",
+        "suitableWork": "Roles involving frequent coordination with other crew members or departments.",
+        "tips": "Keep systematically checking that your messages are understood, especially under time pressure."
+      },
+      "DISC": {
+        "bands": {
+          "Low": "Procedural discipline comes through less than other themes in your answers. This doesn't mean you're disorganized, just that strict adherence to the order of checks isn't what characterizes you most in this test. Point to watch: keep up rigor on routine tasks, where it's most likely to slip.",
+          "Mid": "Your procedural rigor sits in a middle zone: you follow procedures without it being an overwhelmingly dominant trait in your profile. This is consistent with a balance between following the framework and adapting to context.",
+          "High": "Procedural discipline stands out strongly in your profile: you very often identify with statements about strict checklist adherence, systematic verification, and maintaining rigor even when tired. This is a central asset for safety, provided you keep your judgment sharp for situations the procedure doesn't cover."
+        },
+        "strengths": "Rigorous adherence to procedures, even when tired or under pressure.",
+        "suitableWork": "Roles with high procedural demands (quality control, instruction, regulated operations).",
+        "tips": "Keep this rigor while preserving your judgment for situations the procedure doesn't cover."
+      },
+      "FLEX": {
+        "bands": {
+          "Low": "Adaptability to the unexpected isn't the most prominent theme in your profile: you may prefer a stable framework over a changing environment. A point to work on: last-minute changes (weather, slots, assignments) are an integral part of the job and deserve specific mental preparation.",
+          "Mid": "Your flexibility sits in a middle zone: you adapt to the unexpected without it being the trait that defines you most. This is a functional stance for a job where changes of plan remain manageable with experience.",
+          "High": "Flexibility stands out strongly in your profile: you often identify with statements about changing plan, method, or team without losing effectiveness. This is a valuable asset in an operational environment where the unexpected is frequent."
+        },
+        "strengths": "Good ability to adapt to changes in plan, crew, or environment.",
+        "suitableWork": "Changing operational environments (short-haul, multiple bases, irregular rosters).",
+        "tips": "Use this flexibility to reassure a crewmate who is less comfortable with the unexpected."
+      },
+      "CONF": {
+        "bands": {
+          "Low": "Autonomous decision-making comes through less often in your choices: you may prefer to consult others or wait for more information before deciding. Worth watching in training: emergencies sometimes require a fast decision with no outside validation available.",
+          "Mid": "Your decision-making confidence sits in a middle zone: you know how to decide when necessary, without it being systematically your first reflex. This is a healthy balance between autonomy and consultation.",
+          "High": "Confidence in your judgment stands out strongly in your profile: you often identify with statements about deciding quickly and owning the decision, even without complete information. This is an asset for handling emergencies, provided you stay open to reconsidering when new information appears."
+        },
+        "strengths": "Ability to decide quickly and own the decision, even in uncertain situations.",
+        "suitableWork": "Roles with final decision-making responsibility (captain, instruction, crisis management).",
+        "tips": "Stay open to reconsidering if new information contradicts your initial analysis."
+      },
+      "TEAM": {
+        "bands": {
+          "Low": "Teamwork and CRM aren't the most prominent theme in your profile: you identify less often with statements about listening, sharing, or helping within a crew. A point to work on: crew performance relies as much on coordination as on each individual's skill.",
+          "Mid": "Your team spirit sits in a middle zone: you collaborate and listen to others without it being the trait that defines you most. This is a solid base for healthy crew dynamics.",
+          "High": "Team spirit stands out strongly in your profile: you very often identify with statements about mutual support, listening, and sharing credit within the crew. This is a central asset of modern CRM, where collective performance takes priority over individual performance."
+        },
+        "strengths": "Good crew integration, listening to others, and sharing collective credit.",
+        "suitableWork": "Any multi-crew role where coordination matters more than individual performance.",
+        "tips": "Keep asking others for their input, even when you're confident you have the right answer."
+      },
+      "INTEG": {
+        "bands": {
+          "Low": "Professional integrity isn't the most prominent theme in your answers, which doesn't call your honesty into question — it simply isn't what distinguishes you most in this test compared to the other dimensions. Point to watch: transparency about mistakes, even minor ones, remains a pillar of safety culture.",
+          "Mid": "Your professional integrity sits in a middle zone: you're honest about what matters without it being systematically the most prominent trait in your profile. This is consistent with an overall trustworthy stance.",
+          "High": "Professional integrity stands out strongly in your answers: you very often identify with statements about transparency, admitting mistakes, and refusing dishonest shortcuts. This is a fundamental quality for the \"just culture\" that modern aviation aims for."
+        },
+        "strengths": "Transparency and honesty, even when it exposes you to criticism or consequences.",
+        "suitableWork": "Any role where \"just culture\" and incident reporting are essential.",
+        "tips": "Keep reporting your own mistakes: it's what builds lasting trust within a crew."
+      }
+    }
+  }
+}

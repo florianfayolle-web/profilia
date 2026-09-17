@@ -1,0 +1,606 @@
+{
+  "testId": "type_cognitif_16",
+  "title": "Test de personnalité en 16 profils cognitifs",
+  "instructions": "Pour chaque paire, indique de quel côté tu te situes et avec quelle intensité, sur une échelle symétrique en 5 niveaux.",
+  "responseScale": [
+    {
+      "value": -2,
+      "anchor": "left",
+      "label": "Tout à fait d'accord"
+    },
+    {
+      "value": -1,
+      "anchor": "left",
+      "label": "D'accord"
+    },
+    {
+      "value": 0,
+      "anchor": "neutral",
+      "label": "Neutre"
+    },
+    {
+      "value": 1,
+      "anchor": "right",
+      "label": "D'accord"
+    },
+    {
+      "value": 2,
+      "anchor": "right",
+      "label": "Tout à fait d'accord"
+    }
+  ],
+  "report": {
+    "intro": "Ce test explore quatre grandes préférences de fonctionnement psychologique (la source d'énergie, le mode de perception, le mode de décision et le rapport à l'organisation) pour faire émerger l'un de 16 profils cognitifs. Il ne s'agit ni d'un diagnostic ni d'une mesure de compétence : chaque profil a ses forces et ses points de vigilance propres.",
+    "outro": "Ce profil reflète tes préférences naturelles à un instant donné : il peut s'affiner avec l'expérience et selon les situations. Il peut t'aider à mieux te présenter en entretien, en connaissant à l'avance ta façon de fonctionner et en anticipant les questions qui pourraient recouper ce profil."
+  },
+  "dimensions": [
+    {
+      "key": "energie",
+      "name": "Énergie & Interaction",
+      "poleA": {
+        "label": "Extraversion",
+        "description": "Tu recharges ton énergie au contact des autres et en passant à l'action.",
+        "letter": "E"
+      },
+      "poleB": {
+        "label": "Introversion",
+        "description": "Tu recharges ton énergie dans le calme et la réflexion en solitaire.",
+        "letter": "I"
+      },
+      "report": {
+        "Amarque": "Tu tires ton énergie des échanges et de l'action : les environnements collectifs et stimulants te dynamisent, et tu réfléchis souvent à voix haute. Cette aisance relationnelle est un vrai atout en entretien et en équipe ; veille simplement à te réserver aussi des moments de réflexion posée avant de trancher.",
+        "Amodere": "Tu apprécies les échanges et l'action sans en avoir un besoin permanent : tu sais aussi bien t'investir en groupe que travailler seul quand la situation le demande. Cet équilibre te permet de t'adapter facilement à différents contextes professionnels.",
+        "equilibre": "Tu navigues avec aisance entre moments de sociabilité et moments de retrait, selon ce que la situation demande. Cette souplesse est une force, à condition de rester attentif à identifier ce dont tu as vraiment besoin dans les moments de forte charge.",
+        "Bmodere": "Tu apprécies de prendre le temps de réfléchir avant d'agir, sans pour autant fuir les échanges. Cette capacité de recul est utile pour prendre des décisions posées, à condition de veiller à te rendre visible quand la situation l'exige.",
+        "Bmarque": "Tu recharges ton énergie dans le calme et la réflexion intérieure : les sollicitations permanentes ou les environnements bruyants peuvent te fatiguer plus vite que d'autres. Cette capacité de concentration est précieuse pour les tâches de fond ; pense à t'entraîner à formuler tes idées à l'oral pour qu'elles soient aussi visibles que ta réflexion l'est en interne."
+      }
+    },
+    {
+      "key": "information",
+      "name": "Perception & Information",
+      "poleA": {
+        "label": "Sens pratique",
+        "description": "Tu t'appuies sur les faits concrets, les détails observables et l'expérience vécue.",
+        "letter": "S"
+      },
+      "poleB": {
+        "label": "Intuition",
+        "description": "Tu t'appuies sur les liens entre les idées, les possibilités et la vision d'ensemble.",
+        "letter": "N"
+      },
+      "report": {
+        "Amarque": "Tu accordes une grande importance aux faits vérifiables et à l'expérience concrète : tu es à l'aise pour repérer un détail qui cloche et pour t'appuyer sur ce qui a déjà fonctionné. Cette fiabilité est un vrai atout opérationnel ; garde en tête qu'il est aussi utile, ponctuellement, de prendre de la hauteur pour anticiper ce qui n'a pas encore de précédent.",
+        "Amodere": "Tu t'appuies en priorité sur les faits et le concret, tout en restant capable de prendre de la distance pour envisager plusieurs options. Cet équilibre te permet d'être à la fois fiable et ouvert au changement.",
+        "equilibre": "Tu alternes naturellement entre l'attention au détail concret et la prise de recul sur l'ensemble d'une situation. Cette polyvalence est utile dans des contextes qui demandent à la fois rigueur d'exécution et capacité d'anticipation.",
+        "Bmodere": "Tu aimes prendre du recul et envisager plusieurs possibilités, tout en restant capable de revenir aux faits quand c'est nécessaire. Cette vision d'ensemble est utile pour anticiper, à condition de vérifier régulièrement que tes idées restent ancrées dans le réel.",
+        "Bmarque": "Tu es porté par les idées, les liens entre les concepts et les possibilités à venir plus que par le détail immédiat. Cette vision d'ensemble est précieuse pour anticiper et innover ; veille à consolider tes intuitions par des faits concrets avant de les présenter, notamment en entretien."
+      }
+    },
+    {
+      "key": "decision",
+      "name": "Mode de décision",
+      "poleA": {
+        "label": "Logique",
+        "description": "Tu décides en priorité selon la cohérence, les faits et l'objectivité de la situation.",
+        "letter": "T"
+      },
+      "poleB": {
+        "label": "Valeurs",
+        "description": "Tu décides en priorité selon l'impact humain de la situation et tes valeurs personnelles.",
+        "letter": "F"
+      },
+      "report": {
+        "Amarque": "Tu prends tes décisions avant tout sur des critères objectifs et une logique cohérente, même quand cela implique des choix inconfortables. Cette rigueur d'analyse est très appréciée dans les processus de sélection ; veille à expliciter aussi l'impact humain de tes décisions pour être bien compris.",
+        "Amodere": "Tu privilégies une analyse rationnelle des situations, tout en restant attentif à l'impact de tes décisions sur les personnes concernées. Cet équilibre entre logique et humain est une vraie force en entretien comme en équipe.",
+        "equilibre": "Tu combines naturellement analyse objective et prise en compte de l'humain selon ce que la situation demande. Cette capacité à ajuster ton curseur est utile, à condition de rester conscient du critère qui prime réellement dans chaque décision.",
+        "Bmodere": "Tu es attentif à l'impact humain de tes décisions, tout en restant capable de t'appuyer sur des faits objectifs quand la situation l'exige. Cette sensibilité relationnelle est précieuse en équipe, à condition de ne pas éviter les décisions inconfortables mais nécessaires.",
+        "Bmarque": "Tu places l'impact humain et tes valeurs au cœur de tes décisions, parfois avant la pure logique de la situation. Cette sensibilité est un vrai atout relationnel ; entraîne-toi à formuler aussi la dimension objective de tes choix, notamment face à un jury qui attend des critères explicites."
+      }
+    },
+    {
+      "key": "organisation",
+      "name": "Rapport à l'organisation",
+      "poleA": {
+        "label": "Structure",
+        "description": "Tu avances avec un plan, tu aimes clore les sujets et anticiper les échéances.",
+        "letter": "J"
+      },
+      "poleB": {
+        "label": "Flexibilité",
+        "description": "Tu avances en gardant les options ouvertes et tu t'adaptes au fil de l'eau.",
+        "letter": "P"
+      },
+      "report": {
+        "Amarque": "Tu as besoin d'un cadre clair et tu aimes anticiper : tu planifies, tu respectes les échéances et tu es rassuré quand un sujet est tranché. Cette fiabilité est un atout majeur dans un processus normé ; reste vigilant à conserver ta capacité d'ajustement quand un imprévu bouscule le plan.",
+        "Amodere": "Tu apprécies d'avancer avec une méthode et des échéances claires, sans être rigide pour autant : tu sais laisser une marge de manœuvre quand c'est utile. Cet équilibre entre méthode et souplesse est recherché dans la plupart des processus de sélection.",
+        "equilibre": "Tu ajustes naturellement ton degré de planification selon le contexte, entre structure et adaptation. Cette souplesse de posture est une force, à condition de rester vigilant à ne pas manquer de méthode dans les moments qui l'exigent réellement.",
+        "Bmodere": "Tu es à l'aise avec l'imprévu et préfères garder tes options ouvertes le plus longtemps possible, sans pour autant être désorganisé. Cette adaptabilité est précieuse face au changement, à condition de veiller à conclure les sujets qui demandent une décision claire.",
+        "Bmarque": "Tu as une appétence marquée pour la liberté d'action et détestes te sentir enfermé dans un plan figé à l'avance. C'est un vrai atout de réactivité face à l'imprévu ; dans un cadre qui exige des échéances strictes, il sera utile de démontrer ta capacité à t'y conformer malgré tout."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "dimension": "energie",
+      "left": {
+        "text": "Je me sens plus énergique après avoir passé du temps avec d'autres personnes.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me sens plus énergique après avoir passé du temps seul(e), au calme.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 2,
+      "dimension": "energie",
+      "left": {
+        "text": "Je préfère réfléchir à voix haute, en échangeant avec les autres.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère réfléchir en silence, avant de partager mes conclusions.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 3,
+      "dimension": "energie",
+      "left": {
+        "text": "Dans un groupe, je prends facilement la parole en premier.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Dans un groupe, j'observe d'abord avant de m'exprimer.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 4,
+      "dimension": "energie",
+      "left": {
+        "text": "J'aime avoir plusieurs interactions variées au cours d'une journée.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J'aime me concentrer longuement sur une seule activité, sans interruption.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 5,
+      "dimension": "energie",
+      "left": {
+        "text": "Rencontrer beaucoup de nouvelles personnes me stimule.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Rencontrer beaucoup de nouvelles personnes d'un coup me demande de l'énergie.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 6,
+      "dimension": "energie",
+      "left": {
+        "text": "Je trouve les solutions plus facilement en discutant avec d'autres.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je trouve les solutions plus facilement en y réfléchissant seul(e).",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 7,
+      "dimension": "energie",
+      "left": {
+        "text": "Après une journée chargée en interactions, je me sens plutôt ressourcé(e).",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Après une journée chargée en interactions, j'ai besoin de calme pour récupérer.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 8,
+      "dimension": "energie",
+      "left": {
+        "text": "Je me décris plutôt comme quelqu'un de tourné vers l'extérieur.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me décris plutôt comme quelqu'un de tourné vers l'intérieur.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 9,
+      "dimension": "information",
+      "left": {
+        "text": "Je fais confiance en priorité à ce que je peux observer et vérifier.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je fais confiance en priorité à mon intuition et aux liens que j'imagine.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 10,
+      "dimension": "information",
+      "left": {
+        "text": "Je préfère des consignes précises et détaillées.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère une vision d'ensemble et j'ajuste les détails moi-même.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 11,
+      "dimension": "information",
+      "left": {
+        "text": "Je remarque facilement les détails concrets d'une situation.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je remarque facilement les tendances et les possibilités futures d'une situation.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 12,
+      "dimension": "information",
+      "left": {
+        "text": "Je préfère m'appuyer sur des méthodes qui ont déjà fait leurs preuves.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère explorer de nouvelles approches, même non testées.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 13,
+      "dimension": "information",
+      "left": {
+        "text": "J'aime les explications concrètes, avec des exemples précis.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J'aime les explications conceptuelles, avec une vue générale.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 14,
+      "dimension": "information",
+      "left": {
+        "text": "Je me fie davantage aux faits qu'aux impressions.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me fie davantage aux impressions qu'aux seuls faits.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 15,
+      "dimension": "information",
+      "left": {
+        "text": "Je préfère traiter les problèmes un par un, dans l'ordre.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère envisager plusieurs pistes en même temps, quitte à en écarter certaines.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 16,
+      "dimension": "information",
+      "left": {
+        "text": "On me dit souvent que j'ai les pieds sur terre.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "On me dit souvent que j'ai un temps d'avance ou la tête dans les idées.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 17,
+      "dimension": "decision",
+      "left": {
+        "text": "Face à une décision difficile, je privilégie la logique et les faits.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Face à une décision difficile, je privilégie l'impact humain et mes valeurs.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 18,
+      "dimension": "decision",
+      "left": {
+        "text": "Je préfère qu'on me dise la vérité même si elle est inconfortable.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère qu'on tienne compte de la sensibilité de chacun dans la façon de dire les choses.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 19,
+      "dimension": "decision",
+      "left": {
+        "text": "Je juge une décision d'abord sur sa cohérence objective.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je juge une décision d'abord sur ses conséquences pour les personnes concernées.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 20,
+      "dimension": "decision",
+      "left": {
+        "text": "Il m'arrive de sembler distant(e) quand je me concentre sur les faits.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Il m'arrive de sembler trop accommodant(e) pour préserver l'harmonie.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 21,
+      "dimension": "decision",
+      "left": {
+        "text": "Je remets facilement en question une idée, même si elle vient de quelqu'un que j'apprécie.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J'ai du mal à contredire quelqu'un que j'apprécie, même si je ne suis pas d'accord.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 22,
+      "dimension": "decision",
+      "left": {
+        "text": "Je préfère des critères clairs et objectifs pour trancher.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère tenir compte du contexte humain, même si cela complique la décision.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 23,
+      "dimension": "decision",
+      "left": {
+        "text": "On me décrit plutôt comme rationnel(le) et factuel(le).",
+        "pole": "A"
+      },
+      "right": {
+        "text": "On me décrit plutôt comme empathique et attentif(ve) aux autres.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 24,
+      "dimension": "decision",
+      "left": {
+        "text": "Je gère plus facilement les conflits en me concentrant sur les faits.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je gère plus facilement les conflits en cherchant à préserver la relation.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 25,
+      "dimension": "organisation",
+      "left": {
+        "text": "J'aime planifier mes tâches à l'avance.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J'aime garder mon emploi du temps ouvert et m'organiser au dernier moment.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 26,
+      "dimension": "organisation",
+      "left": {
+        "text": "Une fois une décision prise, je préfère ne plus y revenir.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère garder la possibilité de changer d'avis si une meilleure option apparaît.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 27,
+      "dimension": "organisation",
+      "left": {
+        "text": "Je me sens plus à l'aise quand un sujet est clos.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me sens plus à l'aise quand plusieurs options restent ouvertes.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 28,
+      "dimension": "organisation",
+      "left": {
+        "text": "Je respecte scrupuleusement les délais que je me fixe.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je travaille souvent mieux sous la pression d'une échéance proche.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 29,
+      "dimension": "organisation",
+      "left": {
+        "text": "J'aime avoir une liste claire de ce qu'il reste à faire.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J'aime avancer au fil de l'inspiration, sans liste figée.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 30,
+      "dimension": "organisation",
+      "left": {
+        "text": "Je préfère un cadre bien défini avec des règles claires.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère un cadre souple qui laisse de la place à l'improvisation.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 31,
+      "dimension": "organisation",
+      "left": {
+        "text": "On me dit souvent que je suis organisé(e) et prévisible.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "On me dit souvent que je suis spontané(e) et imprévisible.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 32,
+      "dimension": "organisation",
+      "left": {
+        "text": "Un imprévu de dernière minute me déstabilise plutôt.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Un imprévu de dernière minute m'amuse plutôt.",
+        "pole": "B"
+      }
+    }
+  ],
+  "typeCatalog": {
+    "ISTJ": {
+      "name": "Le Gardien",
+      "description": "Tu avances avec méthode, fiabilité et un grand respect des engagements pris. Concret et rigoureux, tu préfères t'appuyer sur des faits vérifiés et des procédures éprouvées plutôt que sur l'improvisation. En entretien, ta rigueur et ton sérieux inspirent confiance ; n'hésite pas à valoriser aussi ta capacité d'adaptation quand elle existe.",
+      "strengths": "Fiabilité, sens du détail, respect des règles et des délais.",
+      "watchOut": "Un cadre trop rigide ou un changement brutal de méthode peuvent te coûter en confort ; entraîne-toi à expliciter ta flexibilité quand on te le demande."
+    },
+    "ISFJ": {
+      "name": "Le Protecteur",
+      "description": "Discret et loyal, tu places le soin apporté aux autres et à la qualité du travail au cœur de ton engagement. Tu préfères l'action concrète et fiable à la mise en avant personnelle. En entretien, mets en avant des exemples concrets de ton engagement discret : ta valeur ajoutée n'est pas toujours la plus visible au premier abord.",
+      "strengths": "Fiabilité, attention aux autres, sens du service et de la qualité.",
+      "watchOut": "Tu peux avoir du mal à mettre en avant tes propres réussites ; prépare des exemples concrets de ta contribution pour les entretiens."
+    },
+    "INFJ": {
+      "name": "Le Confident",
+      "description": "Réfléchi et attentif aux autres, tu combines une forte intuition sur les personnes avec une exigence intérieure élevée. Tu cherches du sens dans ce que tu entreprends, au-delà de la seule performance. En entretien, ta capacité d'écoute et ta réflexion posée rassurent, à condition de ne pas hésiter à affirmer aussi tes propres positions.",
+      "strengths": "Écoute, vision à long terme, capacité à fédérer autour d'un sens commun.",
+      "watchOut": "Tu peux t'épuiser à vouloir concilier trop d'attentes différentes ; apprends à poser tes limites explicitement."
+    },
+    "INTJ": {
+      "name": "Le Stratège",
+      "description": "Tu conçois facilement une vision claire et structurée, et tu aimes anticiper plusieurs étapes à l'avance. Indépendant dans ta réflexion, tu préfères l'efficacité d'un plan solide aux ajustements permanents. En entretien, tu es à l'aise pour présenter une vision d'ensemble argumentée, à condition de veiller à rester concret sur les étapes intermédiaires.",
+      "strengths": "Vision stratégique, esprit d'analyse, autonomie.",
+      "watchOut": "Ton exigence peut être perçue comme distante ; pense à expliciter ton raisonnement pour emporter l'adhésion des autres."
+    },
+    "ISTP": {
+      "name": "Le Pragmatique",
+      "description": "Concret et à l'aise avec les outils comme avec l'action, tu résous les problèmes avec calme et efficacité. Tu préfères comprendre par toi-même plutôt que suivre une théorie non éprouvée. En entretien, ton calme et ton sens pratique sont rassurants ; pense à expliciter davantage ton raisonnement, qui reste parfois trop implicite à l'oral.",
+      "strengths": "Sang-froid, sens pratique, capacité à improviser une solution efficace.",
+      "watchOut": "Tu peux paraître peu expressif sur tes intentions ; explicite davantage ton raisonnement à l'oral, notamment en entretien."
+    },
+    "ISFP": {
+      "name": "L'Artiste libre",
+      "description": "Sensible et discret, tu avances selon tes valeurs propres plus que selon des règles imposées. Tu apprécies la liberté d'action et un cadre de travail qui laisse de la place à ta sensibilité. En entretien, ton authenticité est perceptible ; prépare-toi à formuler clairement tes motivations, qui peuvent sinon sembler difficiles à cerner.",
+      "strengths": "Authenticité, sens esthétique, capacité d'adaptation dans l'instant.",
+      "watchOut": "Un cadre trop contraignant peut te peser ; prépare des exemples où tu as su t'adapter à des règles strictes malgré tout."
+    },
+    "INFP": {
+      "name": "L'Idéaliste",
+      "description": "Porté par tes valeurs et une grande capacité d'empathie, tu cherches de la cohérence entre ce que tu fais et ce en quoi tu crois. Tu apprécies les environnements qui laissent de la place au sens et à la créativité. En entretien, ta sincérité et ton engagement transparaissent naturellement ; appuie-les sur des exemples concrets pour convaincre au-delà de l'intention.",
+      "strengths": "Empathie, créativité, engagement sincère envers une cause.",
+      "watchOut": "Un environnement trop normé peut te sembler déconnecté de tes valeurs ; entraîne-toi à formuler des compromis concrets."
+    },
+    "INTP": {
+      "name": "Le Théoricien",
+      "description": "Curieux et analytique, tu aimes comprendre en profondeur le fonctionnement des choses avant d'agir. Tu es à l'aise avec les problèmes complexes et les idées abstraites. En entretien, tu convaincs davantage par la solidité de ton raisonnement que par l'enthousiasme apparent : prépare des exemples concrets pour illustrer tes idées.",
+      "strengths": "Esprit logique, curiosité intellectuelle, indépendance de pensée.",
+      "watchOut": "Tu peux t'attarder sur la théorie au détriment de l'action ; entraîne-toi à conclure et à passer à l'exécution dans les délais impartis."
+    },
+    "ESTP": {
+      "name": "L'Audacieux",
+      "description": "Réactif et pragmatique, tu es à l'aise dans l'action immédiate et les environnements changeants. Tu préfères apprendre en expérimentant plutôt qu'en anticipant tous les scénarios. En entretien, ta réactivité et ton aisance sous pression sont des atouts démontrables par l'exemple ; montre aussi que tu sais anticiper, pas seulement réagir.",
+      "strengths": "Réactivité, sang-froid sous pression, sens du concret.",
+      "watchOut": "Tu peux sous-estimer l'intérêt d'une préparation en amont ; montre que tu sais aussi anticiper quand la situation l'exige."
+    },
+    "ESFP": {
+      "name": "Le Boute-en-train",
+      "description": "Enthousiaste et sociable, tu apportes de l'énergie positive à ton environnement et tu t'adaptes facilement aux gens comme aux situations. Tu préfères l'action concrète et le contact humain à la théorie. En entretien, ta spontanéité et ton énergie positive marquent immédiatement ; complète-les par des exemples de persévérance sur la durée.",
+      "strengths": "Enthousiasme, sens du contact, adaptabilité sociale.",
+      "watchOut": "Face à une tâche répétitive ou solitaire, ton énergie peut retomber ; prépare des exemples de persévérance sur la durée."
+    },
+    "ENFP": {
+      "name": "L'Enthousiaste",
+      "description": "Chaleureux et créatif, tu vois du potentiel partout et tu communiques facilement ton énergie aux autres. Tu préfères les environnements stimulants qui laissent de la place à l'initiative. En entretien, ton énergie est contagieuse ; structure ton discours pour montrer que cet enthousiasme s'accompagne de résultats concrets.",
+      "strengths": "Créativité, enthousiasme communicatif, aisance relationnelle.",
+      "watchOut": "Tu peux te disperser entre plusieurs projets ; entraîne-toi à démontrer ta capacité à aller au bout d'une tâche précise."
+    },
+    "ENTP": {
+      "name": "L'Électron libre",
+      "description": "Vif et curieux, tu aimes débattre d'idées et remettre en question ce qui semble acquis. Tu es à l'aise pour improviser une argumentation solide face à l'imprévu. En entretien, ta vivacité fait bonne impression si elle reste structurée : prépare une trame claire pour ne pas sembler improviser sur les sujets clés.",
+      "strengths": "Agilité intellectuelle, aisance à l'oral, créativité dans la résolution de problèmes.",
+      "watchOut": "Ton goût du débat peut être perçu comme de la provocation ; adapte ton discours à ton interlocuteur, notamment en entretien formel."
+    },
+    "ESTJ": {
+      "name": "Le Bâtisseur",
+      "description": "Organisé et déterminé, tu aimes structurer un projet et t'assurer que chacun sait ce qu'il a à faire. Tu es à l'aise pour prendre des décisions rapides sur des bases concrètes. En entretien, ton sens de l'organisation et ta capacité à décider rapidement sont appréciés ; illustre-les par des exemples où tu as aussi su t'ajuster.",
+      "strengths": "Sens de l'organisation, efficacité opérationnelle, fiabilité dans l'exécution.",
+      "watchOut": "Tu peux sembler directif face à des avis divergents ; entraîne-toi à expliciter ton écoute des autres points de vue."
+    },
+    "ESFJ": {
+      "name": "Le Fédérateur",
+      "description": "Chaleureux et organisé, tu veilles à ce que chacun se sente inclus tout en gardant le groupe efficace. Tu es à l'aise dans les environnements structurés où la coopération est valorisée. En entretien, ta chaleur et ton sens du collectif sont des atouts naturels ; prépare aussi des exemples où tu as dû trancher seul(e), sans chercher le consensus.",
+      "strengths": "Sens du collectif, fiabilité, capacité à créer un climat de confiance.",
+      "watchOut": "Tu peux avoir du mal à décevoir quelqu'un ; entraîne-toi à assumer des décisions impopulaires quand elles sont nécessaires."
+    },
+    "ENFJ": {
+      "name": "Le Rassembleur",
+      "description": "Charismatique et attentif aux autres, tu sais mobiliser un groupe autour d'un objectif commun. Tu combines une forte intuition sur les personnes avec le goût de l'organisation. En entretien, ton aisance relationnelle et ta capacité à porter un projet collectif sont des atouts visibles ; prépare aussi des exemples de décisions prises seul(e).",
+      "strengths": "Leadership naturel, empathie, capacité à motiver un collectif.",
+      "watchOut": "Tu peux te suradapter aux attentes du groupe au détriment des tiennes ; entraîne-toi à formuler tes propres priorités."
+    },
+    "ENTJ": {
+      "name": "Le Meneur",
+      "description": "Déterminé et structuré, tu prends facilement les commandes d'un projet et tu vises l'efficacité à long terme. Tu es à l'aise pour trancher rapidement sur la base d'une analyse solide. En entretien, ton assurance et ta clarté d'objectifs sont des atouts immédiats ; veille à laisser de la place aux questions et aux doutes de ton interlocuteur.",
+      "strengths": "Leadership, vision stratégique, capacité à mobiliser vers un objectif clair.",
+      "watchOut": "Ton exigence peut être perçue comme dure ; entraîne-toi à valoriser explicitement la contribution de chacun."
+    }
+  }
+}

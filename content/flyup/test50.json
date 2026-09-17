@@ -1,0 +1,745 @@
+{
+  "testId": "personality_50",
+  "title": "Test de personnalité — 50 paires d'affirmations",
+  "instructions": "Pour chaque paire, indique de quel côté tu te situes et avec quelle intensité, sur une échelle symétrique en 5 niveaux.",
+  "responseScale": [
+    {
+      "value": -2,
+      "anchor": "left",
+      "label": "Tout à fait d'accord"
+    },
+    {
+      "value": -1,
+      "anchor": "left",
+      "label": "D'accord"
+    },
+    {
+      "value": 0,
+      "anchor": "neutral",
+      "label": "Neutre"
+    },
+    {
+      "value": 1,
+      "anchor": "right",
+      "label": "D'accord"
+    },
+    {
+      "value": 2,
+      "anchor": "right",
+      "label": "Tout à fait d'accord"
+    }
+  ],
+  "report": {
+    "intro": "Ce profil décrit votre style personnel sur 5 grandes dimensions, à partir de vos réponses au test. Il ne s'agit ni d'un diagnostic ni d'une évaluation de performance : chaque tendance a ses forces et ses points de vigilance, en particulier au regard des exigences du métier de pilote.",
+    "outro": "Ce profil est une photographie de vos préférences naturelles à un instant donné : il peut évoluer avec l'expérience et selon les situations. Il peut être un point de départ utile pour préparer vos entretiens de sélection, en anticipant les questions sur vos points forts et vos axes de vigilance."
+  },
+  "dimensions": [
+    {
+      "key": "structure",
+      "name": "Structure & Organisation",
+      "poleA": {
+        "label": "Structure & Planification",
+        "description": "Tu avances avec un cadre clair, des étapes définies et une méthode établie à l’avance.",
+        "trait": "Le Bâtisseur"
+      },
+      "poleB": {
+        "label": "Flexibilité & Adaptabilité",
+        "description": "Tu avances en t’ajustant au fil de l’eau et tu es à l’aise avec l’imprévu.",
+        "trait": "L'Adaptateur"
+      },
+      "report": {
+        "Amarque": "Vous avez besoin d'un cadre clair et de repères précis pour vous sentir efficace : vous planifiez, anticipez et aimez savoir où vous allez avant d'agir. Cette rigueur est un atout majeur dans un environnement aussi normé que l'aviation, où les procédures et les checklists structurent chaque étape du vol. Restez toutefois attentif à conserver votre capacité d'ajustement lorsque la situation réelle s'écarte du plan prévu.",
+        "Amodere": "Vous appréciez d'avancer avec une méthode et des repères, sans pour autant être rigide : vous savez vous organiser tout en laissant une marge de manœuvre lorsque c'est nécessaire. Cet équilibre entre méthode et souplesse est une qualité recherchée chez un pilote, en salle comme en vol.",
+        "equilibre": "Vous naviguez avec aisance entre structure et adaptation selon ce que la situation demande : ni rigide, ni désorganisé, vous ajustez votre degré de préparation au contexte. Cette souplesse de posture est une force, à condition de rester vigilant à ne pas manquer de méthode dans les moments qui l'exigent réellement.",
+        "Bmodere": "Vous êtes à l'aise avec l'imprévu et préférez ajuster votre approche au fil de l'eau plutôt que de tout figer à l'avance. Cette souplesse est précieuse face à l'imprévu, à condition de veiller à ne pas négliger la préparation et le respect des procédures lorsque la situation l'exige strictement.",
+        "Bmarque": "Vous avez une appétence marquée pour la liberté d'action et l'adaptation en temps réel, et un cadre trop rigide peut vous peser. C'est un vrai atout de réactivité face à l'imprévu, mais dans un métier où les procédures structurent la sécurité, il sera important de démontrer votre capacité à vous conformer strictement à un cadre lorsque celui-ci est non négociable."
+      }
+    },
+    {
+      "key": "exploration",
+      "name": "Approfondissement & Exploration",
+      "poleA": {
+        "label": "Approfondissement & Continuité",
+        "description": "Tu aimes maîtriser un sujet en profondeur et t’appuyer sur ce que tu connais déjà.",
+        "trait": "Le Spécialiste"
+      },
+      "poleB": {
+        "label": "Exploration & Renouvellement",
+        "description": "Tu aimes découvrir de nouveaux sujets, varier les expériences et changer régulièrement.",
+        "trait": "L'Explorateur"
+      },
+      "report": {
+        "Amarque": "Vous aimez aller au fond des choses, maîtriser un sujet avant de passer à autre chose, et vous vous appuyez volontiers sur ce que vous connaissez déjà. Cette capacité de concentration et d'approfondissement est un atout pour l'apprentissage technique exigeant du métier de pilote.",
+        "Amodere": "Vous avez tendance à privilégier la maîtrise et la continuité, tout en restant ouvert à changer de sujet ou d'approche quand cela s'avère utile. Cet équilibre vous permet de progresser en profondeur sans vous enfermer.",
+        "equilibre": "Vous alternez naturellement entre approfondissement d'un sujet et curiosité pour de nouveaux domaines, selon le contexte. Cette polyvalence est utile dans un parcours de formation qui mêle matières techniques répétitives et situations toujours renouvelées.",
+        "Bmodere": "Vous êtes attiré par la nouveauté et le changement de rythme, tout en sachant rester concentré lorsque c'est nécessaire. Cette curiosité est un moteur d'apprentissage, à condition de veiller à la régularité sur les sujets qui demandent du temps et de la répétition.",
+        "Bmarque": "Vous avez besoin de variété, de nouveauté et de renouvellement pour rester stimulé, et la routine peut rapidement vous lasser. C'est une qualité pour vous adapter à des contextes changeants, mais la formation de pilote comporte aussi une part importante de répétition et de rigueur qu'il faudra savoir accueillir."
+      }
+    },
+    {
+      "key": "relationnel",
+      "name": "Mode Relationnel",
+      "poleA": {
+        "label": "Réflexion Individuelle",
+        "description": "Tu réfléchis et agis volontiers seul(e) avant de solliciter les autres.",
+        "trait": "L'Autonome"
+      },
+      "poleB": {
+        "label": "Interaction & Échange",
+        "description": "Tu réfléchis et avances volontiers en interaction avec les autres.",
+        "trait": "Le Connecteur"
+      },
+      "report": {
+        "Amarque": "Vous réfléchissez et prenez du recul seul(e) avant d'agir ou de vous exprimer, et vous êtes à l'aise dans le travail autonome et concentré. Cette capacité de recul est précieuse pour l'analyse des situations complexes, à condition de rester suffisamment communicant en équipage.",
+        "Amodere": "Vous prenez volontiers le temps de réfléchir par vous-même avant d'échanger avec les autres, sans pour autant vous isoler. Cet équilibre entre autonomie et ouverture est adapté au travail en équipage, où chacun doit pouvoir réfléchir et communiquer.",
+        "equilibre": "Vous passez naturellement de la réflexion individuelle à l'échange avec les autres selon les besoins de la situation. Cette flexibilité relationnelle est un atout dans le pilotage en équipage, qui suppose à la fois jugement personnel et coordination avec l'autre pilote.",
+        "Bmodere": "Vous aimez construire vos idées et vos décisions en échangeant avec les autres, ce qui favorise la communication en équipage. Veillez à conserver, dans les moments qui l'exigent, la capacité à trancher seul(e) et rapidement.",
+        "Bmarque": "Vous avez un fort besoin d'interaction et de coopération pour avancer, et l'échange avec les autres nourrit votre réflexion. C'est un atout réel pour le travail en équipage (CRM), à condition de savoir aussi assumer seul(e) une décision lorsque la situation l'impose."
+      }
+    },
+    {
+      "key": "jugement",
+      "name": "Style de Jugement",
+      "poleA": {
+        "label": "Analyse & Rigueur",
+        "description": "Tu bases tes décisions sur des faits vérifiables et un raisonnement structuré.",
+        "trait": "L'Analyste"
+      },
+      "poleB": {
+        "label": "Ressenti & Intuition",
+        "description": "Tu bases tes décisions sur ton ressenti et l’impact humain de la situation.",
+        "trait": "Le Coopérateur"
+      },
+      "report": {
+        "Amarque": "Vous fondez vos décisions sur des éléments factuels, vérifiables, et une analyse rigoureuse de la situation. Cette approche analytique est directement alignée avec la prise de décision technique attendue en pilotage (type FORDEC, gestion des pannes).",
+        "Amodere": "Vous privilégiez une analyse factuelle des situations, tout en restant sensible au ressenti et au facteur humain lorsque cela compte. Cet équilibre entre rigueur et sensibilité est bien adapté à la prise de décision en équipage.",
+        "equilibre": "Vous savez mobiliser aussi bien l'analyse factuelle que votre ressenti selon ce que la décision requiert. Cette double lecture des situations est un atout pour des décisions à la fois techniquement solides et humainement adaptées.",
+        "Bmodere": "Vous êtes attentif(ve) au ressenti, à l'ambiance et à l'impact humain des décisions, sans négliger les faits lorsqu'ils sont déterminants. Cette sensibilité relationnelle est utile en gestion d'équipage, à condition de rester rigoureux(se) sur les aspects strictement techniques.",
+        "Bmarque": "Votre jugement s'appuie fortement sur votre ressenti et sur la dimension humaine des situations. C'est une vraie qualité relationnelle, mais il sera important de démontrer votre capacité à mobiliser une analyse froide et factuelle dans les décisions techniques où l'intuition seule ne suffit pas."
+      }
+    },
+    {
+      "key": "orientation",
+      "name": "Orientation Pragmatisme / Vision",
+      "poleA": {
+        "label": "Pragmatisme & Réalisme",
+        "description": "Tu privilégies des solutions concrètes, réalistes et immédiatement applicables.",
+        "trait": "Le Décideur"
+      },
+      "poleB": {
+        "label": "Vision & Créativité",
+        "description": "Tu privilégies l’innovation, les idées nouvelles et les possibilités à explorer.",
+        "trait": "L'Initiateur"
+      },
+      "report": {
+        "Amarque": "Vous privilégiez des solutions concrètes, réalistes et immédiatement applicables, en vous appuyant sur ce qui est connu et éprouvé. Ce pragmatisme est un atout central dans un métier où la conformité aux procédures établies prime sur l'improvisation.",
+        "Amodere": "Vous avez une préférence pour le concret et l'applicable, tout en restant ouvert(e) à de nouvelles idées lorsque la situation s'y prête. Cet équilibre entre réalisme et ouverture est bien adapté à l'évolution du métier de pilote.",
+        "equilibre": "Vous savez aussi bien vous appuyer sur des solutions éprouvées qu'envisager de nouvelles pistes lorsque c'est pertinent. Cette souplesse intellectuelle est une ressource pour vous adapter aux évolutions techniques et réglementaires du métier.",
+        "Bmodere": "Vous aimez envisager de nouvelles possibilités et sortir des sentiers battus, tout en restant capable de vous conformer à un cadre établi. Cette ouverture d'esprit est positive, à condition de rester rigoureux(se) sur l'application stricte des procédures lorsqu'elle est requise.",
+        "Bmarque": "Vous êtes naturellement attiré(e) par l'innovation, les idées nouvelles et les solutions originales. C'est une réelle qualité intellectuelle, mais le métier de pilote impose aussi une discipline stricte d'application des procédures qu'il faudra savoir pleinement respecter."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "dimension": "exploration",
+      "left": {
+        "text": "J’aime comprendre en profondeur avant de me faire une opinion.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime découvrir rapidement différentes façons de voir une situation.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 2,
+      "dimension": "structure",
+      "left": {
+        "text": "Je prends plaisir à organiser les choses à l’avance.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je prends plaisir à voir comment les choses évoluent naturellement.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 3,
+      "dimension": "jugement",
+      "left": {
+        "text": "Je remarque facilement les petits détails autour de moi.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je remarque facilement l’ambiance générale d’une situation.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 4,
+      "dimension": "structure",
+      "left": {
+        "text": "J’aime avoir un objectif précis à atteindre.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime explorer plusieurs possibilités avant de choisir une direction.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 5,
+      "dimension": "relationnel",
+      "left": {
+        "text": "Je préfère prendre le temps de réfléchir avant de parler.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime réfléchir en échangeant avec les autres.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 6,
+      "dimension": "exploration",
+      "left": {
+        "text": "J’aime approfondir les sujets qui m’intéressent.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime découvrir régulièrement de nouveaux sujets.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 7,
+      "dimension": "structure",
+      "left": {
+        "text": "Je me sens bien lorsque mon environnement est organisé.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me sens bien lorsque mon environnement reste flexible.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 8,
+      "dimension": "structure",
+      "left": {
+        "text": "J’aime savoir précisément ce qui est attendu de moi.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime avoir suffisamment de liberté pour définir ma manière de faire.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 9,
+      "dimension": "relationnel",
+      "left": {
+        "text": "Je prends facilement le temps d’écouter quelqu’un jusqu’au bout.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime rapidement chercher avec quelqu’un une solution concrète.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 10,
+      "dimension": "exploration",
+      "left": {
+        "text": "Je trouve de la satisfaction à terminer ce que j’ai commencé.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je trouve de la satisfaction à commencer quelque chose de nouveau.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 11,
+      "dimension": "orientation",
+      "left": {
+        "text": "J’aime m’appuyer sur ce que je connais déjà.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime expérimenter une nouvelle manière de faire.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 12,
+      "dimension": "jugement",
+      "left": {
+        "text": "Je réfléchis naturellement aux conséquences d’une décision.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je réfléchis naturellement aux opportunités qu’une décision peut créer.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 13,
+      "dimension": "structure",
+      "left": {
+        "text": "J’aime préparer une activité avec suffisamment de détails.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime garder de la place pour l’imprévu.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 14,
+      "dimension": "jugement",
+      "left": {
+        "text": "Je suis attentif à la façon dont mes décisions peuvent être ressenties par les autres.",
+        "pole": "B"
+      },
+      "right": {
+        "text": "Je suis attentif à la cohérence et à l’efficacité de mes décisions.",
+        "pole": "A"
+      }
+    },
+    {
+      "id": 15,
+      "dimension": "relationnel",
+      "left": {
+        "text": "J’aime travailler tranquillement sur une tâche qui demande de la concentration.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime travailler dans un environnement où les échanges sont nombreux.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 16,
+      "dimension": "structure",
+      "left": {
+        "text": "Je préfère progresser étape par étape.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère avancer rapidement quitte à ajuster ensuite.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 17,
+      "dimension": "orientation",
+      "left": {
+        "text": "J’aime avoir une méthode pour résoudre un problème.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime chercher une solution originale à chaque problème.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 18,
+      "dimension": "jugement",
+      "left": {
+        "text": "Je prends facilement le temps de vérifier mon travail.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère consacrer mon énergie à avancer vers la suite.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 19,
+      "dimension": "exploration",
+      "left": {
+        "text": "Je me sens stimulé lorsque je peux maîtriser un sujet.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me sens stimulé lorsque je peux explorer un domaine inconnu.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 20,
+      "dimension": "relationnel",
+      "left": {
+        "text": "J’aime transmettre ce que j’ai appris.",
+        "pole": "B"
+      },
+      "right": {
+        "text": "J’aime apprendre des autres.",
+        "pole": "A"
+      }
+    },
+    {
+      "id": 21,
+      "dimension": "relationnel",
+      "left": {
+        "text": "Je préfère avoir quelques relations très profondes.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime multiplier les occasions de rencontrer de nouvelles personnes.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 22,
+      "dimension": "jugement",
+      "left": {
+        "text": "Je remarque facilement lorsqu’une personne ne va pas très bien.",
+        "pole": "B"
+      },
+      "right": {
+        "text": "Je remarque facilement lorsqu’une situation pourrait être améliorée.",
+        "pole": "A"
+      }
+    },
+    {
+      "id": 23,
+      "dimension": "relationnel",
+      "left": {
+        "text": "J’aime prendre le temps de construire une idée.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime confronter rapidement une idée aux réactions des autres.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 24,
+      "dimension": "structure",
+      "left": {
+        "text": "Je préfère terminer une tâche avant d’en commencer une autre.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime passer d’une tâche à l’autre selon les priorités du moment.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 25,
+      "dimension": "structure",
+      "left": {
+        "text": "Je me sens rassuré lorsque les règles sont clairement définies.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me sens stimulé lorsque je peux interpréter librement une situation.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 26,
+      "dimension": "jugement",
+      "left": {
+        "text": "J’aime anticiper les difficultés possibles.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime réfléchir aux possibilités intéressantes qui pourraient apparaître.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 27,
+      "dimension": "orientation",
+      "left": {
+        "text": "Je prends plaisir à améliorer quelque chose qui existe déjà.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je prends plaisir à imaginer quelque chose qui n’existe pas encore.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 28,
+      "dimension": "orientation",
+      "left": {
+        "text": "Je préfère travailler avec des informations concrètes.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère travailler avec des concepts et des idées.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 29,
+      "dimension": "relationnel",
+      "left": {
+        "text": "Je trouve facilement ma place dans un groupe déjà constitué.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime contribuer à créer la dynamique d’un groupe.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 30,
+      "dimension": "structure",
+      "left": {
+        "text": "J’aime savoir où je vais avant de commencer.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime découvrir ma direction en avançant.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 31,
+      "dimension": "jugement",
+      "left": {
+        "text": "Je prends mes décisions en m’appuyant sur des éléments que je peux vérifier.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je prends mes décisions en tenant compte de mon ressenti général.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 32,
+      "dimension": "relationnel",
+      "left": {
+        "text": "Je préfère exprimer clairement ce que je pense.",
+        "pole": "B"
+      },
+      "right": {
+        "text": "Je préfère choisir le bon moment pour exprimer ce que je pense.",
+        "pole": "A"
+      }
+    },
+    {
+      "id": 33,
+      "dimension": "exploration",
+      "left": {
+        "text": "J’aime me fixer des défis personnels.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime profiter pleinement de ce que je suis en train de vivre.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 34,
+      "dimension": "structure",
+      "left": {
+        "text": "Je suis naturellement attiré par les projets qui ont une structure claire.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je suis naturellement attiré par les projets qui laissent beaucoup de liberté.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 35,
+      "dimension": "exploration",
+      "left": {
+        "text": "J’aime savoir exactement où j’en suis dans un projet.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime voir un projet prendre forme progressivement.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 36,
+      "dimension": "relationnel",
+      "left": {
+        "text": "Je préfère résoudre seul un problème avant de demander de l’aide.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime réfléchir avec quelqu’un pour trouver une solution.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 37,
+      "dimension": "exploration",
+      "left": {
+        "text": "Je me sens stimulé par la régularité.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me sens stimulé par la nouveauté.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 38,
+      "dimension": "orientation",
+      "left": {
+        "text": "Je prends naturellement en compte les expériences passées.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je prends naturellement en compte ce qui pourrait changer à l’avenir.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 39,
+      "dimension": "orientation",
+      "left": {
+        "text": "J’aime rendre les choses simples et efficaces.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime enrichir les choses avec de nouvelles possibilités.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 40,
+      "dimension": "relationnel",
+      "left": {
+        "text": "Je préfère approfondir une relation déjà existante.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère créer de nouvelles relations.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 41,
+      "dimension": "jugement",
+      "left": {
+        "text": "J’aime réfléchir avant de prendre une initiative.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime prendre une initiative pour voir ce qu’elle va provoquer.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 42,
+      "dimension": "orientation",
+      "left": {
+        "text": "Je suis satisfait lorsque mon travail est précis.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je suis satisfait lorsque mon travail apporte quelque chose de nouveau.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 43,
+      "dimension": "exploration",
+      "left": {
+        "text": "J’aime disposer d’un cadre qui m’aide à avancer.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime pouvoir modifier le cadre lorsque cela me semble nécessaire.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 44,
+      "dimension": "orientation",
+      "left": {
+        "text": "Je préfère rechercher une solution réaliste et immédiatement applicable.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère rechercher une solution qui ouvre de nouvelles possibilités.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 45,
+      "dimension": "jugement",
+      "left": {
+        "text": "J’aime prendre le temps de comprendre les motivations d’une personne.",
+        "pole": "B"
+      },
+      "right": {
+        "text": "J’aime observer ce que cette personne fait concrètement.",
+        "pole": "A"
+      }
+    },
+    {
+      "id": 46,
+      "dimension": "exploration",
+      "left": {
+        "text": "Je me sens à l’aise lorsque je peux anticiper les prochaines étapes.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me sens à l’aise lorsque je peux m’adapter aux prochaines étapes.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 47,
+      "dimension": "jugement",
+      "left": {
+        "text": "J’aime être reconnu pour la qualité de mon travail.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime sentir que mon travail a une utilité pour les autres.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 48,
+      "dimension": "orientation",
+      "left": {
+        "text": "Je préfère avoir quelques priorités clairement identifiées.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J’aime pouvoir saisir les opportunités qui apparaissent au fil de la journée.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 49,
+      "dimension": "orientation",
+      "left": {
+        "text": "Je prends plaisir à construire quelque chose sur le long terme.",
+        "pole": "B"
+      },
+      "right": {
+        "text": "Je prends plaisir à obtenir rapidement des résultats visibles.",
+        "pole": "A"
+      }
+    },
+    {
+      "id": 50,
+      "dimension": "exploration",
+      "left": {
+        "text": "Je préfère prendre le temps de trouver ce qui me correspond vraiment.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère essayer différentes choses pour découvrir ce qui me correspond.",
+        "pole": "B"
+      }
+    }
+  ]
+}
