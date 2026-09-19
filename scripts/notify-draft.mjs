@@ -27,6 +27,11 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: { user, pass },
+  // Fail fast instead of hanging forever — this runs unattended, nobody is
+  // around to notice or interrupt a stuck connection at 7am.
+  connectionTimeout: 15_000,
+  greetingTimeout: 15_000,
+  socketTimeout: 15_000,
 });
 
 await transporter.sendMail({
