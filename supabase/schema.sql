@@ -263,3 +263,31 @@ create index if not exists page_views_viewed_at_idx on public.page_views (viewed
 
 alter table public.page_views enable row level security;
 -- No policies: only the service-role key can read or write this table.
+
+-- ---------------------------------------------------------------------------
+-- Articles: SEO blog content. Drafted by the seo-daily-article scheduled
+-- task (status='draft', see scripts/add-draft-article.mjs), reviewed via
+-- /blog/preview/[id]?token=..., and published by a human clicking "Publier"
+-- (src/app/actions/articles.ts) — never auto-published. Public pages
+-- (/blog, /blog/[slug]) always read via the service-role client, filtered
+-- to status='published' in the query itself (no public RLS policy exists).
+-- ---------------------------------------------------------------------------
+create table if not exists public.articles (
+  id uuid primary key default gen_random_uuid(),
+  slug text not null unique,
+  category text not null,
+  title text not null,
+  meta_description text not null,
+  intro text not null,
+  sections jsonb not null,
+  related_slugs text[] not null default '{}',
+  status text not null default 'draft' check (status in ('draft', 'published')),
+  publish_token text not null,
+  created_at timestamptz not null default now(),
+  published_at timestamptz
+);
+
+create index if not exists articles_status_idx on public.articles (status);
+
+alter table public.articles enable row level security;
+-- No policies: only the service-role key can read or write this table.
