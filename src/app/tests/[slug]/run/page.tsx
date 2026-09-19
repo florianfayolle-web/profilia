@@ -30,6 +30,13 @@ export default async function RunTestPage(
     test.included_in_subscription
   );
 
+  // A fully free test never needs an account: no logged-in visitor gets a
+  // lightweight email gate before the result instead, and the intro screen
+  // is skipped entirely to keep the funnel as short as possible.
+  const isFreeTest = test.price_cents === 0;
+  const { data: userData } = await supabase.auth.getUser();
+  const needsEmailGate = isFreeTest && !userData.user;
+
   if (test.format !== "single_choice") {
     // Without full access, test_content is blocked by RLS (it's the paid
     // content) — read it with the admin client instead, and only ever send
@@ -76,6 +83,8 @@ export default async function RunTestPage(
             definition={definition}
             language={test.language}
             hasAccess={access.hasAccess}
+            needsEmailGate={needsEmailGate}
+            autoStart={isFreeTest}
           />
         </div>
       </div>

@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "personality-tests-site",
+      "name": "profilia",
       "runtimeExecutable": "/Users/florianfayolle/.local/node/bin/npm",
       "runtimeArgs": ["run", "dev"],
       "port": 3000

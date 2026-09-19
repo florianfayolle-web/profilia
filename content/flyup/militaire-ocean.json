@@ -3,27 +3,92 @@
   "title": "Profil Militaire — Big Five (OCEAN)",
   "instructions": "Réponds à chaque affirmation avec le plus de spontanéité possible, sur une échelle de « Pas du tout d'accord » à « Tout à fait d'accord ».",
   "scale": [
-    { "label": "Tout à fait d'accord", "value": 5 },
-    { "label": "Plutôt d'accord", "value": 4 },
-    { "label": "Neutre", "value": 3 },
-    { "label": "Plutôt pas d'accord", "value": 2 },
-    { "label": "Pas du tout d'accord", "value": 1 }
+    {
+      "label": "Tout à fait d'accord",
+      "value": 5
+    },
+    {
+      "label": "Plutôt d'accord",
+      "value": 4
+    },
+    {
+      "label": "Neutre",
+      "value": 3
+    },
+    {
+      "label": "Plutôt pas d'accord",
+      "value": 2
+    },
+    {
+      "label": "Pas du tout d'accord",
+      "value": 1
+    }
   ],
   "dimensions": [
-    { "key": "dim_1", "name": "Ouverture d'esprit", "questionRange": [1, 10] },
-    { "key": "dim_2", "name": "Rigueur & Organisation", "questionRange": [11, 20] },
-    { "key": "dim_3", "name": "Extraversion & Aisance sociale", "questionRange": [21, 30] },
-    { "key": "dim_4", "name": "Coopération & Esprit d'équipe", "questionRange": [31, 40] },
-    { "key": "dim_5", "name": "Stabilité émotionnelle", "questionRange": [41, 50] }
+    {
+      "key": "dim_1",
+      "name": "Ouverture d'esprit",
+      "questionRange": [
+        1,
+        10
+      ]
+    },
+    {
+      "key": "dim_2",
+      "name": "Rigueur & Organisation",
+      "questionRange": [
+        11,
+        20
+      ]
+    },
+    {
+      "key": "dim_3",
+      "name": "Extraversion & Aisance sociale",
+      "questionRange": [
+        21,
+        30
+      ]
+    },
+    {
+      "key": "dim_4",
+      "name": "Coopération & Esprit d'équipe",
+      "questionRange": [
+        31,
+        40
+      ]
+    },
+    {
+      "key": "dim_5",
+      "name": "Stabilité émotionnelle",
+      "questionRange": [
+        41,
+        50
+      ]
+    }
   ],
   "levels": [
-    { "maxPercent": 0.4, "label": "Axe de développement prioritaire" },
-    { "maxPercent": 0.6, "label": "Compétence en construction" },
-    { "maxPercent": 0.8, "label": "Compétence solide" },
-    { "maxPercent": 1.01, "label": "Point fort marqué" }
+    {
+      "maxPercent": 0.4,
+      "label": "Axe de développement prioritaire"
+    },
+    {
+      "maxPercent": 0.6,
+      "label": "Compétence en construction"
+    },
+    {
+      "maxPercent": 0.8,
+      "label": "Compétence solide"
+    },
+    {
+      "maxPercent": 1.01,
+      "label": "Point fort marqué"
+    }
   ],
   "report": {
-    "bandThresholds": { "lowBelow": 0.4, "midUpTo": 0.65 },
+    "bandThresholds": {
+      "lowBelow": 0.4,
+      "midUpTo": 0.65
+    },
     "dimensions": {
       "dim_1": {
         "bands": {
@@ -78,60 +143,406 @@
     }
   },
   "items": [
-    { "id": 1, "dimension": "dim_1", "text": "J'aime apprendre de nouvelles méthodes même quand celles que je connais fonctionnent déjà bien." },
-    { "id": 2, "dimension": "dim_1", "text": "Je m'adapte facilement à un changement de plan de dernière minute." },
-    { "id": 3, "dimension": "dim_1", "text": "Je suis curieux(se) de comprendre le fonctionnement technique des systèmes que j'utilise." },
-    { "id": 4, "dimension": "dim_1", "text": "J'apprécie d'explorer des façons différentes de résoudre un même problème." },
-    { "id": 5, "dimension": "dim_1", "text": "Je me sens à l'aise pour remettre en question une procédure si elle ne me semble plus pertinente." },
-    { "id": 6, "dimension": "dim_1", "text": "J'aime découvrir des environnements ou des contextes que je ne connais pas encore." },
-    { "id": 7, "dimension": "dim_1", "text": "Je m'intéresse à des sujets variés, même hors de mon domaine principal." },
-    { "id": 8, "dimension": "dim_1", "text": "Je suis ouvert(e) aux retours qui remettent en cause ma façon de faire." },
-    { "id": 9, "dimension": "dim_1", "text": "J'aime imaginer plusieurs solutions avant de choisir la plus efficace." },
-    { "id": 10, "dimension": "dim_1", "text": "Je m'ennuie vite dans une routine qui ne change jamais." },
-
-    { "id": 11, "dimension": "dim_2", "text": "Je prépare systématiquement mes tâches importantes à l'avance." },
-    { "id": 12, "dimension": "dim_2", "text": "Je vérifie deux fois mon travail avant de le considérer terminé." },
-    { "id": 13, "dimension": "dim_2", "text": "Je respecte les délais que je me fixe, même sous pression." },
-    { "id": 14, "dimension": "dim_2", "text": "J'accorde une grande importance au respect strict des procédures." },
-    { "id": 15, "dimension": "dim_2", "text": "Je garde mon espace de travail organisé et structuré." },
-    { "id": 16, "dimension": "dim_2", "text": "Je termine ce que j'ai commencé, même quand la motivation baisse." },
-    { "id": 17, "dimension": "dim_2", "text": "Je planifie mes priorités avant de me lancer dans une tâche complexe." },
-    { "id": 18, "dimension": "dim_2", "text": "Je suis rarement pris(e) au dépourvu car j'anticipe les imprévus." },
-    { "id": 19, "dimension": "dim_2", "text": "Je fais preuve de constance dans la qualité de mon travail au fil du temps." },
-    { "id": 20, "dimension": "dim_2", "text": "Je considère qu'un détail négligé peut avoir des conséquences importantes." },
-
-    { "id": 21, "dimension": "dim_3", "text": "Je me sens à l'aise pour prendre la parole devant un groupe." },
-    { "id": 22, "dimension": "dim_3", "text": "Je préfère travailler en équipe plutôt que seul(e)." },
-    { "id": 23, "dimension": "dim_3", "text": "J'engage facilement la conversation avec des personnes que je ne connais pas." },
-    { "id": 24, "dimension": "dim_3", "text": "Je tire de l'énergie des interactions sociales plutôt que de m'en fatiguer." },
-    { "id": 25, "dimension": "dim_3", "text": "Je n'hésite pas à exprimer mon avis même dans un groupe nombreux." },
-    { "id": 26, "dimension": "dim_3", "text": "Je me sens naturellement à l'aise dans un rôle qui demande de la communication." },
-    { "id": 27, "dimension": "dim_3", "text": "J'aime être au centre de l'action plutôt qu'en retrait." },
-    { "id": 28, "dimension": "dim_3", "text": "Je m'exprime avec assurance, même sous le regard des autres." },
-    { "id": 29, "dimension": "dim_3", "text": "Je recherche activement le contact avec les autres au quotidien." },
-    { "id": 30, "dimension": "dim_3", "text": "Je m'adapte rapidement à un nouveau groupe de personnes." },
-
-    { "id": 31, "dimension": "dim_4", "text": "Je fais facilement confiance aux membres de mon équipe." },
-    { "id": 32, "dimension": "dim_4", "text": "Je privilégie l'intérêt du groupe même quand cela demande un compromis personnel." },
-    { "id": 33, "dimension": "dim_4", "text": "Je reste courtois(e) et posé(e), même en cas de désaccord." },
-    { "id": 34, "dimension": "dim_4", "text": "J'accepte volontiers de l'aide et j'en propose aussi facilement." },
-    { "id": 35, "dimension": "dim_4", "text": "Je cherche à comprendre le point de vue de l'autre avant de juger." },
-    { "id": 36, "dimension": "dim_4", "text": "Je gère les conflits en cherchant une solution plutôt qu'un rapport de force." },
-    { "id": 37, "dimension": "dim_4", "text": "J'accorde de l'importance au bien-être des personnes qui m'entourent." },
-    { "id": 38, "dimension": "dim_4", "text": "Je reconnais volontiers mes erreurs devant les autres." },
-    { "id": 39, "dimension": "dim_4", "text": "Je m'efforce de créer un climat de confiance dans un groupe." },
-    { "id": 40, "dimension": "dim_4", "text": "Je mets facilement mon ego de côté pour le succès collectif." },
-
-    { "id": 41, "dimension": "dim_5", "text": "Je garde mon calme face à une situation inattendue et stressante." },
-    { "id": 42, "dimension": "dim_5", "text": "Je ne me laisse pas déstabiliser par une critique inattendue." },
-    { "id": 43, "dimension": "dim_5", "text": "Je récupère rapidement après un échec ou une contrariété." },
-    { "id": 44, "dimension": "dim_5", "text": "Je reste concentré(e) même sous une forte pression de temps." },
-    { "id": 45, "dimension": "dim_5", "text": "Mes émotions ne prennent pas le dessus sur mon jugement dans l'urgence." },
-    { "id": 46, "dimension": "dim_5", "text": "Je dors bien même la veille d'un événement important." },
-    { "id": 47, "dimension": "dim_5", "text": "Je relativise facilement les petits contretemps du quotidien." },
-    { "id": 48, "dimension": "dim_5", "text": "Je garde une vision claire de la situation même quand tout va vite." },
-    { "id": 49, "dimension": "dim_5", "text": "Je ne rumine pas longtemps après une erreur." },
-    { "id": 50, "dimension": "dim_5", "text": "J'aborde les imprévus avec sang-froid plutôt qu'avec anxiété." }
+    {
+      "id": 59,
+      "dimension": "dim_2",
+      "text": "Je reste rigoureux(se) dans mon travail même quand personne ne vérifie."
+    },
+    {
+      "id": 55,
+      "dimension": "dim_1",
+      "text": "Je change facilement de méthode si une meilleure option se présente en cours de route."
+    },
+    {
+      "id": 67,
+      "dimension": "dim_3",
+      "text": "Je suis à l'aise pour animer un échange ou une discussion de groupe."
+    },
+    {
+      "id": 23,
+      "dimension": "dim_3",
+      "text": "J'engage facilement la conversation avec des personnes que je ne connais pas."
+    },
+    {
+      "id": 1,
+      "dimension": "dim_1",
+      "text": "J'aime apprendre de nouvelles méthodes même quand celles que je connais fonctionnent déjà bien."
+    },
+    {
+      "id": 4,
+      "dimension": "dim_1",
+      "text": "J'apprécie d'explorer des façons différentes de résoudre un même problème."
+    },
+    {
+      "id": 34,
+      "dimension": "dim_4",
+      "text": "J'accepte volontiers de l'aide et j'en propose aussi facilement."
+    },
+    {
+      "id": 51,
+      "dimension": "dim_1",
+      "text": "J'aime tester une approche inhabituelle plutôt que de me limiter à ce qui a toujours fonctionné."
+    },
+    {
+      "id": 54,
+      "dimension": "dim_1",
+      "text": "J'apprends autant de mes erreurs que de mes réussites."
+    },
+    {
+      "id": 35,
+      "dimension": "dim_4",
+      "text": "Je cherche à comprendre le point de vue de l'autre avant de juger."
+    },
+    {
+      "id": 29,
+      "dimension": "dim_3",
+      "text": "Je recherche activement le contact avec les autres au quotidien."
+    },
+    {
+      "id": 32,
+      "dimension": "dim_4",
+      "text": "Je privilégie l'intérêt du groupe même quand cela demande un compromis personnel."
+    },
+    {
+      "id": 76,
+      "dimension": "dim_5",
+      "text": "Je prends le temps de respirer avant de réagir à une situation difficile."
+    },
+    {
+      "id": 72,
+      "dimension": "dim_4",
+      "text": "Je fais preuve de patience avec quelqu'un qui a besoin de plus de temps pour progresser."
+    },
+    {
+      "id": 5,
+      "dimension": "dim_1",
+      "text": "Je me sens à l'aise pour remettre en question une procédure si elle ne me semble plus pertinente."
+    },
+    {
+      "id": 71,
+      "dimension": "dim_4",
+      "text": "J'adapte ma façon de communiquer selon la personne que j'ai en face de moi."
+    },
+    {
+      "id": 31,
+      "dimension": "dim_4",
+      "text": "Je fais facilement confiance aux membres de mon équipe."
+    },
+    {
+      "id": 46,
+      "dimension": "dim_5",
+      "text": "Je dors bien même la veille d'un événement important."
+    },
+    {
+      "id": 9,
+      "dimension": "dim_1",
+      "text": "J'aime imaginer plusieurs solutions avant de choisir la plus efficace."
+    },
+    {
+      "id": 13,
+      "dimension": "dim_2",
+      "text": "Je respecte les délais que je me fixe, même sous pression."
+    },
+    {
+      "id": 50,
+      "dimension": "dim_5",
+      "text": "J'aborde les imprévus avec sang-froid plutôt qu'avec anxiété."
+    },
+    {
+      "id": 74,
+      "dimension": "dim_4",
+      "text": "Je privilégie un consensus solide plutôt qu'imposer rapidement mon point de vue."
+    },
+    {
+      "id": 28,
+      "dimension": "dim_3",
+      "text": "Je m'exprime avec assurance, même sous le regard des autres."
+    },
+    {
+      "id": 49,
+      "dimension": "dim_5",
+      "text": "Je ne rumine pas longtemps après une erreur."
+    },
+    {
+      "id": 79,
+      "dimension": "dim_5",
+      "text": "Je reste patient(e) même face à une contrariété qui se répète."
+    },
+    {
+      "id": 56,
+      "dimension": "dim_1",
+      "text": "J'aime comprendre le pourquoi des choses plutôt que simplement appliquer une consigne."
+    },
+    {
+      "id": 30,
+      "dimension": "dim_3",
+      "text": "Je m'adapte rapidement à un nouveau groupe de personnes."
+    },
+    {
+      "id": 19,
+      "dimension": "dim_2",
+      "text": "Je fais preuve de constance dans la qualité de mon travail au fil du temps."
+    },
+    {
+      "id": 18,
+      "dimension": "dim_2",
+      "text": "Je suis rarement pris(e) au dépourvu car j'anticipe les imprévus."
+    },
+    {
+      "id": 66,
+      "dimension": "dim_3",
+      "text": "Je me sens stimulé(e), plutôt qu'épuisé(e), après une journée avec beaucoup de contacts humains."
+    },
+    {
+      "id": 6,
+      "dimension": "dim_1",
+      "text": "J'aime découvrir des environnements ou des contextes que je ne connais pas encore."
+    },
+    {
+      "id": 3,
+      "dimension": "dim_1",
+      "text": "Je suis curieux(se) de comprendre le fonctionnement technique des systèmes que j'utilise."
+    },
+    {
+      "id": 57,
+      "dimension": "dim_2",
+      "text": "Je suis quelqu'un de ponctuel, même pour des engagements informels."
+    },
+    {
+      "id": 22,
+      "dimension": "dim_3",
+      "text": "Je préfère travailler en équipe plutôt que seul(e)."
+    },
+    {
+      "id": 36,
+      "dimension": "dim_4",
+      "text": "Je gère les conflits en cherchant une solution plutôt qu'un rapport de force."
+    },
+    {
+      "id": 11,
+      "dimension": "dim_2",
+      "text": "Je prépare systématiquement mes tâches importantes à l'avance."
+    },
+    {
+      "id": 58,
+      "dimension": "dim_2",
+      "text": "Je suis une liste ou une checklist plutôt que de me fier uniquement à ma mémoire."
+    },
+    {
+      "id": 70,
+      "dimension": "dim_4",
+      "text": "Je propose mon aide à un collègue en difficulté avant même qu'il/elle ne la demande."
+    },
+    {
+      "id": 10,
+      "dimension": "dim_1",
+      "text": "Je m'ennuie vite dans une routine qui ne change jamais."
+    },
+    {
+      "id": 24,
+      "dimension": "dim_3",
+      "text": "Je tire de l'énergie des interactions sociales plutôt que de m'en fatiguer."
+    },
+    {
+      "id": 38,
+      "dimension": "dim_4",
+      "text": "Je reconnais volontiers mes erreurs devant les autres."
+    },
+    {
+      "id": 77,
+      "dimension": "dim_5",
+      "text": "Je supporte bien la fatigue sans que cela affecte mon jugement."
+    },
+    {
+      "id": 33,
+      "dimension": "dim_4",
+      "text": "Je reste courtois(e) et posé(e), même en cas de désaccord."
+    },
+    {
+      "id": 65,
+      "dimension": "dim_3",
+      "text": "Je vais facilement vers quelqu'un pour engager une collaboration."
+    },
+    {
+      "id": 26,
+      "dimension": "dim_3",
+      "text": "Je me sens naturellement à l'aise dans un rôle qui demande de la communication."
+    },
+    {
+      "id": 43,
+      "dimension": "dim_5",
+      "text": "Je récupère rapidement après un échec ou une contrariété."
+    },
+    {
+      "id": 60,
+      "dimension": "dim_2",
+      "text": "Je sais organiser plusieurs tâches en même temps sans perdre le fil."
+    },
+    {
+      "id": 17,
+      "dimension": "dim_2",
+      "text": "Je planifie mes priorités avant de me lancer dans une tâche complexe."
+    },
+    {
+      "id": 41,
+      "dimension": "dim_5",
+      "text": "Je garde mon calme face à une situation inattendue et stressante."
+    },
+    {
+      "id": 39,
+      "dimension": "dim_4",
+      "text": "Je m'efforce de créer un climat de confiance dans un groupe."
+    },
+    {
+      "id": 45,
+      "dimension": "dim_5",
+      "text": "Mes émotions ne prennent pas le dessus sur mon jugement dans l'urgence."
+    },
+    {
+      "id": 12,
+      "dimension": "dim_2",
+      "text": "Je vérifie deux fois mon travail avant de le considérer terminé."
+    },
+    {
+      "id": 63,
+      "dimension": "dim_3",
+      "text": "Je me sens à l'aise dans un événement où je ne connais presque personne."
+    },
+    {
+      "id": 25,
+      "dimension": "dim_3",
+      "text": "Je n'hésite pas à exprimer mon avis même dans un groupe nombreux."
+    },
+    {
+      "id": 40,
+      "dimension": "dim_4",
+      "text": "Je mets facilement mon ego de côté pour le succès collectif."
+    },
+    {
+      "id": 16,
+      "dimension": "dim_2",
+      "text": "Je termine ce que j'ai commencé, même quand la motivation baisse."
+    },
+    {
+      "id": 21,
+      "dimension": "dim_3",
+      "text": "Je me sens à l'aise pour prendre la parole devant un groupe."
+    },
+    {
+      "id": 80,
+      "dimension": "dim_5",
+      "text": "Je fonctionne bien même lorsque plusieurs exigences contradictoires se présentent en même temps."
+    },
+    {
+      "id": 27,
+      "dimension": "dim_3",
+      "text": "J'aime être au centre de l'action plutôt qu'en retrait."
+    },
+    {
+      "id": 62,
+      "dimension": "dim_2",
+      "text": "Je documente mon travail de façon claire pour qu'un autre puisse le reprendre facilement."
+    },
+    {
+      "id": 73,
+      "dimension": "dim_4",
+      "text": "Je peux contribuer à un résultat collectif sans chercher à être reconnu(e) personnellement."
+    },
+    {
+      "id": 8,
+      "dimension": "dim_1",
+      "text": "Je suis ouvert(e) aux retours qui remettent en cause ma façon de faire."
+    },
+    {
+      "id": 42,
+      "dimension": "dim_5",
+      "text": "Je ne me laisse pas déstabiliser par une critique inattendue."
+    },
+    {
+      "id": 69,
+      "dimension": "dim_4",
+      "text": "Je partage volontiers le mérite d'une réussite avec les personnes qui y ont contribué."
+    },
+    {
+      "id": 44,
+      "dimension": "dim_5",
+      "text": "Je reste concentré(e) même sous une forte pression de temps."
+    },
+    {
+      "id": 78,
+      "dimension": "dim_5",
+      "text": "Je garde mon sang-froid en apprenant une mauvaise nouvelle inattendue."
+    },
+    {
+      "id": 64,
+      "dimension": "dim_3",
+      "text": "J'aime raconter une expérience de façon vivante devant plusieurs personnes."
+    },
+    {
+      "id": 7,
+      "dimension": "dim_1",
+      "text": "Je m'intéresse à des sujets variés, même hors de mon domaine principal."
+    },
+    {
+      "id": 20,
+      "dimension": "dim_2",
+      "text": "Je considère qu'un détail négligé peut avoir des conséquences importantes."
+    },
+    {
+      "id": 37,
+      "dimension": "dim_4",
+      "text": "J'accorde de l'importance au bien-être des personnes qui m'entourent."
+    },
+    {
+      "id": 15,
+      "dimension": "dim_2",
+      "text": "Je garde mon espace de travail organisé et structuré."
+    },
+    {
+      "id": 47,
+      "dimension": "dim_5",
+      "text": "Je relativise facilement les petits contretemps du quotidien."
+    },
+    {
+      "id": 52,
+      "dimension": "dim_1",
+      "text": "Je suis à l'aise avec une situation qui n'a pas de réponse évidente ou immédiate."
+    },
+    {
+      "id": 68,
+      "dimension": "dim_3",
+      "text": "Je n'ai pas besoin de connaître quelqu'un depuis longtemps pour me sentir à l'aise avec lui/elle."
+    },
+    {
+      "id": 61,
+      "dimension": "dim_2",
+      "text": "Je tiens mes engagements, même les petits, sans qu'on ait besoin de me le rappeler."
+    },
+    {
+      "id": 2,
+      "dimension": "dim_1",
+      "text": "Je m'adapte facilement à un changement de plan de dernière minute."
+    },
+    {
+      "id": 14,
+      "dimension": "dim_2",
+      "text": "J'accorde une grande importance au respect strict des procédures."
+    },
+    {
+      "id": 75,
+      "dimension": "dim_5",
+      "text": "Je reste stable même quand plusieurs personnes autour de moi paniquent."
+    },
+    {
+      "id": 53,
+      "dimension": "dim_1",
+      "text": "Je m'intéresse volontiers aux façons de penser différentes des miennes."
+    },
+    {
+      "id": 48,
+      "dimension": "dim_5",
+      "text": "Je garde une vision claire de la situation même quand tout va vite."
+    }
   ],
   "profiles": []
 }

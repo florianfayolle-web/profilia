@@ -5,6 +5,8 @@ import { createClient } from "@/lib/supabase/server";
 import { createBillingPortalSession } from "@/app/actions/checkout";
 import { formatPrice, type Purchase, type Subscription, type Test } from "@/lib/types";
 import { PaymentPendingNotice } from "@/components/payment-pending";
+import { AccountSettings } from "./account-settings";
+import { GENDER_OPTIONS } from "@/lib/definitions";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: false },
@@ -32,7 +34,7 @@ export default async function AccountPage(props: PageProps<"/account">) {
     redirect("/login?next=/account");
   }
 
-  const [{ data: subscription }, { data: purchases }, { data: attempts }] =
+  const [{ data: subscription }, { data: purchases }, { data: attempts }, { data: profile }] =
     await Promise.all([
       supabase
         .from("subscriptions")
@@ -52,12 +54,33 @@ export default async function AccountPage(props: PageProps<"/account">) {
         .eq("user_id", user.id)
         .order("completed_at", { ascending: false })
         .returns<AttemptWithTest[]>(),
+      supabase
+        .from("profiles")
+        .select("first_name, last_name, gender, birth_date")
+        .eq("id", user.id)
+        .maybeSingle<{
+          first_name: string | null;
+          last_name: string | null;
+          gender: string | null;
+          birth_date: string | null;
+        }>(),
     ]);
+
+  const genderLabel = GENDER_OPTIONS.find((g) => g.value === profile?.gender)?.label;
 
   return (
     <div className="mx-auto max-w-2xl px-6 py-16">
       <h1 className="text-3xl font-semibold tracking-tight">Mon compte</h1>
       <p className="mt-1 text-muted">{user.email}</p>
+      {(profile?.first_name || profile?.last_name) && (
+        <p className="mt-1 text-sm text-muted-foreground">
+          {[profile.first_name, profile.last_name].filter(Boolean).join(" ")}
+          {genderLabel ? ` · ${genderLabel}` : ""}
+          {profile.birth_date
+            ? ` · ${new Date(profile.birth_date).toLocaleDateString("fr-FR")}`
+            : ""}
+        </p>
+      )}
 
       <section className="mt-10">
         <h2 className="text-lg font-medium">Abonnement</h2>
@@ -151,6 +174,8 @@ export default async function AccountPage(props: PageProps<"/account">) {
           </p>
         )}
       </section>
+
+      <AccountSettings />
     </div>
   );
 }

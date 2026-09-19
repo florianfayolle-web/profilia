@@ -3,21 +3,31 @@
 // `lookupKey` ties a test to its Stripe Price via Price.lookup_key, so the
 // two scripts can run independently, in any order, and still find each
 // other's output on a later run.
+//
+// An entry with `priceCents: 0` is a fully free test: setup-stripe.mjs
+// skips it (no Price to create) and import-assessments.mjs stores it with
+// price_cents 0 and no stripe_price_id — getTestAccess() already treats
+// price_cents === 0 as unconditional access, same as the free preview logic.
 
 export const DEFAULT_PRICE_CENTS = 499;
 export const SUBSCRIPTION_PRICE_CENTS = 999;
 export const SUBSCRIPTION_LOOKUP_KEY = "sub_unlimited_monthly";
 
+// Micro-payment to unblur the free test's result — not tied to any one
+// test row, so it isn't in ENTRIES below.
+export const UNLOCK_RESULT_PRICE_CENTS = 99;
+export const UNLOCK_RESULT_LOOKUP_KEY = "unlock_guest_result";
+
 export const ENTRIES = [
   {
     file: "sosie2-fr.json",
     slug: "sosie2-fr",
-    format: "forced_choice_pair",
+    format: "sosie_v2",
     language: "fr",
     lookupKey: "test_sosie2_fr_onetime",
     title: "Test de personnalité \"Profil Pilote\" (inspiré du SOSIE 2)",
     description:
-      "Test de personnalité \"Profil Pilote\" en 100 questions à choix forcé, inspiré du format SOSIE 2. Rapport détaillé sur 10 dimensions. Conçu par des psychologues spécialisés en recrutement.",
+      "Inventaire de personnalité et de valeurs \"Profil Pilote\", inspiré de la logique de construction du SOSIE 2nd Generation (choix forcé ipsatif). 85 groupes de propositions (34 tétrades et 51 triades), 20 dimensions reprenant les intitulés publiés par l'éditeur : 8 traits de personnalité et 12 valeurs personnelles et interpersonnelles. Rapport détaillé avec profil de compétences et indice de fiabilité. Conçu par des psychologues spécialisés en recrutement.",
   },
   {
     file: "sosie2-en.json",
@@ -122,6 +132,69 @@ export const ENTRIES = [
     lookupKey: "test_typecognitif16_onetime",
     title: "Test de personnalité en 16 profils cognitifs (type MBTI)",
     description:
-      "Test de personnalité en 32 affirmations, sur 4 grandes préférences de fonctionnement (énergie, perception, décision, organisation), pour identifier lequel des 16 profils cognitifs te correspond. Conçu par des psychologues spécialisés en recrutement. Inspiré des typologies de personnalité à 16 profils (proches du modèle Myers-Briggs / MBTI), sans affiliation ni reproduction d'un test officiel.",
+      "Test de personnalité en 60 affirmations, sur 4 grandes préférences de fonctionnement (énergie, perception, décision, organisation), pour identifier lequel des 16 profils cognitifs te correspond. Conçu par des psychologues spécialisés en recrutement. Inspiré des typologies de personnalité à 16 profils (proches du modèle Myers-Briggs / MBTI), sans affiliation ni reproduction d'un test officiel.\n\n" +
+      "Qui es-tu ? Découvre lequel de ces 16 profils te correspond le plus :\n" +
+      "Le Gardien, Le Protecteur, Le Confident, Le Stratège, Le Pragmatique, L'Artiste libre, L'Idéaliste, Le Théoricien, L'Audacieux, Le Boute-en-train, L'Enthousiaste, L'Électron libre, Le Bâtisseur, Le Fédérateur, Le Rassembleur, Le Meneur.",
+  },
+  {
+    file: "disc.json",
+    slug: "disc",
+    format: "disc_quad",
+    language: "fr",
+    lookupKey: "test_disc_onetime",
+    title: "Test de personnalité DISC (Dominant, Influent, Stable, Conforme)",
+    description:
+      "Test de personnalité en 80 groupes de 4 affirmations à choix forcé, basé sur le modèle DISC (Dominant, Influent, Stable, Conforme). Rapport détaillé avec ta roue de positionnement sur les 4 styles. Conçu par des psychologues spécialisés en recrutement. Modèle largement utilisé en entreprise, sans affiliation à une marque commerciale du DISC.",
+  },
+  {
+    file: "pcm.json",
+    slug: "pcm",
+    format: "pcm_likert",
+    language: "fr",
+    lookupKey: "test_pcm_onetime",
+    title: "Six façons d'habiter sa vie — test de personnalité inspiré de la Process Communication",
+    description:
+      "Test de personnalité en 72 affirmations pour découvrir lequel des 6 profils (Empathique, Travaillomane, Persévérant, Rêveur, Rebelle, Promoteur) te correspond le plus — ta base durable, et la phase où tu vis en ce moment. Inspiré du modèle de Taibi Kahler (Process Communication), sans affiliation ni reproduction d'un questionnaire officiel.",
+  },
+  {
+    file: "logic-8.json",
+    slug: "logic-8",
+    format: "logic_mcq",
+    language: "fr",
+    lookupKey: "test_logic8_onetime",
+    title: "Le Test des 8 Logiques",
+    description:
+      "Test de raisonnement logique en 30 items chronométrés (25 minutes), couvrant les huit grandes formes de logique évaluées en recrutement : inductif, numérique, verbal, spatial, déductif, organisation, attention et mécanique. Score global, score détaillé par domaine et corrigé complet des 30 questions.",
+  },
+  {
+    file: "salarie-entrepreneur.json",
+    slug: "salarie-entrepreneur",
+    format: "career_balance",
+    language: "fr",
+    lookupKey: "test_salarie_entrepreneur_onetime",
+    title: "Salarié ou entrepreneur ? Test d'auto-positionnement",
+    description:
+      "Test d'auto-positionnement en 18 questions sur l'appétence à entreprendre, mesurée sur 6 axes : tolérance à l'incertitude, autonomie, initiative commerciale, rapport à la sécurité financière, résilience face à l'échec et rapport au collectif. Score global sur 120, profil (salarié, intrapreneur, indépendant ou créateur d'entreprise) et points de vigilance personnalisés.",
+  },
+  {
+    file: "orientation-riasec.json",
+    slug: "orientation",
+    format: "orientation_riasec",
+    language: "fr",
+    lookupKey: "test_orientation_riasec_onetime",
+    title: "Boussole — test d'orientation",
+    description:
+      "Test d'orientation en 88 propositions, basé sur le modèle RIASEC utilisé par la plupart des questionnaires d'orientation (dont ceux de l'Onisep). Croise tes activités préférées, tes centres d'intérêt, tes valeurs et tes compétences pour dresser ton profil sur 6 dimensions et te proposer des pistes parmi 122 métiers, avec des conseils adaptés selon que tu es au lycée/post-bac ou en reconversion professionnelle.",
+  },
+  {
+    file: "big-five-express.json",
+    slug: "big-five-express",
+    format: "bipolar_pairs",
+    language: "fr",
+    lookupKey: "test_big_five_express_free",
+    priceCents: 0,
+    title: "Test de personnalité express — gratuit",
+    description:
+      "Test de personnalité gratuit et rapide (20 affirmations, environ 5 minutes) sur 5 grandes dimensions inspirées du modèle Big Five : ouverture d'esprit, organisation, extraversion, agréabilité, stabilité émotionnelle. Résultat complet et immédiat, sans carte bancaire.",
   },
 ];

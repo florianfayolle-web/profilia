@@ -4,7 +4,13 @@ export type TestFormat =
   | "forced_choice_quad"
   | "situational_judgment"
   | "likert_scale"
-  | "bipolar_pairs";
+  | "bipolar_pairs"
+  | "disc_quad"
+  | "pcm_likert"
+  | "logic_mcq"
+  | "career_balance"
+  | "sosie_v2"
+  | "orientation_riasec";
 
 export type Test = {
   id: string;
@@ -49,12 +55,17 @@ export type ResultProfile = {
 
 export type Attempt = {
   id: string;
-  user_id: string;
+  user_id: string | null;
   test_id: string;
   answers: unknown;
   scores: Record<string, number>;
   result_profile_id: string | null;
   result: unknown;
+  // Set only for guest (user_id null) attempts on a free test.
+  guest_email: string | null;
+  // False only for a guest attempt on a free test awaiting the unlock
+  // micro-payment; true for every other attempt.
+  unlocked: boolean;
   completed_at: string;
 };
 

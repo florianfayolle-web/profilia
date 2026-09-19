@@ -35,6 +35,7 @@ export async function POST(request: Request) {
 
       if (session.mode === "payment") {
         const testId = session.metadata?.test_id;
+        const attemptId = session.metadata?.attempt_id;
         if (userId && testId) {
           await supabase.from("purchases").upsert(
             {
@@ -51,6 +52,13 @@ export async function POST(request: Request) {
             },
             { onConflict: "user_id,test_id" }
           );
+        } else if (attemptId) {
+          // Guest micro-payment to unblur a free test's result — no
+          // user_id, the attempt's own id is the only key we have.
+          await supabase
+            .from("attempts")
+            .update({ unlocked: true })
+            .eq("id", attemptId);
         }
       }
       // Subscription checkouts are handled by the subscription.* events below,

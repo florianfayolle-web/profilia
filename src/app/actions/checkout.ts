@@ -2,7 +2,13 @@
 
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { stripe } from "@/lib/stripe";
+
+// Kept in sync with scripts/assessment-entries.mjs's UNLOCK_RESULT_LOOKUP_KEY
+// (that file is a standalone Node script, not part of the app bundle, so the
+// key is duplicated here rather than imported across that boundary).
+const UNLOCK_RESULT_LOOKUP_KEY = "unlock_guest_result";
 
 async function getOrCreateStripeCustomer(
   userId: string,
@@ -137,6 +143,58 @@ export async function createBillingPortalSession() {
     customer: profile.stripe_customer_id,
     return_url: `${siteUrl}/account`,
   });
+
+  redirect(session.url);
+}
+
+// Unblurs a guest attempt's result on the free test for a small one-time
+// fee — no account needed, the attempt's own id is what the webhook uses to
+// flip `unlocked` to true afterward. Reads the attempt with the admin
+// client since a guest has no session and relies on the "user_id is null"
+// RLS policy that only applies to normal (cookie-bearing) reads anyway.
+export async function createUnlockCheckoutSession(
+  testSlug: string,
+  attemptId: string
+) {
+  const admin = createAdminClient();
+  const { data: attempt } = await admin
+    .from("attempts")
+    .select("id, guest_email, unlocked")
+    .eq("id", attemptId)
+    .is("user_id", null)
+    .maybeSingle();
+
+  if (!attempt) {
+    redirect(`/tests/${testSlug}/result/${attemptId}`);
+  }
+  if (attempt.unlocked) {
+    redirect(`/tests/${testSlug}/result/${attemptId}`);
+  }
+
+  const prices = await stripe.prices.list({
+    lookup_keys: [UNLOCK_RESULT_LOOKUP_KEY],
+    limit: 1,
+  });
+  const priceId = prices.data[0]?.id;
+  if (!priceId) {
+    throw new Error(
+      `Aucun prix Stripe trouvé pour "${UNLOCK_RESULT_LOOKUP_KEY}". Lance scripts/setup-stripe.mjs.`
+    );
+  }
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL!;
+  const session = await stripe.checkout.sessions.create({
+    mode: "payment",
+    customer_email: attempt.guest_email ?? undefined,
+    line_items: [{ price: priceId, quantity: 1 }],
+    metadata: { attempt_id: attempt.id },
+    success_url: `${siteUrl}/tests/${testSlug}/result/${attemptId}?unlock=success`,
+    cancel_url: `${siteUrl}/tests/${testSlug}/result/${attemptId}?unlock=cancelled`,
+  });
+
+  if (!session.url) {
+    throw new Error("Impossible de créer la session de paiement Stripe.");
+  }
 
   redirect(session.url);
 }

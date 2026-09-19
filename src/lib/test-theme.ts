@@ -17,6 +17,35 @@ const THEMES: Record<string, Record<string, string>> = {
   "sosie2-en": { "--primary": "#002157", "--accent": "#e4002b", "--primary-foreground": "#ffffff" },
   "td12-fr": { "--primary": "#002157", "--accent": "#e4002b", "--primary-foreground": "#ffffff" },
   "td12-en": { "--primary": "#002157", "--accent": "#e4002b", "--primary-foreground": "#ffffff" },
+  // ADAPT: charcoal & gold — executive, choix forcé en quadruplets.
+  "adapt-fr": { "--primary": "#1e293b", "--accent": "#ca8a04", "--primary-foreground": "#ffffff" },
+  "adapt-en": { "--primary": "#1e293b", "--accent": "#ca8a04", "--primary-foreground": "#ffffff" },
+  // Bilan de Personnalité 360: prune & rose poudré — profil complet, feutré.
+  bp360: { "--primary": "#4a1d5c", "--accent": "#d18b9a", "--primary-foreground": "#ffffff" },
+  // Qui suis-je ?: sarcelle & terracotta — introspectif, chaleureux.
+  "personnalite-50": { "--primary": "#134e4a", "--accent": "#d97757", "--primary-foreground": "#ffffff" },
+  // 16 profils cognitifs: indigo profond & lavande — cérébral.
+  "type-cognitif-16": { "--primary": "#312e81", "--accent": "#c4b5fd", "--primary-foreground": "#ffffff" },
+  // DISC: slate profond & ambre — la roue à 4 couleurs se suffit à elle-même,
+  // ce duo reste neutre pour les boutons/barres de progression.
+  disc: { "--primary": "#0f172a", "--accent": "#f59e0b", "--primary-foreground": "#ffffff" },
+  // PCM ("Six façons d'habiter sa vie") : rose & violet, dans l'esprit
+  // introspectif et chaleureux du questionnaire original.
+  pcm: { "--primary": "#6B3FA0", "--accent": "#D9345F", "--primary-foreground": "#ffffff" },
+  // Test des 8 Logiques : sarcelle profond & ochre — sobre, façon feuille
+  // de test papier, dans l'esprit éditorial du widget d'origine.
+  "logic-8": { "--primary": "#2E6B58", "--accent": "#A97C1F", "--primary-foreground": "#ffffff" },
+  // Salarié ou entrepreneur : bleu salariat & rose indépendance, la même
+  // paire de pôles que la balance du widget d'origine.
+  "salarie-entrepreneur": { "--primary": "#2B3AC4", "--accent": "#E0338A", "--primary-foreground": "#ffffff" },
+  // Boussole (orientation RIASEC) : bleu profond & ocre — sobre, éditorial,
+  // dans l'esprit d'un outil de conseil plutôt que d'un test ludique.
+  orientation: { "--primary": "#1d4f73", "--accent": "#8a4b49", "--primary-foreground": "#ffffff" },
+  // Test express gratuit : bordeaux riche & or — suit le même principe que
+  // les autres thèmes du site (une couleur dominante sombre/dense + un
+  // accent plus feutré) au lieu d'un duo rouge/jaune pur qui lisait comme
+  // un drapeau plutôt qu'une identité de marque.
+  "big-five-express": { "--primary": "#8B1E3F", "--accent": "#C9932E", "--primary-foreground": "#ffffff" },
 };
 
 export function getTestThemeStyle(slug: string): CSSProperties | undefined {
@@ -42,6 +71,12 @@ const ORDER: Record<string, number> = {
   bp360: 5,
   "personnalite-50": 6,
   "type-cognitif-16": 7,
+  disc: 8,
+  pcm: 9,
+  "logic-8": 10,
+  "salarie-entrepreneur": 11,
+  orientation: 12,
+  "big-five-express": 0,
 };
 
 export function getTestOrder(slug: string): number {

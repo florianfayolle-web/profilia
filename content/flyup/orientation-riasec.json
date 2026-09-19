@@ -1,0 +1,2164 @@
+{
+  "meta": {
+    "title": "Boussole — test d'orientation",
+    "totalItems": 88,
+    "disclaimer": "Ce résultat décrit des préférences, pas des capacités ni un avenir. Un profil peut évoluer nettement en deux ou trois ans, surtout après une expérience nouvelle. Considérez-le comme une hypothèse à vérifier sur le terrain, pas un diagnostic. Ce test est un support de réflexion inspiré du modèle RIASEC utilisé par la plupart des questionnaires d'orientation, dont ceux de l'Onisep. Aucun résultat ne doit décider seul de votre avenir."
+  },
+  "types": [
+    {
+      "key": "R",
+      "name": "Le concret",
+      "competenceLabel": "Technique",
+      "tag": "Faire, fabriquer, intervenir sur le terrain",
+      "color": "#7b6a55"
+    },
+    {
+      "key": "I",
+      "name": "L'analyse",
+      "competenceLabel": "Analytique",
+      "tag": "Comprendre, chercher, résoudre",
+      "color": "#2c5470"
+    },
+    {
+      "key": "A",
+      "name": "La création",
+      "competenceLabel": "Créative",
+      "tag": "Imaginer, concevoir, exprimer",
+      "color": "#6a5a77"
+    },
+    {
+      "key": "S",
+      "name": "La relation",
+      "competenceLabel": "Relationnelle",
+      "tag": "Aider, transmettre, accompagner",
+      "color": "#3b6f63"
+    },
+    {
+      "key": "E",
+      "name": "L'initiative",
+      "competenceLabel": "Persuasion",
+      "tag": "Convaincre, décider, entreprendre",
+      "color": "#8a4b49"
+    },
+    {
+      "key": "C",
+      "name": "La méthode",
+      "competenceLabel": "Rigueur",
+      "tag": "Organiser, structurer, fiabiliser",
+      "color": "#4b5563"
+    }
+  ],
+  "values": [
+    {
+      "key": "sec",
+      "name": "Sécurité"
+    },
+    {
+      "key": "aut",
+      "name": "Autonomie"
+    },
+    {
+      "key": "rem",
+      "name": "Rémunération"
+    },
+    {
+      "key": "uti",
+      "name": "Utilité sociale"
+    },
+    {
+      "key": "equ",
+      "name": "Équilibre de vie"
+    },
+    {
+      "key": "rec",
+      "name": "Reconnaissance"
+    },
+    {
+      "key": "app",
+      "name": "Apprentissage"
+    },
+    {
+      "key": "var",
+      "name": "Variété"
+    }
+  ],
+  "universLabels": {
+    "AGR": "Agriculture, nature et animaux",
+    "ART": "Art, design et artisanat",
+    "GES": "Banque, comptabilité et gestion",
+    "BTP": "Bâtiment et travaux publics",
+    "COM": "Commerce, vente et marketing",
+    "MED": "Communication, médias et édition",
+    "CUL": "Culture, patrimoine et spectacle",
+    "DRO": "Droit, sécurité et défense",
+    "ENS": "Enseignement et formation",
+    "ENV": "Environnement et énergie",
+    "HOT": "Hôtellerie, restauration et tourisme",
+    "IND": "Industrie et maintenance",
+    "NUM": "Informatique, numérique et données",
+    "LOG": "Logistique et transport",
+    "SAN": "Santé",
+    "SOC": "Social et services à la personne",
+    "SPO": "Sport et animation",
+    "SCI": "Recherche et sciences"
+  },
+  "levelLabels": {
+    "0": "CAP à bac",
+    "2": "Bac+2",
+    "3": "Bac+3",
+    "5": "Bac+5"
+  },
+  "tagLabels": {
+    "tension": "recrute beaucoup",
+    "horaires": "horaires décalés",
+    "indep": "à son compte possible",
+    "utile": "utile aux personnes",
+    "reconv": "accessible en reconversion"
+  },
+  "scaleLabels": {
+    "int": [
+      "Pas du tout",
+      "Un peu",
+      "Moyen",
+      "Beaucoup",
+      "Énormément"
+    ],
+    "val": [
+      "Sans importance",
+      "Peu important",
+      "Assez important",
+      "Important",
+      "Essentiel"
+    ],
+    "com": [
+      "Pas du tout",
+      "Avec de l'aide",
+      "Correctement",
+      "Bien",
+      "Très bien"
+    ],
+    "gou": [
+      "Pas du tout",
+      "Un peu",
+      "Assez",
+      "Beaucoup",
+      "Passionnément"
+    ]
+  },
+  "items": [
+    {
+      "id": 1,
+      "part": "interest",
+      "dimension": "R",
+      "text": "Réparer un appareil ou une machine qui ne fonctionne plus"
+    },
+    {
+      "id": 2,
+      "part": "interest",
+      "dimension": "R",
+      "text": "Travailler dehors et en mouvement plutôt qu'assis à un bureau"
+    },
+    {
+      "id": 3,
+      "part": "interest",
+      "dimension": "R",
+      "text": "Utiliser des outils, des engins ou du matériel technique"
+    },
+    {
+      "id": 4,
+      "part": "interest",
+      "dimension": "R",
+      "text": "Monter, installer ou assembler quelque chose de mes mains"
+    },
+    {
+      "id": 5,
+      "part": "interest",
+      "dimension": "R",
+      "text": "M'occuper d'animaux, de cultures ou d'espaces naturels"
+    },
+    {
+      "id": 6,
+      "part": "interest",
+      "dimension": "R",
+      "text": "Voir le résultat concret de ma journée devant moi le soir"
+    },
+    {
+      "id": 7,
+      "part": "interest",
+      "dimension": "I",
+      "text": "Comprendre pourquoi un phénomène se produit, jusqu'au bout"
+    },
+    {
+      "id": 8,
+      "part": "interest",
+      "dimension": "I",
+      "text": "Décomposer un problème compliqué pour le résoudre"
+    },
+    {
+      "id": 9,
+      "part": "interest",
+      "dimension": "I",
+      "text": "Analyser des chiffres, des données, des résultats"
+    },
+    {
+      "id": 10,
+      "part": "interest",
+      "dimension": "I",
+      "text": "Lire ou regarder des contenus scientifiques pour le plaisir"
+    },
+    {
+      "id": 11,
+      "part": "interest",
+      "dimension": "I",
+      "text": "Tester une hypothèse et vérifier si elle tient"
+    },
+    {
+      "id": 12,
+      "part": "interest",
+      "dimension": "I",
+      "text": "Rester longtemps sur une question qui n'a pas de réponse évidente"
+    },
+    {
+      "id": 13,
+      "part": "interest",
+      "dimension": "A",
+      "text": "Inventer des histoires, des images, des sons ou des formes"
+    },
+    {
+      "id": 14,
+      "part": "interest",
+      "dimension": "A",
+      "text": "Soigner l'apparence d'un lieu, d'un objet, d'un document"
+    },
+    {
+      "id": 15,
+      "part": "interest",
+      "dimension": "A",
+      "text": "Écrire, dessiner, filmer, photographier, jouer de la musique"
+    },
+    {
+      "id": 16,
+      "part": "interest",
+      "dimension": "A",
+      "text": "Proposer une idée originale plutôt que la solution habituelle"
+    },
+    {
+      "id": 17,
+      "part": "interest",
+      "dimension": "A",
+      "text": "Travailler à ma manière, sans consignes trop strictes"
+    },
+    {
+      "id": 18,
+      "part": "interest",
+      "dimension": "A",
+      "text": "Faire ressentir quelque chose à un public"
+    },
+    {
+      "id": 19,
+      "part": "interest",
+      "dimension": "S",
+      "text": "Expliquer quelque chose à quelqu'un jusqu'à ce qu'il comprenne"
+    },
+    {
+      "id": 20,
+      "part": "interest",
+      "dimension": "S",
+      "text": "Écouter une personne qui traverse une difficulté"
+    },
+    {
+      "id": 21,
+      "part": "interest",
+      "dimension": "S",
+      "text": "M'occuper d'enfants, de personnes âgées ou malades"
+    },
+    {
+      "id": 22,
+      "part": "interest",
+      "dimension": "S",
+      "text": "Animer un groupe et créer une bonne ambiance"
+    },
+    {
+      "id": 23,
+      "part": "interest",
+      "dimension": "S",
+      "text": "Aider quelqu'un à progresser ou à reprendre confiance"
+    },
+    {
+      "id": 24,
+      "part": "interest",
+      "dimension": "S",
+      "text": "Exercer un métier utile aux autres, même un peu moins payé"
+    },
+    {
+      "id": 25,
+      "part": "interest",
+      "dimension": "E",
+      "text": "Convaincre quelqu'un d'adhérer à mon idée"
+    },
+    {
+      "id": 26,
+      "part": "interest",
+      "dimension": "E",
+      "text": "Prendre la tête d'un projet et décider de la direction"
+    },
+    {
+      "id": 27,
+      "part": "interest",
+      "dimension": "E",
+      "text": "Négocier, vendre, défendre une proposition"
+    },
+    {
+      "id": 28,
+      "part": "interest",
+      "dimension": "E",
+      "text": "Lancer une activité ou une entreprise à moi"
+    },
+    {
+      "id": 29,
+      "part": "interest",
+      "dimension": "E",
+      "text": "Prendre des responsabilités, même avec une part de risque"
+    },
+    {
+      "id": 30,
+      "part": "interest",
+      "dimension": "E",
+      "text": "Parler devant un groupe pour emporter l'adhésion"
+    },
+    {
+      "id": 31,
+      "part": "interest",
+      "dimension": "C",
+      "text": "Classer et mettre de l'ordre dans des informations"
+    },
+    {
+      "id": 32,
+      "part": "interest",
+      "dimension": "C",
+      "text": "Suivre une procédure précise, sans approximation"
+    },
+    {
+      "id": 33,
+      "part": "interest",
+      "dimension": "C",
+      "text": "Tenir un budget, vérifier des comptes, repérer une erreur"
+    },
+    {
+      "id": 34,
+      "part": "interest",
+      "dimension": "C",
+      "text": "Construire un planning et m'y tenir"
+    },
+    {
+      "id": 35,
+      "part": "interest",
+      "dimension": "C",
+      "text": "Travailler avec des règles claires et un cadre stable"
+    },
+    {
+      "id": 36,
+      "part": "interest",
+      "dimension": "C",
+      "text": "Rendre un document propre, complet et sans faute"
+    },
+    {
+      "id": 37,
+      "part": "taste",
+      "univers": "SAN",
+      "text": "La santé, le corps humain, le soin"
+    },
+    {
+      "id": 38,
+      "part": "taste",
+      "univers": "NUM",
+      "text": "L'informatique, les jeux vidéo, les données"
+    },
+    {
+      "id": 39,
+      "part": "taste",
+      "univers": "AGR",
+      "text": "Les animaux, la nature, la vie en extérieur"
+    },
+    {
+      "id": 40,
+      "part": "taste",
+      "univers": "ART",
+      "text": "Le dessin, le design, les objets bien faits"
+    },
+    {
+      "id": 41,
+      "part": "taste",
+      "univers": "SOC",
+      "text": "L'aide aux personnes, la petite enfance, le handicap"
+    },
+    {
+      "id": 42,
+      "part": "taste",
+      "univers": "IND",
+      "text": "Les machines, l'industrie, la fabrication"
+    },
+    {
+      "id": 43,
+      "part": "taste",
+      "univers": "CUL",
+      "text": "La musique, le théâtre, le cinéma, le patrimoine"
+    },
+    {
+      "id": 44,
+      "part": "taste",
+      "univers": "GES",
+      "text": "Les chiffres, l'argent, la gestion"
+    },
+    {
+      "id": 45,
+      "part": "taste",
+      "univers": "HOT",
+      "text": "La cuisine, l'accueil, le voyage"
+    },
+    {
+      "id": 46,
+      "part": "taste",
+      "univers": "DRO",
+      "text": "Le droit, la justice, la sécurité"
+    },
+    {
+      "id": 47,
+      "part": "taste",
+      "univers": "BTP",
+      "text": "Les chantiers, la construction, l'habitat"
+    },
+    {
+      "id": 48,
+      "part": "taste",
+      "univers": "MED",
+      "text": "Les médias, l'écriture, les réseaux sociaux"
+    },
+    {
+      "id": 49,
+      "part": "taste",
+      "univers": "ENV",
+      "text": "L'écologie, l'énergie, le climat"
+    },
+    {
+      "id": 50,
+      "part": "taste",
+      "univers": "COM",
+      "text": "La vente, les marques, le commerce"
+    },
+    {
+      "id": 51,
+      "part": "taste",
+      "univers": "SPO",
+      "text": "Le sport et l'activité physique"
+    },
+    {
+      "id": 52,
+      "part": "taste",
+      "univers": "ENS",
+      "text": "L'enseignement, la transmission, les apprentissages"
+    },
+    {
+      "id": 53,
+      "part": "taste",
+      "univers": "LOG",
+      "text": "Les véhicules, les flux, la logistique"
+    },
+    {
+      "id": 54,
+      "part": "taste",
+      "univers": "SCI",
+      "text": "Les sciences, la recherche, les expériences"
+    },
+    {
+      "id": 55,
+      "part": "value",
+      "valeur": "sec",
+      "text": "Avoir un emploi stable que je ne risque pas de perdre"
+    },
+    {
+      "id": 56,
+      "part": "value",
+      "valeur": "sec",
+      "text": "Savoir à l'avance à quoi ressembleront mes prochaines années"
+    },
+    {
+      "id": 57,
+      "part": "value",
+      "valeur": "aut",
+      "text": "Organiser mon travail comme je l'entends"
+    },
+    {
+      "id": 58,
+      "part": "value",
+      "valeur": "aut",
+      "text": "Ne pas avoir quelqu'un qui contrôle en permanence ce que je fais"
+    },
+    {
+      "id": 59,
+      "part": "value",
+      "valeur": "rem",
+      "text": "Gagner nettement plus que la moyenne"
+    },
+    {
+      "id": 60,
+      "part": "value",
+      "valeur": "rem",
+      "text": "Que mes efforts se voient vite sur ma fiche de paie"
+    },
+    {
+      "id": 61,
+      "part": "value",
+      "valeur": "uti",
+      "text": "Sentir que mon travail améliore la vie de quelqu'un"
+    },
+    {
+      "id": 62,
+      "part": "value",
+      "valeur": "uti",
+      "text": "Défendre une cause qui compte pour moi"
+    },
+    {
+      "id": 63,
+      "part": "value",
+      "valeur": "equ",
+      "text": "Garder du temps pour ma vie en dehors du travail"
+    },
+    {
+      "id": 64,
+      "part": "value",
+      "valeur": "equ",
+      "text": "Des horaires prévisibles, peu de soirées et de week-ends pris"
+    },
+    {
+      "id": 65,
+      "part": "value",
+      "valeur": "rec",
+      "text": "Être reconnu comme compétent dans mon domaine"
+    },
+    {
+      "id": 66,
+      "part": "value",
+      "valeur": "rec",
+      "text": "Occuper une position qui a du poids"
+    },
+    {
+      "id": 67,
+      "part": "value",
+      "valeur": "app",
+      "text": "Apprendre des choses nouvelles en permanence"
+    },
+    {
+      "id": 68,
+      "part": "value",
+      "valeur": "app",
+      "text": "Pouvoir changer de poste ou monter en responsabilité"
+    },
+    {
+      "id": 69,
+      "part": "value",
+      "valeur": "var",
+      "text": "Ne pas faire deux journées identiques"
+    },
+    {
+      "id": 70,
+      "part": "value",
+      "valeur": "var",
+      "text": "Avoir de la place pour inventer ma façon de faire"
+    },
+    {
+      "id": 71,
+      "part": "skill",
+      "dimension": "R",
+      "text": "Utiliser correctement un outil, une machine, du matériel"
+    },
+    {
+      "id": 72,
+      "part": "skill",
+      "dimension": "R",
+      "text": "Réparer ou bricoler quelque chose sans mode d'emploi"
+    },
+    {
+      "id": 73,
+      "part": "skill",
+      "dimension": "R",
+      "text": "Me repérer dans une notice technique, un plan, un schéma"
+    },
+    {
+      "id": 74,
+      "part": "skill",
+      "dimension": "I",
+      "text": "Raisonner sur des chiffres et des données"
+    },
+    {
+      "id": 75,
+      "part": "skill",
+      "dimension": "I",
+      "text": "Repérer une erreur de logique dans un raisonnement"
+    },
+    {
+      "id": 76,
+      "part": "skill",
+      "dimension": "I",
+      "text": "Apprendre seul une notion difficile"
+    },
+    {
+      "id": 77,
+      "part": "skill",
+      "dimension": "A",
+      "text": "Produire quelque chose de beau : un texte, une image, un son"
+    },
+    {
+      "id": 78,
+      "part": "skill",
+      "dimension": "A",
+      "text": "Trouver des idées nouvelles quand on me demande d'en trouver"
+    },
+    {
+      "id": 79,
+      "part": "skill",
+      "dimension": "A",
+      "text": "Improviser quand le cadre prévu ne tient plus"
+    },
+    {
+      "id": 80,
+      "part": "skill",
+      "dimension": "S",
+      "text": "Mettre quelqu'un à l'aise en quelques minutes"
+    },
+    {
+      "id": 81,
+      "part": "skill",
+      "dimension": "S",
+      "text": "Expliquer simplement une chose compliquée"
+    },
+    {
+      "id": 82,
+      "part": "skill",
+      "dimension": "S",
+      "text": "Gérer un désaccord sans l'aggraver"
+    },
+    {
+      "id": 83,
+      "part": "skill",
+      "dimension": "E",
+      "text": "Convaincre un groupe de me suivre"
+    },
+    {
+      "id": 84,
+      "part": "skill",
+      "dimension": "E",
+      "text": "Prendre une décision et l'assumer devant les autres"
+    },
+    {
+      "id": 85,
+      "part": "skill",
+      "dimension": "E",
+      "text": "Répartir le travail dans une équipe"
+    },
+    {
+      "id": 86,
+      "part": "skill",
+      "dimension": "C",
+      "text": "Tenir des délais, même sans qu'on me les rappelle"
+    },
+    {
+      "id": 87,
+      "part": "skill",
+      "dimension": "C",
+      "text": "Gérer un budget, des dossiers, des documents"
+    },
+    {
+      "id": 88,
+      "part": "skill",
+      "dimension": "C",
+      "text": "Travailler avec rigueur sur des tâches répétitives"
+    }
+  ],
+  "profiles": {
+    "R": {
+      "desc": "Vous avez besoin de concret. Les idées vous intéressent quand elles se transforment en objet, en installation, en geste. Vous apprenez souvent mieux en faisant qu'en écoutant, et vous supportez mal les réunions qui ne débouchent sur rien.",
+      "env": "Ateliers, chantiers, exploitations, laboratoires techniques, terrain, extérieur.",
+      "metiers": [
+        "Technicien de maintenance industrielle",
+        "Électrotechnicien",
+        "Conducteur de travaux",
+        "Ingénieur mécanique ou génie civil",
+        "Technicien agricole ou paysagiste",
+        "Technicien en énergies renouvelables",
+        "Métiers de la sécurité et du secours"
+      ],
+      "lyc": [
+        "Bac STI2D, bac pro industriel (MELEC, MSPC), bac général avec maths + physique",
+        "BTS maintenance, électrotechnique, bâtiment, BTSA",
+        "BUT GMP, GEII, génie civil, mesures physiques",
+        "Écoles d'ingénieurs post-bac ou après prépa",
+        "CAP puis mention complémentaire pour une entrée rapide dans l'emploi"
+      ],
+      "adu": [
+        "Titres professionnels AFPA : maintenance, électricité, froid, BTP",
+        "Habilitations et certifications courtes (électrique, CACES, soudage) très valorisées",
+        "Alternance adulte : contrat de professionnalisation ou apprentissage jusqu'à 29 ans, sans limite si RQTH",
+        "VAE si vous avez déjà exercé en atelier ou sur chantier",
+        "Secteurs en tension : maintenance, industrie, rénovation énergétique"
+      ]
+    },
+    "I": {
+      "desc": "Vous voulez comprendre avant d'agir. Une explication approximative vous démange. Vous êtes à l'aise avec l'abstraction, les données, les hypothèses, et vous préférez une question difficile à une tâche facile répétée.",
+      "env": "Laboratoires, bureaux d'études, R&D, santé, informatique, milieu universitaire.",
+      "metiers": [
+        "Data analyst / data scientist",
+        "Développeur, ingénieur logiciel",
+        "Chercheur, enseignant-chercheur",
+        "Biologiste, technicien de laboratoire",
+        "Analyste en cybersécurité",
+        "Professions médicales et pharmaceutiques",
+        "Économiste, statisticien"
+      ],
+      "lyc": [
+        "Spécialités maths, physique-chimie, SVT, NSI en première et terminale",
+        "CPGE scientifiques puis école d'ingénieurs",
+        "Licence de sciences, BUT informatique, science des données, mesures physiques",
+        "PASS / LAS pour les études de santé",
+        "Double licence pour garder deux portes ouvertes"
+      ],
+      "adu": [
+        "Formations intensives au développement web ou à la data (souvent éligibles CPF)",
+        "Licence pro ou master en cours du soir au Cnam",
+        "Certifications reconnues : cybersécurité, cloud, qualité, analyse de données",
+        "VAE vers un titre d'ingénieur ou un master si l'expérience technique est solide",
+        "Passerelle fréquente : de la gestion vers la data, du support vers l'administration système"
+      ]
+    },
+    "A": {
+      "desc": "Vous avez besoin d'espace pour proposer votre version des choses. La contrainte vous stimule quand elle est un point de départ, pas quand elle est une règle. Vous êtes sensible à la forme : ce qui est mal fait vous saute aux yeux.",
+      "env": "Agences, studios, ateliers de création, médias, culture, indépendance.",
+      "metiers": [
+        "Designer graphique, motion designer",
+        "Designer UX / UI",
+        "Architecte, designer d'espace ou de produit",
+        "Journaliste, auteur, rédacteur",
+        "Métiers du spectacle et de l'audiovisuel",
+        "Chargé de communication",
+        "Artisan d'art"
+      ],
+      "lyc": [
+        "Spécialité arts, bac STD2A",
+        "DNMADE (3 ans) : la voie principale après le bac en design",
+        "Écoles supérieures d'art : DNA puis DNSEP",
+        "Licences arts, lettres, information-communication",
+        "Portfolio à construire dès la première : il pèse plus que les notes dans les sélections"
+      ],
+      "adu": [
+        "Formations certifiantes en design graphique, UX, motion, souvent à distance",
+        "Le portfolio décide : trois projets aboutis valent mieux qu'un diplôme seul",
+        "Statut d'indépendant ou micro-entreprise pour démarrer en parallèle de l'emploi actuel",
+        "Projet de transition professionnelle (ex-CIF) pour financer une formation longue en restant salarié",
+        "Passerelle fréquente : de la communication vers le design, de l'enseignement vers la médiation culturelle"
+      ]
+    },
+    "S": {
+      "desc": "Le contact fait partie du travail, pas autour. Vous vous sentez à votre place quand quelqu'un progresse grâce à vous. Un poste sans utilité visible pour les autres s'épuise vite, même bien payé.",
+      "env": "Écoles, hôpitaux, structures médico-sociales, associations, ressources humaines.",
+      "metiers": [
+        "Enseignant, formateur",
+        "Infirmier, aide-soignant",
+        "Éducateur spécialisé, moniteur-éducateur",
+        "Conseiller en insertion professionnelle",
+        "Psychologue, orthophoniste",
+        "Assistant de service social",
+        "Chargé de recrutement ou de formation"
+      ],
+      "lyc": [
+        "Bac ST2S, ou bac général avec SES, HLP, SVT",
+        "IFSI (infirmier) et formations paramédicales via Parcoursup",
+        "Diplômes d'État du social : DEES, DEASS, DEEJE",
+        "BUT carrières sociales, licence psychologie ou sciences de l'éducation",
+        "Concours de professeur après une licence, en passant par l'INSPE"
+      ],
+      "adu": [
+        "Le social recrute et valide beaucoup par la VAE : c'est la voie la plus rapide si vous avez de l'expérience d'accompagnement",
+        "DEAES ou DEAS en un an, très accessibles en reconversion",
+        "Titre professionnel de conseiller en insertion professionnelle ou de formateur pour adultes",
+        "Enseignement : recrutement de contractuels possible avec une licence, puis concours interne",
+        "Secteurs en tension : grand âge, handicap, petite enfance, santé"
+      ]
+    },
+    "E": {
+      "desc": "Vous avancez plus vite quand vous décidez. Le risque vous dérange moins que l'immobilité, et vous supportez mal d'attendre la validation de trois niveaux hiérarchiques. Vous aimez l'idée que votre résultat se mesure.",
+      "env": "Commerce, conseil, direction d'équipe, immobilier, création d'entreprise, droit.",
+      "metiers": [
+        "Commercial, chargé d'affaires",
+        "Chef de projet, manager d'équipe",
+        "Entrepreneur, dirigeant de petite structure",
+        "Consultant",
+        "Agent immobilier",
+        "Responsable de magasin ou de centre de profit",
+        "Avocat, juriste d'affaires"
+      ],
+      "lyc": [
+        "Bac STMG, ou bac général avec SES et maths",
+        "BTS NDRC, MCO, BUT techniques de commercialisation ou GEA",
+        "Écoles de commerce post-bac, ou prépa ECG puis école",
+        "Licence de droit, de gestion, d'AES",
+        "L'alternance est ici un vrai avantage à l'embauche, dès bac+2"
+      ],
+      "adu": [
+        "Titres professionnels : négociateur technico-commercial, responsable de petite ou moyenne structure",
+        "MBA ou master en alternance, y compris en formation continue",
+        "Création d'entreprise : accompagnement gratuit par les BGE, les CCI, les réseaux Initiative",
+        "VAE vers un diplôme de management si vous encadrez déjà sans le titre",
+        "Le commercial reste le secteur qui recrute le plus largement en reconversion, sans exiger de diplôme précis"
+      ]
+    },
+    "C": {
+      "desc": "Vous fiabilisez ce que vous touchez. Là où d'autres voient de la paperasse, vous voyez un système à faire tourner sans erreur. Le cadre ne vous pèse pas : il vous permet de travailler vite et bien.",
+      "env": "Comptabilité, administration, banque, logistique, qualité, fonction publique.",
+      "metiers": [
+        "Comptable, assistant comptable",
+        "Gestionnaire de paie",
+        "Contrôleur de gestion",
+        "Assistant de direction",
+        "Responsable logistique ou approvisionnement",
+        "Métiers de la banque et de l'assurance",
+        "Qualiticien, agent administratif de la fonction publique"
+      ],
+      "lyc": [
+        "Bac STMG (gestion et finance), ou bac général avec maths et SES",
+        "BTS comptabilité et gestion, SAM, GPME, BTS banque",
+        "BUT GEA, licence économie-gestion",
+        "Filière expertise comptable : DCG puis DSCG",
+        "Concours administratifs de catégorie B ou A après le bac ou une licence"
+      ],
+      "adu": [
+        "Gestionnaire de paie : l'un des titres professionnels les plus demandés en reconversion, en moins d'un an",
+        "Titre de comptable assistant, puis DCG en candidat libre pour aller plus loin",
+        "Cnam : parcours en cours du soir compatibles avec un emploi",
+        "Concours de la fonction publique ouverts sans limite d'âge, catégorie C sans diplôme exigé",
+        "VAE efficace si vous avez déjà tenu des tâches de gestion sans le titre correspondant"
+      ]
+    }
+  },
+  "valueAdvice": {
+    "sec": {
+      "lyc": "Regardez les taux d'insertion à 6 mois plutôt que la réputation des écoles. Les formations en alternance et la fonction publique offrent le plus de visibilité.",
+      "adu": "Vérifiez la réalité du marché avant de vous former : nombre d'offres dans votre région, pas seulement au niveau national. Une reconversion sécurisée se prépare en gardant un revenu pendant la formation."
+    },
+    "aut": {
+      "lyc": "Fuyez les descriptions de poste très encadrées. Visez des métiers où l'on vous confie un dossier entier plutôt qu'une tâche.",
+      "adu": "L'indépendance, le portage salarial ou les petites structures vous correspondront mieux qu'un grand groupe, même à salaire équivalent."
+    },
+    "rem": {
+      "lyc": "Les écarts de salaire tiennent souvent plus au secteur qu'au diplôme. Renseignez-vous sur les salaires de sortie réels, pas sur les moyennes nationales.",
+      "adu": "Une reconversion coûte souvent un ou deux ans de revenu. Chiffrez-le avant de partir, et visez des métiers où votre expérience passée se valorise."
+    },
+    "uti": {
+      "lyc": "L'utilité ne se limite pas au soin et à l'enseignement : environnement, énergie, justice, associations offrent aussi cette dimension.",
+      "adu": "Testez avant de vous engager : bénévolat, mission courte, immersion professionnelle (PMSMP via France Travail) vous éviteront une deuxième déception."
+    },
+    "equ": {
+      "lyc": "Interrogez les horaires réels, pas ceux du contrat : santé, hôtellerie, spectacle et commerce ont des rythmes exigeants.",
+      "adu": "Posez la question du temps de trajet, des astreintes et du télétravail dès le premier entretien. C'est le premier motif d'échec d'une reconversion réussie sur le papier."
+    },
+    "rec": {
+      "lyc": "La reconnaissance vient plus vite dans les métiers où l'on devient référent technique. Visez une expertise identifiable.",
+      "adu": "Votre expérience antérieure est un atout de reconnaissance : cherchez un métier qui la réutilise au lieu de repartir totalement de zéro."
+    },
+    "app": {
+      "lyc": "Choisissez une formation large avant de vous spécialiser. Les parcours qui gardent deux portes ouvertes vous conviendront mieux.",
+      "adu": "Privilégiez les secteurs qui bougent vite (numérique, énergie, santé) et les employeurs qui financent la formation continue."
+    },
+    "var": {
+      "lyc": "Méfiez-vous des métiers décrits comme stables et prévisibles : ils vous lasseront. Cherchez le terrain, les projets, les missions.",
+      "adu": "Les métiers de projet, le conseil et les petites structures offrent plus de variété que les grands services organisés par tâches."
+    }
+  },
+  "combos": {
+    "RI": "la technique appuyée sur la compréhension : vous voulez savoir pourquoi la machine tourne, pas seulement la faire tourner",
+    "RA": "le geste et la forme : fabriquer des choses qui soient justes et belles à la fois",
+    "RS": "le concret au service des personnes : intervenir, soigner, dépanner, sécuriser",
+    "RE": "le terrain et la décision : diriger un chantier, une équipe technique, une structure",
+    "RC": "la précision méthodique : des installations, des contrôles, des procédures qui ne souffrent pas d'erreur",
+    "IA": "l'analyse et l'invention : chercher des solutions que personne n'a encore essayées",
+    "IS": "comprendre pour aider : diagnostiquer, expliquer, accompagner sur des bases solides",
+    "IE": "l'expertise qui décide : transformer une analyse en stratégie et la défendre",
+    "IC": "la rigueur analytique : des données fiables, des méthodes vérifiables, des résultats tenables",
+    "AS": "la création tournée vers les autres : transmettre, mettre en scène, faire ressentir",
+    "AE": "la création et le lancement : porter un projet ou une marque et convaincre autour",
+    "AC": "l'exigence formelle : une production soignée jusqu'au dernier détail",
+    "SE": "l'humain et le collectif : encadrer, recruter, former, faire avancer un groupe",
+    "SC": "l'accompagnement structuré : des dossiers, des suivis, des personnes qu'on ne laisse pas tomber",
+    "EC": "la gestion pilotée : des chiffres, des objectifs, des équipes tenues"
+  },
+  "actionPlan": {
+    "lyc": [
+      "Choisissez trois métiers dans les listes ci-dessus et allez lire leur fiche complète sur onisep.fr : conditions de travail, salaire de départ, études réellement nécessaires.",
+      "Contactez deux personnes qui exercent ces métiers pour un échange de vingt minutes. C'est l'étape que presque personne ne fait, et c'est celle qui change le plus de choses.",
+      "Vérifiez que vos spécialités actuelles ouvrent bien les formations visées. Si ce n'est pas le cas, une réorientation est possible mais se prépare maintenant.",
+      "Prenez rendez-vous au CIO de votre secteur avec ce résultat imprimé : vous aurez une conversation beaucoup plus utile qu'en arrivant les mains vides.",
+      "Allez aux journées portes ouvertes de deux formations différentes, pas seulement celle qui vous attire déjà."
+    ],
+    "adu": [
+      "Demandez un entretien de Conseil en évolution professionnelle. C'est gratuit, confidentiel, et indépendant de votre employeur.",
+      "Faites une immersion en entreprise (PMSMP) d'une à deux semaines dans le métier visé avant de financer quoi que ce soit.",
+      "Listez ce que votre expérience actuelle transfère : encadrement, relation client, rigueur, gestion. Une reconversion réussie s'appuie sur du déjà-acquis.",
+      "Chiffrez le scénario : durée de formation, financement (CPF, projet de transition professionnelle, France Travail), perte de revenu, salaire d'arrivée.",
+      "Vérifiez si une VAE peut vous éviter une partie du parcours : beaucoup de reconversions passent par là sans le savoir."
+    ]
+  },
+  "jobs": [
+    {
+      "name": "Exploitant agricole",
+      "univers": "AGR",
+      "code": "REC",
+      "level": 2,
+      "description": "Conduire une exploitation : cultures ou élevage, gestion comprise.",
+      "tags": [
+        "indep",
+        "horaires"
+      ]
+    },
+    {
+      "name": "Conseiller agricole",
+      "univers": "AGR",
+      "code": "IRS",
+      "level": 3,
+      "description": "Accompagner les exploitants sur la technique et la réglementation.",
+      "tags": [
+        "utile"
+      ]
+    },
+    {
+      "name": "Jardinier-paysagiste",
+      "univers": "AGR",
+      "code": "RCA",
+      "level": 0,
+      "description": "Créer et entretenir jardins et espaces verts, en extérieur.",
+      "tags": [
+        "tension",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Paysagiste concepteur",
+      "univers": "AGR",
+      "code": "ARI",
+      "level": 5,
+      "description": "Dessiner des parcs, des places, des jardins à l'échelle d'un territoire.",
+      "tags": []
+    },
+    {
+      "name": "Soigneur animalier",
+      "univers": "AGR",
+      "code": "RSC",
+      "level": 2,
+      "description": "Nourrir, surveiller et soigner des animaux en parc ou refuge.",
+      "tags": [
+        "horaires"
+      ]
+    },
+    {
+      "name": "Vétérinaire",
+      "univers": "AGR",
+      "code": "IRS",
+      "level": 5,
+      "description": "Diagnostiquer et soigner les animaux, en ville ou en élevage.",
+      "tags": [
+        "utile",
+        "indep"
+      ]
+    },
+    {
+      "name": "Technicien forestier",
+      "univers": "AGR",
+      "code": "RIC",
+      "level": 2,
+      "description": "Gérer des parcelles de forêt, encadrer les chantiers d'exploitation.",
+      "tags": []
+    },
+    {
+      "name": "Graphiste",
+      "univers": "ART",
+      "code": "AEC",
+      "level": 3,
+      "description": "Concevoir des identités visuelles, des affiches, des supports.",
+      "tags": [
+        "indep"
+      ]
+    },
+    {
+      "name": "Designer UX/UI",
+      "univers": "ART",
+      "code": "AIE",
+      "level": 5,
+      "description": "Concevoir des interfaces qui se comprennent sans mode d'emploi.",
+      "tags": [
+        "tension"
+      ]
+    },
+    {
+      "name": "Illustrateur",
+      "univers": "ART",
+      "code": "ARI",
+      "level": 3,
+      "description": "Dessiner pour l'édition, la presse, le jeu, la publicité.",
+      "tags": [
+        "indep"
+      ]
+    },
+    {
+      "name": "Designer produit",
+      "univers": "ART",
+      "code": "ARI",
+      "level": 5,
+      "description": "Dessiner des objets qui doivent être beaux, utiles et fabricables.",
+      "tags": []
+    },
+    {
+      "name": "Architecte",
+      "univers": "ART",
+      "code": "AIR",
+      "level": 5,
+      "description": "Concevoir des bâtiments et suivre leur construction.",
+      "tags": [
+        "indep"
+      ]
+    },
+    {
+      "name": "Architecte d'intérieur",
+      "univers": "ART",
+      "code": "ARE",
+      "level": 3,
+      "description": "Repenser des espaces existants : volumes, lumière, matériaux.",
+      "tags": [
+        "indep"
+      ]
+    },
+    {
+      "name": "Artisan d'art (céramique, verre, bois)",
+      "univers": "ART",
+      "code": "RAC",
+      "level": 0,
+      "description": "Fabriquer des pièces uniques ou de petite série à la main.",
+      "tags": [
+        "indep",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Photographe",
+      "univers": "ART",
+      "code": "ARE",
+      "level": 2,
+      "description": "Produire des images pour la presse, la mode, l'entreprise, les particuliers.",
+      "tags": [
+        "indep"
+      ]
+    },
+    {
+      "name": "Comptable",
+      "univers": "GES",
+      "code": "CIE",
+      "level": 2,
+      "description": "Tenir les comptes d'une entreprise et produire ses états financiers.",
+      "tags": [
+        "tension",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Gestionnaire de paie",
+      "univers": "GES",
+      "code": "CSI",
+      "level": 2,
+      "description": "Établir les bulletins de salaire et sécuriser le droit du travail appliqué.",
+      "tags": [
+        "tension",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Contrôleur de gestion",
+      "univers": "GES",
+      "code": "CIE",
+      "level": 5,
+      "description": "Mesurer la performance, construire les budgets, alerter la direction.",
+      "tags": []
+    },
+    {
+      "name": "Conseiller bancaire",
+      "univers": "GES",
+      "code": "ECS",
+      "level": 3,
+      "description": "Suivre un portefeuille de clients : épargne, crédit, projets.",
+      "tags": [
+        "reconv"
+      ]
+    },
+    {
+      "name": "Chargé de clientèle en assurance",
+      "univers": "GES",
+      "code": "ECS",
+      "level": 2,
+      "description": "Conseiller, garantir, gérer les sinistres.",
+      "tags": [
+        "reconv"
+      ]
+    },
+    {
+      "name": "Analyste financier",
+      "univers": "GES",
+      "code": "ICE",
+      "level": 5,
+      "description": "Évaluer des entreprises et des investissements à partir des chiffres.",
+      "tags": []
+    },
+    {
+      "name": "Expert-comptable",
+      "univers": "GES",
+      "code": "CIE",
+      "level": 5,
+      "description": "Certifier des comptes et conseiller des dirigeants de PME.",
+      "tags": [
+        "indep"
+      ]
+    },
+    {
+      "name": "Conducteur de travaux",
+      "univers": "BTP",
+      "code": "REC",
+      "level": 3,
+      "description": "Piloter un chantier : planning, budget, équipes, sécurité.",
+      "tags": [
+        "tension"
+      ]
+    },
+    {
+      "name": "Chef de chantier",
+      "univers": "BTP",
+      "code": "REC",
+      "level": 2,
+      "description": "Organiser le travail quotidien des équipes sur le terrain.",
+      "tags": [
+        "tension"
+      ]
+    },
+    {
+      "name": "Électricien du bâtiment",
+      "univers": "BTP",
+      "code": "RCI",
+      "level": 0,
+      "description": "Installer et dépanner les réseaux électriques.",
+      "tags": [
+        "tension",
+        "reconv",
+        "indep"
+      ]
+    },
+    {
+      "name": "Plombier-chauffagiste",
+      "univers": "BTP",
+      "code": "RCS",
+      "level": 0,
+      "description": "Installer et entretenir sanitaires, chauffage, pompes à chaleur.",
+      "tags": [
+        "tension",
+        "reconv",
+        "indep"
+      ]
+    },
+    {
+      "name": "Menuisier",
+      "univers": "BTP",
+      "code": "RAC",
+      "level": 0,
+      "description": "Fabriquer et poser des ouvrages en bois, sur mesure ou en série.",
+      "tags": [
+        "tension",
+        "reconv",
+        "indep"
+      ]
+    },
+    {
+      "name": "Ingénieur génie civil",
+      "univers": "BTP",
+      "code": "IRC",
+      "level": 5,
+      "description": "Calculer et concevoir ouvrages d'art, structures, infrastructures.",
+      "tags": []
+    },
+    {
+      "name": "Géomètre-topographe",
+      "univers": "BTP",
+      "code": "RIC",
+      "level": 2,
+      "description": "Mesurer le terrain et produire les plans qui font foi.",
+      "tags": []
+    },
+    {
+      "name": "Technico-commercial",
+      "univers": "COM",
+      "code": "ERC",
+      "level": 2,
+      "description": "Vendre des solutions techniques à des entreprises.",
+      "tags": [
+        "tension",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Responsable de magasin",
+      "univers": "COM",
+      "code": "ECS",
+      "level": 2,
+      "description": "Faire tourner un point de vente : équipe, stock, chiffre.",
+      "tags": [
+        "tension",
+        "horaires"
+      ]
+    },
+    {
+      "name": "Chef de produit marketing",
+      "univers": "COM",
+      "code": "EAI",
+      "level": 5,
+      "description": "Décider de ce qu'on vend, à qui, à quel prix.",
+      "tags": []
+    },
+    {
+      "name": "Acheteur",
+      "univers": "COM",
+      "code": "ECI",
+      "level": 3,
+      "description": "Sélectionner les fournisseurs et négocier les conditions.",
+      "tags": []
+    },
+    {
+      "name": "Négociateur immobilier",
+      "univers": "COM",
+      "code": "ESC",
+      "level": 2,
+      "description": "Trouver des biens, des acquéreurs, et conclure.",
+      "tags": [
+        "reconv",
+        "indep",
+        "horaires"
+      ]
+    },
+    {
+      "name": "Responsable e-commerce",
+      "univers": "COM",
+      "code": "ECA",
+      "level": 3,
+      "description": "Piloter les ventes en ligne, du catalogue à la conversion.",
+      "tags": [
+        "tension"
+      ]
+    },
+    {
+      "name": "Chargé de recrutement",
+      "univers": "COM",
+      "code": "ESC",
+      "level": 3,
+      "description": "Trouver, évaluer et convaincre les bons candidats.",
+      "tags": [
+        "reconv"
+      ]
+    },
+    {
+      "name": "Chargé de communication",
+      "univers": "MED",
+      "code": "AES",
+      "level": 3,
+      "description": "Faire connaître une organisation : contenus, presse, événements.",
+      "tags": []
+    },
+    {
+      "name": "Journaliste",
+      "univers": "MED",
+      "code": "AIE",
+      "level": 3,
+      "description": "Enquêter, vérifier, raconter pour un média.",
+      "tags": [
+        "horaires",
+        "indep"
+      ]
+    },
+    {
+      "name": "Community manager",
+      "univers": "MED",
+      "code": "AEC",
+      "level": 2,
+      "description": "Animer les réseaux sociaux d'une marque et sa communauté.",
+      "tags": [
+        "reconv"
+      ]
+    },
+    {
+      "name": "Concepteur-rédacteur",
+      "univers": "MED",
+      "code": "AIC",
+      "level": 3,
+      "description": "Écrire les mots d'une marque : slogans, sites, campagnes.",
+      "tags": [
+        "indep"
+      ]
+    },
+    {
+      "name": "Attaché de presse",
+      "univers": "MED",
+      "code": "EAS",
+      "level": 3,
+      "description": "Obtenir que les journalistes parlent de votre client.",
+      "tags": []
+    },
+    {
+      "name": "Éditeur / assistant d'édition",
+      "univers": "MED",
+      "code": "ACI",
+      "level": 5,
+      "description": "Choisir, corriger et accompagner des textes jusqu'au livre.",
+      "tags": []
+    },
+    {
+      "name": "Motion designer",
+      "univers": "MED",
+      "code": "ARI",
+      "level": 3,
+      "description": "Animer images et typographie pour l'écran.",
+      "tags": [
+        "indep",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Régisseur de spectacle",
+      "univers": "CUL",
+      "code": "RCE",
+      "level": 2,
+      "description": "Faire que le spectacle ait lieu : technique, planning, sécurité.",
+      "tags": [
+        "horaires"
+      ]
+    },
+    {
+      "name": "Comédien",
+      "univers": "CUL",
+      "code": "ASE",
+      "level": 2,
+      "description": "Jouer au théâtre, au cinéma, en doublage.",
+      "tags": [
+        "horaires",
+        "indep"
+      ]
+    },
+    {
+      "name": "Médiateur culturel",
+      "univers": "CUL",
+      "code": "SAE",
+      "level": 3,
+      "description": "Rendre une collection ou un spectacle accessible à tous les publics.",
+      "tags": [
+        "utile"
+      ]
+    },
+    {
+      "name": "Bibliothécaire / documentaliste",
+      "univers": "CUL",
+      "code": "CIS",
+      "level": 3,
+      "description": "Organiser l'accès à l'information et accompagner les lecteurs.",
+      "tags": [
+        "utile"
+      ]
+    },
+    {
+      "name": "Ingénieur du son",
+      "univers": "CUL",
+      "code": "RAI",
+      "level": 2,
+      "description": "Capter, mixer, diffuser le son en studio ou en direct.",
+      "tags": [
+        "horaires",
+        "indep"
+      ]
+    },
+    {
+      "name": "Guide-conférencier",
+      "univers": "CUL",
+      "code": "SAE",
+      "level": 3,
+      "description": "Raconter un lieu, une époque, une œuvre devant un groupe.",
+      "tags": [
+        "indep",
+        "horaires"
+      ]
+    },
+    {
+      "name": "Restaurateur d'œuvres d'art",
+      "univers": "CUL",
+      "code": "RAI",
+      "level": 5,
+      "description": "Réparer et stabiliser des œuvres sans jamais les trahir.",
+      "tags": [
+        "indep"
+      ]
+    },
+    {
+      "name": "Avocat",
+      "univers": "DRO",
+      "code": "EIS",
+      "level": 5,
+      "description": "Conseiller et défendre, à l'écrit comme à la barre.",
+      "tags": [
+        "indep",
+        "horaires"
+      ]
+    },
+    {
+      "name": "Juriste d'entreprise",
+      "univers": "DRO",
+      "code": "ICE",
+      "level": 5,
+      "description": "Sécuriser les contrats et les décisions de l'entreprise.",
+      "tags": []
+    },
+    {
+      "name": "Greffier",
+      "univers": "DRO",
+      "code": "CIS",
+      "level": 3,
+      "description": "Garantir la régularité et la mémoire des actes de justice.",
+      "tags": []
+    },
+    {
+      "name": "Policier / gendarme",
+      "univers": "DRO",
+      "code": "RSE",
+      "level": 0,
+      "description": "Prévenir, constater, enquêter, protéger.",
+      "tags": [
+        "tension",
+        "horaires",
+        "utile"
+      ]
+    },
+    {
+      "name": "Militaire",
+      "univers": "DRO",
+      "code": "REC",
+      "level": 0,
+      "description": "Servir dans les forces armées, en métier technique ou opérationnel.",
+      "tags": [
+        "tension",
+        "horaires"
+      ]
+    },
+    {
+      "name": "Sapeur-pompier",
+      "univers": "DRO",
+      "code": "RSE",
+      "level": 0,
+      "description": "Secourir, éteindre, intervenir en urgence.",
+      "tags": [
+        "horaires",
+        "utile"
+      ]
+    },
+    {
+      "name": "Notaire",
+      "univers": "DRO",
+      "code": "CIE",
+      "level": 5,
+      "description": "Authentifier les actes de la vie des familles et des entreprises.",
+      "tags": [
+        "indep"
+      ]
+    },
+    {
+      "name": "Professeur des écoles",
+      "univers": "ENS",
+      "code": "SAC",
+      "level": 5,
+      "description": "Apprendre à lire, écrire, compter et vivre ensemble.",
+      "tags": [
+        "tension",
+        "utile"
+      ]
+    },
+    {
+      "name": "Professeur de collège ou lycée",
+      "univers": "ENS",
+      "code": "SIA",
+      "level": 5,
+      "description": "Transmettre une discipline et faire progresser une classe.",
+      "tags": [
+        "tension",
+        "utile"
+      ]
+    },
+    {
+      "name": "Formateur pour adultes",
+      "univers": "ENS",
+      "code": "SEA",
+      "level": 3,
+      "description": "Former des professionnels en activité ou en reconversion.",
+      "tags": [
+        "reconv",
+        "utile"
+      ]
+    },
+    {
+      "name": "Conseiller principal d'éducation",
+      "univers": "ENS",
+      "code": "SEC",
+      "level": 5,
+      "description": "Organiser la vie scolaire et accompagner les élèves au quotidien.",
+      "tags": [
+        "utile"
+      ]
+    },
+    {
+      "name": "Psychologue de l'Éducation nationale",
+      "univers": "ENS",
+      "code": "SIE",
+      "level": 5,
+      "description": "Accompagner les élèves dans leurs difficultés et leur orientation.",
+      "tags": [
+        "utile"
+      ]
+    },
+    {
+      "name": "Professeur d'EPS",
+      "univers": "ENS",
+      "code": "SRE",
+      "level": 5,
+      "description": "Enseigner le sport et l'engagement physique au collège et au lycée.",
+      "tags": [
+        "utile"
+      ]
+    },
+    {
+      "name": "Ingénieur pédagogique",
+      "univers": "ENS",
+      "code": "ISA",
+      "level": 5,
+      "description": "Concevoir des parcours de formation, souvent numériques.",
+      "tags": [
+        "reconv"
+      ]
+    },
+    {
+      "name": "Technicien en énergies renouvelables",
+      "univers": "ENV",
+      "code": "RIC",
+      "level": 2,
+      "description": "Installer et maintenir solaire, éolien, pompes à chaleur.",
+      "tags": [
+        "tension",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Chargé de mission développement durable",
+      "univers": "ENV",
+      "code": "ISE",
+      "level": 5,
+      "description": "Réduire l'empreinte d'une organisation et la mettre en conformité.",
+      "tags": [
+        "utile"
+      ]
+    },
+    {
+      "name": "Technicien traitement de l'eau",
+      "univers": "ENV",
+      "code": "RIC",
+      "level": 2,
+      "description": "Faire tourner les installations qui rendent l'eau potable.",
+      "tags": [
+        "tension",
+        "utile"
+      ]
+    },
+    {
+      "name": "Conseiller en rénovation énergétique",
+      "univers": "ENV",
+      "code": "RIS",
+      "level": 2,
+      "description": "Diagnostiquer des logements et orienter les travaux.",
+      "tags": [
+        "tension",
+        "reconv",
+        "utile"
+      ]
+    },
+    {
+      "name": "Écologue",
+      "univers": "ENV",
+      "code": "IRS",
+      "level": 5,
+      "description": "Étudier les milieux naturels et évaluer l'impact des projets.",
+      "tags": []
+    },
+    {
+      "name": "Responsable QSE",
+      "univers": "ENV",
+      "code": "CIE",
+      "level": 5,
+      "description": "Tenir la qualité, la sécurité et l'environnement d'un site.",
+      "tags": []
+    },
+    {
+      "name": "Cuisinier",
+      "univers": "HOT",
+      "code": "RAC",
+      "level": 0,
+      "description": "Produire en service, vite et bien, tous les jours.",
+      "tags": [
+        "tension",
+        "horaires",
+        "reconv",
+        "indep"
+      ]
+    },
+    {
+      "name": "Chef de cuisine",
+      "univers": "HOT",
+      "code": "RAE",
+      "level": 2,
+      "description": "Créer la carte, tenir les coûts, diriger la brigade.",
+      "tags": [
+        "horaires",
+        "indep"
+      ]
+    },
+    {
+      "name": "Pâtissier",
+      "univers": "HOT",
+      "code": "RAC",
+      "level": 0,
+      "description": "Travailler la précision et le goût, tôt le matin.",
+      "tags": [
+        "tension",
+        "horaires",
+        "reconv",
+        "indep"
+      ]
+    },
+    {
+      "name": "Réceptionniste d'hôtel",
+      "univers": "HOT",
+      "code": "SCE",
+      "level": 2,
+      "description": "Accueillir, résoudre, faire que le séjour se passe bien.",
+      "tags": [
+        "horaires",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Directeur d'hôtel",
+      "univers": "HOT",
+      "code": "ESC",
+      "level": 3,
+      "description": "Piloter un établissement : équipes, taux d'occupation, qualité.",
+      "tags": [
+        "horaires"
+      ]
+    },
+    {
+      "name": "Conseiller voyages",
+      "univers": "HOT",
+      "code": "ESC",
+      "level": 2,
+      "description": "Construire et vendre des séjours sur mesure.",
+      "tags": [
+        "reconv"
+      ]
+    },
+    {
+      "name": "Technicien de maintenance industrielle",
+      "univers": "IND",
+      "code": "RIC",
+      "level": 2,
+      "description": "Diagnostiquer et réparer des machines de production.",
+      "tags": [
+        "tension",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Opérateur-régleur sur machine-outil",
+      "univers": "IND",
+      "code": "RCI",
+      "level": 0,
+      "description": "Régler et conduire des machines à commande numérique.",
+      "tags": [
+        "tension",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Soudeur / chaudronnier",
+      "univers": "IND",
+      "code": "RCA",
+      "level": 0,
+      "description": "Assembler et former le métal, avec une exigence de précision.",
+      "tags": [
+        "tension",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Technicien méthodes",
+      "univers": "IND",
+      "code": "IRC",
+      "level": 2,
+      "description": "Organiser la production : gammes, temps, outillages.",
+      "tags": []
+    },
+    {
+      "name": "Responsable de production",
+      "univers": "IND",
+      "code": "ERC",
+      "level": 5,
+      "description": "Tenir les cadences, la qualité et les équipes d'un atelier.",
+      "tags": [
+        "horaires"
+      ]
+    },
+    {
+      "name": "Ingénieur qualité",
+      "univers": "IND",
+      "code": "ICR",
+      "level": 5,
+      "description": "Prouver que ce qui sort de l'usine est conforme.",
+      "tags": []
+    },
+    {
+      "name": "Technicien aéronautique",
+      "univers": "IND",
+      "code": "RIC",
+      "level": 2,
+      "description": "Entretenir et certifier des aéronefs.",
+      "tags": [
+        "tension"
+      ]
+    },
+    {
+      "name": "Développeur web ou logiciel",
+      "univers": "NUM",
+      "code": "IRA",
+      "level": 3,
+      "description": "Écrire et maintenir le code d'applications utilisées tous les jours.",
+      "tags": [
+        "tension",
+        "reconv",
+        "indep"
+      ]
+    },
+    {
+      "name": "Data analyst",
+      "univers": "NUM",
+      "code": "ICE",
+      "level": 5,
+      "description": "Faire parler les données pour éclairer des décisions.",
+      "tags": [
+        "tension",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Data scientist / ingénieur IA",
+      "univers": "NUM",
+      "code": "IAC",
+      "level": 5,
+      "description": "Concevoir des modèles prédictifs et les mettre en production.",
+      "tags": [
+        "tension"
+      ]
+    },
+    {
+      "name": "Administrateur systèmes et réseaux",
+      "univers": "NUM",
+      "code": "RIC",
+      "level": 3,
+      "description": "Garder l'infrastructure debout, sécurisée et à jour.",
+      "tags": [
+        "tension",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Analyste cybersécurité",
+      "univers": "NUM",
+      "code": "IRC",
+      "level": 5,
+      "description": "Détecter, contenir et prévenir les attaques informatiques.",
+      "tags": [
+        "tension"
+      ]
+    },
+    {
+      "name": "Chef de projet digital",
+      "univers": "NUM",
+      "code": "EIC",
+      "level": 5,
+      "description": "Faire aboutir un produit numérique entre métier et technique.",
+      "tags": [
+        "reconv"
+      ]
+    },
+    {
+      "name": "Product owner",
+      "univers": "NUM",
+      "code": "EIA",
+      "level": 5,
+      "description": "Décider quoi construire et dans quel ordre.",
+      "tags": [
+        "reconv"
+      ]
+    },
+    {
+      "name": "Technicien support informatique",
+      "univers": "NUM",
+      "code": "RSC",
+      "level": 2,
+      "description": "Dépanner les utilisateurs et fiabiliser leur poste de travail.",
+      "tags": [
+        "tension",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Responsable logistique",
+      "univers": "LOG",
+      "code": "CER",
+      "level": 3,
+      "description": "Organiser les flux : stocks, transport, délais, coûts.",
+      "tags": [
+        "tension"
+      ]
+    },
+    {
+      "name": "Cariste / préparateur de commandes",
+      "univers": "LOG",
+      "code": "RCS",
+      "level": 0,
+      "description": "Faire circuler la marchandise dans l'entrepôt sans erreur.",
+      "tags": [
+        "tension",
+        "reconv",
+        "horaires"
+      ]
+    },
+    {
+      "name": "Conducteur routier",
+      "univers": "LOG",
+      "code": "RCS",
+      "level": 0,
+      "description": "Transporter des marchandises sur route, en autonomie.",
+      "tags": [
+        "tension",
+        "reconv",
+        "horaires"
+      ]
+    },
+    {
+      "name": "Déclarant en douane",
+      "univers": "LOG",
+      "code": "CIE",
+      "level": 2,
+      "description": "Sécuriser la circulation internationale des marchandises.",
+      "tags": [
+        "reconv"
+      ]
+    },
+    {
+      "name": "Approvisionneur / planificateur",
+      "univers": "LOG",
+      "code": "CIE",
+      "level": 2,
+      "description": "Commander au bon moment la bonne quantité.",
+      "tags": [
+        "reconv"
+      ]
+    },
+    {
+      "name": "Pilote de ligne",
+      "univers": "LOG",
+      "code": "RIC",
+      "level": 3,
+      "description": "Conduire un avion selon des procédures strictes.",
+      "tags": [
+        "horaires"
+      ]
+    },
+    {
+      "name": "Infirmier",
+      "univers": "SAN",
+      "code": "SIR",
+      "level": 3,
+      "description": "Soigner, surveiller, coordonner autour du patient.",
+      "tags": [
+        "tension",
+        "horaires",
+        "utile"
+      ]
+    },
+    {
+      "name": "Aide-soignant",
+      "univers": "SAN",
+      "code": "SRC",
+      "level": 0,
+      "description": "Accompagner les gestes du quotidien et surveiller l'état des patients.",
+      "tags": [
+        "tension",
+        "horaires",
+        "utile",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Médecin généraliste",
+      "univers": "SAN",
+      "code": "ISR",
+      "level": 5,
+      "description": "Diagnostiquer, traiter, suivre dans la durée.",
+      "tags": [
+        "tension",
+        "utile",
+        "indep"
+      ]
+    },
+    {
+      "name": "Masseur-kinésithérapeute",
+      "univers": "SAN",
+      "code": "SRI",
+      "level": 5,
+      "description": "Rééduquer le mouvement après blessure ou maladie.",
+      "tags": [
+        "tension",
+        "utile",
+        "indep"
+      ]
+    },
+    {
+      "name": "Pharmacien",
+      "univers": "SAN",
+      "code": "ICS",
+      "level": 5,
+      "description": "Dispenser, contrôler, conseiller sur le médicament.",
+      "tags": [
+        "utile",
+        "indep"
+      ]
+    },
+    {
+      "name": "Manipulateur en radiologie",
+      "univers": "SAN",
+      "code": "RIS",
+      "level": 3,
+      "description": "Réaliser les examens d'imagerie et la radiothérapie.",
+      "tags": [
+        "tension",
+        "horaires"
+      ]
+    },
+    {
+      "name": "Sage-femme",
+      "univers": "SAN",
+      "code": "SIR",
+      "level": 5,
+      "description": "Suivre la grossesse et accompagner les naissances.",
+      "tags": [
+        "horaires",
+        "utile",
+        "indep"
+      ]
+    },
+    {
+      "name": "Ergothérapeute",
+      "univers": "SAN",
+      "code": "SRI",
+      "level": 3,
+      "description": "Rendre le quotidien à nouveau possible, par l'aménagement et l'entraînement.",
+      "tags": [
+        "utile"
+      ]
+    },
+    {
+      "name": "Diététicien",
+      "univers": "SAN",
+      "code": "SIC",
+      "level": 2,
+      "description": "Adapter l'alimentation à la santé et aux pathologies.",
+      "tags": [
+        "utile",
+        "indep"
+      ]
+    },
+    {
+      "name": "Éducateur spécialisé",
+      "univers": "SOC",
+      "code": "SAE",
+      "level": 3,
+      "description": "Accompagner enfants ou adultes en difficulté vers plus d'autonomie.",
+      "tags": [
+        "tension",
+        "utile"
+      ]
+    },
+    {
+      "name": "Assistant de service social",
+      "univers": "SOC",
+      "code": "SCE",
+      "level": 3,
+      "description": "Aider à faire valoir des droits et à sortir d'une situation bloquée.",
+      "tags": [
+        "tension",
+        "utile"
+      ]
+    },
+    {
+      "name": "Conseiller en insertion professionnelle",
+      "univers": "SOC",
+      "code": "SEC",
+      "level": 3,
+      "description": "Accompagner le retour à l'emploi, pas à pas.",
+      "tags": [
+        "utile",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Éducateur de jeunes enfants",
+      "univers": "SOC",
+      "code": "SAC",
+      "level": 3,
+      "description": "Concevoir l'accueil et l'éveil des tout-petits.",
+      "tags": [
+        "tension",
+        "utile"
+      ]
+    },
+    {
+      "name": "Accompagnant éducatif et social",
+      "univers": "SOC",
+      "code": "SRC",
+      "level": 0,
+      "description": "Aider au quotidien les personnes âgées ou handicapées.",
+      "tags": [
+        "tension",
+        "utile",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Auxiliaire de puériculture",
+      "univers": "SOC",
+      "code": "SRC",
+      "level": 0,
+      "description": "Prendre soin des nourrissons en crèche ou en maternité.",
+      "tags": [
+        "tension",
+        "utile",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Responsable ressources humaines",
+      "univers": "SOC",
+      "code": "ESC",
+      "level": 5,
+      "description": "Recruter, former, négocier, tenir le cadre social.",
+      "tags": []
+    },
+    {
+      "name": "Éducateur sportif",
+      "univers": "SPO",
+      "code": "SRE",
+      "level": 2,
+      "description": "Faire progresser des pratiquants, en club ou en salle.",
+      "tags": [
+        "horaires",
+        "indep",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Animateur socioculturel",
+      "univers": "SPO",
+      "code": "SAE",
+      "level": 2,
+      "description": "Faire vivre un quartier, un centre, un public.",
+      "tags": [
+        "utile",
+        "horaires",
+        "reconv"
+      ]
+    },
+    {
+      "name": "Préparateur physique",
+      "univers": "SPO",
+      "code": "SRI",
+      "level": 3,
+      "description": "Construire la condition physique d'un athlète ou d'une équipe.",
+      "tags": [
+        "horaires"
+      ]
+    },
+    {
+      "name": "Responsable d'équipement sportif",
+      "univers": "SPO",
+      "code": "ECS",
+      "level": 3,
+      "description": "Gérer une piscine, un complexe, une salle : équipes et budget.",
+      "tags": []
+    },
+    {
+      "name": "Chercheur",
+      "univers": "SCI",
+      "code": "IAR",
+      "level": 5,
+      "description": "Produire de la connaissance nouvelle et la publier.",
+      "tags": []
+    },
+    {
+      "name": "Ingénieur R&D",
+      "univers": "SCI",
+      "code": "IRA",
+      "level": 5,
+      "description": "Transformer un résultat scientifique en produit qui marche.",
+      "tags": []
+    },
+    {
+      "name": "Technicien de laboratoire",
+      "univers": "SCI",
+      "code": "RIC",
+      "level": 2,
+      "description": "Réaliser les analyses et garantir leur fiabilité.",
+      "tags": [
+        "reconv"
+      ]
+    },
+    {
+      "name": "Statisticien",
+      "univers": "SCI",
+      "code": "ICA",
+      "level": 5,
+      "description": "Concevoir les enquêtes et mesurer ce qui est mesurable.",
+      "tags": []
+    },
+    {
+      "name": "Biologiste médical",
+      "univers": "SCI",
+      "code": "ICR",
+      "level": 5,
+      "description": "Diriger les analyses qui fondent un diagnostic.",
+      "tags": [
+        "utile"
+      ]
+    }
+  ]
+}

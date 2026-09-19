@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "title": "Salarié ou entrepreneur ?",
+    "totalItems": 18,
+    "disclaimer": "Ce test mesure une appétence, pas une compétence ni une probabilité de réussite. Un score élevé ne dit rien de la viabilité d'un projet. Un score bas n'interdit à personne d'entreprendre : il indique ce qu'il faudra compenser — un associé, un accompagnement, ou un démarrage progressif en parallèle d'un emploi."
+  },
+  "axes": [
+    {
+      "key": "incertitude",
+      "name": "Tolérance à l'incertitude",
+      "short": "Incertitude",
+      "description": "Avancer sans visibilité, décider avec des informations incomplètes",
+      "lowText": "Vous avez besoin de voir où vous mettez les pieds. Un plan de charge connu trois mois à l'avance n'est pas un confort pour vous, c'est une condition de fonctionnement.",
+      "midText": "Vous supportez l'incertitude par périodes, à condition qu'elle ait une date de fin.",
+      "hiText": "Le flou ne vous bloque pas. Vous savez démarrer sans connaître la fin, ce qui est la condition d'entrée de tout projet à soi."
+    },
+    {
+      "key": "autonomie",
+      "name": "Autonomie et auto-organisation",
+      "short": "Autonomie",
+      "description": "Structurer son temps et ses priorités sans cadre imposé",
+      "lowText": "Sans regard extérieur sur votre avancement, vous décrochez. Le cadre n'est pas une contrainte pour vous, c'est un moteur.",
+      "midText": "Vous êtes autonome sur l'exécution, moins sur la priorisation. Un cap fixé par quelqu'un d'autre vous fait gagner du temps.",
+      "hiText": "Vous vous fixez vos échéances et vous les tenez sans personne derrière vous. Une journée vide ne vous fait pas peur."
+    },
+    {
+      "key": "initiative",
+      "name": "Initiative et aisance commerciale",
+      "short": "Initiative",
+      "description": "Aller vers l'autre, proposer, vendre, se rendre visible",
+      "lowText": "Aller vers les gens et demander de l'argent pour votre travail vous coûte. C'est ce qui fait échouer le plus d'indépendants pourtant compétents.",
+      "midText": "Vous savez défendre ce en quoi vous croyez, moins vous vendre vous-même. La prospection à froid vous coûtera.",
+      "hiText": "Vous allez chercher, vous proposez sans qu'on vous le demande, et annoncer votre prix ne vous embarrasse pas."
+    },
+    {
+      "key": "securite",
+      "name": "Rapport à la sécurité financière",
+      "short": "Sécurité",
+      "description": "Le besoin d'un revenu régulier et prévisible",
+      "lowText": "Un revenu irrégulier vous userait. Le salaire n'est pas qu'un montant chez vous, c'est un équilibre nerveux.",
+      "midText": "Vous encaisseriez quelques mois creux, pas une année. Il vous faut une réserve constituée avant tout départ.",
+      "hiText": "Les mois sans rentrée ne vous paniquent pas, et vous êtes prêt à engager votre propre argent."
+    },
+    {
+      "key": "resilience",
+      "name": "Résilience face à l'échec",
+      "short": "Résilience",
+      "description": "Rebondir après un refus, une perte, une erreur publique",
+      "lowText": "Les refus et les critiques vous occupent longtemps. L'indépendance en distribue en un trimestre plus que le salariat en dix ans.",
+      "midText": "Vous encaissez, mais avec un délai. Enchaîner plusieurs refus dans la même semaine vous coûterait.",
+      "hiText": "Un refus ne vous arrête pas plus de quelques jours, et vous avez déjà recommencé quelque chose de zéro."
+    },
+    {
+      "key": "cadre",
+      "name": "Rapport au collectif et au cadre",
+      "short": "Cadre",
+      "description": "Le besoin d'équipe, de hiérarchie, de validation externe",
+      "lowText": "Le collectif et la reconnaissance d'un supérieur comptent dans votre satisfaction. Seul chez vous, le travail perdrait de son sens.",
+      "midText": "Vous aimez l'équipe sans en dépendre. Un espace partagé ou des associés compenseraient l'isolement.",
+      "hiText": "Ni équipe permanente ni validation hiérarchique ne vous sont nécessaires pour vous sentir à votre place."
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "kind": "pair",
+      "axis": "resilience",
+      "textA": "Une critique sur mon travail me trotte dans la tête plusieurs jours.",
+      "textB": "Une critique sur mon travail me sert le lendemain, puis passe.",
+      "flip": false
+    },
+    {
+      "id": 2,
+      "kind": "pair",
+      "axis": "autonomie",
+      "textA": "Je travaille mieux quand on me laisse tranquille jusqu'au résultat.",
+      "textB": "Je travaille mieux quand quelqu'un suit régulièrement mon avancement.",
+      "flip": true
+    },
+    {
+      "id": 3,
+      "kind": "likert",
+      "axis": "initiative",
+      "text": "Il m'arrive de proposer des idées ou des services sans qu'on me les ait demandés.",
+      "reverse": false
+    },
+    {
+      "id": 4,
+      "kind": "pair",
+      "axis": "incertitude",
+      "textA": "Je décide avec ce que j'ai sous la main, et je corrige ensuite.",
+      "textB": "Je décide une fois que j'ai réuni toutes les informations.",
+      "flip": true
+    },
+    {
+      "id": 5,
+      "kind": "pair",
+      "axis": "cadre",
+      "textA": "J'ai besoin qu'on valide ce que je produis.",
+      "textB": "Je sais moi-même si ce que je produis est bon.",
+      "flip": false
+    },
+    {
+      "id": 6,
+      "kind": "likert",
+      "axis": "resilience",
+      "text": "J'ai déjà tout recommencé de zéro après que quelque chose n'ait pas marché.",
+      "reverse": false
+    },
+    {
+      "id": 7,
+      "kind": "pair",
+      "axis": "initiative",
+      "textA": "Annoncer mon prix ne me pose aucun problème.",
+      "textB": "Annoncer mon prix me met mal à l'aise.",
+      "flip": true
+    },
+    {
+      "id": 8,
+      "kind": "pair",
+      "axis": "securite",
+      "textA": "Un revenu plus élevé mais irrégulier.",
+      "textB": "Un revenu plus faible mais garanti chaque mois.",
+      "flip": true
+    },
+    {
+      "id": 9,
+      "kind": "likert",
+      "axis": "cadre",
+      "text": "J'ai besoin que mon travail soit validé par un supérieur pour m'en sentir satisfait.",
+      "reverse": true
+    },
+    {
+      "id": 10,
+      "kind": "pair",
+      "axis": "initiative",
+      "textA": "J'attends qu'on vienne me chercher pour ce que je sais faire.",
+      "textB": "Je vais proposer mes services avant qu'on me les demande.",
+      "flip": false
+    },
+    {
+      "id": 11,
+      "kind": "pair",
+      "axis": "incertitude",
+      "textA": "Il me faut connaître toutes les étapes avant de me lancer.",
+      "textB": "Je préfère lancer quelque chose d'imparfait et l'ajuster en route.",
+      "flip": false
+    },
+    {
+      "id": 12,
+      "kind": "likert",
+      "axis": "autonomie",
+      "text": "Sans que personne me le demande, j'arrive à me fixer des échéances et à les tenir.",
+      "reverse": false
+    },
+    {
+      "id": 13,
+      "kind": "pair",
+      "axis": "resilience",
+      "textA": "J'accepte d'avoir l'air incompétent le temps d'apprendre.",
+      "textB": "J'évite les situations où je risque d'avoir l'air incompétent.",
+      "flip": true
+    },
+    {
+      "id": 14,
+      "kind": "pair",
+      "axis": "securite",
+      "textA": "Je garde mon épargne à l'abri, quoi qu'il arrive.",
+      "textB": "Je suis prêt à mettre mon épargne dans un projet incertain.",
+      "flip": false
+    },
+    {
+      "id": 15,
+      "kind": "likert",
+      "axis": "incertitude",
+      "text": "Un changement d'organisation imprévu me met mal à l'aise plusieurs jours.",
+      "reverse": true
+    },
+    {
+      "id": 16,
+      "kind": "pair",
+      "axis": "cadre",
+      "textA": "Un travail passionnant que je mène seul.",
+      "textB": "Un travail moyen dans une équipe que j'aime.",
+      "flip": true
+    },
+    {
+      "id": 17,
+      "kind": "pair",
+      "axis": "autonomie",
+      "textA": "Face à dix tâches urgentes, je préfère qu'on me dise par quoi commencer.",
+      "textB": "Face à dix tâches urgentes, je tranche moi-même, quitte à me tromper.",
+      "flip": false
+    },
+    {
+      "id": 18,
+      "kind": "likert",
+      "axis": "securite",
+      "text": "L'idée de m'endetter pour un projet professionnel m'est insupportable.",
+      "reverse": true
+    }
+  ],
+  "profiles": [
+    {
+      "min": 24,
+      "max": 55,
+      "name": "Profil salarié",
+      "body": [
+        "Le cadre, l'équipe et la régularité du revenu sont chez vous des besoins réels, pas des faiblesses à corriger. Une création d'entreprise vous coûterait en énergie bien plus qu'elle ne vous rapporterait en liberté.",
+        "La piste la plus rentable : chercher l'intérêt dans le contenu du poste et dans la qualité du collectif, plutôt que dans le statut. Un changement de métier ou de secteur vous apportera davantage qu'un changement de régime."
+      ]
+    },
+    {
+      "min": 56,
+      "max": 79,
+      "name": "Profil intrapreneur",
+      "body": [
+        "Vous avez l'autonomie et le goût de l'initiative, sans l'appétence pour le risque financier qui accompagne l'indépendance. C'est le profil le plus fréquent, et le plus mal servi par les tests binaires.",
+        "La piste : un poste à forte latitude plutôt qu'un statut. Chef de projet, responsable d'une activité nouvelle, premier salarié d'une structure jeune. Ou une création en douceur, en parallèle d'un emploi, pour tester sans tout miser."
+      ]
+    },
+    {
+      "min": 80,
+      "max": 99,
+      "name": "Profil indépendant",
+      "body": [
+        "Vous avez le socle d'un freelance : vous vous organisez seul, vous encaissez les refus, l'irrégularité ne vous terrifie pas. L'indépendance a de bonnes chances de vous convenir, en solo ou en micro-structure.",
+        "La piste : commencer par du travail en direct avec des clients, sans salariés ni charges fixes lourdes. Surveillez votre axe Initiative — c'est lui qui sépare l'indépendant qui vit de son métier de celui qui subit les périodes creuses."
+      ]
+    },
+    {
+      "min": 100,
+      "max": 120,
+      "name": "Profil créateur d'entreprise",
+      "body": [
+        "Appétence très marquée : incertitude, risque financier, autonomie et rebond sont tous au vert. Le profil supporte un projet à vraie prise de risque, avec des associés et des salariés.",
+        "La piste : attention au versant sombre de ce profil. Une appétence aussi forte s'accompagne souvent d'une difficulté à déléguer et à entendre un désaccord. Choisissez vos associés pour ce qu'ils vous opposent, pas pour ce qu'ils vous confirment."
+      ]
+    }
+  ]
+}

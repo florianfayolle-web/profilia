@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { SITE_URL } from "@/lib/site";
+import { GUIDES } from "@/lib/guides";
 import type { ArticleRow } from "@/lib/article-types";
 import type { Test } from "@/lib/types";
 
@@ -16,6 +17,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, changeFrequency: "weekly", priority: 1 },
     { url: `${SITE_URL}/tests`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE_URL}/tests/pilote`, changeFrequency: "weekly", priority: 0.85 },
+    { url: `${SITE_URL}/tests/grande-entreprise`, changeFrequency: "weekly", priority: 0.85 },
+    { url: `${SITE_URL}/tests/personnalite`, changeFrequency: "weekly", priority: 0.85 },
+    { url: `${SITE_URL}/guides`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/blog`, changeFrequency: "daily", priority: 0.7 },
     { url: `${SITE_URL}/pricing`, changeFrequency: "monthly", priority: 0.7 },
   ];
@@ -25,6 +30,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: test.created_at,
     changeFrequency: "monthly",
     priority: 0.8,
+  }));
+
+  const guideRoutes: MetadataRoute.Sitemap = GUIDES.map((guide) => ({
+    url: `${SITE_URL}/guides/${guide.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
   }));
 
   const admin = createAdminClient();
@@ -41,5 +52,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...testRoutes, ...articleRoutes];
+  return [...staticRoutes, ...testRoutes, ...guideRoutes, ...articleRoutes];
 }

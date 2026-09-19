@@ -231,7 +231,7 @@ export function ProfileLineChart({
   const gradId = useId();
   const width = Math.max(360, data.length * 80);
   const paddingLeft = 34;
-  const paddingRight = 16;
+  const paddingRight = 40;
   const paddingTop = 16;
   const paddingBottom = 46;
   const plotW = width - paddingLeft - paddingRight;

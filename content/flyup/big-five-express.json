@@ -1,0 +1,145 @@
+{
+  "testId": "big-five-express",
+  "title": "Test de personnalité express",
+  "instructions": "20 affirmations en paires opposées, sur 5 grandes dimensions de la personnalité. Pour chaque paire, choisis l'affirmation qui te correspond le plus — sans trop réfléchir, la première impression est souvent la bonne.",
+  "responseScale": [
+    { "value": -2, "anchor": "left", "label": "Tout à fait d'accord" },
+    { "value": -1, "anchor": "left", "label": "D'accord" },
+    { "value": 0, "anchor": "neutral", "label": "Neutre" },
+    { "value": 1, "anchor": "right", "label": "D'accord" },
+    { "value": 2, "anchor": "right", "label": "Tout à fait d'accord" }
+  ],
+  "report": {
+    "intro": "Ce profil décrit tes tendances naturelles sur 5 grandes dimensions de la personnalité, à partir de tes réponses. Il n'y a pas de bon ou de mauvais profil : chaque tendance a ses forces et ses points de vigilance, selon les situations.",
+    "outro": "Ce résultat est une photographie de tes préférences à un instant donné, pas un diagnostic figé : il peut évoluer avec le temps et l'expérience. Si ce format t'a plu, nos autres tests (DISC, bilan de personnalité à 360°, Process Communication...) explorent ta personnalité sous d'autres angles, avec un rapport encore plus détaillé."
+  },
+  "dimensions": [
+    {
+      "key": "ouverture",
+      "name": "Ouverture d'esprit",
+      "poleA": {
+        "label": "Curiosité & nouveauté",
+        "description": "Tu es attiré par les idées nouvelles, les expériences inhabituelles et les façons de penser différentes des tiennes. La routine t'use plus vite qu'elle ne te rassure.",
+        "trait": "Le Curieux"
+      },
+      "poleB": {
+        "label": "Concret & habitude",
+        "description": "Tu préfères ce qui a fait ses preuves aux idées encore incertaines, et tu te sens à l'aise dans un cadre familier plutôt que dans la nouveauté pour la nouveauté.",
+        "trait": "Le Pragmatique"
+      },
+      "report": {
+        "Amarque": "Ta curiosité est un moteur : tu vas naturellement vers les idées neuves, les sujets que tu ne maîtrises pas encore, les façons de faire différentes des tiennes. C'est une vraie force pour apprendre vite et sortir des sentiers battus — veille simplement à aller au bout des projets qui t'enthousiasment le moins sur la durée.",
+        "Amodere": "Tu apprécies la nouveauté et les idées différentes des tiennes, sans en avoir un besoin permanent : tu sais t'enrichir d'une expérience inhabituelle tout en restant à l'aise dans un cadre plus classique.",
+        "equilibre": "Tu navigues avec aisance entre le connu et l'inconnu selon ce que la situation demande : ni fermé aux idées nouvelles, ni instable dans tes repères.",
+        "Bmodere": "Tu préfères généralement ce qui est éprouvé à ce qui est incertain, sans pour autant fuir toute nouveauté quand elle a du sens pour toi.",
+        "Bmarque": "Tu as une appétence marquée pour le concret et les méthodes qui ont fait leurs preuves. C'est un vrai gage de fiabilité, à condition de veiller à ne pas fermer la porte trop vite à une idée simplement parce qu'elle est nouvelle."
+      }
+    },
+    {
+      "key": "organisation",
+      "name": "Organisation",
+      "poleA": {
+        "label": "Structure & méthode",
+        "description": "Tu avances avec un cadre clair, une méthode établie et des étapes définies à l'avance. Le désordre te coûte de l'énergie.",
+        "trait": "L'Organisé"
+      },
+      "poleB": {
+        "label": "Spontanéité & flexibilité",
+        "description": "Tu avances en t'ajustant au fil de l'eau, et un cadre trop rigide te pèse plus qu'il ne te rassure.",
+        "trait": "Le Spontané"
+      },
+      "report": {
+        "Amarque": "Tu as besoin d'un cadre clair et de repères précis pour te sentir efficace : tu planifies, tu anticipes, tu aimes savoir où tu vas avant d'agir. C'est un vrai atout pour mener les choses à terme — reste juste attentif à garder ta capacité d'ajustement quand la réalité s'écarte du plan prévu.",
+        "Amodere": "Tu apprécies d'avancer avec une méthode, sans pour autant être rigide : tu sais t'organiser tout en laissant une marge de manœuvre quand c'est nécessaire.",
+        "equilibre": "Tu ajustes ton degré de préparation selon ce que la situation demande : ni rigide, ni désorganisé.",
+        "Bmodere": "Tu es à l'aise avec l'imprévu et tu préfères ajuster ton approche au fil de l'eau plutôt que de tout figer à l'avance.",
+        "Bmarque": "Tu as une appétence marquée pour la liberté d'action et l'improvisation, et un cadre trop rigide peut vite t'étouffer. C'est un vrai atout de réactivité face à l'imprévu, à condition de veiller à ne pas laisser filer les tâches qui demandent, elles, un vrai suivi."
+      }
+    },
+    {
+      "key": "extraversion",
+      "name": "Extraversion",
+      "poleA": {
+        "label": "Énergie sociale",
+        "description": "Tu te ressources au contact des autres : un groupe, une discussion, un imprévu social te dynamisent plus qu'ils ne te fatiguent.",
+        "trait": "Le Sociable"
+      },
+      "poleB": {
+        "label": "Réflexion intérieure",
+        "description": "Tu te ressources dans le calme et la solitude choisie : trop de sollicitations sociales d'affilée t'épuisent, même si tu apprécies les gens.",
+        "trait": "Le Réservé"
+      },
+      "report": {
+        "Amarque": "Tu tires ton énergie du contact avec les autres : les échanges, les groupes, l'imprévu social te stimulent plus qu'ils ne te coûtent. C'est un vrai atout relationnel — veille simplement à te ménager aussi des moments de retrait, même si tu n'en ressens pas toujours le besoin sur le moment.",
+        "Amodere": "Tu apprécies le contact social sans en avoir un besoin permanent : tu sais autant profiter d'un moment à plusieurs que d'un moment seul.",
+        "equilibre": "Tu alternes naturellement entre moments sociaux et moments de retrait selon ton énergie du jour, sans dépendre exclusivement de l'un ou de l'autre.",
+        "Bmodere": "Tu apprécies les moments sociaux choisis, mais tu as besoin de temps seul pour recharger, surtout après une période dense en interactions.",
+        "Bmarque": "Tu te ressources nettement mieux dans le calme et la réflexion que dans l'agitation sociale, même si cela ne t'empêche pas d'apprécier les gens que tu choisis de voir. C'est une vraie force de concentration et de profondeur — veille simplement à ne pas t'isoler quand une situation demanderait, elle, d'aller vers les autres."
+      }
+    },
+    {
+      "key": "agreabilite",
+      "name": "Agréabilité",
+      "poleA": {
+        "label": "Coopération & confiance",
+        "description": "Tu cherches naturellement le terrain d'entente, tu fais confiance par défaut, et le conflit t'est plus coûteux qu'utile.",
+        "trait": "Le Conciliant"
+      },
+      "poleB": {
+        "label": "Affirmation & franc-parler",
+        "description": "Tu dis les choses telles que tu les penses, même quand ça ne fait pas plaisir, et tu ne recherches pas le consensus à tout prix.",
+        "trait": "Le Direct"
+      },
+      "report": {
+        "Amarque": "Tu cherches naturellement l'harmonie et la coopération : tu fais confiance par défaut, et tu préfères arrondir les angles plutôt que d'entretenir une tension. C'est une vraie force pour fédérer — veille simplement à ne pas taire un désaccord réel par simple souci d'éviter le conflit.",
+        "Amodere": "Tu privilégies généralement la coopération et l'écoute, sans pour autant renoncer à exprimer un désaccord quand c'est important.",
+        "equilibre": "Tu sais aussi bien coopérer que t'affirmer selon ce que la situation demande, sans systématisme dans un sens ou dans l'autre.",
+        "Bmodere": "Tu dis assez facilement ce que tu penses, même quand ça bouscule, tout en restant capable de faire des concessions quand elles ont du sens.",
+        "Bmarque": "Tu as une franchise marquée : tu dis les choses telles qu'elles sont, sans trop les enrober, et le consensus de façade ne t'intéresse pas. C'est un vrai gage de clarté — veille simplement à adapter ta forme selon les personnes en face de toi, ce qui est vrai n'a pas toujours besoin d'être dit de façon frontale."
+      }
+    },
+    {
+      "key": "stabilite",
+      "name": "Stabilité émotionnelle",
+      "poleA": {
+        "label": "Calme & stabilité",
+        "description": "Tu gardes ton calme sous pression, les imprévus te déstabilisent peu, et tes humeurs varient peu d'un jour à l'autre.",
+        "trait": "Le Stable"
+      },
+      "poleB": {
+        "label": "Sensibilité & intensité",
+        "description": "Tu ressens les choses intensément, les tensions autour de toi t'affectent réellement, et tes humeurs peuvent varier nettement selon les événements.",
+        "trait": "Le Sensible"
+      },
+      "report": {
+        "Amarque": "Tu gardes ton calme même sous pression : les imprévus, les tensions, les critiques te déstabilisent peu et tu retrouves vite ton équilibre. C'est un vrai atout dans les moments difficiles — veille simplement à ne pas minimiser ce que ressentent des personnes plus sensibles que toi aux mêmes situations.",
+        "Amodere": "Tu restes globalement stable face aux imprévus et aux tensions, sans être totalement imperméable aux événements marquants.",
+        "equilibre": "Ta stabilité émotionnelle varie selon le contexte : certaines situations te déstabilisent, d'autres te laissent de marbre, sans logique systématique.",
+        "Bmodere": "Tu ressens les choses assez intensément et les tensions autour de toi t'affectent réellement, tout en gardant la plupart du temps les moyens d'y faire face.",
+        "Bmarque": "Tu ressens les choses avec intensité : les tensions, les critiques, les imprévus t'affectent réellement, et tes humeurs peuvent varier nettement selon ce qui se passe autour de toi. C'est aussi ce qui te rend attentif à ce que vivent les autres — veille simplement à te ménager des soupapes de décompression, surtout dans les périodes denses."
+      }
+    }
+  ],
+  "items": [
+    { "id": 1, "dimension": "ouverture", "left": { "text": "J'aime découvrir des idées ou des sujets que je ne connais pas du tout.", "pole": "A" }, "right": { "text": "Je préfère approfondir ce que je connais déjà plutôt que partir dans l'inconnu.", "pole": "B" } },
+    { "id": 2, "dimension": "ouverture", "left": { "text": "Une méthode qui a fait ses preuves me rassure plus qu'une idée encore incertaine.", "pole": "B" }, "right": { "text": "Une idée originale m'attire plus qu'une méthode déjà connue.", "pole": "A" } },
+    { "id": 3, "dimension": "ouverture", "left": { "text": "Je me lasse assez vite d'une routine, même confortable.", "pole": "A" }, "right": { "text": "Une routine confortable ne me pèse pas, au contraire.", "pole": "B" } },
+    { "id": 4, "dimension": "ouverture", "left": { "text": "Je préfère un cadre familier à un environnement que je ne maîtrise pas.", "pole": "B" }, "right": { "text": "Un environnement que je ne maîtrise pas encore m'intrigue plus qu'il ne m'inquiète.", "pole": "A" } },
+    { "id": 5, "dimension": "organisation", "left": { "text": "J'aime planifier à l'avance plutôt que de m'ajuster au dernier moment.", "pole": "A" }, "right": { "text": "Je m'ajuste facilement au dernier moment, sans avoir besoin d'un plan précis.", "pole": "B" } },
+    { "id": 6, "dimension": "organisation", "left": { "text": "Un cadre trop rigide me pèse, même s'il a du sens.", "pole": "B" }, "right": { "text": "Un cadre clair me met plus à l'aise qu'il ne me contraint.", "pole": "A" } },
+    { "id": 7, "dimension": "organisation", "left": { "text": "Je préfère improviser plutôt que suivre une méthode établie à la lettre.", "pole": "B" }, "right": { "text": "Je préfère suivre une méthode établie plutôt qu'improviser.", "pole": "A" } },
+    { "id": 8, "dimension": "organisation", "left": { "text": "Le désordre autour de moi me coûte de l'énergie.", "pole": "A" }, "right": { "text": "Un peu de désordre ne me dérange pas vraiment.", "pole": "B" } },
+    { "id": 9, "dimension": "extraversion", "left": { "text": "Un imprévu social (une invitation de dernière minute) me dynamise plutôt qu'il ne me fatigue.", "pole": "A" }, "right": { "text": "Un imprévu social me demande plus d'énergie qu'il ne m'en donne.", "pole": "B" } },
+    { "id": 10, "dimension": "extraversion", "left": { "text": "Après une longue journée entourée de monde, j'ai besoin de calme pour récupérer.", "pole": "B" }, "right": { "text": "Après une longue journée entourée de monde, je me sens plutôt chargé en énergie.", "pole": "A" } },
+    { "id": 11, "dimension": "extraversion", "left": { "text": "Je me sens à l'aise pour prendre la parole dans un groupe que je ne connais pas.", "pole": "A" }, "right": { "text": "Je préfère observer avant de prendre la parole dans un groupe que je ne connais pas.", "pole": "B" } },
+    { "id": 12, "dimension": "extraversion", "left": { "text": "Je me ressource plutôt seul, dans le calme.", "pole": "B" }, "right": { "text": "Je me ressource plutôt entouré, au contact des autres.", "pole": "A" } },
+    { "id": 13, "dimension": "agreabilite", "left": { "text": "Je préfère arrondir les angles plutôt que d'entretenir une tension.", "pole": "A" }, "right": { "text": "Je préfère dire les choses franchement, même si ça crée une tension.", "pole": "B" } },
+    { "id": 14, "dimension": "agreabilite", "left": { "text": "Le consensus de façade ne m'intéresse pas si le désaccord reste réel.", "pole": "B" }, "right": { "text": "Trouver un terrain d'entente compte plus pour moi que d'avoir raison.", "pole": "A" } },
+    { "id": 15, "dimension": "agreabilite", "left": { "text": "Je fais confiance aux gens par défaut, jusqu'à preuve du contraire.", "pole": "A" }, "right": { "text": "Je fais plutôt confiance progressivement, à mesure que je connais la personne.", "pole": "B" } },
+    { "id": 16, "dimension": "agreabilite", "left": { "text": "Quand je ne suis pas d'accord, je le dis clairement, sans trop l'enrober.", "pole": "B" }, "right": { "text": "Quand je ne suis pas d'accord, je cherche d'abord une façon douce de le faire comprendre.", "pole": "A" } },
+    { "id": 17, "dimension": "stabilite", "left": { "text": "Une critique inattendue me marque assez peu longtemps.", "pole": "A" }, "right": { "text": "Une critique inattendue peut me trotter dans la tête un bon moment.", "pole": "B" } },
+    { "id": 18, "dimension": "stabilite", "left": { "text": "Mes humeurs varient nettement selon ce qui se passe dans ma journée.", "pole": "B" }, "right": { "text": "Mes humeurs restent assez stables d'un jour à l'autre.", "pole": "A" } },
+    { "id": 19, "dimension": "stabilite", "left": { "text": "Sous pression, je garde généralement les idées claires.", "pole": "A" }, "right": { "text": "Sous pression, je sens la tension monter assez vite.", "pole": "B" } },
+    { "id": 20, "dimension": "stabilite", "left": { "text": "Les tensions autour de moi m'affectent réellement, même quand elles ne me concernent pas directement.", "pole": "B" }, "right": { "text": "Les tensions autour de moi me laissent relativement indifférent tant qu'elles ne me concernent pas directement.", "pole": "A" } }
+  ]
+}

@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { createClient } from "@/lib/supabase/server";
-import { logout } from "@/app/actions/auth";
 import { SITE_NAME } from "@/lib/site";
+import { AuthNav } from "@/components/auth-nav";
+import { MobileMenu } from "@/components/mobile-menu";
 
 function PlaneMark() {
   return (
@@ -19,14 +19,27 @@ function PlaneMark() {
   );
 }
 
-export async function SiteHeader() {
-  const supabase = await createClient();
-  const { data } = await supabase.auth.getUser();
-  const user = data.user;
+const NAV_LINKS = (
+  <>
+    <Link href="/" className="text-muted hover:text-foreground">
+      Accueil
+    </Link>
+    <Link href="/tests" className="text-muted hover:text-foreground">
+      Tests
+    </Link>
+    <Link href="/guides" className="text-muted hover:text-foreground">
+      Guides
+    </Link>
+    <Link href="/blog" className="text-muted hover:text-foreground">
+      Blog
+    </Link>
+  </>
+);
 
+export function SiteHeader() {
   return (
     <header className="sticky top-0 z-20 border-b border-card-border/80 bg-background/85 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-5xl items-center gap-3 px-4 py-4 sm:px-6">
+      <div className="relative mx-auto flex max-w-5xl items-center gap-3 px-4 py-4 sm:px-6">
         <Link
           href="/"
           className="flex shrink-0 items-center gap-2 text-lg font-semibold tracking-tight"
@@ -34,41 +47,21 @@ export async function SiteHeader() {
           <PlaneMark />
           <span>{SITE_NAME}</span>
         </Link>
-        <nav className="flex min-w-0 flex-1 items-center justify-end gap-3 overflow-x-auto text-sm whitespace-nowrap sm:gap-5">
-          <Link href="/tests" className="text-muted hover:text-foreground">
-            Tests
-          </Link>
-          <Link href="/pricing" className="text-muted hover:text-foreground">
-            Abonnement
-          </Link>
-          {user ? (
-            <>
-              <Link
-                href="/account"
-                className="text-muted hover:text-foreground"
-              >
-                Mon compte
-              </Link>
-              <form action={logout} className="shrink-0">
-                <button className="rounded-full border border-card-border px-4 py-1.5 text-foreground/80 transition hover:border-primary/40 hover:text-foreground">
-                  Déconnexion
-                </button>
-              </form>
-            </>
-          ) : (
-            <>
-              <Link href="/login" className="text-muted hover:text-foreground">
-                Connexion
-              </Link>
-              <Link
-                href="/signup"
-                className="shrink-0 rounded-full bg-primary px-4 py-1.5 font-medium text-primary-foreground shadow-sm shadow-primary/20 transition hover:opacity-90"
-              >
-                Créer un compte
-              </Link>
-            </>
-          )}
+
+        <nav className="hidden min-w-0 flex-1 items-center justify-end gap-5 text-sm whitespace-nowrap sm:flex">
+          {NAV_LINKS}
+          <AuthNav />
         </nav>
+
+        <div className="ml-auto flex items-center gap-2 sm:hidden">
+          <AuthNav compact />
+          <MobileMenu>
+            {NAV_LINKS}
+            <div className="flex flex-col gap-3 border-t border-card-border pt-3">
+              <AuthNav />
+            </div>
+          </MobileMenu>
+        </div>
       </div>
     </header>
   );

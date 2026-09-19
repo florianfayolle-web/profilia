@@ -1,4 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
+import { RadarChart } from "@/components/dimension-charts";
+
+const SAMPLE_PROFILE = [
+  { label: "Leadership", value: 0.82 },
+  { label: "Communication", value: 0.68 },
+  { label: "Rigueur", value: 0.55 },
+  { label: "Gestion du stress", value: 0.74 },
+  { label: "Esprit d'équipe", value: 0.9 },
+  { label: "Adaptabilité", value: 0.61 },
+];
 
 const AIRLINES = [
   "Air France",
@@ -8,6 +19,36 @@ const AIRLINES = [
   "easyJet",
   "Eurowings",
   "ENAC",
+];
+
+const FAQ = [
+  {
+    question: "Qu'est-ce qu'un test de personnalité en ligne ?",
+    answer:
+      "C'est un questionnaire structuré (choix forcés, mises en situation, échelles d'accord) qui dresse un profil sur plusieurs dimensions psychologiques : mode relationnel, prise de décision, rapport à l'organisation, etc. Il n'y a pas de bonne ou de mauvaise réponse : l'objectif est un profil fidèle, pas une note.",
+  },
+  {
+    question:
+      "Les tests SOSIE 2, TD12 ou PSY2 sont-ils les tests officiels utilisés par Air France, HOP ou Transavia ?",
+    answer:
+      "Non. Profilia est un site indépendant, non affilié à ces compagnies. Nos tests sont des créations originales inspirées des formats connus utilisés dans ce type de sélection (choix forcé, jugement situationnel), pas des reproductions des épreuves propriétaires réelles.",
+  },
+  {
+    question:
+      "Comment se préparer à un test de personnalité pour devenir pilote de ligne ?",
+    answer:
+      "En t'entraînant sur des formats similaires avant le jour J, pour ne pas être surpris par la structure de l'épreuve (choix forcés, contrôles de cohérence, mises en situation), et en connaissant ton propre profil pour préparer un entretien RH cohérent avec tes réponses écrites.",
+  },
+  {
+    question: "Les tests sont-ils gratuits ?",
+    answer:
+      "Tu peux essayer gratuitement les premières questions de chaque test, sans engagement et sans carte bancaire. Si tu veux aller plus loin, tu débloques ton rapport complet directement depuis le test.",
+  },
+  {
+    question: "Combien de temps dure un test de personnalité ?",
+    answer:
+      "Selon le format, entre 10 et 30 minutes pour un test complet. Chaque test indique son nombre de questions et son format avant de commencer.",
+  },
 ];
 
 const COMPANIES = [
@@ -48,35 +89,84 @@ function CheckIcon() {
 export default function Home() {
   return (
     <div>
-      <section className="sky-gradient border-b border-card-border/60">
-        <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 py-24 text-center">
-          <span className="rounded-full border border-card-border bg-card px-3 py-1 text-xs font-medium text-muted">
-            Tests sérieux, rapport détaillé, 100% en ligne
-          </span>
-          <h1 className="max-w-2xl text-4xl font-semibold tracking-tight sm:text-5xl">
-            Apprends à te connaître,{" "}
-            <span className="text-primary">prépare ta sélection ou ton entretien</span>
-          </h1>
-          <p className="max-w-xl text-lg text-muted">
-            Des tests de personnalité et de jugement situationnel construits
-            avec rigueur : choix forcés, contrôles de cohérence, rapport par
-            dimension. Utiles pour toi, et pour t&apos;entraîner avant une
-            sélection en compagnie aérienne, dans l&apos;armée, ou pour un
-            recrutement en grande entreprise.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link
-              href="/tests"
-              className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
-            >
-              Voir les tests
-            </Link>
-            <Link
-              href="/pricing"
-              className="rounded-full border border-card-border px-6 py-3 text-sm font-medium transition hover:border-primary/40"
-            >
-              Découvrir l&apos;abonnement
-            </Link>
+      <section className="sky-gradient relative overflow-hidden border-b border-card-border/60">
+        <div
+          className="pointer-events-none absolute -top-24 -left-24 h-80 w-80 rounded-full opacity-40 blur-3xl"
+          style={{ background: "radial-gradient(circle, var(--primary), transparent 70%)" }}
+          aria-hidden="true"
+        />
+        <div
+          className="pointer-events-none absolute top-10 right-[-10%] h-96 w-96 rounded-full opacity-30 blur-3xl"
+          style={{ background: "radial-gradient(circle, var(--accent), transparent 70%)" }}
+          aria-hidden="true"
+        />
+        <div
+          className="pointer-events-none absolute bottom-[-15%] left-1/3 h-72 w-72 rounded-full opacity-25 blur-3xl"
+          style={{ background: "radial-gradient(circle, var(--gold), transparent 70%)" }}
+          aria-hidden="true"
+        />
+
+        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:py-28">
+          <div className="flex flex-col items-center gap-5 text-center lg:items-start lg:text-left">
+            <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-semibold text-green-700 dark:text-green-400">
+              5 minutes, gratuit, sans compte
+            </span>
+            <h1 className="max-w-xl text-4xl font-semibold tracking-tight sm:text-5xl">
+              Découvre{" "}
+              <span className="text-primary">qui tu es vraiment</span>, avec
+              un vrai rapport détaillé
+            </h1>
+            <p className="max-w-xl text-lg text-muted">
+              Des tests de personnalité sérieux, construits par des
+              professionnels du recrutement (psychologues, RH, chasseurs de
+              tête de groupes du CAC40) : choix forcés, contrôles de
+              cohérence, profil visuel par dimension. Commence par notre
+              test express gratuit, puis va plus loin si tu veux.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
+              <Link
+                href="/tests/big-five-express"
+                className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
+              >
+                Faire le test de personnalité →
+              </Link>
+              <Link
+                href="/tests"
+                className="rounded-full border border-card-border px-6 py-3 text-sm font-medium transition hover:border-primary/40"
+              >
+                Voir tous les tests
+              </Link>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              *Aucune connexion requise, résultat immédiat.
+            </p>
+          </div>
+
+          <div className="relative mx-auto w-full max-w-md">
+            <div className="rounded-2xl border border-card-border bg-card/90 p-6 shadow-xl backdrop-blur-sm">
+              <div className="flex items-center justify-between">
+                <p className="text-sm font-medium text-muted-foreground">
+                  Exemple de rapport
+                </p>
+                <span className="rounded-full bg-green-500/10 px-2.5 py-1 text-[11px] font-medium text-green-700 dark:text-green-400">
+                  Fiabilité 92/100
+                </span>
+              </div>
+              <div className="mt-2 flex justify-center">
+                <RadarChart data={SAMPLE_PROFILE} size={300} />
+              </div>
+              <div className="mt-2 flex flex-wrap justify-center gap-2">
+                <span className="rounded-full border border-card-border px-2.5 py-1 text-[11px] text-muted">
+                  6 à 15 dimensions
+                </span>
+                <span className="rounded-full border border-card-border px-2.5 py-1 text-[11px] text-muted">
+                  Rapport PDF
+                </span>
+                <span className="rounded-full border border-card-border px-2.5 py-1 text-[11px] text-muted">
+                  5-30 min
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -108,10 +198,11 @@ export default function Home() {
             </p>
           </div>
           <div className="rounded-xl border border-card-border bg-card p-6">
-            <p className="font-medium">Rapport détaillé</p>
+            <p className="font-medium">Rapport détaillé, en PDF</p>
             <p className="mt-2 text-sm text-muted">
               Un score par dimension, une tendance, un commentaire, pas
-              juste un résultat unique.
+              juste un résultat unique — téléchargeable en PDF pour le
+              relire avant ton entretien.
             </p>
           </div>
         </div>
@@ -199,14 +290,52 @@ export default function Home() {
                 </li>
               </ul>
               <Link
-                href="/tests"
+                href="/tests/pilote"
                 className="mt-6 inline-block rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
               >
-                Voir les tests orientés aéronautique
+                Voir les tests pour pilote et personnel navigant
               </Link>
             </div>
             <div className="rounded-xl border border-card-border bg-card p-6">
-              <p className="text-sm font-medium text-foreground/80">
+              <div className="grid grid-cols-2 gap-2 overflow-hidden rounded-lg">
+                <div className="relative h-28">
+                  <Image
+                    src="/images/af-equipage.jpg"
+                    alt="Équipage se dirigeant vers l'avion sur le tarmac"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 640px) 200px, 45vw"
+                  />
+                </div>
+                <div className="relative h-28">
+                  <Image
+                    src="/images/af-avion-vol.jpg"
+                    alt="Avion long-courrier en vol"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 640px) 200px, 45vw"
+                  />
+                </div>
+                <div className="relative h-28">
+                  <Image
+                    src="/images/af-avion-sol.jpg"
+                    alt="Avion long-courrier au sol"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 640px) 200px, 45vw"
+                  />
+                </div>
+                <div className="relative h-28">
+                  <Image
+                    src="/images/transavia-avion.jpg"
+                    alt="Avion au décollage"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 640px) 200px, 45vw"
+                  />
+                </div>
+              </div>
+              <p className="mt-5 text-sm font-medium text-foreground/80">
                 Que tu vises...
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
@@ -238,7 +367,27 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-6 py-16">
           <div className="grid gap-10 sm:grid-cols-2 sm:items-center">
             <div className="order-2 rounded-xl border border-card-border bg-card p-6 sm:order-1">
-              <p className="text-sm font-medium text-foreground/80">
+              <div className="grid grid-cols-2 gap-2 overflow-hidden rounded-lg">
+                <div className="relative col-span-2 h-40">
+                  <Image
+                    src="/images/grande-arche.jpg"
+                    alt="Quartier d'affaires de la Défense, à Paris"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 640px) 400px, 90vw"
+                  />
+                </div>
+                <div className="relative col-span-2 h-28">
+                  <Image
+                    src="/images/salle-reunion.jpg"
+                    alt="Salle de réunion en entreprise"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 640px) 400px, 90vw"
+                  />
+                </div>
+              </div>
+              <p className="mt-5 text-sm font-medium text-foreground/80">
                 Que tu vises...
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
@@ -293,17 +442,41 @@ export default function Home() {
                 </li>
               </ul>
               <Link
-                href="/tests"
+                href="/tests/grande-entreprise"
                 className="mt-6 inline-block rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
               >
-                Voir les tests
+                Voir les tests pour l&apos;entretien en grande entreprise
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-6 py-16">
+      <section className="border-t border-card-border/60">
+        <div className="mx-auto max-w-5xl px-6 py-16 text-center">
+          <span className="text-sm font-medium text-primary">
+            Juste pour toi
+          </span>
+          <h2 className="mx-auto mt-2 max-w-2xl text-2xl font-semibold tracking-tight">
+            Tu veux simplement passer un test de personnalité pour mieux te
+            connaître ?
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted">
+            Pas de sélection ni d&apos;entretien en vue : nos tests de
+            personnalité fonctionnent aussi comme un outil d&apos;introspection,
+            pour comprendre ton mode de fonctionnement, tes points forts et
+            tes axes de progression, avec un rapport détaillé par dimension.
+          </p>
+          <Link
+            href="/tests/personnalite"
+            className="mt-6 inline-block rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
+          >
+            Faire un test de personnalité
+          </Link>
+        </div>
+      </section>
+
+      <section id="comment-ca-marche" className="mx-auto max-w-5xl px-6 py-16 scroll-mt-20">
         <h2 className="text-center text-2xl font-semibold tracking-tight">
           Comment ça marche
         </h2>
@@ -317,10 +490,10 @@ export default function Home() {
           </div>
           <div>
             <p className="text-sm font-medium text-primary">2</p>
-            <p className="mt-1 font-medium">Choisis un test</p>
+            <p className="mt-1 font-medium">Essaie un test gratuitement</p>
             <p className="mt-2 text-sm text-muted">
-              À l&apos;unité (4,99&nbsp;€) ou en illimité avec
-              l&apos;abonnement (9,99&nbsp;€/mois).
+              Les premières questions sont gratuites, sans engagement ni
+              carte bancaire.
             </p>
           </div>
           <div>
@@ -333,6 +506,40 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="border-t border-card-border/60 bg-card/40">
+        <div className="mx-auto max-w-3xl px-6 py-16">
+          <h2 className="text-center text-2xl font-semibold tracking-tight">
+            Questions fréquentes
+          </h2>
+          <div className="mt-10 space-y-8">
+            {FAQ.map((item) => (
+              <div key={item.question}>
+                <h3 className="font-medium">{item.question}</h3>
+                <p className="mt-2 text-sm text-muted">{item.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: FAQ.map((item) => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+              },
+            })),
+          }),
+        }}
+      />
     </div>
   );
 }

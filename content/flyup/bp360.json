@@ -166,44 +166,14 @@
   ],
   "items": [
     {
-      "id": 1,
-      "dimension": "dim_1",
-      "text": "Je me sens capable de prendre des initiatives, même lorsque la situation nécessite de sortir de ma zone de confort."
+      "id": 92,
+      "dimension": "dim_10",
+      "text": "Je prends le temps d’analyser les informations importantes avant d’agir."
     },
     {
-      "id": 2,
-      "dimension": "dim_1",
-      "text": "Je fais confiance à mon jugement lorsque je dois faire un choix important."
-    },
-    {
-      "id": 3,
-      "dimension": "dim_1",
-      "text": "Je suis capable d’exprimer mon point de vue même lorsque celui-ci est différent de celui du groupe."
-    },
-    {
-      "id": 4,
-      "dimension": "dim_1",
-      "text": "Je me sens légitime lorsque je prends des responsabilités."
-    },
-    {
-      "id": 5,
-      "dimension": "dim_1",
-      "text": "Je sais reconnaître mes forces et les valoriser dans un contexte professionnel."
-    },
-    {
-      "id": 6,
-      "dimension": "dim_1",
-      "text": "Je reste à l’aise lorsque je dois présenter mes idées devant plusieurs personnes."
-    },
-    {
-      "id": 7,
-      "dimension": "dim_1",
-      "text": "Je demande facilement de l’aide lorsque je rencontre une difficulté."
-    },
-    {
-      "id": 8,
-      "dimension": "dim_1",
-      "text": "Je suis capable de défendre une décision que j’estime pertinente."
+      "id": 69,
+      "dimension": "dim_7",
+      "text": "Je reste coopératif(ve) même lorsque je ne partage pas totalement une décision."
     },
     {
       "id": 9,
@@ -211,54 +181,24 @@
       "text": "Les critiques constructives me permettent généralement de progresser."
     },
     {
-      "id": 10,
-      "dimension": "dim_1",
-      "text": "Même en situation d’incertitude, je conserve confiance dans ma capacité à avancer."
+      "id": 143,
+      "dimension": "dim_15",
+      "text": "Je me fixe des objectifs pour construire mon avenir."
     },
     {
-      "id": 11,
-      "dimension": "dim_2",
-      "text": "Je garde mon calme lorsque je rencontre une situation imprévue."
+      "id": 116,
+      "dimension": "dim_12",
+      "text": "Je sais maintenir mes efforts sur des objectifs de long terme."
     },
     {
-      "id": 12,
-      "dimension": "dim_2",
-      "text": "Je parviens à rester concentré(e) lorsque la pression augmente."
+      "id": 104,
+      "dimension": "dim_11",
+      "text": "Je prépare suffisamment mes actions avant de les réaliser."
     },
     {
-      "id": 13,
-      "dimension": "dim_2",
-      "text": "Je prends du recul avant de réagir à une situation difficile."
-    },
-    {
-      "id": 14,
-      "dimension": "dim_2",
-      "text": "Mes émotions influencent rarement mes décisions professionnelles."
-    },
-    {
-      "id": 15,
-      "dimension": "dim_2",
-      "text": "Je sais identifier les sources de stress et agir dessus efficacement."
-    },
-    {
-      "id": 16,
-      "dimension": "dim_2",
-      "text": "Après une période intense, je retrouve rapidement mon équilibre."
-    },
-    {
-      "id": 17,
-      "dimension": "dim_2",
-      "text": "Je conserve une attitude constructive face aux problèmes."
-    },
-    {
-      "id": 18,
-      "dimension": "dim_2",
-      "text": "Je suis capable de gérer plusieurs contraintes simultanément sans perdre mon efficacité."
-    },
-    {
-      "id": 19,
-      "dimension": "dim_2",
-      "text": "Je garde ma lucidité lorsque les enjeux sont importants."
+      "id": 142,
+      "dimension": "dim_15",
+      "text": "J’ai une vision claire des compétences que je souhaite développer."
     },
     {
       "id": 20,
@@ -266,24 +206,39 @@
       "text": "Les situations difficiles représentent souvent pour moi des occasions d’apprentissage."
     },
     {
-      "id": 21,
-      "dimension": "dim_3",
-      "text": "Je me fixe naturellement des objectifs pour progresser et évoluer."
+      "id": 141,
+      "dimension": "dim_15",
+      "text": "Je réfléchis régulièrement à mon évolution personnelle et professionnelle."
     },
     {
-      "id": 22,
-      "dimension": "dim_3",
-      "text": "Je trouve de la motivation dans les missions qui me sont confiées."
+      "id": 108,
+      "dimension": "dim_11",
+      "text": "Je sais organiser mon temps en fonction de l’importance des missions."
     },
     {
-      "id": 23,
-      "dimension": "dim_3",
-      "text": "Je cherche régulièrement à améliorer ma manière de travailler."
+      "id": 121,
+      "dimension": "dim_13",
+      "text": "Je m’adapte rapidement lorsque mon environnement évolue."
     },
     {
-      "id": 24,
-      "dimension": "dim_3",
-      "text": "Je m’investis pleinement lorsque je crois au sens d’un projet."
+      "id": 139,
+      "dimension": "dim_14",
+      "text": "Je recherche des solutions originales lorsque les réponses habituelles ne suffisent pas."
+    },
+    {
+      "id": 101,
+      "dimension": "dim_11",
+      "text": "Je structure mon travail afin d’atteindre mes objectifs efficacement."
+    },
+    {
+      "id": 131,
+      "dimension": "dim_14",
+      "text": "Je cherche régulièrement de nouvelles façons d’améliorer une situation."
+    },
+    {
+      "id": 45,
+      "dimension": "dim_5",
+      "text": "Je sais adapter mon comportement selon les personnalités rencontrées."
     },
     {
       "id": 25,
@@ -291,19 +246,629 @@
       "text": "Je suis capable de maintenir mes efforts même lorsque les résultats tardent à apparaître."
     },
     {
-      "id": 26,
-      "dimension": "dim_3",
-      "text": "J’aime développer de nouvelles compétences pour élargir mes possibilités."
-    },
-    {
       "id": 27,
       "dimension": "dim_3",
       "text": "Je prends des initiatives pour contribuer davantage que ce qui est attendu."
     },
     {
+      "id": 23,
+      "dimension": "dim_3",
+      "text": "Je cherche régulièrement à améliorer ma manière de travailler."
+    },
+    {
+      "id": 7,
+      "dimension": "dim_1",
+      "text": "Je demande facilement de l’aide lorsque je rencontre une difficulté."
+    },
+    {
+      "id": 70,
+      "dimension": "dim_7",
+      "text": "Je considère la diversité des profils comme une richesse pour une équipe."
+    },
+    {
+      "id": 113,
+      "dimension": "dim_12",
+      "text": "Je garde mon engagement face aux obstacles."
+    },
+    {
+      "id": 14,
+      "dimension": "dim_2",
+      "text": "Mes émotions influencent rarement mes décisions professionnelles."
+    },
+    {
+      "id": 97,
+      "dimension": "dim_10",
+      "text": "Je sais utiliser mon expérience pour guider mes choix."
+    },
+    {
+      "id": 79,
+      "dimension": "dim_8",
+      "text": "Je suis capable d’expliquer la valeur d’une idée ou d’un projet."
+    },
+    {
+      "id": 32,
+      "dimension": "dim_4",
+      "text": "J’adapte ma communication selon la personne à qui je m’adresse."
+    },
+    {
+      "id": 100,
+      "dimension": "dim_10",
+      "text": "Je préfère prendre une décision imparfaite plutôt que rester bloqué(e) trop longtemps."
+    },
+    {
+      "id": 43,
+      "dimension": "dim_5",
+      "text": "Je sais créer rapidement une relation de confiance."
+    },
+    {
+      "id": 110,
+      "dimension": "dim_11",
+      "text": "Je considère l’organisation comme un facteur essentiel de performance."
+    },
+    {
+      "id": 8,
+      "dimension": "dim_1",
+      "text": "Je suis capable de défendre une décision que j’estime pertinente."
+    },
+    {
+      "id": 127,
+      "dimension": "dim_13",
+      "text": "Je suis capable de sortir de mes habitudes pour progresser."
+    },
+    {
+      "id": 146,
+      "dimension": "dim_15",
+      "text": "Je prends le temps d’analyser mes expériences pour en tirer des enseignements."
+    },
+    {
+      "id": 119,
+      "dimension": "dim_12",
+      "text": "Je sais adapter ma stratégie sans abandonner mon objectif."
+    },
+    {
+      "id": 88,
+      "dimension": "dim_9",
+      "text": "Je sais reconnaître ma part de responsabilité dans une difficulté relationnelle."
+    },
+    {
+      "id": 60,
+      "dimension": "dim_6",
+      "text": "Je reste responsable des résultats même lorsque les circonstances sont complexes."
+    },
+    {
+      "id": 148,
+      "dimension": "dim_15",
+      "text": "Je suis ouvert(e) aux feedbacks qui peuvent m’aider à progresser."
+    },
+    {
+      "id": 90,
+      "dimension": "dim_9",
+      "text": "Je privilégie la résolution durable d’un problème plutôt que son évitement."
+    },
+    {
+      "id": 81,
+      "dimension": "dim_9",
+      "text": "Je considère les désaccords comme des occasions de trouver de meilleures solutions."
+    },
+    {
+      "id": 115,
+      "dimension": "dim_12",
+      "text": "Je recherche des solutions plutôt que de rester bloqué(e) sur un problème."
+    },
+    {
+      "id": 140,
+      "dimension": "dim_14",
+      "text": "Je considère les contraintes comme des éléments pouvant stimuler la créativité."
+    },
+    {
+      "id": 95,
+      "dimension": "dim_10",
+      "text": "Je sais trouver un équilibre entre réflexion et action."
+    },
+    {
+      "id": 145,
+      "dimension": "dim_15",
+      "text": "Je suis capable de me projeter dans des responsabilités futures."
+    },
+    {
+      "id": 13,
+      "dimension": "dim_2",
+      "text": "Je prends du recul avant de réagir à une situation difficile."
+    },
+    {
+      "id": 67,
+      "dimension": "dim_7",
+      "text": "Je sais demander l’avis des autres lorsque cela peut améliorer un résultat."
+    },
+    {
+      "id": 1,
+      "dimension": "dim_1",
+      "text": "Je me sens capable de prendre des initiatives, même lorsque la situation nécessite de sortir de ma zone de confort."
+    },
+    {
+      "id": 144,
+      "dimension": "dim_15",
+      "text": "Je recherche des opportunités pour apprendre et progresser."
+    },
+    {
+      "id": 41,
+      "dimension": "dim_5",
+      "text": "Je détecte facilement les besoins et attentes des autres."
+    },
+    {
+      "id": 51,
+      "dimension": "dim_6",
+      "text": "Je prends naturellement des responsabilités lorsque la situation le nécessite."
+    },
+    {
+      "id": 129,
+      "dimension": "dim_13",
+      "text": "Je sais ajuster mes objectifs lorsque le contexte évolue."
+    },
+    {
+      "id": 39,
+      "dimension": "dim_4",
+      "text": "Je sais exprimer un désaccord de manière professionnelle."
+    },
+    {
+      "id": 102,
+      "dimension": "dim_11",
+      "text": "Je sais organiser mes priorités lorsque plusieurs tâches sont urgentes."
+    },
+    {
+      "id": 11,
+      "dimension": "dim_2",
+      "text": "Je garde mon calme lorsque je rencontre une situation imprévue."
+    },
+    {
+      "id": 117,
+      "dimension": "dim_12",
+      "text": "Je considère les erreurs comme des opportunités de progression."
+    },
+    {
+      "id": 98,
+      "dimension": "dim_10",
+      "text": "Je consulte les bonnes personnes lorsque leur avis peut être utile."
+    },
+    {
+      "id": 91,
+      "dimension": "dim_10",
+      "text": "Je suis capable de décider même lorsque la situation comporte une part d’incertitude."
+    },
+    {
+      "id": 24,
+      "dimension": "dim_3",
+      "text": "Je m’investis pleinement lorsque je crois au sens d’un projet."
+    },
+    {
+      "id": 31,
+      "dimension": "dim_4",
+      "text": "J’exprime mes idées de manière claire et structurée."
+    },
+    {
+      "id": 37,
+      "dimension": "dim_4",
+      "text": "Je prends en compte le contexte avant de communiquer une information."
+    },
+    {
+      "id": 134,
+      "dimension": "dim_14",
+      "text": "Je remets parfois en question les méthodes existantes lorsqu’elles peuvent être améliorées."
+    },
+    {
+      "id": 125,
+      "dimension": "dim_13",
+      "text": "Je cherche à comprendre les raisons d’un changement avant de le juger."
+    },
+    {
+      "id": 82,
+      "dimension": "dim_9",
+      "text": "Je reste professionnel(le) même lors d’une situation conflictuelle."
+    },
+    {
+      "id": 12,
+      "dimension": "dim_2",
+      "text": "Je parviens à rester concentré(e) lorsque la pression augmente."
+    },
+    {
+      "id": 99,
+      "dimension": "dim_10",
+      "text": "Je sais ajuster une décision lorsque de nouvelles informations apparaissent."
+    },
+    {
+      "id": 2,
+      "dimension": "dim_1",
+      "text": "Je fais confiance à mon jugement lorsque je dois faire un choix important."
+    },
+    {
+      "id": 17,
+      "dimension": "dim_2",
+      "text": "Je conserve une attitude constructive face aux problèmes."
+    },
+    {
+      "id": 132,
+      "dimension": "dim_14",
+      "text": "Je suis capable d’imaginer plusieurs solutions face à un problème."
+    },
+    {
+      "id": 34,
+      "dimension": "dim_4",
+      "text": "Je sais transmettre une information importante de manière concise."
+    },
+    {
+      "id": 15,
+      "dimension": "dim_2",
+      "text": "Je sais identifier les sources de stress et agir dessus efficacement."
+    },
+    {
+      "id": 54,
+      "dimension": "dim_6",
+      "text": "Je prends en compte les conséquences de mes décisions sur mon équipe."
+    },
+    {
+      "id": 75,
+      "dimension": "dim_8",
+      "text": "Je suis à l’aise pour négocier et rechercher un accord."
+    },
+    {
+      "id": 44,
+      "dimension": "dim_5",
+      "text": "Je m’intéresse sincèrement aux personnes avec lesquelles je travaille."
+    },
+    {
+      "id": 48,
+      "dimension": "dim_5",
+      "text": "Je contribue à maintenir des relations professionnelles positives."
+    },
+    {
       "id": 28,
       "dimension": "dim_3",
       "text": "Je termine généralement les projets que je commence."
+    },
+    {
+      "id": 111,
+      "dimension": "dim_12",
+      "text": "Je continue à avancer même lorsque les résultats prennent du temps à apparaître."
+    },
+    {
+      "id": 63,
+      "dimension": "dim_7",
+      "text": "Je considère la réussite collective aussi importante que ma réussite personnelle."
+    },
+    {
+      "id": 112,
+      "dimension": "dim_12",
+      "text": "Je transforme les difficultés rencontrées en sources d’apprentissage."
+    },
+    {
+      "id": 40,
+      "dimension": "dim_4",
+      "text": "Ma communication contribue généralement à créer un climat de confiance."
+    },
+    {
+      "id": 50,
+      "dimension": "dim_5",
+      "text": "Je considère la qualité des relations comme un facteur important de réussite."
+    },
+    {
+      "id": 21,
+      "dimension": "dim_3",
+      "text": "Je me fixe naturellement des objectifs pour progresser et évoluer."
+    },
+    {
+      "id": 19,
+      "dimension": "dim_2",
+      "text": "Je garde ma lucidité lorsque les enjeux sont importants."
+    },
+    {
+      "id": 77,
+      "dimension": "dim_8",
+      "text": "Je peux influencer positivement une décision collective."
+    },
+    {
+      "id": 123,
+      "dimension": "dim_13",
+      "text": "Je suis capable de modifier mes habitudes lorsque cela devient nécessaire."
+    },
+    {
+      "id": 105,
+      "dimension": "dim_11",
+      "text": "Je mets en place des méthodes pour gagner en efficacité."
+    },
+    {
+      "id": 86,
+      "dimension": "dim_9",
+      "text": "Je distingue facilement les faits des interprétations dans un conflit."
+    },
+    {
+      "id": 114,
+      "dimension": "dim_12",
+      "text": "Je suis capable de rebondir après un échec ou une difficulté."
+    },
+    {
+      "id": 46,
+      "dimension": "dim_5",
+      "text": "Je suis attentif(ve) aux signaux non verbaux dans mes échanges."
+    },
+    {
+      "id": 106,
+      "dimension": "dim_11",
+      "text": "Je vérifie la qualité de mon travail avant de le finaliser."
+    },
+    {
+      "id": 130,
+      "dimension": "dim_13",
+      "text": "Je reste curieux(se) face aux nouvelles expériences."
+    },
+    {
+      "id": 61,
+      "dimension": "dim_7",
+      "text": "Je recherche naturellement la collaboration pour atteindre un objectif commun."
+    },
+    {
+      "id": 18,
+      "dimension": "dim_2",
+      "text": "Je suis capable de gérer plusieurs contraintes simultanément sans perdre mon efficacité."
+    },
+    {
+      "id": 4,
+      "dimension": "dim_1",
+      "text": "Je me sens légitime lorsque je prends des responsabilités."
+    },
+    {
+      "id": 66,
+      "dimension": "dim_7",
+      "text": "Je contribue activement à créer une bonne dynamique de groupe."
+    },
+    {
+      "id": 52,
+      "dimension": "dim_6",
+      "text": "Je sais donner une direction claire lorsque plusieurs personnes travaillent ensemble."
+    },
+    {
+      "id": 6,
+      "dimension": "dim_1",
+      "text": "Je reste à l’aise lorsque je dois présenter mes idées devant plusieurs personnes."
+    },
+    {
+      "id": 124,
+      "dimension": "dim_13",
+      "text": "Je reste efficace dans des situations nouvelles ou incertaines."
+    },
+    {
+      "id": 94,
+      "dimension": "dim_10",
+      "text": "Je suis capable d’assumer les conséquences de mes décisions."
+    },
+    {
+      "id": 147,
+      "dimension": "dim_15",
+      "text": "Je cherche à mieux me connaître pour évoluer efficacement."
+    },
+    {
+      "id": 133,
+      "dimension": "dim_14",
+      "text": "J’aime explorer de nouvelles approches pour atteindre un objectif."
+    },
+    {
+      "id": 136,
+      "dimension": "dim_14",
+      "text": "Je sais analyser un problème sous différents angles."
+    },
+    {
+      "id": 10,
+      "dimension": "dim_1",
+      "text": "Même en situation d’incertitude, je conserve confiance dans ma capacité à avancer."
+    },
+    {
+      "id": 80,
+      "dimension": "dim_8",
+      "text": "Je préfère convaincre par la qualité de mes arguments plutôt que par mon statut."
+    },
+    {
+      "id": 84,
+      "dimension": "dim_9",
+      "text": "Je sais exprimer un désaccord sans détériorer la relation."
+    },
+    {
+      "id": 93,
+      "dimension": "dim_10",
+      "text": "Je sais identifier rapidement les priorités dans une situation complexe."
+    },
+    {
+      "id": 128,
+      "dimension": "dim_13",
+      "text": "Je m’adapte aux différents profils de personnes que je rencontre."
+    },
+    {
+      "id": 120,
+      "dimension": "dim_12",
+      "text": "Je garde une attitude positive face aux périodes exigeantes."
+    },
+    {
+      "id": 137,
+      "dimension": "dim_14",
+      "text": "Je suis à l’aise avec l’expérimentation et les essais."
+    },
+    {
+      "id": 22,
+      "dimension": "dim_3",
+      "text": "Je trouve de la motivation dans les missions qui me sont confiées."
+    },
+    {
+      "id": 72,
+      "dimension": "dim_8",
+      "text": "Je suis capable d’obtenir l’adhésion des autres autour d’un projet."
+    },
+    {
+      "id": 47,
+      "dimension": "dim_5",
+      "text": "Je cherche à comprendre les motivations des autres avant de les juger."
+    },
+    {
+      "id": 3,
+      "dimension": "dim_1",
+      "text": "Je suis capable d’exprimer mon point de vue même lorsque celui-ci est différent de celui du groupe."
+    },
+    {
+      "id": 150,
+      "dimension": "dim_15",
+      "text": "Je suis acteur(trice) de mon évolution professionnelle."
+    },
+    {
+      "id": 118,
+      "dimension": "dim_12",
+      "text": "Je fais preuve de détermination lorsque les enjeux sont importants."
+    },
+    {
+      "id": 76,
+      "dimension": "dim_8",
+      "text": "Je sais adapter mon discours selon les objectifs de mon interlocuteur."
+    },
+    {
+      "id": 16,
+      "dimension": "dim_2",
+      "text": "Après une période intense, je retrouve rapidement mon équilibre."
+    },
+    {
+      "id": 85,
+      "dimension": "dim_9",
+      "text": "Je peux aborder une conversation difficile lorsque cela est nécessaire."
+    },
+    {
+      "id": 103,
+      "dimension": "dim_11",
+      "text": "Je respecte généralement les engagements et délais que je prends."
+    },
+    {
+      "id": 55,
+      "dimension": "dim_6",
+      "text": "Je sais encourager les autres à donner le meilleur d’eux-mêmes."
+    },
+    {
+      "id": 35,
+      "dimension": "dim_4",
+      "text": "Je suis capable d’écouter un avis différent du mien."
+    },
+    {
+      "id": 68,
+      "dimension": "dim_7",
+      "text": "Je privilégie la recherche de solutions plutôt que la recherche de responsabilités."
+    },
+    {
+      "id": 78,
+      "dimension": "dim_8",
+      "text": "Je sais créer de la confiance avant de chercher à convaincre."
+    },
+    {
+      "id": 149,
+      "dimension": "dim_15",
+      "text": "Je considère mon développement personnel comme une démarche continue."
+    },
+    {
+      "id": 71,
+      "dimension": "dim_8",
+      "text": "Je sais présenter mes idées de manière convaincante."
+    },
+    {
+      "id": 5,
+      "dimension": "dim_1",
+      "text": "Je sais reconnaître mes forces et les valoriser dans un contexte professionnel."
+    },
+    {
+      "id": 26,
+      "dimension": "dim_3",
+      "text": "J’aime développer de nouvelles compétences pour élargir mes possibilités."
+    },
+    {
+      "id": 57,
+      "dimension": "dim_6",
+      "text": "Je considère le leadership comme une capacité à faire grandir les autres."
+    },
+    {
+      "id": 83,
+      "dimension": "dim_9",
+      "text": "Je cherche d’abord à comprendre avant de répondre lors d’un désaccord."
+    },
+    {
+      "id": 59,
+      "dimension": "dim_6",
+      "text": "Je donne l’exemple par mes comportements et mes engagements."
+    },
+    {
+      "id": 73,
+      "dimension": "dim_8",
+      "text": "Je comprends les arguments qui peuvent convaincre différents interlocuteurs."
+    },
+    {
+      "id": 135,
+      "dimension": "dim_14",
+      "text": "Je fais preuve de curiosité dans mon domaine professionnel."
+    },
+    {
+      "id": 36,
+      "dimension": "dim_4",
+      "text": "Je sais poser des questions pour mieux comprendre une situation."
+    },
+    {
+      "id": 87,
+      "dimension": "dim_9",
+      "text": "Je recherche des solutions équilibrées pour les différentes parties."
+    },
+    {
+      "id": 74,
+      "dimension": "dim_8",
+      "text": "Je sais défendre une proposition tout en restant ouvert(e) aux échanges."
+    },
+    {
+      "id": 122,
+      "dimension": "dim_13",
+      "text": "Je considère généralement le changement comme une opportunité."
+    },
+    {
+      "id": 138,
+      "dimension": "dim_14",
+      "text": "Je transforme facilement une idée en action concrète."
+    },
+    {
+      "id": 109,
+      "dimension": "dim_11",
+      "text": "Je suis capable de suivre une méthode tout en restant flexible."
+    },
+    {
+      "id": 107,
+      "dimension": "dim_11",
+      "text": "Je garde une vision claire de mes objectifs même lorsque la charge augmente."
+    },
+    {
+      "id": 96,
+      "dimension": "dim_10",
+      "text": "Je ne laisse pas la peur de me tromper empêcher ma prise de décision."
+    },
+    {
+      "id": 53,
+      "dimension": "dim_6",
+      "text": "Je suis capable de mobiliser les autres autour d’un objectif commun."
+    },
+    {
+      "id": 42,
+      "dimension": "dim_5",
+      "text": "Je prends naturellement en compte le point de vue des autres avant d’agir."
+    },
+    {
+      "id": 49,
+      "dimension": "dim_5",
+      "text": "Je sais encourager et valoriser les personnes autour de moi."
+    },
+    {
+      "id": 56,
+      "dimension": "dim_6",
+      "text": "Je suis capable de prendre des décisions difficiles lorsque cela est nécessaire."
+    },
+    {
+      "id": 58,
+      "dimension": "dim_6",
+      "text": "Je sais adapter mon style de management selon les situations."
     },
     {
       "id": 29,
@@ -316,294 +881,9 @@
       "text": "Je considère les difficultés comme des opportunités de progression."
     },
     {
-      "id": 31,
-      "dimension": "dim_4",
-      "text": "J’exprime mes idées de manière claire et structurée."
-    },
-    {
-      "id": 32,
-      "dimension": "dim_4",
-      "text": "J’adapte ma communication selon la personne à qui je m’adresse."
-    },
-    {
       "id": 33,
       "dimension": "dim_4",
       "text": "Je vérifie que mon interlocuteur a bien compris mon message."
-    },
-    {
-      "id": 34,
-      "dimension": "dim_4",
-      "text": "Je sais transmettre une information importante de manière concise."
-    },
-    {
-      "id": 35,
-      "dimension": "dim_4",
-      "text": "Je suis capable d’écouter un avis différent du mien."
-    },
-    {
-      "id": 36,
-      "dimension": "dim_4",
-      "text": "Je sais poser des questions pour mieux comprendre une situation."
-    },
-    {
-      "id": 37,
-      "dimension": "dim_4",
-      "text": "Je prends en compte le contexte avant de communiquer une information."
-    },
-    {
-      "id": 38,
-      "dimension": "dim_4",
-      "text": "Je suis à l’aise pour expliquer une idée complexe à quelqu’un d’autre."
-    },
-    {
-      "id": 39,
-      "dimension": "dim_4",
-      "text": "Je sais exprimer un désaccord de manière professionnelle."
-    },
-    {
-      "id": 40,
-      "dimension": "dim_4",
-      "text": "Ma communication contribue généralement à créer un climat de confiance."
-    },
-    {
-      "id": 41,
-      "dimension": "dim_5",
-      "text": "Je détecte facilement les besoins et attentes des autres."
-    },
-    {
-      "id": 42,
-      "dimension": "dim_5",
-      "text": "Je prends naturellement en compte le point de vue des autres avant d’agir."
-    },
-    {
-      "id": 43,
-      "dimension": "dim_5",
-      "text": "Je sais créer rapidement une relation de confiance."
-    },
-    {
-      "id": 44,
-      "dimension": "dim_5",
-      "text": "Je m’intéresse sincèrement aux personnes avec lesquelles je travaille."
-    },
-    {
-      "id": 45,
-      "dimension": "dim_5",
-      "text": "Je sais adapter mon comportement selon les personnalités rencontrées."
-    },
-    {
-      "id": 46,
-      "dimension": "dim_5",
-      "text": "Je suis attentif(ve) aux signaux non verbaux dans mes échanges."
-    },
-    {
-      "id": 47,
-      "dimension": "dim_5",
-      "text": "Je cherche à comprendre les motivations des autres avant de les juger."
-    },
-    {
-      "id": 48,
-      "dimension": "dim_5",
-      "text": "Je contribue à maintenir des relations professionnelles positives."
-    },
-    {
-      "id": 49,
-      "dimension": "dim_5",
-      "text": "Je sais encourager et valoriser les personnes autour de moi."
-    },
-    {
-      "id": 50,
-      "dimension": "dim_5",
-      "text": "Je considère la qualité des relations comme un facteur important de réussite."
-    },
-    {
-      "id": 51,
-      "dimension": "dim_6",
-      "text": "Je prends naturellement des responsabilités lorsque la situation le nécessite."
-    },
-    {
-      "id": 52,
-      "dimension": "dim_6",
-      "text": "Je sais donner une direction claire lorsque plusieurs personnes travaillent ensemble."
-    },
-    {
-      "id": 53,
-      "dimension": "dim_6",
-      "text": "Je suis capable de mobiliser les autres autour d’un objectif commun."
-    },
-    {
-      "id": 54,
-      "dimension": "dim_6",
-      "text": "Je prends en compte les conséquences de mes décisions sur mon équipe."
-    },
-    {
-      "id": 55,
-      "dimension": "dim_6",
-      "text": "Je sais encourager les autres à donner le meilleur d’eux-mêmes."
-    },
-    {
-      "id": 56,
-      "dimension": "dim_6",
-      "text": "Je suis capable de prendre des décisions difficiles lorsque cela est nécessaire."
-    },
-    {
-      "id": 57,
-      "dimension": "dim_6",
-      "text": "Je considère le leadership comme une capacité à faire grandir les autres."
-    },
-    {
-      "id": 58,
-      "dimension": "dim_6",
-      "text": "Je sais adapter mon style de management selon les situations."
-    },
-    {
-      "id": 59,
-      "dimension": "dim_6",
-      "text": "Je donne l’exemple par mes comportements et mes engagements."
-    },
-    {
-      "id": 60,
-      "dimension": "dim_6",
-      "text": "Je reste responsable des résultats même lorsque les circonstances sont complexes."
-    },
-    {
-      "id": 61,
-      "dimension": "dim_7",
-      "text": "Je recherche naturellement la collaboration pour atteindre un objectif commun."
-    },
-    {
-      "id": 62,
-      "dimension": "dim_7",
-      "text": "Je partage volontiers mes connaissances avec les autres."
-    },
-    {
-      "id": 63,
-      "dimension": "dim_7",
-      "text": "Je considère la réussite collective aussi importante que ma réussite personnelle."
-    },
-    {
-      "id": 64,
-      "dimension": "dim_7",
-      "text": "Je sais trouver ma place au sein d’une équipe."
-    },
-    {
-      "id": 65,
-      "dimension": "dim_7",
-      "text": "Je respecte les méthodes de travail différentes des miennes."
-    },
-    {
-      "id": 66,
-      "dimension": "dim_7",
-      "text": "Je contribue activement à créer une bonne dynamique de groupe."
-    },
-    {
-      "id": 67,
-      "dimension": "dim_7",
-      "text": "Je sais demander l’avis des autres lorsque cela peut améliorer un résultat."
-    },
-    {
-      "id": 68,
-      "dimension": "dim_7",
-      "text": "Je privilégie la recherche de solutions plutôt que la recherche de responsabilités."
-    },
-    {
-      "id": 69,
-      "dimension": "dim_7",
-      "text": "Je reste coopératif(ve) même lorsque je ne partage pas totalement une décision."
-    },
-    {
-      "id": 70,
-      "dimension": "dim_7",
-      "text": "Je considère la diversité des profils comme une richesse pour une équipe."
-    },
-    {
-      "id": 71,
-      "dimension": "dim_8",
-      "text": "Je sais présenter mes idées de manière convaincante."
-    },
-    {
-      "id": 72,
-      "dimension": "dim_8",
-      "text": "Je suis capable d’obtenir l’adhésion des autres autour d’un projet."
-    },
-    {
-      "id": 73,
-      "dimension": "dim_8",
-      "text": "Je comprends les arguments qui peuvent convaincre différents interlocuteurs."
-    },
-    {
-      "id": 74,
-      "dimension": "dim_8",
-      "text": "Je sais défendre une proposition tout en restant ouvert(e) aux échanges."
-    },
-    {
-      "id": 75,
-      "dimension": "dim_8",
-      "text": "Je suis à l’aise pour négocier et rechercher un accord."
-    },
-    {
-      "id": 76,
-      "dimension": "dim_8",
-      "text": "Je sais adapter mon discours selon les objectifs de mon interlocuteur."
-    },
-    {
-      "id": 77,
-      "dimension": "dim_8",
-      "text": "Je peux influencer positivement une décision collective."
-    },
-    {
-      "id": 78,
-      "dimension": "dim_8",
-      "text": "Je sais créer de la confiance avant de chercher à convaincre."
-    },
-    {
-      "id": 79,
-      "dimension": "dim_8",
-      "text": "Je suis capable d’expliquer la valeur d’une idée ou d’un projet."
-    },
-    {
-      "id": 80,
-      "dimension": "dim_8",
-      "text": "Je préfère convaincre par la qualité de mes arguments plutôt que par mon statut."
-    },
-    {
-      "id": 81,
-      "dimension": "dim_9",
-      "text": "Je considère les désaccords comme des occasions de trouver de meilleures solutions."
-    },
-    {
-      "id": 82,
-      "dimension": "dim_9",
-      "text": "Je reste professionnel(le) même lors d’une situation conflictuelle."
-    },
-    {
-      "id": 83,
-      "dimension": "dim_9",
-      "text": "Je cherche d’abord à comprendre avant de répondre lors d’un désaccord."
-    },
-    {
-      "id": 84,
-      "dimension": "dim_9",
-      "text": "Je sais exprimer un désaccord sans détériorer la relation."
-    },
-    {
-      "id": 85,
-      "dimension": "dim_9",
-      "text": "Je peux aborder une conversation difficile lorsque cela est nécessaire."
-    },
-    {
-      "id": 86,
-      "dimension": "dim_9",
-      "text": "Je distingue facilement les faits des interprétations dans un conflit."
-    },
-    {
-      "id": 87,
-      "dimension": "dim_9",
-      "text": "Je recherche des solutions équilibrées pour les différentes parties."
-    },
-    {
-      "id": 88,
-      "dimension": "dim_9",
-      "text": "Je sais reconnaître ma part de responsabilité dans une difficulté relationnelle."
     },
     {
       "id": 89,
@@ -611,309 +891,29 @@
       "text": "Je garde mon calme face à une personne en désaccord avec moi."
     },
     {
-      "id": 90,
-      "dimension": "dim_9",
-      "text": "Je privilégie la résolution durable d’un problème plutôt que son évitement."
+      "id": 65,
+      "dimension": "dim_7",
+      "text": "Je respecte les méthodes de travail différentes des miennes."
     },
     {
-      "id": 91,
-      "dimension": "dim_10",
-      "text": "Je suis capable de décider même lorsque la situation comporte une part d’incertitude."
+      "id": 64,
+      "dimension": "dim_7",
+      "text": "Je sais trouver ma place au sein d’une équipe."
     },
     {
-      "id": 92,
-      "dimension": "dim_10",
-      "text": "Je prends le temps d’analyser les informations importantes avant d’agir."
+      "id": 62,
+      "dimension": "dim_7",
+      "text": "Je partage volontiers mes connaissances avec les autres."
     },
     {
-      "id": 93,
-      "dimension": "dim_10",
-      "text": "Je sais identifier rapidement les priorités dans une situation complexe."
-    },
-    {
-      "id": 94,
-      "dimension": "dim_10",
-      "text": "Je suis capable d’assumer les conséquences de mes décisions."
-    },
-    {
-      "id": 95,
-      "dimension": "dim_10",
-      "text": "Je sais trouver un équilibre entre réflexion et action."
-    },
-    {
-      "id": 96,
-      "dimension": "dim_10",
-      "text": "Je ne laisse pas la peur de me tromper empêcher ma prise de décision."
-    },
-    {
-      "id": 97,
-      "dimension": "dim_10",
-      "text": "Je sais utiliser mon expérience pour guider mes choix."
-    },
-    {
-      "id": 98,
-      "dimension": "dim_10",
-      "text": "Je consulte les bonnes personnes lorsque leur avis peut être utile."
-    },
-    {
-      "id": 99,
-      "dimension": "dim_10",
-      "text": "Je sais ajuster une décision lorsque de nouvelles informations apparaissent."
-    },
-    {
-      "id": 100,
-      "dimension": "dim_10",
-      "text": "Je préfère prendre une décision imparfaite plutôt que rester bloqué(e) trop longtemps."
-    },
-    {
-      "id": 101,
-      "dimension": "dim_11",
-      "text": "Je structure mon travail afin d’atteindre mes objectifs efficacement."
-    },
-    {
-      "id": 102,
-      "dimension": "dim_11",
-      "text": "Je sais organiser mes priorités lorsque plusieurs tâches sont urgentes."
-    },
-    {
-      "id": 103,
-      "dimension": "dim_11",
-      "text": "Je respecte généralement les engagements et délais que je prends."
-    },
-    {
-      "id": 104,
-      "dimension": "dim_11",
-      "text": "Je prépare suffisamment mes actions avant de les réaliser."
-    },
-    {
-      "id": 105,
-      "dimension": "dim_11",
-      "text": "Je mets en place des méthodes pour gagner en efficacité."
-    },
-    {
-      "id": 106,
-      "dimension": "dim_11",
-      "text": "Je vérifie la qualité de mon travail avant de le finaliser."
-    },
-    {
-      "id": 107,
-      "dimension": "dim_11",
-      "text": "Je garde une vision claire de mes objectifs même lorsque la charge augmente."
-    },
-    {
-      "id": 108,
-      "dimension": "dim_11",
-      "text": "Je sais organiser mon temps en fonction de l’importance des missions."
-    },
-    {
-      "id": 109,
-      "dimension": "dim_11",
-      "text": "Je suis capable de suivre une méthode tout en restant flexible."
-    },
-    {
-      "id": 110,
-      "dimension": "dim_11",
-      "text": "Je considère l’organisation comme un facteur essentiel de performance."
-    },
-    {
-      "id": 111,
-      "dimension": "dim_12",
-      "text": "Je continue à avancer même lorsque les résultats prennent du temps à apparaître."
-    },
-    {
-      "id": 112,
-      "dimension": "dim_12",
-      "text": "Je transforme les difficultés rencontrées en sources d’apprentissage."
-    },
-    {
-      "id": 113,
-      "dimension": "dim_12",
-      "text": "Je garde mon engagement face aux obstacles."
-    },
-    {
-      "id": 114,
-      "dimension": "dim_12",
-      "text": "Je suis capable de rebondir après un échec ou une difficulté."
-    },
-    {
-      "id": 115,
-      "dimension": "dim_12",
-      "text": "Je recherche des solutions plutôt que de rester bloqué(e) sur un problème."
-    },
-    {
-      "id": 116,
-      "dimension": "dim_12",
-      "text": "Je sais maintenir mes efforts sur des objectifs de long terme."
-    },
-    {
-      "id": 117,
-      "dimension": "dim_12",
-      "text": "Je considère les erreurs comme des opportunités de progression."
-    },
-    {
-      "id": 118,
-      "dimension": "dim_12",
-      "text": "Je fais preuve de détermination lorsque les enjeux sont importants."
-    },
-    {
-      "id": 119,
-      "dimension": "dim_12",
-      "text": "Je sais adapter ma stratégie sans abandonner mon objectif."
-    },
-    {
-      "id": 120,
-      "dimension": "dim_12",
-      "text": "Je garde une attitude positive face aux périodes exigeantes."
-    },
-    {
-      "id": 121,
-      "dimension": "dim_13",
-      "text": "Je m’adapte rapidement lorsque mon environnement évolue."
-    },
-    {
-      "id": 122,
-      "dimension": "dim_13",
-      "text": "Je considère généralement le changement comme une opportunité."
-    },
-    {
-      "id": 123,
-      "dimension": "dim_13",
-      "text": "Je suis capable de modifier mes habitudes lorsque cela devient nécessaire."
-    },
-    {
-      "id": 124,
-      "dimension": "dim_13",
-      "text": "Je reste efficace dans des situations nouvelles ou incertaines."
-    },
-    {
-      "id": 125,
-      "dimension": "dim_13",
-      "text": "Je cherche à comprendre les raisons d’un changement avant de le juger."
+      "id": 38,
+      "dimension": "dim_4",
+      "text": "Je suis à l’aise pour expliquer une idée complexe à quelqu’un d’autre."
     },
     {
       "id": 126,
       "dimension": "dim_13",
       "text": "J’apprends facilement de nouvelles méthodes ou outils."
-    },
-    {
-      "id": 127,
-      "dimension": "dim_13",
-      "text": "Je suis capable de sortir de mes habitudes pour progresser."
-    },
-    {
-      "id": 128,
-      "dimension": "dim_13",
-      "text": "Je m’adapte aux différents profils de personnes que je rencontre."
-    },
-    {
-      "id": 129,
-      "dimension": "dim_13",
-      "text": "Je sais ajuster mes objectifs lorsque le contexte évolue."
-    },
-    {
-      "id": 130,
-      "dimension": "dim_13",
-      "text": "Je reste curieux(se) face aux nouvelles expériences."
-    },
-    {
-      "id": 131,
-      "dimension": "dim_14",
-      "text": "Je cherche régulièrement de nouvelles façons d’améliorer une situation."
-    },
-    {
-      "id": 132,
-      "dimension": "dim_14",
-      "text": "Je suis capable d’imaginer plusieurs solutions face à un problème."
-    },
-    {
-      "id": 133,
-      "dimension": "dim_14",
-      "text": "J’aime explorer de nouvelles approches pour atteindre un objectif."
-    },
-    {
-      "id": 134,
-      "dimension": "dim_14",
-      "text": "Je remets parfois en question les méthodes existantes lorsqu’elles peuvent être améliorées."
-    },
-    {
-      "id": 135,
-      "dimension": "dim_14",
-      "text": "Je fais preuve de curiosité dans mon domaine professionnel."
-    },
-    {
-      "id": 136,
-      "dimension": "dim_14",
-      "text": "Je sais analyser un problème sous différents angles."
-    },
-    {
-      "id": 137,
-      "dimension": "dim_14",
-      "text": "Je suis à l’aise avec l’expérimentation et les essais."
-    },
-    {
-      "id": 138,
-      "dimension": "dim_14",
-      "text": "Je transforme facilement une idée en action concrète."
-    },
-    {
-      "id": 139,
-      "dimension": "dim_14",
-      "text": "Je recherche des solutions originales lorsque les réponses habituelles ne suffisent pas."
-    },
-    {
-      "id": 140,
-      "dimension": "dim_14",
-      "text": "Je considère les contraintes comme des éléments pouvant stimuler la créativité."
-    },
-    {
-      "id": 141,
-      "dimension": "dim_15",
-      "text": "Je réfléchis régulièrement à mon évolution personnelle et professionnelle."
-    },
-    {
-      "id": 142,
-      "dimension": "dim_15",
-      "text": "J’ai une vision claire des compétences que je souhaite développer."
-    },
-    {
-      "id": 143,
-      "dimension": "dim_15",
-      "text": "Je me fixe des objectifs pour construire mon avenir."
-    },
-    {
-      "id": 144,
-      "dimension": "dim_15",
-      "text": "Je recherche des opportunités pour apprendre et progresser."
-    },
-    {
-      "id": 145,
-      "dimension": "dim_15",
-      "text": "Je suis capable de me projeter dans des responsabilités futures."
-    },
-    {
-      "id": 146,
-      "dimension": "dim_15",
-      "text": "Je prends le temps d’analyser mes expériences pour en tirer des enseignements."
-    },
-    {
-      "id": 147,
-      "dimension": "dim_15",
-      "text": "Je cherche à mieux me connaître pour évoluer efficacement."
-    },
-    {
-      "id": 148,
-      "dimension": "dim_15",
-      "text": "Je suis ouvert(e) aux feedbacks qui peuvent m’aider à progresser."
-    },
-    {
-      "id": 149,
-      "dimension": "dim_15",
-      "text": "Je considère mon développement personnel comme une démarche continue."
-    },
-    {
-      "id": 150,
-      "dimension": "dim_15",
-      "text": "Je suis acteur(trice) de mon évolution professionnelle."
     }
   ],
   "profiles": [

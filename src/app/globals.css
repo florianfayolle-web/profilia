@@ -49,16 +49,41 @@ body {
 }
 
 .sky-gradient {
+  position: relative;
   background-image: radial-gradient(
       1200px 480px at 15% -10%,
-      color-mix(in srgb, var(--primary) 16%, transparent),
+      color-mix(in srgb, var(--primary) 20%, transparent),
       transparent 60%
     ),
     radial-gradient(
       900px 420px at 100% 0%,
-      color-mix(in srgb, var(--accent) 14%, transparent),
+      color-mix(in srgb, var(--accent) 18%, transparent),
       transparent 55%
+    ),
+    radial-gradient(
+      700px 500px at 50% 110%,
+      color-mix(in srgb, var(--gold) 10%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle,
+      color-mix(in srgb, var(--foreground) 10%, transparent) 1px,
+      transparent 1px
     );
+  background-size: auto, auto, auto, 28px 28px;
+  overflow: hidden;
+}
+
+.sky-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    ellipse 60% 50% at 50% 0%,
+    var(--background) 0%,
+    transparent 75%
+  );
+  pointer-events: none;
 }
 
 @keyframes fade-in-up {
@@ -92,4 +117,66 @@ body {
     transparent 1px
   );
   background-size: 28px 1px;
+}
+
+@media print {
+  header, footer {
+    display: none !important;
+  }
+
+  * {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  @page {
+    margin: 26mm 14mm 20mm 14mm;
+    /* Chrome/Chromium print engines number pages via this counter; other
+       engines simply ignore it, which just means no page number appears. */
+    counter-increment: page;
+  }
+
+  /* Repeats on every printed page (Chrome/Chromium): a letterhead-style
+     band using the test's own theme color, instead of a plain title. */
+  .print-report-header {
+    display: block !important;
+    position: fixed;
+    top: -20mm;
+    left: 0;
+    right: 0;
+    height: 16mm;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 6px;
+  }
+
+  .print-report-footer {
+    display: block !important;
+    position: fixed;
+    bottom: -16mm;
+    left: 0;
+    right: 0;
+    height: 12mm;
+    border-top: 1px solid var(--card-border);
+    padding-top: 6px;
+  }
+
+  .print-page-number::after {
+    content: counter(page);
+  }
+
+  /* Cards shouldn't be sliced across a page break — every result card in
+     this codebase happens to share this class pair, so this one rule
+     covers the reliability card, dimension cards, the DISC wheel, etc. */
+  [class*="rounded-xl"][class*="border"] {
+    break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    break-after: avoid;
+  }
+}
+
+.print-report-header,
+.print-report-footer {
+  display: none;
 }

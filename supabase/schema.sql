@@ -12,9 +12,25 @@ create table if not exists public.profiles (
   id uuid primary key references auth.users (id) on delete cascade,
   email text,
   full_name text,
+  first_name text,
+  last_name text,
+  gender text check (gender in ('femme', 'homme', 'autre', 'non_precise')),
+  birth_date date,
   stripe_customer_id text,
+  -- Which test's slug brought this person to sign up (from ?next= on the
+  -- signup form), for lead follow-up. Null when they signed up generically.
+  interested_test_slug text,
   created_at timestamptz not null default now()
 );
+
+alter table public.profiles add column if not exists interested_test_slug text;
+alter table public.profiles add column if not exists first_name text;
+alter table public.profiles add column if not exists last_name text;
+alter table public.profiles add column if not exists gender text;
+alter table public.profiles add column if not exists birth_date date;
+alter table public.profiles drop constraint if exists profiles_gender_check;
+alter table public.profiles add constraint profiles_gender_check
+  check (gender in ('femme', 'homme', 'autre', 'non_precise'));
 
 alter table public.profiles enable row level security;
 
@@ -69,11 +85,24 @@ create table if not exists public.tests (
       'forced_choice_quad',
       'situational_judgment',
       'likert_scale',
-      'bipolar_pairs'
+      'bipolar_pairs',
+      'disc_quad',
+      'pcm_likert',
+      'logic_mcq',
+      'career_balance',
+      'sosie_v2',
+      'orientation_riasec'
     )),
   language text not null default 'fr',
   created_at timestamptz not null default now()
 );
+
+alter table public.tests drop constraint if exists tests_format_check;
+alter table public.tests add constraint tests_format_check check (format in (
+  'single_choice', 'forced_choice_pair', 'forced_choice_quad', 'situational_judgment',
+  'likert_scale', 'bipolar_pairs', 'disc_quad', 'pcm_likert', 'logic_mcq', 'career_balance', 'sosie_v2',
+  'orientation_riasec'
+));
 
 alter table public.tests enable row level security;
 
@@ -225,7 +254,10 @@ create policy "Test content is readable with access" on public.test_content
 -- ---------------------------------------------------------------------------
 create table if not exists public.attempts (
   id uuid primary key default gen_random_uuid(),
-  user_id uuid not null references auth.users (id) on delete cascade,
+  -- Nullable: a free test can be completed by a guest who only leaves an
+  -- email (see `guest_email` and `marketing_leads` below), never creating
+  -- an account. Every paid test still requires a real user_id.
+  user_id uuid references auth.users (id) on delete cascade,
   test_id uuid not null references public.tests (id) on delete cascade,
   answers jsonb not null,
   -- Legacy fields used only by the 'single_choice' format.
@@ -236,8 +268,31 @@ create table if not exists public.attempts (
   -- submission time and stored, so edits to test_content later don't change
   -- past results. See src/lib/assessments/scoring.ts for the shape.
   result jsonb,
+  -- Set only for guest (user_id is null) attempts on a free test, so the
+  -- result page has something to greet the visitor with.
+  guest_email text,
+  -- True for every normal attempt (access was already paid/granted before
+  -- the quiz started). Guest attempts on the free test are inserted with
+  -- this false, and the result page shows a blurred teaser instead of the
+  -- full report until the micro-payment webhook flips it to true.
+  unlocked boolean not null default true,
   completed_at timestamptz not null default now()
 );
+
+alter table public.attempts add column if not exists unlocked boolean not null default true;
+
+-- Postgres doesn't auto-index foreign key columns (only primary/unique
+-- keys). These cover the lookups that get hotter as the user base grows:
+-- "my past attempts" (account page) and has_test_access()'s subscription
+-- check on every piece of gated content.
+create index if not exists attempts_user_id_idx on public.attempts (user_id);
+create index if not exists subscriptions_user_id_idx on public.subscriptions (user_id);
+create index if not exists questions_test_id_idx on public.questions (test_id);
+create index if not exists question_options_question_id_idx on public.question_options (question_id);
+create index if not exists result_profiles_test_id_idx on public.result_profiles (test_id);
+-- Admin leads page and lead follow-up look these up by email; created after
+-- the tables they reference are defined further down this file.
+create index if not exists attempts_guest_email_idx on public.attempts (guest_email) where guest_email is not null;
 
 alter table public.attempts enable row level security;
 
@@ -248,6 +303,37 @@ create policy "Attempts are viewable by owner" on public.attempts
 drop policy if exists "Attempts are insertable by owner" on public.attempts;
 create policy "Attempts are insertable by owner" on public.attempts
   for insert with check (auth.uid() = user_id);
+
+-- Deliberately NO public/anon select policy for guest (user_id is null)
+-- attempts: `using (user_id is null)` would let ANY anon client list every
+-- guest attempt (email, answers, result) via the public anon key, not just
+-- the one whose id it already knows — RLS can't express "only if you
+-- already have this specific id". Guest attempts are instead read
+-- server-side only, via the admin client scoped to one exact id from the
+-- URL (see src/app/tests/[slug]/result/[attemptId]/page.tsx), which never
+-- exposes a listing endpoint.
+drop policy if exists "Guest attempts are viewable by anyone with the link" on public.attempts;
+
+-- ---------------------------------------------------------------------------
+-- Marketing leads: the email a guest leaves to see their free test result,
+-- plus whether they opted in to receive marketing communications. Written
+-- only by the submitFreeAttempt server action (service role) — never
+-- readable or writable by anon/authenticated clients directly.
+-- ---------------------------------------------------------------------------
+create table if not exists public.marketing_leads (
+  id uuid primary key default gen_random_uuid(),
+  email text not null,
+  test_slug text,
+  consent boolean not null default false,
+  attempt_id uuid references public.attempts (id) on delete set null,
+  created_at timestamptz not null default now()
+);
+
+create index if not exists marketing_leads_email_idx on public.marketing_leads (email);
+
+alter table public.marketing_leads enable row level security;
+-- No policies: only the service-role key (used by the server action and by
+-- the admin leads page) can read or write this table.
 
 -- ---------------------------------------------------------------------------
 -- Page views: home-grown visit counter for the daily ops report email.

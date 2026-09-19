@@ -1,0 +1,660 @@
+{
+  "meta": {
+    "title": "Six façons d'habiter sa vie — test inspiré de la Process Communication",
+    "language": "fr",
+    "testType": "pcm_likert",
+    "inspiredBy": "Modèle des 6 profils de personnalité décrit par Taibi Kahler (Process Communication Model). Affirmations originales, sans reproduction du questionnaire officiel.",
+    "totalItems": 72,
+    "baseCount": 42,
+    "phaseCount": 30,
+    "disclaimer": "Ce test est une invitation à s'observer, pas un inventaire officiel de la Process Communication. Le modèle officiel s'évalue avec un questionnaire validé, dépouillé par un professionnel certifié."
+  },
+  "dimensions": [
+    {
+      "code": "emp",
+      "label": "Empathique"
+    },
+    {
+      "code": "tra",
+      "label": "Travaillomane"
+    },
+    {
+      "code": "per",
+      "label": "Persévérant"
+    },
+    {
+      "code": "rev",
+      "label": "Rêveur"
+    },
+    {
+      "code": "reb",
+      "label": "Rebelle"
+    },
+    {
+      "code": "pro",
+      "label": "Promoteur"
+    }
+  ],
+  "items": [
+    {
+      "id": "b4",
+      "dimension": "emp",
+      "text": "On vient facilement me raconter ses peines.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b14",
+      "dimension": "per",
+      "text": "J’ai des convictions et je les défends, même seul à table.",
+      "twin": "t3",
+      "block": "base"
+    },
+    {
+      "id": "b6",
+      "dimension": "emp",
+      "text": "Un désaccord entre des gens que j’aime me gâche la journée.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b9",
+      "dimension": "tra",
+      "text": "J’aime planifier et voir mes tâches se refermer une à une.",
+      "twin": "t2",
+      "block": "base"
+    },
+    {
+      "id": "b18",
+      "dimension": "per",
+      "text": "Je fais confiance seulement après avoir observé quelqu’un un moment.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b5",
+      "dimension": "emp",
+      "text": "J’ai besoin qu’on me dise que je compte, pas seulement que j’ai bien fait.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b20",
+      "dimension": "per",
+      "text": "Je suis capable de renoncer à quelque chose d’agréable par principe.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b27",
+      "dimension": "rev",
+      "text": "Je peux rester longtemps à ne rien faire, et ce n’est pas du temps perdu pour moi.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b40",
+      "dimension": "pro",
+      "text": "Rester en place trop longtemps me pèse : il faut que ça bouge.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b22",
+      "dimension": "rev",
+      "text": "Les longues plages de solitude me sont indispensables.",
+      "twin": "t4",
+      "block": "base"
+    },
+    {
+      "id": "b37",
+      "dimension": "pro",
+      "text": "Le risque m’attire plus qu’il ne me fait peur.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b17",
+      "dimension": "per",
+      "text": "Je m’engage dans la durée : une asso, un club, une cause, des amitiés très longues.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b39",
+      "dimension": "pro",
+      "text": "Je sais convaincre les gens quand je veux vraiment quelque chose.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b10",
+      "dimension": "tra",
+      "text": "Quand on me raconte une histoire, j’ai besoin des dates et des détails pour bien suivre.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b3",
+      "dimension": "emp",
+      "text": "Dans un groupe, je repère vite la personne qu’on laisse de côté.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b35",
+      "dimension": "pro",
+      "text": "Je décide vite, quitte à ajuster en route.",
+      "twin": "t6",
+      "block": "base"
+    },
+    {
+      "id": "b7",
+      "dimension": "tra",
+      "text": "Avant un voyage, j’ai déjà comparé les horaires, les prix et les options.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b19",
+      "dimension": "per",
+      "text": "Je remarque tout de suite quand les actes de quelqu’un ne collent pas à ses paroles.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b29",
+      "dimension": "reb",
+      "text": "Je fais connaissance avec les gens en plaisantant.",
+      "twin": "t5",
+      "block": "base"
+    },
+    {
+      "id": "b8",
+      "dimension": "tra",
+      "text": "Je fais des listes, et j’aime les cocher.",
+      "twin": "t2",
+      "block": "base"
+    },
+    {
+      "id": "b11",
+      "dimension": "tra",
+      "text": "Une information floue me met mal à l’aise, je vais vérifier.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b1",
+      "dimension": "emp",
+      "text": "Je perçois l’état d’esprit des gens avant même qu’ils ouvrent la bouche.",
+      "twin": "t1",
+      "block": "base"
+    },
+    {
+      "id": "b23",
+      "dimension": "rev",
+      "text": "Il m’arrive de partir dans mes pensées en pleine conversation.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b30",
+      "dimension": "reb",
+      "text": "Je réagis à chaud : j’aime, j’aime pas, et ça se voit sur mon visage.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b38",
+      "dimension": "pro",
+      "text": "Quand ça devient urgent, je suis à mon meilleur.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b2",
+      "dimension": "emp",
+      "text": "Je soigne l’ambiance chez moi : la lumière, les odeurs, les matières.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b34",
+      "dimension": "reb",
+      "text": "Les règles qui n’ont aucun sens, j’ai envie de les contourner pour le plaisir.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b21",
+      "dimension": "rev",
+      "text": "J’ai besoin de longs moments seul pour me sentir bien.",
+      "twin": "t4",
+      "block": "base"
+    },
+    {
+      "id": "b0",
+      "dimension": "emp",
+      "text": "Quand quelqu’un entre dans la pièce, je sens tout de suite son humeur.",
+      "twin": "t1",
+      "block": "base"
+    },
+    {
+      "id": "b32",
+      "dimension": "reb",
+      "text": "Quand je m’ennuie, je fais le pitre ou je chambre quelqu’un.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b36",
+      "dimension": "pro",
+      "text": "Je me lance rapidement et je corrige en cours de route.",
+      "twin": "t6",
+      "block": "base"
+    },
+    {
+      "id": "b26",
+      "dimension": "rev",
+      "text": "On me dit parfois que je suis difficile à cerner, discret, un peu secret.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b31",
+      "dimension": "reb",
+      "text": "Une sortie qui n’est pas amusante, je décroche au bout de vingt minutes.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b33",
+      "dimension": "reb",
+      "text": "J’ai gardé un côté gamin et je l’assume complètement.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b25",
+      "dimension": "rev",
+      "text": "J’attends souvent qu’on me dise clairement ce qu’on attend de moi.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b28",
+      "dimension": "reb",
+      "text": "L’humour est ma façon d’entrer en relation avec les gens.",
+      "twin": "t5",
+      "block": "base"
+    },
+    {
+      "id": "b16",
+      "dimension": "per",
+      "text": "Je sens très vite si une situation est juste ou pas.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b12",
+      "dimension": "tra",
+      "text": "Je suis content de moi quand un truc que j’ai organisé se déroule sans accroc.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b24",
+      "dimension": "rev",
+      "text": "Trop de sollicitations en même temps et je me mets en veille.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b41",
+      "dimension": "pro",
+      "text": "Je m’adapte à n’importe quel milieu, je sais me faire accepter partout.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b13",
+      "dimension": "tra",
+      "text": "Je préfère comprendre le fonctionnement d’un truc plutôt que de l’utiliser sans savoir.",
+      "twin": null,
+      "block": "base"
+    },
+    {
+      "id": "b15",
+      "dimension": "per",
+      "text": "Je maintiens mes positions même quand personne ne me suit.",
+      "twin": "t3",
+      "block": "base"
+    },
+    {
+      "id": "p4",
+      "dimension": "emp",
+      "text": "Ce qui me ferait du bien ce soir : qu’on me prenne dans les bras sans rien me demander.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p28",
+      "dimension": "pro",
+      "text": "En ce moment, je bouscule mon entourage plus que d’habitude.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p11",
+      "dimension": "per",
+      "text": "En ce moment, l’injustice me met en colère très vite.",
+      "twin": "p3",
+      "block": "phase"
+    },
+    {
+      "id": "p25",
+      "dimension": "pro",
+      "text": "En ce moment, il me faut de l’intensité, sinon je tourne en rond.",
+      "twin": "p6",
+      "block": "phase"
+    },
+    {
+      "id": "p1",
+      "dimension": "emp",
+      "text": "En ce moment, je manque d’affection et de marques d’attention.",
+      "twin": "p1",
+      "block": "phase"
+    },
+    {
+      "id": "p18",
+      "dimension": "rev",
+      "text": "Ces temps-ci, je me sens un peu spectateur de ma propre vie.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p8",
+      "dimension": "tra",
+      "text": "Ce qui me ferait du bien maintenant : qu’on reconnaisse concrètement tout ce que j’abats.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p15",
+      "dimension": "rev",
+      "text": "En ce moment, j’ai envie de disparaître quelques jours, sans prévenir personne.",
+      "twin": "p4",
+      "block": "phase"
+    },
+    {
+      "id": "p2",
+      "dimension": "emp",
+      "text": "Ces temps-ci, je m’oublie pour faire plaisir, et je m’en veux après.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p6",
+      "dimension": "tra",
+      "text": "Ces temps-ci, l’imprévu me pèse : il me faut un cadre clair.",
+      "twin": "p2",
+      "block": "phase"
+    },
+    {
+      "id": "p3",
+      "dimension": "emp",
+      "text": "Récemment, je m’excuse souvent, même quand ce n’est pas ma faute.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p9",
+      "dimension": "tra",
+      "text": "En ce moment, je pense beaucoup, parfois jusqu’à en perdre le sommeil.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p19",
+      "dimension": "rev",
+      "text": "Ce qui me ferait du bien : trois jours seul, sans rien à rendre à personne.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p23",
+      "dimension": "reb",
+      "text": "En ce moment, j’ai l’impression que si ça ne va pas, c’est surtout à cause des autres.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p26",
+      "dimension": "pro",
+      "text": "Ces temps-ci, sans sensations fortes je m’étiole.",
+      "twin": "p6",
+      "block": "phase"
+    },
+    {
+      "id": "p10",
+      "dimension": "per",
+      "text": "Ces derniers mois, je supporte très mal ce qui me paraît injuste.",
+      "twin": "p3",
+      "block": "phase"
+    },
+    {
+      "id": "p22",
+      "dimension": "reb",
+      "text": "Ce qui me manque le plus en ce moment, c’est de rire, vraiment rire.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p16",
+      "dimension": "rev",
+      "text": "Ces temps-ci, j’aimerais m’éclipser un moment, loin de tout le monde.",
+      "twin": "p4",
+      "block": "phase"
+    },
+    {
+      "id": "p17",
+      "dimension": "rev",
+      "text": "Ces derniers temps, je remets à plus tard et j’attends que les choses se décident toutes seules.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p13",
+      "dimension": "per",
+      "text": "Je me méfie plus qu’avant, et je remarque surtout ce qui cloche chez les gens.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p27",
+      "dimension": "pro",
+      "text": "Ces derniers temps, j’ai pris des risques qui n’en valaient pas vraiment la peine.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p20",
+      "dimension": "reb",
+      "text": "Ces derniers temps, je râle beaucoup : tout me gonfle.",
+      "twin": "p5",
+      "block": "phase"
+    },
+    {
+      "id": "p7",
+      "dimension": "tra",
+      "text": "Ces derniers temps, je refais ce que les autres ont fait, je n’arrive pas à lâcher.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p24",
+      "dimension": "reb",
+      "text": "J’aurais besoin qu’on me propose un truc totalement inutile et amusant.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p14",
+      "dimension": "per",
+      "text": "Ces derniers mois, je me sens seul à défendre ce qui compte vraiment.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p5",
+      "dimension": "tra",
+      "text": "En ce moment, j’ai besoin que les choses soient carrées et prévues à l’avance.",
+      "twin": "p2",
+      "block": "phase"
+    },
+    {
+      "id": "p12",
+      "dimension": "per",
+      "text": "En ce moment, j’ai besoin qu’on me dise que j’ai raison de tenir bon.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p0",
+      "dimension": "emp",
+      "text": "Ces derniers mois, ce qui me manque le plus, c’est de la tendresse et de l’attention.",
+      "twin": "p1",
+      "block": "phase"
+    },
+    {
+      "id": "p29",
+      "dimension": "pro",
+      "text": "Ce qui me ferait du bien : un défi, une aventure, quelque chose qui décoiffe.",
+      "twin": null,
+      "block": "phase"
+    },
+    {
+      "id": "p21",
+      "dimension": "reb",
+      "text": "En ce moment, je me plains souvent, rien ne me convient vraiment.",
+      "twin": "p5",
+      "block": "phase"
+    }
+  ],
+  "types": {
+    "emp": {
+      "name": "Empathique",
+      "perception": "Tu perçois le monde par les émotions. Avant les faits, tu sens l’ambiance d’une pièce, la fatigue dans une voix, le froid entre deux personnes.",
+      "quotidien": "Chez toi, tout est question de chaleur : la lumière du salon, un plat qui mijote, un pull qui sent bon. Tu tiens les liens de ton entourage sans que personne ne s’en rende compte — les anniversaires, les nouvelles qu’on prend, la personne isolée à qui tu vas parler.",
+      "talents": "Tu crées du lien là où il n’y en avait pas, tu apaises, tu donnes aux gens l’envie de se confier. Tu remarques ceux que personne ne remarque.",
+      "besoin": "Qu’on t’aime pour qui tu es, pas pour ce que tu rends. Et du sensoriel : un bain, une odeur, un tissu, un câlin.",
+      "stress": "Tu commences à trop t’excuser, à t’oublier pour faire plaisir, à faire des maladresses qui ne te ressemblent pas. Puis tu te dis en silence qu’on ne t’aime pas assez.",
+      "aide": "Dis « j’ai besoin de douceur » avant d’en être au bord. Tes proches ne le devinent pas — beaucoup ne fonctionnent pas comme toi.",
+      "citation": "« Ça va, toi ? Vraiment ? »"
+    },
+    "tra": {
+      "name": "Travaillomane",
+      "perception": "Tu perçois le monde par la pensée. Tu classes, tu compares, tu relies les informations entre elles avant de te faire un avis.",
+      "quotidien": "C’est toi qui as le tableau des vacances, la bonne adresse vérifiée, l’itinéraire avec les horaires. Un projet bien mené te procure un plaisir que les autres sous-estiment. Tu aimes les conversations où on apprend quelque chose.",
+      "talents": "Tu vois la structure des choses, tu anticipes ce que personne n’a vu venir, et on peut compter sur ce que tu as promis.",
+      "besoin": "Qu’on reconnaisse ce que tu fais et comment tu le penses. Et du temps structuré : savoir quand, combien de temps, dans quel ordre.",
+      "stress": "Tu deviens tatillon, tu refais ce que les autres ont fait, tu n’arrives plus à déléguer chez toi. Tu penses en silence que personne ne fait les choses correctement.",
+      "aide": "Programme du temps sans objectif. Ta valeur ne se mesure pas au nombre de cases cochées le dimanche soir.",
+      "citation": "« Attends, on reprend dans l’ordre. »"
+    },
+    "per": {
+      "name": "Persévérant",
+      "perception": "Tu perçois le monde par les opinions. Tu sais très vite ce qui est juste, acceptable, digne de confiance — et ce qui ne l’est pas.",
+      "quotidien": "Tu t’engages et tu tiens : une asso, un club, une amitié de vingt ans, une cause. On vient te demander ton avis parce qu’il est ferme. Tu observes les gens un moment avant de leur ouvrir la porte, mais quand elle s’ouvre, c’est pour longtemps.",
+      "talents": "Tu tiens quand les autres lâchent, tu dis ce que personne n’ose dire, et tu donnes aux gens autour de toi une colonne vertébrale.",
+      "besoin": "Qu’on respecte tes convictions, même en désaccord. Qu’on te dise « je comprends pourquoi tu y tiens » plutôt que « tu exagères ».",
+      "stress": "Tu pars en croisade sur un détail, tu traques ce qui cloche, tu deviens soupçonneux. Les autres te trouvent rigide au moment précis où tu te sens seul à défendre quelque chose.",
+      "aide": "Sépare le désaccord de la trahison. Quelqu’un peut penser autrement que toi et rester loyal.",
+      "citation": "« Je trouve ça profondément injuste. »"
+    },
+    "rev": {
+      "name": "Rêveur",
+      "perception": "Tu perçois le monde par l’imagination et le calme intérieur. Tu prends les choses en toi, tu les laisses décanter, puis quelque chose arrive.",
+      "quotidien": "Tu as besoin de longues plages seul, sans culpabilité. Les fêtes trop longues te lessivent, même les bonnes. Tu as une vie intérieure riche que peu de gens voient, et une capacité à durer dans les moments compliqués qui étonne ton entourage.",
+      "talents": "Tu imagines ce que personne n’a pensé, tu restes calme quand tout s’agite, et tu supportes la solitude et la lenteur mieux que quiconque.",
+      "besoin": "De la solitude vraie, pas des miettes. Et qu’on te dise clairement ce qu’on attend de toi : les sous-entendus te laissent sur le quai.",
+      "stress": "Tu te mets en veille. Tu remets, tu attends qu’on décide pour toi, tu disparais des conversations. Ça peut ressembler à de l’indifférence, alors que c’est une protection.",
+      "aide": "Demande explicitement ce dont tu as besoin, et demande aux autres d’être explicites. Une phrase directe t’économise trois jours de retrait.",
+      "citation": "« Laisse-moi juste un peu de temps seul. »"
+    },
+    "reb": {
+      "name": "Rebelle",
+      "perception": "Tu perçois le monde par les réactions : j’aime, j’aime pas, ça me fait rire, ça me gonfle. Tout de suite, dans le corps.",
+      "quotidien": "Tu es celui ou celle qui fait basculer un repas de famille dans le fou rire. Tu détestes ce qui est plat, prévu, sérieux pour rien. Ta créativité vient du jeu — tu trouves les idées en déconnant, pas en réfléchissant proprement.",
+      "talents": "Tu mets de la vie dans une pièce en trente secondes, tu dis les vérités par la blague, et tu inventes là où les autres appliquent.",
+      "besoin": "Du contact ludique, tous les jours. Des gens avec qui rire, une activité qui n’a aucune utilité, de la spontanéité.",
+      "stress": "Tu râles, tu te plains, tu trouves que c’est toujours la faute des autres. Tu t’embarques dans des histoires collantes dont tu es à la fois victime et moteur.",
+      "aide": "Ne laisse pas passer plusieurs jours sans jeu. Ton ennui n’est pas un caprice, c’est un symptôme.",
+      "citation": "« Bon, on fait un truc marrant ou on meurt ici ? »"
+    },
+    "pro": {
+      "name": "Promoteur",
+      "perception": "Tu perçois le monde par l’action. Tu sens l’opportunité, tu y vas, tu ajustes en route.",
+      "quotidien": "Tu décides d’un week-end à 700 km le jeudi soir. Tu es à ton meilleur quand ça chauffe : une panne, une urgence, un imprévu — les autres paniquent et toi tu prends les commandes. Tu as du charme et tu le sais.",
+      "talents": "Tu débloques les situations, tu oses ce que personne n’ose, et tu entraînes les gens derrière toi sans avoir à les convaincre.",
+      "besoin": "De l’excitation et de l’intensité. Beaucoup en peu de temps. La routine te fait dépérir plus vite que la difficulté.",
+      "stress": "Tu pousses les autres à bout, tu manipules un peu pour arriver à tes fins, tu prends des risques qui ne valent pas le coup, juste pour sentir quelque chose.",
+      "aide": "Cherche l’adrénaline là où elle ne coûte rien à tes proches : le sport, le défi, le projet fou. Pas dans le conflit.",
+      "citation": "« On verra bien. On y va. »"
+    }
+  },
+  "phase": {
+    "emp": {
+      "besoin": "En ce moment, tu as besoin d’être aimé sans contrepartie, et de douceur concrète : une présence, du repos, des sensations agréables.",
+      "signal": "Le signal que ça manque : tu t’excuses trop, tu t’effaces pour ne gêner personne, tu accumules du ressentiment sans le dire, tu pleures pour des broutilles.",
+      "demande": "Ce que tu peux demander à tes proches, littéralement : « prends de mes nouvelles sans raison » et « dis-moi que tu m’aimes, même si ça te paraît évident »."
+    },
+    "tra": {
+      "besoin": "En ce moment, tu as besoin qu’on reconnaisse ce que tu abats et que ton temps soit structuré : des repères, des échéances, des choses qui se referment proprement.",
+      "signal": "Le signal que ça manque : tu ne délègues plus rien, tu deviens pointilleux sur des détails, tu penses en boucle le soir, tu te sens seul à porter.",
+      "demande": "Ce que tu peux demander : « dis-moi précisément ce que tu as apprécié » et « fixons une date, pas un jour on verra »."
+    },
+    "per": {
+      "besoin": "En ce moment, tu as besoin qu’on respecte tes convictions et qu’on te reconnaisse comme quelqu’un de fiable, pas seulement comme quelqu’un d’utile.",
+      "signal": "Le signal que ça manque : tu ne vois plus que ce qui cloche, tu te méfies, tu t’emportes sur des questions de principe qui surprennent ton entourage.",
+      "demande": "Ce que tu peux demander : « dis-moi que tu comprends pourquoi j’y tiens, même si tu n’es pas d’accord »."
+    },
+    "rev": {
+      "besoin": "En ce moment, tu as besoin de solitude réelle et de consignes claires. Pas d’un dimanche tranquille : de vraies plages où personne n’attend rien de toi.",
+      "signal": "Le signal que ça manque : tu repousses tout, tu attends que les autres décident, tu t’absentes mentalement, tu as l’impression d’être spectateur de ta propre vie.",
+      "demande": "Ce que tu peux demander : « j’ai besoin de deux jours seul, ce n’est pas contre toi » et « dis-moi clairement ce que tu attends de moi »."
+    },
+    "reb": {
+      "besoin": "En ce moment, tu as besoin de rire et de contacts sans enjeu. Du jeu quotidien, pas une grande sortie une fois par trimestre.",
+      "signal": "Le signal que ça manque : tu râles sur tout, rien ne va, tu te sens victime des circonstances, tu te braques dès qu’on te demande quelque chose.",
+      "demande": "Ce que tu peux demander : « propose-moi un truc idiot ce soir » et « viens juste rigoler avec moi, on ne résout rien »."
+    },
+    "pro": {
+      "besoin": "En ce moment, tu as besoin d’intensité et de sensations fortes. Du mouvement, de l’enjeu, quelque chose qui se joue vraiment.",
+      "signal": "Le signal que ça manque : tu prends des risques qui n’en valent pas la peine, tu bouscules ton entourage, tu provoques du conflit pour sentir quelque chose.",
+      "demande": "Ce que tu peux demander : « lance-moi un défi » plutôt que d’attendre que la vie t’en fournisse un par accident."
+    }
+  },
+  "scale": [
+    {
+      "value": 0,
+      "label": "Pas du tout moi"
+    },
+    {
+      "value": 1,
+      "label": "Un peu"
+    },
+    {
+      "value": 2,
+      "label": "Ça dépend"
+    },
+    {
+      "value": 3,
+      "label": "Assez souvent"
+    },
+    {
+      "value": 4,
+      "label": "Tout à fait moi"
+    }
+  ]
+}

@@ -20,6 +20,12 @@ export function SiteFooter() {
               <Link href="/tests" className="text-muted hover:text-foreground">
                 Tous les tests
               </Link>
+              <Link href="/guides" className="text-muted hover:text-foreground">
+                Guides
+              </Link>
+              <Link href="/blog" className="text-muted hover:text-foreground">
+                Blog
+              </Link>
               <Link
                 href="/pricing"
                 className="text-muted hover:text-foreground"
@@ -31,6 +37,24 @@ export function SiteFooter() {
                 className="text-muted hover:text-foreground"
               >
                 Créer un compte
+              </Link>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="font-medium text-foreground/80">Informations</p>
+              <Link
+                href="/mentions-legales"
+                className="text-muted hover:text-foreground"
+              >
+                Mentions légales
+              </Link>
+              <Link
+                href="/confidentialite"
+                className="text-muted hover:text-foreground"
+              >
+                Confidentialité
+              </Link>
+              <Link href="/cgv" className="text-muted hover:text-foreground">
+                CGV
               </Link>
             </div>
           </nav>

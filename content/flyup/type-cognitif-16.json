@@ -121,6 +121,510 @@
   ],
   "items": [
     {
+      "id": 10,
+      "dimension": "information",
+      "left": {
+        "text": "Je préfère des consignes précises et détaillées.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère une vision d'ensemble et j'ajuste les détails moi-même.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 11,
+      "dimension": "information",
+      "left": {
+        "text": "Je remarque facilement les détails concrets d'une situation.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je remarque facilement les tendances et les possibilités futures d'une situation.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 17,
+      "dimension": "decision",
+      "left": {
+        "text": "Face à une décision difficile, je privilégie la logique et les faits.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Face à une décision difficile, je privilégie l'impact humain et mes valeurs.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 24,
+      "dimension": "decision",
+      "left": {
+        "text": "Je gère plus facilement les conflits en me concentrant sur les faits.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je gère plus facilement les conflits en cherchant à préserver la relation.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 52,
+      "dimension": "decision",
+      "left": {
+        "text": "Je juge qu'une décision est bonne si elle est logiquement justifiable, même si elle déplaît à certains.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je juge qu'une décision est bonne si elle est bien reçue par les personnes concernées, même si elle est imparfaite sur le papier.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 31,
+      "dimension": "organisation",
+      "left": {
+        "text": "On me dit souvent que je suis organisé(e) et prévisible.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "On me dit souvent que je suis spontané(e) et imprévisible.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 39,
+      "dimension": "energie",
+      "left": {
+        "text": "Après une semaine chargée en interactions, j'ai besoin de retrouver du monde pour me sentir bien.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Après une semaine chargée en interactions, j'ai besoin de solitude pour me ressourcer.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 36,
+      "dimension": "energie",
+      "left": {
+        "text": "Je réfléchis mieux en bougeant ou en étant entouré(e) d'activité.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je réfléchis mieux dans un endroit calme et sans distraction.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 38,
+      "dimension": "energie",
+      "left": {
+        "text": "Je suis à l'aise d'être le centre de l'attention dans un groupe.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère rester en retrait plutôt que d'attirer l'attention.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 43,
+      "dimension": "information",
+      "left": {
+        "text": "Je remarque rapidement ce qui ne fonctionne pas dans un système existant.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je remarque rapidement ce qui pourrait être inventé ou amélioré à l'avenir.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 35,
+      "dimension": "energie",
+      "left": {
+        "text": "Je préfère les activités qui impliquent du monde et du mouvement.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère les activités calmes que je peux faire seul(e) ou en petit comité.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 12,
+      "dimension": "information",
+      "left": {
+        "text": "Je préfère m'appuyer sur des méthodes qui ont déjà fait leurs preuves.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère explorer de nouvelles approches, même non testées.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 51,
+      "dimension": "decision",
+      "left": {
+        "text": "Je reste factuel(le) même quand quelqu'un est émotionnellement affecté par la situation.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je m'adapte à l'état émotionnel de la personne avant d'aborder les faits.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 55,
+      "dimension": "organisation",
+      "left": {
+        "text": "J'aime que mon espace de travail soit rangé et organisé.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Un peu de désordre ne me dérange pas si je sais où sont mes affaires.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 26,
+      "dimension": "organisation",
+      "left": {
+        "text": "Une fois une décision prise, je préfère ne plus y revenir.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère garder la possibilité de changer d'avis si une meilleure option apparaît.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 54,
+      "dimension": "organisation",
+      "left": {
+        "text": "Je prépare mes affaires bien à l'avance avant un départ ou un rendez-vous important.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je prépare mes affaires au dernier moment, souvent juste avant de partir.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 56,
+      "dimension": "organisation",
+      "left": {
+        "text": "Je termine un projet avant d'en commencer un autre.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J'aime avoir plusieurs projets en cours en même temps.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 28,
+      "dimension": "organisation",
+      "left": {
+        "text": "Je respecte scrupuleusement les délais que je me fixe.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je travaille souvent mieux sous la pression d'une échéance proche.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 42,
+      "dimension": "information",
+      "left": {
+        "text": "En visitant un lieu nouveau, je remarque d'abord les détails concrets (matériaux, architecture précise).",
+        "pole": "A"
+      },
+      "right": {
+        "text": "En visitant un lieu nouveau, je m'imagine surtout son histoire ou ce qu'il pourrait devenir.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 60,
+      "dimension": "organisation",
+      "left": {
+        "text": "Je me sens plus efficace avec un planning détaillé.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me sens plus efficace en gérant les choses au fur et à mesure.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 18,
+      "dimension": "decision",
+      "left": {
+        "text": "Je préfère qu'on me dise la vérité même si elle est inconfortable.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère qu'on tienne compte de la sensibilité de chacun dans la façon de dire les choses.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 34,
+      "dimension": "energie",
+      "left": {
+        "text": "Je me sens à l'aise dans une grande fête avec beaucoup de monde.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère une soirée avec seulement quelques personnes proches.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 8,
+      "dimension": "energie",
+      "left": {
+        "text": "Je me décris plutôt comme quelqu'un de tourné vers l'extérieur.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me décris plutôt comme quelqu'un de tourné vers l'intérieur.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 45,
+      "dimension": "information",
+      "left": {
+        "text": "Je m'appuie sur mon expérience passée pour juger d'une situation nouvelle.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je m'appuie sur mon intuition, même sans expérience comparable.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 40,
+      "dimension": "information",
+      "left": {
+        "text": "Je retiens facilement les détails précis d'un événement (dates, chiffres, noms).",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je retiens surtout l'impression générale ou l'ambiance d'un événement.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 5,
+      "dimension": "energie",
+      "left": {
+        "text": "Rencontrer beaucoup de nouvelles personnes me stimule.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Rencontrer beaucoup de nouvelles personnes d'un coup me demande de l'énergie.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 29,
+      "dimension": "organisation",
+      "left": {
+        "text": "J'aime avoir une liste claire de ce qu'il reste à faire.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J'aime avancer au fil de l'inspiration, sans liste figée.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 48,
+      "dimension": "decision",
+      "left": {
+        "text": "Face à une règle, je préfère l'appliquer de la même façon pour tout le monde.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Face à une règle, je suis prêt(e) à faire une exception selon la situation personnelle.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 58,
+      "dimension": "organisation",
+      "left": {
+        "text": "J'aime que mes journées suivent une routine stable.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J'aime que mes journées soient différentes les unes des autres.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 44,
+      "dimension": "information",
+      "left": {
+        "text": "Je préfère qu'on m'explique les choses de façon littérale et directe.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je suis à l'aise avec les images, métaphores et sous-entendus.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 57,
+      "dimension": "organisation",
+      "left": {
+        "text": "Un changement d'horaire de dernière minute me contrarie plutôt.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Un changement d'horaire de dernière minute ne me pose pas de problème particulier.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 33,
+      "dimension": "energie",
+      "left": {
+        "text": "Je préfère répondre à un appel téléphonique plutôt qu'à un message écrit.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère répondre par écrit, pour avoir le temps de formuler ma réponse.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 25,
+      "dimension": "organisation",
+      "left": {
+        "text": "J'aime planifier mes tâches à l'avance.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J'aime garder mon emploi du temps ouvert et m'organiser au dernier moment.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 47,
+      "dimension": "decision",
+      "left": {
+        "text": "Quand je donne un retour critique, je vais droit au but même si c'est direct.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Quand je donne un retour critique, j'adoucis la forme pour préserver la relation.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 59,
+      "dimension": "organisation",
+      "left": {
+        "text": "Je préfère suivre une recette précisément quand je cuisine.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère improviser et ajuster une recette à mon goût.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 30,
+      "dimension": "organisation",
+      "left": {
+        "text": "Je préfère un cadre bien défini avec des règles claires.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère un cadre souple qui laisse de la place à l'improvisation.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 15,
+      "dimension": "information",
+      "left": {
+        "text": "Je préfère traiter les problèmes un par un, dans l'ordre.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère envisager plusieurs pistes en même temps, quitte à en écarter certaines.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 50,
+      "dimension": "decision",
+      "left": {
+        "text": "Devant une décision urgente, je me fie d'abord aux données disponibles.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Devant une décision urgente, je me fie d'abord à ce que ressentent les personnes concernées.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 41,
+      "dimension": "information",
+      "left": {
+        "text": "Je préfère lire un mode d'emploi avant d'utiliser un nouvel objet.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère essayer directement et comprendre en expérimentant.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 19,
+      "dimension": "decision",
+      "left": {
+        "text": "Je juge une décision d'abord sur sa cohérence objective.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je juge une décision d'abord sur ses conséquences pour les personnes concernées.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 23,
+      "dimension": "decision",
+      "left": {
+        "text": "On me décrit plutôt comme rationnel(le) et factuel(le).",
+        "pole": "A"
+      },
+      "right": {
+        "text": "On me décrit plutôt comme empathique et attentif(ve) aux autres.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 14,
+      "dimension": "information",
+      "left": {
+        "text": "Je me fie davantage aux faits qu'aux impressions.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me fie davantage aux impressions qu'aux seuls faits.",
+        "pole": "B"
+      }
+    },
+    {
       "id": 1,
       "dimension": "energie",
       "left": {
@@ -129,30 +633,6 @@
       },
       "right": {
         "text": "Je me sens plus énergique après avoir passé du temps seul(e), au calme.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 2,
-      "dimension": "energie",
-      "left": {
-        "text": "Je préfère réfléchir à voix haute, en échangeant avec les autres.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je préfère réfléchir en silence, avant de partager mes conclusions.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 3,
-      "dimension": "energie",
-      "left": {
-        "text": "Dans un groupe, je prends facilement la parole en premier.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Dans un groupe, j'observe d'abord avant de m'exprimer.",
         "pole": "B"
       }
     },
@@ -169,14 +649,98 @@
       }
     },
     {
-      "id": 5,
-      "dimension": "energie",
+      "id": 49,
+      "dimension": "decision",
       "left": {
-        "text": "Rencontrer beaucoup de nouvelles personnes me stimule.",
+        "text": "Je sais dire non sans trop me soucier de la réaction de l'autre.",
         "pole": "A"
       },
       "right": {
-        "text": "Rencontrer beaucoup de nouvelles personnes d'un coup me demande de l'énergie.",
+        "text": "Il m'est difficile de dire non sans me sentir mal à l'aise.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 32,
+      "dimension": "organisation",
+      "left": {
+        "text": "Un imprévu de dernière minute me déstabilise plutôt.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Un imprévu de dernière minute m'amuse plutôt.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 9,
+      "dimension": "information",
+      "left": {
+        "text": "Je fais confiance en priorité à ce que je peux observer et vérifier.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je fais confiance en priorité à mon intuition et aux liens que j'imagine.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 2,
+      "dimension": "energie",
+      "left": {
+        "text": "Je préfère réfléchir à voix haute, en échangeant avec les autres.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je préfère réfléchir en silence, avant de partager mes conclusions.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 37,
+      "dimension": "energie",
+      "left": {
+        "text": "Je vais facilement vers une personne que je ne connais pas pour engager la conversation.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J'attends plutôt que l'autre fasse le premier pas.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 27,
+      "dimension": "organisation",
+      "left": {
+        "text": "Je me sens plus à l'aise quand un sujet est clos.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "Je me sens plus à l'aise quand plusieurs options restent ouvertes.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 46,
+      "dimension": "information",
+      "left": {
+        "text": "J'aime les activités qui demandent un savoir-faire concret et manuel.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J'aime les activités qui font appel à l'imagination et aux idées abstraites.",
+        "pole": "B"
+      }
+    },
+    {
+      "id": 21,
+      "dimension": "decision",
+      "left": {
+        "text": "Je remets facilement en question une idée, même si elle vient de quelqu'un que j'apprécie.",
+        "pole": "A"
+      },
+      "right": {
+        "text": "J'ai du mal à contredire quelqu'un que j'apprécie, même si je ne suis pas d'accord.",
         "pole": "B"
       }
     },
@@ -205,98 +769,14 @@
       }
     },
     {
-      "id": 8,
-      "dimension": "energie",
+      "id": 22,
+      "dimension": "decision",
       "left": {
-        "text": "Je me décris plutôt comme quelqu'un de tourné vers l'extérieur.",
+        "text": "Je préfère des critères clairs et objectifs pour trancher.",
         "pole": "A"
       },
       "right": {
-        "text": "Je me décris plutôt comme quelqu'un de tourné vers l'intérieur.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 9,
-      "dimension": "information",
-      "left": {
-        "text": "Je fais confiance en priorité à ce que je peux observer et vérifier.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je fais confiance en priorité à mon intuition et aux liens que j'imagine.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 10,
-      "dimension": "information",
-      "left": {
-        "text": "Je préfère des consignes précises et détaillées.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je préfère une vision d'ensemble et j'ajuste les détails moi-même.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 11,
-      "dimension": "information",
-      "left": {
-        "text": "Je remarque facilement les détails concrets d'une situation.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je remarque facilement les tendances et les possibilités futures d'une situation.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 12,
-      "dimension": "information",
-      "left": {
-        "text": "Je préfère m'appuyer sur des méthodes qui ont déjà fait leurs preuves.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je préfère explorer de nouvelles approches, même non testées.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 13,
-      "dimension": "information",
-      "left": {
-        "text": "J'aime les explications concrètes, avec des exemples précis.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "J'aime les explications conceptuelles, avec une vue générale.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 14,
-      "dimension": "information",
-      "left": {
-        "text": "Je me fie davantage aux faits qu'aux impressions.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je me fie davantage aux impressions qu'aux seuls faits.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 15,
-      "dimension": "information",
-      "left": {
-        "text": "Je préfère traiter les problèmes un par un, dans l'ordre.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je préfère envisager plusieurs pistes en même temps, quitte à en écarter certaines.",
+        "text": "Je préfère tenir compte du contexte humain, même si cela complique la décision.",
         "pole": "B"
       }
     },
@@ -313,38 +793,26 @@
       }
     },
     {
-      "id": 17,
-      "dimension": "decision",
+      "id": 13,
+      "dimension": "information",
       "left": {
-        "text": "Face à une décision difficile, je privilégie la logique et les faits.",
+        "text": "J'aime les explications concrètes, avec des exemples précis.",
         "pole": "A"
       },
       "right": {
-        "text": "Face à une décision difficile, je privilégie l'impact humain et mes valeurs.",
+        "text": "J'aime les explications conceptuelles, avec une vue générale.",
         "pole": "B"
       }
     },
     {
-      "id": 18,
-      "dimension": "decision",
+      "id": 3,
+      "dimension": "energie",
       "left": {
-        "text": "Je préfère qu'on me dise la vérité même si elle est inconfortable.",
+        "text": "Dans un groupe, je prends facilement la parole en premier.",
         "pole": "A"
       },
       "right": {
-        "text": "Je préfère qu'on tienne compte de la sensibilité de chacun dans la façon de dire les choses.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 19,
-      "dimension": "decision",
-      "left": {
-        "text": "Je juge une décision d'abord sur sa cohérence objective.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je juge une décision d'abord sur ses conséquences pour les personnes concernées.",
+        "text": "Dans un groupe, j'observe d'abord avant de m'exprimer.",
         "pole": "B"
       }
     },
@@ -361,146 +829,14 @@
       }
     },
     {
-      "id": 21,
+      "id": 53,
       "dimension": "decision",
       "left": {
-        "text": "Je remets facilement en question une idée, même si elle vient de quelqu'un que j'apprécie.",
+        "text": "On me sollicite plutôt pour trancher objectivement un désaccord.",
         "pole": "A"
       },
       "right": {
-        "text": "J'ai du mal à contredire quelqu'un que j'apprécie, même si je ne suis pas d'accord.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 22,
-      "dimension": "decision",
-      "left": {
-        "text": "Je préfère des critères clairs et objectifs pour trancher.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je préfère tenir compte du contexte humain, même si cela complique la décision.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 23,
-      "dimension": "decision",
-      "left": {
-        "text": "On me décrit plutôt comme rationnel(le) et factuel(le).",
-        "pole": "A"
-      },
-      "right": {
-        "text": "On me décrit plutôt comme empathique et attentif(ve) aux autres.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 24,
-      "dimension": "decision",
-      "left": {
-        "text": "Je gère plus facilement les conflits en me concentrant sur les faits.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je gère plus facilement les conflits en cherchant à préserver la relation.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 25,
-      "dimension": "organisation",
-      "left": {
-        "text": "J'aime planifier mes tâches à l'avance.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "J'aime garder mon emploi du temps ouvert et m'organiser au dernier moment.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 26,
-      "dimension": "organisation",
-      "left": {
-        "text": "Une fois une décision prise, je préfère ne plus y revenir.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je préfère garder la possibilité de changer d'avis si une meilleure option apparaît.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 27,
-      "dimension": "organisation",
-      "left": {
-        "text": "Je me sens plus à l'aise quand un sujet est clos.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je me sens plus à l'aise quand plusieurs options restent ouvertes.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 28,
-      "dimension": "organisation",
-      "left": {
-        "text": "Je respecte scrupuleusement les délais que je me fixe.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je travaille souvent mieux sous la pression d'une échéance proche.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 29,
-      "dimension": "organisation",
-      "left": {
-        "text": "J'aime avoir une liste claire de ce qu'il reste à faire.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "J'aime avancer au fil de l'inspiration, sans liste figée.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 30,
-      "dimension": "organisation",
-      "left": {
-        "text": "Je préfère un cadre bien défini avec des règles claires.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Je préfère un cadre souple qui laisse de la place à l'improvisation.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 31,
-      "dimension": "organisation",
-      "left": {
-        "text": "On me dit souvent que je suis organisé(e) et prévisible.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "On me dit souvent que je suis spontané(e) et imprévisible.",
-        "pole": "B"
-      }
-    },
-    {
-      "id": 32,
-      "dimension": "organisation",
-      "left": {
-        "text": "Un imprévu de dernière minute me déstabilise plutôt.",
-        "pole": "A"
-      },
-      "right": {
-        "text": "Un imprévu de dernière minute m'amuse plutôt.",
+        "text": "On me sollicite plutôt pour apaiser un désaccord entre deux personnes.",
         "pole": "B"
       }
     }

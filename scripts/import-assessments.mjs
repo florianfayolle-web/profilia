@@ -19,6 +19,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const contentDir = path.join(__dirname, "..", "content", "flyup");
 
 async function findStripePriceId(lookupKey) {
+  if (!lookupKey) return null;
   const secretKey = process.env.STRIPE_SECRET_KEY;
   if (!secretKey || secretKey.includes("placeholder")) return null;
 
@@ -56,7 +57,8 @@ async function main() {
       ? `${entry.description}\n\n${disclaimer}`
       : entry.description;
 
-    const stripePriceId = await findStripePriceId(entry.lookupKey);
+    const stripePriceId =
+      entry.priceCents === 0 ? null : await findStripePriceId(entry.lookupKey);
 
     console.log(
       `Importing ${entry.slug} (${title})${stripePriceId ? ` [Stripe price ${stripePriceId}]` : " [no Stripe price found yet]"}...`
@@ -69,7 +71,7 @@ async function main() {
           slug: entry.slug,
           title,
           description,
-          price_cents: DEFAULT_PRICE_CENTS,
+          price_cents: entry.priceCents ?? DEFAULT_PRICE_CENTS,
           currency: "eur",
           stripe_price_id: stripePriceId,
           included_in_subscription: true,

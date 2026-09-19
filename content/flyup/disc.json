@@ -1,0 +1,2727 @@
+{
+  "meta": {
+    "title": "Test de personnalité DISC — \"Profil Pilote\"",
+    "language": "fr",
+    "testType": "disc_quad",
+    "inspiredBy": "Modèle DISC (Dominant / Influent / Stable / Conforme). Affirmations originales.",
+    "totalItems": 80,
+    "optionsPerItem": 4,
+    "disclaimer": "Outil d'entraînement inspiré du modèle DISC (Dominant / Influent / Stable / Conforme). Il n'a pas de valeur de diagnostic clinique et ne reproduit pas un test propriétaire existant."
+  },
+  "dimensions": [
+    {
+      "code": "D",
+      "label": "Dominant"
+    },
+    {
+      "code": "I",
+      "label": "Influent"
+    },
+    {
+      "code": "S",
+      "label": "Stable"
+    },
+    {
+      "code": "C",
+      "label": "Conforme"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "options": [
+        {
+          "key": "A",
+          "text": "Grâce à moi, les échanges sont rarement ennuyeux.",
+          "dimension": "I",
+          "trait": 18,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "J'aime comprendre comment les choses fonctionnent.",
+          "dimension": "C",
+          "trait": 23,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je dis non sans difficulté.",
+          "dimension": "D",
+          "trait": 28,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je reste fidèle aux méthodes qui ont fait leurs preuves.",
+          "dimension": "S",
+          "trait": 33,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je suis chaleureux dès le premier contact.",
+          "dimension": "I",
+          "trait": 33,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je lis attentivement les conditions et les contrats.",
+          "dimension": "C",
+          "trait": 38,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "On me reproche parfois d'aller trop vite.",
+          "dimension": "D",
+          "trait": 17,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je remarque quand quelqu'un ne va pas bien.",
+          "dimension": "S",
+          "trait": 12,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je préfère réfléchir seul avant de m'exprimer.",
+          "dimension": "C",
+          "trait": 9,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je suis tolérant envers les erreurs des autres.",
+          "dimension": "S",
+          "trait": 25,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Quand je délègue, je dis précisément ce que j'attends.",
+          "dimension": "D",
+          "trait": 15,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je déteste être ignoré.",
+          "dimension": "I",
+          "trait": 23,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "options": [
+        {
+          "key": "A",
+          "text": "La bonne entente de l'équipe passe avant tout pour moi.",
+          "dimension": "S",
+          "trait": 8,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Quand personne ne décide, c'est moi qui prends la direction.",
+          "dimension": "D",
+          "trait": 0,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je respecte les règles et les procédures.",
+          "dimension": "C",
+          "trait": 5,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Les soirées et les célébrations me ressourcent.",
+          "dimension": "I",
+          "trait": 17,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'illustre souvent mes propos par des histoires.",
+          "dimension": "I",
+          "trait": 11,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "J'ai besoin de voir des avancées visibles sans tarder.",
+          "dimension": "D",
+          "trait": 23,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je m'exprime de manière factuelle.",
+          "dimension": "C",
+          "trait": 32,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je fais tout pour que les tensions ne dégénèrent pas.",
+          "dimension": "S",
+          "trait": 4,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je me range volontiers à l'avis collectif.",
+          "dimension": "S",
+          "trait": 23,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je travaille volontiers de façon autonome.",
+          "dimension": "D",
+          "trait": 16,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Des instructions claires m'aident à bien travailler.",
+          "dimension": "C",
+          "trait": 1,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je sais présenter une idée de façon séduisante.",
+          "dimension": "I",
+          "trait": 22,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je documente précisément ce que je fais.",
+          "dimension": "C",
+          "trait": 21,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je préfère une ambiance détendue à une ambiance compétitive.",
+          "dimension": "S",
+          "trait": 38,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Les longues réunions sans décision m'ennuient.",
+          "dimension": "D",
+          "trait": 8,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Mettre de l'ambiance dans une équipe me vient naturellement.",
+          "dimension": "I",
+          "trait": 6,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je m'appuie sur des sources fiables.",
+          "dimension": "C",
+          "trait": 17,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je réagis vite quand une crise survient.",
+          "dimension": "D",
+          "trait": 37,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Réfléchir à plusieurs à voix haute me stimule.",
+          "dimension": "I",
+          "trait": 31,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "J'ai du mal à dire non.",
+          "dimension": "S",
+          "trait": 9,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "options": [
+        {
+          "key": "A",
+          "text": "On lit facilement sur mon visage ce que je ressens.",
+          "dimension": "I",
+          "trait": 8,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je préfère faire une chose à la fois.",
+          "dimension": "S",
+          "trait": 17,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je défends mes positions avec fermeté.",
+          "dimension": "D",
+          "trait": 11,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "J'utilise des listes de contrôle au quotidien.",
+          "dimension": "C",
+          "trait": 31,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je m'impose naturellement dans un groupe.",
+          "dimension": "D",
+          "trait": 24,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "J'aime les habitudes rassurantes.",
+          "dimension": "S",
+          "trait": 13,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je partage facilement ce qui m'arrive.",
+          "dimension": "I",
+          "trait": 32,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Suivre les procédures me paraît important.",
+          "dimension": "C",
+          "trait": 5,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "options": [
+        {
+          "key": "A",
+          "text": "Les lenteurs des autres m'agacent vite.",
+          "dimension": "D",
+          "trait": 4,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Mes routines m'aident à me sentir bien.",
+          "dimension": "S",
+          "trait": 13,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Mon enthousiasme donne envie aux autres de s'impliquer.",
+          "dimension": "I",
+          "trait": 12,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je suis prudent face aux nouveautés.",
+          "dimension": "C",
+          "trait": 8,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "options": [
+        {
+          "key": "A",
+          "text": "Quand quelque chose coince, je veux le réformer tout de suite.",
+          "dimension": "D",
+          "trait": 26,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je m'attache aux personnes avec qui je travaille.",
+          "dimension": "S",
+          "trait": 20,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je remarque les petites erreurs.",
+          "dimension": "C",
+          "trait": 3,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je vends bien une idée.",
+          "dimension": "I",
+          "trait": 30,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "options": [
+        {
+          "key": "A",
+          "text": "Être sous les projecteurs me plaît.",
+          "dimension": "I",
+          "trait": 2,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je suis quelqu'un de fiable sur la durée.",
+          "dimension": "S",
+          "trait": 16,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Un raisonnement bancal me dérange tout de suite.",
+          "dimension": "C",
+          "trait": 14,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Refuser une demande ne me pose pas de problème.",
+          "dimension": "D",
+          "trait": 28,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'inspire les gens avec une vision positive.",
+          "dimension": "I",
+          "trait": 35,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je me concentre mieux sans être interrompu.",
+          "dimension": "C",
+          "trait": 36,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Rendre service me donne satisfaction.",
+          "dimension": "S",
+          "trait": 34,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "J'assume mes décisions, même impopulaires.",
+          "dimension": "D",
+          "trait": 22,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je repère rapidement la décision clé à prendre.",
+          "dimension": "D",
+          "trait": 38,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "J'aime devenir expert dans mon domaine.",
+          "dimension": "C",
+          "trait": 16,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je fais confiance aux gens rapidement.",
+          "dimension": "I",
+          "trait": 7,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Face à la colère d'un autre, je reste serein.",
+          "dimension": "S",
+          "trait": 26,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je supporte bien la pression des enjeux.",
+          "dimension": "D",
+          "trait": 27,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je garde mon calme quand quelqu'un s'énerve.",
+          "dimension": "S",
+          "trait": 26,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Les détails m'ennuient vite.",
+          "dimension": "I",
+          "trait": 34,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Les tableaux et les statistiques m'intéressent.",
+          "dimension": "C",
+          "trait": 10,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je suis expressif dans mes gestes.",
+          "dimension": "I",
+          "trait": 27,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Refuser un service me met mal à l'aise.",
+          "dimension": "S",
+          "trait": 9,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je suis une démarche structurée pour résoudre un problème.",
+          "dimension": "C",
+          "trait": 26,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Être simple exécutant me frustre.",
+          "dimension": "D",
+          "trait": 29,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'ai un fort esprit de compétition.",
+          "dimension": "D",
+          "trait": 5,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je gère parfois mal mon temps.",
+          "dimension": "I",
+          "trait": 26,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je suis objectif dans mes jugements.",
+          "dimension": "C",
+          "trait": 20,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "On me décrit comme quelqu'un de posé.",
+          "dimension": "S",
+          "trait": 7,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je vérifie mon travail avant de le rendre.",
+          "dimension": "C",
+          "trait": 0,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je défends les membres de mon équipe.",
+          "dimension": "S",
+          "trait": 11,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je laisse volontiers les détails à d'autres.",
+          "dimension": "I",
+          "trait": 34,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je contourne les procédures quand elles ralentissent tout.",
+          "dimension": "D",
+          "trait": 20,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je prends des initiatives sans demander la permission.",
+          "dimension": "D",
+          "trait": 33,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je suis mesuré dans mes réactions.",
+          "dimension": "C",
+          "trait": 39,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "J'interviens souvent pendant les réunions.",
+          "dimension": "I",
+          "trait": 36,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "J'évite les disputes.",
+          "dimension": "S",
+          "trait": 4,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'ai souvent plein d'idées nouvelles.",
+          "dimension": "I",
+          "trait": 5,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je passe souvent mes envies après celles des autres.",
+          "dimension": "S",
+          "trait": 28,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je décide vite, même sans avoir toutes les informations.",
+          "dimension": "D",
+          "trait": 1,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "J'analyse les faits avant de décider.",
+          "dimension": "C",
+          "trait": 2,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je garde contact avec les gens pendant des années.",
+          "dimension": "S",
+          "trait": 37,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "J'accepte une part d'incertitude si le gain en vaut la peine.",
+          "dimension": "D",
+          "trait": 9,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je suis plus à l'aise pour parler que pour écrire.",
+          "dimension": "I",
+          "trait": 20,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "J'étudie les alternatives avant de me décider.",
+          "dimension": "C",
+          "trait": 25,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je lâche rarement quand je suis convaincu d'avoir raison.",
+          "dimension": "D",
+          "trait": 11,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "On sent mon énergie quand je m'exprime.",
+          "dimension": "I",
+          "trait": 1,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je planifie les étapes avant de commencer.",
+          "dimension": "C",
+          "trait": 4,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je suis constant dans mon humeur.",
+          "dimension": "S",
+          "trait": 29,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je parle souvent de ma vie personnelle.",
+          "dimension": "I",
+          "trait": 32,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Ma présence apaise souvent les personnes inquiètes.",
+          "dimension": "S",
+          "trait": 19,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je veux des résultats concrets rapidement.",
+          "dimension": "D",
+          "trait": 23,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je suis sceptique face à un discours trop enthousiaste.",
+          "dimension": "C",
+          "trait": 22,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je suis réservé avec les inconnus.",
+          "dimension": "C",
+          "trait": 24,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je suis déterminé à atteindre mes objectifs.",
+          "dimension": "D",
+          "trait": 32,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Une nouvelle idée peut m'enthousiasmer immédiatement.",
+          "dimension": "I",
+          "trait": 19,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je transmets volontiers ce que je sais.",
+          "dimension": "S",
+          "trait": 30,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je sous-estime souvent le temps nécessaire.",
+          "dimension": "I",
+          "trait": 26,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "J'ai du mal à décider sans toutes les informations.",
+          "dimension": "C",
+          "trait": 19,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Les obstacles me donnent envie de foncer.",
+          "dimension": "D",
+          "trait": 14,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je suis plus à l'aise en comité restreint.",
+          "dimension": "S",
+          "trait": 27,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "options": [
+        {
+          "key": "A",
+          "text": "Dans l'urgence, je passe immédiatement à l'action.",
+          "dimension": "D",
+          "trait": 37,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "J'ai besoin de temps pour m'habituer au changement.",
+          "dimension": "S",
+          "trait": 6,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je me prépare minutieusement avant une réunion.",
+          "dimension": "C",
+          "trait": 13,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Être aimé des autres compte beaucoup pour moi.",
+          "dimension": "I",
+          "trait": 28,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je n'ai pas peur des conflits.",
+          "dimension": "D",
+          "trait": 18,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je vérifie les calculs et les chiffres.",
+          "dimension": "C",
+          "trait": 35,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je préfère les petits groupes aux grandes foules.",
+          "dimension": "S",
+          "trait": 27,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "J'aime rencontrer de nouvelles personnes.",
+          "dimension": "I",
+          "trait": 0,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "options": [
+        {
+          "key": "A",
+          "text": "Mes gestes accompagnent toujours ce que je dis.",
+          "dimension": "I",
+          "trait": 27,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je suis fidèle à mes engagements.",
+          "dimension": "S",
+          "trait": 3,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Les situations à fort enjeu me stimulent.",
+          "dimension": "D",
+          "trait": 27,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je me méfie des promesses trop belles.",
+          "dimension": "C",
+          "trait": 22,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'écoute avant de parler.",
+          "dimension": "S",
+          "trait": 1,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je donne envie de croire en un projet.",
+          "dimension": "I",
+          "trait": 35,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "J'exprime mon désaccord ouvertement.",
+          "dimension": "D",
+          "trait": 34,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je préfère travailler seul sur des tâches complexes.",
+          "dimension": "C",
+          "trait": 36,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je pose beaucoup de questions pour comprendre.",
+          "dimension": "C",
+          "trait": 7,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je privilégie l'harmonie du groupe.",
+          "dimension": "S",
+          "trait": 8,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "J'aime être en position de décider.",
+          "dimension": "D",
+          "trait": 36,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "J'ai besoin de reconnaissance.",
+          "dimension": "I",
+          "trait": 13,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'aime terminer une tâche avant d'en commencer une autre.",
+          "dimension": "S",
+          "trait": 17,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je fais des listes pour ne rien oublier.",
+          "dimension": "C",
+          "trait": 31,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Me sentir mis de côté me touche beaucoup.",
+          "dimension": "I",
+          "trait": 23,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je cherche toujours à faire mieux que la fois précédente.",
+          "dimension": "D",
+          "trait": 30,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je m'en tiens aux faits quand je parle.",
+          "dimension": "C",
+          "trait": 32,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je dis oui rapidement quand un projet me plaît.",
+          "dimension": "I",
+          "trait": 38,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "J'aime qu'on me confie des responsabilités importantes.",
+          "dimension": "D",
+          "trait": 19,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je laisse les autres s'exprimer avant de donner mon avis.",
+          "dimension": "S",
+          "trait": 1,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'aime animer un groupe.",
+          "dimension": "I",
+          "trait": 6,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je ne change pas une façon de faire qui fonctionne.",
+          "dimension": "S",
+          "trait": 33,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je repère à l'avance ce qui pourrait mal tourner.",
+          "dimension": "C",
+          "trait": 29,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je peux paraître impatient.",
+          "dimension": "D",
+          "trait": 17,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je donne des consignes claires et directes.",
+          "dimension": "D",
+          "trait": 15,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "J'adore travailler en contact avec du monde.",
+          "dimension": "I",
+          "trait": 9,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "J'ai besoin de temps pour préparer ma réponse.",
+          "dimension": "C",
+          "trait": 9,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "On peut compter sur moi semaine après semaine.",
+          "dimension": "S",
+          "trait": 16,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "options": [
+        {
+          "key": "A",
+          "text": "Dans une équipe, on se tourne souvent vers moi pour décider.",
+          "dimension": "D",
+          "trait": 24,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je suis loyal envers mon équipe.",
+          "dimension": "S",
+          "trait": 11,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je commence souvent plus de choses que je n'en termine.",
+          "dimension": "I",
+          "trait": 15,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je crains de faire des erreurs.",
+          "dimension": "C",
+          "trait": 15,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je reste discret sur mes émotions.",
+          "dimension": "C",
+          "trait": 11,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je reste calme dans la plupart des situations.",
+          "dimension": "S",
+          "trait": 7,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "J'aime faire rire les autres.",
+          "dimension": "I",
+          "trait": 21,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je lance de nouveaux projets sans attendre.",
+          "dimension": "D",
+          "trait": 13,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'improvise volontiers.",
+          "dimension": "I",
+          "trait": 25,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je supporte mal qu'on me freine.",
+          "dimension": "D",
+          "trait": 4,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je me fais peu remarquer dans une réunion.",
+          "dimension": "S",
+          "trait": 35,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je suis exigeant sur la précision des mots.",
+          "dimension": "C",
+          "trait": 28,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je cherche la solution la plus logique.",
+          "dimension": "C",
+          "trait": 37,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je propose spontanément mon aide.",
+          "dimension": "S",
+          "trait": 5,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Prendre la parole en public me plaît.",
+          "dimension": "I",
+          "trait": 14,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je dis les choses franchement, sans détour.",
+          "dimension": "D",
+          "trait": 3,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "options": [
+        {
+          "key": "A",
+          "text": "Ce qui compte pour moi, c'est ce qu'on obtient à la fin.",
+          "dimension": "D",
+          "trait": 12,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je n'aime pas me mettre en avant.",
+          "dimension": "S",
+          "trait": 21,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "J'organise mon travail avec méthode.",
+          "dimension": "C",
+          "trait": 4,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je propose facilement des activités au groupe.",
+          "dimension": "I",
+          "trait": 29,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je mets les besoins des autres avant les miens.",
+          "dimension": "S",
+          "trait": 28,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "J'aime les séances de remue-méninges.",
+          "dimension": "I",
+          "trait": 31,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Les gens suivent facilement mes directives.",
+          "dimension": "D",
+          "trait": 39,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je suis discipliné dans mon travail.",
+          "dimension": "C",
+          "trait": 33,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je m'impose une rigueur personnelle constante.",
+          "dimension": "C",
+          "trait": 33,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je prends des risques pour obtenir des résultats.",
+          "dimension": "D",
+          "trait": 9,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "J'accorde facilement ma confiance.",
+          "dimension": "I",
+          "trait": 7,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je soutiens les décisions du groupe, même si j'aurais choisi autrement.",
+          "dimension": "S",
+          "trait": 23,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je n'ose pas toujours dire que je ne suis pas d'accord.",
+          "dimension": "S",
+          "trait": 15,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je préfère trancher rapidement plutôt que d'attendre d'en savoir plus.",
+          "dimension": "D",
+          "trait": 1,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je fais des promesses avec enthousiasme.",
+          "dimension": "I",
+          "trait": 38,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je reprends un travail tant qu'il n'est pas impeccable.",
+          "dimension": "C",
+          "trait": 6,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'arrive en réunion avec mes notes et mes arguments prêts.",
+          "dimension": "C",
+          "trait": 13,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je préfère agir plutôt que discuter longtemps.",
+          "dimension": "D",
+          "trait": 8,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "J'exprime mes émotions ouvertement.",
+          "dimension": "I",
+          "trait": 8,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je garde souvent mes désaccords pour moi.",
+          "dimension": "S",
+          "trait": 15,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je rends mes projets attractifs quand je les présente.",
+          "dimension": "I",
+          "trait": 22,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je préfère coopérer que rivaliser.",
+          "dimension": "S",
+          "trait": 14,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je cherche le chemin le plus court vers le résultat.",
+          "dimension": "D",
+          "trait": 35,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je réagis rarement à chaud.",
+          "dimension": "C",
+          "trait": 39,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je ne cache pas quand je ne suis pas d'accord.",
+          "dimension": "D",
+          "trait": 34,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Quand je promets quelque chose, on peut compter sur moi.",
+          "dimension": "S",
+          "trait": 3,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je m'emballe vite pour un nouveau projet.",
+          "dimension": "I",
+          "trait": 19,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "J'ai besoin de tout comprendre avant d'agir.",
+          "dimension": "C",
+          "trait": 7,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je vise l'efficacité avant tout.",
+          "dimension": "D",
+          "trait": 35,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je prends le temps de bien comprendre les besoins des autres.",
+          "dimension": "S",
+          "trait": 22,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je compare plusieurs options avant de choisir.",
+          "dimension": "C",
+          "trait": 25,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "L'humour tient une grande place dans ma façon d'échanger.",
+          "dimension": "I",
+          "trait": 21,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je reste optimiste, même quand ça se complique.",
+          "dimension": "I",
+          "trait": 4,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je n'hésite pas à contredire un supérieur.",
+          "dimension": "D",
+          "trait": 7,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "J'aime les chiffres et les données.",
+          "dimension": "C",
+          "trait": 10,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je suis patient avec les autres.",
+          "dimension": "S",
+          "trait": 0,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'apprécie quand les choses restent prévisibles.",
+          "dimension": "S",
+          "trait": 2,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je cherche à connaître le mécanisme derrière chaque chose.",
+          "dimension": "C",
+          "trait": 23,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Un travail sans échanges humains me pèserait.",
+          "dimension": "I",
+          "trait": 9,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je veux gagner, même dans un simple jeu.",
+          "dimension": "D",
+          "trait": 5,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je pardonne facilement les maladresses.",
+          "dimension": "S",
+          "trait": 25,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "J'aime changer les choses qui ne fonctionnent pas.",
+          "dimension": "D",
+          "trait": 26,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je relis toujours ce que je produis.",
+          "dimension": "C",
+          "trait": 0,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "J'aime qu'on m'apprécie.",
+          "dimension": "I",
+          "trait": 28,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "options": [
+        {
+          "key": "A",
+          "text": "Les fautes et incohérences me sautent aux yeux.",
+          "dimension": "C",
+          "trait": 3,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Plus un objectif est ambitieux, plus il me motive.",
+          "dimension": "D",
+          "trait": 2,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je vois le bon côté des choses.",
+          "dimension": "I",
+          "trait": 4,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je pose des questions pour savoir ce dont l'autre a besoin.",
+          "dimension": "S",
+          "trait": 22,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je tiens bon quand un choix déplaît au groupe.",
+          "dimension": "D",
+          "trait": 22,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je noue le contact même avec des inconnus.",
+          "dimension": "I",
+          "trait": 24,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je sens facilement le malaise d'une personne.",
+          "dimension": "S",
+          "trait": 12,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je supporte mal la critique de mon travail.",
+          "dimension": "C",
+          "trait": 34,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'aime relever des défis difficiles.",
+          "dimension": "D",
+          "trait": 2,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Les idées me viennent en abondance.",
+          "dimension": "I",
+          "trait": 5,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je lis les petites lignes avant de signer.",
+          "dimension": "C",
+          "trait": 38,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je prends le temps avec les personnes qui en ont besoin.",
+          "dimension": "S",
+          "trait": 0,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'occupe une bonne place dans les discussions.",
+          "dimension": "I",
+          "trait": 36,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je veille à ce que chacun se sente bien.",
+          "dimension": "S",
+          "trait": 18,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je travaille mieux quand c'est moi qui dirige les opérations.",
+          "dimension": "D",
+          "trait": 10,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je sépare les faits de mes impressions.",
+          "dimension": "C",
+          "trait": 20,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je parle facilement devant un public.",
+          "dimension": "I",
+          "trait": 14,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "J'écris des comptes rendus détaillés.",
+          "dimension": "C",
+          "trait": 21,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Quand un échange s'égare, je le ramène à l'essentiel.",
+          "dimension": "D",
+          "trait": 31,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "On vient me voir pour apaiser un conflit.",
+          "dimension": "S",
+          "trait": 32,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "options": [
+        {
+          "key": "A",
+          "text": "Les liens avec mes collègues comptent beaucoup pour moi.",
+          "dimension": "S",
+          "trait": 20,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je recherche les postes où il faut porter les décisions.",
+          "dimension": "D",
+          "trait": 19,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je rends les réunions plus vivantes.",
+          "dimension": "I",
+          "trait": 18,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Le « à peu près » me dérange.",
+          "dimension": "C",
+          "trait": 27,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "options": [
+        {
+          "key": "A",
+          "text": "Mon humeur varie peu d'un jour à l'autre.",
+          "dimension": "S",
+          "trait": 29,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "J'utilise le terme exact plutôt qu'un mot vague.",
+          "dimension": "C",
+          "trait": 28,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Les compliments me boostent vraiment.",
+          "dimension": "I",
+          "trait": 13,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je prends facilement les commandes d'un projet.",
+          "dimension": "D",
+          "trait": 0,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je préfère diriger que suivre.",
+          "dimension": "D",
+          "trait": 29,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "J'aide volontiers mes collègues.",
+          "dimension": "S",
+          "trait": 5,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je décide à partir de données plutôt que d'intuitions.",
+          "dimension": "C",
+          "trait": 2,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je suis spontané.",
+          "dimension": "I",
+          "trait": 10,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "options": [
+        {
+          "key": "A",
+          "text": "Les changements soudains me déstabilisent.",
+          "dimension": "S",
+          "trait": 6,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je valorise publiquement les réussites des autres.",
+          "dimension": "I",
+          "trait": 39,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je vérifie l'origine d'une information avant de la croire.",
+          "dimension": "C",
+          "trait": 17,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "J'attends beaucoup des personnes qui travaillent avec moi.",
+          "dimension": "D",
+          "trait": 6,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'aime les ambiances festives.",
+          "dimension": "I",
+          "trait": 17,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "J'aime me sentir utile.",
+          "dimension": "S",
+          "trait": 34,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Avoir le dernier mot me convient bien.",
+          "dimension": "D",
+          "trait": 36,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je préfère un travail où les attentes sont bien définies.",
+          "dimension": "C",
+          "trait": 30,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'applique une méthode rigoureuse.",
+          "dimension": "C",
+          "trait": 26,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je préfère un environnement stable.",
+          "dimension": "S",
+          "trait": 2,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je n'ai pas besoin qu'on me dise quoi faire.",
+          "dimension": "D",
+          "trait": 16,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "J'aime être au centre de l'attention.",
+          "dimension": "I",
+          "trait": 2,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'aime être le premier à démarrer quelque chose.",
+          "dimension": "D",
+          "trait": 13,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je n'aime pas être bousculé.",
+          "dimension": "S",
+          "trait": 31,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je recompte pour être sûr du résultat.",
+          "dimension": "C",
+          "trait": 35,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "J'aime féliciter les gens devant tout le monde.",
+          "dimension": "I",
+          "trait": 39,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'aime battre mes propres records.",
+          "dimension": "D",
+          "trait": 30,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je raisonne étape par étape.",
+          "dimension": "C",
+          "trait": 37,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Un climat serein me rend plus efficace.",
+          "dimension": "S",
+          "trait": 38,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je peux engager la conversation avec n'importe qui.",
+          "dimension": "I",
+          "trait": 24,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je suis attentif au bien-être des autres.",
+          "dimension": "S",
+          "trait": 18,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je me disperse parfois entre plusieurs projets.",
+          "dimension": "I",
+          "trait": 15,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je veux que les choses soient parfaitement faites.",
+          "dimension": "C",
+          "trait": 6,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "J'aime avoir le contrôle sur ce que je fais.",
+          "dimension": "D",
+          "trait": 10,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je dis ce que je pense avec gentillesse, sans arrière-pensée.",
+          "dimension": "S",
+          "trait": 39,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "J'aime raconter des anecdotes.",
+          "dimension": "I",
+          "trait": 11,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Mon espace de travail est bien ordonné.",
+          "dimension": "C",
+          "trait": 12,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je vais droit au but quand je donne mon avis.",
+          "dimension": "D",
+          "trait": 3,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je suis doux dans ma façon de m'exprimer.",
+          "dimension": "S",
+          "trait": 36,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Une fois lancé vers un but, rien ne m'arrête.",
+          "dimension": "D",
+          "trait": 32,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "La variété et le mouvement me stimulent.",
+          "dimension": "I",
+          "trait": 37,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "J'aime les consignes précises.",
+          "dimension": "C",
+          "trait": 1,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je range soigneusement mes affaires.",
+          "dimension": "C",
+          "trait": 12,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je sais me faire obéir.",
+          "dimension": "D",
+          "trait": 39,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "J'arrive souvent à rallier les gens à mon idée.",
+          "dimension": "I",
+          "trait": 3,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je suis sincère et sans calcul.",
+          "dimension": "S",
+          "trait": 39,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "options": [
+        {
+          "key": "A",
+          "text": "Qu'on me presse me met mal à l'aise.",
+          "dimension": "S",
+          "trait": 31,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "J'anticipe les risques d'un projet.",
+          "dimension": "C",
+          "trait": 29,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "J'entretiens un large réseau.",
+          "dimension": "I",
+          "trait": 16,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je remets en cause les règles qui me semblent inutiles.",
+          "dimension": "D",
+          "trait": 20,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je parle avec beaucoup d'enthousiasme.",
+          "dimension": "I",
+          "trait": 1,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je vais vite dans mon travail.",
+          "dimension": "D",
+          "trait": 21,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Une remarque sur la qualité de ce que je fais me touche.",
+          "dimension": "C",
+          "trait": 34,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je choisis mes mots pour ne blesser personne.",
+          "dimension": "S",
+          "trait": 36,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je peux m'opposer à un responsable si je pense qu'il a tort.",
+          "dimension": "D",
+          "trait": 7,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "J'aime les environnements qui bougent.",
+          "dimension": "I",
+          "trait": 37,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "La sécurité de l'emploi est importante pour moi.",
+          "dimension": "S",
+          "trait": 24,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je prends plus de temps s'il le faut pour bien faire.",
+          "dimension": "C",
+          "trait": 18,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "options": [
+        {
+          "key": "A",
+          "text": "Maîtriser un sujet en profondeur me motive.",
+          "dimension": "C",
+          "trait": 16,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je préfère expliquer de vive voix plutôt que par écrit.",
+          "dimension": "I",
+          "trait": 20,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "En négociation, je cède peu de terrain.",
+          "dimension": "D",
+          "trait": 25,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je suis modeste sur mes réussites.",
+          "dimension": "S",
+          "trait": 21,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je travaille à un rythme régulier.",
+          "dimension": "S",
+          "trait": 10,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "J'avance à un rythme soutenu.",
+          "dimension": "D",
+          "trait": 21,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "J'ai une vraie aisance commerciale.",
+          "dimension": "I",
+          "trait": 30,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je montre peu ce que je ressens au travail.",
+          "dimension": "C",
+          "trait": 11,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je motive les autres par mon énergie.",
+          "dimension": "I",
+          "trait": 12,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je préfère la qualité à la rapidité.",
+          "dimension": "C",
+          "trait": 18,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je préfère un cadre de travail sécurisant.",
+          "dimension": "S",
+          "trait": 24,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Une confrontation ne me fait pas reculer.",
+          "dimension": "D",
+          "trait": 18,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je prends la parole pour recadrer une discussion.",
+          "dimension": "D",
+          "trait": 31,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "J'aime accompagner quelqu'un qui débute.",
+          "dimension": "S",
+          "trait": 30,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je me débrouille bien sans avoir préparé.",
+          "dimension": "I",
+          "trait": 25,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Me tromper est quelque chose que je redoute.",
+          "dimension": "C",
+          "trait": 15,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je convaincs facilement les autres.",
+          "dimension": "I",
+          "trait": 3,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Il me faut des éléments complets pour trancher.",
+          "dimension": "C",
+          "trait": 19,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "La collaboration me convient mieux que la compétition.",
+          "dimension": "S",
+          "trait": 14,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je négocie durement pour obtenir ce que je veux.",
+          "dimension": "D",
+          "trait": 25,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'agis d'abord et j'informe ensuite.",
+          "dimension": "D",
+          "trait": 33,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je tiens à la continuité des relations.",
+          "dimension": "S",
+          "trait": 37,
+          "phrasing": "a"
+        },
+        {
+          "key": "C",
+          "text": "Je critique volontiers ce qui n'est pas logique.",
+          "dimension": "C",
+          "trait": 14,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je mets les gens à l'aise dès la rencontre.",
+          "dimension": "I",
+          "trait": 33,
+          "phrasing": "b"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je rassure les gens stressés.",
+          "dimension": "S",
+          "trait": 19,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Je connais du monde un peu partout.",
+          "dimension": "I",
+          "trait": 16,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je vois vite ce qu'il faut trancher.",
+          "dimension": "D",
+          "trait": 38,
+          "phrasing": "a"
+        },
+        {
+          "key": "D",
+          "text": "Je supporte mal l'approximation.",
+          "dimension": "C",
+          "trait": 27,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "options": [
+        {
+          "key": "A",
+          "text": "J'avance pas à pas, sans à-coups.",
+          "dimension": "S",
+          "trait": 10,
+          "phrasing": "b"
+        },
+        {
+          "key": "B",
+          "text": "Je me fais facilement de nouvelles connaissances.",
+          "dimension": "I",
+          "trait": 0,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "J'attends d'avoir des preuves avant d'adopter une nouveauté.",
+          "dimension": "C",
+          "trait": 8,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je fixe des objectifs élevés aux autres.",
+          "dimension": "D",
+          "trait": 6,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je me concentre sur le résultat final.",
+          "dimension": "D",
+          "trait": 12,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "J'agis souvent sur un coup de cœur.",
+          "dimension": "I",
+          "trait": 10,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "Je garde une certaine distance au début d'une relation.",
+          "dimension": "C",
+          "trait": 24,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "Je joue souvent le rôle de médiateur.",
+          "dimension": "S",
+          "trait": 32,
+          "phrasing": "a"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "options": [
+        {
+          "key": "A",
+          "text": "Je suis discret en groupe.",
+          "dimension": "S",
+          "trait": 35,
+          "phrasing": "a"
+        },
+        {
+          "key": "B",
+          "text": "Face à une difficulté, j'accélère plutôt que de reculer.",
+          "dimension": "D",
+          "trait": 14,
+          "phrasing": "b"
+        },
+        {
+          "key": "C",
+          "text": "J'aime savoir exactement sur quels critères je serai évalué.",
+          "dimension": "C",
+          "trait": 30,
+          "phrasing": "b"
+        },
+        {
+          "key": "D",
+          "text": "C'est souvent moi qui lance les sorties ou les projets collectifs.",
+          "dimension": "I",
+          "trait": 29,
+          "phrasing": "b"
+        }
+      ]
+    }
+  ],
+  "report": {
+    "bandThresholds": {
+      "lowBelow": 0.15,
+      "midUpTo": 0.32
+    },
+    "dimensions": {
+      "D": {
+        "bands": {
+          "Low": "Tu laisses volontiers les autres décider et diriger : la confrontation directe et la compétition ne sont pas ton terrain naturel.",
+          "Mid": "Tu sais te montrer déterminé quand la situation l'exige, sans en faire ta façon habituelle d'avancer.",
+          "High": "Tu vas droit au but. Tu aimes relever des défis, décider vite et obtenir des résultats concrets."
+        },
+        "strengths": "Prise de décision rapide, goût du défi et de la compétition, sens des responsabilités, capacité à faire avancer les projets.",
+        "suitableWork": "Des rôles avec de l'autonomie, des objectifs clairs et des résultats mesurables : pilotage de projet, encadrement, développement commercial.",
+        "tips": "Laisse davantage de place à l'écoute avant de trancher, et explique le pourquoi de tes décisions pour embarquer plus facilement les autres."
+      },
+      "I": {
+        "bands": {
+          "Low": "Tu es plus réservé dans les échanges de groupe : tu préfères observer et choisir tes mots avant de t'exprimer.",
+          "Mid": "Tu es à l'aise dans les échanges sans pour autant chercher à être au centre de l'attention.",
+          "High": "Tu es enthousiaste et communicatif. Tu aimes convaincre, fédérer et créer du lien avec les autres."
+        },
+        "strengths": "Aisance à l'oral, optimisme contagieux, créativité et idées nouvelles, capacité à motiver un groupe.",
+        "suitableWork": "Des rôles tournés vers les autres : relation client, communication, animation d'équipe, vente.",
+        "tips": "Prends le temps de vérifier que tes idées sont bien suivies d'actions concrètes, et laisse aussi de la place aux profils plus discrets."
+      },
+      "S": {
+        "bands": {
+          "Low": "Tu t'adaptes vite aux changements et tu n'as pas besoin d'un cadre stable pour avancer.",
+          "Mid": "Tu apprécies une certaine régularité, sans en faire une condition indispensable à ton travail.",
+          "High": "Tu es calme, fiable et à l'écoute. Tu privilégies l'harmonie, la coopération et la continuité."
+        },
+        "strengths": "Écoute et empathie, loyauté et fiabilité, patience, excellent esprit d'équipe.",
+        "suitableWork": "Des rôles qui demandent de la constance et du relationnel dans la durée : accompagnement, support, coordination d'équipe.",
+        "tips": "Entraîne-toi à exprimer un désaccord plus tôt, avant qu'il ne s'accumule : le dire calmement ne casse pas l'harmonie du groupe."
+      },
+      "C": {
+        "bands": {
+          "Low": "Tu avances davantage à l'instinct qu'à partir de données détaillées, et le flou ne te bloque pas.",
+          "Mid": "Tu apprécies un minimum de méthode et de vérification, sans en faire une exigence systématique.",
+          "High": "Tu es précis, organisé et analytique. Tu recherches la qualité, l'exactitude et les choses bien faites."
+        },
+        "strengths": "Rigueur et méthode, esprit d'analyse, travail fiable et soigné, sens du détail.",
+        "suitableWork": "Des rôles qui valorisent la précision et l'analyse : contrôle qualité, finance, ingénierie, gestion de données.",
+        "tips": "Fixe-toi un temps limite avant de valider un travail, pour éviter que la recherche du détail parfait ne freine l'avancement."
+      }
+    }
+  },
+  "combos": {
+    "DI": "Déterminé et entraînant : tu fixes le cap et tu embarques les autres avec énergie.",
+    "DS": "Tenace et fiable : tu vas au bout de tes objectifs en restant constant dans l'effort.",
+    "DC": "Exigeant et méthodique : tu vises des résultats, et tu les veux irréprochables.",
+    "IS": "Chaleureux et à l'écoute : tu crées une ambiance positive et tu soutiens ton entourage.",
+    "IC": "Communicant et précis : tu sais expliquer des sujets complexes de façon claire et vivante.",
+    "SC": "Posé et rigoureux : tu travailles avec soin, régularité et une grande fiabilité."
+  }
+}

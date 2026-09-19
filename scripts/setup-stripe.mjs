@@ -15,6 +15,8 @@ import {
   ENTRIES,
   SUBSCRIPTION_LOOKUP_KEY,
   SUBSCRIPTION_PRICE_CENTS,
+  UNLOCK_RESULT_LOOKUP_KEY,
+  UNLOCK_RESULT_PRICE_CENTS,
 } from "./assessment-entries.mjs";
 
 async function getOrCreatePrice(stripe, { lookupKey, productName, unitAmount, recurring }) {
@@ -59,16 +61,32 @@ async function main() {
     `  ${sub.created ? "Created" : "Already existed"}: ${sub.price.id} (${SUBSCRIPTION_PRICE_CENTS / 100} €/mois)`
   );
 
+  console.log("Unlock (guest free-test result)...");
+  const unlock = await getOrCreatePrice(stripe, {
+    lookupKey: UNLOCK_RESULT_LOOKUP_KEY,
+    productName: "Débloquer mon rapport complet",
+    unitAmount: UNLOCK_RESULT_PRICE_CENTS,
+    recurring: false,
+  });
+  console.log(
+    `  ${unlock.created ? "Created" : "Already existed"}: ${unlock.price.id} (${UNLOCK_RESULT_PRICE_CENTS / 100} €)`
+  );
+
   for (const entry of ENTRIES) {
     console.log(`${entry.slug}...`);
+    if (entry.priceCents === 0) {
+      console.log("  Free test — no Stripe price needed, skipped.");
+      continue;
+    }
+    const unitAmount = entry.priceCents ?? DEFAULT_PRICE_CENTS;
     const result = await getOrCreatePrice(stripe, {
       lookupKey: entry.lookupKey,
       productName: entry.slug,
-      unitAmount: DEFAULT_PRICE_CENTS,
+      unitAmount,
       recurring: false,
     });
     console.log(
-      `  ${result.created ? "Created" : "Already existed"}: ${result.price.id} (${DEFAULT_PRICE_CENTS / 100} €)`
+      `  ${result.created ? "Created" : "Already existed"}: ${result.price.id} (${unitAmount / 100} €)`
     );
   }
 

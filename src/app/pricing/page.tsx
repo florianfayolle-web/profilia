@@ -32,7 +32,7 @@ export default function PricingPage() {
             </p>
             <ul className="mt-6 flex-1 space-y-2 text-left text-sm text-muted">
               <li>Le test de ton choix, débloqué à vie</li>
-              <li>Rapport détaillé et résultat sauvegardé dans ton compte</li>
+              <li>Rapport détaillé, téléchargeable en PDF, sauvegardé dans ton compte</li>
               <li>Aucun engagement</li>
             </ul>
             <Link

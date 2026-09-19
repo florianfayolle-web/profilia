@@ -9,6 +9,9 @@ import { createTestCheckoutSession } from "@/app/actions/checkout";
 import { PaymentPendingNotice } from "@/components/payment-pending";
 import { SITE_URL } from "@/lib/site";
 import { getTestThemeStyle } from "@/lib/test-theme";
+import { GUIDES } from "@/lib/guides";
+import { getCategory, getTestCategory } from "@/lib/test-category";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 
 const getTestBySlug = cache(async (slug: string) => {
   const supabase = await createClient();
@@ -19,6 +22,16 @@ const getTestBySlug = cache(async (slug: string) => {
     .eq("is_active", true)
     .maybeSingle<Test>();
   return data;
+});
+
+const getActiveTests = cache(async () => {
+  const supabase = await createClient();
+  const { data } = await supabase
+    .from("tests")
+    .select("slug, title")
+    .eq("is_active", true)
+    .returns<Pick<Test, "slug" | "title">[]>();
+  return data ?? [];
 });
 
 export async function generateMetadata(
@@ -75,6 +88,15 @@ export default async function TestDetailPage(
     },
   };
 
+  const category = getCategory(getTestCategory(test.slug));
+  const relatedTests = category
+    ? (await getActiveTests())
+        .filter(
+          (t) => t.slug !== test.slug && getTestCategory(t.slug) === category.slug
+        )
+        .slice(0, 4)
+    : [];
+
   return (
     <div
       className="mx-auto max-w-2xl px-6 py-16"
@@ -84,10 +106,42 @@ export default async function TestDetailPage(
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <h1 className="text-3xl font-semibold tracking-tight">{test.title}</h1>
+      {category && (
+        <BreadcrumbJsonLd
+          items={[
+            { name: "Tous les tests", path: "/tests" },
+            { name: category.title, path: `/tests/${category.slug}` },
+            { name: test.title, path: `/tests/${test.slug}` },
+          ]}
+        />
+      )}
+      {category && (
+        <p className="text-sm text-muted">
+          <Link href="/tests" className="hover:text-foreground">
+            Tous les tests
+          </Link>
+          {" / "}
+          <Link href={`/tests/${category.slug}`} className="hover:text-foreground">
+            {category.title}
+          </Link>
+        </p>
+      )}
+      <h1 className="mt-2 text-3xl font-semibold tracking-tight">{test.title}</h1>
       <p className="mt-4 whitespace-pre-line text-muted">
         {test.description}
       </p>
+      {(() => {
+        const guide = GUIDES.find((g) => g.testSlug === test.slug);
+        return guide ? (
+          <Link
+            href={`/guides/${guide.slug}`}
+            className="mt-3 inline-block text-sm text-primary hover:underline"
+          >
+            Lire le guide : comment se déroule ce test et comment s&apos;y
+            préparer →
+          </Link>
+        ) : null;
+      })()}
 
       <div className="mt-10 rounded-xl border border-card-border bg-card p-6">
         {access.hasAccess ? (
@@ -156,6 +210,26 @@ export default async function TestDetailPage(
           </>
         )}
       </div>
+
+      {relatedTests.length > 0 && category && (
+        <div className="mt-10">
+          <h2 className="text-sm font-semibold text-muted-foreground">
+            Autres tests dans {category.title.toLowerCase()}
+          </h2>
+          <ul className="mt-3 space-y-2">
+            {relatedTests.map((t) => (
+              <li key={t.slug}>
+                <Link
+                  href={`/tests/${t.slug}`}
+                  className="text-sm text-primary hover:underline"
+                >
+                  {t.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
