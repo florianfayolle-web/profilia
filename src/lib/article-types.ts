@@ -20,6 +20,9 @@ export type ArticleRow = {
   publish_token: string;
   created_at: string;
   published_at: string | null;
+  /** Set by the reader on the preview page to ask for a rewrite; cleared
+   * once the next scheduled-task run applies it (see scripts/apply-revision.mjs). */
+  pending_revision: string | null;
 };
 
 export const ARTICLE_CATEGORY_LABELS: Record<ArticleCategory, string> = {

@@ -19,7 +19,7 @@ const supabase = createClient(
 
 const { data, error } = await supabase
   .from("articles")
-  .select("slug, title, category, status, created_at")
+  .select("id, slug, title, category, status, created_at, pending_revision")
   .order("created_at", { ascending: false });
 
 if (error) {

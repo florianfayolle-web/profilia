@@ -284,7 +284,11 @@ create table if not exists public.articles (
   status text not null default 'draft' check (status in ('draft', 'published')),
   publish_token text not null,
   created_at timestamptz not null default now(),
-  published_at timestamptz
+  published_at timestamptz,
+  -- Set by the reader on the preview page (requestRevision) to ask for a
+  -- rewrite; cleared once the next scheduled-task run applies it (see
+  -- scripts/apply-revision.mjs). Only meaningful while status='draft'.
+  pending_revision text
 );
 
 create index if not exists articles_status_idx on public.articles (status);
