@@ -248,3 +248,18 @@ create policy "Attempts are viewable by owner" on public.attempts
 drop policy if exists "Attempts are insertable by owner" on public.attempts;
 create policy "Attempts are insertable by owner" on public.attempts
   for insert with check (auth.uid() = user_id);
+
+-- ---------------------------------------------------------------------------
+-- Page views: home-grown visit counter for the daily ops report email.
+-- Written only by app/api/track-view (service role) — no client access.
+-- ---------------------------------------------------------------------------
+create table if not exists public.page_views (
+  id bigserial primary key,
+  path text,
+  viewed_at timestamptz not null default now()
+);
+
+create index if not exists page_views_viewed_at_idx on public.page_views (viewed_at);
+
+alter table public.page_views enable row level security;
+-- No policies: only the service-role key can read or write this table.
