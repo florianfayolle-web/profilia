@@ -3,6 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { GUIDES, getGuideBySlug } from "@/lib/guides";
 import { SITE_URL } from "@/lib/site";
+import { createAdminClient } from "@/lib/supabase/admin";
+import type { ArticleRow } from "@/lib/article-types";
 
 export function generateStaticParams() {
   return GUIDES.map((guide) => ({ slug: guide.slug }));
@@ -43,6 +45,16 @@ export default async function GuidePage(props: PageProps<"/guides/[slug]">) {
     description: guide.metaDescription,
     url: `${SITE_URL}/guides/${guide.slug}`,
   };
+
+  // Reverse of the blog→guide cross-link: surface any published article
+  // that references this guide's test, so the two content types keep
+  // pointing traffic (and crawl paths) at each other both ways.
+  const { data: relatedArticles } = await createAdminClient()
+    .from("articles")
+    .select("slug, title")
+    .eq("status", "published")
+    .contains("related_slugs", [guide.testSlug])
+    .returns<Pick<ArticleRow, "slug" | "title">[]>();
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -117,6 +129,25 @@ export default async function GuidePage(props: PageProps<"/guides/[slug]">) {
           ))}
         </div>
       </div>
+
+      {relatedArticles && relatedArticles.length > 0 && (
+        <div className="mt-12">
+          <p className="text-sm font-medium text-foreground/80">
+            À lire aussi sur le blog
+          </p>
+          <div className="mt-3 flex flex-col gap-2">
+            {relatedArticles.map((article) => (
+              <Link
+                key={article.slug}
+                href={`/blog/${article.slug}`}
+                className="text-sm text-primary hover:underline"
+              >
+                {article.title} →
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="mt-12 rounded-xl border border-card-border bg-card p-6 text-center">
         <p className="font-medium">Prêt à essayer ?</p>

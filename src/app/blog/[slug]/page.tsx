@@ -5,6 +5,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import { ARTICLE_CATEGORY_LABELS, type ArticleRow } from "@/lib/article-types";
 import { SITE_URL } from "@/lib/site";
+import { GUIDES } from "@/lib/guides";
 import type { Test } from "@/lib/types";
 
 async function getPublishedArticle(slug: string) {
@@ -57,6 +58,14 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
   const orderedRelatedTests = article.related_slugs
     .map((s) => relatedTests?.find((t) => t.slug === s))
     .filter((t): t is Pick<Test, "slug" | "title" | "price_cents"> => !!t);
+
+  // Deeper-content cross-link: each related test may also have a long-form
+  // guide (format explanation, FAQ) — surface those too, not just the test
+  // itself, so a reader who wants more than the quick take has somewhere
+  // to go and the guide pages pick up inbound links from the blog.
+  const relatedGuides = orderedRelatedTests
+    .map((t) => GUIDES.find((g) => g.testSlug === t.slug))
+    .filter((g): g is (typeof GUIDES)[number] => !!g);
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -117,6 +126,25 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
                 <span className="text-muted">
                   {test.price_cents === 0 ? "Gratuit →" : "Découvrir →"}
                 </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {relatedGuides.length > 0 && (
+        <div className="mt-6">
+          <p className="text-sm font-medium text-foreground/80">
+            Pour aller plus loin
+          </p>
+          <div className="mt-3 flex flex-col gap-2">
+            {relatedGuides.map((guide) => (
+              <Link
+                key={guide.slug}
+                href={`/guides/${guide.slug}`}
+                className="text-sm text-primary hover:underline"
+              >
+                {guide.title} →
               </Link>
             ))}
           </div>
