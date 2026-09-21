@@ -42,6 +42,19 @@ drop policy if exists "Profiles are editable by owner" on public.profiles;
 create policy "Profiles are editable by owner" on public.profiles
   for update using (auth.uid() = id);
 
+-- RLS only restricts which ROWS a policy lets through, not which COLUMNS —
+-- the "editable by owner" policy above would otherwise let any signed-in
+-- user PATCH their own row's stripe_customer_id to an arbitrary value via
+-- the anon key + their own JWT (bypassing the app UI entirely), which
+-- src/app/actions/checkout.ts's billing-portal flow then trusts as an
+-- authorization credential. Column-level privileges close that: the
+-- authenticated role can only ever touch the columns the account-settings
+-- UI actually needs; stripe_customer_id is writable only by the
+-- service-role (admin) client, e.g. from getOrCreateStripeCustomer().
+revoke update on public.profiles from authenticated;
+grant update (full_name, first_name, last_name, gender, birth_date, interested_test_slug)
+  on public.profiles to authenticated;
+
 -- Auto-create a profile row whenever a new auth user signs up.
 create or replace function public.handle_new_user()
 returns trigger

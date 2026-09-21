@@ -31,7 +31,11 @@ async function getOrCreateStripeCustomer(
     metadata: { supabase_user_id: userId },
   });
 
-  await supabase
+  // stripe_customer_id is deliberately not in the authenticated role's
+  // column grants (see supabase/schema.sql) — it's later trusted to open a
+  // Stripe billing portal for this user, so only the service-role client
+  // may write it, never the caller's own session client.
+  await createAdminClient()
     .from("profiles")
     .update({ stripe_customer_id: customer.id })
     .eq("id", userId);
