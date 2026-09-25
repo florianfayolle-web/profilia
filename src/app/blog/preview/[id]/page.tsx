@@ -2,11 +2,13 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { ARTICLE_CATEGORY_LABELS, type ArticleRow } from "@/lib/article-types";
+import { tokensMatch } from "@/lib/safe";
 import { publishArticle, requestRevision } from "@/app/actions/articles";
 
 export const metadata: Metadata = {
   title: "Prévisualisation d'article (brouillon)",
   robots: { index: false, follow: false },
+  referrer: "no-referrer",
 };
 
 export default async function ArticlePreviewPage(
@@ -23,7 +25,7 @@ export default async function ArticlePreviewPage(
     .eq("id", id)
     .maybeSingle<ArticleRow>();
 
-  if (!article || article.publish_token !== token) {
+  if (!article || !tokensMatch(article.publish_token, token)) {
     notFound();
   }
 

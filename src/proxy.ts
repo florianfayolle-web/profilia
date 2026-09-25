@@ -6,7 +6,8 @@ const VISITED_COOKIE = "pf_visited";
 // Search/social crawlers must keep seeing the real homepage, never a
 // redirect into the quiz — matched loosely enough to also catch
 // link-preview bots (Slack, WhatsApp, etc.), which don't retain cookies.
-const BOT_UA = /bot|crawl|spider|slurp|facebookexternalhit|whatsapp|slackbot|preview/i;
+const BOT_UA =
+  /bot|crawl|spider|slurp|facebookexternalhit|whatsapp|slackbot|preview|lighthouse|inspectiontool|duckduckgo|storebot|curl|wget|monitor/i;
 
 export async function proxy(request: NextRequest) {
   // Always refresh the Supabase session first — the homepage redirect below
@@ -17,8 +18,11 @@ export async function proxy(request: NextRequest) {
   if (request.nextUrl.pathname === "/") {
     const isBot = BOT_UA.test(request.headers.get("user-agent") ?? "");
     const alreadyVisited = request.cookies.has(VISITED_COOKIE);
+    // Any query string (e.g. ?account=deleted) means an intentional landing.
+    const hasQuery = request.nextUrl.search !== "";
+    const isNavigation = (request.headers.get("sec-fetch-mode") ?? "navigate") === "navigate";
 
-    if (!isBot && !alreadyVisited) {
+    if (!isBot && !alreadyVisited && !hasQuery && isNavigation) {
       const redirectResponse = NextResponse.redirect(
         new URL("/tests/big-five-express/run", request.url)
       );
@@ -30,7 +34,7 @@ export async function proxy(request: NextRequest) {
         maxAge: 60 * 60 * 24 * 365,
         path: "/",
         sameSite: "lax",
-        secure: true,
+        secure: process.env.NODE_ENV === "production",
       });
       return redirectResponse;
     }

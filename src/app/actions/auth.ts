@@ -14,6 +14,7 @@ import {
   SignupFormState,
 } from "@/lib/definitions";
 import { SITE_URL } from "@/lib/site";
+import { safeNextPath } from "@/lib/safe";
 
 export async function signup(
   _state: SignupFormState,
@@ -127,7 +128,7 @@ export async function login(
   }
 
   const next = formData.get("next");
-  redirect(typeof next === "string" && next.startsWith("/") ? next : "/tests");
+  redirect(safeNextPath(next, "/tests"));
 }
 
 export async function logout() {

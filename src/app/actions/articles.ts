@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { createAdminClient } from "@/lib/supabase/admin";
 import type { ArticleRow } from "@/lib/article-types";
+import { tokensMatch } from "@/lib/safe";
 
 // Publishes a draft article once its publish_token (emailed to the owner by
 // the seo-daily-article scheduled task) is confirmed. A POST-only server
@@ -23,7 +24,7 @@ export async function publishArticle(formData: FormData) {
     .eq("id", id)
     .maybeSingle<Pick<ArticleRow, "id" | "slug" | "status" | "publish_token">>();
 
-  if (!article || article.publish_token !== token || article.status === "published") {
+  if (!article || !tokensMatch(article.publish_token, token) || article.status === "published") {
     throw new Error("Invalid or already-published article");
   }
 
@@ -56,7 +57,7 @@ export async function requestRevision(formData: FormData) {
     .eq("id", id)
     .maybeSingle<Pick<ArticleRow, "id" | "publish_token" | "status">>();
 
-  if (!article || article.publish_token !== token || article.status !== "draft") {
+  if (!article || !tokensMatch(article.publish_token, token) || article.status !== "draft") {
     throw new Error("Invalid or non-draft article");
   }
 

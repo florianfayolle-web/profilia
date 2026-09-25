@@ -3,6 +3,14 @@ import type Stripe from "stripe";
 import { stripe } from "@/lib/stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
 
+// Three sites share one Stripe account, so this endpoint receives events for
+// users/attempts that don't exist in this project's DB. FK (23503) and bad
+// uuid (22P02) errors are those foreign events: ack them. Anything else is a
+// real failure (outage) that Stripe must retry, or a paid purchase is lost.
+function isForeignEventError(error: { code?: string } | null) {
+  return error?.code === "23503" || error?.code === "22P02";
+}
+
 export async function POST(request: Request) {
   const body = await request.text();
   const signature = request.headers.get("stripe-signature");
@@ -29,15 +37,16 @@ export async function POST(request: Request) {
   const supabase = createAdminClient();
 
   switch (event.type) {
-    case "checkout.session.completed": {
+    case "checkout.session.completed":
+    case "checkout.session.async_payment_succeeded": {
       const session = event.data.object as Stripe.Checkout.Session;
       const userId = session.metadata?.supabase_user_id;
 
-      if (session.mode === "payment") {
+      if (session.mode === "payment" && session.payment_status === "paid") {
         const testId = session.metadata?.test_id;
         const attemptId = session.metadata?.attempt_id;
         if (userId && testId) {
-          await supabase.from("purchases").upsert(
+          const { error } = await supabase.from("purchases").upsert(
             {
               user_id: userId,
               test_id: testId,
@@ -52,13 +61,21 @@ export async function POST(request: Request) {
             },
             { onConflict: "user_id,test_id" }
           );
+          if (error && !isForeignEventError(error)) {
+            console.error("purchases upsert failed", error);
+            return NextResponse.json({ error: "db" }, { status: 500 });
+          }
         } else if (attemptId) {
           // Guest micro-payment to unblur a free test's result — no
           // user_id, the attempt's own id is the only key we have.
-          await supabase
+          const { error } = await supabase
             .from("attempts")
             .update({ unlocked: true })
             .eq("id", attemptId);
+          if (error && !isForeignEventError(error)) {
+            console.error("attempt unlock failed", error);
+            return NextResponse.json({ error: "db" }, { status: 500 });
+          }
         }
       }
       // Subscription checkouts are handled by the subscription.* events below,
@@ -83,7 +100,7 @@ export async function POST(request: Request) {
 
       if (profile) {
         const currentPeriodEnd = subscription.items.data[0]?.current_period_end;
-        await supabase.from("subscriptions").upsert(
+        const { error } = await supabase.from("subscriptions").upsert(
           {
             user_id: profile.id,
             stripe_customer_id: customerId,
@@ -96,6 +113,10 @@ export async function POST(request: Request) {
           },
           { onConflict: "stripe_subscription_id" }
         );
+        if (error && !isForeignEventError(error)) {
+          console.error("subscriptions upsert failed", error);
+          return NextResponse.json({ error: "db" }, { status: 500 });
+        }
       }
       break;
     }

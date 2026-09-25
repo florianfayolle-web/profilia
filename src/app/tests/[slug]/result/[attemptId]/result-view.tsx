@@ -211,6 +211,29 @@ function ReliabilityCard({
   );
 }
 
+function DimensionBars({
+  dims,
+}: {
+  dims: { code: string; label: string; description: string; scorePercent: number }[];
+}) {
+  return (
+  <div className="space-y-5">
+    {dims.map((d) => (
+      <div key={d.code}>
+        <div className="flex items-center justify-between text-sm font-medium">
+          <span>{d.label}</span>
+          <span className="text-muted-foreground">{percent(d.scorePercent)}</span>
+        </div>
+        <div className="mt-1">
+          <Bar value={d.scorePercent} />
+        </div>
+        <p className="mt-1 text-xs text-muted">{d.description}</p>
+      </div>
+    ))}
+  </div>
+);
+}
+
 export function ResultView({
   format,
   result,
@@ -773,27 +796,6 @@ export function ResultView({
 
   if (format === "sosie_v2") {
     const r = result as SosieResult;
-    const DimensionBars = ({
-      dims,
-    }: {
-      dims: { code: string; label: string; description: string; scorePercent: number }[];
-    }) => (
-      <div className="space-y-5">
-        {dims.map((d) => (
-          <div key={d.code}>
-            <div className="flex items-center justify-between text-sm font-medium">
-              <span>{d.label}</span>
-              <span className="text-muted-foreground">{percent(d.scorePercent)}</span>
-            </div>
-            <div className="mt-1">
-              <Bar value={d.scorePercent} />
-            </div>
-            <p className="mt-1 text-xs text-muted">{d.description}</p>
-          </div>
-        ))}
-      </div>
-    );
-
     return (
       <div className="text-left">
         <div className="rounded-xl border border-card-border bg-card p-6">

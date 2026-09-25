@@ -42,3 +42,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scratch / import artifacts (not part of the app)
+/*.zip
+/*.xlsx
+/*.pdf
+/*.html
+/files-*-extracted/
+/escale-cca-identite/
+/forallpilots-identite/
