@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { createAdminClient } from "@/lib/supabase/admin";
+import { Illustration, motifForArticle } from "@/components/illustration";
 import { ARTICLE_CATEGORY_LABELS, type ArticleCategory, type ArticleRow } from "@/lib/article-types";
 
 export const metadata: Metadata = {
@@ -43,12 +44,21 @@ export default async function BlogIndexPage() {
                 <Link
                   key={article.slug}
                   href={`/blog/${article.slug}`}
-                  className="block rounded-xl border border-card-border bg-card p-6 transition hover:border-primary/40 hover:shadow-sm"
+                  className="flex flex-col overflow-hidden rounded-xl border border-card-border bg-card transition hover:border-primary/40 hover:shadow-sm sm:flex-row"
                 >
-                  <h3 className="text-lg font-medium">{article.title}</h3>
-                  <p className="mt-2 text-sm text-muted">
-                    {article.meta_description}
-                  </p>
+                  <div className="sm:w-56 sm:shrink-0">
+                    <Illustration
+                      motif={motifForArticle(article.category, article.slug)}
+                      seed={article.slug}
+                      className="h-full min-h-28"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="text-lg font-medium">{article.title}</h3>
+                    <p className="mt-2 text-sm text-muted">
+                      {article.meta_description}
+                    </p>
+                  </div>
                 </Link>
               ))}
             </div>

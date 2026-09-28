@@ -6,6 +6,8 @@ import { createClient } from "@/lib/supabase/server";
 import { ARTICLE_CATEGORY_LABELS, type ArticleRow } from "@/lib/article-types";
 import { SITE_URL } from "@/lib/site";
 import { GUIDES } from "@/lib/guides";
+import { Illustration, motifForArticle } from "@/components/illustration";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import type { Test } from "@/lib/types";
 
 async function getPublishedArticle(slug: string) {
@@ -73,7 +75,13 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
     headline: article.title,
     description: article.meta_description,
     datePublished: article.published_at,
+    dateModified: article.published_at,
     url: `${SITE_URL}/blog/${article.slug}`,
+    mainEntityOfPage: `${SITE_URL}/blog/${article.slug}`,
+    image: `${SITE_URL}/blog/${article.slug}/opengraph-image`,
+    inLanguage: "fr-FR",
+    author: { "@type": "Organization", name: "Profilia", url: SITE_URL },
+    publisher: { "@type": "Organization", name: "Profilia", url: SITE_URL },
   };
 
   return (
@@ -81,6 +89,14 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: article.title, path: `/blog/${article.slug}` },
+        ]}
       />
 
       <Link href="/blog" className="text-sm text-muted hover:text-foreground">
@@ -93,7 +109,14 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
       <h1 className="mt-2 text-3xl font-semibold tracking-tight">
         {article.title}
       </h1>
-      <p className="mt-4 text-muted">{article.intro}</p>
+      <div className="mt-6 overflow-hidden rounded-2xl border border-card-border">
+        <Illustration
+          motif={motifForArticle(article.category, article.slug)}
+          seed={article.slug}
+          className="aspect-[2/1]"
+        />
+      </div>
+      <p className="mt-6 text-muted">{article.intro}</p>
 
       <div className="mt-10 space-y-10">
         {article.sections.map((section) => (

@@ -1,6 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { RadarChart } from "@/components/dimension-charts";
+import { Illustration, motifForArticle, motifForTest } from "@/components/illustration";
+import { createAdminClient } from "@/lib/supabase/admin";
+import { GUIDES } from "@/lib/guides";
+import type { ArticleRow } from "@/lib/article-types";
+
+// Hourly refresh: keeps the "latest articles" block current without making
+// the homepage fully dynamic.
+export const revalidate = 3600;
+
+const HOME_GUIDE_SLUGS = ["test-personnalite-gratuit", "test-disc", "test-sosie-2", "test-orientation-riasec"];
 
 const SAMPLE_PROFILE = [
   { label: "Leadership", value: 0.82 },
@@ -86,7 +96,24 @@ function CheckIcon() {
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  let latest: Pick<ArticleRow, "slug" | "title" | "category" | "meta_description">[] = [];
+  try {
+    const { data } = await createAdminClient()
+      .from("articles")
+      .select("slug, title, category, meta_description")
+      .eq("status", "published")
+      .order("published_at", { ascending: false })
+      .limit(3)
+      .returns<Pick<ArticleRow, "slug" | "title" | "category" | "meta_description">[]>();
+    latest = data ?? [];
+  } catch {
+    latest = [];
+  }
+  const homeGuides = HOME_GUIDE_SLUGS.map((slug) => GUIDES.find((g) => g.slug === slug)).filter(
+    (g): g is (typeof GUIDES)[number] => !!g
+  );
+
   return (
     <div>
       <section className="sky-gradient relative overflow-hidden border-b border-card-border/60">
@@ -506,6 +533,46 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {latest.length > 0 && (
+        <section className="mx-auto max-w-5xl px-6 py-16">
+          <div className="flex items-end justify-between gap-4">
+            <h2 className="text-2xl font-semibold tracking-tight">Derniers articles</h2>
+            <Link href="/blog" className="text-sm font-medium text-primary hover:underline">
+              Tout le blog →
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-6 sm:grid-cols-3">
+            {latest.map((article) => (
+              <Link
+                key={article.slug}
+                href={`/blog/${article.slug}`}
+                className="flex flex-col overflow-hidden rounded-xl border border-card-border bg-card transition hover:border-primary/40 hover:shadow-sm"
+              >
+                <Illustration motif={motifForArticle(article.category, article.slug)} seed={article.slug} className="aspect-[2/1]" />
+                <div className="p-5">
+                  <h3 className="font-medium leading-snug">{article.title}</h3>
+                  <p className="mt-2 line-clamp-3 text-sm text-muted">{article.meta_description}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <h3 className="mt-14 text-lg font-semibold tracking-tight">Guides pour bien se préparer</h3>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {homeGuides.map((guide) => (
+              <Link
+                key={guide.slug}
+                href={`/guides/${guide.slug}`}
+                className="overflow-hidden rounded-xl border border-card-border bg-card transition hover:border-primary/40 hover:shadow-sm"
+              >
+                <Illustration motif={motifForTest(guide.testSlug)} seed={guide.slug} className="aspect-[2/1]" />
+                <p className="p-4 text-sm font-medium leading-snug">{guide.title}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="border-t border-card-border/60 bg-card/40">
         <div className="mx-auto max-w-3xl px-6 py-16">

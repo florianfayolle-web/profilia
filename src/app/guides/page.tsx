@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { GUIDES } from "@/lib/guides";
+import { Illustration, motifForTest } from "@/components/illustration";
 
 export const metadata: Metadata = {
   title: "Guides : comprendre chaque test de personnalité",
@@ -25,10 +26,15 @@ export default function GuidesIndexPage() {
           <Link
             key={guide.slug}
             href={`/guides/${guide.slug}`}
-            className="block rounded-xl border border-card-border bg-card p-6 transition hover:border-primary/40 hover:shadow-sm"
+            className="flex flex-col overflow-hidden rounded-xl border border-card-border bg-card transition hover:border-primary/40 hover:shadow-sm sm:flex-row"
           >
-            <h2 className="text-lg font-medium">{guide.title}</h2>
-            <p className="mt-2 text-sm text-muted">{guide.metaDescription}</p>
+            <div className="sm:w-56 sm:shrink-0">
+              <Illustration motif={motifForTest(guide.testSlug)} seed={guide.slug} className="h-full min-h-28" />
+            </div>
+            <div className="p-5">
+              <h2 className="text-lg font-medium">{guide.title}</h2>
+              <p className="mt-2 text-sm text-muted">{guide.metaDescription}</p>
+            </div>
           </Link>
         ))}
       </div>

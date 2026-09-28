@@ -3,6 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { GUIDES, getGuideBySlug } from "@/lib/guides";
 import { SITE_URL } from "@/lib/site";
+import { Illustration, motifForTest } from "@/components/illustration";
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { createAdminClient } from "@/lib/supabase/admin";
 import type { ArticleRow } from "@/lib/article-types";
 
@@ -44,6 +46,11 @@ export default async function GuidePage(props: PageProps<"/guides/[slug]">) {
     headline: guide.title,
     description: guide.metaDescription,
     url: `${SITE_URL}/guides/${guide.slug}`,
+    mainEntityOfPage: `${SITE_URL}/guides/${guide.slug}`,
+    image: `${SITE_URL}/guides/${guide.slug}/opengraph-image`,
+    inLanguage: "fr-FR",
+    author: { "@type": "Organization", name: "Profilia", url: SITE_URL },
+    publisher: { "@type": "Organization", name: "Profilia", url: SITE_URL },
   };
 
   // Reverse of the blog→guide cross-link: surface any published article
@@ -77,6 +84,14 @@ export default async function GuidePage(props: PageProps<"/guides/[slug]">) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Accueil", path: "/" },
+          { name: "Guides", path: "/guides" },
+          { name: guide.title, path: `/guides/${guide.slug}` },
+        ]}
+      />
+
       <Link href="/guides" className="text-sm text-muted hover:text-foreground">
         ← Tous les guides
       </Link>
@@ -84,7 +99,10 @@ export default async function GuidePage(props: PageProps<"/guides/[slug]">) {
       <h1 className="mt-4 text-3xl font-semibold tracking-tight">
         {guide.title}
       </h1>
-      <p className="mt-4 text-muted">{guide.intro}</p>
+      <div className="mt-6 overflow-hidden rounded-2xl border border-card-border">
+        <Illustration motif={motifForTest(guide.testSlug)} seed={guide.slug} className="aspect-[2/1]" />
+      </div>
+      <p className="mt-6 text-muted">{guide.intro}</p>
 
       <div className="mt-10 rounded-xl border border-primary/30 bg-card p-6">
         <p className="font-medium">Envie de t&apos;entraîner directement ?</p>
