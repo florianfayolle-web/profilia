@@ -46,7 +46,7 @@
     {
       "id": "b14",
       "dimension": "per",
-      "text": "J’ai des convictions et je les défends, même seul à table.",
+      "text": "J’ai des convictions et je les défends, même quand personne à table n’est d’accord.",
       "twin": "t3",
       "block": "base"
     },
@@ -207,7 +207,7 @@
     {
       "id": "b38",
       "dimension": "pro",
-      "text": "Quand ça devient urgent, je suis à mon meilleur.",
+      "text": "Quand ça devient urgent, je donne le meilleur de moi-même.",
       "twin": null,
       "block": "base"
     },
@@ -228,7 +228,7 @@
     {
       "id": "b21",
       "dimension": "rev",
-      "text": "J’ai besoin de longs moments seul pour me sentir bien.",
+      "text": "J’ai besoin de longs moments de solitude pour me sentir bien.",
       "twin": "t4",
       "block": "base"
     },
@@ -256,7 +256,7 @@
     {
       "id": "b26",
       "dimension": "rev",
-      "text": "On me dit parfois que je suis difficile à cerner, discret, un peu secret.",
+      "text": "On me dit parfois que je suis difficile à cerner, que je garde une part de mystère et de discrétion.",
       "twin": null,
       "block": "base"
     },
@@ -298,7 +298,7 @@
     {
       "id": "b12",
       "dimension": "tra",
-      "text": "Je suis content de moi quand un truc que j’ai organisé se déroule sans accroc.",
+      "text": "Je ressens de la satisfaction quand un truc que j’ai organisé se déroule sans accroc.",
       "twin": null,
       "block": "base"
     },
@@ -368,7 +368,7 @@
     {
       "id": "p18",
       "dimension": "rev",
-      "text": "Ces temps-ci, je me sens un peu spectateur de ma propre vie.",
+      "text": "Ces temps-ci, j’ai un peu l’impression de regarder ma propre vie de l’extérieur.",
       "twin": null,
       "block": "phase"
     },
@@ -417,7 +417,7 @@
     {
       "id": "p19",
       "dimension": "rev",
-      "text": "Ce qui me ferait du bien : trois jours seul, sans rien à rendre à personne.",
+      "text": "Ce qui me ferait du bien : trois jours de solitude, sans rien à rendre à personne.",
       "twin": null,
       "block": "phase"
     },
@@ -501,7 +501,7 @@
     {
       "id": "p14",
       "dimension": "per",
-      "text": "Ces derniers mois, je me sens seul à défendre ce qui compte vraiment.",
+      "text": "Ces derniers mois, j’ai l’impression que personne ne m’aide à défendre ce qui compte vraiment.",
       "twin": null,
       "block": "phase"
     },
@@ -558,7 +558,7 @@
       "quotidien": "C’est toi qui as le tableau des vacances, la bonne adresse vérifiée, l’itinéraire avec les horaires. Un projet bien mené te procure un plaisir que les autres sous-estiment. Tu aimes les conversations où on apprend quelque chose.",
       "talents": "Tu vois la structure des choses, tu anticipes ce que personne n’a vu venir, et on peut compter sur ce que tu as promis.",
       "besoin": "Qu’on reconnaisse ce que tu fais et comment tu le penses. Et du temps structuré : savoir quand, combien de temps, dans quel ordre.",
-      "stress": "Tu deviens tatillon, tu refais ce que les autres ont fait, tu n’arrives plus à déléguer chez toi. Tu penses en silence que personne ne fait les choses correctement.",
+      "stress": "Tu t’attardes sur chaque détail, tu refais ce que les autres ont fait, tu n’arrives plus à déléguer chez toi. Tu penses en silence que personne ne fait les choses correctement.",
       "aide": "Programme du temps sans objectif. Ta valeur ne se mesure pas au nombre de cases cochées le dimanche soir.",
       "citation": "« Attends, on reprend dans l’ordre. »"
     },
@@ -568,19 +568,19 @@
       "quotidien": "Tu t’engages et tu tiens : une asso, un club, une amitié de vingt ans, une cause. On vient te demander ton avis parce qu’il est ferme. Tu observes les gens un moment avant de leur ouvrir la porte, mais quand elle s’ouvre, c’est pour longtemps.",
       "talents": "Tu tiens quand les autres lâchent, tu dis ce que personne n’ose dire, et tu donnes aux gens autour de toi une colonne vertébrale.",
       "besoin": "Qu’on respecte tes convictions, même en désaccord. Qu’on te dise « je comprends pourquoi tu y tiens » plutôt que « tu exagères ».",
-      "stress": "Tu pars en croisade sur un détail, tu traques ce qui cloche, tu deviens soupçonneux. Les autres te trouvent rigide au moment précis où tu te sens seul à défendre quelque chose.",
+      "stress": "Tu pars en croisade sur un détail, tu traques ce qui cloche, tu deviens soupçonneux(se). Les autres te trouvent rigide au moment précis où tu as l’impression de défendre quelque chose sans soutien.",
       "aide": "Sépare le désaccord de la trahison. Quelqu’un peut penser autrement que toi et rester loyal.",
       "citation": "« Je trouve ça profondément injuste. »"
     },
     "rev": {
       "name": "Rêveur",
       "perception": "Tu perçois le monde par l’imagination et le calme intérieur. Tu prends les choses en toi, tu les laisses décanter, puis quelque chose arrive.",
-      "quotidien": "Tu as besoin de longues plages seul, sans culpabilité. Les fêtes trop longues te lessivent, même les bonnes. Tu as une vie intérieure riche que peu de gens voient, et une capacité à durer dans les moments compliqués qui étonne ton entourage.",
+      "quotidien": "Tu as besoin de longues plages de solitude, sans culpabilité. Les fêtes trop longues te lessivent, même les bonnes. Tu as une vie intérieure riche que peu de gens voient, et une capacité à durer dans les moments compliqués qui étonne ton entourage.",
       "talents": "Tu imagines ce que personne n’a pensé, tu restes calme quand tout s’agite, et tu supportes la solitude et la lenteur mieux que quiconque.",
       "besoin": "De la solitude vraie, pas des miettes. Et qu’on te dise clairement ce qu’on attend de toi : les sous-entendus te laissent sur le quai.",
       "stress": "Tu te mets en veille. Tu remets, tu attends qu’on décide pour toi, tu disparais des conversations. Ça peut ressembler à de l’indifférence, alors que c’est une protection.",
       "aide": "Demande explicitement ce dont tu as besoin, et demande aux autres d’être explicites. Une phrase directe t’économise trois jours de retrait.",
-      "citation": "« Laisse-moi juste un peu de temps seul. »"
+      "citation": "« Laisse-moi juste un peu de temps pour moi. »"
     },
     "reb": {
       "name": "Rebelle",
@@ -595,7 +595,7 @@
     "pro": {
       "name": "Promoteur",
       "perception": "Tu perçois le monde par l’action. Tu sens l’opportunité, tu y vas, tu ajustes en route.",
-      "quotidien": "Tu décides d’un week-end à 700 km le jeudi soir. Tu es à ton meilleur quand ça chauffe : une panne, une urgence, un imprévu — les autres paniquent et toi tu prends les commandes. Tu as du charme et tu le sais.",
+      "quotidien": "Tu décides d’un week-end à 700 km le jeudi soir. Tu donnes le meilleur de toi quand ça chauffe : une panne, une urgence, un imprévu — les autres paniquent et toi tu prends les commandes. Tu as du charme et tu le sais.",
       "talents": "Tu débloques les situations, tu oses ce que personne n’ose, et tu entraînes les gens derrière toi sans avoir à les convaincre.",
       "besoin": "De l’excitation et de l’intensité. Beaucoup en peu de temps. La routine te fait dépérir plus vite que la difficulté.",
       "stress": "Tu pousses les autres à bout, tu manipules un peu pour arriver à tes fins, tu prends des risques qui ne valent pas le coup, juste pour sentir quelque chose.",
@@ -605,13 +605,13 @@
   },
   "phase": {
     "emp": {
-      "besoin": "En ce moment, tu as besoin d’être aimé sans contrepartie, et de douceur concrète : une présence, du repos, des sensations agréables.",
+      "besoin": "En ce moment, tu as besoin d’amour sans contrepartie, et de douceur concrète : une présence, du repos, des sensations agréables.",
       "signal": "Le signal que ça manque : tu t’excuses trop, tu t’effaces pour ne gêner personne, tu accumules du ressentiment sans le dire, tu pleures pour des broutilles.",
       "demande": "Ce que tu peux demander à tes proches, littéralement : « prends de mes nouvelles sans raison » et « dis-moi que tu m’aimes, même si ça te paraît évident »."
     },
     "tra": {
       "besoin": "En ce moment, tu as besoin qu’on reconnaisse ce que tu abats et que ton temps soit structuré : des repères, des échéances, des choses qui se referment proprement.",
-      "signal": "Le signal que ça manque : tu ne délègues plus rien, tu deviens pointilleux sur des détails, tu penses en boucle le soir, tu te sens seul à porter.",
+      "signal": "Le signal que ça manque : tu ne délègues plus rien, tu t’acharnes sur des détails, tu penses en boucle le soir, tu as l’impression que tout repose sur toi.",
       "demande": "Ce que tu peux demander : « dis-moi précisément ce que tu as apprécié » et « fixons une date, pas un jour on verra »."
     },
     "per": {
@@ -621,12 +621,12 @@
     },
     "rev": {
       "besoin": "En ce moment, tu as besoin de solitude réelle et de consignes claires. Pas d’un dimanche tranquille : de vraies plages où personne n’attend rien de toi.",
-      "signal": "Le signal que ça manque : tu repousses tout, tu attends que les autres décident, tu t’absentes mentalement, tu as l’impression d’être spectateur de ta propre vie.",
-      "demande": "Ce que tu peux demander : « j’ai besoin de deux jours seul, ce n’est pas contre toi » et « dis-moi clairement ce que tu attends de moi »."
+      "signal": "Le signal que ça manque : tu repousses tout, tu attends que les autres décident, tu t’absentes mentalement, tu as l’impression de regarder ta propre vie de l’extérieur.",
+      "demande": "Ce que tu peux demander : « j’ai besoin de deux jours de solitude, ce n’est pas contre toi » et « dis-moi clairement ce que tu attends de moi »."
     },
     "reb": {
       "besoin": "En ce moment, tu as besoin de rire et de contacts sans enjeu. Du jeu quotidien, pas une grande sortie une fois par trimestre.",
-      "signal": "Le signal que ça manque : tu râles sur tout, rien ne va, tu te sens victime des circonstances, tu te braques dès qu’on te demande quelque chose.",
+      "signal": "Le signal que ça manque : tu râles sur tout, rien ne va, tu as l’impression de subir les circonstances, tu te braques dès qu’on te demande quelque chose.",
       "demande": "Ce que tu peux demander : « propose-moi un truc idiot ce soir » et « viens juste rigoler avec moi, on ne résout rien »."
     },
     "pro": {

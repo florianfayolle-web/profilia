@@ -89,7 +89,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Vous tentez l'atterrissage en restant prêt à remettre les gaz si besoin.",
+          "text": "Vous tentez l'atterrissage en vous préparant à remettre les gaz si besoin.",
           "rank": 2
         },
         {
@@ -118,7 +118,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Vous décidez seul que ce n'est pas grave et partez sans le signaler.",
+          "text": "Vous décidez de votre côté que ce n'est pas grave et partez sans le signaler.",
           "rank": 3
         },
         {
@@ -268,7 +268,7 @@
         },
         {
           "key": "B",
-          "text": "Vous redoublez d'efforts seul sans le signaler.",
+          "text": "Vous redoublez d'efforts sans aide et sans le signaler.",
           "rank": 2
         },
         {
@@ -505,7 +505,7 @@
         },
         {
           "key": "C",
-          "text": "Vous demandez à être remplacé sans chercher d'autre solution.",
+          "text": "Vous demandez un remplacement sans chercher d'autre solution.",
           "rank": 4
         },
         {
@@ -669,7 +669,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Vous organisez votre repos en priorité pour être opérationnel.",
+          "text": "Vous organisez votre repos en priorité pour garder votre capacité opérationnelle.",
           "rank": 1
         },
         {
@@ -694,7 +694,7 @@
       "isControl": false,
       "controlOf": null,
       "dimension": "DISC",
-      "situation": "Vous êtes seul à bord pour une vérification technique habituellement faite à deux.",
+      "situation": "Vous êtes la seule personne à bord pour une vérification technique habituellement faite à deux.",
       "options": [
         {
           "key": "A",
@@ -703,7 +703,7 @@
         },
         {
           "key": "B",
-          "text": "Vous effectuez la vérification seul en redoublant d'attention.",
+          "text": "Vous effectuez la vérification sans aide en redoublant d'attention.",
           "rank": 2
         },
         {
@@ -713,7 +713,7 @@
         },
         {
           "key": "D",
-          "text": "Vous effectuez la vérification seul sans précaution particulière.",
+          "text": "Vous effectuez la vérification sans aide et sans précaution particulière.",
           "rank": 3
         }
       ]
@@ -752,7 +752,7 @@
       "isControl": false,
       "controlOf": null,
       "dimension": "FAT",
-      "situation": "Vous vous sentez fatigué en début de dernière étape d'une journée longue.",
+      "situation": "Vous ressentez de la fatigue en début de dernière étape d'une journée longue.",
       "options": [
         {
           "key": "A",
@@ -810,7 +810,7 @@
       "isControl": false,
       "controlOf": null,
       "dimension": "HIER",
-      "situation": "Votre supérieur hiérarchique vous demande de justifier une décision que vous avez prise seul en vol.",
+      "situation": "Votre supérieur hiérarchique vous demande de justifier une décision que vous avez prise sans concertation en vol.",
       "options": [
         {
           "key": "A",
@@ -926,7 +926,7 @@
       "isControl": false,
       "controlOf": null,
       "dimension": "DISC",
-      "situation": "Vous êtes pressé par le planning et une étape administrative avant vol semble superflue.",
+      "situation": "Le planning vous met sous pression et une étape administrative avant vol semble superflue.",
       "options": [
         {
           "key": "A",
@@ -1042,11 +1042,11 @@
       "isControl": false,
       "controlOf": null,
       "dimension": "URG",
-      "situation": "Une urgence survient alors que vous êtes en fin de service, fatigué.",
+      "situation": "Une urgence survient alors que vous êtes en fin de service, avec de la fatigue accumulée.",
       "options": [
         {
           "key": "A",
-          "text": "Vous gérez seul pour ne pas surcharger un équipage également fatigué.",
+          "text": "Vous gérez la situation sans aide pour ne pas surcharger un équipage également fatigué.",
           "rank": 2
         },
         {
@@ -1602,7 +1602,7 @@
         },
         {
           "key": "B",
-          "text": "Vous exécutez l'instruction sans commentaire tout en restant vigilant.",
+          "text": "Vous exécutez l'instruction sans commentaire tout en gardant votre vigilance.",
           "rank": 2
         },
         {
@@ -1660,7 +1660,7 @@
         },
         {
           "key": "B",
-          "text": "Vous agissez seul sans en reparler avec lui.",
+          "text": "Vous agissez de votre côté sans en reparler avec lui.",
           "rank": 4
         },
         {
@@ -1752,7 +1752,7 @@
         },
         {
           "key": "C",
-          "text": "Vous poursuivez tout en restant prêt à interrompre si le doute se confirme.",
+          "text": "Vous poursuivez tout en vous préparant à interrompre si le doute se confirme.",
           "rank": 2
         },
         {
@@ -2250,7 +2250,7 @@
         },
         {
           "key": "D",
-          "text": "Vous appliquez ce que vous pensez avoir compris tout en restant attentif à une correction.",
+          "text": "Vous appliquez ce que vous pensez avoir compris tout en restant à l'affût d'une correction.",
           "rank": 2
         }
       ]
@@ -2511,7 +2511,7 @@
         },
         {
           "key": "D",
-          "text": "Vous poursuivez l'approche en restant très attentif aux références visuelles.",
+          "text": "Vous poursuivez l'approche en gardant toute votre attention sur les références visuelles.",
           "rank": 2
         }
       ]
@@ -2709,7 +2709,7 @@
         },
         {
           "key": "C",
-          "text": "Vous prenez tous les rôles à vous seul.",
+          "text": "Vous endossez tous les rôles sans les partager.",
           "rank": 4
         },
         {
@@ -2960,7 +2960,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Vous tentez l'atterrissage en restant prêt à remettre les gaz si besoin.",
+          "text": "Vous tentez l'atterrissage en vous préparant à remettre les gaz si besoin.",
           "rank": 2
         },
         {
@@ -2989,7 +2989,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Vous décidez seul que ce n'est pas grave et partez sans le signaler.",
+          "text": "Vous décidez de votre côté que ce n'est pas grave et partez sans le signaler.",
           "rank": 3
         },
         {
@@ -3052,7 +3052,7 @@
         },
         {
           "key": "B",
-          "text": "Vous redoublez d'efforts seul sans le signaler.",
+          "text": "Vous redoublez d'efforts sans aide et sans le signaler.",
           "rank": 2
         },
         {
@@ -3130,7 +3130,7 @@
       "isControl": true,
       "controlOf": 23,
       "dimension": "DISC",
-      "situation": "Vous êtes seul à bord pour une vérification technique habituellement faite à deux.",
+      "situation": "Vous êtes la seule personne à bord pour une vérification technique habituellement faite à deux.",
       "options": [
         {
           "key": "A",
@@ -3139,7 +3139,7 @@
         },
         {
           "key": "B",
-          "text": "Vous effectuez la vérification seul en redoublant d'attention.",
+          "text": "Vous effectuez la vérification sans aide en redoublant d'attention.",
           "rank": 2
         },
         {
@@ -3149,7 +3149,7 @@
         },
         {
           "key": "D",
-          "text": "Vous effectuez la vérification seul sans précaution particulière.",
+          "text": "Vous effectuez la vérification sans aide et sans précaution particulière.",
           "rank": 3
         }
       ]
@@ -3323,7 +3323,7 @@
         },
         "strengths": "Votre capacité à identifier le respect intégral des procédures est un pilier de sécurité opérationnelle.",
         "suitableWork": "Tous les postes techniques où la conformité stricte est exigée.",
-        "tips": "Restez vigilant sur ce réflexe y compris dans les contextes de pression de temps forte."
+        "tips": "Gardez votre vigilance sur ce réflexe y compris dans les contextes de pression de temps forte."
       },
       "HIER": {
         "bands": {

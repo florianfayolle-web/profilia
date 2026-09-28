@@ -92,9 +92,9 @@
     "dimensions": {
       "dim_1": {
         "bands": {
-          "Low": "Tu évolues avec aisance dans un cadre connu et stable, et tu apprécies les méthodes déjà éprouvées. Cette prévisibilité est un vrai atout dans un environnement où les procédures doivent être appliquées à la lettre. Reste toutefois attentif à ne pas te fermer face à une situation réellement nouvelle ou un imprévu qui sortirait du cadre habituel.",
+          "Low": "Tu évolues avec aisance dans un cadre connu et stable, et tu apprécies les méthodes déjà éprouvées. Cette prévisibilité est un vrai atout dans un environnement où les procédures doivent être appliquées à la lettre. Veille toutefois à ne pas te fermer face à une situation réellement nouvelle ou un imprévu qui sortirait du cadre habituel.",
           "Mid": "Tu sais t'adapter quand la situation l'exige, sans pour autant rechercher le changement pour lui-même. Cet équilibre entre stabilité et flexibilité te permet de faire face à l'imprévu sans perdre tes repères.",
-          "High": "Tu es à l'aise pour sortir des sentiers battus, apprendre vite et t'adapter à des environnements changeants. C'est un atout réel face à des missions imprévisibles, à condition de rester rigoureux sur le respect des procédures non négociables."
+          "High": "Tu es à l'aise pour sortir des sentiers battus, apprendre vite et t'adapter à des environnements changeants. C'est un atout réel face à des missions imprévisibles, à condition de garder de la rigueur dans le respect des procédures non négociables."
         },
         "strengths": "Curiosité, adaptabilité, ouverture à la nouveauté.",
         "suitableWork": "Selon le niveau : environnements stables et procéduraux, ou au contraire missions changeantes demandant une adaptation rapide.",
@@ -102,9 +102,9 @@
       },
       "dim_2": {
         "bands": {
-          "Low": "Tu fonctionnes plutôt à l'instinct et tu peux te sentir freiné par une planification trop stricte. Cette souplesse peut être utile face à l'imprévu, mais un cadre aussi exigeant que le métier militaire demande une rigueur dans l'exécution qui sera à travailler en priorité.",
+          "Low": "Tu fonctionnes plutôt à l'instinct et une planification trop stricte peut te freiner. Cette souplesse peut être utile face à l'imprévu, mais un cadre aussi exigeant que le métier militaire demande une rigueur dans l'exécution qui sera à travailler en priorité.",
           "Mid": "Tu sais t'organiser et respecter un cadre, sans que cela devienne systématique ni rigide. Cette rigueur mesurée est cohérente avec les exigences d'un environnement où les procédures structurent la sécurité.",
-          "High": "Tu es quelqu'un de méthodique, fiable et attentif aux détails. C'est une qualité particulièrement recherchée dans un cadre où la moindre négligence peut avoir des conséquences importantes. Veille simplement à conserver une marge de manœuvre quand une situation exige de s'écarter du plan initial."
+          "High": "Tu as le sens de la méthode, de la fiabilité et du détail. C'est une qualité particulièrement recherchée dans un cadre où la moindre négligence peut avoir des conséquences importantes. Veille simplement à conserver une marge de manœuvre quand une situation exige de s'écarter du plan initial."
         },
         "strengths": "Fiabilité, sens du détail, discipline d'exécution.",
         "suitableWork": "Fonctions à forte exigence de rigueur et de sécurité, comme le pilotage ou la maintenance.",

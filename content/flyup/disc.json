@@ -53,7 +53,7 @@
         },
         {
           "key": "D",
-          "text": "Je reste fidèle aux méthodes qui ont fait leurs preuves.",
+          "text": "Je m'en tiens aux méthodes qui ont fait leurs preuves.",
           "dimension": "S",
           "trait": 33,
           "phrasing": "a"
@@ -65,7 +65,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je suis chaleureux dès le premier contact.",
+          "text": "Ma chaleur se ressent dès le premier contact.",
           "dimension": "I",
           "trait": 33,
           "phrasing": "a"
@@ -98,14 +98,14 @@
       "options": [
         {
           "key": "A",
-          "text": "Je préfère réfléchir seul avant de m'exprimer.",
+          "text": "Je préfère réfléchir dans mon coin avant de m'exprimer.",
           "dimension": "C",
           "trait": 9,
           "phrasing": "a"
         },
         {
           "key": "B",
-          "text": "Je suis tolérant envers les erreurs des autres.",
+          "text": "Je fais preuve de tolérance envers les erreurs des autres.",
           "dimension": "S",
           "trait": 25,
           "phrasing": "a"
@@ -119,7 +119,7 @@
         },
         {
           "key": "D",
-          "text": "Je déteste être ignoré.",
+          "text": "Je déteste qu'on m'ignore.",
           "dimension": "I",
           "trait": 23,
           "phrasing": "a"
@@ -383,7 +383,7 @@
         },
         {
           "key": "D",
-          "text": "Je suis prudent face aux nouveautés.",
+          "text": "Je fais preuve de prudence face aux nouveautés.",
           "dimension": "C",
           "trait": 8,
           "phrasing": "a"
@@ -468,7 +468,7 @@
         },
         {
           "key": "B",
-          "text": "Je me concentre mieux sans être interrompu.",
+          "text": "Je me concentre mieux quand on ne m'interrompt pas.",
           "dimension": "C",
           "trait": 36,
           "phrasing": "b"
@@ -501,7 +501,7 @@
         },
         {
           "key": "B",
-          "text": "J'aime devenir expert dans mon domaine.",
+          "text": "J'aime maîtriser à fond mon domaine.",
           "dimension": "C",
           "trait": 16,
           "phrasing": "a"
@@ -515,7 +515,7 @@
         },
         {
           "key": "D",
-          "text": "Face à la colère d'un autre, je reste serein.",
+          "text": "Face à la colère d'un autre, je garde ma sérénité.",
           "dimension": "S",
           "trait": 26,
           "phrasing": "b"
@@ -560,7 +560,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je suis expressif dans mes gestes.",
+          "text": "Mes gestes sont très expressifs.",
           "dimension": "I",
           "trait": 27,
           "phrasing": "a"
@@ -581,7 +581,7 @@
         },
         {
           "key": "D",
-          "text": "Être simple exécutant me frustre.",
+          "text": "Me limiter à exécuter me frustre.",
           "dimension": "D",
           "trait": 29,
           "phrasing": "b"
@@ -607,7 +607,7 @@
         },
         {
           "key": "C",
-          "text": "Je suis objectif dans mes jugements.",
+          "text": "Je garde de l'objectivité dans mes jugements.",
           "dimension": "C",
           "trait": 20,
           "phrasing": "a"
@@ -666,7 +666,7 @@
         },
         {
           "key": "B",
-          "text": "Je suis mesuré dans mes réactions.",
+          "text": "Mes réactions sont mesurées.",
           "dimension": "C",
           "trait": 39,
           "phrasing": "a"
@@ -758,7 +758,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je lâche rarement quand je suis convaincu d'avoir raison.",
+          "text": "Je lâche rarement quand j'ai la conviction d'avoir raison.",
           "dimension": "D",
           "trait": 11,
           "phrasing": "b"
@@ -779,7 +779,7 @@
         },
         {
           "key": "D",
-          "text": "Je suis constant dans mon humeur.",
+          "text": "Mon humeur reste stable.",
           "dimension": "S",
           "trait": 29,
           "phrasing": "a"
@@ -812,7 +812,7 @@
         },
         {
           "key": "D",
-          "text": "Je suis sceptique face à un discours trop enthousiaste.",
+          "text": "Un discours trop enthousiaste éveille mon scepticisme.",
           "dimension": "C",
           "trait": 22,
           "phrasing": "b"
@@ -824,14 +824,14 @@
       "options": [
         {
           "key": "A",
-          "text": "Je suis réservé avec les inconnus.",
+          "text": "Je garde de la réserve avec les inconnus.",
           "dimension": "C",
           "trait": 24,
           "phrasing": "a"
         },
         {
           "key": "B",
-          "text": "Je suis déterminé à atteindre mes objectifs.",
+          "text": "Je poursuis mes objectifs avec détermination.",
           "dimension": "D",
           "trait": 32,
           "phrasing": "a"
@@ -911,7 +911,7 @@
         },
         {
           "key": "D",
-          "text": "Être aimé des autres compte beaucoup pour moi.",
+          "text": "Que les autres m'aiment compte beaucoup pour moi.",
           "dimension": "I",
           "trait": 28,
           "phrasing": "b"
@@ -963,7 +963,7 @@
         },
         {
           "key": "B",
-          "text": "Je suis fidèle à mes engagements.",
+          "text": "Je tiens mes engagements.",
           "dimension": "S",
           "trait": 3,
           "phrasing": "a"
@@ -1010,7 +1010,7 @@
         },
         {
           "key": "D",
-          "text": "Je préfère travailler seul sur des tâches complexes.",
+          "text": "Je préfère travailler en solo sur des tâches complexes.",
           "dimension": "C",
           "trait": 36,
           "phrasing": "a"
@@ -1069,7 +1069,7 @@
         },
         {
           "key": "C",
-          "text": "Me sentir mis de côté me touche beaucoup.",
+          "text": "Qu'on me mette de côté me touche beaucoup.",
           "dimension": "I",
           "trait": 23,
           "phrasing": "b"
@@ -1142,7 +1142,7 @@
         },
         {
           "key": "D",
-          "text": "Je peux paraître impatient.",
+          "text": "Je peux donner une impression d'impatience.",
           "dimension": "D",
           "trait": 17,
           "phrasing": "a"
@@ -1194,7 +1194,7 @@
         },
         {
           "key": "B",
-          "text": "Je suis loyal envers mon équipe.",
+          "text": "Je fais preuve de loyauté envers mon équipe.",
           "dimension": "S",
           "trait": 11,
           "phrasing": "a"
@@ -1220,7 +1220,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je reste discret sur mes émotions.",
+          "text": "Je fais preuve de discrétion sur mes émotions.",
           "dimension": "C",
           "trait": 11,
           "phrasing": "a"
@@ -1274,7 +1274,7 @@
         },
         {
           "key": "D",
-          "text": "Je suis exigeant sur la précision des mots.",
+          "text": "J'exige de la précision dans le choix des mots.",
           "dimension": "C",
           "trait": 28,
           "phrasing": "a"
@@ -1373,7 +1373,7 @@
         },
         {
           "key": "D",
-          "text": "Je suis discipliné dans mon travail.",
+          "text": "Je travaille avec discipline.",
           "dimension": "C",
           "trait": 33,
           "phrasing": "a"
@@ -1604,7 +1604,7 @@
         },
         {
           "key": "D",
-          "text": "Je suis patient avec les autres.",
+          "text": "Je fais preuve de patience avec les autres.",
           "dimension": "S",
           "trait": 0,
           "phrasing": "a"
@@ -1934,7 +1934,7 @@
         },
         {
           "key": "D",
-          "text": "Je suis spontané.",
+          "text": "Je fais preuve de spontanéité.",
           "dimension": "I",
           "trait": 10,
           "phrasing": "a"
@@ -2045,21 +2045,21 @@
       "options": [
         {
           "key": "A",
-          "text": "J'aime être le premier à démarrer quelque chose.",
+          "text": "J'aime démarrer quelque chose avant tout le monde.",
           "dimension": "D",
           "trait": 13,
           "phrasing": "b"
         },
         {
           "key": "B",
-          "text": "Je n'aime pas être bousculé.",
+          "text": "Je n'aime pas qu'on me bouscule.",
           "dimension": "S",
           "trait": 31,
           "phrasing": "a"
         },
         {
           "key": "C",
-          "text": "Je recompte pour être sûr du résultat.",
+          "text": "Je recompte pour m'assurer du résultat.",
           "dimension": "C",
           "trait": 35,
           "phrasing": "b"
@@ -2111,7 +2111,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je suis attentif au bien-être des autres.",
+          "text": "Le bien-être des autres retient mon attention.",
           "dimension": "S",
           "trait": 18,
           "phrasing": "a"
@@ -2177,14 +2177,14 @@
       "options": [
         {
           "key": "A",
-          "text": "Je suis doux dans ma façon de m'exprimer.",
+          "text": "Je m'exprime avec douceur.",
           "dimension": "S",
           "trait": 36,
           "phrasing": "a"
         },
         {
           "key": "B",
-          "text": "Une fois lancé vers un but, rien ne m'arrête.",
+          "text": "Une fois en route vers un but, rien ne m'arrête.",
           "dimension": "D",
           "trait": 32,
           "phrasing": "b"
@@ -2231,7 +2231,7 @@
         },
         {
           "key": "D",
-          "text": "Je suis sincère et sans calcul.",
+          "text": "Je fais preuve de sincérité, sans calcul.",
           "dimension": "S",
           "trait": 39,
           "phrasing": "a"
@@ -2627,7 +2627,7 @@
         },
         {
           "key": "D",
-          "text": "Je joue souvent le rôle de médiateur.",
+          "text": "Je fais souvent office de médiation entre les gens.",
           "dimension": "S",
           "trait": 32,
           "phrasing": "a"
@@ -2639,7 +2639,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je suis discret en groupe.",
+          "text": "Je fais preuve de discrétion en groupe.",
           "dimension": "S",
           "trait": 35,
           "phrasing": "a"
@@ -2653,7 +2653,7 @@
         },
         {
           "key": "C",
-          "text": "J'aime savoir exactement sur quels critères je serai évalué.",
+          "text": "J'aime savoir exactement sur quels critères on m'évaluera.",
           "dimension": "C",
           "trait": 30,
           "phrasing": "b"
@@ -2677,7 +2677,7 @@
       "D": {
         "bands": {
           "Low": "Tu laisses volontiers les autres décider et diriger : la confrontation directe et la compétition ne sont pas ton terrain naturel.",
-          "Mid": "Tu sais te montrer déterminé quand la situation l'exige, sans en faire ta façon habituelle d'avancer.",
+          "Mid": "Tu sais faire preuve de détermination quand la situation l'exige, sans en faire ta façon habituelle d'avancer.",
           "High": "Tu vas droit au but. Tu aimes relever des défis, décider vite et obtenir des résultats concrets."
         },
         "strengths": "Prise de décision rapide, goût du défi et de la compétition, sens des responsabilités, capacité à faire avancer les projets.",
@@ -2686,9 +2686,9 @@
       },
       "I": {
         "bands": {
-          "Low": "Tu es plus réservé dans les échanges de groupe : tu préfères observer et choisir tes mots avant de t'exprimer.",
+          "Low": "Tu restes plus en retrait dans les échanges de groupe : tu préfères observer et choisir tes mots avant de t'exprimer.",
           "Mid": "Tu es à l'aise dans les échanges sans pour autant chercher à être au centre de l'attention.",
-          "High": "Tu es enthousiaste et communicatif. Tu aimes convaincre, fédérer et créer du lien avec les autres."
+          "High": "Tu as de l'enthousiasme et le goût de la communication. Tu aimes convaincre, fédérer et créer du lien avec les autres."
         },
         "strengths": "Aisance à l'oral, optimisme contagieux, créativité et idées nouvelles, capacité à motiver un groupe.",
         "suitableWork": "Des rôles tournés vers les autres : relation client, communication, animation d'équipe, vente.",
@@ -2708,7 +2708,7 @@
         "bands": {
           "Low": "Tu avances davantage à l'instinct qu'à partir de données détaillées, et le flou ne te bloque pas.",
           "Mid": "Tu apprécies un minimum de méthode et de vérification, sans en faire une exigence systématique.",
-          "High": "Tu es précis, organisé et analytique. Tu recherches la qualité, l'exactitude et les choses bien faites."
+          "High": "Tu as le sens de la précision, de l'organisation et de l'analyse. Tu recherches la qualité, l'exactitude et les choses bien faites."
         },
         "strengths": "Rigueur et méthode, esprit d'analyse, travail fiable et soigné, sens du détail.",
         "suitableWork": "Des rôles qui valorisent la précision et l'analyse : contrôle qualité, finance, ingénierie, gestion de données.",
@@ -2717,11 +2717,11 @@
     }
   },
   "combos": {
-    "DI": "Déterminé et entraînant : tu fixes le cap et tu embarques les autres avec énergie.",
-    "DS": "Tenace et fiable : tu vas au bout de tes objectifs en restant constant dans l'effort.",
-    "DC": "Exigeant et méthodique : tu vises des résultats, et tu les veux irréprochables.",
-    "IS": "Chaleureux et à l'écoute : tu crées une ambiance positive et tu soutiens ton entourage.",
-    "IC": "Communicant et précis : tu sais expliquer des sujets complexes de façon claire et vivante.",
-    "SC": "Posé et rigoureux : tu travailles avec soin, régularité et une grande fiabilité."
+    "DI": "Détermination et force d'entraînement : tu fixes le cap et tu embarques les autres avec énergie.",
+    "DS": "Ténacité et fiabilité : tu vas au bout de tes objectifs avec constance dans l'effort.",
+    "DC": "Exigence et méthode : tu vises des résultats, et tu les veux irréprochables.",
+    "IS": "Chaleur et écoute : tu crées une ambiance positive et tu soutiens ton entourage.",
+    "IC": "Communication et précision : tu sais expliquer des sujets complexes de façon claire et vivante.",
+    "SC": "Sang-froid et rigueur : tu travailles avec soin, régularité et une grande fiabilité."
   }
 }

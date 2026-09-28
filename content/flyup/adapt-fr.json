@@ -91,7 +91,7 @@
         },
         {
           "key": "B",
-          "text": "Je pose des questions sans crainte de paraître incompétent.",
+          "text": "Je pose des questions sans crainte de paraître manquer de compétence.",
           "dimension": "COMM"
         },
         {
@@ -123,7 +123,7 @@
         },
         {
           "key": "C",
-          "text": "Je me sens à l'aise pour trancher seul quand la situation l'exige.",
+          "text": "Je suis à l'aise pour trancher sans avis extérieur quand la situation l'exige.",
           "dimension": "CONF"
         },
         {
@@ -155,7 +155,7 @@
         },
         {
           "key": "D",
-          "text": "Je reste concentré même après avoir commis une erreur.",
+          "text": "Je garde ma concentration même après avoir commis une erreur.",
           "dimension": "RESIL"
         }
       ]
@@ -226,7 +226,7 @@
         },
         {
           "key": "B",
-          "text": "J'assume les conséquences d'une décision difficile que j'ai prise seul.",
+          "text": "J'assume les conséquences d'une décision difficile que j'ai prise sans m'appuyer sur personne.",
           "dimension": "CONF"
         },
         {
@@ -236,7 +236,7 @@
         },
         {
           "key": "D",
-          "text": "Je respecte une règle même quand je suis certain de ne pas être contrôlé.",
+          "text": "Je respecte une règle même quand je sais que personne ne me contrôlera.",
           "dimension": "INTEG"
         }
       ]
@@ -361,7 +361,7 @@
         },
         {
           "key": "B",
-          "text": "Je m'assure que chacun dans l'équipe se sent écouté avant de trancher.",
+          "text": "Je m'assure que chacun dans l'équipe a pu s'exprimer avant de trancher.",
           "dimension": "TEAM"
         },
         {
@@ -437,7 +437,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je pose des questions sans crainte de paraître incompétent.",
+          "text": "Je pose des questions sans crainte de paraître manquer de compétence.",
           "dimension": "COMM"
         },
         {
@@ -572,7 +572,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je sais mettre de côté une contrariété personnelle pour rester opérationnel.",
+          "text": "Je sais mettre de côté une contrariété personnelle pour garder mon efficacité.",
           "dimension": "RESIL"
         },
         {
@@ -614,7 +614,7 @@
         },
         {
           "key": "D",
-          "text": "Un imprévu de dernière minute m'oblige rarement à me sentir dépassé.",
+          "text": "Un imprévu de dernière minute me submerge rarement.",
           "dimension": "FLEX"
         }
       ]
@@ -653,7 +653,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je respecte une règle même quand je suis certain de ne pas être contrôlé.",
+          "text": "Je respecte une règle même quand je sais que personne ne me contrôlera.",
           "dimension": "INTEG"
         },
         {
@@ -766,7 +766,7 @@
         },
         {
           "key": "B",
-          "text": "Je m'assure que chacun dans l'équipe se sent écouté avant de trancher.",
+          "text": "Je m'assure que chacun dans l'équipe a pu s'exprimer avant de trancher.",
           "dimension": "TEAM"
         },
         {
@@ -776,7 +776,7 @@
         },
         {
           "key": "D",
-          "text": "Je me sens motivé même sur les vols ou missions les moins valorisants.",
+          "text": "Ma motivation reste là même sur les vols ou missions les moins valorisants.",
           "dimension": "MOT"
         }
       ]
@@ -901,7 +901,7 @@
         },
         {
           "key": "B",
-          "text": "Je continue à fonctionner normalement même en étant fatigué ou contrarié.",
+          "text": "Je continue à fonctionner normalement même quand la fatigue ou la contrariété se font sentir.",
           "dimension": "RESIL"
         },
         {
@@ -950,7 +950,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je continue à fonctionner normalement même en étant fatigué ou contrarié.",
+          "text": "Je continue à fonctionner normalement même quand la fatigue ou la contrariété se font sentir.",
           "dimension": "RESIL"
         },
         {
@@ -965,7 +965,7 @@
         },
         {
           "key": "D",
-          "text": "Je me sens motivé même sur les vols ou missions les moins valorisants.",
+          "text": "Ma motivation reste là même sur les vols ou missions les moins valorisants.",
           "dimension": "MOT"
         }
       ]
@@ -1041,7 +1041,7 @@
         },
         {
           "key": "C",
-          "text": "Un imprévu de dernière minute m'oblige rarement à me sentir dépassé.",
+          "text": "Un imprévu de dernière minute me submerge rarement.",
           "dimension": "FLEX"
         },
         {
@@ -1095,7 +1095,7 @@
         },
         {
           "key": "C",
-          "text": "J'assume les conséquences d'une décision difficile que j'ai prise seul.",
+          "text": "J'assume les conséquences d'une décision difficile que j'ai prise sans m'appuyer sur personne.",
           "dimension": "CONF"
         },
         {
@@ -1144,7 +1144,7 @@
         },
         {
           "key": "B",
-          "text": "Je respecte une règle même quand je suis certain de ne pas être contrôlé.",
+          "text": "Je respecte une règle même quand je sais que personne ne me contrôlera.",
           "dimension": "INTEG"
         },
         {
@@ -1203,7 +1203,7 @@
         },
         {
           "key": "C",
-          "text": "Je me sens à l'aise pour trancher seul quand la situation l'exige.",
+          "text": "Je suis à l'aise pour trancher sans avis extérieur quand la situation l'exige.",
           "dimension": "CONF"
         },
         {
@@ -1230,7 +1230,7 @@
         },
         {
           "key": "C",
-          "text": "Je me sens à l'aise pour trancher seul quand la situation l'exige.",
+          "text": "Je suis à l'aise pour trancher sans avis extérieur quand la situation l'exige.",
           "dimension": "CONF"
         },
         {
@@ -1262,7 +1262,7 @@
         },
         {
           "key": "D",
-          "text": "Je reste concentré même après avoir commis une erreur.",
+          "text": "Je garde ma concentration même après avoir commis une erreur.",
           "dimension": "RESIL"
         }
       ]
@@ -1279,7 +1279,7 @@
         },
         {
           "key": "B",
-          "text": "Je m'assure que chacun dans l'équipe se sent écouté avant de trancher.",
+          "text": "Je m'assure que chacun dans l'équipe a pu s'exprimer avant de trancher.",
           "dimension": "TEAM"
         },
         {
@@ -1414,7 +1414,7 @@
         },
         {
           "key": "B",
-          "text": "Je sais mettre de côté une contrariété personnelle pour rester opérationnel.",
+          "text": "Je sais mettre de côté une contrariété personnelle pour garder mon efficacité.",
           "dimension": "RESIL"
         },
         {
@@ -1424,7 +1424,7 @@
         },
         {
           "key": "D",
-          "text": "Je m'assure que chacun dans l'équipe se sent écouté avant de trancher.",
+          "text": "Je m'assure que chacun dans l'équipe a pu s'exprimer avant de trancher.",
           "dimension": "TEAM"
         }
       ]
@@ -1549,7 +1549,7 @@
         },
         {
           "key": "B",
-          "text": "Je continue à fonctionner normalement même en étant fatigué ou contrarié.",
+          "text": "Je continue à fonctionner normalement même quand la fatigue ou la contrariété se font sentir.",
           "dimension": "RESIL"
         },
         {
@@ -1608,7 +1608,7 @@
         },
         {
           "key": "C",
-          "text": "J'assume les conséquences d'une décision difficile que j'ai prise seul.",
+          "text": "J'assume les conséquences d'une décision difficile que j'ai prise sans m'appuyer sur personne.",
           "dimension": "CONF"
         },
         {
@@ -1657,7 +1657,7 @@
         },
         {
           "key": "B",
-          "text": "Je reste concentré même après avoir commis une erreur.",
+          "text": "Je garde ma concentration même après avoir commis une erreur.",
           "dimension": "RESIL"
         },
         {
@@ -1733,7 +1733,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je sais mettre de côté une contrariété personnelle pour rester opérationnel.",
+          "text": "Je sais mettre de côté une contrariété personnelle pour garder mon efficacité.",
           "dimension": "RESIL"
         },
         {
@@ -1846,7 +1846,7 @@
         },
         {
           "key": "B",
-          "text": "Je reste concentré même après avoir commis une erreur.",
+          "text": "Je garde ma concentration même après avoir commis une erreur.",
           "dimension": "RESIL"
         },
         {
@@ -1868,7 +1868,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Un imprévu de dernière minute m'oblige rarement à me sentir dépassé.",
+          "text": "Un imprévu de dernière minute me submerge rarement.",
           "dimension": "FLEX"
         },
         {
@@ -1900,7 +1900,7 @@
         },
         {
           "key": "B",
-          "text": "Je pose des questions sans crainte de paraître incompétent.",
+          "text": "Je pose des questions sans crainte de paraître manquer de compétence.",
           "dimension": "COMM"
         },
         {
@@ -1949,7 +1949,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je me sens motivé même sur les vols ou missions les moins valorisants.",
+          "text": "Ma motivation reste là même sur les vols ou missions les moins valorisants.",
           "dimension": "MOT"
         },
         {
@@ -2084,7 +2084,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je sais mettre de côté une contrariété personnelle pour rester opérationnel.",
+          "text": "Je sais mettre de côté une contrariété personnelle pour garder mon efficacité.",
           "dimension": "RESIL"
         },
         {
@@ -2111,7 +2111,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je continue à fonctionner normalement même en étant fatigué ou contrarié.",
+          "text": "Je continue à fonctionner normalement même quand la fatigue ou la contrariété se font sentir.",
           "dimension": "RESIL"
         },
         {
@@ -2148,7 +2148,7 @@
         },
         {
           "key": "C",
-          "text": "Un imprévu de dernière minute m'oblige rarement à me sentir dépassé.",
+          "text": "Un imprévu de dernière minute me submerge rarement.",
           "dimension": "FLEX"
         },
         {
@@ -2202,7 +2202,7 @@
         },
         {
           "key": "C",
-          "text": "Je me sens motivé même sur les vols ou missions les moins valorisants.",
+          "text": "Ma motivation reste là même sur les vols ou missions les moins valorisants.",
           "dimension": "MOT"
         },
         {
@@ -2310,12 +2310,12 @@
         },
         {
           "key": "C",
-          "text": "J'assume les conséquences d'une décision difficile que j'ai prise seul.",
+          "text": "J'assume les conséquences d'une décision difficile que j'ai prise sans m'appuyer sur personne.",
           "dimension": "CONF"
         },
         {
           "key": "D",
-          "text": "Je respecte une règle même quand je suis certain de ne pas être contrôlé.",
+          "text": "Je respecte une règle même quand je sais que personne ne me contrôlera.",
           "dimension": "INTEG"
         }
       ]
@@ -2435,7 +2435,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je pose des questions sans crainte de paraître incompétent.",
+          "text": "Je pose des questions sans crainte de paraître manquer de compétence.",
           "dimension": "COMM"
         },
         {
@@ -2499,7 +2499,7 @@
         },
         {
           "key": "C",
-          "text": "Je me sens à l'aise pour trancher seul quand la situation l'exige.",
+          "text": "Je suis à l'aise pour trancher sans avis extérieur quand la situation l'exige.",
           "dimension": "CONF"
         },
         {
@@ -2840,7 +2840,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je pose des questions sans crainte de paraître incompétent.",
+          "text": "Je pose des questions sans crainte de paraître manquer de compétence.",
           "dimension": "COMM"
         },
         {
@@ -2882,7 +2882,7 @@
         },
         {
           "key": "D",
-          "text": "Un imprévu de dernière minute m'oblige rarement à me sentir dépassé.",
+          "text": "Un imprévu de dernière minute me submerge rarement.",
           "dimension": "FLEX"
         }
       ]
@@ -2894,7 +2894,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je respecte une règle même quand je suis certain de ne pas être contrôlé.",
+          "text": "Je respecte une règle même quand je sais que personne ne me contrôlera.",
           "dimension": "INTEG"
         },
         {
@@ -2980,7 +2980,7 @@
         },
         {
           "key": "B",
-          "text": "Je m'assure que chacun dans l'équipe se sent écouté avant de trancher.",
+          "text": "Je m'assure que chacun dans l'équipe a pu s'exprimer avant de trancher.",
           "dimension": "TEAM"
         },
         {
@@ -2990,7 +2990,7 @@
         },
         {
           "key": "D",
-          "text": "Je me sens motivé même sur les vols ou missions les moins valorisants.",
+          "text": "Ma motivation reste là même sur les vols ou missions les moins valorisants.",
           "dimension": "MOT"
         }
       ]
@@ -3078,14 +3078,14 @@
           "Mid": "Votre résilience au stress se situe dans une zone intermédiaire : vous semblez capable de faire face à la pression sans que ce soit systématiquement le trait qui vous définit le plus. C'est cohérent avec un profil qui gère le stress au cas par cas plutôt que par un tempérament à toute épreuve.",
           "High": "La résilience ressort nettement dans votre profil : vous vous reconnaissez souvent dans les affirmations sur le calme sous pression, la récupération rapide après un incident et la capacité à ne pas se laisser déstabiliser par l'échec. C'est un atout précieux dans un métier où la gestion du stress conditionne la sécurité des décisions."
         },
-        "strengths": "Stabilité émotionnelle et capacité à rester opérationnel après un imprévu ou une erreur.",
+        "strengths": "Stabilité émotionnelle et capacité à garder son efficacité opérationnelle après un imprévu ou une erreur.",
         "suitableWork": "Postes à forte charge mentale ou exposés à des situations d'urgence répétées.",
         "tips": "Entraînez-vous régulièrement sur simulateur à forte charge de travail pour consolider ce point fort."
       },
       "MOT": {
         "bands": {
           "Low": "La motivation professionnelle sur le long terme ressort moins que d'autres thèmes dans vos réponses. Cela peut simplement refléter un profil où d'autres dimensions (technique, relationnelle) sont plus centrales dans votre image de vous-même, sans remettre en cause votre engagement réel. À surveiller sur la durée : le risque d'usure face à la routine du métier.",
-          "Mid": "Votre motivation professionnelle se situe dans une zone intermédiaire : vous semblez engagé sans que cela soit le trait le plus marquant de votre profil. C'est un positionnement courant et sain, qui laisse de la place à d'autres moteurs personnels.",
+          "Mid": "Votre motivation professionnelle se situe dans une zone intermédiaire : votre engagement est réel sans que cela soit le trait le plus marquant de votre profil. C'est un positionnement courant et sain, qui laisse de la place à d'autres moteurs personnels.",
           "High": "La motivation professionnelle ressort fortement dans vos réponses : vous vous reconnaissez très souvent dans les affirmations sur l'engagement, la formation continue et le sens donné au métier, y compris dans ses aspects les plus routiniers. C'est un moteur solide pour tenir la durée d'une carrière exigeante."
         },
         "strengths": "Engagement durable dans le métier, y compris dans ses aspects les moins valorisants.",
@@ -3094,7 +3094,7 @@
       },
       "COMM": {
         "bands": {
-          "Low": "La communication proactive et directe n'est pas le thème le plus présent dans vos choix. Vous êtes peut-être plus réservé dans l'expression spontanée d'une information ou d'un désaccord. Un point à travailler pour le CRM : s'assurer que les informations essentielles circulent bien, même sans y être explicitement invité.",
+          "Low": "La communication proactive et directe n'est pas le thème le plus présent dans vos choix. Vous avez peut-être tendance à la réserve dans l'expression spontanée d'une information ou d'un désaccord. Un point à travailler pour le CRM : s'assurer que les informations essentielles circulent bien, même sans y être explicitement invité.",
           "Mid": "Votre communication se situe dans une zone équilibrée : vous partagez l'information et vérifiez la compréhension mutuelle sans que ce soit systématiquement le réflexe premier. C'est un socle correct qui peut encore se renforcer avec l'expérience d'équipage.",
           "High": "La communication claire et proactive ressort nettement dans votre profil : vous vous reconnaissez souvent dans les affirmations sur le fait de partager l'information sans attendre, de vérifier la bonne compréhension et de vous exprimer clairement même sous tension. C'est une compétence CRM essentielle en cockpit multi-équipage."
         },
@@ -3104,7 +3104,7 @@
       },
       "DISC": {
         "bands": {
-          "Low": "La discipline procédurale ressort moins que d'autres thèmes dans vos réponses. Cela ne veut pas dire que vous êtes désorganisé, mais que le respect scrupuleux de l'ordre des vérifications n'est pas ce qui vous caractérise le plus dans ce test. Point de vigilance : maintenir la rigueur sur les tâches routinières, où le relâchement guette le plus.",
+          "Low": "La discipline procédurale ressort moins que d'autres thèmes dans vos réponses. Cela ne veut pas dire que vous manquez d'organisation, mais que le respect scrupuleux de l'ordre des vérifications n'est pas ce qui vous caractérise le plus dans ce test. Point de vigilance : maintenir la rigueur sur les tâches routinières, où le relâchement guette le plus.",
           "Mid": "Votre rigueur procédurale se situe dans une zone intermédiaire : vous suivez les procédures sans que ce soit un trait absolument dominant de votre profil. C'est cohérent avec un équilibre entre respect du cadre et adaptation au contexte.",
           "High": "La discipline procédurale ressort fortement dans votre profil : vous vous reconnaissez très souvent dans les affirmations sur le respect scrupuleux des checklists, la vérification systématique et la rigueur maintenue même sous fatigue. C'est un atout central pour la sécurité, à condition de garder une capacité de jugement en cas de situation non prévue par la procédure."
         },
@@ -3126,7 +3126,7 @@
         "bands": {
           "Low": "La prise de décision autonome ressort moins fréquemment dans vos choix : vous préférez peut-être consulter ou attendre plus d'informations avant de trancher. À surveiller en formation : les situations d'urgence exigent parfois une décision rapide sans validation extérieure possible.",
           "Mid": "Votre confiance décisionnelle se situe dans une zone intermédiaire : vous savez trancher quand c'est nécessaire, sans que ce soit systématiquement votre réflexe premier. C'est un équilibre sain entre autonomie et consultation.",
-          "High": "La confiance en votre jugement ressort fortement dans votre profil : vous vous reconnaissez souvent dans les affirmations sur la prise de décision rapide et assumée, y compris en l'absence d'information complète. C'est un atout pour la gestion de situations d'urgence, à condition de rester ouvert à la remise en question quand un élément nouveau apparaît."
+          "High": "La confiance en votre jugement ressort fortement dans votre profil : vous vous reconnaissez souvent dans les affirmations sur la prise de décision rapide et assumée, y compris en l'absence d'information complète. C'est un atout pour la gestion de situations d'urgence, à condition de rester ouvert(e) à la remise en question quand un élément nouveau apparaît."
         },
         "strengths": "Capacité à décider rapidement et à assumer une décision, y compris en situation d'incertitude.",
         "suitableWork": "Postes à responsabilité de décision finale (commandant de bord, instruction, gestion de crise).",
@@ -3140,7 +3140,7 @@
         },
         "strengths": "Bonne intégration en équipage, écoute des autres et partage du mérite collectif.",
         "suitableWork": "Tout poste en équipage multi-membres où la coordination prime sur la performance individuelle.",
-        "tips": "Continuez à solliciter l'avis des autres, même quand vous êtes convaincu d'avoir la bonne réponse."
+        "tips": "Continuez à solliciter l'avis des autres, même quand vous avez la conviction d'avoir la bonne réponse."
       },
       "INTEG": {
         "bands": {

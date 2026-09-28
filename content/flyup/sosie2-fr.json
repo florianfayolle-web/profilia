@@ -95,7 +95,7 @@
     {
       "code": "APP",
       "label": "Recherche d'approbation",
-      "description": "Besoin d'être soutenu, encouragé et apprécié.",
+      "description": "Besoin de soutien, d'encouragement et d'appréciation.",
       "group": "interpersonal"
     },
     {
@@ -107,7 +107,7 @@
     {
       "code": "CSO",
       "label": "Considération sociale",
-      "description": "Besoin d'être reconnu, remarqué, respecté socialement.",
+      "description": "Besoin de reconnaissance, d'attention et de respect social.",
       "group": "interpersonal"
     },
     {
@@ -314,7 +314,7 @@
         },
         {
           "key": "D",
-          "text": "Les tensions autour de moi me laissent assez indifférent.",
+          "text": "Les tensions autour de moi ne m'atteignent guère.",
           "dimension": "RES",
           "desirable": false
         }
@@ -372,7 +372,7 @@
         },
         {
           "key": "C",
-          "text": "Je reste appliqué jusqu'à la dernière ligne d'un dossier fastidieux.",
+          "text": "Je mets du soin jusqu'à la dernière ligne d'un dossier fastidieux.",
           "dimension": "PER",
           "desirable": true
         },
@@ -520,7 +520,7 @@
       "options": [
         {
           "key": "A",
-          "text": "J'ai besoin d'être rassuré avant de me lancer.",
+          "text": "J'ai besoin de réassurance avant de me lancer.",
           "dimension": "CIR",
           "desirable": false
         },
@@ -570,7 +570,7 @@
         },
         {
           "key": "D",
-          "text": "Je remets à plus tard les tâches qui s'effectuent seul.",
+          "text": "Je remets à plus tard les tâches qui s'effectuent en solitaire.",
           "dimension": "SOC",
           "desirable": false
         }
@@ -590,7 +590,7 @@
         },
         {
           "key": "B",
-          "text": "On me dit parfois trop conciliant.",
+          "text": "On me dit parfois que je cherche trop à concilier.",
           "dimension": "ACC",
           "desirable": false
         },
@@ -666,7 +666,7 @@
         },
         {
           "key": "D",
-          "text": "Je reste appliqué jusqu'à la dernière ligne d'un dossier fastidieux.",
+          "text": "Je mets du soin jusqu'à la dernière ligne d'un dossier fastidieux.",
           "dimension": "PER",
           "desirable": true
         }
@@ -890,7 +890,7 @@
         },
         {
           "key": "D",
-          "text": "Je m'ennuie vite quand je dois travailler seul.",
+          "text": "Je m'ennuie vite quand je dois travailler en solitaire.",
           "dimension": "SOC",
           "desirable": false
         }
@@ -1032,7 +1032,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Je remets à plus tard les tâches qui s'effectuent seul.",
+          "text": "Je remets à plus tard les tâches qui s'effectuent en solitaire.",
           "dimension": "SOC",
           "desirable": false
         },
@@ -1096,7 +1096,7 @@
       "options": [
         {
           "key": "A",
-          "text": "On me dit parfois trop conciliant.",
+          "text": "On me dit parfois que je cherche trop à concilier.",
           "dimension": "ACC",
           "desirable": false
         },
@@ -1178,7 +1178,7 @@
         },
         {
           "key": "D",
-          "text": "Les tensions autour de moi me laissent assez indifférent.",
+          "text": "Les tensions autour de moi ne m'atteignent guère.",
           "dimension": "RES",
           "desirable": false
         }
@@ -1256,7 +1256,7 @@
         },
         {
           "key": "B",
-          "text": "Être compris quand j'explique une difficulté",
+          "text": "Que l'on me comprenne quand j'explique une difficulté",
           "dimension": "APP",
           "desirable": true
         },
@@ -1366,7 +1366,7 @@
         },
         {
           "key": "C",
-          "text": "Être attentif à ceux qui vont mal",
+          "text": "Porter attention à ceux qui vont mal",
           "dimension": "INT",
           "desirable": true
         }
@@ -1510,7 +1510,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Être compris quand j'explique une difficulté",
+          "text": "Que l'on me comprenne quand j'explique une difficulté",
           "dimension": "APP",
           "desirable": true
         },
@@ -1646,7 +1646,7 @@
         },
         {
           "key": "B",
-          "text": "Connaître les critères sur lesquels je serai évalué",
+          "text": "Connaître les critères sur lesquels on m'évaluera",
           "dimension": "OBJ",
           "desirable": true
         },
@@ -1678,7 +1678,7 @@
         },
         {
           "key": "C",
-          "text": "Être le premier à franchir une étape difficile",
+          "text": "Franchir en tête une étape difficile",
           "dimension": "CHA",
           "desirable": false
         }
@@ -1776,7 +1776,7 @@
         },
         {
           "key": "B",
-          "text": "Être rémunéré à la hauteur du travail que je fournis",
+          "text": "Qu'on me rémunère à la hauteur du travail que je fournis",
           "dimension": "MAT",
           "desirable": true
         },
@@ -1880,7 +1880,7 @@
         },
         {
           "key": "B",
-          "text": "Être traité avec les égards dus à mon rang",
+          "text": "Qu'on me traite avec les égards dus à mon rang",
           "dimension": "CSO",
           "desirable": false
         },
@@ -1900,7 +1900,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Être rémunéré à la hauteur du travail que je fournis",
+          "text": "Qu'on me rémunère à la hauteur du travail que je fournis",
           "dimension": "MAT",
           "desirable": true
         },
@@ -2042,7 +2042,7 @@
         },
         {
           "key": "C",
-          "text": "Être admiré pour mes réussites",
+          "text": "Que l'on admire mes réussites",
           "dimension": "CSO",
           "desirable": false
         }
@@ -2094,7 +2094,7 @@
         },
         {
           "key": "C",
-          "text": "Être attentif à ceux qui vont mal",
+          "text": "Porter attention à ceux qui vont mal",
           "dimension": "INT",
           "desirable": true
         }
@@ -2146,7 +2146,7 @@
         },
         {
           "key": "C",
-          "text": "Être le premier à franchir une étape difficile",
+          "text": "Franchir en tête une étape difficile",
           "dimension": "CHA",
           "desirable": false
         }
@@ -2244,7 +2244,7 @@
         },
         {
           "key": "B",
-          "text": "Être apprécié de tout le monde",
+          "text": "Que tout le monde m'apprécie",
           "dimension": "APP",
           "desirable": false
         },
@@ -2394,7 +2394,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Être admiré pour mes réussites",
+          "text": "Que l'on admire mes réussites",
           "dimension": "CSO",
           "desirable": false
         },

@@ -48,9 +48,9 @@
         "trait": "L'Adaptateur"
       },
       "report": {
-        "Amarque": "Vous avez besoin d'un cadre clair et de repères précis pour vous sentir efficace : vous planifiez, anticipez et aimez savoir où vous allez avant d'agir. Cette rigueur est un atout majeur dans un environnement aussi normé que l'aviation, où les procédures et les checklists structurent chaque étape du vol. Restez toutefois attentif à conserver votre capacité d'ajustement lorsque la situation réelle s'écarte du plan prévu.",
-        "Amodere": "Vous appréciez d'avancer avec une méthode et des repères, sans pour autant être rigide : vous savez vous organiser tout en laissant une marge de manœuvre lorsque c'est nécessaire. Cet équilibre entre méthode et souplesse est une qualité recherchée chez un pilote, en salle comme en vol.",
-        "equilibre": "Vous naviguez avec aisance entre structure et adaptation selon ce que la situation demande : ni rigide, ni désorganisé, vous ajustez votre degré de préparation au contexte. Cette souplesse de posture est une force, à condition de rester vigilant à ne pas manquer de méthode dans les moments qui l'exigent réellement.",
+        "Amarque": "Vous avez besoin d'un cadre clair et de repères précis pour vous sentir efficace : vous planifiez, anticipez et aimez savoir où vous allez avant d'agir. Cette rigueur est un atout majeur dans un environnement aussi normé que l'aviation, où les procédures et les checklists structurent chaque étape du vol. Veillez toutefois à conserver votre capacité d'ajustement lorsque la situation réelle s'écarte du plan prévu.",
+        "Amodere": "Vous appréciez d'avancer avec une méthode et des repères, sans pour autant faire preuve de rigidité : vous savez vous organiser tout en laissant une marge de manœuvre lorsque c'est nécessaire. Cet équilibre entre méthode et souplesse est une qualité recherchée chez un pilote, en salle comme en vol.",
+        "equilibre": "Vous naviguez avec aisance entre structure et adaptation selon ce que la situation demande : sans rigidité ni désorganisation, vous ajustez votre degré de préparation au contexte. Cette souplesse de posture est une force, à condition de veiller à ne pas manquer de méthode dans les moments qui l'exigent réellement.",
         "Bmodere": "Vous êtes à l'aise avec l'imprévu et préférez ajuster votre approche au fil de l'eau plutôt que de tout figer à l'avance. Cette souplesse est précieuse face à l'imprévu, à condition de veiller à ne pas négliger la préparation et le respect des procédures lorsque la situation l'exige strictement.",
         "Bmarque": "Vous avez une appétence marquée pour la liberté d'action et l'adaptation en temps réel, et un cadre trop rigide peut vous peser. C'est un vrai atout de réactivité face à l'imprévu, mais dans un métier où les procédures structurent la sécurité, il sera important de démontrer votre capacité à vous conformer strictement à un cadre lorsque celui-ci est non négociable."
       }
@@ -70,10 +70,10 @@
       },
       "report": {
         "Amarque": "Vous aimez aller au fond des choses, maîtriser un sujet avant de passer à autre chose, et vous vous appuyez volontiers sur ce que vous connaissez déjà. Cette capacité de concentration et d'approfondissement est un atout pour l'apprentissage technique exigeant du métier de pilote.",
-        "Amodere": "Vous avez tendance à privilégier la maîtrise et la continuité, tout en restant ouvert à changer de sujet ou d'approche quand cela s'avère utile. Cet équilibre vous permet de progresser en profondeur sans vous enfermer.",
+        "Amodere": "Vous avez tendance à privilégier la maîtrise et la continuité, tout en gardant une ouverture au changement de sujet ou d'approche quand cela s'avère utile. Cet équilibre vous permet de progresser en profondeur sans vous enfermer.",
         "equilibre": "Vous alternez naturellement entre approfondissement d'un sujet et curiosité pour de nouveaux domaines, selon le contexte. Cette polyvalence est utile dans un parcours de formation qui mêle matières techniques répétitives et situations toujours renouvelées.",
-        "Bmodere": "Vous êtes attiré par la nouveauté et le changement de rythme, tout en sachant rester concentré lorsque c'est nécessaire. Cette curiosité est un moteur d'apprentissage, à condition de veiller à la régularité sur les sujets qui demandent du temps et de la répétition.",
-        "Bmarque": "Vous avez besoin de variété, de nouveauté et de renouvellement pour rester stimulé, et la routine peut rapidement vous lasser. C'est une qualité pour vous adapter à des contextes changeants, mais la formation de pilote comporte aussi une part importante de répétition et de rigueur qu'il faudra savoir accueillir."
+        "Bmodere": "La nouveauté et le changement de rythme vous attirent, et vous savez garder votre concentration lorsque c'est nécessaire. Cette curiosité est un moteur d'apprentissage, à condition de veiller à la régularité sur les sujets qui demandent du temps et de la répétition.",
+        "Bmarque": "Vous avez besoin de variété, de nouveauté et de renouvellement pour garder votre entrain, et la routine peut rapidement vous lasser. C'est une qualité pour vous adapter à des contextes changeants, mais la formation de pilote comporte aussi une part importante de répétition et de rigueur qu'il faudra savoir accueillir."
       }
     },
     {
@@ -90,7 +90,7 @@
         "trait": "Le Connecteur"
       },
       "report": {
-        "Amarque": "Vous réfléchissez et prenez du recul seul(e) avant d'agir ou de vous exprimer, et vous êtes à l'aise dans le travail autonome et concentré. Cette capacité de recul est précieuse pour l'analyse des situations complexes, à condition de rester suffisamment communicant en équipage.",
+        "Amarque": "Vous réfléchissez et prenez du recul seul(e) avant d'agir ou de vous exprimer, et vous êtes à l'aise dans le travail autonome et concentré. Cette capacité de recul est précieuse pour l'analyse des situations complexes, à condition de communiquer suffisamment en équipage.",
         "Amodere": "Vous prenez volontiers le temps de réfléchir par vous-même avant d'échanger avec les autres, sans pour autant vous isoler. Cet équilibre entre autonomie et ouverture est adapté au travail en équipage, où chacun doit pouvoir réfléchir et communiquer.",
         "equilibre": "Vous passez naturellement de la réflexion individuelle à l'échange avec les autres selon les besoins de la situation. Cette flexibilité relationnelle est un atout dans le pilotage en équipage, qui suppose à la fois jugement personnel et coordination avec l'autre pilote.",
         "Bmodere": "Vous aimez construire vos idées et vos décisions en échangeant avec les autres, ce qui favorise la communication en équipage. Veillez à conserver, dans les moments qui l'exigent, la capacité à trancher seul(e) et rapidement.",
@@ -301,11 +301,11 @@
       "id": 14,
       "dimension": "jugement",
       "left": {
-        "text": "Je suis attentif à la façon dont mes décisions peuvent être ressenties par les autres.",
+        "text": "Je prête attention à la façon dont mes décisions peuvent être ressenties par les autres.",
         "pole": "B"
       },
       "right": {
-        "text": "Je suis attentif à la cohérence et à l’efficacité de mes décisions.",
+        "text": "Je prête attention à la cohérence et à l’efficacité de mes décisions.",
         "pole": "A"
       }
     },
@@ -361,11 +361,11 @@
       "id": 19,
       "dimension": "exploration",
       "left": {
-        "text": "Je me sens stimulé lorsque je peux maîtriser un sujet.",
+        "text": "Maîtriser un sujet me stimule.",
         "pole": "A"
       },
       "right": {
-        "text": "Je me sens stimulé lorsque je peux explorer un domaine inconnu.",
+        "text": "Explorer un domaine inconnu me stimule.",
         "pole": "B"
       }
     },
@@ -433,11 +433,11 @@
       "id": 25,
       "dimension": "structure",
       "left": {
-        "text": "Je me sens rassuré lorsque les règles sont clairement définies.",
+        "text": "Des règles clairement définies me rassurent.",
         "pole": "A"
       },
       "right": {
-        "text": "Je me sens stimulé lorsque je peux interpréter librement une situation.",
+        "text": "Pouvoir interpréter librement une situation me stimule.",
         "pole": "B"
       }
     },
@@ -541,11 +541,11 @@
       "id": 34,
       "dimension": "structure",
       "left": {
-        "text": "Je suis naturellement attiré par les projets qui ont une structure claire.",
+        "text": "Les projets qui ont une structure claire m’attirent naturellement.",
         "pole": "A"
       },
       "right": {
-        "text": "Je suis naturellement attiré par les projets qui laissent beaucoup de liberté.",
+        "text": "Les projets qui laissent beaucoup de liberté m’attirent naturellement.",
         "pole": "B"
       }
     },
@@ -565,7 +565,7 @@
       "id": 36,
       "dimension": "relationnel",
       "left": {
-        "text": "Je préfère résoudre seul un problème avant de demander de l’aide.",
+        "text": "Je préfère résoudre un problème par moi-même avant de demander de l’aide.",
         "pole": "A"
       },
       "right": {
@@ -577,11 +577,11 @@
       "id": 37,
       "dimension": "exploration",
       "left": {
-        "text": "Je me sens stimulé par la régularité.",
+        "text": "La régularité me stimule.",
         "pole": "A"
       },
       "right": {
-        "text": "Je me sens stimulé par la nouveauté.",
+        "text": "La nouveauté me stimule.",
         "pole": "B"
       }
     },
@@ -637,11 +637,11 @@
       "id": 42,
       "dimension": "orientation",
       "left": {
-        "text": "Je suis satisfait lorsque mon travail est précis.",
+        "text": "Un travail précis me satisfait.",
         "pole": "A"
       },
       "right": {
-        "text": "Je suis satisfait lorsque mon travail apporte quelque chose de nouveau.",
+        "text": "Un travail qui apporte quelque chose de nouveau me satisfait.",
         "pole": "B"
       }
     },
@@ -697,7 +697,7 @@
       "id": 47,
       "dimension": "jugement",
       "left": {
-        "text": "J’aime être reconnu pour la qualité de mon travail.",
+        "text": "J’aime qu’on reconnaisse la qualité de mon travail.",
         "pole": "A"
       },
       "right": {

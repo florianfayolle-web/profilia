@@ -39,7 +39,7 @@
       "description": "Le besoin d'un revenu régulier et prévisible",
       "lowText": "Un revenu irrégulier vous userait. Le salaire n'est pas qu'un montant chez vous, c'est un équilibre nerveux.",
       "midText": "Vous encaisseriez quelques mois creux, pas une année. Il vous faut une réserve constituée avant tout départ.",
-      "hiText": "Les mois sans rentrée ne vous paniquent pas, et vous êtes prêt à engager votre propre argent."
+      "hiText": "Les mois sans rentrée ne vous paniquent pas, et vous acceptez d'engager votre propre argent."
     },
     {
       "key": "resilience",
@@ -55,7 +55,7 @@
       "name": "Rapport au collectif et au cadre",
       "short": "Cadre",
       "description": "Le besoin d'équipe, de hiérarchie, de validation externe",
-      "lowText": "Le collectif et la reconnaissance d'un supérieur comptent dans votre satisfaction. Seul chez vous, le travail perdrait de son sens.",
+      "lowText": "Le collectif et la reconnaissance d'un supérieur comptent dans votre satisfaction. Sans personne autour de vous, le travail perdrait de son sens.",
       "midText": "Vous aimez l'équipe sans en dépendre. Un espace partagé ou des associés compenseraient l'isolement.",
       "hiText": "Ni équipe permanente ni validation hiérarchique ne vous sont nécessaires pour vous sentir à votre place."
     }
@@ -157,8 +157,8 @@
       "id": 13,
       "kind": "pair",
       "axis": "resilience",
-      "textA": "J'accepte d'avoir l'air incompétent le temps d'apprendre.",
-      "textB": "J'évite les situations où je risque d'avoir l'air incompétent.",
+      "textA": "J'accepte de sembler manquer de compétence le temps d'apprendre.",
+      "textB": "J'évite les situations où je risque de sembler manquer de compétence.",
       "flip": true
     },
     {
@@ -166,7 +166,7 @@
       "kind": "pair",
       "axis": "securite",
       "textA": "Je garde mon épargne à l'abri, quoi qu'il arrive.",
-      "textB": "Je suis prêt à mettre mon épargne dans un projet incertain.",
+      "textB": "J'accepte de mettre mon épargne dans un projet incertain.",
       "flip": false
     },
     {
@@ -180,7 +180,7 @@
       "id": 16,
       "kind": "pair",
       "axis": "cadre",
-      "textA": "Un travail passionnant que je mène seul.",
+      "textA": "Un travail passionnant que je mène en solitaire.",
       "textB": "Un travail moyen dans une équipe que j'aime.",
       "flip": true
     },
@@ -224,7 +224,7 @@
       "max": 99,
       "name": "Profil indépendant",
       "body": [
-        "Vous avez le socle d'un freelance : vous vous organisez seul, vous encaissez les refus, l'irrégularité ne vous terrifie pas. L'indépendance a de bonnes chances de vous convenir, en solo ou en micro-structure.",
+        "Vous avez le socle d'un freelance : vous vous organisez sans aide, vous encaissez les refus, l'irrégularité ne vous terrifie pas. L'indépendance a de bonnes chances de vous convenir, en solo ou en micro-structure.",
         "La piste : commencer par du travail en direct avec des clients, sans salariés ni charges fixes lourdes. Surveillez votre axe Initiative — c'est lui qui sépare l'indépendant qui vit de son métier de celui qui subit les périodes creuses."
       ]
     },

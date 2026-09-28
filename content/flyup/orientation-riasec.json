@@ -534,7 +534,7 @@
       "id": 65,
       "part": "value",
       "valeur": "rec",
-      "text": "Être reconnu comme compétent dans mon domaine"
+      "text": "Que l'on reconnaisse ma compétence dans mon domaine"
     },
     {
       "id": 66,
@@ -600,7 +600,7 @@
       "id": 76,
       "part": "skill",
       "dimension": "I",
-      "text": "Apprendre seul une notion difficile"
+      "text": "Apprendre par moi-même une notion difficile"
     },
     {
       "id": 77,

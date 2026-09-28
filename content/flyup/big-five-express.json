@@ -19,7 +19,7 @@
       "name": "Ouverture d'esprit",
       "poleA": {
         "label": "Curiosité & nouveauté",
-        "description": "Tu es attiré par les idées nouvelles, les expériences inhabituelles et les façons de penser différentes des tiennes. La routine t'use plus vite qu'elle ne te rassure.",
+        "description": "Les idées nouvelles, les expériences inhabituelles et les façons de penser différentes des tiennes t'attirent. La routine t'use plus vite qu'elle ne te rassure.",
         "trait": "Le Curieux"
       },
       "poleB": {
@@ -30,7 +30,7 @@
       "report": {
         "Amarque": "Ta curiosité est un moteur : tu vas naturellement vers les idées neuves, les sujets que tu ne maîtrises pas encore, les façons de faire différentes des tiennes. C'est une vraie force pour apprendre vite et sortir des sentiers battus — veille simplement à aller au bout des projets qui t'enthousiasment le moins sur la durée.",
         "Amodere": "Tu apprécies la nouveauté et les idées différentes des tiennes, sans en avoir un besoin permanent : tu sais t'enrichir d'une expérience inhabituelle tout en restant à l'aise dans un cadre plus classique.",
-        "equilibre": "Tu navigues avec aisance entre le connu et l'inconnu selon ce que la situation demande : ni fermé aux idées nouvelles, ni instable dans tes repères.",
+        "equilibre": "Tu navigues avec aisance entre le connu et l'inconnu selon ce que la situation demande : sans fermeture aux idées nouvelles, ni instabilité dans tes repères.",
         "Bmodere": "Tu préfères généralement ce qui est éprouvé à ce qui est incertain, sans pour autant fuir toute nouveauté quand elle a du sens pour toi.",
         "Bmarque": "Tu as une appétence marquée pour le concret et les méthodes qui ont fait leurs preuves. C'est un vrai gage de fiabilité, à condition de veiller à ne pas fermer la porte trop vite à une idée simplement parce qu'elle est nouvelle."
       }
@@ -49,9 +49,9 @@
         "trait": "Le Spontané"
       },
       "report": {
-        "Amarque": "Tu as besoin d'un cadre clair et de repères précis pour te sentir efficace : tu planifies, tu anticipes, tu aimes savoir où tu vas avant d'agir. C'est un vrai atout pour mener les choses à terme — reste juste attentif à garder ta capacité d'ajustement quand la réalité s'écarte du plan prévu.",
-        "Amodere": "Tu apprécies d'avancer avec une méthode, sans pour autant être rigide : tu sais t'organiser tout en laissant une marge de manœuvre quand c'est nécessaire.",
-        "equilibre": "Tu ajustes ton degré de préparation selon ce que la situation demande : ni rigide, ni désorganisé.",
+        "Amarque": "Tu as besoin d'un cadre clair et de repères précis pour te sentir efficace : tu planifies, tu anticipes, tu aimes savoir où tu vas avant d'agir. C'est un vrai atout pour mener les choses à terme — pense simplement à garder ta capacité d'ajustement quand la réalité s'écarte du plan prévu.",
+        "Amodere": "Tu apprécies d'avancer avec une méthode, sans rigidité : tu sais t'organiser tout en laissant une marge de manœuvre quand c'est nécessaire.",
+        "equilibre": "Tu ajustes ton degré de préparation selon ce que la situation demande : sans rigidité ni désorganisation.",
         "Bmodere": "Tu es à l'aise avec l'imprévu et tu préfères ajuster ton approche au fil de l'eau plutôt que de tout figer à l'avance.",
         "Bmarque": "Tu as une appétence marquée pour la liberté d'action et l'improvisation, et un cadre trop rigide peut vite t'étouffer. C'est un vrai atout de réactivité face à l'imprévu, à condition de veiller à ne pas laisser filer les tâches qui demandent, elles, un vrai suivi."
       }
@@ -71,9 +71,9 @@
       },
       "report": {
         "Amarque": "Tu tires ton énergie du contact avec les autres : les échanges, les groupes, l'imprévu social te stimulent plus qu'ils ne te coûtent. C'est un vrai atout relationnel — veille simplement à te ménager aussi des moments de retrait, même si tu n'en ressens pas toujours le besoin sur le moment.",
-        "Amodere": "Tu apprécies le contact social sans en avoir un besoin permanent : tu sais autant profiter d'un moment à plusieurs que d'un moment seul.",
+        "Amodere": "Tu apprécies le contact social sans en avoir un besoin permanent : tu sais autant profiter d'un moment à plusieurs que d'un moment en solo.",
         "equilibre": "Tu alternes naturellement entre moments sociaux et moments de retrait selon ton énergie du jour, sans dépendre exclusivement de l'un ou de l'autre.",
-        "Bmodere": "Tu apprécies les moments sociaux choisis, mais tu as besoin de temps seul pour recharger, surtout après une période dense en interactions.",
+        "Bmodere": "Tu apprécies les moments sociaux choisis, mais tu as besoin de temps en solitaire pour recharger, surtout après une période dense en interactions.",
         "Bmarque": "Tu te ressources nettement mieux dans le calme et la réflexion que dans l'agitation sociale, même si cela ne t'empêche pas d'apprécier les gens que tu choisis de voir. C'est une vraie force de concentration et de profondeur — veille simplement à ne pas t'isoler quand une situation demanderait, elle, d'aller vers les autres."
       }
     },
@@ -116,7 +116,7 @@
         "Amodere": "Tu restes globalement stable face aux imprévus et aux tensions, sans être totalement imperméable aux événements marquants.",
         "equilibre": "Ta stabilité émotionnelle varie selon le contexte : certaines situations te déstabilisent, d'autres te laissent de marbre, sans logique systématique.",
         "Bmodere": "Tu ressens les choses assez intensément et les tensions autour de toi t'affectent réellement, tout en gardant la plupart du temps les moyens d'y faire face.",
-        "Bmarque": "Tu ressens les choses avec intensité : les tensions, les critiques, les imprévus t'affectent réellement, et tes humeurs peuvent varier nettement selon ce qui se passe autour de toi. C'est aussi ce qui te rend attentif à ce que vivent les autres — veille simplement à te ménager des soupapes de décompression, surtout dans les périodes denses."
+        "Bmarque": "Tu ressens les choses avec intensité : les tensions, les critiques, les imprévus t'affectent réellement, et tes humeurs peuvent varier nettement selon ce qui se passe autour de toi. C'est aussi ce qui aiguise ton attention à ce que vivent les autres — veille simplement à te ménager des soupapes de décompression, surtout dans les périodes denses."
       }
     }
   ],
@@ -130,9 +130,9 @@
     { "id": 7, "dimension": "organisation", "left": { "text": "Je préfère improviser plutôt que suivre une méthode établie à la lettre.", "pole": "B" }, "right": { "text": "Je préfère suivre une méthode établie plutôt qu'improviser.", "pole": "A" } },
     { "id": 8, "dimension": "organisation", "left": { "text": "Le désordre autour de moi me coûte de l'énergie.", "pole": "A" }, "right": { "text": "Un peu de désordre ne me dérange pas vraiment.", "pole": "B" } },
     { "id": 9, "dimension": "extraversion", "left": { "text": "Un imprévu social (une invitation de dernière minute) me dynamise plutôt qu'il ne me fatigue.", "pole": "A" }, "right": { "text": "Un imprévu social me demande plus d'énergie qu'il ne m'en donne.", "pole": "B" } },
-    { "id": 10, "dimension": "extraversion", "left": { "text": "Après une longue journée entourée de monde, j'ai besoin de calme pour récupérer.", "pole": "B" }, "right": { "text": "Après une longue journée entourée de monde, je me sens plutôt chargé en énergie.", "pole": "A" } },
+    { "id": 10, "dimension": "extraversion", "left": { "text": "Après une longue journée entourée de monde, j'ai besoin de calme pour récupérer.", "pole": "B" }, "right": { "text": "Après une longue journée entourée de monde, je ressens plutôt un regain d'énergie.", "pole": "A" } },
     { "id": 11, "dimension": "extraversion", "left": { "text": "Je me sens à l'aise pour prendre la parole dans un groupe que je ne connais pas.", "pole": "A" }, "right": { "text": "Je préfère observer avant de prendre la parole dans un groupe que je ne connais pas.", "pole": "B" } },
-    { "id": 12, "dimension": "extraversion", "left": { "text": "Je me ressource plutôt seul, dans le calme.", "pole": "B" }, "right": { "text": "Je me ressource plutôt entouré, au contact des autres.", "pole": "A" } },
+    { "id": 12, "dimension": "extraversion", "left": { "text": "Je me ressource plutôt en solitaire, dans le calme.", "pole": "B" }, "right": { "text": "Je me ressource plutôt en compagnie, au contact des autres.", "pole": "A" } },
     { "id": 13, "dimension": "agreabilite", "left": { "text": "Je préfère arrondir les angles plutôt que d'entretenir une tension.", "pole": "A" }, "right": { "text": "Je préfère dire les choses franchement, même si ça crée une tension.", "pole": "B" } },
     { "id": 14, "dimension": "agreabilite", "left": { "text": "Le consensus de façade ne m'intéresse pas si le désaccord reste réel.", "pole": "B" }, "right": { "text": "Trouver un terrain d'entente compte plus pour moi que d'avoir raison.", "pole": "A" } },
     { "id": 15, "dimension": "agreabilite", "left": { "text": "Je fais confiance aux gens par défaut, jusqu'à preuve du contraire.", "pole": "A" }, "right": { "text": "Je fais plutôt confiance progressivement, à mesure que je connais la personne.", "pole": "B" } },
@@ -140,6 +140,6 @@
     { "id": 17, "dimension": "stabilite", "left": { "text": "Une critique inattendue me marque assez peu longtemps.", "pole": "A" }, "right": { "text": "Une critique inattendue peut me trotter dans la tête un bon moment.", "pole": "B" } },
     { "id": 18, "dimension": "stabilite", "left": { "text": "Mes humeurs varient nettement selon ce qui se passe dans ma journée.", "pole": "B" }, "right": { "text": "Mes humeurs restent assez stables d'un jour à l'autre.", "pole": "A" } },
     { "id": 19, "dimension": "stabilite", "left": { "text": "Sous pression, je garde généralement les idées claires.", "pole": "A" }, "right": { "text": "Sous pression, je sens la tension monter assez vite.", "pole": "B" } },
-    { "id": 20, "dimension": "stabilite", "left": { "text": "Les tensions autour de moi m'affectent réellement, même quand elles ne me concernent pas directement.", "pole": "B" }, "right": { "text": "Les tensions autour de moi me laissent relativement indifférent tant qu'elles ne me concernent pas directement.", "pole": "A" } }
+    { "id": 20, "dimension": "stabilite", "left": { "text": "Les tensions autour de moi m'affectent réellement, même quand elles ne me concernent pas directement.", "pole": "B" }, "right": { "text": "Les tensions autour de moi ne me touchent guère tant qu'elles ne me concernent pas directement.", "pole": "A" } }
   ]
 }
