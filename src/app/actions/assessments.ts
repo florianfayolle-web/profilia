@@ -11,6 +11,7 @@ import {
   scoreForcedChoiceQuad,
   scoreLikertScale,
   scoreLogicMcq,
+  scoreAdhdScreener,
   scoreOrientation,
   scorePcm,
   scoreSituationalJudgment,
@@ -26,6 +27,7 @@ import type {
   ForcedChoiceQuadDefinition,
   LikertScaleDefinition,
   LogicMcqDefinition,
+  AdhdScreenerDefinition,
   OrientationDefinition,
   PcmAnswer,
   PcmDefinition,
@@ -128,6 +130,13 @@ function scoreByFormat(
       return {
         result: scoreOrientation(
           definition as OrientationDefinition,
+          answers as Record<string, number>
+        ),
+      };
+    case "adhd_screener":
+      return {
+        result: scoreAdhdScreener(
+          definition as AdhdScreenerDefinition,
           answers as Record<string, number>
         ),
       };

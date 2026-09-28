@@ -22,6 +22,7 @@ import type {
   ForcedChoiceQuadDefinition,
   LikertScaleDefinition,
   LogicMcqDefinition,
+  AdhdScreenerDefinition,
   OrientationDefinition,
   PcmDefinition,
   SituationalJudgmentDefinition,
@@ -125,12 +126,24 @@ function introDemo(
       return (
         <AnswerDemo
           kind="choice"
-          lead="Quel nombre complète la suite ?  2 — 4 — 8 — 16 — ?"
+          lead="Quel nombre complète la suite ?  2, 4, 8, 16, ?"
           options={["24", "30", "32", "34"]}
           picked={2}
           caption="Exemple inventé : chaque question a une seule bonne réponse. Prends le temps de repérer la règle, mais garde un œil sur le chronomètre."
         />
       );
+    case "adhd_screener": {
+      const d = definition as AdhdScreenerDefinition;
+      return (
+        <AnswerDemo
+          kind="scale"
+          text={d.items[0].text}
+          labels={d.scaleLabels}
+          picked={2}
+          caption="Une question porte sur la fréquence d'une situation dans ta vie quotidienne récente : clique sur le niveau qui te correspond, de « jamais » à « très souvent »."
+        />
+      );
+    }
     default:
       return undefined;
   }
@@ -148,7 +161,8 @@ type Format =
   | "logic_mcq"
   | "career_balance"
   | "sosie_v2"
-  | "orientation_riasec";
+  | "orientation_riasec"
+  | "adhd_screener";
 
 type Definition =
   | ForcedChoicePairDefinition
@@ -161,7 +175,8 @@ type Definition =
   | LogicMcqDefinition
   | CareerBalanceDefinition
   | SosieDefinition
-  | OrientationDefinition;
+  | OrientationDefinition
+  | AdhdScreenerDefinition;
 
 function getItems(format: Format, definition: Definition) {
   switch (format) {
@@ -187,6 +202,8 @@ function getItems(format: Format, definition: Definition) {
       return (definition as SosieDefinition).items;
     case "orientation_riasec":
       return (definition as OrientationDefinition).items;
+    case "adhd_screener":
+      return (definition as AdhdScreenerDefinition).items;
   }
 }
 
@@ -429,6 +446,16 @@ function GenericAssessmentQuiz({
             selectedValue={selectedValue}
           />
         )}
+        {format === "adhd_screener" && (
+          <LikertQuestion
+            item={item as AdhdScreenerDefinition["items"][number]}
+            scale={(definition as AdhdScreenerDefinition).scaleLabels.map((label, value) => ({ label, value }))}
+            onChoose={choose}
+            disabled={disabled}
+            selectedValue={selectedValue}
+            testSlug={testSlug}
+          />
+        )}
         {format === "logic_mcq" && (
           <LogicQuestion
             item={item as LogicMcqDefinition["items"][number]}
@@ -612,7 +639,7 @@ function LikertQuestion({
   selectedValue,
   testSlug,
 }: {
-  item: LikertScaleDefinition["items"][number];
+  item: { id: number; text: string };
   scale: LikertScaleDefinition["scale"];
   onChoose: (value: number) => void;
   disabled: boolean;

@@ -109,7 +109,7 @@ export default async function GrandeEntrepriseTestsPage() {
             Nos tests pour ce contexte couvrent un bilan de personnalité
             complet sur 15 dimensions et un test DISC avec choix forcé
             (« le plus » / « le moins »), roue de positionnement et indice de
-            fiabilité détaillé — pour arriver à l&apos;entretien avec une
+            fiabilité détaillé, pour arriver à l&apos;entretien avec une
             vision claire de ton propre profil.
           </p>
           <p>

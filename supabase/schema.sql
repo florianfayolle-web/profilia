@@ -104,7 +104,8 @@ create table if not exists public.tests (
       'logic_mcq',
       'career_balance',
       'sosie_v2',
-      'orientation_riasec'
+      'orientation_riasec',
+      'adhd_screener'
     )),
   language text not null default 'fr',
   created_at timestamptz not null default now()
@@ -114,7 +115,7 @@ alter table public.tests drop constraint if exists tests_format_check;
 alter table public.tests add constraint tests_format_check check (format in (
   'single_choice', 'forced_choice_pair', 'forced_choice_quad', 'situational_judgment',
   'likert_scale', 'bipolar_pairs', 'disc_quad', 'pcm_likert', 'logic_mcq', 'career_balance', 'sosie_v2',
-  'orientation_riasec'
+  'orientation_riasec', 'adhd_screener'
 ));
 
 alter table public.tests enable row level security;

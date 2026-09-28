@@ -80,7 +80,7 @@ function DeleteAccountSection() {
         <p className="text-sm text-muted">
           Cette action est définitive : ton profil, tes tests débloqués et
           ton historique de résultats seront supprimés. Ton abonnement, s&apos;il
-          est actif, ne sera pas résilié automatiquement — annule-le d&apos;abord
+          est actif, ne sera pas résilié automatiquement, annule-le d&apos;abord
           depuis la section Abonnement ci-dessus.
         </p>
 

@@ -22,7 +22,7 @@ export function EmailGate({
         Ton profil est prêt 🎉
       </p>
       <p className="mt-2 text-sm text-muted">
-        Entre ton email pour voir ton résultat complet — pas de mot de passe,
+        Entre ton email pour voir ton résultat complet, pas de mot de passe,
         pas de compte à créer.
       </p>
 

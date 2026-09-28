@@ -26,15 +26,15 @@ export const GUIDES: Guide[] = [
       {
         heading: "Le principe du choix forcé ipsatif",
         body: [
-          "Le format SOSIE 2 présente des groupes de propositions — des tétrades de 4 affirmations pour la partie personnalité, des triades de 3 propositions pour la partie valeurs — et te demande de désigner celle qui te correspond le plus et celle qui te correspond le moins. Contrairement à une échelle de Likert (« pas du tout d'accord » à « tout à fait d'accord »), tu dois trancher à chaque fois entre plusieurs propositions, ce qui rend plus difficile de répondre « ce qu'on attend de toi » de façon systématique.",
+          "Le format SOSIE 2 présente des groupes de propositions, des tétrades de 4 affirmations pour la partie personnalité, des triades de 3 propositions pour la partie valeurs, et te demande de désigner celle qui te correspond le plus et celle qui te correspond le moins. Contrairement à une échelle de Likert (« pas du tout d'accord » à « tout à fait d'accord »), tu dois trancher à chaque fois entre plusieurs propositions, ce qui rend plus difficile de répondre « ce qu'on attend de toi » de façon systématique.",
           "C'est un test dit ipsatif : tes dimensions se comparent entre elles, à l'intérieur de ton propre profil, jamais à une norme externe. Un score bas sur une dimension signale une priorité plus faible que tes autres dimensions, pas une insuffisance en soi.",
         ],
       },
       {
         heading: "Ce que mesure le test : 8 traits et 12 valeurs",
         body: [
-          "La partie « traits » explore 8 dimensions de personnalité (dominance, persévérance, résistance au stress, sociabilité, circonspection, curiosité d'esprit, acceptation des autres, dynamisme) à travers 32 tétrades — chaque trait est proposé 16 fois. Chaque groupe combine volontairement des affirmations d'attrait comparable — deux socialement valorisées, deux moins valorisées — pour que tu ne puisses pas donner une image uniformément flatteuse de toi-même en suivant simplement l'attrait apparent des énoncés.",
-          "La partie « valeurs » explore 12 dimensions (6 valeurs personnelles comme le matérialisme ou le goût du challenge, 6 valeurs interpersonnelles comme le besoin d'approbation ou le goût du pouvoir) à travers 48 triades — chaque valeur est proposée 12 fois — sur le même principe de choix forcé. Les 20 dimensions reprennent les intitulés publiés par l'éditeur du SOSIE 2nd Generation, pour un vocabulaire directement transférable si tu passes ensuite l'épreuve officielle.",
+          "La partie « traits » explore 8 dimensions de personnalité (dominance, persévérance, résistance au stress, sociabilité, circonspection, curiosité d'esprit, acceptation des autres, dynamisme) à travers 32 tétrades, chaque trait est proposé 16 fois. Chaque groupe combine volontairement des affirmations d'attrait comparable, deux socialement valorisées, deux moins valorisées, pour que tu ne puisses pas donner une image uniformément flatteuse de toi-même en suivant simplement l'attrait apparent des énoncés.",
+          "La partie « valeurs » explore 12 dimensions (6 valeurs personnelles comme le matérialisme ou le goût du challenge, 6 valeurs interpersonnelles comme le besoin d'approbation ou le goût du pouvoir) à travers 48 triades, chaque valeur est proposée 12 fois, sur le même principe de choix forcé. Les 20 dimensions reprennent les intitulés publiés par l'éditeur du SOSIE 2nd Generation, pour un vocabulaire directement transférable si tu passes ensuite l'épreuve officielle.",
         ],
       },
       {
@@ -46,7 +46,7 @@ export const GUIDES: Guide[] = [
       {
         heading: "Comment s'entraîner sans fausser le résultat",
         body: [
-          "L'objectif d'un entraînement n'est pas de mémoriser les « bonnes » réponses — il n'y en a pas — mais de te familiariser avec la structure de l'épreuve : le rythme des choix forcés, la sensation de devoir trancher rapidement entre des options qui te semblent parfois toutes vraies.",
+          "L'objectif d'un entraînement n'est pas de mémoriser les « bonnes » réponses, il n'y en a pas, mais de te familiariser avec la structure de l'épreuve : le rythme des choix forcés, la sensation de devoir trancher rapidement entre des options qui te semblent parfois toutes vraies.",
           "Réponds avec spontanéité plutôt qu'en essayant d'anticiper ce que le recruteur veut lire : un profil trop lissé ou changé d'une session à l'autre finit souvent par se contredire, notamment à l'oral en entretien. Le test intègre d'ailleurs des groupes de contrôle (des copies exactes de groupes déjà posés, insérées sans signalement) qui vérifient la stabilité de tes réponses.",
           "Utilise ensuite le rapport détaillé par dimension pour identifier tes points forts et tes axes de vigilance, et prépare des exemples concrets à l'oral qui illustrent ces points sans les contredire.",
         ],
@@ -83,7 +83,7 @@ export const GUIDES: Guide[] = [
         heading: "Le principe du jugement situationnel",
         body: [
           "Chaque question du TD12 présente une situation réaliste (un conflit d'équipe, une décision à prendre sous contrainte de temps, une communication délicate) suivie de plusieurs réponses possibles. Tu dois identifier la réponse la plus adaptée, parfois la moins adaptée, ou classer l'ensemble des options par ordre de pertinence.",
-          "Ce format ne mesure pas ta personnalité de façon directe comme un questionnaire d'auto-évaluation : il mesure ton jugement professionnel face à des cas concrets, souvent proches de situations de type CRM (Crew Resource Management) — communication, prise de décision partagée, gestion de l'urgence.",
+          "Ce format ne mesure pas ta personnalité de façon directe comme un questionnaire d'auto-évaluation : il mesure ton jugement professionnel face à des cas concrets, souvent proches de situations de type CRM (Crew Resource Management), communication, prise de décision partagée, gestion de l'urgence.",
         ],
       },
       {
@@ -97,7 +97,7 @@ export const GUIDES: Guide[] = [
         heading: "Comment s'entraîner",
         body: [
           "Le principal piège du jugement situationnel est de répondre systématiquement par la réponse qui te semble « la plus consensuelle » ou « la plus prudente » : les recruteurs sérieux repèrent ce biais (appelé désirabilité sociale) et il peut être signalé si tu choisis trop souvent l'option jugée « idéale » sans nuance.",
-          "Entraîne-toi à lire chaque situation attentivement, à évaluer les options sur leurs mérites propres plutôt que sur une intuition rapide, et à accepter qu'il n'y a pas toujours une réponse parfaite — seulement une réponse la mieux adaptée au contexte donné.",
+          "Entraîne-toi à lire chaque situation attentivement, à évaluer les options sur leurs mérites propres plutôt que sur une intuition rapide, et à accepter qu'il n'y a pas toujours une réponse parfaite, seulement une réponse la mieux adaptée au contexte donné.",
         ],
       },
     ],
@@ -238,7 +238,7 @@ export const GUIDES: Guide[] = [
       {
         heading: "Le modèle Big Five (OCEAN)",
         body: [
-          "Le modèle Big Five est l'un des modèles de personnalité les plus étudiés en psychologie : il mesure cinq grandes dimensions — Ouverture d'esprit, Conscienciosité (rigueur & organisation), Extraversion, Agréabilité (coopération & esprit d'équipe), et Névrosisme (ici mesuré à l'inverse, comme stabilité émotionnelle). L'acronyme OCEAN reprend l'initiale de chaque dimension en anglais.",
+          "Le modèle Big Five est l'un des modèles de personnalité les plus étudiés en psychologie : il mesure cinq grandes dimensions, Ouverture d'esprit, Conscienciosité (rigueur & organisation), Extraversion, Agréabilité (coopération & esprit d'équipe), et Névrosisme (ici mesuré à l'inverse, comme stabilité émotionnelle). L'acronyme OCEAN reprend l'initiale de chaque dimension en anglais.",
           "Contrairement aux tests à choix forcé, ce type de test utilise généralement une échelle d'accord en 5 niveaux, de « pas du tout d'accord » à « tout à fait d'accord », appliquée à des affirmations simples.",
         ],
       },
@@ -289,7 +289,7 @@ export const GUIDES: Guide[] = [
       {
         heading: "Comprendre ton profil",
         body: [
-          "Chaque profil (par exemple Le Stratège, L'Enthousiaste, Le Gardien...) est décrit par un texte original propre à ce site, avec ses points forts et ses points de vigilance en contexte professionnel — pas une reproduction des textes d'un autre outil de typologie.",
+          "Chaque profil (par exemple Le Stratège, L'Enthousiaste, Le Gardien...) est décrit par un texte original propre à ce site, avec ses points forts et ses points de vigilance en contexte professionnel, pas une reproduction des textes d'un autre outil de typologie.",
           "Ce type de profil est surtout utile comme point de départ de réflexion sur ton mode de fonctionnement naturel : il ne doit pas être lu comme une case figée, mais comme une tendance parmi d'autres, qui peut varier selon le contexte.",
         ],
       },
@@ -322,13 +322,13 @@ GUIDES.push({
       heading: "Le modèle DISC : 4 styles comportementaux",
       body: [
         "Le DISC situe ta personnalité sur quatre grandes tendances comportementales : Dominant (affirmé, orienté résultats), Influent (communicatif, orienté relationnel), Stable (posé, orienté coopération) et Conforme (méthodique, orienté précision). Personne n'est « pur » sur un seul style : ton profil est un dosage des quatre, avec un ou deux styles dominants.",
-        "C'est un cadre de psychologie comportementale public et largement répandu, utilisé par de nombreuses entreprises et cabinets de recrutement sous des formes commerciales variées — le nom « DISC » lui-même n'est pas une marque protégée.",
+        "C'est un cadre de psychologie comportementale public et largement répandu, utilisé par de nombreuses entreprises et cabinets de recrutement sous des formes commerciales variées, le nom « DISC » lui-même n'est pas une marque protégée.",
       ],
     },
     {
       heading: "Comment se déroule notre test DISC gratuit",
       body: [
-        "Le test présente 80 groupes de 4 affirmations. Pour chaque groupe, tu choisis l'affirmation qui te ressemble le plus (+) et celle qui te ressemble le moins (−) — un format à choix forcé qui t'oblige à trancher plutôt que de rester neutre partout, ce qui donne un profil plus net.",
+        "Le test présente 80 groupes de 4 affirmations. Pour chaque groupe, tu choisis l'affirmation qui te ressemble le plus (+) et celle qui te ressemble le moins (−), un format à choix forcé qui t'oblige à trancher plutôt que de rester neutre partout, ce qui donne un profil plus net.",
         "Les 5 premiers groupes sont gratuits, sans engagement ni carte bancaire, pour te permettre de tester le format avant d'aller plus loin.",
       ],
     },
@@ -354,7 +354,7 @@ GUIDES.push({
     {
       question: "Quelle différence avec un inventaire de personnalité classique ?",
       answer:
-        "Un inventaire de personnalité comme le nôtre en choix forcé par paires (SOSIE) mesure des dimensions fines sur une échelle continue. Le DISC, lui, situe ton profil sur 4 styles comportementaux larges — plus simple à retenir, souvent utilisé en complément d'un inventaire plus détaillé.",
+        "Un inventaire de personnalité comme le nôtre en choix forcé par paires (SOSIE) mesure des dimensions fines sur une échelle continue. Le DISC, lui, situe ton profil sur 4 styles comportementaux larges, plus simple à retenir, souvent utilisé en complément d'un inventaire plus détaillé.",
     },
   ],
 });
@@ -421,7 +421,7 @@ GUIDES.push({
     {
       heading: "Ce que le test chercherait à mesurer",
       body: [
-        "D'après ces mêmes retours, les dimensions explorées incluraient le leadership et la capacité d'exécution, la gestion de l'impulsivité, la propension à l'abstraction et les compétences de communication — des traits pertinents dans un groupe industriel technologique comme Thales.",
+        "D'après ces mêmes retours, les dimensions explorées incluraient le leadership et la capacité d'exécution, la gestion de l'impulsivité, la propension à l'abstraction et les compétences de communication, des traits pertinents dans un groupe industriel technologique comme Thales.",
       ],
     },
     {
@@ -577,7 +577,7 @@ GUIDES.push({
     {
       heading: "Raisonnement verbal et jugement situationnel",
       body: [
-        "Une partie des épreuves porte sur la compréhension de texte (identifier des synonymes, antonymes, analogies à partir de courts passages). Une autre partie prend la forme de mises en situation propres au travail en cabine : plusieurs réponses possibles sont proposées face à un scénario, et il faut les classer selon ce qui te semble le comportement le plus adapté — exactement le principe d'un test de jugement situationnel.",
+        "Une partie des épreuves porte sur la compréhension de texte (identifier des synonymes, antonymes, analogies à partir de courts passages). Une autre partie prend la forme de mises en situation propres au travail en cabine : plusieurs réponses possibles sont proposées face à un scénario, et il faut les classer selon ce qui te semble le comportement le plus adapté, exactement le principe d'un test de jugement situationnel.",
       ],
     },
     {
@@ -621,7 +621,7 @@ GUIDES.push({
     {
       heading: "PNC : un test de personnalité par paires d'affirmations",
       body: [
-        "Pour le personnel de cabine, le questionnaire présente des paires d'affirmations, et il faut choisir celle qui te correspond le mieux entre les deux — plutôt qu'indiquer un simple degré d'accord sur une échelle. Ce format explore des dimensions comme le travail en équipe, la gestion du stress, l'adaptabilité au changement, le sens de l'organisation et l'empathie relationnelle.",
+        "Pour le personnel de cabine, le questionnaire présente des paires d'affirmations, et il faut choisir celle qui te correspond le mieux entre les deux, plutôt qu'indiquer un simple degré d'accord sur une échelle. Ce format explore des dimensions comme le travail en équipe, la gestion du stress, l'adaptabilité au changement, le sens de l'organisation et l'empathie relationnelle.",
         "Il n'y a pas de bonne ou de mauvaise réponse dans l'absolu : l'objectif est de vérifier que ton style de fonctionnement est cohérent avec la culture et les contraintes opérationnelles de la compagnie, pas de repérer un profil « parfait » universel.",
       ],
     },
@@ -692,7 +692,7 @@ GUIDES.push({
       heading: "Comment t'y préparer",
       body: [
         "Pour la partie personnalité, l'entraînement le plus utile consiste à te familiariser avec le principe d'une échelle d'accord/désaccord appliquée à des affirmations personnelles, pour ne pas hésiter sur la mécanique de réponse le jour de l'épreuve. Réponds toujours avec spontanéité : ce type de questionnaire n'a pas de bonne réponse universelle, seulement un profil cohérent.",
-        "Pour les tests psychotechniques et l'épreuve psychomotrice, qui mesurent des aptitudes différentes de la personnalité, une préparation spécifique et régulière reste la meilleure approche — ce n'est pas l'objet de ce site, centré sur les questionnaires de personnalité.",
+        "Pour les tests psychotechniques et l'épreuve psychomotrice, qui mesurent des aptitudes différentes de la personnalité, une préparation spécifique et régulière reste la meilleure approche, ce n'est pas l'objet de ce site, centré sur les questionnaires de personnalité.",
       ],
     },
   ],
@@ -787,7 +787,7 @@ GUIDES.push({
     {
       heading: "Le modèle : 6 profils, une base et une phase",
       body: [
-        "La Process Communication distingue six styles de personnalité — Empathique, Travaillomane, Persévérant, Rêveur, Rebelle, Promoteur — chacun avec sa façon de percevoir le monde, ses talents naturels et ses signaux de stress spécifiques. Personne n'appartient à un seul profil : chacun est un mélange des six, structuré comme un immeuble à étages.",
+        "La Process Communication distingue six styles de personnalité, Empathique, Travaillomane, Persévérant, Rêveur, Rebelle, Promoteur, chacun avec sa façon de percevoir le monde, ses talents naturels et ses signaux de stress spécifiques. Personne n'appartient à un seul profil : chacun est un mélange des six, structuré comme un immeuble à étages.",
         "Le modèle distingue la « base » (le profil installé depuis l'enfance, stable toute la vie, celui qui structure ta façon de percevoir le monde) et la « phase » (l'étage où tu vis actuellement, qui peut évoluer au fil des périodes de vie et qui commande tes besoins psychologiques du moment).",
       ],
     },
@@ -815,7 +815,7 @@ GUIDES.push({
     {
       question: "Quelle différence entre la base et la phase ?",
       answer:
-        "La base est stable toute la vie et détermine ta façon de percevoir le monde. La phase peut changer au fil des grandes périodes de vie et détermine tes besoins psychologiques du moment — les deux peuvent coïncider ou diverger.",
+        "La base est stable toute la vie et détermine ta façon de percevoir le monde. La phase peut changer au fil des grandes périodes de vie et détermine tes besoins psychologiques du moment, les deux peuvent coïncider ou diverger.",
     },
     {
       question: "Quelle différence avec un test DISC ou MBTI ?",
@@ -852,7 +852,7 @@ GUIDES.push({
       heading: "Lire ton résultat et progresser",
       body: [
         "Ton rapport affiche ton score global sur 30, ton score détaillé pour chacune des huit familles, et le corrigé complet des 30 questions avec une explication de la méthode de résolution pour chaque item.",
-        "Le score brut compte moins que sa répartition : un candidat qui perd des points sur un seul domaine (le raisonnement spatial, par exemple) n'a pas un problème d'aptitude générale, il a un domaine précis à travailler — et c'est celui qui progresse le plus vite avec de l'entraînement ciblé.",
+        "Le score brut compte moins que sa répartition : un candidat qui perd des points sur un seul domaine (le raisonnement spatial, par exemple) n'a pas un problème d'aptitude générale, il a un domaine précis à travailler, et c'est celui qui progresse le plus vite avec de l'entraînement ciblé.",
       ],
     },
   ],
@@ -888,7 +888,7 @@ GUIDES.push({
       heading: "Six axes, pas un verdict",
       body: [
         "Tolérance à l'incertitude, autonomie et auto-organisation, initiative et aisance commerciale, rapport à la sécurité financière, résilience face à l'échec, rapport au collectif et au cadre : chaque axe est indépendant des autres, et un profil entrepreneurial cohérent n'a pas besoin d'être extrême sur les six à la fois.",
-        "Le test ne dit jamais qu'entreprendre est une bonne ou une mauvaise idée dans l'absolu : il indique ce qui, dans ton fonctionnement actuel, faciliterait ou coûterait dans un projet entrepreneurial — à toi de décider ce que tu en fais.",
+        "Le test ne dit jamais qu'entreprendre est une bonne ou une mauvaise idée dans l'absolu : il indique ce qui, dans ton fonctionnement actuel, faciliterait ou coûterait dans un projet entrepreneurial, à toi de décider ce que tu en fais.",
       ],
     },
     {
@@ -901,7 +901,7 @@ GUIDES.push({
     {
       heading: "Lire ton résultat : score, profil et points de vigilance",
       body: [
-        "Ton rapport affiche un score global sur 120, un profil parmi quatre (profil salarié, intrapreneur, indépendant, créateur d'entreprise), le détail par axe avec les arguments qui penchent vers le salariat ou vers l'indépendance, et des points de vigilance personnalisés quand certaines combinaisons d'axes le justifient — par exemple une appétence globale forte mais une faible tolérance à l'incertitude.",
+        "Ton rapport affiche un score global sur 120, un profil parmi quatre (profil salarié, intrapreneur, indépendant, créateur d'entreprise), le détail par axe avec les arguments qui penchent vers le salariat ou vers l'indépendance, et des points de vigilance personnalisés quand certaines combinaisons d'axes le justifient, par exemple une appétence globale forte mais une faible tolérance à l'incertitude.",
         "Le profil « intrapreneur » (autonomie et initiative fortes, sans l'appétence pour le risque financier) est le plus fréquent et le plus mal servi par les tests qui ne posent qu'une question binaire salarié/entrepreneur.",
       ],
     },
@@ -932,7 +932,7 @@ GUIDES.push({
   metaDescription:
     "Comprendre le modèle RIASEC (Réaliste, Investigateur, Artistique, Social, Entreprenant, Conventionnel) utilisé par la plupart des tests d'orientation, et comment notre test croise activités, intérêts, valeurs et compétences pour te proposer des métiers.",
   intro:
-    "Le modèle RIASEC est le cadre le plus utilisé au monde pour l'orientation scolaire et professionnelle — c'est celui que reprennent la plupart des outils de l'Onisep et des conseillers d'orientation. Voici comment fonctionne notre test « Boussole » et comment interpréter ton résultat.",
+    "Le modèle RIASEC est le cadre le plus utilisé au monde pour l'orientation scolaire et professionnelle, c'est celui que reprennent la plupart des outils de l'Onisep et des conseillers d'orientation. Voici comment fonctionne notre test « Boussole » et comment interpréter ton résultat.",
   sections: [
     {
       heading: "Le modèle RIASEC : six grandes familles",
@@ -988,7 +988,7 @@ GUIDES.push({
       heading: "Un format court, inspiré du modèle Big Five",
       body: [
         "Le test présente 20 affirmations en paires opposées, réparties sur 5 grandes dimensions : ouverture d'esprit, organisation, extraversion, agréabilité et stabilité émotionnelle. Pour chaque paire, tu choisis l'affirmation qui te correspond le plus, sur une échelle en 5 niveaux.",
-        "Ces 5 dimensions sont celles du modèle Big Five (OCEAN), le cadre le plus étudié et le plus utilisé en psychologie de la personnalité depuis plusieurs décennies — contrairement à des typologies plus commerciales, il fait l'objet d'un large consensus scientifique.",
+        "Ces 5 dimensions sont celles du modèle Big Five (OCEAN), le cadre le plus étudié et le plus utilisé en psychologie de la personnalité depuis plusieurs décennies, contrairement à des typologies plus commerciales, il fait l'objet d'un large consensus scientifique.",
       ],
     },
     {
@@ -1014,12 +1014,98 @@ GUIDES.push({
     {
       question: "Faut-il créer un compte ?",
       answer:
-        "Non. Tu laisses juste ton email pour recevoir ton résultat — aucun mot de passe, aucun compte à créer.",
+        "Non. Tu laisses juste ton email pour recevoir ton résultat, aucun mot de passe, aucun compte à créer.",
     },
     {
       question: "Quelle différence avec les autres tests de personnalité du site ?",
       answer:
         "C'est le format le plus court et le seul entièrement gratuit du site : 20 questions contre 50 à 150 pour les autres tests, qui explorent chacun un modèle différent (SOSIE 2, DISC, Process Communication...) avec un rapport plus détaillé.",
+    },
+  ],
+});
+
+GUIDES.push({
+  slug: "test-qi",
+  testSlug: "qi",
+  title: "Test de QI en ligne : ce qu'il mesure vraiment (et ses limites)",
+  metaDescription:
+    "Comprendre ce qu'un test de QI en ligne peut et ne peut pas te dire, comment fonctionne notre test de raisonnement, et pourquoi un vrai quotient intellectuel demande un vrai étalonnage.",
+  intro:
+    "Le terme QI est partout en ligne, souvent utilisé pour désigner n'importe quel test de logique. Voici ce que mesure réellement notre test, et où s'arrête sa validité.",
+  sections: [
+    {
+      heading: "Ce que mesure ce test",
+      body: [
+        "24 questions couvrant six grandes familles de raisonnement : numérique (suites, calcul), verbal (analogies, vocabulaire), spatial (rotation, proportions), déductif (syllogismes), inductif (repérer une règle) et attention. C'est un instantané de ta capacité à raisonner sur des problèmes nouveaux, pas une mesure de connaissances scolaires.",
+      ],
+    },
+    {
+      heading: "Pourquoi ce n'est pas un vrai QI",
+      body: [
+        "Un quotient intellectuel certifié (comme celui mesuré par la WAIS) est calculé en comparant ta performance à celle d'un large échantillon représentatif de la population, testé dans les mêmes conditions par un psychologue formé à l'outil. Un test en ligne, aussi bien construit soit-il, n'a pas cet étalonnage : il donne un score indicatif de raisonnement, utile pour s'entraîner ou se situer approximativement, mais jamais un chiffre à prendre au pied de la lettre.",
+        "Se méfier en particulier des sites qui annoncent un QI précis (« 128 ! ») après un test de cinq minutes : sans étalonnage réel, ce chiffre n'a aucune valeur scientifique.",
+      ],
+    },
+    {
+      heading: "Comment aborder le résultat",
+      body: [
+        "Regarde surtout le détail par domaine plutôt que le score global : il montre où tu es le plus à l'aise (calcul, logique, vocabulaire...) et où l'entraînement ferait le plus de différence. Le corrigé détaillé explique le raisonnement derrière chaque question, ce qui est plus utile pour progresser qu'un score seul.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      question: "Ce test remplace-t-il un vrai test de QI fait par un psychologue ?",
+      answer:
+        "Non. Un test de QI clinique et certifié nécessite un psychologue formé, un outil validé et étalonné, et une passation individuelle. Notre test donne un score indicatif de raisonnement, à visée d'entraînement ou de curiosité.",
+    },
+    {
+      question: "Combien de temps dure le test ?",
+      answer: "24 questions, environ 20 minutes.",
+    },
+  ],
+});
+
+GUIDES.push({
+  slug: "test-reperage-tdah",
+  testSlug: "tdah",
+  title: "Repérage du TDAH chez l'adulte : comprendre l'ASRS-6",
+  metaDescription:
+    "Comment fonctionne l'ASRS-6, l'outil de repérage du TDAH adulte utilisé par les médecins, ce qu'un résultat positif ou négatif veut vraiment dire, et pourquoi seul un professionnel de santé peut poser un diagnostic.",
+  intro:
+    "Le TDAH chez l'adulte reste sous-diagnostiqué, en partie parce que peu de gens savent par où commencer pour en parler à un médecin. L'ASRS-6 est justement l'outil que les médecins utilisent pour ce premier repérage.",
+  sections: [
+    {
+      heading: "Qu'est-ce que l'ASRS-6",
+      body: [
+        "L'Adult ADHD Self-Report Scale (ASRS) a été développée avec l'Organisation mondiale de la santé pour aider au repérage du TDAH chez l'adulte. Sa version courte, l'ASRS-6, ne comprend que six questions sur des situations du quotidien (organisation, oublis, agitation, procrastination) sur les six derniers mois, et sert de premier filtre avant, éventuellement, une évaluation plus complète.",
+        "C'est un outil de repérage, pas de diagnostic : il aide à décider si ça vaut la peine d'en parler à un professionnel, rien de plus.",
+      ],
+    },
+    {
+      heading: "Comment il est noté",
+      body: [
+        "Chaque question a un seuil de positivité propre (certaines comptent positives dès « parfois », d'autres seulement à partir de « souvent » ou « très souvent »), car certains symptômes sont plus spécifiques que d'autres. Un total de 4 réponses positives sur 6 est le seuil utilisé dans la littérature clinique pour dire qu'une évaluation plus approfondie est justifiée.",
+      ],
+    },
+    {
+      heading: "Que faire de ton résultat",
+      body: [
+        "Un résultat positif ne veut pas dire que tu as un TDAH : ça veut dire qu'une discussion avec un médecin généraliste ou un psychiatre a du sens pour aller plus loin, avec un vrai entretien clinique. Un résultat négatif n'exclut rien à lui seul non plus : si les difficultés décrites te parlent fortement malgré un score bas, il reste légitime d'en parler à un professionnel.",
+        "Dans tous les cas, ce questionnaire n'est qu'un point de départ de conversation, jamais une conclusion.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      question: "Ce test peut-il diagnostiquer un TDAH ?",
+      answer:
+        "Non, jamais. Seul un médecin ou un psychiatre peut poser ce diagnostic, après un entretien clinique complet. Ce questionnaire est un outil de repérage, pas un instrument diagnostique.",
+    },
+    {
+      question: "Le TDAH ne touche-t-il que les enfants ?",
+      answer:
+        "Non, c'est une idée reçue : le TDAH persiste souvent à l'âge adulte, parfois sans avoir jamais été repéré dans l'enfance. C'est justement pour cette population que l'ASRS a été conçu.",
     },
   ],
 });

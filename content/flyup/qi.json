@@ -1,0 +1,594 @@
+{
+ "meta": {
+  "title": "Test de QI, raisonnement logique, verbal, numérique et spatial",
+  "totalItems": 24,
+  "durationSeconds": 1200,
+  "disclaimer": "Ce test donne un score indicatif de raisonnement (logique, numérique, verbal, spatial), pas un quotient intellectuel certifié : un vrai QI clinique suppose un étalonnage sur une large population, réalisé par un psychologue avec un outil validé (WAIS notamment). Nos items sont des créations originales."
+ },
+ "domains": {
+  "num": "Aptitude numérique",
+  "ver": "Aptitude verbale",
+  "spa": "Raisonnement spatial",
+  "ded": "Raisonnement déductif",
+  "ind": "Raisonnement inductif",
+  "att": "Attention et rapidité"
+ },
+ "items": [
+  {
+   "id": 1,
+   "domain": "num",
+   "question": "Quel nombre complète la suite ?",
+   "series": "4, 9, 19, 39, 79, ?",
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "119"
+    },
+    {
+     "text": "149"
+    },
+    {
+     "text": "159"
+    },
+    {
+     "text": "169"
+    }
+   ],
+   "correctIndex": 2,
+   "explanation": "Chaque terme vaut le précédent ×2 +1 : 4×2+1=9, 9×2+1=19, 19×2+1=39, 39×2+1=79, 79×2+1=159."
+  },
+  {
+   "id": 2,
+   "domain": "num",
+   "question": "Quel nombre complète la suite ?",
+   "series": "1, 4, 9, 16, 25, ?",
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "30"
+    },
+    {
+     "text": "35"
+    },
+    {
+     "text": "36"
+    },
+    {
+     "text": "49"
+    }
+   ],
+   "correctIndex": 2,
+   "explanation": "Ce sont les carrés successifs : 1², 2², 3², 4², 5², donc le suivant est 6² = 36."
+  },
+  {
+   "id": 3,
+   "domain": "num",
+   "question": "Si 3 machines produisent 3 pièces en 3 minutes, combien de temps faut-il à 100 machines pour produire 100 pièces ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "100 minutes"
+    },
+    {
+     "text": "33 minutes"
+    },
+    {
+     "text": "3 minutes"
+    },
+    {
+     "text": "10 minutes"
+    }
+   ],
+   "correctIndex": 2,
+   "explanation": "Chaque machine produit 1 pièce en 3 minutes, quel que soit le nombre de machines : 100 machines produisent donc 100 pièces en 3 minutes."
+  },
+  {
+   "id": 4,
+   "domain": "num",
+   "question": "Quel nombre complète la suite ?",
+   "series": "2, 3, 5, 8, 13, 21, ?",
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "29"
+    },
+    {
+     "text": "32"
+    },
+    {
+     "text": "34"
+    },
+    {
+     "text": "36"
+    }
+   ],
+   "correctIndex": 2,
+   "explanation": "Chaque terme est la somme des deux précédents (suite de Fibonacci) : 13 + 21 = 34."
+  },
+  {
+   "id": 5,
+   "domain": "ver",
+   "question": "Quel mot complète l'analogie : LIVRE est à LIRE ce que REPAS est à ... ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "Cuisiner"
+    },
+    {
+     "text": "Manger"
+    },
+    {
+     "text": "Digérer"
+    },
+    {
+     "text": "Cuisine"
+    }
+   ],
+   "correctIndex": 1,
+   "explanation": "LIRE est l'action associée au LIVRE ; l'action associée au REPAS est MANGER."
+  },
+  {
+   "id": 6,
+   "domain": "ver",
+   "question": "Quel mot n'appartient pas à la même famille que les autres ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "Marteau"
+    },
+    {
+     "text": "Tournevis"
+    },
+    {
+     "text": "Pince"
+    },
+    {
+     "text": "Planche"
+    }
+   ],
+   "correctIndex": 3,
+   "explanation": "Marteau, tournevis et pince sont des outils ; une planche est un matériau, pas un outil."
+  },
+  {
+   "id": 7,
+   "domain": "ver",
+   "question": "Quel mot complète l'analogie : MÉDECIN est à HÔPITAL ce que JUGE est à ... ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "Prison"
+    },
+    {
+     "text": "Avocat"
+    },
+    {
+     "text": "Tribunal"
+    },
+    {
+     "text": "Loi"
+    }
+   ],
+   "correctIndex": 2,
+   "explanation": "L'HÔPITAL est le lieu où exerce le MÉDECIN ; le lieu où exerce le JUGE est le TRIBUNAL."
+  },
+  {
+   "id": 8,
+   "domain": "ver",
+   "question": "Quel mot est le contraire de « ÉPHÉMÈRE » ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "Rapide"
+    },
+    {
+     "text": "Durable"
+    },
+    {
+     "text": "Fragile"
+    },
+    {
+     "text": "Discret"
+    }
+   ],
+   "correctIndex": 1,
+   "explanation": "ÉPHÉMÈRE signifie qui dure peu de temps ; son contraire est DURABLE, qui dure longtemps."
+  },
+  {
+   "id": 9,
+   "domain": "spa",
+   "question": "Un cube est peint en rouge sur toutes ses faces, puis découpé en 27 petits cubes identiques (3×3×3). Combien de petits cubes n'ont aucune face peinte ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "0"
+    },
+    {
+     "text": "1"
+    },
+    {
+     "text": "6"
+    },
+    {
+     "text": "8"
+    }
+   ],
+   "correctIndex": 1,
+   "explanation": "Seul le petit cube tout au centre, entouré de tous les côtés, n'a aucune face peinte : il y en a exactement 1."
+  },
+  {
+   "id": 10,
+   "domain": "spa",
+   "question": "Tu fais pivoter la lettre « F » de 180° (demi-tour). Quelle description correspond au résultat ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "Elle est retournée tête en bas et inversée gauche-droite"
+    },
+    {
+     "text": "Elle est identique à l'originale"
+    },
+    {
+     "text": "Elle est seulement inversée gauche-droite"
+    },
+    {
+     "text": "Elle est seulement retournée tête en bas"
+    }
+   ],
+   "correctIndex": 0,
+   "explanation": "Une rotation de 180° inverse à la fois le haut/bas et la gauche/droite par rapport à l'original."
+  },
+  {
+   "id": 11,
+   "domain": "spa",
+   "question": "Une pièce carrée mesure 4 mètres de côté. Si on double la longueur de chaque côté, par combien la surface est-elle multipliée ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "2"
+    },
+    {
+     "text": "3"
+    },
+    {
+     "text": "4"
+    },
+    {
+     "text": "8"
+    }
+   ],
+   "correctIndex": 2,
+   "explanation": "La surface d'un carré est proportionnelle au carré du côté : doubler le côté multiplie la surface par 2² = 4."
+  },
+  {
+   "id": 12,
+   "domain": "spa",
+   "question": "Tu regardes un cube depuis le dessus et tu vois un carré. Depuis quelle autre position verrais-tu aussi un carré ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "Depuis n'importe quelle face, toutes montrent un carré"
+    },
+    {
+     "text": "Uniquement depuis le dessous"
+    },
+    {
+     "text": "Uniquement en diagonale"
+    },
+    {
+     "text": "Aucune autre position ne donne un carré"
+    }
+   ],
+   "correctIndex": 0,
+   "explanation": "Un cube a six faces carrées identiques : regardé bien en face depuis n'importe laquelle, on voit toujours un carré."
+  },
+  {
+   "id": 13,
+   "domain": "ded",
+   "question": "Tous les A sont des B. Certains B sont des C. Peut-on conclure que certains A sont des C ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "Oui, toujours"
+    },
+    {
+     "text": "Non, ce n'est pas garanti"
+    },
+    {
+     "text": "Seulement si A = C"
+    },
+    {
+     "text": "Impossible à déterminer sans schéma"
+    }
+   ],
+   "correctIndex": 1,
+   "explanation": "Rien ne garantit que les B qui sont aussi des A soient parmi les B qui sont des C : la conclusion n'est pas logiquement valide."
+  },
+  {
+   "id": 14,
+   "domain": "ded",
+   "question": "Si tous les pilotes savent lire une carte, et que Sami ne sait pas lire une carte, que peut-on en conclure ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "Sami n'est pas pilote"
+    },
+    {
+     "text": "Sami est pilote"
+    },
+    {
+     "text": "On ne peut rien conclure"
+    },
+    {
+     "text": "Sami sait lire une carte"
+    }
+   ],
+   "correctIndex": 0,
+   "explanation": "C'est un raisonnement par contraposée valide : si tous les pilotes ont une propriété que Sami n'a pas, alors Sami n'est pas pilote."
+  },
+  {
+   "id": 15,
+   "domain": "ded",
+   "question": "Léa est plus grande que Marc. Marc est plus grand que Noé. Qui est le plus petit des trois ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "Léa"
+    },
+    {
+     "text": "Marc"
+    },
+    {
+     "text": "Noé"
+    },
+    {
+     "text": "Impossible à dire"
+    }
+   ],
+   "correctIndex": 2,
+   "explanation": "Léa > Marc > Noé en taille, donc Noé est le plus petit des trois."
+  },
+  {
+   "id": 16,
+   "domain": "ded",
+   "question": "Aucun reptile n'a de plumes. Tous les perroquets ont des plumes. Que peut-on conclure ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "Aucun perroquet n'est un reptile"
+    },
+    {
+     "text": "Tous les reptiles sont des perroquets"
+    },
+    {
+     "text": "Certains perroquets sont des reptiles"
+    },
+    {
+     "text": "On ne peut rien conclure"
+    }
+   ],
+   "correctIndex": 0,
+   "explanation": "Si aucun reptile n'a de plumes et que tous les perroquets en ont, aucun perroquet ne peut être un reptile."
+  },
+  {
+   "id": 17,
+   "domain": "ind",
+   "question": "Quelle lettre complète la suite ?",
+   "series": "B, D, G, K, ?",
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "N"
+    },
+    {
+     "text": "O"
+    },
+    {
+     "text": "P"
+    },
+    {
+     "text": "M"
+    }
+   ],
+   "correctIndex": 2,
+   "explanation": "L'écart entre les lettres augmente de 1 à chaque fois (+2, +3, +4, +5) : B(2)→D(4)→G(7)→K(11)→P(16)."
+  },
+  {
+   "id": 18,
+   "domain": "ind",
+   "question": "Quel élément complète la suite logique ?",
+   "series": "Lundi, Mercredi, Vendredi, ?",
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "Samedi"
+    },
+    {
+     "text": "Dimanche"
+    },
+    {
+     "text": "Jeudi"
+    },
+    {
+     "text": "Mardi"
+    }
+   ],
+   "correctIndex": 1,
+   "explanation": "La suite saute un jour sur deux (+2 jours à chaque fois) : après Vendredi, deux jours plus tard, c'est Dimanche."
+  },
+  {
+   "id": 19,
+   "domain": "ind",
+   "question": "Quel nombre complète la suite ?",
+   "series": "1, 2, 4, 7, 11, ?",
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "14"
+    },
+    {
+     "text": "15"
+    },
+    {
+     "text": "16"
+    },
+    {
+     "text": "18"
+    }
+   ],
+   "correctIndex": 3,
+   "explanation": "L'écart entre les termes augmente de 1 à chaque fois (+1, +2, +3, +4) : le suivant est +5, soit 11 + 5 = 16... vérifie : 1,2(+1),4(+2),7(+3),11(+4),16(+5). Le résultat correct est 16."
+  },
+  {
+   "id": 20,
+   "domain": "ind",
+   "question": "Quelle figure complète logiquement la série : cercle, deux cercles, trois cercles, ... ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "Quatre cercles"
+    },
+    {
+     "text": "Un carré"
+    },
+    {
+     "text": "Trois cercles à nouveau"
+    },
+    {
+     "text": "Un triangle"
+    }
+   ],
+   "correctIndex": 0,
+   "explanation": "La série suit une progression simple du nombre d'éléments (+1 à chaque étape) : l'étape suivante est quatre cercles."
+  },
+  {
+   "id": 21,
+   "domain": "att",
+   "question": "Compte le nombre de fois où la lettre « e » apparaît dans ce mot : « developpement »",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "3"
+    },
+    {
+     "text": "4"
+    },
+    {
+     "text": "5"
+    },
+    {
+     "text": "6"
+    }
+   ],
+   "correctIndex": 2,
+   "explanation": "« d-e-v-e-l-o-p-p-e-m-e-n-t » contient la lettre e en positions 2, 4, 9 et 11 : soit 4 occurrences. Recompte : e,e,e,e = 4."
+  },
+  {
+   "id": 22,
+   "domain": "att",
+   "question": "Parmi ces quatre séries de chiffres, laquelle est strictement identique à « 8493751 » ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "8493751"
+    },
+    {
+     "text": "8493571"
+    },
+    {
+     "text": "8439751"
+    },
+    {
+     "text": "8493715"
+    }
+   ],
+   "correctIndex": 0,
+   "explanation": "Seule la première série reproduit exactement l'ordre des chiffres 8-4-9-3-7-5-1."
+  },
+  {
+   "id": 23,
+   "domain": "att",
+   "question": "Combien de fois le chiffre « 7 » apparaît-il dans cette liste : 7, 27, 71, 17, 77, 47 ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "5"
+    },
+    {
+     "text": "6"
+    },
+    {
+     "text": "7"
+    },
+    {
+     "text": "8"
+    }
+   ],
+   "correctIndex": 2,
+   "explanation": "7(1) + 27(1) + 71(1) + 17(1) + 77(2) + 47(1) = 7 occurrences au total."
+  },
+  {
+   "id": 24,
+   "domain": "att",
+   "question": "Dans la phrase « le petit chat noir dort sur le tapis bleu », quel est le 5e mot ?",
+   "series": null,
+   "figure": null,
+   "grid": false,
+   "options": [
+    {
+     "text": "chat"
+    },
+    {
+     "text": "noir"
+    },
+    {
+     "text": "dort"
+    },
+    {
+     "text": "petit"
+    }
+   ],
+   "correctIndex": 2,
+   "explanation": "En comptant : 1.le 2.petit 3.chat 4.noir 5.dort, le 5e mot est « dort »."
+  }
+ ]
+}

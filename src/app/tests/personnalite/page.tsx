@@ -119,7 +119,7 @@ export default async function PersonnaliteTestsPage() {
           <p>
             Le rapport que tu reçois à la fin détaille chaque dimension
             mesurée, avec ton niveau, une explication concrète, tes points
-            forts et des pistes pour progresser — téléchargeable en PDF pour
+            forts et des pistes pour progresser, téléchargeable en PDF pour
             le garder ou le relire quand tu veux.
           </p>
         </div>

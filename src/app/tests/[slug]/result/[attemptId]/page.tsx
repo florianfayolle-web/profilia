@@ -131,7 +131,7 @@ export default async function ResultPage(
       <div className="print-report-footer">
         <div className="mx-auto flex h-full max-w-2xl items-center justify-between px-6 text-[10px] text-muted-foreground">
           <span>
-            {SITE_NAME} — Rapport confidentiel, à usage strictement personnel.
+            {SITE_NAME}, Rapport confidentiel, à usage strictement personnel.
           </span>
           <span>
             Page <span className="print-page-number" />

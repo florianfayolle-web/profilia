@@ -35,7 +35,7 @@ export default async function ArticlePreviewPage(
         <p className="text-sm font-medium">
           {article.status === "published"
             ? "Cet article est déjà publié."
-            : "Brouillon — pas encore visible publiquement."}
+            : "Brouillon, pas encore visible publiquement."}
         </p>
         {article.status !== "published" && (
           <>

@@ -25,7 +25,7 @@ const FAQ = [
   {
     question: "Comment se préparer efficacement à ces tests ?",
     answer:
-      "En t'entraînant sur le format avant le jour J pour ne pas être déstabilisé par sa structure, et en connaissant ton profil pour préparer un entretien cohérent avec tes réponses écrites — les recruteurs recoupent souvent les deux.",
+      "En t'entraînant sur le format avant le jour J pour ne pas être déstabilisé par sa structure, et en connaissant ton profil pour préparer un entretien cohérent avec tes réponses écrites, les recruteurs recoupent souvent les deux.",
   },
 ];
 

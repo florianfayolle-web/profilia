@@ -62,12 +62,12 @@ export default async function AdminLeadsPage() {
             {(profiles ?? []).map((p) => (
               <tr key={p.email}>
                 <td className="px-4 py-3">{p.email}</td>
-                <td className="px-4 py-3 text-muted">{p.full_name ?? "—"}</td>
+                <td className="px-4 py-3 text-muted">{p.full_name ?? "-"}</td>
                 <td className="px-4 py-3 text-muted">
                   {p.interested_test_slug
                     ? (titleBySlug.get(p.interested_test_slug) ??
                       p.interested_test_slug)
-                    : "—"}
+                    : "-"}
                 </td>
                 <td className="px-4 py-3 text-muted-foreground">
                   {new Date(p.created_at).toLocaleDateString("fr-FR", {
@@ -90,7 +90,7 @@ export default async function AdminLeadsPage() {
       </div>
 
       <h2 className="mt-14 text-2xl font-semibold tracking-tight">
-        Leads marketing — tests gratuits ({leads?.length ?? 0})
+        Leads marketing, tests gratuits ({leads?.length ?? 0})
       </h2>
       <p className="mt-2 text-sm text-muted">
         Emails laissés pour voir le résultat d&apos;un test gratuit, sans
@@ -113,7 +113,7 @@ export default async function AdminLeadsPage() {
               <tr key={`${l.email}-${i}`}>
                 <td className="px-4 py-3">{l.email}</td>
                 <td className="px-4 py-3 text-muted">
-                  {(l.test_slug && titleBySlug.get(l.test_slug)) ?? l.test_slug ?? "—"}
+                  {(l.test_slug && titleBySlug.get(l.test_slug)) ?? l.test_slug ?? "-"}
                 </td>
                 <td className="px-4 py-3">
                   {l.consent ? (

@@ -228,7 +228,7 @@ export default async function Home() {
             <p className="font-medium">Rapport détaillé, en PDF</p>
             <p className="mt-2 text-sm text-muted">
               Un score par dimension, une tendance, un commentaire, pas
-              juste un résultat unique — téléchargeable en PDF pour le
+              juste un résultat unique, téléchargeable en PDF pour le
               relire avant ton entretien.
             </p>
           </div>

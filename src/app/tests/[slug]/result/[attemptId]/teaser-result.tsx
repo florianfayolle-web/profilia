@@ -84,7 +84,7 @@ const DIMENSION_MEDIA: Record<
         strokeLinejoin="round"
       />
     ),
-    hook: "ce qui te fait vraiment perdre — ou garder — tes moyens",
+    hook: "ce qui te fait vraiment perdre, ou garder, tes moyens",
     color: "#0d9488",
   },
 };
@@ -158,7 +158,7 @@ export function TeaserResult({
         <p className="mt-2 text-sm text-foreground/80">
           Ton rapport complet ne se contente pas de te donner un score par
           dimension : il t&apos;explique le pourquoi et le comment de chacune
-          de tes tendances — en clair, ce que tu ne sais peut-être pas encore
+          de tes tendances, en clair, ce que tu ne sais peut-être pas encore
           sur toi.
         </p>
         <ul className="mt-4 space-y-2 text-sm text-foreground/80">
@@ -215,7 +215,7 @@ export function TeaserResult({
                 className="mt-3"
               >
                 <button className="w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90">
-                  Voir mon graphique — 0,99&nbsp;€
+                  Voir mon graphique, 0,99&nbsp;€
                 </button>
               </form>
             </div>
@@ -231,7 +231,7 @@ export function TeaserResult({
               <li key={d.key} className="flex items-start gap-3">
                 <DimensionIcon dimKey={d.key} />
                 <span>
-                  <span className="font-medium text-foreground">{d.name}</span> —{" "}
+                  <span className="font-medium text-foreground">{d.name}</span> , {" "}
                   {DIMENSION_MEDIA[d.key]?.hook ?? "ta tendance, expliquée en détail"}
                 </span>
               </li>
@@ -255,7 +255,7 @@ export function TeaserResult({
             className="mt-5"
           >
             <button className="w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90">
-              Débloquer mon rapport complet — 0,99&nbsp;€
+              Débloquer mon rapport complet, 0,99&nbsp;€
             </button>
           </form>
           <p className="mt-2 text-center text-xs text-muted-foreground">

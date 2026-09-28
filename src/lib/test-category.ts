@@ -1,4 +1,4 @@
-export type TestCategory = "pilote" | "grande-entreprise" | "personnalite";
+export type TestCategory = "pilote" | "grande-entreprise" | "personnalite" | "qi-sante-mentale";
 
 export const CATEGORIES: {
   slug: TestCategory;
@@ -35,6 +35,15 @@ export const CATEGORIES: {
     gradient: "linear-gradient(135deg, #6b7a2e 0%, #eafa82 100%)",
     accent: "#8a9a1f",
   },
+  {
+    slug: "qi-sante-mentale",
+    title: "QI & santé mentale",
+    shortTitle: "QI & santé mentale",
+    description:
+      "Un test de raisonnement façon QI, et des questionnaires de repérage inspirés d'outils utilisés par les professionnels de santé, jamais un diagnostic.",
+    gradient: "linear-gradient(135deg, #134e4a 0%, #2dd4bf 100%)",
+    accent: "#0d9488",
+  },
 ];
 
 // Slug -> category. Anything not listed falls back to "personnalite" so a
@@ -52,10 +61,12 @@ const TEST_CATEGORY: Record<string, TestCategory> = {
   "personnalite-50": "grande-entreprise",
   "type-cognitif-16": "grande-entreprise",
   pcm: "personnalite",
-  "logic-8": "personnalite",
   "salarie-entrepreneur": "personnalite",
   orientation: "personnalite",
   "big-five-express": "personnalite",
+  "logic-8": "personnalite",
+  qi: "qi-sante-mentale",
+  tdah: "qi-sante-mentale",
 };
 
 export function getTestCategory(slug: string): TestCategory {

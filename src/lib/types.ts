@@ -10,7 +10,8 @@ export type TestFormat =
   | "logic_mcq"
   | "career_balance"
   | "sosie_v2"
-  | "orientation_riasec";
+  | "orientation_riasec"
+  | "adhd_screener";
 
 export type Test = {
   id: string;

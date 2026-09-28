@@ -7,6 +7,7 @@ import type {
   scoreForcedChoiceQuad,
   scoreLikertScale,
   scoreLogicMcq,
+  scoreAdhdScreener,
   scoreOrientation,
   scorePcm,
   scoreSituationalJudgment,
@@ -32,6 +33,7 @@ type BipolarResult = ReturnType<typeof scoreBipolarPairs>;
 type DiscResult = ReturnType<typeof scoreDisc>;
 type PcmResult = ReturnType<typeof scorePcm>;
 type LogicMcqResult = ReturnType<typeof scoreLogicMcq>;
+type AdhdScreenerResult = ReturnType<typeof scoreAdhdScreener>;
 type CareerBalanceResult = ReturnType<typeof scoreCareerBalance>;
 type SosieResult = ReturnType<typeof scoreSosie>;
 type OrientationResultType = ReturnType<typeof scoreOrientation>;
@@ -530,7 +532,7 @@ export function ResultView({
           style={{ borderTopColor: PCM_COLORS[r.phaseKey] }}
         >
           <p className="text-sm text-muted-foreground">
-            {r.same ? "Ta phase — tu restes sur ta base" : "Ta phase — où tu vis en ce moment"}
+            {r.same ? "Ta phase, tu restes sur ta base" : "Ta phase, où tu vis en ce moment"}
           </p>
           <h2 className="mt-1 text-2xl font-semibold" style={{ color: PCM_COLORS[r.phaseKey] }}>
             {r.phaseType.name}
@@ -788,7 +790,7 @@ export function ResultView({
         </div>
 
         <p className="mt-8 rounded-lg border border-dashed border-card-border p-4 text-sm text-muted">
-          Ce test mesure une appétence, pas une compétence ni une probabilité de réussite. Un score élevé ne dit rien de la viabilité d&apos;un projet. Un score bas n&apos;interdit à personne d&apos;entreprendre : il indique ce qu&apos;il faudra compenser — un associé, un accompagnement, ou un démarrage progressif en parallèle d&apos;un emploi.
+          Ce test mesure une appétence, pas une compétence ni une probabilité de réussite. Un score élevé ne dit rien de la viabilité d&apos;un projet. Un score bas n&apos;interdit à personne d&apos;entreprendre : il indique ce qu&apos;il faudra compenser, un associé, un accompagnement, ou un démarrage progressif en parallèle d&apos;un emploi.
         </p>
       </div>
     );
@@ -840,6 +842,62 @@ export function ResultView({
         </div>
 
         <DiscReliabilityCard reliability={r.reliability} />
+      </div>
+    );
+  }
+
+  if (format === "adhd_screener") {
+    const r = result as AdhdScreenerResult;
+    return (
+      <div className="text-left">
+        <div
+          className={`rounded-2xl border-2 p-6 text-center ${
+            r.screenPositive ? "border-amber-500/60 bg-amber-500/10" : "border-green-500/50 bg-green-500/10"
+          }`}
+        >
+          <p className="text-sm font-medium text-muted-foreground">Score de repérage</p>
+          <p className="mt-1 text-3xl font-bold">
+            {r.positiveCount}
+            <span className="text-lg font-medium text-muted-foreground">/{r.total}</span>
+          </p>
+          <p className="mt-3 font-semibold">
+            {r.screenPositive
+              ? "Ton résultat est compatible avec un repérage positif."
+              : "Ton résultat n'est pas dans la zone de repérage."}
+          </p>
+          <p className="mt-2 text-sm text-muted">
+            {r.screenPositive
+              ? "Ça ne veut pas dire que tu as un TDAH : ce questionnaire (inspiré de l'ASRS-6, l'outil de repérage utilisé par les médecins en premier lieu) signale seulement qu'un échange avec un médecin généraliste ou un psychiatre pourrait être utile pour approfondir."
+              : "Ce résultat n'exclut rien à lui seul : si tu as des doutes malgré tout, en parler à un professionnel reste la seule façon d'y voir clair."}
+          </p>
+        </div>
+
+        <div className="mt-6 rounded-xl border border-card-border bg-card p-5 text-sm text-muted">
+          <p className="font-medium text-foreground">Ce que ce test n&apos;est pas</p>
+          <p className="mt-1">
+            Un questionnaire de repérage en ligne ne remplace jamais une évaluation clinique. Seul un médecin ou un
+            psychiatre peut poser un diagnostic de TDAH, après un entretien approfondi. Si les difficultés décrites
+            ici pèsent sur ton quotidien, en parler à un professionnel de santé est la prochaine étape utile, quel
+            que soit ce score.
+          </p>
+        </div>
+
+        <div className="mt-8">
+          <h2 className="text-xl font-semibold">Détail de tes réponses</h2>
+          <div className="mt-4 space-y-3">
+            {r.review.map((item) => (
+              <div
+                key={item.id}
+                className={`flex items-center justify-between gap-4 rounded-xl border p-4 text-sm ${
+                  item.positive ? "border-amber-500/40 bg-amber-500/5" : "border-card-border"
+                }`}
+              >
+                <span>{item.text}</span>
+                <span className="shrink-0 font-medium text-muted-foreground">{item.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     );
   }

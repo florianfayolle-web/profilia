@@ -112,7 +112,7 @@ export function OrientationResult({ result }: { result: OrientationResultData })
             {p.rank === 0 ? "Dominante principale" : p.rank === 1 ? "Deuxième dominante" : "Troisième dominante"} · {p.interestPercent}%
           </p>
           <h3 className="mt-1 text-xl font-semibold">
-            {p.label} — {p.tag}
+            {p.label}, {p.tag}
           </h3>
           <p className="mt-3 text-muted">{p.desc}</p>
           <p className="mt-3 text-sm">

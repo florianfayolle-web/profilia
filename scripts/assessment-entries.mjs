@@ -193,8 +193,28 @@ export const ENTRIES = [
     language: "fr",
     lookupKey: "test_big_five_express_free",
     priceCents: 0,
-    title: "Test de personnalité express — gratuit",
+    title: "Test de personnalité express, gratuit",
     description:
       "Test de personnalité gratuit et rapide (20 affirmations, environ 5 minutes) sur 5 grandes dimensions inspirées du modèle Big Five : ouverture d'esprit, organisation, extraversion, agréabilité, stabilité émotionnelle. Résultat complet et immédiat, sans carte bancaire.",
+  },
+  {
+    file: "qi.json",
+    slug: "qi",
+    format: "logic_mcq",
+    language: "fr",
+    lookupKey: "test_qi_onetime",
+    title: "Test de QI, raisonnement logique, verbal, numérique et spatial",
+    description:
+      "Test de raisonnement en 24 questions (numérique, verbal, spatial, déductif, inductif, attention) donnant un score indicatif façon QI. Ce n'est pas un quotient intellectuel clinique étalonné : seul un psychologue, avec un outil validé, peut délivrer un vrai QI certifié.",
+  },
+  {
+    file: "tdah.json",
+    slug: "tdah",
+    format: "adhd_screener",
+    language: "fr",
+    lookupKey: "test_tdah_screener",
+    title: "Repérage TDAH adulte, questionnaire inspiré de l'ASRS-6",
+    description:
+      "Questionnaire de repérage du TDAH chez l'adulte en 6 questions, inspiré de l'ASRS-6, l'outil utilisé par les médecins en première intention. Ce n'est pas un diagnostic : seul un médecin ou un psychiatre peut poser un diagnostic de TDAH.",
   },
 ];

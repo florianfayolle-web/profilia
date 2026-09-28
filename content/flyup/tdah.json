@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Repérage TDAH adulte",
+    "instructions": "6 questions sur ta façon de fonctionner au quotidien, ces 6 derniers mois. Pour chacune, indique à quelle fréquence la situation décrite t'arrive, sans trop réfléchir.",
+    "disclaimer": "Ce questionnaire s'inspire de l'ASRS-6, l'outil de repérage du TDAH chez l'adulte utilisé en première intention par les médecins (Organisation mondiale de la santé / Kessler et al.). Ce n'est ni une reproduction certifiée de l'instrument officiel, ni un diagnostic : seul un médecin ou un psychiatre peut poser un diagnostic de TDAH, après un entretien clinique."
+  },
+  "scaleLabels": ["Jamais", "Rarement", "Parfois", "Souvent", "Très souvent"],
+  "positiveCutoff": 4,
+  "items": [
+    {
+      "id": 1,
+      "text": "Tu as du mal à boucler les derniers détails d'un projet, une fois la partie difficile terminée.",
+      "threshold": 2
+    },
+    {
+      "id": 2,
+      "text": "Tu as du mal à t'organiser pour une tâche qui demande de la méthode.",
+      "threshold": 2
+    },
+    {
+      "id": 3,
+      "text": "Tu oublies des rendez-vous ou des obligations.",
+      "threshold": 2
+    },
+    {
+      "id": 4,
+      "text": "Face à une tâche qui demande de réfléchir longuement, tu repousses le moment de t'y mettre.",
+      "threshold": 3
+    },
+    {
+      "id": 5,
+      "text": "Tu remues les mains ou les pieds, ou tu as du mal à tenir en place quand tu dois rester assis longtemps.",
+      "threshold": 3
+    },
+    {
+      "id": 6,
+      "text": "Tu te sens excessivement actif, comme poussé par un moteur intérieur.",
+      "threshold": 4
+    }
+  ]
+}

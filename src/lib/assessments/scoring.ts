@@ -11,6 +11,7 @@ import type {
   ForcedChoiceQuadDefinition,
   LikertScaleDefinition,
   LogicMcqDefinition,
+  AdhdScreenerDefinition,
   OrientationDefinition,
   OrientationJob,
   OrientationValueKey,
@@ -869,11 +870,14 @@ export function scorePcm(def: PcmDefinition, answers: Record<string, PcmAnswer>)
 
 // --- logic_mcq ("Le Test des 8 Logiques") -----------------------------------
 
-function logicBand(score: number): [string, string] {
-  if (score >= 27) return ["Niveau très supérieur", "Performance rare sur ce format : tu maîtrises les huit familles d'items."];
-  if (score >= 22) return ["Niveau supérieur", "Au-dessus de ce qu'obtient la majorité des candidats préparés."];
-  if (score >= 16) return ["Moyenne haute", "Base solide ; les points perdus se concentrent en général sur un ou deux domaines."];
-  if (score >= 11) return ["Dans la moyenne", "Les mécanismes sont là, la régularité et la vitesse manquent encore."];
+// Percentage-based so the same bands fit any item count (the 8-Logiques test
+// and the QI-style test share this format but don't share a length).
+function logicBand(score: number, total: number): [string, string] {
+  const p = total > 0 ? score / total : 0;
+  if (p >= 0.9) return ["Niveau très supérieur", "Performance rare sur ce format : tu maîtrises l'ensemble des familles d'items."];
+  if (p >= 0.73) return ["Niveau supérieur", "Au-dessus de ce qu'obtient la majorité des candidats préparés."];
+  if (p >= 0.53) return ["Moyenne haute", "Base solide ; les points perdus se concentrent en général sur un ou deux domaines."];
+  if (p >= 0.36) return ["Dans la moyenne", "Les mécanismes sont là, la régularité et la vitesse manquent encore."];
   return ["À consolider", "Reprenez domaine par domaine : ce sont des méthodes qui s'apprennent, pas un plafond."];
 }
 
@@ -917,7 +921,7 @@ export function scoreLogicMcq(def: LogicMcqDefinition, answers: Record<string, n
     };
   });
 
-  const [band, bandText] = logicBand(score);
+  const [band, bandText] = logicBand(score, def.items.length);
 
   return {
     score,
@@ -936,6 +940,33 @@ export function scoreLogicMcq(def: LogicMcqDefinition, answers: Record<string, n
 // with the same round(4 + (raw-3)/10*16) the source widget used.
 function scaleAxisRaw(raw: number): number {
   return Math.round(4 + ((raw - 3) / 10) * 16);
+}
+
+export function scoreAdhdScreener(
+  def: AdhdScreenerDefinition,
+  answers: Record<string, number>
+) {
+  const review = def.items.map((item) => {
+    const value = answers[String(item.id)] ?? 0;
+    return {
+      id: item.id,
+      text: item.text,
+      value,
+      label: def.scaleLabels[value] ?? "",
+      positive: value >= item.threshold,
+    };
+  });
+
+  const positiveCount = review.filter((r) => r.positive).length;
+  const screenPositive = positiveCount >= def.positiveCutoff;
+
+  return {
+    positiveCount,
+    total: def.items.length,
+    cutoff: def.positiveCutoff,
+    screenPositive,
+    review,
+  };
 }
 
 export function scoreCareerBalance(
@@ -1016,7 +1047,7 @@ export function scoreCareerBalance(
   }
   if (axisResults.every((a) => a.score >= 10 && a.score <= 14)) {
     flags.push(
-      "Profil très peu tranché : aucun axe ne ressort. Les paires étaient conçues pour vous forcer à pencher — un résultat aussi plat signale souvent un vrai équilibre, parfois des choix faits au hasard. Un second passage le dira."
+      "Profil très peu tranché : aucun axe ne ressort. Les paires étaient conçues pour vous forcer à pencher, un résultat aussi plat signale souvent un vrai équilibre, parfois des choix faits au hasard. Un second passage le dira."
     );
   }
 

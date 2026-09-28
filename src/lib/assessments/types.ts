@@ -242,6 +242,27 @@ export type LogicMcqDefinition = {
   items: LogicMcqItem[];
 };
 
+// --- adhd_screener ("Repérage TDAH adulte") --------------------------------
+// A short, threshold-scored screener modeled on the ASRS-6 (WHO/Kessler et
+// al.), the instrument doctors themselves use for a first-line self-report
+// check — not a diagnosis. Each item counts as "positive" only past its own
+// threshold on the 0-4 frequency scale (two of the six use a higher bar),
+// and 4+ positives out of 6 is the published cutoff for "worth a real
+// evaluation".
+export type AdhdScreenerItem = {
+  id: number;
+  text: string;
+  // Index into scaleLabels (0-4) at/above which this item counts positive.
+  threshold: number;
+};
+
+export type AdhdScreenerDefinition = {
+  meta: { title: string; instructions: string; disclaimer: string };
+  scaleLabels: string[]; // 5 labels, "Jamais" .. "Très souvent"
+  items: AdhdScreenerItem[];
+  positiveCutoff: number; // number of positive items that flags "worth a consult"
+};
+
 // --- career_balance ("Salarié ou entrepreneur ?") ---------------------------
 // Six axes, each scored from a mix of forced-lean pairs (1-4, no neutral
 // option) and single-statement agreement items (1-5) — unlike bipolar_pairs

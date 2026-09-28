@@ -37,7 +37,7 @@ export default function ConfidentialitePage() {
             <li>tes réponses et résultats aux tests que tu passes ;</li>
             <li>
               les informations nécessaires au paiement, traitées directement
-              par Stripe — {SITE_NAME} n&apos;a jamais accès à ton numéro de
+              par Stripe, {SITE_NAME} n&apos;a jamais accès à ton numéro de
               carte bancaire.
             </li>
           </ul>
