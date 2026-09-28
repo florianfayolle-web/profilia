@@ -19,15 +19,15 @@ export default function TestsPage() {
         engagement. Choisis une catégorie selon ton objectif :
       </p>
 
-      <div className="mt-10 grid gap-6 sm:grid-cols-3">
+      <div className="mt-10 grid grid-cols-2 gap-6">
         {CATEGORIES.map((category) => (
           <Link
             key={category.slug}
             href={`/tests/${category.slug}`}
-            className="group relative flex flex-col overflow-hidden rounded-2xl border border-card-border shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            className="group relative flex aspect-square flex-col overflow-hidden rounded-2xl border border-card-border shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
           >
             <div
-              className="relative flex h-36 items-center justify-center overflow-hidden"
+              className="relative flex flex-1 items-center justify-center overflow-hidden"
               style={{ background: category.gradient }}
             >
               <div
@@ -39,17 +39,17 @@ export default function TestsPage() {
               />
               <CategoryIcon
                 category={category.slug}
-                className="relative h-14 w-14 text-white/90 transition-transform duration-300 group-hover:scale-110"
+                className="relative h-14 w-14 text-white/90 transition-transform duration-300 group-hover:scale-110 sm:h-16 sm:w-16"
               />
             </div>
 
-            <div className="flex flex-1 flex-col bg-card p-6">
-              <h2 className="text-lg font-semibold">{category.title}</h2>
-              <p className="mt-2 flex-1 text-sm text-muted">
+            <div className="flex flex-col bg-card p-4 sm:p-6">
+              <h2 className="text-sm font-semibold sm:text-lg">{category.title}</h2>
+              <p className="mt-1 line-clamp-2 text-xs text-muted sm:mt-2 sm:text-sm">
                 {category.description}
               </p>
               <span
-                className="mt-4 inline-flex items-center gap-1 text-sm font-semibold"
+                className="mt-2 inline-flex items-center gap-1 text-xs font-semibold sm:mt-4 sm:text-sm"
                 style={{ color: category.accent }}
               >
                 Voir les tests
