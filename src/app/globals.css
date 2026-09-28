@@ -72,11 +72,13 @@ body {
     );
   background-size: auto, auto, auto, 28px 28px;
   overflow: hidden;
+  isolation: isolate;
 }
 
 .sky-gradient::before {
   content: "";
   position: absolute;
+  z-index: -1;
   inset: 0;
   background-image: radial-gradient(
     ellipse 60% 50% at 50% 0%,
