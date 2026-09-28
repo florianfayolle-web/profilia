@@ -38,12 +38,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  const admin = createAdminClient();
-  const { data: articles } = await admin
-    .from("articles")
-    .select("slug, published_at")
-    .eq("status", "published")
-    .returns<Pick<ArticleRow, "slug" | "published_at">[]>();
+  // A failing articles query must not take the whole sitemap down with it.
+  let articles: Pick<ArticleRow, "slug" | "published_at">[] | null = null;
+  try {
+    const { data } = await createAdminClient()
+      .from("articles")
+      .select("slug, published_at")
+      .eq("status", "published")
+      .returns<Pick<ArticleRow, "slug" | "published_at">[]>();
+    articles = data;
+  } catch (err) {
+    console.error("sitemap: articles query failed", err);
+  }
 
   const articleRoutes: MetadataRoute.Sitemap = (articles ?? []).map((article) => ({
     url: `${SITE_URL}/blog/${article.slug}`,

@@ -183,6 +183,10 @@ export async function submitAssessmentAttempt(
     return { error: "Contenu du test introuvable." };
   }
 
+  if (JSON.stringify(answers ?? null).length > MAX_ANSWERS_JSON_CHARS) {
+    return { error: "Réponses invalides." };
+  }
+
   const scored = scoreByFormat(test.format, content.definition, answers, lang);
   if ("error" in scored) {
     return scored;
@@ -208,6 +212,12 @@ export async function submitAssessmentAttempt(
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// Sanity ceilings on what an anonymous visitor can make us store: no real
+// test has more than a few hundred answers, so anything bigger is abuse.
+const MAX_ANSWERS_JSON_CHARS = 60_000;
+const MAX_GUEST_ATTEMPTS_PER_EMAIL_PER_DAY = 5;
+const MAX_GUEST_ATTEMPTS_PER_HOUR = 300;
+
 // Guest path for fully free tests (price_cents === 0): no account, just an
 // email address (and an explicit marketing opt-in) traded for the result.
 // Uses the admin client because there is no authenticated session to satisfy
@@ -221,8 +231,11 @@ export async function submitFreeAttempt(
   consent: boolean
 ): Promise<{ redirectTo: string } | { error: string }> {
   const trimmedEmail = email.trim().toLowerCase();
-  if (!EMAIL_RE.test(trimmedEmail)) {
+  if (!EMAIL_RE.test(trimmedEmail) || trimmedEmail.length > 254) {
     return { error: "Adresse email invalide." };
+  }
+  if (JSON.stringify(answers ?? null).length > MAX_ANSWERS_JSON_CHARS) {
+    return { error: "Réponses invalides." };
   }
 
   const supabase = await createClient();
@@ -257,6 +270,27 @@ export async function submitFreeAttempt(
   }
 
   const admin = createAdminClient();
+
+  const dayAgo = new Date(Date.now() - 24 * 3600_000).toISOString();
+  const hourAgo = new Date(Date.now() - 3600_000).toISOString();
+  const [{ count: emailCount }, { count: hourCount }] = await Promise.all([
+    admin
+      .from("attempts")
+      .select("id", { count: "exact", head: true })
+      .eq("guest_email", trimmedEmail)
+      .gte("created_at", dayAgo),
+    admin
+      .from("attempts")
+      .select("id", { count: "exact", head: true })
+      .is("user_id", null)
+      .gte("created_at", hourAgo),
+  ]);
+  if ((emailCount ?? 0) >= MAX_GUEST_ATTEMPTS_PER_EMAIL_PER_DAY) {
+    return { error: "Trop de tests pour cette adresse aujourd'hui. Réessaie demain." };
+  }
+  if ((hourCount ?? 0) >= MAX_GUEST_ATTEMPTS_PER_HOUR) {
+    return { error: "Beaucoup de monde en ce moment. Réessaie dans quelques minutes." };
+  }
 
   const { data: attempt, error } = await admin
     .from("attempts")
