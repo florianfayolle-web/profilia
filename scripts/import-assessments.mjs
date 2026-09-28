@@ -105,7 +105,7 @@ async function main() {
   }
 
   console.log(
-    "\nDone. Prices default to 4,99 € for every test (edit `price_cents` in the " +
+    "\nDone. Prices default to 1,99 € for every test (edit `price_cents` in the " +
       "`tests` table to change). If Stripe prices weren't found, run " +
       "`npm run setup:stripe` then re-run this script."
   );

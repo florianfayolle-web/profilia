@@ -62,7 +62,7 @@ npm run import:assessments
 Ce script lit les fichiers JSON et crée/actualise les lignes `tests` +
 `test_content` correspondantes dans Supabase (il faut que `.env.local`
 contienne vos vraies clés Supabase — voir étape 2). Il attribue un prix
-provisoire de 4,99 € à chacun : ajustez `price_cents` (et `stripe_price_id`
+provisoire de 1,99 € à chacun : ajustez `price_cents` (et `stripe_price_id`
 une fois le produit créé côté Stripe, voir étape 3) directement dans la
 table `tests` selon vos tarifs réels. Voir
 [`content/flyup/README.md`](content/flyup/README.md) pour le détail de

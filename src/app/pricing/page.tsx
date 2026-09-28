@@ -5,7 +5,7 @@ import { createSubscriptionCheckoutSession } from "@/app/actions/checkout";
 export const metadata: Metadata = {
   title: "Tarifs",
   description:
-    "4,99€ pour débloquer un test à l'unité, ou 9,99€/mois pour débloquer tous les tests en illimité. Annulable à tout moment.",
+    "1,99€ pour débloquer un test à l'unité, ou 5,99€/mois pour débloquer tous les tests en illimité. Annulable à tout moment.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -24,7 +24,7 @@ export default function PricingPage() {
           <div className="flex flex-col rounded-xl border border-card-border bg-card p-8 shadow-sm">
             <p className="text-sm font-medium text-muted">À l&apos;unité</p>
             <p className="mt-2 text-4xl font-semibold">
-              4,99&nbsp;€
+              1,99&nbsp;€
               <span className="text-base font-normal text-muted">
                 {" "}
                 / test
@@ -51,7 +51,7 @@ export default function PricingPage() {
               Abonnement illimité
             </p>
             <p className="mt-2 text-4xl font-semibold">
-              9,99&nbsp;€
+              5,99&nbsp;€
               <span className="text-base font-normal text-muted">
                 {" "}
                 / mois
