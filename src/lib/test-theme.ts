@@ -46,6 +46,12 @@ const THEMES: Record<string, Record<string, string>> = {
   // accent plus feutré) au lieu d'un duo rouge/jaune pur qui lisait comme
   // un drapeau plutôt qu'une identité de marque.
   "big-five-express": { "--primary": "#8B1E3F", "--accent": "#C9932E", "--primary-foreground": "#ffffff" },
+  // Test de QI : indigo vif & cyan — cérébral, technologique, distinct du
+  // violet plus feutré du test 16-profils-cognitifs.
+  qi: { "--primary": "#3730A3", "--accent": "#06B6D4", "--primary-foreground": "#ffffff" },
+  // Repérage TDAH : bleu sarcelle profond & corail — chaleureux plutôt que
+  // clinique, pour ne pas avoir l'air d'un questionnaire d'hôpital.
+  tdah: { "--primary": "#0E7490", "--accent": "#FB7185", "--primary-foreground": "#ffffff" },
 };
 
 export function getTestThemeStyle(slug: string): CSSProperties | undefined {
@@ -77,6 +83,8 @@ const ORDER: Record<string, number> = {
   "salarie-entrepreneur": 11,
   orientation: 12,
   "big-five-express": 0,
+  qi: 13,
+  tdah: 14,
 };
 
 export function getTestOrder(slug: string): number {
