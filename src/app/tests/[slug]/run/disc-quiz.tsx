@@ -4,6 +4,7 @@ import { useMemo, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { submitAssessmentAttempt } from "@/app/actions/assessments";
 import { QuizIntro } from "@/components/quiz-intro";
+import { AnswerDemo } from "@/components/answer-demo";
 import { QuizLoading } from "@/components/quiz-loading";
 import type { DiscAnswer, DiscDefinition } from "@/lib/assessments/types";
 
@@ -98,7 +99,20 @@ export function DiscQuiz({
 
   if (!started) {
     return (
-      <QuizIntro onStart={() => { setStarted(true); setShownAt(Date.now()); }} isPreview={!hasAccess} />
+      <QuizIntro
+        onStart={() => { setStarted(true); setShownAt(Date.now()); }}
+        isPreview={!hasAccess}
+        demo={
+          <AnswerDemo
+            kind="plusminus"
+            prompt="Laquelle te ressemble le plus, et le moins ?"
+            options={items[0].options.map((o) => o.text)}
+            plus={0}
+            minus={2}
+            caption="Quatre affirmations s'affichent. Clique sur « + » pour celle qui te ressemble le plus, puis sur « − » pour celle qui te ressemble le moins, sur deux lignes différentes. Ensuite, « Suivant »."
+          />
+        }
+      />
     );
   }
 

@@ -4,6 +4,7 @@ import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { submitAssessmentAttempt } from "@/app/actions/assessments";
 import { QuizIntro } from "@/components/quiz-intro";
+import { AnswerDemo } from "@/components/answer-demo";
 import { QuizLoading } from "@/components/quiz-loading";
 import type { PcmAnswer, PcmDefinition } from "@/lib/assessments/types";
 
@@ -82,6 +83,15 @@ export function PcmQuiz({
           setShownAt(Date.now());
         }}
         isPreview={!hasAccess}
+        demo={
+          <AnswerDemo
+            kind="scale"
+            text={items[0].text}
+            labels={definition.scale.map((x) => x.label)}
+            picked={3}
+            caption="Une phrase s'affiche : clique sur le niveau qui indique à quel point elle te ressemble. Une première partie parle de toi depuis toujours, une seconde de cette dernière année."
+          />
+        }
       />
     );
   }

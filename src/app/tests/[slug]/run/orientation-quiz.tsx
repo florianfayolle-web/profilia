@@ -4,6 +4,7 @@ import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { submitAssessmentAttempt } from "@/app/actions/assessments";
 import { QuizIntro } from "@/components/quiz-intro";
+import { AnswerDemo } from "@/components/answer-demo";
 import { QuizLoading } from "@/components/quiz-loading";
 import type { OrientationDefinition } from "@/lib/assessments/types";
 
@@ -86,7 +87,21 @@ export function OrientationQuiz({
   }
 
   if (!started) {
-    return <QuizIntro onStart={() => setStarted(true)} isPreview={!hasAccess} />;
+    return (
+      <QuizIntro
+        onStart={() => setStarted(true)}
+        isPreview={!hasAccess}
+        demo={
+          <AnswerDemo
+            kind="scale"
+            text={items[0].text}
+            labels={definition.scaleLabels[PART_INFO[items[0].part].scale]}
+            picked={3}
+            caption="Une activité ou une situation s'affiche : clique sur le niveau qui dit à quel point elle t'attire ou te ressemble."
+          />
+        }
+      />
+    );
   }
 
   if (isPending) {

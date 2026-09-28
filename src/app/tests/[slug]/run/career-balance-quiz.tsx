@@ -4,6 +4,7 @@ import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { submitAssessmentAttempt } from "@/app/actions/assessments";
 import { QuizIntro } from "@/components/quiz-intro";
+import { AnswerDemo } from "@/components/answer-demo";
 import { QuizLoading } from "@/components/quiz-loading";
 import type { CareerBalanceDefinition } from "@/lib/assessments/types";
 
@@ -68,7 +69,23 @@ export function CareerBalanceQuiz({
 
   if (!started) {
     return (
-      <QuizIntro onStart={() => setStarted(true)} isPreview={!hasAccess} />
+      <QuizIntro
+        onStart={() => setStarted(true)}
+        isPreview={!hasAccess}
+        demo={(() => {
+          const pair = items.find((it) => it.kind === "pair");
+          return pair ? (
+            <AnswerDemo
+              kind="pair"
+              textA={pair.textA}
+              textB={pair.textB}
+              labels={PAIR_LABELS}
+              picked={1}
+              caption="Deux situations s'opposent : indique de quel côté tu penches, « plutôt » ou « surtout ». Il n'y a pas de position neutre. D'autres questions te demandent simplement à quel point une phrase te ressemble."
+            />
+          ) : undefined;
+        })()}
+      />
     );
   }
 

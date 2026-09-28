@@ -6,6 +6,7 @@ import { submitAssessmentAttempt, submitFreeAttempt } from "@/app/actions/assess
 import { ProgressBar } from "@/components/progress-bar";
 import { LetterBadge } from "@/components/letter-badge";
 import { QuizIntro } from "@/components/quiz-intro";
+import { AnswerDemo } from "@/components/answer-demo";
 import { QuizLoading } from "@/components/quiz-loading";
 import { EmailGate } from "@/components/email-gate";
 import { DiscQuiz } from "./disc-quiz";
@@ -28,6 +29,113 @@ import type {
 } from "@/lib/assessments/types";
 
 const SELECTION_HIGHLIGHT_MS = 300;
+
+// Example shown on the intro screen: the test's own first item, laid out
+// exactly like the real answer UI, with one answer highlighted. The logic
+// test uses an invented item instead so no real question is given away.
+function introDemo(
+  format: Format,
+  definition: Definition,
+  lang: "fr" | "en"
+): ReactNode {
+  const fr = lang === "fr";
+  switch (format) {
+    case "bipolar_pairs": {
+      const d = definition as BipolarPairsDefinition;
+      const it = d.items[0];
+      return (
+        <AnswerDemo
+          kind="bipolar"
+          left={it.left.text}
+          right={it.right.text}
+          labels={{ left: d.responseScale[0]?.label ?? "", right: d.responseScale[d.responseScale.length - 1]?.label ?? "" }}
+          picked={3}
+          caption={
+            fr
+              ? "Chaque question oppose deux affirmations. Clique sur un cercle : plus il est proche d'un côté, plus tu te reconnais dans cette affirmation ; le cercle du milieu veut dire « ni l'un ni l'autre ». Ici, l'exemple penche « plutôt » vers la droite."
+              : "Each question sets two statements against each other. Pick a circle: the closer to a side, the more you agree with it; the middle means neither."
+          }
+        />
+      );
+    }
+    case "forced_choice_quad": {
+      const it = (definition as ForcedChoiceQuadDefinition).items[0];
+      return (
+        <AnswerDemo
+          kind="choice"
+          options={it.options.map((o) => o.text)}
+          picked={0}
+          caption={
+            fr
+              ? "Quatre phrases te sont proposées : clique sur celle qui te ressemble le plus. Il n'y a pas de bonne réponse, seulement la tienne."
+              : "Four statements are shown: click the one that is most like you. There is no right answer, only yours."
+          }
+        />
+      );
+    }
+    case "forced_choice_pair": {
+      const it = (definition as ForcedChoicePairDefinition).items[0];
+      return (
+        <AnswerDemo
+          kind="choice"
+          options={[it.statementA.text, it.statementB.text]}
+          picked={0}
+          caption={
+            fr
+              ? "Deux phrases te sont proposées : clique sur celle qui te correspond le mieux."
+              : "Two statements are shown: click the one that fits you best."
+          }
+        />
+      );
+    }
+    case "situational_judgment": {
+      const it = (definition as SituationalJudgmentDefinition).items[0];
+      return (
+        <AnswerDemo
+          kind="choice"
+          lead={it.situation}
+          options={it.options.map((o) => o.text)}
+          picked={1}
+          caption={
+            fr
+              ? "Une situation professionnelle est décrite : clique sur la réaction que tu aurais réellement, pas celle qui « fait bien »."
+              : "A work situation is described: click the reaction you would really have, not the one that looks best."
+          }
+        />
+      );
+    }
+    case "likert_scale": {
+      const d = definition as LikertScaleDefinition;
+      const sorted = [...d.scale].sort((a, b) => a.value - b.value);
+      return (
+        <AnswerDemo
+          kind="scale"
+          text={d.items[0].text}
+          labels={sorted.map((x) => x.label)}
+          picked={3}
+          caption={
+            fr
+              ? "Une affirmation s'affiche : clique sur le niveau qui indique à quel point elle te ressemble, de « pas du tout » à « tout à fait »."
+              : "A statement is shown: click the level showing how much it describes you."
+          }
+        />
+      );
+    }
+    case "logic_mcq":
+      return (
+        <AnswerDemo
+          kind="choice"
+          lead="Quel nombre complète la suite ?  2 — 4 — 8 — 16 — ?"
+          options={["24", "30", "32", "34"]}
+          picked={2}
+          caption="Exemple inventé : chaque question a une seule bonne réponse. Prends le temps de repérer la règle, mais garde un œil sur le chronomètre."
+        />
+      );
+    default:
+      return undefined;
+  }
+}
+
 
 type Format =
   | "forced_choice_pair"
@@ -234,7 +342,11 @@ function GenericAssessmentQuiz({
 
   if (!started) {
     return (
-      <QuizIntro onStart={() => setStarted(true)} isPreview={!hasAccess} />
+      <QuizIntro
+        onStart={() => setStarted(true)}
+        isPreview={!hasAccess}
+        demo={introDemo(format, definition, lang)}
+      />
     );
   }
 

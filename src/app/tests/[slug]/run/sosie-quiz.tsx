@@ -4,6 +4,7 @@ import { useMemo, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { submitAssessmentAttempt } from "@/app/actions/assessments";
 import { QuizIntro } from "@/components/quiz-intro";
+import { AnswerDemo } from "@/components/answer-demo";
 import { QuizLoading } from "@/components/quiz-loading";
 import type { SosieAnswer, SosieDefinition, SosieOptionKey } from "@/lib/assessments/types";
 
@@ -112,6 +113,16 @@ export function SosieQuiz({
           setShownAt(Date.now());
         }}
         isPreview={!hasAccess}
+        demo={
+          <AnswerDemo
+            kind="plusminus"
+            prompt="Laquelle te correspond le plus, et le moins ?"
+            options={items[0].options.map((o) => o.text)}
+            plus={1}
+            minus={0}
+            caption="Des groupes de propositions s'affichent. Clique sur « + » pour celle qui te correspond le plus, puis sur « − » pour celle qui te correspond le moins, sur deux lignes différentes. Ensuite, « Suivant »."
+          />
+        }
       />
     );
   }

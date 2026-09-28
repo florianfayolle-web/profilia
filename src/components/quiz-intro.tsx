@@ -1,5 +1,7 @@
 "use client";
 
+import type { ReactNode } from "react";
+
 function CheckIcon() {
   return (
     <svg
@@ -22,9 +24,11 @@ function CheckIcon() {
 export function QuizIntro({
   onStart,
   isPreview,
+  demo,
 }: {
   onStart: () => void;
   isPreview: boolean;
+  demo?: ReactNode;
 }) {
   return (
     <div className="mt-6 rounded-xl border border-card-border bg-card p-6">
@@ -48,6 +52,7 @@ export function QuizIntro({
           </span>
         </li>
       </ul>
+      {demo}
       <button
         onClick={onStart}
         className="mt-6 w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
