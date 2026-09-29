@@ -107,7 +107,7 @@ export default async function GuidePage(props: PageProps<"/guides/[slug]">) {
       <div className="mt-10 rounded-xl border border-primary/30 bg-card p-6">
         <p className="font-medium">Envie de t&apos;entraîner directement ?</p>
         <p className="mt-1 text-sm text-muted">
-          5 premières questions gratuites, sans engagement.
+          Toutes les questions sont gratuites, sans engagement.
         </p>
         <Link
           href={`/tests/${guide.testSlug}`}

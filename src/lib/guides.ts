@@ -344,7 +344,7 @@ GUIDES.push({
     {
       question: "Ce test DISC est-il gratuit ?",
       answer:
-        "Les 5 premières affirmations sont gratuites, sans carte bancaire. Le rapport complet (roue de positionnement, détail par style, fiabilité) se débloque ensuite si tu veux aller plus loin.",
+        "Toutes les affirmations sont gratuites, sans carte bancaire. Seul le rapport complet (roue de positionnement, détail par style, fiabilité) est payant, à la fin.",
     },
     {
       question: "Est-ce le test DISC officiel utilisé par les entreprises ?",
@@ -795,7 +795,7 @@ GUIDES.push({
       heading: "Comment se déroule notre test",
       body: [
         "Le test comprend 72 affirmations réparties en deux parties : la première explore ta base (« depuis toujours »), la seconde ta phase actuelle (« ces douze derniers mois »). Une transition explicite entre les deux parties te rappelle de changer de point de référence pour répondre.",
-        "Les 5 premières affirmations sont gratuites, sans engagement, pour te permettre de tester le format avant d'aller plus loin.",
+        "Toutes les affirmations sont gratuites, sans engagement : seul le rapport complet est payant, à la fin.",
       ],
     },
     {
@@ -830,7 +830,7 @@ GUIDES.push({
   testSlug: "logic-8",
   title: "Test de raisonnement logique gratuit : les 8 familles de logique",
   metaDescription:
-    "Le Test des 8 Logiques : 30 items chronométrés couvrant les huit grandes formes de raisonnement testées en recrutement. Score par domaine et corrigé détaillé, gratuit sur les 5 premières questions.",
+    "Le Test des 8 Logiques : 30 items chronométrés couvrant les huit grandes formes de raisonnement testées en recrutement. Score par domaine et corrigé détaillé, gratuit à répondre du début à la fin.",
   intro:
     "Les tests d'aptitude ou tests psychotechniques utilisés en recrutement ne mesurent presque jamais une seule forme de logique : ils combinent plusieurs familles d'items pour dresser un profil cognitif complet. Ce guide explique les huit familles couvertes par notre test et comment t'entraîner efficacement.",
   sections: [
@@ -845,7 +845,7 @@ GUIDES.push({
       heading: "Comment se déroule le test",
       body: [
         "30 items chronométrés sur 25 minutes, les huit logiques alternant au fil du test comme dans une épreuve réelle. Aucun point négatif : répondre au hasard en cas de doute est toujours préférable à laisser une question vide.",
-        "Les 5 premières questions sont gratuites, sans engagement ni carte bancaire.",
+        "Toutes les questions sont gratuites, sans engagement ni carte bancaire : seul ton rapport complet est payant, à la fin.",
       ],
     },
     {

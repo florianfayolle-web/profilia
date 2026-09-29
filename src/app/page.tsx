@@ -52,7 +52,7 @@ const FAQ = [
   {
     question: "Les tests sont-ils gratuits ?",
     answer:
-      "Tu peux essayer gratuitement les premières questions de chaque test, sans engagement et sans carte bancaire. Si tu veux aller plus loin, tu débloques ton rapport complet directement depuis le test.",
+      "Tu réponds à toutes les questions gratuitement, sans engagement ni carte bancaire. Seul ton rapport complet est payant, à la fin.",
   },
   {
     question: "Combien de temps dure un test de personnalité ?",
@@ -519,7 +519,7 @@ export default async function Home() {
             <p className="text-sm font-medium text-primary">2</p>
             <p className="mt-1 font-medium">Essaie un test gratuitement</p>
             <p className="mt-2 text-sm text-muted">
-              Les premières questions sont gratuites, sans engagement ni
+              Toutes les questions sont gratuites, sans engagement ni
               carte bancaire.
             </p>
           </div>

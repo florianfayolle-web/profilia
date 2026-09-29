@@ -6,7 +6,7 @@ import { CategoryIcon } from "@/components/category-icon";
 export const metadata: Metadata = {
   title: "Tous les tests",
   description:
-    "Tests de personnalité à choix forcé, tests de jugement situationnel et bilans de personnalité. Essaie gratuitement les premières questions de chaque test.",
+    "Tests de personnalité à choix forcé, tests de jugement situationnel et bilans de personnalité. Réponds à toutes les questions gratuitement, seul le rapport complet est payant.",
   alternates: { canonical: "/tests" },
 };
 
@@ -15,8 +15,8 @@ export default function TestsPage() {
     <div className="mx-auto max-w-5xl px-6 py-16">
       <h1 className="text-3xl font-semibold tracking-tight">Tous les tests</h1>
       <p className="mt-2 text-muted">
-        Essaie gratuitement les premières questions de chaque test, sans
-        engagement. Choisis une catégorie selon ton objectif :
+        Réponds à toutes les questions de chaque test gratuitement, sans
+        engagement : seul ton rapport complet est payant, à la fin. Choisis une catégorie selon ton objectif :
       </p>
 
       <div className="mt-10 grid grid-cols-2 gap-6">

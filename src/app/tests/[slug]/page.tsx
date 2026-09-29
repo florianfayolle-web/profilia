@@ -200,13 +200,13 @@ export default async function TestDetailPage(
         ) : (
           <>
             <p className="text-sm text-muted">
-              Essaie gratuitement les 5 premières questions, sans engagement.
+              Réponds à toutes les questions gratuitement, sans engagement : seul ton rapport complet est payant, à la fin.
             </p>
             <Link
               href={`/tests/${test.slug}/run`}
               className="mt-4 inline-block rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
             >
-              Commencer l&apos;aperçu gratuit
+              Commencer le test
             </Link>
           </>
         )}

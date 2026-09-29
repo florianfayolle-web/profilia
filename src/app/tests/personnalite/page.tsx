@@ -109,8 +109,8 @@ export default async function PersonnaliteTestsPage() {
             profil a ses forces et ses points de vigilance.
           </p>
           <p>
-            Nos tests de personnalité gratuits (premières questions
-            accessibles sans engagement) couvrent plusieurs approches : un
+            Nos tests de personnalité, gratuits à répondre du début à la fin
+            (seul le rapport complet est payant), couvrent plusieurs approches : un
             bilan complet sur 15 dimensions, un test en paires
             d&apos;affirmations opposées pour un profil synthétique, ou une
             typologie en 16 profils cognitifs. Chaque approche éclaire ta
