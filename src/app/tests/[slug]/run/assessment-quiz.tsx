@@ -678,7 +678,7 @@ const EMOJI_SCALE_SLUGS = new Set(["bp360"]);
 // slider makes that degree the whole point instead of forcing a coarse pick.
 const SLIDER_SCALE_SLUGS = new Set(["hpi", "tdah"]);
 
-function SliderQuestion({
+export function SliderQuestion({
   item,
   scale,
   onChoose,

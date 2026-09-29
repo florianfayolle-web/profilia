@@ -1227,8 +1227,10 @@ export function scoreSosie(def: SosieDefinition, answers: Record<string, SosieAn
 // changes displayed text and a small reconversion bonus on job scores, so
 // both variants are computed once here and the client just switches views.
 
+// Each answer is already a 0-100 slider position, so the dimension's percent
+// is just the average of its items' raw values — no rescaling needed.
 function orientationPct(sum: number, n: number): number {
-  return n > 0 ? Math.round(((sum - n) / (4 * n)) * 100) : 0;
+  return n > 0 ? Math.round(sum / n) : 0;
 }
 
 function scoreJob(
@@ -1291,7 +1293,7 @@ export function scoreOrientation(
 
   for (const item of def.items) {
     const v = answers[String(item.id)];
-    if (!v) continue;
+    if (v === undefined) continue;
     if (item.part === "interest") {
       interestSum[item.dimension] = (interestSum[item.dimension] ?? 0) + v;
       interestCount[item.dimension] = (interestCount[item.dimension] ?? 0) + 1;
@@ -1302,7 +1304,7 @@ export function scoreOrientation(
       valueSum[item.valeur] = (valueSum[item.valeur] ?? 0) + v;
       valueCount[item.valeur] = (valueCount[item.valeur] ?? 0) + 1;
     } else if (item.part === "taste") {
-      taste[item.univers] = Math.round(((v - 1) / 4) * 100);
+      taste[item.univers] = Math.round(v);
     }
   }
 

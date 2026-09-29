@@ -6,6 +6,7 @@ import { submitAssessmentAttempt } from "@/app/actions/assessments";
 import { QuizIntro } from "@/components/quiz-intro";
 import { AnswerDemo } from "@/components/answer-demo";
 import { QuizLoading } from "@/components/quiz-loading";
+import { SliderQuestion } from "./assessment-quiz";
 import type { OrientationDefinition } from "@/lib/assessments/types";
 
 const PART_INFO: Record<
@@ -89,11 +90,16 @@ export function OrientationQuiz({
         isPreview={!hasAccess}
         demo={
           <AnswerDemo
-            kind="scale"
+            kind="slider"
             text={items[0].text}
-            labels={definition.scaleLabels[PART_INFO[items[0].part].scale]}
-            picked={3}
-            caption="Une activité ou une situation s'affiche : clique sur le niveau qui dit à quel point elle t'attire ou te ressemble."
+            leftLabel={definition.scaleLabels[PART_INFO[items[0].part].scale][0] ?? ""}
+            rightLabel={
+              definition.scaleLabels[PART_INFO[items[0].part].scale][
+                definition.scaleLabels[PART_INFO[items[0].part].scale].length - 1
+              ] ?? ""
+            }
+            value={68}
+            caption="Une activité ou une situation s'affiche : place le curseur là où ça t'attire ou te ressemble, de 0 à 100%, puis valide."
           />
         }
       />
@@ -141,27 +147,16 @@ export function OrientationQuiz({
       )}
 
       <div key={step} className="fade-in mt-6">
-        <p className="text-xl font-medium leading-snug">{item.text}</p>
-        <div className="mt-6 flex items-end justify-between gap-2">
-          {labels.map((label, index) => (
-            <button
-              key={index}
-              type="button"
-              onClick={() => choose(index + 1)}
-              className={`flex flex-1 flex-col items-center gap-2 rounded-xl border px-2 py-3 transition ${
-                selected === index + 1
-                  ? "border-green-500 bg-green-500/15"
-                  : "border-card-border hover:border-primary/40"
-              }`}
-            >
-              <span
-                className="rounded-full border-2 border-foreground/70"
-                style={{ width: 14 + index * 7, height: 14 + index * 7 }}
-              />
-              <span className="text-center text-xs leading-tight text-muted">{label}</span>
-            </button>
-          ))}
-        </div>
+        <SliderQuestion
+          item={item}
+          scale={labels.map((label, index) => ({
+            label,
+            value: Math.round((index / (labels.length - 1)) * 100),
+          }))}
+          onChoose={choose}
+          disabled={isPending}
+          selectedValue={selected}
+        />
 
         <div className="mt-6">
           <button
