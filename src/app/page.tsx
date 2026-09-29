@@ -10,7 +10,14 @@ import type { ArticleRow } from "@/lib/article-types";
 // the homepage fully dynamic.
 export const revalidate = 3600;
 
-const HOME_GUIDE_SLUGS = ["test-personnalite-gratuit", "test-disc", "test-sosie-2", "test-orientation-riasec"];
+const HOME_GUIDE_SLUGS = [
+  "test-personnalite-gratuit",
+  "test-hpi",
+  "test-reperage-tdah",
+  "test-animal-totem",
+  "test-qi",
+  "test-disc",
+];
 
 const SAMPLE_PROFILE = [
   { label: "Leadership", value: 0.82 },
