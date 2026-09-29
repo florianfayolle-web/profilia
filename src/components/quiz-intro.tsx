@@ -47,7 +47,7 @@ export function QuizIntro({
           <CheckIcon />
           <span>
             {isPreview
-              ? "Les 5 premières questions sont gratuites, sans engagement."
+              ? "Toutes les questions sont gratuites : seul ton rapport final est payant, à la fin."
               : "Réponds à toutes les questions pour accéder à ton rapport personnalisé."}
           </span>
         </li>

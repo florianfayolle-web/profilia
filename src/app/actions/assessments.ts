@@ -178,11 +178,11 @@ export async function submitAssessmentAttempt(
     test.included_in_subscription
   );
 
-  if (!access.hasAccess) {
-    return { redirectTo: `/tests/${testSlug}` };
-  }
-
-  const { data: content } = await supabase
+  // Payment only gates the *result*, not the questions: anyone signed in
+  // can answer and score a test, purchased or not. Without access,
+  // test_content is blocked by RLS (it's the paid content), so read it
+  // with the admin client instead — the same pattern the run page uses.
+  const { data: content } = await (access.hasAccess ? supabase : createAdminClient())
     .from("test_content")
     .select("definition")
     .eq("test_id", test.id)

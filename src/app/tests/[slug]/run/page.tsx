@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { getTestAccess, PREVIEW_ITEM_LIMIT } from "@/lib/access";
+import { getTestAccess } from "@/lib/access";
 import type { Question, Test } from "@/lib/types";
 import { Quiz } from "./quiz";
 import { AssessmentQuiz } from "./assessment-quiz";
@@ -39,8 +39,9 @@ export default async function RunTestPage(
 
   if (test.format !== "single_choice") {
     // Without full access, test_content is blocked by RLS (it's the paid
-    // content) — read it with the admin client instead, and only ever send
-    // the client a preview-sized slice of `items`, never the whole bank.
+    // content) — read it with the admin client instead. Every visitor gets
+    // the whole test now: payment only gates the *result*, not the
+    // questions, so there is no preview slice to build here anymore.
     const { data: content } = access.hasAccess
       ? await supabase
           .from("test_content")
@@ -61,12 +62,7 @@ export default async function RunTestPage(
       );
     }
 
-    const definition = access.hasAccess
-      ? content.definition
-      : {
-          ...content.definition,
-          items: content.definition.items.slice(0, PREVIEW_ITEM_LIMIT),
-        };
+    const definition = content.definition;
 
     return (
       <div
@@ -91,19 +87,13 @@ export default async function RunTestPage(
     );
   }
 
-  const questionsQuery = (
-    access.hasAccess ? supabase : createAdminClient()
-  )
+  const { data: allQuestions } = await (access.hasAccess ? supabase : createAdminClient())
     .from("questions")
     .select("*, question_options(*)")
     .eq("test_id", test.id)
     .order("position", { ascending: true })
-    .order("position", { referencedTable: "question_options", ascending: true });
-
-  const { data: allQuestions } = await (access.hasAccess
-    ? questionsQuery
-    : questionsQuery.limit(PREVIEW_ITEM_LIMIT)
-  ).returns<Question[]>();
+    .order("position", { referencedTable: "question_options", ascending: true })
+    .returns<Question[]>();
 
   if (!allQuestions || allQuestions.length === 0) {
     return (

@@ -328,10 +328,6 @@ function GenericAssessmentQuiz({
     setAnswers(nextAnswers);
 
     setTimeout(() => {
-      if (isLast && !hasAccess) {
-        router.push(`/tests/${testSlug}?preview=done`);
-        return;
-      }
       if (isLast && needsEmailGate) {
         setAnswers(nextAnswers);
         setShowEmailGate(true);
@@ -395,7 +391,7 @@ function GenericAssessmentQuiz({
     <div className="mt-6">
       {!hasAccess && (
         <span className="inline-block rounded-full bg-gold/15 px-3 py-1 text-xs font-medium text-gold">
-          Aperçu gratuit
+          Réponses gratuites, résultat payant
         </span>
       )}
       <ProgressBar step={step} total={items.length} />

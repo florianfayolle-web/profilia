@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { PaymentPendingNotice } from "@/components/payment-pending";
 import { createUnlockCheckoutSession } from "@/app/actions/checkout";
 import { RadarChart } from "@/components/dimension-charts";
+import { ConsentCheckoutButton } from "@/components/consent-checkout-button";
 
 // Deliberately NOT the real scoring.ts result type: this is a redacted view
 // built server-side in page.tsx for the locked (unpaid) state. It must
@@ -210,14 +211,12 @@ export function TeaserResult({
               </span>
               <p className="mt-3 font-semibold">Ton profil te ressemble déjà.</p>
               <p className="mt-1 text-xs text-muted">Découvre à quel point.</p>
-              <form
-                action={createUnlockCheckoutSession.bind(null, testSlug, attemptId)}
-                className="mt-3"
+              <a
+                href="#unlock-cta"
+                className="mt-3 block w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
               >
-                <button className="w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90">
-                  Voir mon graphique, 0,99&nbsp;€
-                </button>
-              </form>
+                Voir mon graphique, 0,99&nbsp;€
+              </a>
             </div>
           </div>
         </div>
@@ -250,14 +249,13 @@ export function TeaserResult({
             </span>
           </div>
 
-          <form
-            action={createUnlockCheckoutSession.bind(null, testSlug, attemptId)}
-            className="mt-5"
-          >
-            <button className="w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90">
-              Débloquer mon rapport complet, 0,99&nbsp;€
-            </button>
-          </form>
+          <div id="unlock-cta" className="mt-5 scroll-mt-20">
+            <ConsentCheckoutButton
+              action={createUnlockCheckoutSession.bind(null, testSlug, attemptId)}
+              label="Débloquer mon rapport complet, 0,99 €"
+              className="w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
+            />
+          </div>
           <p className="mt-2 text-center text-xs text-muted-foreground">
             Moins cher qu&apos;un café, pour te connaître un peu mieux.
           </p>

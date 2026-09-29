@@ -6,6 +6,7 @@ import { createClient } from "@/lib/supabase/server";
 import { getTestAccess } from "@/lib/access";
 import { formatPrice, type Test } from "@/lib/types";
 import { createTestCheckoutSession } from "@/app/actions/checkout";
+import { ConsentCheckoutButton } from "@/components/consent-checkout-button";
 import { PaymentPendingNotice } from "@/components/payment-pending";
 import { SITE_URL } from "@/lib/site";
 import { getTestThemeStyle } from "@/lib/test-theme";
@@ -178,14 +179,14 @@ export default async function TestDetailPage(
                 {formatPrice(test.price_cents, test.currency)}
               </span>
             </p>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <form
-                action={createTestCheckoutSession.bind(null, test.slug)}
-              >
-                <button className="rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90">
-                  Débloquer ce test
-                </button>
-              </form>
+            <div className="mt-4 flex flex-wrap items-start gap-3">
+              <div className="max-w-xs">
+                <ConsentCheckoutButton
+                  action={createTestCheckoutSession.bind(null, test.slug, undefined)}
+                  label="Débloquer ce test"
+                  className="w-full rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
+                />
+              </div>
               {test.included_in_subscription && (
                 <Link
                   href="/pricing"

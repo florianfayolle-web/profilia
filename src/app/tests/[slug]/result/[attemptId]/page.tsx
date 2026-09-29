@@ -10,6 +10,8 @@ import { TeaserResult, type TeaserData } from "./teaser-result";
 import type { scoreBipolarPairs } from "@/lib/assessments/scoring";
 import { getTestThemeStyle } from "@/lib/test-theme";
 import { DownloadPdfButton } from "@/components/download-pdf-button";
+import { PaidLockedResult } from "./paid-locked-result";
+import { getTestAccess } from "@/lib/access";
 import { SITE_NAME } from "@/lib/site";
 
 // Personal result pages: never indexed, never shared publicly.
@@ -80,9 +82,20 @@ export default async function ResultPage(
 
   const { data: test } = await supabase
     .from("tests")
-    .select("format, title, language, price_cents")
+    .select("id, format, title, language, price_cents, currency, included_in_subscription")
     .eq("id", attempt.test_id)
-    .single<Pick<Test, "format" | "title" | "language" | "price_cents">>();
+    .single<
+      Pick<
+        Test,
+        | "id"
+        | "format"
+        | "title"
+        | "language"
+        | "price_cents"
+        | "currency"
+        | "included_in_subscription"
+      >
+    >();
 
   let resultProfile: ResultProfile | null = null;
   if (attempt.result_profile_id) {
@@ -95,8 +108,22 @@ export default async function ResultPage(
   }
 
   const isRichFormat = test && test.format !== "single_choice";
-  const isLocked = test?.price_cents === 0 && !attempt.unlocked;
-  const pendingUnlock = isLocked && searchParams.unlock === "success";
+  const isFreeTest = test?.price_cents === 0;
+
+  // A guest attempt on the fully free test is unlocked by a one-off micro-
+  // payment tied to that exact attempt (attempts.unlocked, flipped by the
+  // Stripe webhook — see submitFreeAttempt). Every other, paid test never
+  // gates the questions, only the result: access is the buyer's normal
+  // test/subscription access, re-checked live on every load, so paying
+  // *after* answering unlocks this same page automatically on return.
+  const access =
+    !isFreeTest && test
+      ? await getTestAccess(test.id, test.price_cents, test.included_in_subscription)
+      : null;
+
+  const isLocked = isFreeTest ? !attempt.unlocked : !(access?.hasAccess ?? false);
+  const pendingUnlock =
+    isLocked && (searchParams.unlock === "success" || searchParams.checkout === "success");
 
   return (
     <div
@@ -139,9 +166,11 @@ export default async function ResultPage(
         </div>
       </div>
 
-      <div className="mb-6 flex justify-end print:hidden">
-        <DownloadPdfButton />
-      </div>
+      {!isLocked && (
+        <div className="mb-6 flex justify-end print:hidden">
+          <DownloadPdfButton />
+        </div>
+      )}
 
       <div className="text-center">
         <p className="text-sm font-medium text-foreground/70">
@@ -165,7 +194,7 @@ export default async function ResultPage(
         )}
       </div>
 
-      {isRichFormat && test && isLocked && (
+      {isRichFormat && test && isLocked && isFreeTest && (
         <div className="mt-6">
           <TeaserResult
             result={redactBipolarResult(
@@ -173,6 +202,20 @@ export default async function ResultPage(
             )}
             testSlug={slug}
             attemptId={attemptId}
+            pendingUnlock={pendingUnlock}
+          />
+        </div>
+      )}
+
+      {isRichFormat && test && isLocked && !isFreeTest && (
+        <div className="mt-6">
+          <PaidLockedResult
+            testSlug={slug}
+            attemptId={attemptId}
+            testTitle={test.title}
+            priceCents={test.price_cents}
+            currency={test.currency}
+            includedInSubscription={test.included_in_subscription}
             pendingUnlock={pendingUnlock}
           />
         </div>

@@ -43,8 +43,13 @@ async function getOrCreateStripeCustomer(
   return customer.id;
 }
 
-// One-off purchase of a single test.
-export async function createTestCheckoutSession(testSlug: string) {
+// One-off purchase of a single test. `returnPath` lets a caller (e.g. a
+// locked result page) send the buyer back to exactly where they were
+// instead of the generic test page, once payment succeeds.
+export async function createTestCheckoutSession(
+  testSlug: string,
+  returnPath?: string
+) {
   const supabase = await createClient();
   const { data: userData } = await supabase.auth.getUser();
   const user = userData.user;
@@ -77,8 +82,8 @@ export async function createTestCheckoutSession(testSlug: string) {
     customer: customerId,
     line_items: [{ price: test.stripe_price_id, quantity: 1 }],
     metadata: { supabase_user_id: user.id, test_id: test.id },
-    success_url: `${siteUrl}/tests/${test.slug}?checkout=success`,
-    cancel_url: `${siteUrl}/tests/${test.slug}?checkout=cancelled`,
+    success_url: `${siteUrl}${returnPath ?? `/tests/${test.slug}`}?checkout=success`,
+    cancel_url: `${siteUrl}${returnPath ?? `/tests/${test.slug}`}?checkout=cancelled`,
   });
 
   if (!session.url) {

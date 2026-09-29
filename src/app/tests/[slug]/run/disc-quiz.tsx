@@ -64,10 +64,6 @@ export function DiscQuiz({
     const nextAnswers = { ...answers, [String(item.id)]: { plus, minus, timeMs } };
     setAnswers(nextAnswers);
 
-    if (isLast && !hasAccess) {
-      router.push(`/tests/${testSlug}?preview=done`);
-      return;
-    }
     if (isLast) {
       setError(null);
       startTransition(async () => {
@@ -127,7 +123,7 @@ export function DiscQuiz({
     <div className="mt-6">
       {!hasAccess && (
         <span className="inline-block rounded-full bg-gold/15 px-3 py-1 text-xs font-medium text-gold">
-          Aperçu gratuit
+          Réponses gratuites, résultat payant
         </span>
       )}
 

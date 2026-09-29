@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { createSubscriptionCheckoutSession } from "@/app/actions/checkout";
+import { ConsentCheckoutButton } from "@/components/consent-checkout-button";
 
 export const metadata: Metadata = {
   title: "Tarifs",
@@ -64,11 +65,13 @@ export default function PricingPage() {
               </li>
               <li>Annulable à tout moment</li>
             </ul>
-            <form action={createSubscriptionCheckoutSession} className="mt-8">
-              <button className="w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90">
-                S&apos;abonner
-              </button>
-            </form>
+            <div className="mt-8">
+              <ConsentCheckoutButton
+                action={createSubscriptionCheckoutSession}
+                label="S'abonner"
+                className="w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
+              />
+            </div>
           </div>
         </div>
       </div>

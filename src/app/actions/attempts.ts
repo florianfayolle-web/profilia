@@ -1,6 +1,7 @@
 "use server";
 
 import { createClient } from "@/lib/supabase/server";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { getTestAccess } from "@/lib/access";
 
 type SubmittedAnswer = { questionId: string; optionId: string };
@@ -38,14 +39,13 @@ export async function submitAttempt(
     test.included_in_subscription
   );
 
-  if (!access.hasAccess) {
-    return { redirectTo: `/tests/${testSlug}` };
-  }
-
-  // Re-fetch the authoritative scoring from the database — never trust
-  // point values sent by the client, only which options were picked.
+  // Payment only gates the *result*, not the questions. Re-fetch the
+  // authoritative scoring from the database — never trust point values
+  // sent by the client, only which options were picked. Without access,
+  // question_options is blocked by RLS (it's the paid content), so read it
+  // with the admin client instead.
   const optionIds = answers.map((a) => a.optionId);
-  const { data: options } = await supabase
+  const { data: options } = await (access.hasAccess ? supabase : createAdminClient())
     .from("question_options")
     .select("id, question_id, scores")
     .in("id", optionIds);
