@@ -217,4 +217,24 @@ export const ENTRIES = [
     description:
       "Questionnaire de repérage du TDAH chez l'adulte en 6 questions, inspiré de l'ASRS-6, l'outil utilisé par les médecins en première intention. Ce n'est pas un diagnostic : seul un médecin ou un psychiatre peut poser un diagnostic de TDAH.",
   },
+  {
+    file: "hpi.json",
+    slug: "hpi",
+    format: "likert_scale",
+    language: "fr",
+    lookupKey: "test_hpi_traits",
+    title: "HPI, reconnaître les traits du haut potentiel intellectuel",
+    description:
+      "Test en 30 affirmations explorant 6 traits souvent décrits chez les personnes à haut potentiel intellectuel (pensée arborescente, hypersensibilité, besoin de sens, ennui, décalage relationnel, créativité). Ce n'est pas un test de QI et ne peut pas diagnostiquer un haut potentiel : seul un bilan psychométrique complet (WAIS) avec un psychologue le permet.",
+  },
+  {
+    file: "animal-totem.json",
+    slug: "animal-totem",
+    format: "bipolar_pairs",
+    language: "fr",
+    lookupKey: "test_animal_totem",
+    title: "Quel animal es-tu ? Ton profil de personnalité totem",
+    description:
+      "Test de personnalité en 20 affirmations, ludique et rapide, qui associe ton profil à un animal (loup, chat, dauphin, hibou, lion, renard, aigle, ours, abeille, papillon) sur 5 grandes facettes de ta personnalité. Parfait à faire entre amis ou en famille.",
+  },
 ];

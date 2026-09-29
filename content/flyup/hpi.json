@@ -1,0 +1,282 @@
+{
+ "testId": "hpi",
+ "title": "HPI : reconnaître les traits du haut potentiel intellectuel",
+ "instructions": "Réponds à chaque affirmation avec spontanéité, sur une échelle de « Pas du tout moi » à « Tout à fait moi ». Ce test explore des traits souvent décrits chez les personnes à haut potentiel intellectuel (HPI) — il ne mesure pas ton QI et ne peut en aucun cas diagnostiquer un haut potentiel : seul un test psychométrique complet (WAIS), passé avec un psychologue, le permet.",
+ "scale": [
+  {
+   "label": "Pas du tout moi",
+   "value": 1
+  },
+  {
+   "label": "Peu",
+   "value": 2
+  },
+  {
+   "label": "Neutre",
+   "value": 3
+  },
+  {
+   "label": "Assez",
+   "value": 4
+  },
+  {
+   "label": "Tout à fait moi",
+   "value": 5
+  }
+ ],
+ "dimensions": [
+  {
+   "key": "dim_1",
+   "name": "Pensée arborescente",
+   "questionRange": [
+    1,
+    5
+   ]
+  },
+  {
+   "key": "dim_2",
+   "name": "Hypersensibilité émotionnelle et sensorielle",
+   "questionRange": [
+    6,
+    10
+   ]
+  },
+  {
+   "key": "dim_3",
+   "name": "Besoin de sens et de justice",
+   "questionRange": [
+    11,
+    15
+   ]
+  },
+  {
+   "key": "dim_4",
+   "name": "Ennui et sous-stimulation",
+   "questionRange": [
+    16,
+    20
+   ]
+  },
+  {
+   "key": "dim_5",
+   "name": "Décalage relationnel",
+   "questionRange": [
+    21,
+    25
+   ]
+  },
+  {
+   "key": "dim_6",
+   "name": "Créativité et pensée divergente",
+   "questionRange": [
+    26,
+    30
+   ]
+  }
+ ],
+ "levels": [
+  {
+   "maxPercent": 0.4,
+   "label": "Peu présent"
+  },
+  {
+   "maxPercent": 0.6,
+   "label": "Modérément présent"
+  },
+  {
+   "maxPercent": 0.8,
+   "label": "Nettement présent"
+  },
+  {
+   "maxPercent": 1.01,
+   "label": "Très marqué"
+  }
+ ],
+ "items": [
+  {
+   "id": 1,
+   "dimension": "dim_1",
+   "text": "Une idée en amène une autre très vite, au point que je perds parfois le fil de ma pensée de départ."
+  },
+  {
+   "id": 2,
+   "dimension": "dim_1",
+   "text": "En discussion, je fais souvent des liens entre des sujets que les autres ne rapprochent pas spontanément."
+  },
+  {
+   "id": 3,
+   "dimension": "dim_1",
+   "text": "Mon esprit part facilement dans plusieurs directions à la fois face à un même problème."
+  },
+  {
+   "id": 4,
+   "dimension": "dim_1",
+   "text": "J'ai du mal à expliquer comment je suis arrivé à une conclusion : ça m'est venu d'un coup, par association d'idées."
+  },
+  {
+   "id": 5,
+   "dimension": "dim_1",
+   "text": "Je passe souvent d'un sujet à un autre sans transition évidente pour mon interlocuteur."
+  },
+  {
+   "id": 6,
+   "dimension": "dim_2",
+   "text": "Je ressens les émotions, les miennes comme celles des autres, de façon très intense."
+  },
+  {
+   "id": 7,
+   "dimension": "dim_2",
+   "text": "Les bruits, lumières ou textures désagréables me dérangent plus que la moyenne des gens autour de moi."
+  },
+  {
+   "id": 8,
+   "dimension": "dim_2",
+   "text": "Un film, une musique ou une scène peuvent me bouleverser bien au-delà de ce que j'observe chez les autres."
+  },
+  {
+   "id": 9,
+   "dimension": "dim_2",
+   "text": "Je perçois facilement les tensions ou les non-dits dans un groupe, même sans qu'on me dise rien."
+  },
+  {
+   "id": 10,
+   "dimension": "dim_2",
+   "text": "On m'a déjà dit que j'étais « trop sensible » ou que je réagissais trop fort."
+  },
+  {
+   "id": 11,
+   "dimension": "dim_3",
+   "text": "Une injustice, même qui ne me concerne pas directement, m'affecte profondément."
+  },
+  {
+   "id": 12,
+   "dimension": "dim_3",
+   "text": "J'ai besoin de comprendre le sens ou le pourquoi d'une règle pour accepter de la suivre."
+  },
+  {
+   "id": 13,
+   "dimension": "dim_3",
+   "text": "Les questions existentielles (le sens de la vie, la mort, la morale) m'occupent l'esprit depuis que je suis jeune."
+  },
+  {
+   "id": 14,
+   "dimension": "dim_3",
+   "text": "Je remets facilement en question une autorité si je trouve sa décision injustifiée."
+  },
+  {
+   "id": 15,
+   "dimension": "dim_3",
+   "text": "Faire quelque chose qui n'a « pas de sens » pour moi m'est particulièrement difficile, même si c'est utile."
+  },
+  {
+   "id": 16,
+   "dimension": "dim_4",
+   "text": "Une tâche répétitive ou trop simple m'ennuie très vite, au point de perdre toute motivation."
+  },
+  {
+   "id": 17,
+   "dimension": "dim_4",
+   "text": "Je termine souvent un travail bien plus vite que ce qui était prévu, puis je m'ennuie en attendant la suite."
+  },
+  {
+   "id": 18,
+   "dimension": "dim_4",
+   "text": "Enfant, l'école m'a souvent semblé trop lente par rapport à ce que je comprenais déjà."
+  },
+  {
+   "id": 19,
+   "dimension": "dim_4",
+   "text": "J'ai besoin d'un niveau de stimulation ou de challenge élevé pour rester concentré longtemps."
+  },
+  {
+   "id": 20,
+   "dimension": "dim_4",
+   "text": "Je préfère largement apprendre plusieurs choses en parallèle plutôt qu'une seule à la fois."
+  },
+  {
+   "id": 21,
+   "dimension": "dim_5",
+   "text": "Je me suis souvent senti « décalé » par rapport aux gens de mon âge, sans savoir pourquoi exactement."
+  },
+  {
+   "id": 22,
+   "dimension": "dim_5",
+   "text": "J'ai plus de facilité à échanger en profondeur avec des personnes plus âgées ou plus jeunes qu'avec mes pairs."
+  },
+  {
+   "id": 23,
+   "dimension": "dim_5",
+   "text": "On m'a déjà dit que j'étais « trop dans ma tête » ou que je compliquais des choses simples."
+  },
+  {
+   "id": 24,
+   "dimension": "dim_5",
+   "text": "J'ai parfois l'impression de ne pas fonctionner tout à fait comme les autres, sans que ce soit négatif."
+  },
+  {
+   "id": 25,
+   "dimension": "dim_5",
+   "text": "Les conversations « pour meubler » sans contenu réel m'ennuient ou me pèsent rapidement."
+  },
+  {
+   "id": 26,
+   "dimension": "dim_6",
+   "text": "Je trouve souvent des solutions originales, différentes de ce à quoi les autres auraient pensé en premier."
+  },
+  {
+   "id": 27,
+   "dimension": "dim_6",
+   "text": "J'aime détourner une règle ou un outil de son usage prévu pour résoudre un problème autrement."
+  },
+  {
+   "id": 28,
+   "dimension": "dim_6",
+   "text": "On m'a déjà félicité pour une idée « inattendue » ou « hors du cadre » que je n'avais pas vue comme si particulière."
+  },
+  {
+   "id": 29,
+   "dimension": "dim_6",
+   "text": "J'ai souvent plusieurs façons différentes de résoudre un même problème, et j'ai du mal à n'en choisir qu'une."
+  },
+  {
+   "id": 30,
+   "dimension": "dim_6",
+   "text": "Face à une contrainte, mon premier réflexe est souvent de chercher comment la contourner plutôt que de m'y plier."
+  }
+ ],
+ "profiles": [
+  {
+   "name": "Le Cartographe mental",
+   "dominantDimensions": [
+    "Pensée arborescente",
+    "Créativité et pensée divergente"
+   ],
+   "description": "Ton esprit relie les idées à toute vitesse et trouve des chemins que peu de gens voient. C'est une vraie force en résolution de problèmes, à condition d'apprendre à structurer et partager ton raisonnement pour que les autres puissent te suivre."
+  },
+  {
+   "name": "L'Éponge sensible",
+   "dominantDimensions": [
+    "Hypersensibilité émotionnelle et sensorielle",
+    "Décalage relationnel"
+   ],
+   "description": "Tu perçois plus, plus fort, plus vite, ce qui t'expose autant à une grande richesse émotionnelle qu'à une fatigue réelle dans les environnements bruyants ou tendus. Apprendre à te protéger sans t'endurcir est un vrai levier."
+  },
+  {
+   "name": "Le Chercheur de sens",
+   "dominantDimensions": [
+    "Besoin de sens et de justice",
+    "Ennui et sous-stimulation"
+   ],
+   "description": "Tu as besoin de comprendre le pourquoi des choses et tu t'épuises vite dans ce qui n'a pas de sens pour toi. Choisir des activités et un environnement alignés avec tes valeurs change tout à ton énergie au quotidien."
+  },
+  {
+   "name": "Le Multi-potentiel",
+   "dominantDimensions": [
+    "Ennui et sous-stimulation",
+    "Créativité et pensée divergente",
+    "Pensée arborescente"
+   ],
+   "description": "Tu t'intéresses à beaucoup de choses en même temps et tu as du mal avec la routine ou la répétition. C'est une richesse à condition de trouver un cadre qui te laisse assez de variété pour ne pas t'ennuyer."
+  }
+ ]
+}

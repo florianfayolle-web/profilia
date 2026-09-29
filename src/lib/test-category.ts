@@ -67,6 +67,8 @@ const TEST_CATEGORY: Record<string, TestCategory> = {
   "logic-8": "personnalite",
   qi: "qi-sante-mentale",
   tdah: "qi-sante-mentale",
+  hpi: "qi-sante-mentale",
+  "animal-totem": "personnalite",
 };
 
 export function getTestCategory(slug: string): TestCategory {

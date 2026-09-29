@@ -1,0 +1,44 @@
+// The Profilia mark: a faceted diamond/mosaic built from triangles and
+// parallelograms in navy, blue and gold — shared by the header, footer and
+// the generated social-share images so there is exactly one copy of the
+// (fairly large) path data to keep in sync with the brand files in
+// public/brand/.
+export function ProfiliaMark({ size = 24, className }: { size?: number; className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 64 64"
+      width={size}
+      height={size}
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M11.15 19.00 L17.00 15.62 L22.85 19.00 L17.00 22.38Z" fill="#d4a537" stroke="#d4a537" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M18.65 23.33 L24.50 19.95 L30.35 23.33 L24.50 26.71Z" fill="#d4a537" stroke="#d4a537" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M26.15 27.67 L32.00 24.29 L37.85 27.67 L32.00 31.05Z" fill="#d4a537" stroke="#d4a537" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M18.65 14.67 L24.50 11.29 L30.35 14.67 L24.50 18.05Z" fill="#d4a537" stroke="#d4a537" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M26.15 19.00 L32.00 15.62 L37.85 19.00 L32.00 22.38Z" fill="#d4a537" stroke="#d4a537" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M33.65 23.33 L39.50 19.95 L45.35 23.33 L39.50 26.71Z" fill="#d4a537" stroke="#d4a537" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M26.15 10.33 L32.00 6.95 L37.85 10.33 L32.00 13.71Z" fill="#d4a537" stroke="#d4a537" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M33.65 14.67 L39.50 11.29 L45.35 14.67 L39.50 18.05Z" fill="#d4a537" stroke="#d4a537" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M41.15 19.00 L47.00 15.62 L52.85 19.00 L47.00 22.38Z" fill="#2f5fae" stroke="#2f5fae" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M10.32 20.43 L16.18 23.81 L16.18 30.57 L10.32 27.19Z" fill="#13254a" stroke="#13254a" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M10.32 29.10 L16.18 32.48 L16.18 39.24 L10.32 35.86Z" fill="#13254a" stroke="#13254a" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M10.32 37.76 L16.18 41.14 L16.18 47.90 L10.32 44.52Z" fill="#13254a" stroke="#13254a" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M17.83 24.76 L23.67 28.14 L23.67 34.90 L17.83 31.52Z" fill="#13254a" stroke="#13254a" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M17.83 33.43 L23.67 36.81 L23.67 43.57 L17.83 40.19Z" fill="#13254a" stroke="#13254a" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M17.83 42.10 L23.67 45.48 L23.67 52.24 L17.83 48.86Z" fill="#2f5fae" stroke="#2f5fae" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M25.32 29.10 L31.18 32.48 L31.18 39.24 L25.32 35.86Z" fill="#13254a" stroke="#13254a" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M25.32 37.76 L31.18 41.14 L31.18 47.90 L25.32 44.52Z" fill="#13254a" stroke="#13254a" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M25.32 46.43 L31.18 49.81 L31.18 56.57 L25.32 53.19Z" fill="#13254a" stroke="#13254a" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M32.83 32.48 L38.67 29.10 L38.67 35.86 L32.83 39.24Z" fill="#2f5fae" stroke="#2f5fae" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M32.83 41.14 L38.67 37.76 L38.67 44.52 L32.83 47.90Z" fill="#2f5fae" stroke="#2f5fae" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M32.83 49.81 L38.67 46.43 L38.67 53.19 L32.83 56.57Z" fill="#2f5fae" stroke="#2f5fae" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M40.33 28.14 L46.17 24.76 L46.17 31.52 L40.33 34.90Z" fill="#2f5fae" stroke="#2f5fae" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M40.33 36.81 L46.17 33.43 L46.17 40.19 L40.33 43.57Z" fill="#2f5fae" stroke="#2f5fae" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M40.33 45.48 L46.17 42.10 L46.17 48.86 L40.33 52.24Z" fill="#2f5fae" stroke="#2f5fae" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M47.82 23.81 L53.67 20.43 L53.67 27.19 L47.82 30.57Z" fill="#d4a537" stroke="#d4a537" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M47.82 32.48 L53.67 29.10 L53.67 35.86 L47.82 39.24Z" fill="#2f5fae" stroke="#2f5fae" strokeWidth="0.9" strokeLinejoin="round" />
+      <path d="M47.82 41.14 L53.67 37.76 L53.67 44.52 L47.82 47.90Z" fill="#2f5fae" stroke="#2f5fae" strokeWidth="0.9" strokeLinejoin="round" />
+    </svg>
+  );
+}

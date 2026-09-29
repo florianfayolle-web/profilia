@@ -52,6 +52,11 @@ const THEMES: Record<string, Record<string, string>> = {
   // Repérage TDAH : bleu sarcelle profond & corail — chaleureux plutôt que
   // clinique, pour ne pas avoir l'air d'un questionnaire d'hôpital.
   tdah: { "--primary": "#0E7490", "--accent": "#FB7185", "--primary-foreground": "#ffffff" },
+  // HPI : violet profond & or — proche du 16-profils-cognitifs (même thème
+  // "cérébral") mais plus sombre/dense pour rester distinct.
+  hpi: { "--primary": "#4C1D95", "--accent": "#F5B841", "--primary-foreground": "#ffffff" },
+  // Animal totem : vert forêt & orange — ludique, chaleureux, nature.
+  "animal-totem": { "--primary": "#166534", "--accent": "#F97316", "--primary-foreground": "#ffffff" },
 };
 
 export function getTestThemeStyle(slug: string): CSSProperties | undefined {
@@ -85,6 +90,8 @@ const ORDER: Record<string, number> = {
   "big-five-express": 0,
   qi: 13,
   tdah: 14,
+  hpi: 15,
+  "animal-totem": 16,
 };
 
 export function getTestOrder(slug: string): number {

@@ -34,6 +34,8 @@ export function motifForTest(testSlug: string): Motif {
   if (/lvmh|societe|thales|entreprise/.test(testSlug)) return "briefcase";
   if (/^qi$|logic/.test(testSlug)) return "bulb";
   if (/tdah/.test(testSlug)) return "people";
+  if (/^hpi$/.test(testSlug)) return "bulb";
+  if (/animal/.test(testSlug)) return "compass";
   return "radar";
 }
 

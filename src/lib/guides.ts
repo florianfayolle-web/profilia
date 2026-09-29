@@ -1110,6 +1110,91 @@ GUIDES.push({
   ],
 });
 
+GUIDES.push({
+  slug: "test-hpi",
+  testSlug: "hpi",
+  title: "Suis-je HPI ? Comprendre le haut potentiel intellectuel sans test de QI",
+  metaDescription:
+    "Ce que le haut potentiel intellectuel (HPI) désigne vraiment, les traits qui reviennent le plus souvent chez les adultes concernés, et pourquoi seul un bilan psychométrique complet permet de le confirmer.",
+  intro:
+    "\u00ab Suis-je HPI ? \u00bb revient souvent en recherche, généralement sans savoir par où commencer. Voici ce qu'un vrai diagnostic implique, et ce que ce test peut, ou ne peut pas, t'apprendre en attendant.",
+  sections: [
+    {
+      heading: "HPI ne veut pas dire \u00ab bon élève \u00bb",
+      body: [
+        "Le haut potentiel intellectuel est officiellement défini par un quotient intellectuel supérieur ou égal à 130, mesuré par un test étalonné (WISC pour les enfants, WAIS pour les adultes) et passé avec un psychologue. Mais dans la pratique, beaucoup d'adultes HPI ne le découvrent que tardivement, parfois en creusant les difficultés d'un de leurs enfants, parce que le haut potentiel ne se traduit pas forcément par de bonnes notes ou une réussite scolaire évidente.",
+      ],
+    },
+    {
+      heading: "Des traits plus parlants qu'un chiffre",
+      body: [
+        "Au quotidien, ce qui alerte le plus souvent, ce ne sont pas les résultats scolaires mais un ensemble de traits récurrents : une pensée qui saute vite d'une idée à l'autre (pensée arborescente), une intensité émotionnelle et sensorielle plus forte que la moyenne, un besoin de sens et de justice marqué, un ennui rapide face à la routine, un sentiment de décalage relationnel depuis l'enfance, et une créativité ou une façon de résoudre les problèmes qui sort des sentiers battus.",
+        "Notre test explore ces six traits à partir de 30 affirmations, pour te donner un premier repère, pas un chiffre.",
+      ],
+    },
+    {
+      heading: "Pourquoi ce test ne peut pas te dire \u00ab tu es HPI \u00bb",
+      body: [
+        "Un questionnaire en ligne mesure des traits que tu t'attribues toi-même, pas une performance cognitive standardisée : il n'y a ici ni exercice chronométré, ni comparaison à un échantillon représentatif de la population, ce qu'un vrai test de QI (WAIS) exige. Ce test te donne donc une photographie de traits fréquemment associés au haut potentiel, jamais une confirmation ou une infirmation du haut potentiel lui-même.",
+        "Si le résultat te parle fortement et que tu veux en avoir le cœur net, la seule étape qui vaille est de consulter un psychologue formé à la passation du WAIS.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      question: "Ce test peut-il diagnostiquer un HPI ?",
+      answer:
+        "Non. Seul un test de QI complet (WAIS pour un adulte), passé avec un psychologue, permet de mesurer un quotient intellectuel et de parler de haut potentiel. Ce questionnaire explore des traits fréquemment associés au HPI, à titre indicatif seulement.",
+    },
+    {
+      question: "Le test de QI de Profilia peut-il servir à la place ?",
+      answer:
+        "Non plus : notre test de QI donne lui aussi un score indicatif de raisonnement, pas un quotient intellectuel étalonné. Les deux tests sont complémentaires pour te faire une idée, mais aucun ne remplace un bilan avec un psychologue.",
+    },
+  ],
+});
+
+GUIDES.push({
+  slug: "test-animal-totem",
+  testSlug: "animal-totem",
+  title: "Quel animal es-tu ? Le test totem à faire entre amis",
+  metaDescription:
+    "Comment fonctionne le test de l'animal totem, les 10 profils possibles (loup, chat, dauphin, hibou, lion, renard, aigle, ours, abeille, papillon), et pourquoi c'est un bon jeu à faire à plusieurs.",
+  intro:
+    "Pas besoin d'un objectif sérieux pour vouloir mieux se connaître, ou comparer son profil avec ses proches. Ce test associe ta personnalité à un animal, sur le ton du jeu.",
+  sections: [
+    {
+      heading: "Comment ça marche",
+      body: [
+        "20 affirmations en paires opposées explorent 5 grandes facettes de ta personnalité : ton rapport au groupe (Loup ou Chat), ton énergie sociale (Dauphin ou Hibou), ta façon de décider (Lion ou Renard), ton rapport au temps (Aigle ou Ours), et ton rapport au travail (Abeille ou Papillon). Ton profil final retient la facette la plus marquée chez toi, celle où tu penches le plus nettement d'un côté.",
+      ],
+    },
+    {
+      heading: "Un jeu de miroir, pas une classification",
+      body: [
+        "Aucun animal n'est \u00ab meilleur \u00bb qu'un autre : chaque profil a ses forces selon les situations. L'intérêt n'est pas de te faire rentrer dans une case, mais d'avoir un prétexte léger pour parler de toi, comparer ton résultat avec celui de tes amis ou de ta famille, et voir si ça sonne juste.",
+      ],
+    },
+    {
+      heading: "Pour en profiter à plusieurs",
+      body: [
+        "Fais-le chacun de ton côté avant de comparer les résultats à voix haute : c'est souvent le moment le plus amusant, surtout quand le profil surprend. Demander aux autres de deviner ton animal avant de révéler ton résultat fonctionne particulièrement bien en soirée.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      question: "Le résultat a-t-il une vraie valeur psychologique ?",
+      answer:
+        "C'est une création originale à visée ludique, pas un outil validé scientifiquement. Si tu veux un profil de personnalité plus sérieux, nos tests Big Five, DISC ou bilan à 360° sont plus indiqués.",
+    },
+    {
+      question: "Combien de temps ça prend ?",
+      answer: "20 affirmations, environ 5 minutes.",
+    },
+  ],
+});
+
 export function getGuideBySlug(slug: string): Guide | undefined {
   return GUIDES.find((g) => g.slug === slug);
 }

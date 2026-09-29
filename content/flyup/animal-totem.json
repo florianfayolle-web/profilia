@@ -1,0 +1,385 @@
+{
+ "testId": "animal_totem",
+ "title": "Quel animal es-tu ? Ton profil de personnalité totem",
+ "instructions": "20 affirmations en paires opposées, sur 5 grandes facettes de ta personnalité. Pour chaque paire, choisis l'affirmation qui te correspond le plus, sans trop réfléchir.",
+ "responseScale": [
+  {
+   "value": -2,
+   "anchor": "left",
+   "label": "Tout à fait d'accord"
+  },
+  {
+   "value": -1,
+   "anchor": "left",
+   "label": "D'accord"
+  },
+  {
+   "value": 0,
+   "anchor": "neutral",
+   "label": "Neutre"
+  },
+  {
+   "value": 1,
+   "anchor": "right",
+   "label": "D'accord"
+  },
+  {
+   "value": 2,
+   "anchor": "right",
+   "label": "Tout à fait d'accord"
+  }
+ ],
+ "dimensions": [
+  {
+   "key": "energie",
+   "name": "Rapport au groupe",
+   "poleA": {
+    "label": "Meneur de meute",
+    "trait": "Le Loup",
+    "description": "Tu te sens à ta place dans un collectif soudé, où chacun connaît sa place et où la loyauté compte plus que tout. Tu prends naturellement une place de repère pour les autres."
+   },
+   "poleB": {
+    "label": "Franc-tireur",
+    "trait": "Le Chat",
+    "description": "Tu avances à ton rythme, sans avoir besoin de l'aval du groupe pour te sentir légitime. Ta liberté n'est pas négociable, même si ça peut passer pour de la distance."
+   },
+   "report": {
+    "Amarque": "Le collectif te porte vraiment : tu donnes le meilleur de toi-même entouré, et les autres comptent sur ta loyauté sans même avoir à te la demander.",
+    "Amodere": "Tu apprécies appartenir à un groupe soudé, sans pour autant t'y dissoudre complètement : tu gardes un espace à toi.",
+    "equilibre": "Tu navigues avec aisance entre l'esprit d'équipe et le besoin de faire les choses à ta façon, selon les situations.",
+    "Bmodere": "Tu préfères généralement avancer par toi-même, tout en sachant t'associer quand le projet en vaut la peine.",
+    "Bmarque": "Ton indépendance est un vrai moteur : tu n'as besoin de personne pour te sentir légitime, même si ça peut se lire comme de la distance."
+   }
+  },
+  {
+   "key": "social",
+   "name": "Énergie sociale",
+   "poleA": {
+    "label": "Joueur né",
+    "trait": "Le Dauphin",
+    "description": "Tu te ressources au contact des autres, dans l'échange et le jeu. Ta bonne humeur est contagieuse, et le silence prolongé te pèse vite."
+   },
+   "poleB": {
+    "label": "Observateur discret",
+    "trait": "Le Hibou",
+    "description": "Tu préfères observer avant d'intervenir, et tu réfléchis souvent en retrait plutôt qu'à voix haute. Le calme te réussit mieux que l'agitation."
+   },
+   "report": {
+    "Amarque": "Ton énergie sociale est communicative : tu vas naturellement vers les autres, et l'ambiance d'un groupe te doit souvent beaucoup.",
+    "Amodere": "Tu aimes le contact et l'échange, sans en avoir un besoin permanent : tu sais aussi profiter d'un moment plus calme.",
+    "equilibre": "Tu passes avec aisance du mode social au mode retiré selon ton énergie du moment.",
+    "Bmodere": "Tu préfères généralement observer avant de te lancer, sans être fermé pour autant à l'échange quand il a du sens.",
+    "Bmarque": "Ton besoin de calme et d'observation est marqué : tu en apprends beaucoup en silence, avant même de dire un mot."
+   }
+  },
+  {
+   "key": "decision",
+   "name": "Prise de décision",
+   "poleA": {
+    "label": "Fonceur",
+    "trait": "Le Lion",
+    "description": "Face à une situation, ton premier réflexe est d'avancer avec assurance. Tu préfères te tromper en ayant essayé que regretter de ne pas avoir osé."
+   },
+   "poleB": {
+    "label": "Stratège",
+    "trait": "Le Renard",
+    "description": "Tu préfères observer la situation sous tous les angles avant d'agir, et trouver le chemin le plus malin plutôt que le plus direct."
+   },
+   "report": {
+    "Amarque": "Ton assurance est un vrai moteur : tu avances sans attendre d'être sûr à 100%, et ça débloque souvent des situations où d'autres hésitent.",
+    "Amodere": "Tu sais avancer avec confiance, sans pour autant foncer tête baissée : tu gardes un minimum de recul.",
+    "equilibre": "Tu alternes naturellement entre l'audace et la stratégie selon ce que la situation demande.",
+    "Bmodere": "Tu préfères généralement peser les options avant d'agir, sans pour autant être paralysé par l'analyse.",
+    "Bmarque": "Ta finesse stratégique est marquée : tu vois des angles que d'autres ratent, et tu préfères la ruse à la force brute."
+   }
+  },
+  {
+   "key": "ambition",
+   "name": "Rapport au temps et aux objectifs",
+   "poleA": {
+    "label": "Vision long terme",
+    "trait": "L'Aigle",
+    "description": "Tu vises loin, tu gardes le cap sur un objectif ambitieux même quand le chemin est long. Le court terme t'intéresse moins que la trajectoire d'ensemble."
+   },
+   "poleB": {
+    "label": "Ancrage et protection",
+    "trait": "L'Ours",
+    "description": "Tu avances posément, tu protèges ce qui compte pour toi et tu n'aimes pas te presser. La solidité du présent compte plus que la promesse d'un futur incertain."
+   },
+   "report": {
+    "Amarque": "Ta vision à long terme est un vrai moteur : tu gardes le cap sur ce qui compte vraiment, même quand le chemin est long ou peu visible pour les autres.",
+    "Amodere": "Tu sais te projeter loin, sans pour autant négliger ce qui se passe ici et maintenant.",
+    "equilibre": "Tu jongles avec aisance entre la vision d'ensemble et l'attention au présent, selon les besoins du moment.",
+    "Bmodere": "Tu préfères généralement avancer posément et sécuriser ce que tu as, sans pour autant renoncer à voir plus loin quand c'est utile.",
+    "Bmarque": "Ton besoin de solidité et de protection est marqué : tu avances à ton rythme, sans te laisser bousculer par l'urgence des autres."
+   }
+  },
+  {
+   "key": "travail",
+   "name": "Rapport au travail et au changement",
+   "poleA": {
+    "label": "Méthode et collectif",
+    "trait": "L'Abeille",
+    "description": "Tu es à l'aise dans un cadre structuré, où chacun a un rôle précis et où l'effort collectif paie. La rigueur et la constance sont tes points forts."
+   },
+   "poleB": {
+    "label": "Spontanéité et changement",
+    "trait": "Le Papillon",
+    "description": "Tu as besoin de variété et de légèreté pour t'épanouir. La routine t'use vite, et tu préfères papillonner d'une idée à l'autre plutôt que t'enfermer dans un plan rigide."
+   },
+   "report": {
+    "Amarque": "Ta rigueur et ton sens du collectif sont un vrai atout : tu tiens la distance là où d'autres décrochent, et l'organisation te réussit.",
+    "Amodere": "Tu apprécies un cadre structuré, sans en avoir un besoin absolu : tu sais aussi t'adapter à l'imprévu.",
+    "equilibre": "Tu alternes avec aisance entre méthode et spontanéité selon ce que la situation demande.",
+    "Bmodere": "Tu préfères généralement garder de la souplesse, sans pour autant fuir tout cadre quand il a du sens.",
+    "Bmarque": "Ton besoin de variété et de légèreté est marqué : la routine t'épuise vite, et le changement te régénère."
+   }
+  }
+ ],
+ "items": [
+  {
+   "id": 1,
+   "dimension": "energie",
+   "left": {
+    "text": "Je me sens à ma place dans un groupe soudé où chacun connaît son rôle.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Je préfère avancer par moi-même plutôt que de dépendre d'un groupe.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 2,
+   "dimension": "energie",
+   "left": {
+    "text": "La loyauté envers mon équipe compte plus que tout pour moi.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Ma liberté d'action n'est pas négociable, même au sein d'un groupe.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 3,
+   "dimension": "energie",
+   "left": {
+    "text": "Je me sens investi d'un rôle de repère pour les autres.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Je peux sembler distant même quand je suis attaché aux autres.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 4,
+   "dimension": "energie",
+   "left": {
+    "text": "Je préfère qu'on avance ensemble plutôt que chacun de son côté.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Je préfère qu'on me laisse avancer à mon rythme, seul.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 5,
+   "dimension": "social",
+   "left": {
+    "text": "Le contact avec les autres me recharge en énergie.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Le calme et la solitude me recentrent plus que la compagnie.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 6,
+   "dimension": "social",
+   "left": {
+    "text": "Un silence prolongé dans un groupe me met mal à l'aise.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "J'observe volontiers avant de prendre la parole dans un groupe.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 7,
+   "dimension": "social",
+   "left": {
+    "text": "Je me sens à l'aise pour animer une conversation de groupe.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Je préfère écouter attentivement plutôt que parler en premier.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 8,
+   "dimension": "social",
+   "left": {
+    "text": "Après une soirée entourée de monde, je me sens plutôt regonflé.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Après une journée sociale intense, j'ai besoin de calme pour récupérer.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 9,
+   "dimension": "decision",
+   "left": {
+    "text": "Face à une décision, j'agis vite, quitte à me tromper.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Face à une décision, j'observe la situation sous tous les angles avant d'agir.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 10,
+   "dimension": "decision",
+   "left": {
+    "text": "Je préfère me tromper en ayant essayé que regretter de ne pas avoir osé.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Je préfère trouver le chemin le plus malin plutôt que le plus direct.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 11,
+   "dimension": "decision",
+   "left": {
+    "text": "Mon assurance débloque souvent des situations où d'autres hésitent.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Je vois souvent des angles que les autres ratent dans une situation.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 12,
+   "dimension": "decision",
+   "left": {
+    "text": "J'avance avec confiance même sans être sûr à 100%.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Je préfère la ruse et la finesse à la force brute.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 13,
+   "dimension": "ambition",
+   "left": {
+    "text": "Je garde le cap sur un objectif ambitieux même quand le chemin est long.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Je préfère avancer posément et protéger ce que j'ai déjà.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 14,
+   "dimension": "ambition",
+   "left": {
+    "text": "Le court terme m'intéresse moins que la trajectoire d'ensemble.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "La solidité du présent compte plus pour moi qu'une promesse future incertaine.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 15,
+   "dimension": "ambition",
+   "left": {
+    "text": "Je me projette facilement loin dans le temps.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Je n'aime pas qu'on me précipite dans mes décisions.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 16,
+   "dimension": "ambition",
+   "left": {
+    "text": "Ma vision à long terme me porte même quand elle est peu visible pour les autres.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Je préfère avancer à mon rythme, sans me laisser bousculer par l'urgence des autres.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 17,
+   "dimension": "travail",
+   "left": {
+    "text": "Je suis à l'aise dans un cadre structuré où chacun a un rôle précis.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "J'ai besoin de variété pour rester motivé dans ce que je fais.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 18,
+   "dimension": "travail",
+   "left": {
+    "text": "La rigueur et la constance sont mes points forts au travail.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "La routine m'épuise vite, même dans un travail que j'aime.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 19,
+   "dimension": "travail",
+   "left": {
+    "text": "L'effort collectif organisé me réussit mieux que l'improvisation.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Je préfère papillonner d'une idée à l'autre plutôt que suivre un plan rigide.",
+    "pole": "B"
+   }
+  },
+  {
+   "id": 20,
+   "dimension": "travail",
+   "left": {
+    "text": "Je tiens la distance sur un projet long et structuré.",
+    "pole": "A"
+   },
+   "right": {
+    "text": "Le changement me régénère plus qu'il ne me déstabilise.",
+    "pole": "B"
+   }
+  }
+ ],
+ "report": {
+  "intro": "Ce profil associe tes tendances naturelles à un animal totem, sur 5 grandes facettes de ta personnalité. Aucun animal n'est « meilleur » qu'un autre : chacun a ses forces, selon les situations.",
+  "outro": "Ce résultat est un jeu de miroir amusant, pas une classification scientifique : prends-le comme une façon différente et légère de parler de toi avec tes proches. Si tu veux un profil plus complet, Profilia propose des tests de personnalité plus détaillés (Big Five, DISC, bilan à 360°...)."
+ }
+}
