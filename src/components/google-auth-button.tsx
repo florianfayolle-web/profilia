@@ -1,54 +1,93 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import Script from "next/script";
 import { createClient } from "@/lib/supabase/client";
 
-// Same button/flow for both login and signup — Supabase's OAuth sign-in
-// creates the account on first use, so there's no separate "sign up with
-// Google" action to write. The profile row is filled in by the same
-// database trigger that handles email/password signup (id + email only);
-// first name/last name/gender/birth date stay empty for a Google account
-// since Google only ever hands over name + email + avatar.
-export function GoogleAuthButton({ next }: { next?: string }) {
-  const [pending, setPending] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+type GoogleCredentialResponse = { credential: string };
 
-  async function handleClick() {
-    setPending(true);
-    setError(null);
-    const supabase = createClient();
-    const redirectTo = new URL("/auth/callback", window.location.origin);
-    if (next) redirectTo.searchParams.set("next", next);
-
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: { redirectTo: redirectTo.toString() },
-    });
-
-    if (error) {
-      setError("Impossible de démarrer la connexion avec Google.");
-      setPending(false);
-    }
-    // On success the browser is redirected to Google immediately — no
-    // further client-side state change happens on this page.
+declare global {
+  interface Window {
+    google?: {
+      accounts: {
+        id: {
+          initialize: (config: {
+            client_id: string;
+            callback: (response: GoogleCredentialResponse) => void;
+          }) => void;
+          renderButton: (
+            parent: HTMLElement,
+            options: Record<string, unknown>
+          ) => void;
+        };
+      };
+    };
   }
+}
+
+// Renders Google's own "Sign in with Google" button and signs in with the
+// ID token it returns, instead of Supabase's redirect-based OAuth flow.
+// This keeps the whole exchange on our own page, so the Google consent
+// screen shows our domain rather than the project's *.supabase.co host —
+// a custom Auth domain (paid Supabase add-on) would be the only way to fix
+// that on the redirect flow. Same account-creation behavior as before:
+// Supabase creates the account on first sign-in, and the profile row is
+// filled in by the same trigger used for email/password signup.
+export function GoogleAuthButton({ next }: { next?: string }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [scriptReady, setScriptReady] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const router = useRouter();
+
+  const handleCredential = useCallback(
+    async (response: GoogleCredentialResponse) => {
+      setError(null);
+      const supabase = createClient();
+      const { error } = await supabase.auth.signInWithIdToken({
+        provider: "google",
+        token: response.credential,
+      });
+      if (error) {
+        setError("Connexion avec Google impossible.");
+        return;
+      }
+      router.push(next || "/tests");
+      router.refresh();
+    },
+    [next, router]
+  );
+
+  useEffect(() => {
+    const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
+    if (!scriptReady || !clientId || !window.google || !containerRef.current)
+      return;
+
+    window.google.accounts.id.initialize({
+      client_id: clientId,
+      callback: handleCredential,
+    });
+    const width = Math.min(
+      400,
+      Math.max(200, Math.floor(containerRef.current.clientWidth))
+    );
+    window.google.accounts.id.renderButton(containerRef.current, {
+      theme: "outline",
+      size: "large",
+      width,
+      text: "continue_with",
+      locale: "fr",
+    });
+  }, [scriptReady, handleCredential]);
 
   return (
     <div>
-      <button
-        type="button"
-        onClick={handleClick}
-        disabled={pending}
-        className="flex w-full items-center justify-center gap-2.5 rounded-md border border-card-border bg-background px-3 py-2.5 text-sm font-medium transition hover:border-primary/40 disabled:cursor-not-allowed disabled:opacity-60"
-      >
-        <svg viewBox="0 0 24 24" className="h-4.5 w-4.5" aria-hidden="true">
-          <path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.2-2.27H12v4.3h6.47a5.54 5.54 0 0 1-2.4 3.63v3h3.88c2.27-2.09 3.54-5.17 3.54-8.66Z" />
-          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.07 7.93-2.91l-3.87-3.01c-1.08.72-2.46 1.15-4.06 1.15-3.13 0-5.78-2.11-6.73-4.96H1.27v3.11A12 12 0 0 0 12 24Z" />
-          <path fill="#FBBC05" d="M5.27 14.27a7.2 7.2 0 0 1 0-4.54v-3.1H1.27a12 12 0 0 0 0 10.75l4-3.11Z" />
-          <path fill="#EA4335" d="M12 4.75c1.76 0 3.35.61 4.6 1.8l3.44-3.44C17.94 1.19 15.24 0 12 0A12 12 0 0 0 1.27 6.63l4 3.1c.95-2.85 3.6-4.98 6.73-4.98Z" />
-        </svg>
-        {pending ? "Redirection…" : "Continuer avec Google"}
-      </button>
+      <Script
+        src="https://accounts.google.com/gsi/client"
+        strategy="afterInteractive"
+        onReady={() => setScriptReady(true)}
+      />
+      <div ref={containerRef} className="flex w-full justify-center" />
       {error && <p className="mt-2 text-sm text-red-600">{error}</p>}
     </div>
   );
