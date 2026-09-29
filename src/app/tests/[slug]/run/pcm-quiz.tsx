@@ -102,17 +102,20 @@ export function PcmQuiz({
 
   if (showInterlude) {
     return (
-      <div className="mt-6 rounded-xl border border-card-border bg-card p-6">
-        <p className="text-sm font-medium text-muted-foreground">
-          Partie 2 sur 2
+      <div className="mt-6 overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/10 via-card to-accent/10 p-8 text-center fade-in">
+        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm shadow-primary/30">
+          <svg viewBox="0 0 24 24" fill="none" className="h-7 w-7" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </span>
+        <p className="mt-4 inline-block rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
+          Étape suivante
         </p>
-        <h2 className="mt-2 text-2xl font-semibold tracking-tight">
+        <h2 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">
           Maintenant, cette année-ci
         </h2>
-        <p className="mt-3 text-muted">
-          La première partie parlait de toi depuis toujours. Celle-ci parle
-          des douze derniers mois : ne réponds plus « c&apos;est moi en
-          général », réponds « c&apos;est moi en ce moment ».
+        <p className="mx-auto mt-3 max-w-md text-muted">
+          La première partie parlait de toi depuis toujours. Celle-ci parle des douze derniers mois : ne réponds plus « c&apos;est moi en général », réponds « c&apos;est moi en ce moment ».
         </p>
         <button
           type="button"
@@ -121,9 +124,9 @@ export function PcmQuiz({
             setStep((s) => s + 1);
             setShownAt(Date.now());
           }}
-          className="mt-6 rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
+          className="mt-6 rounded-full bg-primary px-8 py-3 text-sm font-semibold text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
         >
-          Continuer
+          Continuer →
         </button>
       </div>
     );
