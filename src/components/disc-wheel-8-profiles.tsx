@@ -56,7 +56,7 @@ function labelRotation(centerDeg: number) {
 
 export function DiscWheel8Profiles({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 640 640" className={className} role="img" aria-label="Roue DISC des 8 profils">
+    <svg viewBox="-50 -50 740 740" className={className} role="img" aria-label="Roue DISC des 8 profils">
       <circle cx={CX} cy={CY} r={R_OUTER + 2} fill="none" stroke="#ffffff" strokeWidth="2" />
       {SEGMENTS.map((seg, i) => {
         const start = i * 45 - 22.5;
