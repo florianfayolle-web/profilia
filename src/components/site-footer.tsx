@@ -7,7 +7,21 @@ export function SiteFooter() {
       <div className="mx-auto max-w-5xl px-6 py-10">
         <div className="flex flex-col gap-8 sm:flex-row sm:justify-between">
           <div className="max-w-sm">
-            <p className="font-semibold tracking-tight">{SITE_NAME}</p>
+            <p className="flex items-center gap-2 font-semibold tracking-tight">
+              <svg viewBox="0 0 64 64" className="h-5 w-5 shrink-0" aria-hidden="true">
+                <g transform="translate(1.5 0)">
+                  <rect x="14" y="10" width="9" height="44" rx="4.5" fill="#0b6e7a" />
+                  <path
+                    d="M18.5 14.5H30a11.5 11.5 0 0 1 0 23H18.5"
+                    fill="none"
+                    stroke="#0b6e7a"
+                    strokeWidth="9"
+                  />
+                  <circle cx="30" cy="26" r="4" fill="#e8590c" />
+                </g>
+              </svg>
+              {SITE_NAME}
+            </p>
             <p className="mt-2 text-sm text-muted">
               Tests de personnalité et de jugement situationnel en ligne,
               pour te connaître ou t&apos;entraîner avant un entretien de

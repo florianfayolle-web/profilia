@@ -5,16 +5,17 @@ import { MobileMenu } from "@/components/mobile-menu";
 
 function PlaneMark() {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      className="h-5 w-5 shrink-0 text-primary"
-      aria-hidden="true"
-    >
-      <path
-        d="M21 12l-7-2-2-7-2 1 1 6.5L4 9l-2 1 5.5 4L6 17l2-.5 2-2.5 5 3 1-2-4-3.5L21 12z"
-        fill="currentColor"
-      />
+    <svg viewBox="0 0 64 64" className="h-6 w-6 shrink-0" aria-hidden="true">
+      <g transform="translate(1.5 0)">
+        <rect x="14" y="10" width="9" height="44" rx="4.5" fill="#0b6e7a" />
+        <path
+          d="M18.5 14.5H30a11.5 11.5 0 0 1 0 23H18.5"
+          fill="none"
+          stroke="#0b6e7a"
+          strokeWidth="9"
+        />
+        <circle cx="30" cy="26" r="4" fill="#e8590c" />
+      </g>
     </svg>
   );
 }

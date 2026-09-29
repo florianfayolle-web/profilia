@@ -16,7 +16,7 @@ export default function Image() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #eef2ff 0%, #f8fafc 100%)",
+          background: "linear-gradient(135deg, #e6f4f3 0%, #f8fafc 100%)",
           fontFamily: "sans-serif",
         }}
       >
@@ -26,9 +26,14 @@ export default function Image() {
             alignItems: "center",
             fontSize: 72,
             fontWeight: 700,
-            color: "#1d2b64",
+            color: "#0f2429",
           }}
         >
+          <svg width="72" height="72" viewBox="0 0 64 64" style={{ marginRight: 20 }}>
+            <rect x="14" y="10" width="9" height="44" rx="4.5" fill="#0b6e7a" />
+            <path d="M18.5 14.5H30a11.5 11.5 0 0 1 0 23H18.5" fill="none" stroke="#0b6e7a" strokeWidth="9" />
+            <circle cx="30" cy="26" r="4" fill="#e8590c" />
+          </svg>
           {SITE_NAME}
         </div>
         <div style={{ marginTop: 24, fontSize: 34, color: "#475569" }}>
