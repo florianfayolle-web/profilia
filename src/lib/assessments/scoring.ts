@@ -951,13 +951,22 @@ export function scoreAdhdScreener(
   def: AdhdScreenerDefinition,
   answers: Record<string, number>
 ) {
+  // `value` is a 0-100 position (a continuous slider, not just an index
+  // into scaleLabels), so the closest label is picked by proportion rather
+  // than by exact array lookup — this also still works for the plain 0..4
+  // index case, where it resolves to the same index.
+  const labelFor = (value: number) => {
+    const i = Math.round((value / 100) * (def.scaleLabels.length - 1));
+    return def.scaleLabels[Math.min(def.scaleLabels.length - 1, Math.max(0, i))] ?? "";
+  };
+
   const review = def.items.map((item) => {
     const value = answers[String(item.id)] ?? 0;
     return {
       id: item.id,
       text: item.text,
       value,
-      label: def.scaleLabels[value] ?? "",
+      label: labelFor(value),
       positive: value >= item.threshold,
     };
   });

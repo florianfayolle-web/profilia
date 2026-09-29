@@ -147,6 +147,18 @@ function introDemo(
       );
     case "adhd_screener": {
       const d = definition as AdhdScreenerDefinition;
+      if (SLIDER_SCALE_SLUGS.has(testSlug)) {
+        return (
+          <AnswerDemo
+            kind="slider"
+            text={d.items[0].text}
+            leftLabel={d.scaleLabels[0] ?? ""}
+            rightLabel={d.scaleLabels[d.scaleLabels.length - 1] ?? ""}
+            value={45}
+            caption="Une question porte sur la fréquence d'une situation dans ta vie quotidienne récente : place le curseur entre « jamais » et « très souvent », puis valide."
+          />
+        );
+      }
       return (
         <AnswerDemo
           kind="scale"
@@ -464,7 +476,19 @@ function GenericAssessmentQuiz({
             selectedValue={selectedValue}
           />
         )}
-        {format === "adhd_screener" && (
+        {format === "adhd_screener" && SLIDER_SCALE_SLUGS.has(testSlug) && (
+          <SliderQuestion
+            item={item as AdhdScreenerDefinition["items"][number]}
+            scale={(definition as AdhdScreenerDefinition).scaleLabels.map((label, i, arr) => ({
+              label,
+              value: Math.round((i / (arr.length - 1)) * 100),
+            }))}
+            onChoose={choose}
+            disabled={disabled}
+            selectedValue={selectedValue}
+          />
+        )}
+        {format === "adhd_screener" && !SLIDER_SCALE_SLUGS.has(testSlug) && (
           <LikertQuestion
             item={item as AdhdScreenerDefinition["items"][number]}
             scale={(definition as AdhdScreenerDefinition).scaleLabels.map((label, value) => ({ label, value }))}
@@ -652,7 +676,7 @@ const EMOJI_SCALE_SLUGS = new Set(["bp360"]);
 // HPI reads better as a continuous 0-100 position on a single track than as
 // 5 separate boxes — the traits it explores are a matter of degree, and a
 // slider makes that degree the whole point instead of forcing a coarse pick.
-const SLIDER_SCALE_SLUGS = new Set(["hpi"]);
+const SLIDER_SCALE_SLUGS = new Set(["hpi", "tdah"]);
 
 function SliderQuestion({
   item,
