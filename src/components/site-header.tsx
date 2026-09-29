@@ -27,9 +27,9 @@ export function SiteHeader() {
       <div className="relative mx-auto flex max-w-5xl items-center gap-3 px-4 py-4 sm:px-6">
         <Link
           href="/"
-          className="flex shrink-0 items-center gap-2 text-lg font-semibold tracking-tight"
+          className="flex shrink-0 items-center gap-2 text-xl font-semibold tracking-tight"
         >
-          <ProfiliaMark size={24} className="shrink-0" />
+          <ProfiliaMark size={36} className="shrink-0" />
           <span>{SITE_NAME}</span>
         </Link>
 
