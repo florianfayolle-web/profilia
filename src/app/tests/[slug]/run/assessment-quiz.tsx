@@ -9,6 +9,8 @@ import { QuizIntro } from "@/components/quiz-intro";
 import { AnswerDemo } from "@/components/answer-demo";
 import { QuizLoading } from "@/components/quiz-loading";
 import { EmailGate } from "@/components/email-gate";
+import { QiAgeGate, QiChildNotice } from "@/components/qi-age-gate";
+import { TdahAgeGate, TdahChildNotice } from "@/components/tdah-age-gate";
 import { DiscQuiz } from "./disc-quiz";
 import { PcmQuiz } from "./pcm-quiz";
 import { CareerBalanceQuiz } from "./career-balance-quiz";
@@ -227,8 +229,12 @@ function getItems(format: Format, definition: Definition) {
       return (definition as SosieDefinition).items;
     case "orientation_riasec":
       return (definition as OrientationDefinition).items;
-    case "adhd_screener":
-      return (definition as AdhdScreenerDefinition).items;
+    case "adhd_screener": {
+      const d = definition as AdhdScreenerDefinition;
+      // Context items (yes/no) come after the 18 dimension items (slider) —
+      // see the isAdhdContextItem check where items are rendered.
+      return [...d.items, ...d.contextItems];
+    }
   }
 }
 
@@ -341,9 +347,20 @@ function GenericAssessmentQuiz({
   const [showEmailGate, setShowEmailGate] = useState(false);
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
+  // Neither the QI test nor the TDAH screener has a child-appropriate item
+  // bank (see qi-age-gate.tsx / tdah-age-gate.tsx): a child/teen answer
+  // here blocks the quiz entirely rather than handing a minor an
+  // unvalidated "IQ number" or ADHD screening result.
+  const [qiAgeChoice, setQiAgeChoice] = useState<"adult" | "child" | null>(null);
+  const [tdahAgeChoice, setTdahAgeChoice] = useState<"adult" | "child" | null>(null);
 
   const item = items[step] as { id: number };
   const isLast = step === items.length - 1;
+  // adhd_screener's items array is [...dimension items, ...contextItems]
+  // (see getItems above) — anything at/after that split is a yes/no
+  // context question, not a frequency slider.
+  const isAdhdContextItem =
+    format === "adhd_screener" && step >= (definition as AdhdScreenerDefinition).items.length;
 
   function choose(value: string | number) {
     if (selectedValue !== null) return;
@@ -378,11 +395,28 @@ function GenericAssessmentQuiz({
 
   const disabled = isPending || selectedValue !== null;
 
+  if (testSlug === "qi" && qiAgeChoice === null) {
+    return <QiAgeGate onChoose={setQiAgeChoice} />;
+  }
+
+  if (testSlug === "qi" && qiAgeChoice === "child") {
+    return <QiChildNotice onBack={() => setQiAgeChoice(null)} />;
+  }
+
+  if (testSlug === "tdah" && tdahAgeChoice === null) {
+    return <TdahAgeGate onChoose={setTdahAgeChoice} />;
+  }
+
+  if (testSlug === "tdah" && tdahAgeChoice === "child") {
+    return <TdahChildNotice onBack={() => setTdahAgeChoice(null)} />;
+  }
+
   if (!started) {
     return (
       <QuizIntro
         onStart={() => setStarted(true)}
         isPreview={!hasAccess}
+        questionCount={items.length}
         demo={introDemo(format, definition, lang, testSlug)}
       />
     );
@@ -414,11 +448,6 @@ function GenericAssessmentQuiz({
 
   return (
     <div className="mt-6">
-      {!hasAccess && (
-        <span className="inline-block rounded-full bg-gold/15 px-3 py-1 text-xs font-medium text-gold">
-          Réponses gratuites, résultat payant
-        </span>
-      )}
       <ProgressBar step={step} total={items.length} />
 
       <div key={step} className="fade-in mt-6">
@@ -476,7 +505,15 @@ function GenericAssessmentQuiz({
             selectedValue={selectedValue}
           />
         )}
-        {format === "adhd_screener" && SLIDER_SCALE_SLUGS.has(testSlug) && (
+        {format === "adhd_screener" && isAdhdContextItem && (
+          <YesNoQuestion
+            item={item as { id: number; text: string }}
+            onChoose={choose}
+            disabled={disabled}
+            selectedValue={selectedValue}
+          />
+        )}
+        {format === "adhd_screener" && !isAdhdContextItem && SLIDER_SCALE_SLUGS.has(testSlug) && (
           <SliderQuestion
             item={item as AdhdScreenerDefinition["items"][number]}
             scale={(definition as AdhdScreenerDefinition).scaleLabels.map((label, i, arr) => ({
@@ -488,7 +525,7 @@ function GenericAssessmentQuiz({
             selectedValue={selectedValue}
           />
         )}
-        {format === "adhd_screener" && !SLIDER_SCALE_SLUGS.has(testSlug) && (
+        {format === "adhd_screener" && !isAdhdContextItem && !SLIDER_SCALE_SLUGS.has(testSlug) && (
           <LikertQuestion
             item={item as AdhdScreenerDefinition["items"][number]}
             scale={(definition as AdhdScreenerDefinition).scaleLabels.map((label, value) => ({ label, value }))}
@@ -877,6 +914,50 @@ function BipolarQuestion({
         <span className="w-16 shrink-0 text-right text-xs text-muted-foreground">
           {scale[scale.length - 1]?.label}
         </span>
+      </div>
+    </div>
+  );
+}
+
+function YesNoQuestion({
+  item,
+  onChoose,
+  disabled,
+  selectedValue,
+}: {
+  item: { id: number; text: string };
+  onChoose: (value: number) => void;
+  disabled: boolean;
+  selectedValue: string | number | null;
+}) {
+  return (
+    <div className="flex flex-col gap-6">
+      <p className="text-lg font-medium">{item.text}</p>
+      <div className="grid grid-cols-2 gap-3">
+        <button
+          type="button"
+          disabled={disabled}
+          onClick={() => onChoose(1)}
+          className={`rounded-xl border px-4 py-3 text-center font-semibold transition disabled:opacity-50 ${
+            selectedValue === 1
+              ? "border-primary bg-primary text-primary-foreground"
+              : "border-card-border hover:border-primary/40"
+          }`}
+        >
+          Oui
+        </button>
+        <button
+          type="button"
+          disabled={disabled}
+          onClick={() => onChoose(0)}
+          className={`rounded-xl border px-4 py-3 text-center font-semibold transition disabled:opacity-50 ${
+            selectedValue === 0
+              ? "border-primary bg-primary text-primary-foreground"
+              : "border-card-border hover:border-primary/40"
+          }`}
+        >
+          Non
+        </button>
       </div>
     </div>
   );

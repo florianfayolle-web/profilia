@@ -18,7 +18,7 @@ const FAQ = [
   {
     question: "Le questionnaire TDAH est-il un diagnostic ?",
     answer:
-      "Non, en aucun cas. C'est un questionnaire de repérage inspiré de l'ASRS-6, l'outil que les médecins utilisent eux-mêmes en première intention pour savoir si une évaluation plus poussée est utile. Seul un médecin ou un psychiatre peut poser un diagnostic de TDAH, après un entretien clinique complet.",
+      "Non, en aucun cas. C'est un questionnaire de repérage construit à partir des critères du TDAH de l'adulte décrits dans le DSM-5, pour savoir si une évaluation plus poussée est utile. Seul un médecin ou un psychiatre peut poser un diagnostic de TDAH, après un entretien clinique complet.",
   },
   {
     question: "Que faire si mon résultat au repérage TDAH est positif ?",
@@ -32,7 +32,7 @@ export const revalidate = 300;
 export const metadata: Metadata = {
   title: category.title,
   description:
-    "Un test de raisonnement façon QI et un questionnaire de repérage du TDAH inspiré de l'ASRS-6, des outils indicatifs et d'auto-réflexion, jamais un diagnostic médical.",
+    "Un test de raisonnement façon QI et un questionnaire de repérage du TDAH basé sur les critères du DSM-5, des outils indicatifs et d'auto-réflexion, jamais un diagnostic médical.",
   alternates: { canonical: "/tests/qi-sante-mentale" },
 };
 

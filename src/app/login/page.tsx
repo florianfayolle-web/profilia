@@ -4,6 +4,7 @@ import { Suspense, useActionState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { login } from "@/app/actions/auth";
+import { GoogleAuthButton } from "@/components/google-auth-button";
 
 export default function LoginPage() {
   return (
@@ -45,7 +46,17 @@ function LoginForm() {
         )}
         {linkError && <p className="mt-4 text-sm text-red-600">{linkError}</p>}
 
-        <form action={action} className="mt-8 flex flex-col gap-4">
+        <div className="mt-6">
+          <GoogleAuthButton next={next} />
+        </div>
+
+        <div className="my-6 flex items-center gap-3 text-xs text-muted-foreground">
+          <div className="h-px flex-1 bg-card-border" />
+          ou avec ton email
+          <div className="h-px flex-1 bg-card-border" />
+        </div>
+
+        <form action={action} className="flex flex-col gap-4">
           <input type="hidden" name="next" value={next} />
 
           <div>

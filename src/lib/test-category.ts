@@ -9,22 +9,13 @@ export const CATEGORIES: {
   accent: string;
 }[] = [
   {
-    slug: "pilote",
-    title: "Tests pour pilote",
-    shortTitle: "Pilote",
+    slug: "qi-sante-mentale",
+    title: "QI & profil cognitif",
+    shortTitle: "QI & profil cognitif",
     description:
-      "Pour te préparer aux sélections de compagnie aérienne ou de pilote militaire : inventaires de personnalité et jugement situationnel.",
-    gradient: "linear-gradient(135deg, #002157 0%, #e4002b 100%)",
-    accent: "#e4002b",
-  },
-  {
-    slug: "grande-entreprise",
-    title: "Entretien grande entreprise",
-    shortTitle: "Grande entreprise",
-    description:
-      "Pour préparer un entretien ou un processus de recrutement en grande entreprise : bilans de personnalité complets et modèle DISC.",
-    gradient: "linear-gradient(135deg, #78350f 0%, #eab308 100%)",
-    accent: "#ca8a04",
+      "Un test de raisonnement façon QI, et des questionnaires de repérage inspirés d'outils utilisés par les professionnels de santé, jamais un diagnostic.",
+    gradient: "linear-gradient(135deg, #134e4a 0%, #2dd4bf 100%)",
+    accent: "#0d9488",
   },
   {
     slug: "personnalite",
@@ -36,13 +27,22 @@ export const CATEGORIES: {
     accent: "#8a9a1f",
   },
   {
-    slug: "qi-sante-mentale",
-    title: "QI & santé mentale",
-    shortTitle: "QI & santé mentale",
+    slug: "grande-entreprise",
+    title: "Entretien grande entreprise",
+    shortTitle: "Grande entreprise",
     description:
-      "Un test de raisonnement façon QI, et des questionnaires de repérage inspirés d'outils utilisés par les professionnels de santé, jamais un diagnostic.",
-    gradient: "linear-gradient(135deg, #134e4a 0%, #2dd4bf 100%)",
-    accent: "#0d9488",
+      "Pour préparer un entretien ou un processus de recrutement en grande entreprise : bilans de personnalité complets et modèle DISC.",
+    gradient: "linear-gradient(135deg, #78350f 0%, #eab308 100%)",
+    accent: "#ca8a04",
+  },
+  {
+    slug: "pilote",
+    title: "Tests pour pilote",
+    shortTitle: "Pilote",
+    description:
+      "Pour te préparer aux sélections de compagnie aérienne ou de pilote militaire : inventaires de personnalité et jugement situationnel.",
+    gradient: "linear-gradient(135deg, #002157 0%, #e4002b 100%)",
+    accent: "#e4002b",
   },
 ];
 

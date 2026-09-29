@@ -1,6 +1,6 @@
 {
   "testId": "personality_50",
-  "title": "Test de personnalité — 50 paires d'affirmations",
+  "title": "Test de personnalité, 50 paires d'affirmations",
   "instructions": "Pour chaque paire, indique de quel côté tu te situes et avec quelle intensité, sur une échelle symétrique en 5 niveaux.",
   "responseScale": [
     {

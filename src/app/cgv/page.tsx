@@ -159,7 +159,7 @@ export default function CGVPage() {
           </p>
           <p>
             Ce recours n&apos;est ouvert qu&apos;après une réclamation écrite
-            préalable adressée à 4F@icloud.com, restée sans solution
+            préalable adressée à profilia.contact@gmail.com, restée sans solution
             satisfaisante pendant au moins un mois, et doit être exercé dans
             un délai d&apos;un an à compter de cette réclamation. Les
             coordonnées du médiateur compétent sont communiquées au client
@@ -197,7 +197,7 @@ export default function CGVPage() {
 
         <section className="flex flex-col gap-2">
           <h2 className="text-lg font-medium text-foreground">12. Contact</h2>
-          <p>Pour toute question relative aux présentes CGV : 4F@icloud.com.</p>
+          <p>Pour toute question relative aux présentes CGV : profilia.contact@gmail.com.</p>
         </section>
       </div>
     </div>

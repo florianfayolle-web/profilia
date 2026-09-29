@@ -57,11 +57,23 @@ async function main() {
       ? `${entry.description}\n\n${disclaimer}`
       : entry.description;
 
-    const stripePriceId =
+    // Never let a failed/absent lookup (e.g. this script run with a
+    // TEST-mode STRIPE_SECRET_KEY against a project whose price was created
+    // in LIVE mode) null out an already-known price — that has silently
+    // broken checkout for a live test more than once. Only ever move
+    // forward (unset -> found), never backward (found -> unset).
+    const { data: existingTest } = await supabase
+      .from("tests")
+      .select("stripe_price_id")
+      .eq("slug", entry.slug)
+      .maybeSingle();
+
+    const foundPriceId =
       entry.priceCents === 0 ? null : await findStripePriceId(entry.lookupKey);
+    const stripePriceId = foundPriceId ?? existingTest?.stripe_price_id ?? null;
 
     console.log(
-      `Importing ${entry.slug} (${title})${stripePriceId ? ` [Stripe price ${stripePriceId}]` : " [no Stripe price found yet]"}...`
+      `Importing ${entry.slug} (${title})${stripePriceId ? ` [Stripe price ${stripePriceId}${foundPriceId ? "" : ", kept from existing row"}]` : " [no Stripe price found yet]"}...`
     );
 
     const { data: test, error: testError } = await supabase

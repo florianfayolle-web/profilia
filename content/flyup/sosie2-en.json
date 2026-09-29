@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "FlyUp — \"Pilot Profile\" Personality Test",
+    "title": "FlyUp, \"Pilot Profile\" Personality Test",
     "language": "en",
     "testType": "forced_choice_ipsative",
     "inspiredBy": "SOSIE 2 (not a reproduction of the proprietary instrument)",
@@ -1555,7 +1555,7 @@
         "bands": {
           "Low": "You may be more sensitive than average to tense situations, which makes you particularly attuned to weak signals. Working on stress-management techniques could help you gain composure during high-workload moments.",
           "Mid": "You handle pressure well in most situations, with an occasional need to catch your breath before deciding.",
-          "High": "You stay calm and clear-headed even under heavy pressure — a valuable asset in emergencies. Be careful, though, not to underestimate your own fatigue or stress simply because you don't show outward signs of it."
+          "High": "You stay calm and clear-headed even under heavy pressure, a valuable asset in emergencies. Be careful, though, not to underestimate your own fatigue or stress simply because you don't show outward signs of it."
         },
         "strengths": "Your clarity of mind under pressure is a direct asset in emergency management.",
         "suitableWork": "High-workload or high-stakes decision roles (line flying, instruction, crisis management).",
@@ -1573,7 +1573,7 @@
       },
       "CONF": {
         "bands": {
-          "Low": "You may doubt your judgment more when it's challenged, which makes you receptive to others' feedback — a useful trait of humility, provided it doesn't hold back your own autonomous decision-making.",
+          "Low": "You may doubt your judgment more when it's challenged, which makes you receptive to others' feedback, a useful trait of humility, provided it doesn't hold back your own autonomous decision-making.",
           "Mid": "You generally trust your judgment while still being able to question it when needed.",
           "High": "You have solid confidence in your decisions and aren't easily shaken by criticism. That's a stability asset, provided you stay open to feedback that could nuance your position."
         },
@@ -1609,7 +1609,7 @@
         },
         "strengths": "Your endurance over time is an asset for long, demanding rotations.",
         "suitableWork": "Long-haul, high-workload rotations, missions with frequent time-zone changes.",
-        "tips": "Watch for early fatigue signals despite your good apparent resilience — sleep hygiene still matters."
+        "tips": "Watch for early fatigue signals despite your good apparent resilience, sleep hygiene still matters."
       }
     }
   }

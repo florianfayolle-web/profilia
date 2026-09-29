@@ -65,7 +65,13 @@ export function Quiz({
   }
 
   if (!started) {
-    return <QuizIntro onStart={() => setStarted(true)} isPreview={!hasAccess} />;
+    return (
+      <QuizIntro
+        onStart={() => setStarted(true)}
+        isPreview={!hasAccess}
+        questionCount={questions.length}
+      />
+    );
   }
 
   if (isPending) {
@@ -74,11 +80,6 @@ export function Quiz({
 
   return (
     <div className="mt-6">
-      {!hasAccess && (
-        <span className="inline-block rounded-full bg-gold/15 px-3 py-1 text-xs font-medium text-gold">
-          Réponses gratuites, résultat payant
-        </span>
-      )}
       <ProgressBar step={step} total={questions.length} />
 
       <div key={step} className="fade-in mt-6">

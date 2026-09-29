@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "FlyUp — \"Pilot Profile — ADAPT\" Personality Test",
+    "title": "FlyUp, \"Pilot Profile, ADAPT\" Personality Test",
     "language": "en",
     "testType": "forced_choice_quad_single_pick",
-    "inspiredBy": "Forced-choice quad personality questionnaires (APQ / OPQ / PAPI style), as used in the ADAPT battery (Symbiotics) — not a reproduction of the proprietary instrument.",
+    "inspiredBy": "Forced-choice quad personality questionnaires (APQ / OPQ / PAPI style), as used in the ADAPT battery (Symbiotics), not a reproduction of the proprietary instrument.",
     "totalItems": 100,
     "controlItems": 10,
     "optionsPerItem": 4,
@@ -3046,7 +3046,7 @@
     }
   },
   "report": {
-    "description": "Narrative report generator: for each dimension, pick the band ('Low' if dimensionScore < 0.15, 'Mid' if <= 0.35, else 'High' — thresholds centred on the 25% chance level of a 4-option single pick, not 50%) and use report[code].bands[band] as the paragraph, plus the static strengths/suitableWork/tips lines. For the overall summary: if (max dimension score - min dimension score) < 0.15, use a 'balanced profile' message; otherwise name the dimension with the max score as dominant and the one with the min score as weakest.",
+    "description": "Narrative report generator: for each dimension, pick the band ('Low' if dimensionScore < 0.15, 'Mid' if <= 0.35, else 'High', thresholds centred on the 25% chance level of a 4-option single pick, not 50%) and use report[code].bands[band] as the paragraph, plus the static strengths/suitableWork/tips lines. For the overall summary: if (max dimension score - min dimension score) < 0.15, use a 'balanced profile' message; otherwise name the dimension with the max score as dominant and the one with the min score as weakest.",
     "bandThresholds": {
       "lowBelow": 0.15,
       "midUpTo": 0.35
@@ -3144,7 +3144,7 @@
       },
       "INTEG": {
         "bands": {
-          "Low": "Professional integrity isn't the most prominent theme in your answers, which doesn't call your honesty into question — it simply isn't what distinguishes you most in this test compared to the other dimensions. Point to watch: transparency about mistakes, even minor ones, remains a pillar of safety culture.",
+          "Low": "Professional integrity isn't the most prominent theme in your answers, which doesn't call your honesty into question, it simply isn't what distinguishes you most in this test compared to the other dimensions. Point to watch: transparency about mistakes, even minor ones, remains a pillar of safety culture.",
           "Mid": "Your professional integrity sits in a middle zone: you're honest about what matters without it being systematically the most prominent trait in your profile. This is consistent with an overall trustworthy stance.",
           "High": "Professional integrity stands out strongly in your answers: you very often identify with statements about transparency, admitting mistakes, and refusing dishonest shortcuts. This is a fundamental quality for the \"just culture\" that modern aviation aims for."
         },

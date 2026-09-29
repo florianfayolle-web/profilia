@@ -237,30 +237,49 @@ export type LogicMcqItem = {
 };
 
 export type LogicMcqDefinition = {
-  meta: { title: string; totalItems: number; durationSeconds: number; disclaimer: string };
+  meta: {
+    title: string;
+    totalItems: number;
+    durationSeconds: number;
+    disclaimer: string;
+    // When true, scoreLogicMcq also derives an indicative "IQ-style" number
+    // (mean 100 / SD 15) from the raw score, for tests presented as an IQ
+    // test rather than a plain logic-reasoning drill.
+    showIqScore?: boolean;
+  };
   domains: Record<string, string>;
   items: LogicMcqItem[];
 };
 
 // --- adhd_screener ("Repérage TDAH adulte") --------------------------------
-// A short, threshold-scored screener modeled on the ASRS-6 (WHO/Kessler et
-// al.), the instrument doctors themselves use for a first-line self-report
-// check — not a diagnosis. Each item counts as "positive" only past its own
-// threshold on the 0-4 frequency scale (two of the six use a higher bar),
-// and 4+ positives out of 6 is the published cutoff for "worth a real
-// evaluation".
+// DSM-5-structured: 9 "attention" items + 9 "agitation et impulsivité"
+// items, answered on a continuous 0-100 frequency slider (never/rarely/
+// sometimes/often/very often); a value at/above hitThreshold counts as a
+// "frequent sign". dimensionHitsNeeded (5) frequent signs in a dimension is
+// the published DSM-5 adult-ADHD symptom-count threshold for that
+// dimension. contextItems are the three separate DSM-5 context criteria
+// (childhood onset, impairment in 2+ settings, 6+ months duration),
+// answered yes/no — they gate the verdict independently of the symptom
+// count, exactly as the DSM-5 requires both a symptom count AND this
+// context to be met.
 export type AdhdScreenerItem = {
   id: number;
   text: string;
-  // Index into scaleLabels (0-4) at/above which this item counts positive.
-  threshold: number;
+  dimension: "attention" | "hyperactivite";
+};
+
+export type AdhdContextItem = {
+  id: number;
+  text: string;
 };
 
 export type AdhdScreenerDefinition = {
   meta: { title: string; instructions: string; disclaimer: string };
   scaleLabels: string[]; // 5 labels, "Jamais" .. "Très souvent"
+  hitThreshold: number; // slider value (0-100) at/above which an item counts as a frequent sign
+  dimensionHitsNeeded: number; // frequent signs needed in a dimension (DSM-5: 5 of 9)
   items: AdhdScreenerItem[];
-  positiveCutoff: number; // number of positive items that flags "worth a consult"
+  contextItems: AdhdContextItem[];
 };
 
 // --- career_balance ("Salarié ou entrepreneur ?") ---------------------------

@@ -12,6 +12,7 @@ import type {
   LikertScaleDefinition,
   LogicMcqDefinition,
   AdhdScreenerDefinition,
+  AdhdScreenerItem,
   OrientationDefinition,
   OrientationJob,
   OrientationValueKey,
@@ -467,6 +468,33 @@ export function scoreBipolarPairs(def: BipolarPairsDefinition, answers: AnswerMa
 
 const DISC_KEYS: DiscKey[] = ["D", "I", "S", "C"];
 
+// The classic "8-profile DISC wheel": the 4 pure styles plus the 4 blends
+// between adjacent styles on the wheel (D-I, I-S, S-C, C-D — D and S are
+// opposite each other, as are I and C, so those two pairs have no blend
+// name and fall back to the dominant style's pure archetype).
+const DISC_ARCHETYPES: Record<string, string> = {
+  D: "Pilote",
+  I: "Animateur",
+  S: "Conseiller",
+  C: "Analyste",
+  DI: "Entraîneur",
+  ID: "Entraîneur",
+  IS: "Pacificateur",
+  SI: "Pacificateur",
+  SC: "Protecteur",
+  CS: "Protecteur",
+  CD: "Planificateur",
+  DC: "Planificateur",
+};
+
+function discArchetype(p1: DiscKey, p2: DiscKey, blended: boolean): string {
+  if (blended) {
+    const combo = DISC_ARCHETYPES[p1 + p2];
+    if (combo) return combo;
+  }
+  return DISC_ARCHETYPES[p1];
+}
+
 function pearsonCorr(a: number[], b: number[]): number | null {
   const n = a.length;
   const ma = a.reduce((s, x) => s + x, 0) / n;
@@ -646,6 +674,9 @@ export function scoreDisc(
     C: (net.C + N) / (2 * N),
   };
 
+  const isBlended = spread > 12 && net[p2] >= 0 && net[p1] - net[p2] <= 10;
+  const archetype = discArchetype(p1, p2, isBlended);
+
   let tag: string;
   let title: string;
   let summary: string;
@@ -653,7 +684,7 @@ export function scoreDisc(
     tag = "Profil équilibré";
     title = "Tu t'adaptes à chaque situation";
     summary = `Tes quatre styles sont proches : tu passes facilement de l'un à l'autre selon le contexte. Ton style le plus présent reste ${labelFor(p1)}.`;
-  } else if (net[p2] >= 0 && net[p1] - net[p2] <= 10) {
+  } else if (isBlended) {
     const comboKey = [p1, p2].sort((a, b) => DISC_KEYS.indexOf(a) - DISC_KEYS.indexOf(b)).join("");
     tag = `Style ${p1}${p2}`;
     title = `${labelFor(p1)}, nuancé ${labelFor(p2).toLowerCase()}`;
@@ -680,6 +711,7 @@ export function scoreDisc(
     tag,
     title,
     summary,
+    archetype,
     dominant: p1,
     secondary: p2,
     net,
@@ -886,6 +918,70 @@ function logicBand(score: number, total: number): [string, string] {
   return ["À consolider", "Reprenez domaine par domaine : ce sont des méthodes qui s'apprennent, pas un plafond."];
 }
 
+// Indicative "IQ-style" number (mean 100, SD 15) derived from percent
+// correct — NOT a norm computed from real test-taker data, just a smooth,
+// monotonic curve through a few reference points chosen to feel like a
+// typical deviation-IQ scale (half the range sits in 85-115, extremes are
+// rare). Piecewise-linear interpolation between the points below; clamped
+// to [55, 145] the way most published scales cap outlier scores.
+const IQ_CURVE: [number, number][] = [
+  [0, 55],
+  [0.1, 70],
+  [0.3, 88],
+  [0.5, 100],
+  [0.7, 112],
+  [0.9, 130],
+  [1, 145],
+];
+
+function iqFromPercent(p: number): number {
+  const clamped = Math.max(0, Math.min(1, p));
+  for (let i = 1; i < IQ_CURVE.length; i++) {
+    const [p0, iq0] = IQ_CURVE[i - 1];
+    const [p1, iq1] = IQ_CURVE[i];
+    if (clamped <= p1) {
+      const t = p1 === p0 ? 0 : (clamped - p0) / (p1 - p0);
+      return Math.round(iq0 + t * (iq1 - iq0));
+    }
+  }
+  return IQ_CURVE[IQ_CURVE.length - 1][1];
+}
+
+// Classification bands from the published Wechsler (WAIS) IQ scale —
+// mean 100, SD 15 — used to label the iqScore above once it's been
+// derived. This is the same grid clinicians reference, applied here to an
+// unstandardized indicative score, which is why the copy stays hedged
+// ("plutôt", "cette zone") instead of stating a category as fact.
+function iqClassification(iq: number): [string, string] {
+  if (iq >= 130) return ["Très supérieure (Haut Potentiel Intellectuel)", "Cette zone ne concerne qu'environ 2,3 % de la population sur une échelle étalonnée. Un score aussi élevé sur un test non étalonné est à prendre avec d'autant plus de recul : seul un bilan psychométrique complet avec un psychologue peut confirmer un HPI."];
+  if (iq >= 120) return ["Supérieure", "Un score qui te place nettement au-dessus de la moyenne sur ce format d'exercices."];
+  if (iq >= 110) return ["Moyenne forte", "Un score au-dessus de la moyenne, avec une bonne maîtrise des familles de raisonnement testées."];
+  if (iq >= 90) return ["Moyenne / Normale", "La zone où se situe la majorité des personnes testées : rien d'étonnant, ni de particulièrement bas ou haut."];
+  if (iq >= 80) return ["Moyenne faible", "Un score en dessous de la moyenne : la régularité et l'entraînement sur ce type d'exercices feraient probablement une vraie différence."];
+  if (iq >= 70) return ["Limite", "Un score bas sur ce format précis : garde en tête qu'un test non étalonné, passé une seule fois, a une marge d'erreur réelle."];
+  return ["Très faible", "Un résultat aussi bas mérite d'être relativisé : fatigue, stress, ou simplement un format inhabituel peuvent largement l'expliquer. Ce chiffre ne dit rien de fiable à lui seul, et un score bas et persistant se discute avec un professionnel, pas avec un test en ligne."];
+}
+
+// Standard normal CDF via the Abramowitz-Stegun approximation (accurate to
+// ~1e-7), used to turn an iqScore into "you scored higher than X% of a
+// mean-100/SD-15 population" — the actual math behind the percentile
+// column of any published IQ classification table, not a lookup guess.
+function normalCdf(z: number): number {
+  const sign = z < 0 ? -1 : 1;
+  const x = Math.abs(z) / Math.SQRT2;
+  const t = 1 / (1 + 0.3275911 * x);
+  const y =
+    1 -
+    ((((1.061405429 * t - 1.453152027) * t + 1.421413741) * t - 0.284496736) * t + 0.254829592) *
+      t *
+      Math.exp(-x * x);
+  return 0.5 * (1 + sign * y);
+}
+
+function iqPercentile(iq: number): number {
+  return Math.round(normalCdf((iq - 100) / 15) * 1000) / 10;
+}
+
 export function scoreLogicMcq(def: LogicMcqDefinition, answers: Record<string, number>) {
   const perDomain: Record<string, { ok: number; total: number }> = {};
   let score = 0;
@@ -926,14 +1022,23 @@ export function scoreLogicMcq(def: LogicMcqDefinition, answers: Record<string, n
     };
   });
 
-  const [band, bandText] = logicBand(score, def.items.length);
+  const scorePercent = score / def.items.length;
+  const iqScore = def.meta.showIqScore ? iqFromPercent(scorePercent) : null;
+  // The IQ-styled test labels its band from the iqScore itself, using the
+  // published WAIS classification grid, instead of the generic
+  // percent-based logicBand() the 8-Logiques test uses — the whole point of
+  // computing an IQ-style number is to reuse the scale people already
+  // recognize.
+  const [band, bandText] = iqScore != null ? iqClassification(iqScore) : logicBand(score, def.items.length);
 
   return {
     score,
     total: def.items.length,
-    scorePercent: score / def.items.length,
+    scorePercent,
     band,
     bandText,
+    iqScore,
+    percentile: iqScore != null ? iqPercentile(iqScore) : null,
     dimensionResults,
     review,
   };
@@ -951,35 +1056,52 @@ export function scoreAdhdScreener(
   def: AdhdScreenerDefinition,
   answers: Record<string, number>
 ) {
-  // `value` is a 0-100 position (a continuous slider, not just an index
-  // into scaleLabels), so the closest label is picked by proportion rather
-  // than by exact array lookup — this also still works for the plain 0..4
-  // index case, where it resolves to the same index.
-  const labelFor = (value: number) => {
-    const i = Math.round((value / 100) * (def.scaleLabels.length - 1));
-    return def.scaleLabels[Math.min(def.scaleLabels.length - 1, Math.max(0, i))] ?? "";
-  };
+  function dimensionResult(dimension: AdhdScreenerItem["dimension"]) {
+    const dimItems = def.items.filter((i) => i.dimension === dimension);
+    const values = dimItems.map((i) => answers[String(i.id)] ?? 0);
+    const hits = values.filter((v) => v >= def.hitThreshold).length;
+    const avgPercent = values.length > 0 ? Math.round(values.reduce((s, v) => s + v, 0) / values.length) : 0;
+    return { hits, total: dimItems.length, avgPercent, ok: hits >= def.dimensionHitsNeeded };
+  }
 
-  const review = def.items.map((item) => {
-    const value = answers[String(item.id)] ?? 0;
-    return {
-      id: item.id,
-      text: item.text,
-      value,
-      label: labelFor(value),
-      positive: value >= item.threshold,
-    };
-  });
+  const attention = dimensionResult("attention");
+  const hyperactivite = dimensionResult("hyperactivite");
 
-  const positiveCount = review.filter((r) => r.positive).length;
-  const screenPositive = positiveCount >= def.positiveCutoff;
+  const contextAnswers = def.contextItems.map((item) => ({
+    id: item.id,
+    text: item.text,
+    yes: (answers[String(item.id)] ?? 0) === 1,
+  }));
+  const contextMet = contextAnswers.every((c) => c.yes);
+
+  // Which dimension(s) cross the DSM-5 symptom-count threshold — null when
+  // neither does, regardless of what the context criteria say.
+  const dimensionType: "combined" | "inattention" | "hyperactivite" | null =
+    attention.ok && hyperactivite.ok
+      ? "combined"
+      : attention.ok
+        ? "inattention"
+        : hyperactivite.ok
+          ? "hyperactivite"
+          : null;
+
+  // DSM-5 requires both a symptom count AND the context criteria (onset,
+  // cross-setting impairment, duration) to call a profile "evocative" —
+  // a symptom count alone, or context alone, only earns the middle tier.
+  const level: "high" | "mid" | "low" =
+    dimensionType && contextMet
+      ? "high"
+      : dimensionType || attention.hits >= 3 || hyperactivite.hits >= 3
+        ? "mid"
+        : "low";
 
   return {
-    positiveCount,
-    total: def.items.length,
-    cutoff: def.positiveCutoff,
-    screenPositive,
-    review,
+    attention,
+    hyperactivite,
+    contextAnswers,
+    contextMet,
+    dimensionType,
+    level,
   };
 }
 

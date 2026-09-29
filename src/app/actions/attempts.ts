@@ -63,7 +63,11 @@ export async function submitAttempt(
     }
   }
 
-  const { data: resultProfiles } = await supabase
+  // Same RLS gate as question_options above: result_profiles is paid
+  // content too, so a non-purchaser's own client can't read it — without
+  // the admin fallback here, winningTrait would resolve but never find a
+  // matching row, silently leaving result_profile_id null forever.
+  const { data: resultProfiles } = await (access.hasAccess ? supabase : createAdminClient())
     .from("result_profiles")
     .select("id, trait_key")
     .eq("test_id", test.id);

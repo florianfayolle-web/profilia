@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "FlyUp — Test de jugement situationnel \"Profil Pilote\"",
+    "title": "FlyUp, Test de jugement situationnel \"Profil Pilote\"",
     "language": "fr",
     "testType": "situational_judgment",
     "inspiredBy": "TD12 (not a reproduction of the proprietary instrument)",
@@ -3279,7 +3279,7 @@
         "bands": {
           "Low": "Vos choix de réponse s'écartent assez souvent de la meilleure pratique en matière de communication d'équipage. Ce domaine mérite un travail spécifique : dans les situations testées, l'information circule mieux quand le doute est vérifié et partagé immédiatement plutôt que différé.",
           "Mid": "Vous identifiez globalement les bons réflexes de communication CRM, avec quelques situations où une réponse plus prudente ou plus directe aurait été préférable.",
-          "High": "Vous identifiez systématiquement les réponses qui favorisent une communication claire et une vérification immédiate du doute — un point fort net en matière de CRM."
+          "High": "Vous identifiez systématiquement les réponses qui favorisent une communication claire et une vérification immédiate du doute, un point fort net en matière de CRM."
         },
         "strengths": "Votre capacité à identifier les bons réflexes de communication CRM est un atout de sécurité direct.",
         "suitableWork": "Postes à forte composante CRM et communication fréquente en équipage.",
@@ -3299,7 +3299,7 @@
         "bands": {
           "Low": "Dans les mises en situation d'urgence, vos choix s'écartent parfois de l'application stricte et immédiate des procédures mémorisées. Ce point est central en sécurité et mérite un travail prioritaire.",
           "Mid": "Vous appliquez globalement les bons réflexes d'urgence, avec quelques situations où l'application de la procédure aurait dû être plus immédiate.",
-          "High": "Vous identifiez systématiquement l'application rapide et rigoureuse de la procédure comme la réponse appropriée en situation d'urgence — un point fort essentiel."
+          "High": "Vous identifiez systématiquement l'application rapide et rigoureuse de la procédure comme la réponse appropriée en situation d'urgence, un point fort essentiel."
         },
         "strengths": "Votre capacité à identifier l'application rigoureuse des procédures d'urgence est un point fort de sécurité.",
         "suitableWork": "Tous les postes exposés à la gestion de situations d'urgence.",
@@ -3309,7 +3309,7 @@
         "bands": {
           "Low": "Vos choix face aux situations de fatigue tendent à sous-estimer son impact sur la performance. Une meilleure reconnaissance des signaux de fatigue, chez vous comme chez l'équipage, est un axe de travail utile.",
           "Mid": "Vous reconnaissez généralement bien l'impact de la fatigue, avec quelques situations où une vigilance accrue aurait été préférable.",
-          "High": "Vous identifiez avec constance les réponses qui prennent en compte la fatigue de façon proactive — un point fort pour la gestion des facteurs humains."
+          "High": "Vous identifiez avec constance les réponses qui prennent en compte la fatigue de façon proactive, un point fort pour la gestion des facteurs humains."
         },
         "strengths": "Votre capacité à identifier l'impact de la fatigue sur la performance est un atout pour la gestion des facteurs humains.",
         "suitableWork": "Rotations longues, vols de nuit, missions à décalage horaire fréquent.",
@@ -3319,7 +3319,7 @@
         "bands": {
           "Low": "Vos choix montrent une tendance à accepter des écarts de procédure dans certains contextes de pression. Ce domaine est fondamental en sécurité et mérite une attention particulière.",
           "Mid": "Vous respectez globalement bien les procédures, avec quelques situations où un raccourci a été privilégié à tort.",
-          "High": "Vous identifiez systématiquement le respect intégral des procédures comme la réponse appropriée, y compris sous pression de temps — un point fort solide."
+          "High": "Vous identifiez systématiquement le respect intégral des procédures comme la réponse appropriée, y compris sous pression de temps, un point fort solide."
         },
         "strengths": "Votre capacité à identifier le respect intégral des procédures est un pilier de sécurité opérationnelle.",
         "suitableWork": "Tous les postes techniques où la conformité stricte est exigée.",
@@ -3339,7 +3339,7 @@
         "bands": {
           "Low": "Vos choix montrent une tendance à céder à la pression commerciale au détriment de la sécurité dans certains scénarios. Ce point est central et mérite un travail prioritaire.",
           "Mid": "Vous priorisez généralement bien la sécurité sur la pression commerciale, avec quelques situations où un compromis a été accepté à tort.",
-          "High": "Vous identifiez systématiquement la priorité à la sécurité sur toute autre considération — un point fort essentiel dans ce métier."
+          "High": "Vous identifiez systématiquement la priorité à la sécurité sur toute autre considération, un point fort essentiel dans ce métier."
         },
         "strengths": "Votre capacité à identifier la priorité systématique à la sécurité est un socle solide pour ce métier.",
         "suitableWork": "L'ensemble des postes exposés à la pression commerciale (ligne, charter).",
@@ -3349,7 +3349,7 @@
         "bands": {
           "Low": "Face au conflit, vos choix penchent parfois vers l'évitement ou l'affrontement plutôt que la recherche d'une solution factuelle. Ce domaine mérite un travail spécifique.",
           "Mid": "Vous gérez généralement bien les tensions, avec quelques situations où une approche plus posée aurait été préférable.",
-          "High": "Vous identifiez avec constance les réponses qui désamorcent la tension par une approche factuelle et posée — un point fort pour la gestion de conflit."
+          "High": "Vous identifiez avec constance les réponses qui désamorcent la tension par une approche factuelle et posée, un point fort pour la gestion de conflit."
         },
         "strengths": "Votre capacité à identifier une gestion posée du conflit est un atout pour la cohésion d'équipage.",
         "suitableWork": "Rôles nécessitant une médiation fréquente (commandant de bord, chef de cabine).",
@@ -3359,7 +3359,7 @@
         "bands": {
           "Low": "Dans les situations demandant du leadership situationnel, vos choix ne reflètent pas toujours la structuration la plus efficace de l'équipe. Ce domaine mérite un travail spécifique.",
           "Mid": "Vous identifiez globalement les bons réflexes de leadership, avec quelques situations où une structuration plus claire des rôles aurait été préférable.",
-          "High": "Vous identifiez systématiquement les réponses qui structurent efficacement l'équipe et remotivent le groupe — un point fort net en leadership situationnel."
+          "High": "Vous identifiez systématiquement les réponses qui structurent efficacement l'équipe et remotivent le groupe, un point fort net en leadership situationnel."
         },
         "strengths": "Votre capacité à identifier une structuration efficace de l'équipe en situation exceptionnelle est un atout de leadership.",
         "suitableWork": "Rôles de commandement ou de formation, gestion d'équipages en situation dégradée.",
@@ -3369,7 +3369,7 @@
         "bands": {
           "Low": "Face aux conditions dégradées (météo, technique), vos choix s'écartent parfois d'une réévaluation rigoureuse de la situation. Ce point est central en sécurité des vols.",
           "Mid": "Vous réévaluez généralement bien la situation en conditions dégradées, avec quelques situations où un recalcul plus systématique aurait été utile.",
-          "High": "Vous identifiez avec constance la réévaluation rigoureuse et le recalcul systématique comme la réponse appropriée en conditions dégradées — un point fort solide."
+          "High": "Vous identifiez avec constance la réévaluation rigoureuse et le recalcul systématique comme la réponse appropriée en conditions dégradées, un point fort solide."
         },
         "strengths": "Votre capacité à identifier la nécessité d'une réévaluation rigoureuse en conditions dégradées est un point fort de sécurité des vols.",
         "suitableWork": "Vols long-courrier, opérations par conditions météorologiques marginales.",

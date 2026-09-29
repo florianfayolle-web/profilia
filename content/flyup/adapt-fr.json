@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "FlyUp — Test de personnalité \"Profil Pilote — ADAPT\"",
+    "title": "FlyUp, Test de personnalité \"Profil Pilote, ADAPT\"",
     "language": "fr",
     "testType": "forced_choice_quad_single_pick",
-    "inspiredBy": "Forced-choice quad personality questionnaires (APQ / OPQ / PAPI style), as used in the ADAPT battery (Symbiotics) — not a reproduction of the proprietary instrument.",
+    "inspiredBy": "Forced-choice quad personality questionnaires (APQ / OPQ / PAPI style), as used in the ADAPT battery (Symbiotics), not a reproduction of the proprietary instrument.",
     "totalItems": 100,
     "controlItems": 10,
     "optionsPerItem": 4,
@@ -3046,7 +3046,7 @@
     }
   },
   "report": {
-    "description": "Narrative report generator: for each dimension, pick the band ('Low' if dimensionScore < 0.15, 'Mid' if <= 0.35, else 'High' — thresholds centred on the 25% chance level of a 4-option single pick, not 50%) and use report[code].bands[band] as the paragraph, plus the static strengths/suitableWork/tips lines. For the overall summary: if (max dimension score - min dimension score) < 0.15, use a 'balanced profile' message; otherwise name the dimension with the max score as dominant and the one with the min score as weakest.",
+    "description": "Narrative report generator: for each dimension, pick the band ('Low' if dimensionScore < 0.15, 'Mid' if <= 0.35, else 'High', thresholds centred on the 25% chance level of a 4-option single pick, not 50%) and use report[code].bands[band] as the paragraph, plus the static strengths/suitableWork/tips lines. For the overall summary: if (max dimension score - min dimension score) < 0.15, use a 'balanced profile' message; otherwise name the dimension with the max score as dominant and the one with the min score as weakest.",
     "bandThresholds": {
       "lowBelow": 0.15,
       "midUpTo": 0.35

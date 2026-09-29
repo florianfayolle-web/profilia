@@ -79,6 +79,7 @@ export function PcmQuiz({
           setShownAt(Date.now());
         }}
         isPreview={!hasAccess}
+        questionCount={items.length}
         demo={
           <AnswerDemo
             kind="scale"
@@ -98,13 +99,13 @@ export function PcmQuiz({
 
   if (showInterlude) {
     return (
-      <div className="mt-6 overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/10 via-card to-accent/10 p-8 text-center fade-in">
-        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm shadow-primary/30">
+      <div className="mt-6 overflow-hidden rounded-2xl border p-8 text-center fade-in" style={{ borderColor: "#d9770630", background: "linear-gradient(135deg, #d9770614, transparent)" }}>
+        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full text-white shadow-sm" style={{ backgroundColor: "#d97706" }}>
           <svg viewBox="0 0 24 24" fill="none" className="h-7 w-7" aria-hidden="true">
-            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M8 3v4M16 3v4M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </span>
-        <p className="mt-4 inline-block rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
+        <p className="mt-4 inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide" style={{ backgroundColor: "#d9770626", color: "#d97706" }}>
           Étape suivante
         </p>
         <h2 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">
@@ -128,26 +129,39 @@ export function PcmQuiz({
     );
   }
 
-  const part = item.block === "base" ? "Partie 1 · depuis toujours" : "Partie 2 · en ce moment";
-  const n = item.block === "base" ? step + 1 : step + 1 - effectiveSplit;
-  const total = item.block === "base" ? effectiveSplit : items.length - effectiveSplit;
+  const isBase = item.block === "base";
+  const n = isBase ? step + 1 : step + 1 - effectiveSplit;
+  const total = isBase ? effectiveSplit : items.length - effectiveSplit;
   const percent = Math.round(((step + 1) / items.length) * 100);
+
+  // The two parts ask fundamentally different questions ("how you've
+  // always been" vs. "how you are this year") and answering them with the
+  // wrong mindset skews the result — a distinct color + icon per part, not
+  // just different label text, makes it hard to miss which one you're in.
+  const partColor = isBase ? "#4f46e5" : "#d97706";
 
   return (
     <div className="mt-6">
-      {!hasAccess && (
-        <span className="inline-block rounded-full bg-gold/15 px-3 py-1 text-xs font-medium text-gold">
-          Réponses gratuites, résultat payant
+      <div className="flex items-center justify-between gap-3">
+        <span
+          className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold"
+          style={{ backgroundColor: `${partColor}1f`, color: partColor }}
+        >
+          <svg viewBox="0 0 24 24" fill="none" className="h-3.5 w-3.5" aria-hidden="true">
+            {isBase ? (
+              <path d="M12 8v4l3 2M12 3a9 9 0 1 0 9 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            ) : (
+              <path d="M8 3v4M16 3v4M4 9h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            )}
+          </svg>
+          {isBase ? "Depuis toujours" : "Cette année"}
         </span>
-      )}
-
-      <div className="mt-4 flex items-baseline justify-between text-sm text-muted">
-        <span>{part} · {n} / {total}</span>
+        <span className="text-sm text-muted">{n} / {total}</span>
       </div>
       <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-card-border/60">
         <div
-          className="h-full rounded-full bg-gradient-to-r from-primary to-accent transition-[width] duration-300"
-          style={{ width: `${percent}%` }}
+          className="h-full rounded-full transition-[width] duration-300"
+          style={{ width: `${percent}%`, backgroundColor: partColor }}
         />
       </div>
 

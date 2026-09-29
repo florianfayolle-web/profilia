@@ -24,7 +24,7 @@ export default function MentionsLegalesPage() {
           <p>
             Directeur de la publication : FlyUp-Selec.
             <br />
-            Contact : 4F@icloud.com.
+            Contact : profilia.contact@gmail.com.
           </p>
         </section>
 

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Six façons d'habiter sa vie — test inspiré de la Process Communication",
+    "title": "Six façons d'habiter sa vie, test inspiré de la Process Communication",
     "language": "fr",
     "testType": "pcm_likert",
     "inspiredBy": "Modèle des 6 profils de personnalité décrit par Taibi Kahler (Process Communication Model). Affirmations originales, sans reproduction du questionnaire officiel.",
@@ -545,11 +545,11 @@
     "emp": {
       "name": "Empathique",
       "perception": "Tu perçois le monde par les émotions. Avant les faits, tu sens l’ambiance d’une pièce, la fatigue dans une voix, le froid entre deux personnes.",
-      "quotidien": "Chez toi, tout est question de chaleur : la lumière du salon, un plat qui mijote, un pull qui sent bon. Tu tiens les liens de ton entourage sans que personne ne s’en rende compte — les anniversaires, les nouvelles qu’on prend, la personne isolée à qui tu vas parler.",
+      "quotidien": "Chez toi, tout est question de chaleur : la lumière du salon, un plat qui mijote, un pull qui sent bon. Tu tiens les liens de ton entourage sans que personne ne s’en rende compte, les anniversaires, les nouvelles qu’on prend, la personne isolée à qui tu vas parler.",
       "talents": "Tu crées du lien là où il n’y en avait pas, tu apaises, tu donnes aux gens l’envie de se confier. Tu remarques ceux que personne ne remarque.",
       "besoin": "Qu’on t’aime pour qui tu es, pas pour ce que tu rends. Et du sensoriel : un bain, une odeur, un tissu, un câlin.",
       "stress": "Tu commences à trop t’excuser, à t’oublier pour faire plaisir, à faire des maladresses qui ne te ressemblent pas. Puis tu te dis en silence qu’on ne t’aime pas assez.",
-      "aide": "Dis « j’ai besoin de douceur » avant d’en être au bord. Tes proches ne le devinent pas — beaucoup ne fonctionnent pas comme toi.",
+      "aide": "Dis « j’ai besoin de douceur » avant d’en être au bord. Tes proches ne le devinent pas, beaucoup ne fonctionnent pas comme toi.",
       "citation": "« Ça va, toi ? Vraiment ? »"
     },
     "tra": {
@@ -564,7 +564,7 @@
     },
     "per": {
       "name": "Persévérant",
-      "perception": "Tu perçois le monde par les opinions. Tu sais très vite ce qui est juste, acceptable, digne de confiance — et ce qui ne l’est pas.",
+      "perception": "Tu perçois le monde par les opinions. Tu sais très vite ce qui est juste, acceptable, digne de confiance, et ce qui ne l’est pas.",
       "quotidien": "Tu t’engages et tu tiens : une asso, un club, une amitié de vingt ans, une cause. On vient te demander ton avis parce qu’il est ferme. Tu observes les gens un moment avant de leur ouvrir la porte, mais quand elle s’ouvre, c’est pour longtemps.",
       "talents": "Tu tiens quand les autres lâchent, tu dis ce que personne n’ose dire, et tu donnes aux gens autour de toi une colonne vertébrale.",
       "besoin": "Qu’on respecte tes convictions, même en désaccord. Qu’on te dise « je comprends pourquoi tu y tiens » plutôt que « tu exagères ».",
@@ -585,7 +585,7 @@
     "reb": {
       "name": "Rebelle",
       "perception": "Tu perçois le monde par les réactions : j’aime, j’aime pas, ça me fait rire, ça me gonfle. Tout de suite, dans le corps.",
-      "quotidien": "Tu es celui ou celle qui fait basculer un repas de famille dans le fou rire. Tu détestes ce qui est plat, prévu, sérieux pour rien. Ta créativité vient du jeu — tu trouves les idées en déconnant, pas en réfléchissant proprement.",
+      "quotidien": "Tu es celui ou celle qui fait basculer un repas de famille dans le fou rire. Tu détestes ce qui est plat, prévu, sérieux pour rien. Ta créativité vient du jeu, tu trouves les idées en déconnant, pas en réfléchissant proprement.",
       "talents": "Tu mets de la vie dans une pièce en trente secondes, tu dis les vérités par la blague, et tu inventes là où les autres appliquent.",
       "besoin": "Du contact ludique, tous les jours. Des gens avec qui rire, une activité qui n’a aucune utilité, de la spontanéité.",
       "stress": "Tu râles, tu te plains, tu trouves que c’est toujours la faute des autres. Tu t’embarques dans des histoires collantes dont tu es à la fois victime et moteur.",
@@ -595,7 +595,7 @@
     "pro": {
       "name": "Promoteur",
       "perception": "Tu perçois le monde par l’action. Tu sens l’opportunité, tu y vas, tu ajustes en route.",
-      "quotidien": "Tu décides d’un week-end à 700 km le jeudi soir. Tu donnes le meilleur de toi quand ça chauffe : une panne, une urgence, un imprévu — les autres paniquent et toi tu prends les commandes. Tu as du charme et tu le sais.",
+      "quotidien": "Tu décides d’un week-end à 700 km le jeudi soir. Tu donnes le meilleur de toi quand ça chauffe : une panne, une urgence, un imprévu, les autres paniquent et toi tu prends les commandes. Tu as du charme et tu le sais.",
       "talents": "Tu débloques les situations, tu oses ce que personne n’ose, et tu entraînes les gens derrière toi sans avoir à les convaincre.",
       "besoin": "De l’excitation et de l’intensité. Beaucoup en peu de temps. La routine te fait dépérir plus vite que la difficulté.",
       "stress": "Tu pousses les autres à bout, tu manipules un peu pour arriver à tes fins, tu prends des risques qui ne valent pas le coup, juste pour sentir quelque chose.",

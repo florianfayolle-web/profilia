@@ -13,6 +13,7 @@ import type {
   scoreSituationalJudgment,
   scoreSosie,
 } from "@/lib/assessments/scoring";
+import { IqScale } from "@/components/iq-scale";
 import { OrientationResult } from "./orientation-result";
 import {
   ChartLegend,
@@ -162,6 +163,7 @@ function Bar({ value, color }: { value: number; color?: string }) {
   );
 }
 
+
 // Faible/Modéré/Fiable maps directly to red/amber/green, matching the same
 // thresholds scoring.ts used to pick the label text — so the color is
 // never out of sync with the words.
@@ -240,10 +242,12 @@ export function ResultView({
   format,
   result,
   language,
+  testSlug,
 }: {
   format: TestFormat;
   result: unknown;
   language: string;
+  testSlug?: string;
 }) {
   const lang: "fr" | "en" = language === "en" ? "en" : "fr";
 
@@ -339,6 +343,9 @@ export function ResultView({
 
   if (format === "likert_scale") {
     const r = result as LikertResult;
+    const percents = r.dimensionResults.map((d) => d.scorePercent);
+    const spread = percents.length > 0 ? Math.max(...percents) - Math.min(...percents) : 0;
+    const isHomogene = spread < 0.25;
     return (
       <div className="text-left">
         {r.dominantProfile && (
@@ -347,6 +354,19 @@ export function ResultView({
             <p className="mt-1 text-xl font-semibold">{r.dominantProfile.name}</p>
             <p className="mt-2 text-sm text-muted">
               {r.dominantProfile.description}
+            </p>
+          </div>
+        )}
+        {testSlug === "hpi" && (
+          <div className="mt-4 rounded-lg border border-card-border bg-card p-5 text-sm text-muted">
+            <p className="font-medium text-foreground">
+              {isHomogene ? "Un profil plutôt homogène" : "Un profil plutôt hétérogène"}
+            </p>
+            <p className="mt-1">
+              {isHomogene
+                ? "Tes six traits sont assez proches les uns des autres : ce type de répartition régulière se rapproche du profil dit « homogène » évoqué dans la littérature sur le haut potentiel, plutôt associé à une pensée linéaire et à un mode de fonctionnement qui s'accorde en général assez facilement aux attentes scolaires ou professionnelles."
+                : "Tes réponses montrent un net écart entre certains traits et d'autres : ce type de répartition inégale se rapproche du profil dit « hétérogène » (ou « complexe ») évoqué dans la littérature sur le haut potentiel, souvent associé à une pensée plus intuitive et associative, et à une hypersensibilité plus marquée."}
+              {" "}Ce n&apos;est qu&apos;une tendance lue dans tes propres réponses, pas une classification établie par un professionnel.
             </p>
           </div>
         )}
@@ -402,7 +422,13 @@ export function ResultView({
     ) as { D: number; I: number; S: number; C: number };
     return (
       <div className="text-left">
-        <div className="rounded-xl border border-card-border bg-card p-6">
+        <div className="text-center">
+          <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
+            Ton profil sur la roue des 8 profils DISC
+          </span>
+          <h1 className="mt-3 text-3xl font-bold tracking-tight">{r.archetype}</h1>
+        </div>
+        <div className="mt-6 rounded-xl border border-card-border bg-card p-6">
           <DiscWheel scores={scores} />
         </div>
         <div className="mt-6 text-center">
@@ -567,12 +593,33 @@ export function ResultView({
     const r = result as LogicMcqResult;
     return (
       <div className="text-left">
-        <p className="text-center text-2xl font-semibold">
-          Score global : {r.score}
-          <span className="text-lg font-medium text-muted-foreground">/{r.total}</span>
-        </p>
-        <p className="mt-2 text-center font-medium text-primary">{r.band}</p>
+        {r.iqScore != null && (
+          <div className="mx-auto mb-6 w-fit rounded-2xl border-2 border-primary/40 bg-primary/5 px-8 py-5 text-center">
+            <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              Score indicatif
+            </p>
+            <p className="mt-1 text-5xl font-bold text-primary tabular-nums">{r.iqScore}</p>
+            <p className="mt-1 text-xs text-muted-foreground">Échelle de Wechsler — moyenne 100, écart-type 15</p>
+            {r.percentile != null && (
+              <p className="mt-2 text-sm font-medium text-foreground">
+                Plus élevé que {r.percentile}&nbsp;% de la population sur cette échelle
+              </p>
+            )}
+          </div>
+        )}
+        {r.iqScore != null && (
+          <div className="mx-auto max-w-xl">
+            <IqScale iqScore={r.iqScore} />
+          </div>
+        )}
+        <p className="mt-6 text-center font-medium text-primary">{r.band}</p>
         <p className="mt-1 text-center text-muted">{r.bandText}</p>
+        {r.iqScore == null && (
+          <p className="text-center text-2xl font-semibold">
+            Score global : {r.score}
+            <span className="text-lg font-medium text-muted-foreground">/{r.total}</span>
+          </p>
+        )}
 
         <div className="mt-8 rounded-xl border border-card-border bg-card p-6">
           <p className="text-lg font-semibold">Ton score par domaine</p>
@@ -593,6 +640,43 @@ export function ResultView({
           </div>
         </div>
 
+        {r.iqScore != null && (
+          <div className="mt-10 rounded-xl border border-card-border bg-card p-6 text-sm text-muted">
+            <p className="font-medium text-foreground">Comment lire ce résultat</p>
+            <p className="mt-2">
+              Ce score indicatif est calculé à partir de ton pourcentage de bonnes réponses sur
+              les 8 familles de raisonnement testées (numérique, verbal, spatial, déductif,
+              inductif, attention, organisation, mécanique), puis replacé sur l&apos;échelle de
+              Wechsler (moyenne 100, écart-type 15) — la même échelle utilisée pour les vrais
+              tests de QI cliniques.
+            </p>
+            <p className="mt-2">
+              Le pourcentage affiché plus haut (« plus élevé que X % de la population ») est un
+              percentile : il indique combien de personnes ton score dépasserait sur cette même
+              échelle, ce qui se lit souvent plus intuitivement qu&apos;un chiffre brut. Les écarts
+              se resserrent près de la moyenne et s&apos;étirent aux extrêmes : quelques points de
+              plus autour de 130 pèsent bien plus, en percentile, que les mêmes points autour de 100.
+            </p>
+            <p className="mt-2">
+              Ce n&apos;est pas un quotient intellectuel certifié : un vrai QI clinique demande un
+              étalonnage sur une large population, un outil validé (WAIS/WISC) et une passation
+              individuelle avec un psychologue formé. Ton score peut aussi varier d&apos;un jour à
+              l&apos;autre selon la fatigue, le stress ou la familiarité avec ce type d&apos;exercices.
+            </p>
+            <p className="mt-2">
+              Regarde surtout le détail par domaine ci-dessus : il montre où tu es le plus à
+              l&apos;aise et où l&apos;entraînement ferait le plus de différence, ce qui est plus
+              utile au quotidien qu&apos;un chiffre unique.
+            </p>
+            <p className="mt-3 text-center text-xs text-muted-foreground">
+              Le détail question par question n&apos;est pas affiché sur ce test : un vrai test de
+              QI ne donne jamais son corrigé, pour que le score garde un sens si tu le repasses
+              plus tard.
+            </p>
+          </div>
+        )}
+
+        {r.iqScore == null && (
         <div className="mt-10">
           <h2 className="text-xl font-semibold">Corrigé détaillé</h2>
           <div className="mt-4 divide-y divide-card-border">
@@ -666,6 +750,7 @@ export function ResultView({
             ))}
           </div>
         </div>
+        )}
       </div>
     );
   }
@@ -848,56 +933,136 @@ export function ResultView({
 
   if (format === "adhd_screener") {
     const r = result as AdhdScreenerResult;
+
+    const typeTxt: Record<string, string> = {
+      combined: "les deux dimensions (attention, agitation et impulsivité)",
+      inattention: "surtout l'attention et l'organisation",
+      hyperactivite: "surtout l'agitation et l'impulsivité",
+    };
+
+    const [verdictTitle, verdictText] =
+      r.level === "high"
+        ? [
+            "Profil évocateur d'un TDAH",
+            `Tu décris des signes fréquents qui touchent ${r.dimensionType ? typeTxt[r.dimensionType] : "plusieurs domaines"}, présents depuis l'enfance et gênants dans plusieurs domaines. Ce tableau mérite une évaluation par un professionnel.`,
+          ]
+        : r.level === "mid"
+          ? [
+              "Plusieurs signes à explorer",
+              r.dimensionType
+                ? `Tu décris des signes fréquents qui touchent ${typeTxt[r.dimensionType]}, mais tous les critères de contexte ne sont pas réunis. Un médecin pourra faire la part entre un TDAH et d'autres causes possibles.`
+                : "Certains signes reviennent souvent, sans atteindre le seuil habituel. Si ces difficultés te pèsent, parles-en à ton médecin : elles peuvent avoir plusieurs origines.",
+            ]
+          : [
+              "Peu de signes évocateurs",
+              "Tes réponses montrent peu de signes fréquents de TDAH. Si tu rencontres malgré tout des difficultés au quotidien, un médecin reste le bon interlocuteur.",
+            ];
+
+    const levelStyle =
+      r.level === "high"
+        ? "border-amber-500/60 bg-amber-500/10"
+        : r.level === "mid"
+          ? "border-primary/40 bg-primary/5"
+          : "border-green-500/50 bg-green-500/10";
+
+    const contextLabels = ["Présent avant 12 ans", "Gêne dans au moins deux domaines", "Depuis au moins 6 mois"];
+
+    const DimensionMeter = ({ label, dim }: { label: string; dim: { hits: number; total: number; avgPercent: number } }) => (
+      <div>
+        <div className="flex items-center justify-between text-sm font-semibold">
+          <span>{label}</span>
+          <span className="text-muted-foreground">{dim.hits} / {dim.total} signes fréquents</span>
+        </div>
+        <div className="relative mt-2 h-2.5 rounded-full bg-card-border/60">
+          <div
+            className="h-full rounded-full bg-primary transition-[width]"
+            style={{ width: `${(dim.hits / dim.total) * 100}%` }}
+          />
+          <div
+            className="absolute top-1/2 h-4 w-0.5 -translate-y-1/2 bg-foreground/60"
+            style={{ left: `${(5 / dim.total) * 100}%` }}
+          />
+        </div>
+        <p className="mt-1 text-xs text-muted-foreground">Intensité moyenne : {dim.avgPercent} % — le trait marque le seuil de 5</p>
+      </div>
+    );
+
     return (
       <div className="text-left">
-        <div
-          className={`rounded-2xl border-2 p-6 text-center ${
-            r.screenPositive ? "border-amber-500/60 bg-amber-500/10" : "border-green-500/50 bg-green-500/10"
-          }`}
-        >
-          <p className="text-sm font-medium text-muted-foreground">Score de repérage</p>
-          <p className="mt-1 text-3xl font-bold">
-            {r.positiveCount}
-            <span className="text-lg font-medium text-muted-foreground">/{r.total}</span>
-          </p>
-          <p className="mt-3 font-semibold">
-            {r.screenPositive
-              ? "Ton résultat est compatible avec un repérage positif."
-              : "Ton résultat n'est pas dans la zone de repérage."}
-          </p>
-          <p className="mt-2 text-sm text-muted">
-            {r.screenPositive
-              ? "Ça ne veut pas dire que tu as un TDAH : ce questionnaire (inspiré de l'ASRS-6, l'outil de repérage utilisé par les médecins en premier lieu) signale seulement qu'un échange avec un médecin généraliste ou un psychiatre pourrait être utile pour approfondir."
-              : "Ce résultat n'exclut rien à lui seul : si tu as des doutes malgré tout, en parler à un professionnel reste la seule façon d'y voir clair."}
-          </p>
+        <div className={`rounded-2xl border-2 p-6 text-center ${levelStyle}`}>
+          <p className="text-sm font-medium text-muted-foreground">Ton résultat</p>
+          <p className="mt-2 text-2xl font-bold">{verdictTitle}</p>
+          <p className="mt-3 text-sm text-muted">{verdictText}</p>
+        </div>
+
+        <div className="mt-8 space-y-6 rounded-xl border border-card-border bg-card p-6">
+          <DimensionMeter label="Attention" dim={r.attention} />
+          <DimensionMeter label="Agitation et impulsivité" dim={r.hyperactivite} />
         </div>
 
         <div className="mt-6 rounded-xl border border-card-border bg-card p-5 text-sm text-muted">
-          <p className="font-medium text-foreground">Ce que ce test n&apos;est pas</p>
-          <p className="mt-1">
-            Un questionnaire de repérage en ligne ne remplace jamais une évaluation clinique. Seul un médecin ou un
-            psychiatre peut poser un diagnostic de TDAH, après un entretien approfondi. Si les difficultés décrites
-            ici pèsent sur ton quotidien, en parler à un professionnel de santé est la prochaine étape utile, quel
-            que soit ce score.
+          <p className="font-medium text-foreground">Comment lire ce résultat</p>
+          <p className="mt-2">
+            Chaque dimension (attention, agitation et impulsivité) regroupe 9 situations du
+            quotidien, notées de « jamais » à « très souvent ». Une réponse à partir de 63 %
+            (« souvent ») compte comme un signe fréquent ; 5 signes fréquents ou plus sur 9 dans
+            une dimension atteignent le seuil utilisé chez l&apos;adulte dans le DSM-5.
+          </p>
+          <p className="mt-2">
+            Un score élevé seul ne suffit pas : le DSM-5 demande aussi que ces signes soient
+            présents depuis l&apos;enfance, gênent dans au moins deux domaines de vie et durent
+            depuis 6 mois (voir Contexte ci-dessous). C&apos;est la combinaison des deux, pas le
+            score seul, qui distingue un profil « évocateur » d&apos;un profil « à explorer ».
           </p>
         </div>
 
-        <div className="mt-8">
-          <h2 className="text-xl font-semibold">Détail de tes réponses</h2>
-          <div className="mt-4 space-y-3">
-            {r.review.map((item) => (
-              <div
-                key={item.id}
-                className={`flex items-center justify-between gap-4 rounded-xl border p-4 text-sm ${
-                  item.positive ? "border-amber-500/40 bg-amber-500/5" : "border-card-border"
-                }`}
-              >
-                <span>{item.text}</span>
-                <span className="shrink-0 font-medium text-muted-foreground">{item.label}</span>
-              </div>
+        <div className="mt-6 rounded-xl border border-card-border bg-card p-5">
+          <p className="font-semibold text-foreground">Contexte</p>
+          <ul className="mt-3 space-y-2 text-sm">
+            {r.contextAnswers.map((c, i) => (
+              <li key={c.id} className="flex items-start gap-2">
+                <span className={c.yes ? "text-green-600 dark:text-green-400" : "text-muted-foreground"}>
+                  {c.yes ? "✓" : "–"}
+                </span>
+                <span className="text-muted">
+                  {contextLabels[i] ?? c.text} : {c.yes ? "oui" : "non"}
+                </span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
+
+        <div className="mt-6 rounded-xl border border-card-border bg-card p-5 text-sm text-muted">
+          <p className="font-medium text-foreground">Et maintenant ?</p>
+          <ul className="mt-2 list-disc space-y-1.5 pl-5">
+            <li>Parles-en à ton médecin généraliste, qui pourra t&apos;orienter vers un psychiatre formé au TDAH de l&apos;adulte.</li>
+            <li>Note des exemples concrets de ton quotidien et, si possible, retrouve d&apos;anciens bulletins scolaires : ils aident au diagnostic.</li>
+            <li>
+              L&apos;association HyperSupers – TDAH France informe et oriente :{" "}
+              <a href="https://www.tdah-france.fr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                tdah-france.fr
+              </a>
+              .
+            </li>
+          </ul>
+        </div>
+
+        <div className="mt-6 rounded-xl border border-card-border bg-card p-5 text-sm text-muted">
+          <p className="font-medium text-foreground">Si un TDAH est confirmé</p>
+          <p className="mt-2">
+            Un diagnostic ne mène pas automatiquement à un traitement médicamenteux. Les approches
+            non médicamenteuses (psychoéducation, thérapies comportementales, aménagements concrets
+            du quotidien) sont toujours la première étape. Un traitement par méthylphénidate n&apos;est
+            envisagé que si elles ne suffisent pas, toujours en complément et jamais à leur place, et
+            sa prescription est strictement réservée à un médecin spécialisé du TDAH.
+          </p>
+        </div>
+
+        <p className="mt-6 text-center text-xs text-muted-foreground">
+          Ce résultat est un repère, pas un diagnostic. Questions rédigées à partir des critères du TDAH de l&apos;adulte
+          du DSM-5. Un questionnaire de repérage en ligne ne remplace jamais une évaluation clinique : seul un médecin
+          ou un psychiatre peut poser un diagnostic de TDAH, après un entretien approfondi.
+        </p>
       </div>
     );
   }

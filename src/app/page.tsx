@@ -1,10 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { RadarChart } from "@/components/dimension-charts";
+import { DiscWheel8Profiles } from "@/components/disc-wheel-8-profiles";
+import { IqScale } from "@/components/iq-scale";
 import { Illustration, motifForArticle, motifForTest } from "@/components/illustration";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { GUIDES } from "@/lib/guides";
 import type { ArticleRow } from "@/lib/article-types";
+import type { Test } from "@/lib/types";
+import { CATEGORIES } from "@/lib/test-category";
+import { CategoryIcon } from "@/components/category-icon";
+import { TestCard } from "@/components/test-card";
 
 // Hourly refresh: keeps the "latest articles" block current without making
 // the homepage fully dynamic.
@@ -28,15 +34,7 @@ const SAMPLE_PROFILE = [
   { label: "Adaptabilité", value: 0.61 },
 ];
 
-const AIRLINES = [
-  "Air France",
-  "HOP",
-  "Transavia",
-  "Ryanair",
-  "easyJet",
-  "Eurowings",
-  "ENAC",
-];
+const FLAGSHIP_TEST_SLUGS = ["disc", "qi", "orientation", "tdah", "hpi", "animal-totem"];
 
 const FAQ = [
   {
@@ -45,63 +43,26 @@ const FAQ = [
       "C'est un questionnaire structuré (choix forcés, mises en situation, échelles d'accord) qui dresse un profil sur plusieurs dimensions psychologiques : mode relationnel, prise de décision, rapport à l'organisation, etc. Il n'y a pas de bonne ou de mauvaise réponse : l'objectif est un profil fidèle, pas une note.",
   },
   {
-    question:
-      "Les tests SOSIE 2, TD12 ou PSY2 sont-ils les tests officiels utilisés par Air France, HOP ou Transavia ?",
-    answer:
-      "Non. Profilia est un site indépendant, non affilié à ces compagnies. Nos tests sont des créations originales inspirées des formats connus utilisés dans ce type de sélection (choix forcé, jugement situationnel), pas des reproductions des épreuves propriétaires réelles.",
-  },
-  {
-    question:
-      "Comment se préparer à un test de personnalité pour devenir pilote de ligne ?",
-    answer:
-      "En t'entraînant sur des formats similaires avant le jour J, pour ne pas être surpris par la structure de l'épreuve (choix forcés, contrôles de cohérence, mises en situation), et en connaissant ton propre profil pour préparer un entretien RH cohérent avec tes réponses écrites.",
-  },
-  {
     question: "Les tests sont-ils gratuits ?",
     answer:
       "Tu réponds à toutes les questions gratuitement, sans engagement ni carte bancaire. Seul ton rapport complet est payant, à la fin.",
   },
   {
-    question: "Combien de temps dure un test de personnalité ?",
+    question: "Combien de temps dure un test ?",
     answer:
-      "Selon le format, entre 10 et 30 minutes pour un test complet. Chaque test indique son nombre de questions et son format avant de commencer.",
+      "Entre 5 et 45 minutes selon le format : chaque test indique son nombre de questions avant de commencer, pour que tu saches à quoi t'attendre.",
+  },
+  {
+    question: "Le test de QI de Profilia donne-t-il un vrai quotient intellectuel ?",
+    answer:
+      "Non. Un quotient intellectuel certifié suppose un étalonnage sur une large population, réalisé par un psychologue avec un outil validé (WAIS). Notre test donne un score indicatif façon QI, sur la même échelle (moyenne 100, écart-type 15), mais ce n'est pas un chiffre clinique.",
+  },
+  {
+    question: "Les questionnaires de repérage (TDAH, HPI) remplacent-ils un diagnostic ?",
+    answer:
+      "Non, jamais. Ce sont des outils d'auto-réflexion inspirés de critères utilisés par les professionnels de santé (DSM-5 pour le TDAH), pas des instruments diagnostiques. Seul un médecin, un psychiatre ou un psychologue formé peut poser un diagnostic.",
   },
 ];
-
-const COMPANIES = [
-  "LVMH",
-  "Airbus",
-  "Thales",
-  "Société Générale",
-  "TotalEnergies",
-  "BNP Paribas",
-  "Danone",
-  "Sanofi",
-  "Orange",
-  "L'Oréal",
-  "Decathlon",
-  "Leclerc",
-  "Barilla",
-];
-
-function CheckIcon() {
-  return (
-    <svg
-      viewBox="0 0 20 20"
-      fill="none"
-      className="mt-0.5 h-4 w-4 shrink-0 text-primary"
-      aria-hidden="true"
-    >
-      <path
-        d="M4 10.5l3.5 3.5L16 5.5"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 
 export default async function Home() {
   let latest: Pick<ArticleRow, "slug" | "title" | "category" | "meta_description">[] = [];
@@ -120,6 +81,22 @@ export default async function Home() {
   const homeGuides = HOME_GUIDE_SLUGS.map((slug) => GUIDES.find((g) => g.slug === slug)).filter(
     (g): g is (typeof GUIDES)[number] => !!g
   );
+
+  let flagshipTests: Test[] = [];
+  try {
+    const { data } = await createAdminClient()
+      .from("tests")
+      .select("*")
+      .in("slug", FLAGSHIP_TEST_SLUGS)
+      .eq("is_active", true)
+      .returns<Test[]>();
+    const bySlug = new Map((data ?? []).map((t) => [t.slug, t]));
+    flagshipTests = FLAGSHIP_TEST_SLUGS.map((slug) => bySlug.get(slug)).filter(
+      (t): t is Test => !!t
+    );
+  } catch {
+    flagshipTests = [];
+  }
 
   return (
     <div>
@@ -140,7 +117,7 @@ export default async function Home() {
           aria-hidden="true"
         />
 
-        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:py-28">
+        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 pb-40 pt-20 lg:grid-cols-2 lg:pb-48 lg:pt-28">
           <div className="flex flex-col items-center gap-5 text-center lg:items-start lg:text-left">
             <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-semibold text-green-700 dark:text-green-400">
               5 minutes, gratuit, sans compte
@@ -201,314 +178,85 @@ export default async function Home() {
                 </span>
               </div>
             </div>
+
+            {/* Two more test formats peeking out from behind the main
+                report card, so the hero communicates breadth (DISC, QI…)
+                without turning into a carousel or a wall of logos. */}
+            <div
+              className="absolute -left-12 -top-12 hidden w-52 -rotate-6 rounded-xl border border-card-border bg-card p-3 shadow-lg transition hover:rotate-0 sm:block"
+              aria-hidden="true"
+            >
+              <p className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
+                Test DISC — 8 profils
+              </p>
+              <DiscWheel8Profiles className="mt-1 w-full" />
+            </div>
+
+            <div
+              className="absolute -bottom-32 -right-8 hidden w-64 rotate-6 rounded-xl border border-card-border bg-card p-3 shadow-lg transition hover:rotate-0 sm:block"
+              aria-hidden="true"
+            >
+              <p className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
+                Test de QI — échelle de Wechsler
+              </p>
+              <IqScale iqScore={118} compact />
+            </div>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-5xl px-6 py-16">
         <h2 className="text-center text-2xl font-semibold tracking-tight">
-          Des tests pensés comme de vrais outils d&apos;évaluation
+          4 espaces, un objectif à chaque fois différent
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-center text-muted">
-          Conçus par des professionnels du recrutement (RH, psychologues et
-          chasseurs de tête spécialisés dans le transport aérien et
-          travaillant pour de grands groupes du CAC40), pas par une équipe
-          marketing : chaque test suit une vraie méthodologie
-          d&apos;évaluation.
+          Raisonnement et repérage, personnalité au sens large, ou préparation ciblée à un
+          recrutement (aérien ou grande entreprise) : choisis ton point de départ.
         </p>
-        <div className="mt-10 grid gap-6 sm:grid-cols-3">
-          <div className="rounded-xl border border-card-border bg-card p-6">
-            <p className="font-medium">Formats variés</p>
-            <p className="mt-2 text-sm text-muted">
-              Choix forcé par paires ou quadruplets, jugement situationnel,
-              échelle de Likert : chaque format mesure autrement.
-            </p>
-          </div>
-          <div className="rounded-xl border border-card-border bg-card p-6">
-            <p className="font-medium">Contrôles de cohérence</p>
-            <p className="mt-2 text-sm text-muted">
-              Des questions de contrôle vérifient la stabilité de tes
-              réponses, comme dans un vrai processus d&apos;évaluation.
-            </p>
-          </div>
-          <div className="rounded-xl border border-card-border bg-card p-6">
-            <p className="font-medium">Rapport détaillé, en PDF</p>
-            <p className="mt-2 text-sm text-muted">
-              Un score par dimension, une tendance, un commentaire, pas
-              juste un résultat unique, téléchargeable en PDF pour le
-              relire avant ton entretien.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-5xl px-6 py-16">
-        <div className="rounded-2xl border border-primary/30 bg-card p-8 sm:p-10">
-          <span className="text-sm font-medium text-primary">
-            Pourquoi ce n&apos;est pas qu&apos;un test
-          </span>
-          <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-            Connais ton profil avant l&apos;entretien, pas pendant
-          </h2>
-          <p className="mt-4 max-w-2xl text-muted">
-            Dans un vrai processus de recrutement, l&apos;entretien RH
-            s&apos;appuie souvent sur les résultats de ton test de
-            personnalité. Si tes réponses à l&apos;oral contredisent
-            nettement ton profil écrit, le recruteur le remarque, et ta
-            crédibilité en pâtit. Connaître ton profil en amont te permet
-            d&apos;arriver préparé, avec des réponses cohérentes, sans te
-            laisser piéger par une question qui recoupe le test.
-          </p>
-          <ul className="mt-6 grid gap-3 text-sm sm:grid-cols-3">
-            <li className="flex items-start gap-2">
-              <CheckIcon />
-              <span>
-                Anticipe les questions qui recoupent ton profil écrit
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <CheckIcon />
-              <span>Reste cohérent entre le test et l&apos;entretien</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <CheckIcon />
-              <span>
-                Prépare tes points de vigilance au lieu d&apos;être pris au
-                dépourvu
-              </span>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section className="border-t border-card-border/60 bg-card/40">
-        <div className="mx-auto max-w-5xl px-6 py-16">
-          <div className="grid gap-10 sm:grid-cols-2 sm:items-center">
-            <div>
-              <span className="text-sm font-medium text-primary">
-                Aéronautique
-              </span>
-              <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-                Tu prépares une sélection dans l&apos;aérien ?
-              </h2>
-              <p className="mt-4 text-muted">
-                Les entretiens de pilote de ligne, pilote militaire ou
-                personnel naviguant commercial (EOPN, ALAT, AOPAN,
-                compagnies civiles...) s&apos;appuient souvent sur des tests
-                de personnalité et de jugement situationnel. Nos tests
-                s&apos;entraînent sur les mêmes formats (choix forcé, mises
-                en situation, contrôle de cohérence) pour que le jour J
-                n&apos;ait rien d&apos;inconnu.
-              </p>
-              <ul className="mt-6 space-y-3 text-sm">
-                <li className="flex items-start gap-2">
-                  <CheckIcon />
-                  <span>
-                    Format « choix forcé » identique à celui utilisé pour les
-                    sélections pilotes
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckIcon />
-                  <span>
-                    Test de jugement situationnel type CRM (communication,
-                    décision, gestion de l&apos;urgence)
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckIcon />
-                  <span>
-                    Rapport par dimension pour préparer tes entretiens de
-                    sélection
-                  </span>
-                </li>
-              </ul>
-              <Link
-                href="/tests/pilote"
-                className="mt-6 inline-block rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          {CATEGORIES.map((cat) => (
+            <Link
+              key={cat.slug}
+              href={`/tests/${cat.slug}`}
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-card-border shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div
+                className="relative flex h-32 items-center justify-center overflow-hidden"
+                style={{ background: cat.gradient }}
               >
-                Voir les tests pour pilote et personnel navigant
-              </Link>
-            </div>
-            <div className="rounded-xl border border-card-border bg-card p-6">
-              <div className="grid grid-cols-2 gap-2 overflow-hidden rounded-lg">
-                <div className="relative h-28">
-                  <Image
-                    src="/images/af-equipage.jpg"
-                    alt="Équipage se dirigeant vers l'avion sur le tarmac"
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 640px) 200px, 45vw"
-                  />
-                </div>
-                <div className="relative h-28">
-                  <Image
-                    src="/images/af-avion-vol.jpg"
-                    alt="Avion long-courrier en vol"
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 640px) 200px, 45vw"
-                  />
-                </div>
-                <div className="relative h-28">
-                  <Image
-                    src="/images/af-avion-sol.jpg"
-                    alt="Avion long-courrier au sol"
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 640px) 200px, 45vw"
-                  />
-                </div>
-                <div className="relative h-28">
-                  <Image
-                    src="/images/transavia-avion.jpg"
-                    alt="Avion au décollage"
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 640px) 200px, 45vw"
-                  />
-                </div>
+                <CategoryIcon category={cat.slug} className="h-14 w-14 text-white/90" />
               </div>
-              <p className="mt-5 text-sm font-medium text-foreground/80">
-                Que tu vises...
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {AIRLINES.map((airline) => (
-                  <span
-                    key={airline}
-                    className="rounded-full border border-card-border px-3 py-1 text-sm text-muted"
-                  >
-                    {airline}
-                  </span>
-                ))}
-                <span className="rounded-full border border-card-border px-3 py-1 text-sm text-muted">
-                  ou une autre compagnie
+              <div className="bg-card p-5">
+                <p className="font-semibold">{cat.title}</p>
+                <p className="mt-1.5 line-clamp-2 text-sm text-muted">{cat.description}</p>
+                <span className="mt-3 inline-block text-sm font-medium text-primary">
+                  Voir les tests →
                 </span>
               </div>
-              <p className="mt-5 text-xs leading-relaxed text-muted-foreground">
-                Ce site est indépendant et n&apos;est affilié à aucune de ces
-                compagnies ou écoles. Nos tests sont des créations
-                originales inspirées de formats connus (SOSIE 2, TD12,
-                ADAPT...), pas des reproductions d&apos;épreuves
-                propriétaires.
-              </p>
-            </div>
-          </div>
+            </Link>
+          ))}
         </div>
       </section>
 
-      <section className="border-t border-card-border/60 bg-card/40">
-        <div className="mx-auto max-w-5xl px-6 py-16">
-          <div className="grid gap-10 sm:grid-cols-2 sm:items-center">
-            <div className="order-2 rounded-xl border border-card-border bg-card p-6 sm:order-1">
-              <div className="grid grid-cols-2 gap-2 overflow-hidden rounded-lg">
-                <div className="relative col-span-2 h-40">
-                  <Image
-                    src="/images/grande-arche.jpg"
-                    alt="Quartier d'affaires de la Défense, à Paris"
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 640px) 400px, 90vw"
-                  />
-                </div>
-                <div className="relative col-span-2 h-28">
-                  <Image
-                    src="/images/salle-reunion.jpg"
-                    alt="Salle de réunion en entreprise"
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 640px) 400px, 90vw"
-                  />
-                </div>
-              </div>
-              <p className="mt-5 text-sm font-medium text-foreground/80">
-                Que tu vises...
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {COMPANIES.map((company) => (
-                  <span
-                    key={company}
-                    className="rounded-full border border-card-border px-3 py-1 text-sm text-muted"
-                  >
-                    {company}
-                  </span>
-                ))}
-                <span className="rounded-full border border-card-border px-3 py-1 text-sm text-muted">
-                  ou une autre grande entreprise
-                </span>
-              </div>
-              <p className="mt-5 text-xs leading-relaxed text-muted-foreground">
-                Ce site est indépendant et n&apos;est affilié à aucune de ces
-                entreprises. Ces noms ne sont cités qu&apos;à titre
-                d&apos;exemple des contextes de recrutement où ce type de
-                test est fréquemment utilisé.
-              </p>
-            </div>
-            <div className="order-1 sm:order-2">
-              <span className="text-sm font-medium text-primary">
-                Grandes entreprises
-              </span>
-              <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-                Tu prépares un recrutement en grande entreprise ou en
-                grand groupe ?
-              </h2>
-              <p className="mt-4 text-muted">
-                De nombreux grands groupes intègrent un test de
-                personnalité dans leur processus de recrutement, en
-                complément des entretiens. S&apos;entraîner sur un format
-                comparable permet d&apos;aborder cette étape sans surprise
-                et de mieux te connaître avant l&apos;entretien.
-              </p>
-              <ul className="mt-6 space-y-3 text-sm">
-                <li className="flex items-start gap-2">
-                  <CheckIcon />
-                  <span>
-                    Formats variés (choix forcé, échelle de Likert) utilisés
-                    dans de nombreux processus de recrutement
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckIcon />
-                  <span>
-                    Rapport détaillé par dimension, à revoir avant ton
-                    entretien
-                  </span>
-                </li>
-              </ul>
-              <Link
-                href="/tests/grande-entreprise"
-                className="mt-6 inline-block rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
-              >
-                Voir les tests pour l&apos;entretien en grande entreprise
-              </Link>
+      {flagshipTests.length > 0 && (
+        <section className="border-t border-card-border/60 bg-card/40">
+          <div className="mx-auto max-w-5xl px-6 py-16">
+            <h2 className="text-center text-2xl font-semibold tracking-tight">
+              Nos tests les plus complets
+            </h2>
+            <p className="mx-auto mt-3 max-w-xl text-center text-muted">
+              Modèle DISC sur la roue des 8 profils, test de QI sur l&apos;échelle de Wechsler,
+              boussole d&apos;orientation RIASEC, repérage TDAH et HPI : un aperçu de ce que
+              couvrent nos rapports.
+            </p>
+            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {flagshipTests.map((test) => (
+                <TestCard key={test.id} test={test} />
+              ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="border-t border-card-border/60">
-        <div className="mx-auto max-w-5xl px-6 py-16 text-center">
-          <span className="text-sm font-medium text-primary">
-            Juste pour toi
-          </span>
-          <h2 className="mx-auto mt-2 max-w-2xl text-2xl font-semibold tracking-tight">
-            Tu veux simplement passer un test de personnalité pour mieux te
-            connaître ?
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted">
-            Pas de sélection ni d&apos;entretien en vue : nos tests de
-            personnalité fonctionnent aussi comme un outil d&apos;introspection,
-            pour comprendre ton mode de fonctionnement, tes points forts et
-            tes axes de progression, avec un rapport détaillé par dimension.
-          </p>
-          <Link
-            href="/tests/personnalite"
-            className="mt-6 inline-block rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
-          >
-            Faire un test de personnalité
-          </Link>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section id="comment-ca-marche" className="mx-auto max-w-5xl px-6 py-16 scroll-mt-20">
         <h2 className="text-center text-2xl font-semibold tracking-tight">
@@ -614,6 +362,7 @@ export default async function Home() {
           }),
         }}
       />
+
     </div>
   );
 }

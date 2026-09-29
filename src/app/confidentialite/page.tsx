@@ -90,7 +90,7 @@ export default function ConfidentialitePage() {
             tu disposes d&apos;un droit d&apos;accès, de rectification,
             d&apos;effacement et de portabilité de tes données, ainsi que
             d&apos;un droit d&apos;opposition. Tu peux exercer ces droits en
-            écrivant à 4F@icloud.com, ou supprimer ton compte et tes données
+            écrivant à profilia.contact@gmail.com, ou supprimer ton compte et tes données
             directement depuis la page « Mon compte » si tu es inscrit.
           </p>
         </section>
@@ -111,7 +111,7 @@ export default function ConfidentialitePage() {
           <h2 className="text-lg font-medium text-foreground">Contact</h2>
           <p>
             Pour toute question relative à tes données personnelles :
-            4F@icloud.com.
+            profilia.contact@gmail.com.
           </p>
         </section>
       </div>

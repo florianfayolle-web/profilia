@@ -1036,20 +1036,62 @@ GUIDES.push({
     {
       heading: "Ce que mesure ce test",
       body: [
-        "24 questions couvrant six grandes familles de raisonnement : numérique (suites, calcul), verbal (analogies, vocabulaire), spatial (rotation, proportions), déductif (syllogismes), inductif (repérer une règle) et attention. C'est un instantané de ta capacité à raisonner sur des problèmes nouveaux, pas une mesure de connaissances scolaires.",
+        "60 questions couvrant huit grandes familles de raisonnement : numérique (suites, calcul), verbal (analogies, vocabulaire), spatial (rotation, proportions), déductif (syllogismes), inductif (repérer une règle), attention, organisation (logistique, planification) et raisonnement mécanique (leviers, engrenages). C'est un instantané de ta capacité à raisonner sur des problèmes nouveaux, pas une mesure de connaissances scolaires.",
       ],
     },
     {
       heading: "Pourquoi ce n'est pas un vrai QI",
       body: [
-        "Un quotient intellectuel certifié (comme celui mesuré par la WAIS) est calculé en comparant ta performance à celle d'un large échantillon représentatif de la population, testé dans les mêmes conditions par un psychologue formé à l'outil. Un test en ligne, aussi bien construit soit-il, n'a pas cet étalonnage : il donne un score indicatif de raisonnement, utile pour s'entraîner ou se situer approximativement, mais jamais un chiffre à prendre au pied de la lettre.",
-        "Se méfier en particulier des sites qui annoncent un QI précis (« 128 ! ») après un test de cinq minutes : sans étalonnage réel, ce chiffre n'a aucune valeur scientifique.",
+        "Un quotient intellectuel certifié (comme celui mesuré par la WAIS) est calculé en comparant ta performance à celle d'un large échantillon représentatif de la population, testé dans les mêmes conditions par un psychologue formé à l'outil. Un test en ligne, aussi bien construit soit-il, n'a pas cet étalonnage : notre test affiche un score indicatif façon QI (moyenne 100, écart-type 15), calculé à partir de ton score brut sur 60 questions, mais ce n'est pas un chiffre à prendre au pied de la lettre.",
+        "Se méfier en particulier des sites qui annoncent un QI précis après un test de cinq minutes sur une poignée de questions : plus un test est court, moins son score est fiable, quel que soit le chiffre affiché à l'écran.",
       ],
     },
     {
       heading: "Comment aborder le résultat",
       body: [
-        "Regarde surtout le détail par domaine plutôt que le score global : il montre où tu es le plus à l'aise (calcul, logique, vocabulaire...) et où l'entraînement ferait le plus de différence. Le corrigé détaillé explique le raisonnement derrière chaque question, ce qui est plus utile pour progresser qu'un score seul.",
+        "Regarde surtout le détail par domaine plutôt que le score global : il montre où tu es le plus à l'aise (calcul, logique, vocabulaire...) et où l'entraînement ferait le plus de différence. Contrairement à notre test des 8 Logiques, le détail question par question n'est pas affiché ici : un vrai test de QI ne donne jamais son corrigé, pour que le score garde un sens si tu le repasses plus tard.",
+      ],
+    },
+    {
+      heading: "D'où viennent les seuils « déficience », « surdoué », « génie »",
+      body: [
+        "Les catégories qu'on associe aujourd'hui au QI (retard, surdouance, génie) ne sont pas nées avec les tests : les premières classifications d'individus à QI faible venaient du droit et de la médecine, pour distinguer les personnes incapables de subvenir seules à leurs besoins quotidiens. Beaucoup des termes utilisés à l'époque sont aujourd'hui abandonnés, jugés stigmatisants. Le diagnostic actuel de déficience intellectuelle ne repose d'ailleurs plus sur le seul score de QI : le comportement adaptatif au quotidien compte au moins autant, le chiffre n'étant qu'un critère parmi d'autres.",
+        "À l'autre bout de l'échelle, il n'existe aucune définition universellement acceptée de la « douance » ou du « haut potentiel ». Les seuils qui circulent (autour de 130, soit deux écarts-types au-dessus de la moyenne, parfois 140 pour parler de « surdon ») sont des conventions statistiques, pas des frontières naturelles : à 130, on se situe simplement dans les 2 à 3 % les plus hauts d'une population testée. Quant au « génie », les chercheurs qui s'y sont intéressés (à commencer par les travaux de Lewis Terman et Catherine Cox au 20ᵉ siècle) s'accordent sur un point : un QI élevé y contribue, mais ne suffit jamais à lui seul. Deux futurs prix Nobel de physique, par exemple, avaient été écartés de l'étude de Terman faute d'un score jugé assez élevé à l'époque.",
+      ],
+    },
+    {
+      heading: "Pourquoi se méfier des scores très élevés (au-delà de 150-160)",
+      body: [
+        "Plus un score de QI s'éloigne de la moyenne, plus la marge d'erreur du test pèse lourd dans le résultat, tout simplement parce que très peu de personnes dans l'échantillon de référence obtiennent des scores aussi extrêmes : la mesure devient statistiquement fragile. La plupart des tests étalonnés plafonnent d'ailleurs leur score maximal autour de 160.",
+        "C'est pour ça que les QI \"records\" qu'on voit parfois circuler (au-delà de 200) sont à prendre avec beaucoup de recul : les conditions de passation ne sont pas toujours documentées ni standardisées, et les chiffres qu'on attribue en ligne à telle ou telle personnalité sont très souvent gonflés ou extrapolés sans aucun test réel derrière. Un score, aussi élevé soit-il, vaut ce que vaut la rigueur du test et des conditions dans lesquelles il a été passé.",
+      ],
+    },
+    {
+      heading: "Lire son score en percentile plutôt qu'en chiffre brut",
+      body: [
+        "Un percentile indique le pourcentage de la population que ton score dépasse : être au 75ᵉ percentile veut dire que tu as fait mieux que 75 % des gens, pas que tu as \"75 % de bonnes réponses\". Sur l'échelle de Wechsler (moyenne 100, écart-type 15), un score de 100 correspond au 50ᵉ percentile, 115 au 84ᵉ, 130 au 98ᵉ et 140 au 99,6ᵉ (environ 1 personne sur 250).",
+        "Un détail qui surprend souvent : l'écart entre deux percentiles n'est pas linéaire avec l'écart de score. Passer de 90 à 100 fait gagner 25 points de percentile (du 25ᵉ au 50ᵉ), alors que passer de 130 à 140, un écart de points identique, n'en fait gagner qu'environ 1,6 (du 98ᵉ au 99,6ᵉ). La courbe est plus pentue au centre et s'aplatit sur les bords : aux extrêmes, quelques points de QI séparent des positions statistiquement très éloignées.",
+      ],
+    },
+    {
+      heading: "QI moyen, « bon » score, et l'effet Flynn",
+      body: [
+        "100 n'est pas une valeur mesurée dans l'absolu, c'est une convention : quand un test est étalonné, on fixe la moyenne de l'échantillon de référence à 100 par construction. Environ 68 % des gens se situent entre 85 et 115 : c'est la zone \"moyenne\" au sens statistique, où se trouvent la plupart des parcours scolaires et professionnels ordinaires.",
+        "Un score à partir de 110 est généralement considéré comme au-dessus de la moyenne, et 120 correspond à la catégorie \"supérieure\" sur l'échelle de Wechsler. Mais un score de QI reste une seule dimension parmi d'autres : la réussite scolaire, professionnelle ou relationnelle dépend aussi, et parfois surtout, de la motivation, de la discipline, de l'intelligence émotionnelle ou de la créativité, qu'aucun test de raisonnement ne mesure.",
+        "Curiosité au passage : les scores bruts aux tests de QI ont globalement augmenté au fil des décennies dans de nombreux pays, un phénomène connu sous le nom d'effet Flynn, attribué à l'amélioration de la nutrition, de la scolarisation et de la familiarité avec le raisonnement abstrait plutôt qu'à une hausse de l'intelligence en soi. Comme les tests sont périodiquement réétalonnés, la moyenne revient toujours à 100.",
+      ],
+    },
+    {
+      heading: "Comment Profilia calcule ton score",
+      body: [
+        "Contrairement à ce qu'annoncent certains sites, notre test n'est pas adaptatif (il ne change pas de difficulté selon tes réponses) et ne repose pas sur un modèle psychométrique de type IRT étalonné sur une vraie population : ce serait mentir sur ce qu'on te propose. Le calcul est plus simple et on préfère te le dire clairement : ton pourcentage de bonnes réponses sur les 60 questions est replacé sur une courbe indicative calée sur quelques repères (par exemple, 50 % de bonnes réponses correspond à 100, 90 % correspond à 130), pour donner un chiffre qui se lit comme un QI sans prétendre en être un au sens clinique.",
+      ],
+    },
+    {
+      heading: "Peut-on améliorer son score ?",
+      body: [
+        "Sur ce type d'exercices, oui, au moins en partie : la pratique régulière de raisonnements logiques, numériques ou spatiaux améliore la rapidité et l'aisance avec ces formats précis, un peu comme on progresse à un sport en s'entraînant. C'est aussi pour ça qu'on ne montre pas le corrigé ici : le revoir par cœur fausserait un futur repassage, sans rien changer à ton raisonnement réel.",
+        "Le sommeil et une bonne hygiène de vie jouent également un rôle réel sur la concentration et la mémoire de travail le jour du test. En revanche, l'idée qu'un entraînement ponctuel ferait durablement grimper ton intelligence générale est beaucoup plus discutée dans la recherche : mieux vaut voir ces exercices comme un échauffement pour ce format précis, pas comme un programme de développement cognitif miracle.",
       ],
     },
   ],
@@ -1061,7 +1103,12 @@ GUIDES.push({
     },
     {
       question: "Combien de temps dure le test ?",
-      answer: "24 questions, environ 20 minutes.",
+      answer: "60 questions, environ 45 minutes.",
+    },
+    {
+      question: "À partir de quel score parle-t-on de haut potentiel (HPI) ?",
+      answer:
+        "Le seuil le plus souvent cité est 130 (deux écarts-types au-dessus de la moyenne de 100), mais c'est une convention statistique, pas une frontière absolue, et elle ne s'applique qu'à un test étalonné passé avec un psychologue. Sur un test indicatif comme celui-ci, un score élevé est une invitation à approfondir avec un vrai bilan, pas une confirmation.",
     },
   ],
 });
@@ -1069,30 +1116,52 @@ GUIDES.push({
 GUIDES.push({
   slug: "test-reperage-tdah",
   testSlug: "tdah",
-  title: "Repérage du TDAH chez l'adulte : comprendre l'ASRS-6",
+  title: "Repérage du TDAH chez l'adulte : comprendre les critères du DSM-5",
   metaDescription:
-    "Comment fonctionne l'ASRS-6, l'outil de repérage du TDAH adulte utilisé par les médecins, ce qu'un résultat positif ou négatif veut vraiment dire, et pourquoi seul un professionnel de santé peut poser un diagnostic.",
+    "Comment sont construits les critères du TDAH adulte dans le DSM-5, ce qu'un résultat évocateur veut vraiment dire, et pourquoi seul un professionnel de santé peut poser un diagnostic.",
   intro:
-    "Le TDAH chez l'adulte reste sous-diagnostiqué, en partie parce que peu de gens savent par où commencer pour en parler à un médecin. L'ASRS-6 est justement l'outil que les médecins utilisent pour ce premier repérage.",
+    "Le TDAH chez l'adulte reste sous-diagnostiqué, en partie parce que peu de gens savent par où commencer pour en parler à un médecin. Le DSM-5, le manuel de référence en psychiatrie, décrit précisément les critères utilisés pour ce premier repérage.",
   sections: [
     {
-      heading: "Qu'est-ce que l'ASRS-6",
+      heading: "Deux dimensions, plus le contexte",
       body: [
-        "L'Adult ADHD Self-Report Scale (ASRS) a été développée avec l'Organisation mondiale de la santé pour aider au repérage du TDAH chez l'adulte. Sa version courte, l'ASRS-6, ne comprend que six questions sur des situations du quotidien (organisation, oublis, agitation, procrastination) sur les six derniers mois, et sert de premier filtre avant, éventuellement, une évaluation plus complète.",
-        "C'est un outil de repérage, pas de diagnostic : il aide à décider si ça vaut la peine d'en parler à un professionnel, rien de plus.",
+        "Le DSM-5 décrit 9 signes d'inattention et 9 signes d'agitation/impulsivité chez l'adulte. Notre questionnaire reprend ces 18 critères sous forme de 18 questions notées sur une échelle de fréquence (de « jamais » à « très souvent »), pensées sur les 6 derniers mois, au travail, à la maison et dans les relations.",
+        "Une fréquence retenue comme « signe fréquent » compte dans le total de sa dimension. Avoir 5 signes fréquents ou plus sur 9 dans une dimension est le seuil utilisé pour cette dimension, exactement comme chez l'adulte dans le DSM-5.",
       ],
     },
     {
-      heading: "Comment il est noté",
+      heading: "Pourquoi le contexte compte autant que le score",
       body: [
-        "Chaque question a un seuil de positivité propre (certaines comptent positives dès « parfois », d'autres seulement à partir de « souvent » ou « très souvent »), car certains symptômes sont plus spécifiques que d'autres. Un total de 4 réponses positives sur 6 est le seuil utilisé dans la littérature clinique pour dire qu'une évaluation plus approfondie est justifiée.",
+        "Le DSM-5 n'utilise jamais un score de symptômes seul : il exige aussi que ces difficultés soient présentes depuis l'enfance (avant 12 ans), qu'elles gênent dans au moins deux domaines de vie différents, et qu'elles durent depuis au moins 6 mois. Notre questionnaire pose ces trois questions séparément, à la fin.",
+        "Un profil n'est marqué comme réellement évocateur que si le score ET le contexte sont réunis : un score élevé sans ce contexte, ou l'inverse, place le résultat dans une zone intermédiaire à explorer plutôt que dans la zone la plus marquée.",
       ],
     },
     {
       heading: "Que faire de ton résultat",
       body: [
-        "Un résultat positif ne veut pas dire que tu as un TDAH : ça veut dire qu'une discussion avec un médecin généraliste ou un psychiatre a du sens pour aller plus loin, avec un vrai entretien clinique. Un résultat négatif n'exclut rien à lui seul non plus : si les difficultés décrites te parlent fortement malgré un score bas, il reste légitime d'en parler à un professionnel.",
+        "Un résultat évocateur ne veut pas dire que tu as un TDAH : ça veut dire qu'une discussion avec un médecin généraliste ou un psychiatre a du sens pour aller plus loin, avec un vrai entretien clinique. Un résultat bas n'exclut rien à lui seul non plus : si les difficultés décrites te parlent fortement malgré un score bas, il reste légitime d'en parler à un professionnel.",
         "Dans tous les cas, ce questionnaire n'est qu'un point de départ de conversation, jamais une conclusion.",
+      ],
+    },
+    {
+      heading: "Le TDAH n'est pas juste \"être distrait\"",
+      body: [
+        "Le TDAH est un trouble du neurodéveloppement qui associe trois familles de signes, à des degrés variables selon les personnes : l'inattention (difficulté à maintenir son attention, à finir une tâche, oublis fréquents), l'hyperactivité motrice (agitation, difficulté à rester en place) et l'impulsivité (difficulté à attendre, besoin d'agir, tendance à couper la parole). Ce n'est un trouble à part entière que lorsque ces signes gênent durablement le quotidien, pas quand ils restent de simples traits de caractère sans réel impact.",
+        "Avec l'âge, ces trois familles évoluent différemment : l'hyperactivité motrice visible s'atténue souvent, alors que l'inattention et l'impulsivité ont tendance à persister, parfois sous une forme plus discrète (une agitation intérieure plutôt qu'un besoin de bouger physiquement). C'est en partie pour ça que le TDAH adulte est sous-repéré : il ne ressemble plus toujours à l'image qu'on s'en fait à partir de l'enfance.",
+      ],
+    },
+    {
+      heading: "Pourquoi le TDAH reste sous-diagnostiqué, en particulier chez les femmes",
+      body: [
+        "Chez l'enfant, le TDAH est estimé à environ 5 % de la population, repéré environ deux fois plus souvent chez les garçons que chez les filles dans les études. Mais cet écart reflète en bonne partie un biais de repérage plutôt qu'une vraie différence de fréquence : les filles présentent plus souvent une forme à dominante inattention, moins visible et moins associée à l'image \"classique\" du TDAH, alors que la forme combinant les trois familles de signes est plus fréquente chez les garçons.",
+        "Ce même biais se retrouve à l'âge adulte : beaucoup de femmes découvrent un TDAH tardivement, parfois en creusant le sujet à l'occasion du diagnostic d'un de leurs enfants. Si ce que tu lis ici te parle sans avoir jamais été formellement évalué, ce n'est pas parce que le trouble aurait été absent plus jeune : il peut simplement n'avoir jamais été repéré comme tel.",
+      ],
+    },
+    {
+      heading: "Quelles options existent si un TDAH est confirmé",
+      body: [
+        "Un diagnostic de TDAH ne mène pas automatiquement à un traitement médicamenteux. Les approches non médicamenteuses sont systématiquement la première étape : psychoéducation (comprendre son propre fonctionnement pour mieux le gérer), thérapies comportementales et cognitives, et des aménagements concrets du quotidien (routines, consignes découpées en étapes, pauses régulières).",
+        "Un traitement médicamenteux (le méthylphénidate, mieux connu sous ses noms commerciaux comme la Ritaline) n'est envisagé que lorsque ces mesures non médicamenteuses ne suffisent pas, et toujours en complément d'elles, jamais à leur place. Sa prescription et son renouvellement sont strictement encadrés en France et réservés à un médecin spécialisé du TDAH. Le choix d'un traitement, avec ou sans médicament, se construit avec le professionnel qui pose le diagnostic, en fonction de la sévérité des symptômes et de leur retentissement réel sur ta vie quotidienne, pas à partir d'un questionnaire en ligne.",
       ],
     },
   ],
@@ -1100,12 +1169,21 @@ GUIDES.push({
     {
       question: "Ce test peut-il diagnostiquer un TDAH ?",
       answer:
-        "Non, jamais. Seul un médecin ou un psychiatre peut poser ce diagnostic, après un entretien clinique complet. Ce questionnaire est un outil de repérage, pas un instrument diagnostique.",
+        "Non, jamais. Seul un médecin ou un psychiatre peut poser ce diagnostic, après un entretien clinique complet. Ce questionnaire est un outil de repérage basé sur les critères du DSM-5, pas un instrument diagnostique.",
     },
     {
       question: "Le TDAH ne touche-t-il que les enfants ?",
       answer:
-        "Non, c'est une idée reçue : le TDAH persiste souvent à l'âge adulte, parfois sans avoir jamais été repéré dans l'enfance. C'est justement pour cette population que l'ASRS a été conçu.",
+        "Non, c'est une idée reçue : le TDAH persiste souvent à l'âge adulte, parfois sans avoir jamais été repéré dans l'enfance. C'est justement pour cette population que ce questionnaire est construit ; la version pour enfants et adolescents (SNAP-IV) est un outil différent.",
+    },
+    {
+      question: "Un résultat évocateur veut-il dire que je dois prendre un traitement ?",
+      answer:
+        "Non. Un traitement médicamenteux n'est envisagé qu'après un diagnostic posé par un médecin spécialisé, et seulement si les approches non médicamenteuses (psychoéducation, thérapies comportementales, aménagements du quotidien) ne suffisent pas. Ce questionnaire ne peut ni poser de diagnostic ni recommander un traitement.",
+    },
+    {
+      question: "Combien de temps dure le test ?",
+      answer: "21 questions, environ 5 minutes.",
     },
   ],
 });
@@ -1133,7 +1211,21 @@ GUIDES.push({
       ],
     },
     {
-      heading: "Pourquoi ce test ne peut pas te dire \u00ab tu es HPI \u00bb",
+      heading: "Deux profils très différents, sous une même étiquette",
+      body: [
+        "Un des pièges du terme HPI est de faire croire à un profil unique. En pratique, les psychologues distinguent souvent deux grandes structures. Le profil homogène (parfois dit « lamineur ») : les résultats sont élevés et réguliers sur l'ensemble des aptitudes mesurées, avec une pensée logique, linéaire, qui s'accorde en général assez facilement aux attentes scolaires ou professionnelles. Le profil hétérogène (ou « complexe ») : un net écart existe entre les aptitudes (par exemple un raisonnement verbal très élevé à côté d'une mémoire de travail plus ordinaire), avec une pensée plus intuitive, associative, et souvent une hypersensibilité plus marquée.",
+        "C'est en partie pour ça que deux personnes HPI peuvent se reconnaître très différemment dans ce qu'on lit sur le sujet : celles au profil hétérogène collent davantage à l'image « hypersensible, décalée, qui s'ennuie facilement » qu'on associe souvent au HPI, alors que le profil homogène ressemble parfois simplement à quelqu'un de très à l'aise intellectuellement, sans le vécu de décalage qu'on attend spontanément.",
+      ],
+    },
+    {
+      heading: "Des traits qui débordent largement le raisonnement pur",
+      body: [
+        "Certains traits reviennent souvent dans les témoignages et la littérature sur le sujet, au-delà des six que notre test explore. Une curiosité qui touche des domaines très variés, parfois sans lien apparent entre eux, vécue comme un besoin plutôt qu'un loisir. Une capacité à mener plusieurs fils de pensée en parallèle, ce qui peut donner une impression de dispersion vue de l'extérieur alors qu'il s'agit d'un vrai mode de fonctionnement. Une tendance au perfectionnisme, portée par des exigences personnelles élevées, qui peut déborder en doute de soi ou en syndrome de l'imposteur, y compris chez des personnes objectivement compétentes. Et une indépendance de pensée assez marquée : les HPI se construisent souvent leurs propres repères plutôt que d'accepter une règle ou une autorité qui ne leur semble pas justifiée.",
+        "Cette façon de fonctionner peut aussi créer des frictions concrètes au quotidien : couper la parole ou finir les phrases de l'interlocuteur (le temps de réflexion va vite), poser beaucoup de questions perçues comme dérangeantes, ou remettre en question des décisions ou des processus établis. Rien de tout ça n'est un problème de personnalité : c'est la conséquence directe d'un fonctionnement cognitif atypique, plus qu'un manque de savoir-vivre.",
+      ],
+    },
+    {
+      heading: "Pourquoi ce test ne peut pas te dire « tu es HPI »",
       body: [
         "Un questionnaire en ligne mesure des traits que tu t'attribues toi-même, pas une performance cognitive standardisée : il n'y a ici ni exercice chronométré, ni comparaison à un échantillon représentatif de la population, ce qu'un vrai test de QI (WAIS) exige. Ce test te donne donc une photographie de traits fréquemment associés au haut potentiel, jamais une confirmation ou une infirmation du haut potentiel lui-même.",
         "Si le résultat te parle fortement et que tu veux en avoir le cœur net, la seule étape qui vaille est de consulter un psychologue formé à la passation du WAIS.",
@@ -1150,6 +1242,11 @@ GUIDES.push({
       question: "Le test de QI de Profilia peut-il servir à la place ?",
       answer:
         "Non plus : notre test de QI donne lui aussi un score indicatif de raisonnement, pas un quotient intellectuel étalonné. Les deux tests sont complémentaires pour te faire une idée, mais aucun ne remplace un bilan avec un psychologue.",
+    },
+    {
+      question: "Pourquoi deux personnes HPI peuvent-elles sembler si différentes ?",
+      answer:
+        "Parce que le HPI recouvre au moins deux profils très distincts : un profil homogène, aux résultats réguliers et à la pensée plutôt linéaire, et un profil hétérogène, marqué par des écarts entre aptitudes, une pensée plus associative et une hypersensibilité plus présente. Le second correspond davantage à l'image « décalée » qu'on associe spontanément au haut potentiel, mais les deux sont également valides.",
     },
   ],
 });

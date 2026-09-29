@@ -1,47 +1,35 @@
 {
  "meta": {
-  "title": "Repérage TDAH adulte",
-  "instructions": "6 questions sur ta façon de fonctionner au quotidien, ces 6 derniers mois. Pour chacune, indique à quelle fréquence la situation décrite t'arrive, sans trop réfléchir.",
-  "disclaimer": "Ce questionnaire s'inspire de l'ASRS-6, l'outil de repérage du TDAH chez l'adulte utilisé en première intention par les médecins (Organisation mondiale de la santé / Kessler et al.). Ce n'est ni une reproduction certifiée de l'instrument officiel, ni un diagnostic : seul un médecin ou un psychiatre peut poser un diagnostic de TDAH, après un entretien clinique."
+  "title": "Repères TDAH adulte",
+  "instructions": "21 questions, environ 5 minutes. Pense aux 6 derniers mois, au travail ou pendant tes études, à la maison et dans tes relations.",
+  "disclaimer": "Questions rédigées à partir des critères du TDAH de l'adulte décrits dans le DSM-5 (manuel de référence en psychiatrie). Ce questionnaire ne pose pas de diagnostic : il aide à repérer des signes à discuter avec un médecin. Une réponse à partir de 63 % (« souvent ») compte comme un signe fréquent ; le seuil est de 5 signes fréquents sur 9 par dimension. En cas de détresse ou d'idées suicidaires, appelez le 3114 (numéro national de prévention du suicide, 24h/24, gratuit)."
  },
- "scaleLabels": [
-  "Jamais",
-  "Rarement",
-  "Parfois",
-  "Souvent",
-  "Très souvent"
- ],
- "positiveCutoff": 4,
+ "scaleLabels": ["Jamais", "Rarement", "Parfois", "Souvent", "Très souvent"],
+ "hitThreshold": 63,
+ "dimensionHitsNeeded": 5,
  "items": [
-  {
-   "id": 1,
-   "text": "Tu as du mal à boucler les derniers détails d'un projet, une fois la partie difficile terminée.",
-   "threshold": 50
-  },
-  {
-   "id": 2,
-   "text": "Tu as du mal à t'organiser pour une tâche qui demande de la méthode.",
-   "threshold": 50
-  },
-  {
-   "id": 3,
-   "text": "Tu oublies des rendez-vous ou des obligations.",
-   "threshold": 50
-  },
-  {
-   "id": 4,
-   "text": "Face à une tâche qui demande de réfléchir longuement, tu repousses le moment de t'y mettre.",
-   "threshold": 75
-  },
-  {
-   "id": 5,
-   "text": "Tu remues les mains ou les pieds, ou tu as du mal à tenir en place quand tu dois rester assis longtemps.",
-   "threshold": 75
-  },
-  {
-   "id": 6,
-   "text": "Tu te sens excessivement actif, comme poussé par un moteur intérieur.",
-   "threshold": 100
-  }
+  { "id": 1, "dimension": "attention", "text": "Je fais des erreurs d'inattention dans mon travail ou mes papiers, même quand la tâche est simple." },
+  { "id": 2, "dimension": "attention", "text": "J'ai du mal à garder mon attention sur une lecture, une réunion ou une longue conversation." },
+  { "id": 3, "dimension": "attention", "text": "On me reproche de ne pas écouter, alors qu'on s'adresse directement à moi." },
+  { "id": 4, "dimension": "attention", "text": "Je commence des tâches ou des projets sans aller jusqu'au bout." },
+  { "id": 5, "dimension": "attention", "text": "Organiser mon temps, mes rendez-vous ou mes papiers me demande beaucoup d'effort." },
+  { "id": 6, "dimension": "attention", "text": "Je repousse les tâches qui demandent une réflexion soutenue (dossiers, déclarations, rapports)." },
+  { "id": 7, "dimension": "attention", "text": "J'égare des objets du quotidien : clés, téléphone, lunettes, documents." },
+  { "id": 8, "dimension": "attention", "text": "Un bruit, une notification ou mes propres pensées me détournent de ce que je fais." },
+  { "id": 9, "dimension": "attention", "text": "J'oublie des choses courantes : rappeler quelqu'un, payer une facture, un rendez-vous." },
+  { "id": 10, "dimension": "hyperactivite", "text": "Je bouge les mains ou les pieds, je change sans arrêt de position sur ma chaise." },
+  { "id": 11, "dimension": "hyperactivite", "text": "J'ai du mal à rester assis(e) quand c'est attendu : réunion, repas, séance de cinéma." },
+  { "id": 12, "dimension": "hyperactivite", "text": "Je ressens une agitation intérieure, un besoin de bouger." },
+  { "id": 13, "dimension": "hyperactivite", "text": "J'ai du mal à me poser et à faire une activité de loisir tranquillement." },
+  { "id": 14, "dimension": "hyperactivite", "text": "J'ai l'impression d'être toujours en marche, sans réussir à ralentir." },
+  { "id": 15, "dimension": "hyperactivite", "text": "Je parle beaucoup, plus que les personnes autour de moi." },
+  { "id": 16, "dimension": "hyperactivite", "text": "Je réponds avant la fin de la question ou je finis les phrases des autres." },
+  { "id": 17, "dimension": "hyperactivite", "text": "Attendre mon tour (file d'attente, embouteillage, standard téléphonique) m'est très pénible." },
+  { "id": 18, "dimension": "hyperactivite", "text": "Je coupe la parole ou je m'invite dans ce que font les autres." }
+ ],
+ "contextItems": [
+  { "id": 19, "text": "Une partie de ces difficultés était déjà présente avant l'âge de 12 ans." },
+  { "id": 20, "text": "Elles me gênent dans au moins deux domaines de ma vie (travail ou études, maison, relations…)." },
+  { "id": 21, "text": "Elles durent depuis au moins 6 mois." }
  ]
 }

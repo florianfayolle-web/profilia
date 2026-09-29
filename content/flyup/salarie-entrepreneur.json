@@ -2,7 +2,7 @@
   "meta": {
     "title": "Salarié ou entrepreneur ?",
     "totalItems": 18,
-    "disclaimer": "Ce test mesure une appétence, pas une compétence ni une probabilité de réussite. Un score élevé ne dit rien de la viabilité d'un projet. Un score bas n'interdit à personne d'entreprendre : il indique ce qu'il faudra compenser — un associé, un accompagnement, ou un démarrage progressif en parallèle d'un emploi."
+    "disclaimer": "Ce test mesure une appétence, pas une compétence ni une probabilité de réussite. Un score élevé ne dit rien de la viabilité d'un projet. Un score bas n'interdit à personne d'entreprendre : il indique ce qu'il faudra compenser, un associé, un accompagnement, ou un démarrage progressif en parallèle d'un emploi."
   },
   "axes": [
     {
@@ -225,7 +225,7 @@
       "name": "Profil indépendant",
       "body": [
         "Vous avez le socle d'un freelance : vous vous organisez sans aide, vous encaissez les refus, l'irrégularité ne vous terrifie pas. L'indépendance a de bonnes chances de vous convenir, en solo ou en micro-structure.",
-        "La piste : commencer par du travail en direct avec des clients, sans salariés ni charges fixes lourdes. Surveillez votre axe Initiative — c'est lui qui sépare l'indépendant qui vit de son métier de celui qui subit les périodes creuses."
+        "La piste : commencer par du travail en direct avec des clients, sans salariés ni charges fixes lourdes. Surveillez votre axe Initiative, c'est lui qui sépare l'indépendant qui vit de son métier de celui qui subit les périodes creuses."
       ]
     },
     {

@@ -10,9 +10,24 @@ import { TeaserResult, type TeaserData } from "./teaser-result";
 import type { scoreBipolarPairs } from "@/lib/assessments/scoring";
 import { getTestThemeStyle } from "@/lib/test-theme";
 import { DownloadPdfButton } from "@/components/download-pdf-button";
-import { PaidLockedResult } from "./paid-locked-result";
+import { PaidLockedResult, type PartialTeaser } from "./paid-locked-result";
 import { getTestAccess } from "@/lib/access";
 import { SITE_NAME } from "@/lib/site";
+import { AnimalIllustration } from "@/components/animal-illustration";
+import { ProfiliaMark } from "@/components/profilia-mark";
+import type {
+  scoreDisc,
+  scorePcm,
+  scoreCareerBalance,
+  scoreSosie,
+  scoreOrientation,
+  scoreLikertScale,
+  scoreForcedChoicePair,
+  scoreForcedChoiceQuad,
+  scoreSituationalJudgment,
+  scoreLogicMcq,
+} from "@/lib/assessments/scoring";
+import type { TestFormat } from "@/lib/types";
 
 // Personal result pages: never indexed, never shared publicly.
 export const metadata: Metadata = {
@@ -32,6 +47,86 @@ function redactBipolarResult(
     mainProfile: result.mainProfile,
     dimensions: result.dimensionResults.map((d) => ({ key: d.key, name: d.name })),
   };
+}
+
+// Same idea as redactBipolarResult, generalized to every other rich format:
+// pull out ONE real, safe fact (a dominant style/type/trait *name*, never a
+// score or percentage) plus the plain dimension names the full report
+// covers, for the locked PaidLockedResult screen. adhd_screener is
+// deliberately excluded — even a positive/negative hint here would give
+// away the one thing paying for the report is meant to reveal.
+function buildPartialTeaser(format: TestFormat, result: unknown): PartialTeaser {
+  switch (format) {
+    case "bipolar_pairs": {
+      const r = result as ReturnType<typeof scoreBipolarPairs>;
+      return {
+        headline: r.mainProfile ? { label: "Ton profil principal", value: r.mainProfile.trait } : null,
+        dimensionNames: r.dimensionResults.map((d) => d.name),
+      };
+    }
+    case "disc_quad": {
+      const r = result as ReturnType<typeof scoreDisc>;
+      return {
+        headline: r.archetype ? { label: "Ton profil sur la roue des 8 profils DISC", value: r.archetype } : null,
+        dimensionNames: r.dimensionResults.map((d) => d.label),
+      };
+    }
+    case "pcm_likert": {
+      const r = result as ReturnType<typeof scorePcm>;
+      return {
+        headline: r.baseType ? { label: "Ta base de personnalité", value: r.baseType.name } : null,
+        dimensionNames: r.dimensionResults.map((d) => d.label),
+      };
+    }
+    case "career_balance": {
+      const r = result as ReturnType<typeof scoreCareerBalance>;
+      return {
+        headline: r.profile ? { label: "Ta tendance", value: r.profile.name } : null,
+        dimensionNames: r.axisResults.map((a) => a.label),
+      };
+    }
+    case "sosie_v2": {
+      const r = result as ReturnType<typeof scoreSosie>;
+      const topTrait = [...r.traitResults].sort((a, b) => b.scorePercent - a.scorePercent)[0];
+      return {
+        headline: topTrait ? { label: "Ton trait le plus marqué", value: topTrait.label } : null,
+        dimensionNames: r.traitResults.map((t) => t.label),
+      };
+    }
+    case "orientation_riasec": {
+      const r = result as ReturnType<typeof scoreOrientation>;
+      const top = r.profileSections[0];
+      return {
+        headline: top ? { label: "Ta dominante", value: top.label } : null,
+        dimensionNames: r.domainResults.map((d) => d.label),
+      };
+    }
+    case "likert_scale": {
+      const r = result as ReturnType<typeof scoreLikertScale>;
+      return {
+        headline: r.dominantProfile ? { label: "Ton profil dominant", value: r.dominantProfile.name } : null,
+        dimensionNames: r.dimensionResults.map((d) => d.name),
+      };
+    }
+    case "forced_choice_pair": {
+      const r = result as ReturnType<typeof scoreForcedChoicePair>;
+      return { headline: null, dimensionNames: r.dimensionResults.map((d) => d.label) };
+    }
+    case "forced_choice_quad": {
+      const r = result as ReturnType<typeof scoreForcedChoiceQuad>;
+      return { headline: null, dimensionNames: r.dimensionResults.map((d) => d.label) };
+    }
+    case "situational_judgment": {
+      const r = result as ReturnType<typeof scoreSituationalJudgment>;
+      return { headline: null, dimensionNames: r.dimensionResults.map((d) => d.label) };
+    }
+    case "logic_mcq": {
+      const r = result as ReturnType<typeof scoreLogicMcq>;
+      return { headline: null, dimensionNames: r.dimensionResults.map((d) => d.label) };
+    }
+    default:
+      return { headline: null, dimensionNames: [] };
+  }
 }
 
 export default async function ResultPage(
@@ -97,9 +192,15 @@ export default async function ResultPage(
       >
     >();
 
+  // Admin client: this attempt (and its result_profile_id) was already
+  // confirmed to belong to this caller above, so fetching the one profile
+  // row it points to is safe even before purchase — RLS would otherwise
+  // block it for an unpurchased single_choice test, same gap as
+  // question_options in submitAttempt. What's actually shown to the client
+  // (title only vs. title+description) is still decided below by isLocked.
   let resultProfile: ResultProfile | null = null;
   if (attempt.result_profile_id) {
-    const { data } = await supabase
+    const { data } = await createAdminClient()
       .from("result_profiles")
       .select("*")
       .eq("id", attempt.result_profile_id)
@@ -133,10 +234,7 @@ export default async function ResultPage(
       <div className="print-report-header">
         <div className="mx-auto flex h-full max-w-2xl items-center justify-between px-6">
           <span className="flex items-center gap-2 text-base font-semibold tracking-tight text-primary">
-            <span
-              className="inline-block h-2.5 w-2.5 rounded-full"
-              style={{ backgroundColor: "var(--primary)" }}
-            />
+            <ProfiliaMark size={18} className="shrink-0" />
             {SITE_NAME}
           </span>
           <span className="text-right text-[11px] leading-tight text-muted-foreground">
@@ -176,11 +274,16 @@ export default async function ResultPage(
         <p className="text-sm font-medium text-foreground/70">
           {test?.title ?? "Ton résultat"}
         </p>
-        {!isRichFormat && (
+        {!isRichFormat && !isLocked && (
           <>
             {resultProfile ? (
               <>
-                <h1 className="mt-2 text-3xl font-semibold tracking-tight">
+                {slug === "animal-totem" && (
+                  <div className="mx-auto mt-4 h-40 w-40 overflow-hidden rounded-full shadow-lg">
+                    <AnimalIllustration animal={resultProfile.trait_key} className="h-full w-full" />
+                  </div>
+                )}
+                <h1 className="mt-4 text-3xl font-semibold tracking-tight">
                   {resultProfile.title}
                 </h1>
                 <p className="mt-4 text-muted">{resultProfile.description}</p>
@@ -193,6 +296,29 @@ export default async function ResultPage(
           </>
         )}
       </div>
+
+      {!isRichFormat && test && isLocked && (
+        <div className="mt-6">
+          <PaidLockedResult
+            testSlug={slug}
+            attemptId={attemptId}
+            testTitle={test.title}
+            priceCents={test.price_cents}
+            currency={test.currency}
+            includedInSubscription={test.included_in_subscription}
+            pendingUnlock={pendingUnlock}
+            teaser={{
+              headline: resultProfile ? { label: "Ton résultat", value: resultProfile.title } : null,
+              dimensionNames: [],
+            }}
+            visual={
+              slug === "animal-totem" && resultProfile ? (
+                <AnimalIllustration animal={resultProfile.trait_key} className="aspect-[2/1] w-full" />
+              ) : undefined
+            }
+          />
+        </div>
+      )}
 
       {isRichFormat && test && isLocked && isFreeTest && (
         <div className="mt-6">
@@ -217,6 +343,7 @@ export default async function ResultPage(
             currency={test.currency}
             includedInSubscription={test.included_in_subscription}
             pendingUnlock={pendingUnlock}
+            teaser={buildPartialTeaser(test.format, attempt.result)}
           />
         </div>
       )}
@@ -227,6 +354,7 @@ export default async function ResultPage(
             format={test.format}
             result={attempt.result}
             language={test.language}
+            testSlug={slug}
           />
         </div>
       )}

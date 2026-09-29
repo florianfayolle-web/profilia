@@ -25,16 +25,25 @@ export function QuizIntro({
   onStart,
   isPreview,
   demo,
+  questionCount,
 }: {
   onStart: () => void;
   isPreview: boolean;
   demo?: ReactNode;
+  questionCount?: number;
 }) {
   return (
     <div className="mt-6 rounded-xl border border-card-border bg-card p-6">
-      <p className="text-lg font-semibold tracking-tight">
-        Avant de commencer
-      </p>
+      <div className="flex items-center justify-between gap-3">
+        <p className="text-lg font-semibold tracking-tight">
+          Avant de commencer
+        </p>
+        {questionCount != null && (
+          <span className="shrink-0 rounded-full border border-card-border px-3 py-1 text-xs font-medium text-muted-foreground">
+            {questionCount} question{questionCount > 1 ? "s" : ""}
+          </span>
+        )}
+      </div>
       <ul className="mt-4 space-y-3 text-sm text-muted">
         <li className="flex items-start gap-2">
           <CheckIcon />

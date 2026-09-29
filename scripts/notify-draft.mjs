@@ -12,7 +12,7 @@ if (!id || !token || !title) {
 }
 
 const siteUrl = process.env.SITE_PUBLIC_URL;
-const to = process.env.REPORT_TO_EMAIL || "florian.fayolle@icloud.com";
+const to = process.env.REPORT_TO_EMAIL || "profilia.contact@gmail.com";
 const user = process.env.ICLOUD_SMTP_USER;
 const pass = process.env.ICLOUD_SMTP_PASSWORD;
 if (!siteUrl || !user || !pass) {

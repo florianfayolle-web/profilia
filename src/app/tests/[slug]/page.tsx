@@ -13,6 +13,7 @@ import { getTestThemeStyle } from "@/lib/test-theme";
 import { GUIDES } from "@/lib/guides";
 import { getCategory, getTestCategory } from "@/lib/test-category";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
+import { DiscWheel8Profiles } from "@/components/disc-wheel-8-profiles";
 
 const getTestBySlug = cache(async (slug: string) => {
   const supabase = await createClient();
@@ -128,6 +129,11 @@ export default async function TestDetailPage(
         </p>
       )}
       <h1 className="mt-2 text-3xl font-semibold tracking-tight">{test.title}</h1>
+      {test.slug === "disc" && (
+        <div className="mx-auto mt-6 max-w-xs">
+          <DiscWheel8Profiles className="w-full" />
+        </div>
+      )}
       <p className="mt-4 whitespace-pre-line text-muted">
         {test.description}
       </p>

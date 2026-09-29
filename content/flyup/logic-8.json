@@ -20,7 +20,7 @@
       "id": 1,
       "domain": "ind",
       "question": "Quel nombre complète la suite ?",
-      "series": "3 — 6 — 11 — 18 — 27 — ?",
+      "series": "3, 6, 11, 18, 27, ?",
       "figure": null,
       "grid": false,
       "options": [
@@ -44,7 +44,7 @@
       "id": 2,
       "domain": "ind",
       "question": "Quel nombre complète la suite ?",
-      "series": "2 — 6 — 12 — 20 — 30 — ?",
+      "series": "2, 6, 12, 20, 30, ?",
       "figure": null,
       "grid": false,
       "options": [
@@ -68,7 +68,7 @@
       "id": 3,
       "domain": "ind",
       "question": "Quelle lettre complète la suite ?",
-      "series": "B — D — G — K — P — ?",
+      "series": "B, D, G, K, P, ?",
       "figure": null,
       "grid": false,
       "options": [
@@ -92,7 +92,7 @@
       "id": 4,
       "domain": "ind",
       "question": "Quel nombre complète la suite ?",
-      "series": "1 — 4 — 9 — 61 — 52 — ?",
+      "series": "1, 4, 9, 61, 52, ?",
       "figure": null,
       "grid": false,
       "options": [
@@ -116,7 +116,7 @@
       "id": 5,
       "domain": "ind",
       "question": "Quel nombre complète la suite ?",
-      "series": "5 — 10 — 8 — 16 — 14 — 28 — ?",
+      "series": "5, 10, 8, 16, 14, 28, ?",
       "figure": null,
       "grid": false,
       "options": [
@@ -259,7 +259,7 @@
     {
       "id": 11,
       "domain": "ver",
-      "question": "Parmi ces cinq mots, lequel est l'intrus ? Cèdre — Chêne — Bambou — Hêtre — Érable",
+      "question": "Parmi ces cinq mots, lequel est l'intrus ? Cèdre, Chêne, Bambou, Hêtre, Érable",
       "series": null,
       "figure": null,
       "grid": false,
@@ -331,7 +331,7 @@
     {
       "id": 14,
       "domain": "ver",
-      "question": "Classez ces mots du plus général au plus précis : 1. Épagneul — 2. Animal — 3. Mammifère — 4. Chien",
+      "question": "Classez ces mots du plus général au plus précis : 1. Épagneul, 2. Animal, 3. Mammifère, 4. Chien",
       "series": null,
       "figure": null,
       "grid": false,
@@ -398,7 +398,7 @@
         }
       ],
       "correctIndex": 1,
-      "explanation": "Une rotation de 90° dans le sens horaire envoie la pointe vers la droite, et le petit carré — situé à droite de la tige — passe sous elle. La réponse B est la seule à respecter les deux déplacements simultanément."
+      "explanation": "Une rotation de 90° dans le sens horaire envoie la pointe vers la droite, et le petit carré, situé à droite de la tige, passe sous elle. La réponse B est la seule à respecter les deux déplacements simultanément."
     },
     {
       "id": 17,
@@ -643,7 +643,7 @@
     {
       "id": 27,
       "domain": "att",
-      "question": "Combien de ces cinq paires de codes sont strictement identiques ? AZ-4417-QB / AZ-4417-QB — XR-9082-LM / XR-9083-LM — TB-7745-KP / TB-7745-KD — MC-3391-VE / MC-3391-VE — NL-6208-ZS / NL-6203-ZS",
+      "question": "Combien de ces cinq paires de codes sont strictement identiques ? AZ-4417-QB / AZ-4417-QB, XR-9082-LM / XR-9083-LM, TB-7745-KP / TB-7745-KD, MC-3391-VE / MC-3391-VE, NL-6208-ZS / NL-6203-ZS",
       "series": null,
       "figure": null,
       "grid": false,

@@ -1,594 +1,1461 @@
 {
- "meta": {
-  "title": "Test de QI, raisonnement logique, verbal, numérique et spatial",
-  "totalItems": 24,
-  "durationSeconds": 1200,
-  "disclaimer": "Ce test donne un score indicatif de raisonnement (logique, numérique, verbal, spatial), pas un quotient intellectuel certifié : un vrai QI clinique suppose un étalonnage sur une large population, réalisé par un psychologue avec un outil validé (WAIS notamment). Nos items sont des créations originales."
- },
- "domains": {
-  "num": "Aptitude numérique",
-  "ver": "Aptitude verbale",
-  "spa": "Raisonnement spatial",
-  "ded": "Raisonnement déductif",
-  "ind": "Raisonnement inductif",
-  "att": "Attention et rapidité"
- },
- "items": [
-  {
-   "id": 1,
-   "domain": "num",
-   "question": "Quel nombre complète la suite ?",
-   "series": "4, 9, 19, 39, 79, ?",
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "119"
-    },
-    {
-     "text": "149"
-    },
-    {
-     "text": "159"
-    },
-    {
-     "text": "169"
-    }
-   ],
-   "correctIndex": 2,
-   "explanation": "Chaque terme vaut le précédent ×2 +1 : 4×2+1=9, 9×2+1=19, 19×2+1=39, 39×2+1=79, 79×2+1=159."
+  "meta": {
+    "title": "Test de QI, raisonnement logique, verbal, numérique et spatial",
+    "totalItems": 60,
+    "durationSeconds": 2700,
+    "showIqScore": true,
+    "disclaimer": "Ce test donne un score indicatif (façon QI, moyenne 100 / écart-type 15), pas un quotient intellectuel certifié : un vrai QI clinique suppose un étalonnage sur une large population, réalisé par un psychologue avec un outil validé (WAIS notamment). Nos items sont des créations originales."
   },
-  {
-   "id": 2,
-   "domain": "num",
-   "question": "Quel nombre complète la suite ?",
-   "series": "1, 4, 9, 16, 25, ?",
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "30"
-    },
-    {
-     "text": "35"
-    },
-    {
-     "text": "36"
-    },
-    {
-     "text": "49"
-    }
-   ],
-   "correctIndex": 2,
-   "explanation": "Ce sont les carrés successifs : 1², 2², 3², 4², 5², donc le suivant est 6² = 36."
+  "domains": {
+    "num": "Aptitude numérique",
+    "ver": "Aptitude verbale",
+    "spa": "Raisonnement spatial",
+    "ded": "Raisonnement déductif",
+    "ind": "Raisonnement inductif",
+    "att": "Attention et rapidité",
+    "org": "Organisation",
+    "mec": "Raisonnement mécanique"
   },
-  {
-   "id": 3,
-   "domain": "num",
-   "question": "Si 3 machines produisent 3 pièces en 3 minutes, combien de temps faut-il à 100 machines pour produire 100 pièces ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
+  "items": [
     {
-     "text": "100 minutes"
+      "id": 1,
+      "domain": "num",
+      "question": "Quel nombre complète la suite ?",
+      "series": "3, 6, 12, 24, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "36"
+        },
+        {
+          "text": "42"
+        },
+        {
+          "text": "48"
+        },
+        {
+          "text": "54"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Chaque terme double le précédent : 3×2=6, 6×2=12, 12×2=24, 24×2=48."
     },
     {
-     "text": "33 minutes"
+      "id": 2,
+      "domain": "num",
+      "question": "Un train parcourt 180 km en 3 heures à vitesse constante. Quelle distance parcourt-il en 5 heures ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "250 km"
+        },
+        {
+          "text": "280 km"
+        },
+        {
+          "text": "300 km"
+        },
+        {
+          "text": "320 km"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Vitesse = 180 / 3 = 60 km/h. En 5 heures : 60 × 5 = 300 km."
     },
     {
-     "text": "3 minutes"
+      "id": 3,
+      "domain": "num",
+      "question": "Quel nombre complète la suite ?",
+      "series": "2, 5, 11, 23, 47, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "90"
+        },
+        {
+          "text": "93"
+        },
+        {
+          "text": "94"
+        },
+        {
+          "text": "95"
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Chaque terme vaut le précédent ×2 +1 : 2×2+1=5, 5×2+1=11, 11×2+1=23, 23×2+1=47, 47×2+1=95."
     },
     {
-     "text": "10 minutes"
+      "id": 4,
+      "domain": "num",
+      "question": "Un article coûte 100 €. Son prix augmente de 20 % la première année, baisse de 10 % la deuxième, puis augmente de 25 % la troisième. Quel est son prix final ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "130 €"
+        },
+        {
+          "text": "132 €"
+        },
+        {
+          "text": "135 €"
+        },
+        {
+          "text": "140 €"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "100 × 1,20 = 120 ; 120 × 0,90 = 108 ; 108 × 1,25 = 135 €."
+    },
+    {
+      "id": 5,
+      "domain": "num",
+      "question": "Quel nombre complète la suite ?",
+      "series": "1, 4, 3, 9, 5, 16, 7, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "21"
+        },
+        {
+          "text": "24"
+        },
+        {
+          "text": "25"
+        },
+        {
+          "text": "49"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Deux suites entrelacées : les positions impaires sont les nombres impairs (1, 3, 5, 7…) et les positions paires sont des carrés (2², 3², 4²…). La 8e position, paire, suit 4²=16 avec 5²=25."
+    },
+    {
+      "domain": "num",
+      "question": "Quel nombre complète la suite ?",
+      "series": "5, 9, 17, 33, 65, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "125"
+        },
+        {
+          "text": "127"
+        },
+        {
+          "text": "129"
+        },
+        {
+          "text": "131"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Chaque terme vaut le précédent ×2 −1 : 5×2−1=9, 9×2−1=17, 17×2−1=33, 33×2−1=65, 65×2−1=129.",
+      "id": 6
+    },
+    {
+      "domain": "num",
+      "question": "Une baignoire se remplit en 12 minutes avec un seul robinet ouvert. Avec deux robinets identiques ouverts en même temps, combien de temps faut-il ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "4 min"
+        },
+        {
+          "text": "5 min"
+        },
+        {
+          "text": "6 min"
+        },
+        {
+          "text": "8 min"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Un robinet remplit 1/12 de la baignoire par minute. Deux robinets remplissent 2/12 = 1/6 par minute, donc il faut 6 minutes.",
+      "id": 7
+    },
+    {
+      "domain": "num",
+      "question": "Le prix d'un produit est soldé de 30 %, ce qui le ramène à 84 €. Quel était son prix initial ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "100 €"
+        },
+        {
+          "text": "110 €"
+        },
+        {
+          "text": "120 €"
+        },
+        {
+          "text": "130 €"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "84 € correspond à 70 % du prix initial : 84 / 0,70 = 120 €.",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "domain": "ver",
+      "question": "Quel mot n'appartient pas à la même famille que les autres ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Rose"
+        },
+        {
+          "text": "Tulipe"
+        },
+        {
+          "text": "Chêne"
+        },
+        {
+          "text": "Marguerite"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Rose, tulipe et marguerite sont des fleurs ; le chêne est un arbre."
+    },
+    {
+      "id": 10,
+      "domain": "ver",
+      "question": "Livre est à Bibliothèque ce que Tableau est à …",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Musée"
+        },
+        {
+          "text": "Peintre"
+        },
+        {
+          "text": "Cadre"
+        },
+        {
+          "text": "Mur"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Un livre est conservé et exposé dans une bibliothèque, tout comme un tableau l'est dans un musée : c'est le lieu de conservation, pas un accessoire (cadre) ni son créateur (peintre)."
+    },
+    {
+      "id": 11,
+      "domain": "ver",
+      "question": "Quel mot n'appartient pas à la même famille que les autres ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Rapide"
+        },
+        {
+          "text": "Prompt"
+        },
+        {
+          "text": "Immédiat"
+        },
+        {
+          "text": "Lent"
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Rapide, prompt et immédiat sont synonymes ; lent en est l'antonyme."
+    },
+    {
+      "id": 12,
+      "domain": "ver",
+      "question": "Silence est à Bruit ce qu'Obscurité est à …",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Lumière"
+        },
+        {
+          "text": "Nuit"
+        },
+        {
+          "text": "Ombre"
+        },
+        {
+          "text": "Calme"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Silence et bruit sont deux opposés, tout comme obscurité et lumière."
+    },
+    {
+      "id": 13,
+      "domain": "ver",
+      "question": "Si le mot TRAIN s'écrit USBJO (chaque lettre est décalée d'un rang dans l'alphabet), comment s'écrit BUS avec le même code ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "CVT"
+        },
+        {
+          "text": "CVU"
+        },
+        {
+          "text": "BUT"
+        },
+        {
+          "text": "CWT"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Chaque lettre avance d'un rang : B→C, U→V, S→T, ce qui donne CVT (vérification sur l'exemple : T→U, R→S, A→B, I→J, N→O = USBJO)."
+    },
+    {
+      "domain": "ver",
+      "question": "Marteau est à Clou ce que Tournevis est à …",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Vis"
+        },
+        {
+          "text": "Bois"
+        },
+        {
+          "text": "Poignée"
+        },
+        {
+          "text": "Perceuse"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Un marteau sert à enfoncer un clou, tout comme un tournevis sert à visser une vis : c'est l'outil et l'objet sur lequel il agit.",
+      "id": 14
+    },
+    {
+      "domain": "ver",
+      "question": "Quel mot n'appartient pas à la même famille que les autres ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Chuchoter"
+        },
+        {
+          "text": "Murmurer"
+        },
+        {
+          "text": "Susurrer"
+        },
+        {
+          "text": "Hurler"
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Chuchoter, murmurer et susurrer désignent tous une façon de parler doucement ; hurler est à l'opposé, une façon de parler fort.",
+      "id": 15
+    },
+    {
+      "domain": "ver",
+      "question": "Si certains Blips sont des Gorks, et que tous les Gorks sont des Fnaks, que peut-on affirmer avec certitude ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Certains Blips sont des Fnaks"
+        },
+        {
+          "text": "Tous les Blips sont des Fnaks"
+        },
+        {
+          "text": "Aucun Blip n'est un Fnak"
+        },
+        {
+          "text": "On ne peut rien affirmer"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Les Blips qui sont des Gorks sont aussi des Fnaks (puisque tous les Gorks le sont) : il existe donc au moins des Blips qui sont des Fnaks.",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "domain": "spa",
+      "question": "Un cube est peint en bleu sur toutes ses faces, puis découpé en 64 petits cubes identiques (4×4×4). Combien de petits cubes ont exactement une face peinte ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "8"
+        },
+        {
+          "text": "16"
+        },
+        {
+          "text": "24"
+        },
+        {
+          "text": "32"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Les cubes à une seule face peinte sont ceux du centre de chaque face, soit (4−2)² = 4 par face, sur 6 faces : 6 × 4 = 24."
+    },
+    {
+      "id": 18,
+      "domain": "spa",
+      "question": "Tu plies une feuille en deux, puis encore en deux, puis tu perces un trou en plein centre. Une fois la feuille dépliée, combien de trous vois-tu ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "1"
+        },
+        {
+          "text": "2"
+        },
+        {
+          "text": "4"
+        },
+        {
+          "text": "8"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Deux pliages superposent 4 épaisseurs de papier ; le trou perce les 4 à la fois, donc 4 trous apparaissent au dépliage."
+    },
+    {
+      "id": 19,
+      "domain": "spa",
+      "question": "Une horloge analogique indique 15h40. Quel est le plus petit angle, en degrés, entre l'aiguille des heures et celle des minutes ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "120°"
+        },
+        {
+          "text": "125°"
+        },
+        {
+          "text": "130°"
+        },
+        {
+          "text": "140°"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Aiguille des minutes : 40 × 6° = 240°. Aiguille des heures : (3 + 40/60) × 30° = 110°. Écart : 240 − 110 = 130°."
+    },
+    {
+      "id": 20,
+      "domain": "spa",
+      "question": "Tu regardes ta montre dans un miroir : l'image inversée indique 4h20. Quelle heure est-il réellement ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "7h20"
+        },
+        {
+          "text": "7h40"
+        },
+        {
+          "text": "8h40"
+        },
+        {
+          "text": "7h50"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Dans un miroir, l'heure affichée et l'heure réelle sont symétriques par rapport à midi/minuit : heure réelle = 12h00 − heure du miroir = 12h00 − 4h20 = 7h40."
+    },
+    {
+      "id": 21,
+      "domain": "spa",
+      "question": "Un dé à 6 faces (les faces opposées totalisent toujours 7) est posé sur une table : le 1 est sur le dessus, le 2 face à toi, le 3 sur la face droite. Tu le fais rouler d'un quart de tour vers la droite, comme s'il roulait sur la table. Quel chiffre se retrouve sur le dessus ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "2"
+        },
+        {
+          "text": "3"
+        },
+        {
+          "text": "4"
+        },
+        {
+          "text": "5"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "En roulant vers la droite, c'est la face gauche qui devient le dessus. La face gauche est opposée à la face droite (3), donc elle vaut 7 − 3 = 4."
+    },
+    {
+      "domain": "spa",
+      "question": "Une horloge analogique indique 9h15. Quel est le plus petit angle, en degrés, entre l'aiguille des heures et celle des minutes ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "157,5°"
+        },
+        {
+          "text": "167,5°"
+        },
+        {
+          "text": "172,5°"
+        },
+        {
+          "text": "180°"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Aiguille des minutes : 15 × 6° = 90°. Aiguille des heures : (9 + 15/60) × 30° = 277,5°. Écart brut : 187,5°, donc le plus petit angle est 360° − 187,5° = 172,5°.",
+      "id": 22
+    },
+    {
+      "domain": "spa",
+      "question": "Un cube de 5 cm de côté est peint en rouge sur toutes ses faces, puis découpé en 125 petits cubes de 1 cm (5×5×5). Combien de petits cubes n'ont aucune face peinte ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "9"
+        },
+        {
+          "text": "18"
+        },
+        {
+          "text": "27"
+        },
+        {
+          "text": "36"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Les cubes sans face peinte forment un bloc intérieur de (5−2)×(5−2)×(5−2) = 3×3×3 = 27 petits cubes.",
+      "id": 23
+    },
+    {
+      "domain": "spa",
+      "question": "Tu places 4 points sur une feuille, de sorte qu'aucun trio ne soit aligné. Combien de segments distincts peux-tu tracer en reliant chaque paire de points ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "4"
+        },
+        {
+          "text": "5"
+        },
+        {
+          "text": "6"
+        },
+        {
+          "text": "8"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Le nombre de paires parmi 4 points est C(4,2) = (4×3)/2 = 6.",
+      "id": 24
+    },
+    {
+      "id": 25,
+      "domain": "ded",
+      "question": "Tous les félins sont des mammifères. Le chat est un félin. Que peut-on en conclure ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Le chat est un mammifère"
+        },
+        {
+          "text": "Le chat n'est pas un mammifère"
+        },
+        {
+          "text": "Tous les mammifères sont des félins"
+        },
+        {
+          "text": "On ne peut rien conclure"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Syllogisme direct : si tous les félins sont des mammifères, et que le chat est un félin, alors le chat est un mammifère."
+    },
+    {
+      "id": 26,
+      "domain": "ded",
+      "question": "S'il pleut, la route est mouillée. Or la route n'est pas mouillée. Que peut-on en conclure avec certitude ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Il pleut"
+        },
+        {
+          "text": "Il n'a pas plu"
+        },
+        {
+          "text": "On ne peut rien conclure"
+        },
+        {
+          "text": "La route est sèche mais il pleut quand même"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "C'est la contraposée : si pluie implique route mouillée, alors route non mouillée implique qu'il n'a pas plu."
+    },
+    {
+      "id": 27,
+      "domain": "ded",
+      "question": "Quatre amis, Léa, Tom, Nina et Max, sont assis en ligne. Léa est à gauche de Tom. Nina est à droite de Max. Tom est immédiatement à gauche de Nina. Max n'est pas assis en première position. Quel est l'ordre de gauche à droite ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Léa, Max, Tom, Nina"
+        },
+        {
+          "text": "Max, Léa, Tom, Nina"
+        },
+        {
+          "text": "Léa, Tom, Max, Nina"
+        },
+        {
+          "text": "Max, Tom, Léa, Nina"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Tom est immédiatement avant Nina, donc ils occupent deux positions consécutives dans cet ordre. Léa doit être avant Tom : le seul placement qui fonctionne est Tom en 3e position et Nina en 4e, avec Léa en 1re. Comme Max ne peut pas être 1er, Max prend la 2e position : Léa, Max, Tom, Nina."
+    },
+    {
+      "id": 28,
+      "domain": "ded",
+      "question": "Dans une entreprise : si le budget est approuvé, le projet démarre en janvier. Si le projet démarre en janvier, l'équipe est recrutée en décembre. Or l'équipe n'a pas été recrutée en décembre. Que peut-on en conclure avec certitude ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Le budget n'a pas été approuvé"
+        },
+        {
+          "text": "Le projet a démarré en janvier"
+        },
+        {
+          "text": "Le budget a été approuvé"
+        },
+        {
+          "text": "On ne peut rien conclure"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "En remontant la chaîne par contraposée : pas de recrutement en décembre ⇒ pas de démarrage en janvier ⇒ budget non approuvé."
+    },
+    {
+      "id": 29,
+      "domain": "ded",
+      "question": "Un cadenas s'ouvre avec un code à 3 chiffres distincts. Quatre tentatives donnent ces indices : « 512 » → aucun chiffre correct ; « 934 » → un chiffre correct, bien placé ; « 267 » → un chiffre correct, mal placé ; « 480 » → deux chiffres corrects, tous deux mal placés. Quel est le code ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "847"
+        },
+        {
+          "text": "874"
+        },
+        {
+          "text": "478"
+        },
+        {
+          "text": "748"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "« 512 » élimine 5, 1 et 2 du code. Le seul chiffre commun entre « 934 » et le code est le 4, à la bonne place (3e position). Le seul chiffre commun avec « 267 » est le 7, mal placé. Avec « 480 », le 4 (déjà connu) et le 8 sont communs, tous deux mal placés par rapport à leurs positions dans « 480 ». Le code 874 vérifie tous ces indices."
+    },
+    {
+      "domain": "ded",
+      "question": "Aucun reptile n'est à sang chaud. Certains animaux à sang chaud sont des oiseaux. Que peut-on en conclure avec certitude ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Certains oiseaux ne sont pas des reptiles"
+        },
+        {
+          "text": "Tous les oiseaux sont à sang chaud"
+        },
+        {
+          "text": "Certains reptiles sont des oiseaux"
+        },
+        {
+          "text": "Aucun oiseau n'est à sang chaud"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Les animaux à sang chaud qui sont des oiseaux ne peuvent pas être des reptiles (puisqu'aucun reptile n'est à sang chaud) : il existe donc des oiseaux qui ne sont pas des reptiles.",
+      "id": 30
+    },
+    {
+      "domain": "ded",
+      "question": "Si le contrat est signé, la livraison a lieu sous 30 jours. Or la livraison n'a pas eu lieu sous 30 jours. Le contrat a-t-il été signé ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Oui, certainement"
+        },
+        {
+          "text": "Non, certainement pas"
+        },
+        {
+          "text": "Peut-être, impossible à dire"
+        },
+        {
+          "text": "Le contrat a été signé en retard"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Par contraposée : si signature implique livraison sous 30 jours, alors l'absence de livraison sous 30 jours implique l'absence de signature.",
+      "id": 31
+    },
+    {
+      "domain": "ded",
+      "question": "Cinq coureurs, P, Q, R, S et T, terminent une course. P arrive avant Q mais après R. S arrive avant R. T arrive après Q. Quel est l'ordre d'arrivée, du premier au dernier ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "S, R, P, Q, T"
+        },
+        {
+          "text": "R, S, P, Q, T"
+        },
+        {
+          "text": "S, P, R, Q, T"
+        },
+        {
+          "text": "S, R, Q, P, T"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "R avant P avant Q (P entre R et Q), S avant R, T après Q : la seule chaîne cohérente avec ces trois contraintes est S, R, P, Q, T.",
+      "id": 32
+    },
+    {
+      "id": 33,
+      "domain": "ind",
+      "question": "Quelle lettre complète la suite ?",
+      "series": "A, C, F, J, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "N"
+        },
+        {
+          "text": "O"
+        },
+        {
+          "text": "P"
+        },
+        {
+          "text": "Q"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "L'écart entre les lettres augmente de 1 à chaque fois : +2, +3, +4, puis +5. J (10e lettre) + 5 = O (15e lettre)."
+    },
+    {
+      "id": 34,
+      "domain": "ind",
+      "question": "Quel mot complète la suite logique ?",
+      "series": "Graine, Pousse, Plant, Arbuste, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Fleur"
+        },
+        {
+          "text": "Arbre"
+        },
+        {
+          "text": "Fruit"
+        },
+        {
+          "text": "Racine"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "La suite décrit les étapes de croissance d'un végétal, de la graine jusqu'à sa forme adulte : l'arbre."
+    },
+    {
+      "id": 35,
+      "domain": "ind",
+      "question": "Quel nombre complète la suite ? (chaque terme est la somme des deux précédents)",
+      "series": "2, 3, 5, 8, 13, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "18"
+        },
+        {
+          "text": "19"
+        },
+        {
+          "text": "21"
+        },
+        {
+          "text": "24"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "8 + 13 = 21."
+    },
+    {
+      "id": 36,
+      "domain": "ind",
+      "question": "Quel nombre complète la suite ?",
+      "series": "100, 97, 91, 82, 70, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "54"
+        },
+        {
+          "text": "55"
+        },
+        {
+          "text": "58"
+        },
+        {
+          "text": "60"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Les écarts entre les termes augmentent de 3 à chaque fois : −3, −6, −9, −12, puis −15. 70 − 15 = 55."
+    },
+    {
+      "id": 37,
+      "domain": "ind",
+      "question": "Une règle relie deux nombres : (3, 9) la respecte, (4, 16) la respecte, (5, 25) la respecte, mais (6, 30) ne la respecte pas. Quel nombre doit accompagner 7 pour respecter la règle ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "14"
+        },
+        {
+          "text": "42"
+        },
+        {
+          "text": "49"
+        },
+        {
+          "text": "56"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "La règle est « le second nombre est le carré du premier » (3²=9, 4²=16, 5²=25 ; 6²=36≠30). Donc 7² = 49."
+    },
+    {
+      "domain": "ind",
+      "question": "Quel nombre complète la suite ?",
+      "series": "3, 8, 15, 24, 35, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "46"
+        },
+        {
+          "text": "47"
+        },
+        {
+          "text": "48"
+        },
+        {
+          "text": "50"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Les écarts entre les termes augmentent de 2 à chaque fois : +5, +7, +9, +11, puis +13. 35 + 13 = 48.",
+      "id": 38
+    },
+    {
+      "domain": "ind",
+      "question": "Une suite de figures va ainsi : 1 triangle, 2 carrés, 3 pentagones, 4 hexagones. Quelle est la 5e figure de la suite ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "5 heptagones"
+        },
+        {
+          "text": "4 heptagones"
+        },
+        {
+          "text": "5 octogones"
+        },
+        {
+          "text": "6 hexagones"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Chaque terme ajoute un côté à la figure (3, 4, 5, 6 côtés) et un exemplaire de plus (1, 2, 3, 4) : le 5e terme est donc 5 heptagones (7 côtés).",
+      "id": 39
+    },
+    {
+      "id": 40,
+      "domain": "att",
+      "question": "Compte le nombre de fois où la lettre « a » apparaît dans ce mot : « anagramme ».",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "2"
+        },
+        {
+          "text": "3"
+        },
+        {
+          "text": "4"
+        },
+        {
+          "text": "5"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "a-n-a-g-r-a-m-m-e : la lettre « a » apparaît 3 fois."
+    },
+    {
+      "id": 41,
+      "domain": "att",
+      "question": "Parmi ces quatre séries de lettres, laquelle est strictement identique à « XKCQTVB » ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "XKQCTVB"
+        },
+        {
+          "text": "XKCQTVB"
+        },
+        {
+          "text": "XKCQTVD"
+        },
+        {
+          "text": "XKCQTBV"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Les trois autres séries inversent deux lettres ou changent la dernière : seule « XKCQTVB » (2e option) est identique."
+    },
+    {
+      "id": 42,
+      "domain": "att",
+      "question": "Combien de fois le chiffre « 3 » apparaît-il dans cette liste : 13, 33, 23, 34, 43, 3, 31 ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "6"
+        },
+        {
+          "text": "7"
+        },
+        {
+          "text": "8"
+        },
+        {
+          "text": "9"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "13(1) + 33(2) + 23(1) + 34(1) + 43(1) + 3(1) + 31(1) = 8 occurrences du chiffre 3."
+    },
+    {
+      "id": 43,
+      "domain": "att",
+      "question": "Dans la phrase suivante, combien de mots commencent par la lettre « p » : « Le petit chien noir court près du parc pendant que Pierre promène son chat » ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "4"
+        },
+        {
+          "text": "5"
+        },
+        {
+          "text": "6"
+        },
+        {
+          "text": "7"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "petit, près, parc, pendant, Pierre, promène : 6 mots commencent par « p » (majuscule ou minuscule)."
+    },
+    {
+      "id": 44,
+      "domain": "att",
+      "question": "Sur chaque ligne de cette grille, lue séparément de gauche à droite, combien de fois la séquence « 5, 2 » apparaît-elle consécutivement au total ?\nLigne 1 : 5 2 8 1 5\nLigne 2 : 2 9 5 2 3\nLigne 3 : 5 2 6 5 2",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "2"
+        },
+        {
+          "text": "3"
+        },
+        {
+          "text": "4"
+        },
+        {
+          "text": "5"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Ligne 1 : un « 5,2 » en début de ligne. Ligne 2 : un « 5,2 » en positions 3-4. Ligne 3 : deux « 5,2 », en positions 1-2 et 4-5. Total : 1+1+2 = 4."
+    },
+    {
+      "domain": "att",
+      "question": "Compte le nombre de voyelles (a, e, i, o, u) dans ce mot : « anticonstitutionnellement ».",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "8"
+        },
+        {
+          "text": "9"
+        },
+        {
+          "text": "10"
+        },
+        {
+          "text": "11"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "a-n-t-i-c-o-n-s-t-i-t-u-t-i-o-n-n-e-l-l-e-m-e-n-t : les voyelles (a, i, o, i, u, i, o, e, e, e) sont au nombre de 10.",
+      "id": 45
+    },
+    {
+      "domain": "att",
+      "question": "Dans cette série, combien de nombres sont des multiples de 3 : 12, 17, 21, 28, 33, 40, 45, 52 ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "3"
+        },
+        {
+          "text": "4"
+        },
+        {
+          "text": "5"
+        },
+        {
+          "text": "6"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Les multiples de 3 dans la liste sont 12, 21, 33 et 45, soit 4 nombres.",
+      "id": 46
+    },
+    {
+      "id": 47,
+      "domain": "org",
+      "question": "Une réunion de 100 minutes est divisée en 3 parties de travail égales, séparées par deux pauses de 5 minutes chacune. Combien de temps dure chaque partie de travail ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "25 min"
+        },
+        {
+          "text": "28 min"
+        },
+        {
+          "text": "30 min"
+        },
+        {
+          "text": "35 min"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Les deux pauses totalisent 10 minutes. Il reste 90 minutes de travail, réparties en 3 parties égales : 90 / 3 = 30 min."
+    },
+    {
+      "id": 48,
+      "domain": "org",
+      "question": "Un employé traite 40 dossiers par jour en travaillant 8 heures. S'il travaille désormais 6 heures par jour au même rythme, combien de dossiers traite-t-il en 4 jours ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "100"
+        },
+        {
+          "text": "110"
+        },
+        {
+          "text": "120"
+        },
+        {
+          "text": "140"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Rythme : 40/8 = 5 dossiers par heure. En 6h/jour : 30 dossiers/jour. Sur 4 jours : 30 × 4 = 120."
+    },
+    {
+      "id": 49,
+      "domain": "org",
+      "question": "Un projet comprend quatre tâches. A dure 2 jours et démarre immédiatement. B dure 3 jours et ne peut commencer qu'après A. C dure 5 jours et peut démarrer dès le premier jour. D dure 2 jours et nécessite que B et C soient toutes deux terminées. Quelle est la durée minimale du projet ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "5 jours"
+        },
+        {
+          "text": "6 jours"
+        },
+        {
+          "text": "7 jours"
+        },
+        {
+          "text": "8 jours"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "A occupe les jours 1-2, puis B les jours 3-5. C se déroule en parallèle sur les jours 1-5. B et C sont toutes deux finies au jour 5 : D démarre au jour 6 et dure 2 jours, le projet se termine donc au jour 7."
+    },
+    {
+      "id": 50,
+      "domain": "org",
+      "question": "Trois machines identiques produisent ensemble 90 pièces en 2 heures. Combien de pièces produiraient 5 machines identiques en 3 heures ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "180"
+        },
+        {
+          "text": "200"
+        },
+        {
+          "text": "225"
+        },
+        {
+          "text": "250"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Une machine produit 90 / (3×2) = 15 pièces par heure. 5 machines pendant 3 heures : 5 × 3 × 15 = 225."
+    },
+    {
+      "id": 51,
+      "domain": "org",
+      "question": "Cinq tâches doivent être réalisées l'une après l'autre par une seule personne, avec ces durées : 10, 15, 20, 25 et 30 minutes. Pour minimiser le temps d'attente total cumulé de l'ensemble des tâches, dans quel ordre faut-il les exécuter ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "10, 15, 20, 25, 30"
+        },
+        {
+          "text": "30, 25, 20, 15, 10"
+        },
+        {
+          "text": "20, 10, 30, 15, 25"
+        },
+        {
+          "text": "15, 10, 25, 20, 30"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "C'est la règle « plus courte tâche en premier » (SPT) : traiter les tâches de la plus courte à la plus longue minimise toujours le temps d'attente cumulé de l'ensemble."
+    },
+    {
+      "domain": "org",
+      "question": "Une usine produit 480 pièces en 8 heures avec 4 machines identiques. Combien d'heures faudrait-il à 6 machines identiques pour produire 900 pièces ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "8"
+        },
+        {
+          "text": "9"
+        },
+        {
+          "text": "10"
+        },
+        {
+          "text": "12"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Une machine produit 480/(4×8) = 15 pièces par heure. 6 machines produisent 90 pièces par heure. Il faut donc 900/90 = 10 heures.",
+      "id": 52
+    },
+    {
+      "domain": "org",
+      "question": "Trois amis repeignent une clôture. Seul, Adam met 6 h, Bilal met 8 h, Chris met 12 h. En travaillant tous les trois ensemble, combien de temps leur faut-il (arrondi à la demi-heure la plus proche) ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "2 h"
+        },
+        {
+          "text": "2 h 30"
+        },
+        {
+          "text": "3 h"
+        },
+        {
+          "text": "3 h 30"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Leurs rythmes s'additionnent : 1/6 + 1/8 + 1/12 = 4/24 + 3/24 + 2/24 = 9/24 = 3/8 de clôture par heure. Le temps nécessaire est 8/3 ≈ 2,67 h, soit environ 2 h 30.",
+      "id": 53
+    },
+    {
+      "id": 54,
+      "domain": "mec",
+      "question": "Deux engrenages sont en prise l'un avec l'autre. Le premier tourne dans le sens horaire. Dans quel sens tourne le second ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "Sens horaire"
+        },
+        {
+          "text": "Sens antihoraire"
+        },
+        {
+          "text": "Il ne tourne pas"
+        },
+        {
+          "text": "Cela dépend de sa taille"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Deux engrenages en prise tournent toujours en sens opposés."
+    },
+    {
+      "id": 55,
+      "domain": "mec",
+      "question": "Une balançoire (levier) a son point d'appui au centre. Un enfant de 30 kg est assis à 2 mètres du point d'appui. À quelle distance du point d'appui doit s'asseoir un enfant de 40 kg pour équilibrer la balançoire ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "1 m"
+        },
+        {
+          "text": "1,2 m"
+        },
+        {
+          "text": "1,5 m"
+        },
+        {
+          "text": "2 m"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Équilibre d'un levier : poids × distance égaux des deux côtés. 30 × 2 = 40 × d, donc d = 60/40 = 1,5 m."
+    },
+    {
+      "id": 56,
+      "domain": "mec",
+      "question": "Un système de poulies utilise 3 brins de corde pour soulever une charge de 90 kg. En théorie, sans frottement, quelle force minimale faut-il exercer sur la corde ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "15 kg"
+        },
+        {
+          "text": "30 kg"
+        },
+        {
+          "text": "45 kg"
+        },
+        {
+          "text": "90 kg"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Avec 3 brins porteurs, la force nécessaire est divisée par 3 : 90 / 3 = 30 kg."
+    },
+    {
+      "id": 57,
+      "domain": "mec",
+      "question": "Un engrenage de 12 dents entraîne un engrenage de 36 dents. Si le petit engrenage fait 60 tours par minute, combien de tours par minute fait le grand engrenage ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "15"
+        },
+        {
+          "text": "20"
+        },
+        {
+          "text": "25"
+        },
+        {
+          "text": "30"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Le produit (dents × vitesse) est constant entre deux engrenages en prise : 60 × 12 = 720 = vitesse_grand × 36, donc vitesse_grand = 720/36 = 20 tr/min."
+    },
+    {
+      "id": 58,
+      "domain": "mec",
+      "question": "Trois engrenages sont alignés et s'engrènent successivement : A (10 dents) entraîne B (20 dents), qui entraîne C (40 dents). A tourne à 80 tours/minute dans le sens horaire. À quelle vitesse et dans quel sens tourne C ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "20 tr/min, sens horaire"
+        },
+        {
+          "text": "20 tr/min, sens antihoraire"
+        },
+        {
+          "text": "40 tr/min, sens horaire"
+        },
+        {
+          "text": "10 tr/min, sens antihoraire"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "B tourne à 80×10/20=40 tr/min, en sens antihoraire (opposé à A). C tourne à 40×20/40=20 tr/min, en sens opposé à B, donc dans le même sens que A : horaire."
+    },
+    {
+      "domain": "mec",
+      "question": "Un vélo a un pignon avant (pédalier) de 40 dents et un pignon arrière de 16 dents. Pour un tour complet du pédalier, combien de tours fait la roue arrière ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "1,6"
+        },
+        {
+          "text": "2"
+        },
+        {
+          "text": "2,5"
+        },
+        {
+          "text": "3"
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Le rapport de démultiplication est 40/16 = 2,5 : la roue arrière fait 2,5 tours pour un tour du pédalier.",
+      "id": 59
+    },
+    {
+      "domain": "mec",
+      "question": "Une poulie fixe simple change la direction d'une force mais pas son intensité. Pour soulever une charge de 50 kg avec une seule poulie fixe, quelle force faut-il exercer ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        {
+          "text": "25 kg"
+        },
+        {
+          "text": "50 kg"
+        },
+        {
+          "text": "100 kg"
+        },
+        {
+          "text": "10 kg"
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Une poulie fixe simple ne procure aucun avantage mécanique : la force à exercer est égale au poids de la charge, soit 50 kg.",
+      "id": 60
     }
-   ],
-   "correctIndex": 2,
-   "explanation": "Chaque machine produit 1 pièce en 3 minutes, quel que soit le nombre de machines : 100 machines produisent donc 100 pièces en 3 minutes."
-  },
-  {
-   "id": 4,
-   "domain": "num",
-   "question": "Quel nombre complète la suite ?",
-   "series": "2, 3, 5, 8, 13, 21, ?",
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "29"
-    },
-    {
-     "text": "32"
-    },
-    {
-     "text": "34"
-    },
-    {
-     "text": "36"
-    }
-   ],
-   "correctIndex": 2,
-   "explanation": "Chaque terme est la somme des deux précédents (suite de Fibonacci) : 13 + 21 = 34."
-  },
-  {
-   "id": 5,
-   "domain": "ver",
-   "question": "Quel mot complète l'analogie : LIVRE est à LIRE ce que REPAS est à ... ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "Cuisiner"
-    },
-    {
-     "text": "Manger"
-    },
-    {
-     "text": "Digérer"
-    },
-    {
-     "text": "Cuisine"
-    }
-   ],
-   "correctIndex": 1,
-   "explanation": "LIRE est l'action associée au LIVRE ; l'action associée au REPAS est MANGER."
-  },
-  {
-   "id": 6,
-   "domain": "ver",
-   "question": "Quel mot n'appartient pas à la même famille que les autres ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "Marteau"
-    },
-    {
-     "text": "Tournevis"
-    },
-    {
-     "text": "Pince"
-    },
-    {
-     "text": "Planche"
-    }
-   ],
-   "correctIndex": 3,
-   "explanation": "Marteau, tournevis et pince sont des outils ; une planche est un matériau, pas un outil."
-  },
-  {
-   "id": 7,
-   "domain": "ver",
-   "question": "Quel mot complète l'analogie : MÉDECIN est à HÔPITAL ce que JUGE est à ... ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "Prison"
-    },
-    {
-     "text": "Avocat"
-    },
-    {
-     "text": "Tribunal"
-    },
-    {
-     "text": "Loi"
-    }
-   ],
-   "correctIndex": 2,
-   "explanation": "L'HÔPITAL est le lieu où exerce le MÉDECIN ; le lieu où exerce le JUGE est le TRIBUNAL."
-  },
-  {
-   "id": 8,
-   "domain": "ver",
-   "question": "Quel mot est le contraire de « ÉPHÉMÈRE » ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "Rapide"
-    },
-    {
-     "text": "Durable"
-    },
-    {
-     "text": "Fragile"
-    },
-    {
-     "text": "Discret"
-    }
-   ],
-   "correctIndex": 1,
-   "explanation": "ÉPHÉMÈRE signifie qui dure peu de temps ; son contraire est DURABLE, qui dure longtemps."
-  },
-  {
-   "id": 9,
-   "domain": "spa",
-   "question": "Un cube est peint en rouge sur toutes ses faces, puis découpé en 27 petits cubes identiques (3×3×3). Combien de petits cubes n'ont aucune face peinte ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "0"
-    },
-    {
-     "text": "1"
-    },
-    {
-     "text": "6"
-    },
-    {
-     "text": "8"
-    }
-   ],
-   "correctIndex": 1,
-   "explanation": "Seul le petit cube tout au centre, entouré de tous les côtés, n'a aucune face peinte : il y en a exactement 1."
-  },
-  {
-   "id": 10,
-   "domain": "spa",
-   "question": "Tu fais pivoter la lettre « F » de 180° (demi-tour). Quelle description correspond au résultat ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "Elle est retournée tête en bas et inversée gauche-droite"
-    },
-    {
-     "text": "Elle est identique à l'originale"
-    },
-    {
-     "text": "Elle est seulement inversée gauche-droite"
-    },
-    {
-     "text": "Elle est seulement retournée tête en bas"
-    }
-   ],
-   "correctIndex": 0,
-   "explanation": "Une rotation de 180° inverse à la fois le haut/bas et la gauche/droite par rapport à l'original."
-  },
-  {
-   "id": 11,
-   "domain": "spa",
-   "question": "Une pièce carrée mesure 4 mètres de côté. Si on double la longueur de chaque côté, par combien la surface est-elle multipliée ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "2"
-    },
-    {
-     "text": "3"
-    },
-    {
-     "text": "4"
-    },
-    {
-     "text": "8"
-    }
-   ],
-   "correctIndex": 2,
-   "explanation": "La surface d'un carré est proportionnelle au carré du côté : doubler le côté multiplie la surface par 2² = 4."
-  },
-  {
-   "id": 12,
-   "domain": "spa",
-   "question": "Tu regardes un cube depuis le dessus et tu vois un carré. Depuis quelle autre position verrais-tu aussi un carré ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "Depuis n'importe quelle face, toutes montrent un carré"
-    },
-    {
-     "text": "Uniquement depuis le dessous"
-    },
-    {
-     "text": "Uniquement en diagonale"
-    },
-    {
-     "text": "Aucune autre position ne donne un carré"
-    }
-   ],
-   "correctIndex": 0,
-   "explanation": "Un cube a six faces carrées identiques : regardé bien en face depuis n'importe laquelle, on voit toujours un carré."
-  },
-  {
-   "id": 13,
-   "domain": "ded",
-   "question": "Tous les A sont des B. Certains B sont des C. Peut-on conclure que certains A sont des C ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "Oui, toujours"
-    },
-    {
-     "text": "Non, ce n'est pas garanti"
-    },
-    {
-     "text": "Seulement si A = C"
-    },
-    {
-     "text": "Impossible à déterminer sans schéma"
-    }
-   ],
-   "correctIndex": 1,
-   "explanation": "Rien ne garantit que les B qui sont aussi des A soient parmi les B qui sont des C : la conclusion n'est pas logiquement valide."
-  },
-  {
-   "id": 14,
-   "domain": "ded",
-   "question": "Si tous les pilotes savent lire une carte, et que Sami ne sait pas lire une carte, que peut-on en conclure ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "Sami n'est pas pilote"
-    },
-    {
-     "text": "Sami est pilote"
-    },
-    {
-     "text": "On ne peut rien conclure"
-    },
-    {
-     "text": "Sami sait lire une carte"
-    }
-   ],
-   "correctIndex": 0,
-   "explanation": "C'est un raisonnement par contraposée valide : si tous les pilotes ont une propriété que Sami n'a pas, alors Sami n'est pas pilote."
-  },
-  {
-   "id": 15,
-   "domain": "ded",
-   "question": "Léa est plus grande que Marc. Marc est plus grand que Noé. Qui est le plus petit des trois ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "Léa"
-    },
-    {
-     "text": "Marc"
-    },
-    {
-     "text": "Noé"
-    },
-    {
-     "text": "Impossible à dire"
-    }
-   ],
-   "correctIndex": 2,
-   "explanation": "Léa > Marc > Noé en taille, donc Noé est le plus petit des trois."
-  },
-  {
-   "id": 16,
-   "domain": "ded",
-   "question": "Aucun reptile n'a de plumes. Tous les perroquets ont des plumes. Que peut-on conclure ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "Aucun perroquet n'est un reptile"
-    },
-    {
-     "text": "Tous les reptiles sont des perroquets"
-    },
-    {
-     "text": "Certains perroquets sont des reptiles"
-    },
-    {
-     "text": "On ne peut rien conclure"
-    }
-   ],
-   "correctIndex": 0,
-   "explanation": "Si aucun reptile n'a de plumes et que tous les perroquets en ont, aucun perroquet ne peut être un reptile."
-  },
-  {
-   "id": 17,
-   "domain": "ind",
-   "question": "Quelle lettre complète la suite ?",
-   "series": "B, D, G, K, ?",
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "N"
-    },
-    {
-     "text": "O"
-    },
-    {
-     "text": "P"
-    },
-    {
-     "text": "M"
-    }
-   ],
-   "correctIndex": 2,
-   "explanation": "L'écart entre les lettres augmente de 1 à chaque fois (+2, +3, +4, +5) : B(2)→D(4)→G(7)→K(11)→P(16)."
-  },
-  {
-   "id": 18,
-   "domain": "ind",
-   "question": "Quel élément complète la suite logique ?",
-   "series": "Lundi, Mercredi, Vendredi, ?",
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "Samedi"
-    },
-    {
-     "text": "Dimanche"
-    },
-    {
-     "text": "Jeudi"
-    },
-    {
-     "text": "Mardi"
-    }
-   ],
-   "correctIndex": 1,
-   "explanation": "La suite saute un jour sur deux (+2 jours à chaque fois) : après Vendredi, deux jours plus tard, c'est Dimanche."
-  },
-  {
-   "id": 19,
-   "domain": "ind",
-   "question": "Quel nombre complète la suite ?",
-   "series": "1, 2, 4, 7, 11, ?",
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "14"
-    },
-    {
-     "text": "15"
-    },
-    {
-     "text": "16"
-    },
-    {
-     "text": "18"
-    }
-   ],
-   "correctIndex": 3,
-   "explanation": "L'écart entre les termes augmente de 1 à chaque fois (+1, +2, +3, +4) : le suivant est +5, soit 11 + 5 = 16... vérifie : 1,2(+1),4(+2),7(+3),11(+4),16(+5). Le résultat correct est 16."
-  },
-  {
-   "id": 20,
-   "domain": "ind",
-   "question": "Quelle figure complète logiquement la série : cercle, deux cercles, trois cercles, ... ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "Quatre cercles"
-    },
-    {
-     "text": "Un carré"
-    },
-    {
-     "text": "Trois cercles à nouveau"
-    },
-    {
-     "text": "Un triangle"
-    }
-   ],
-   "correctIndex": 0,
-   "explanation": "La série suit une progression simple du nombre d'éléments (+1 à chaque étape) : l'étape suivante est quatre cercles."
-  },
-  {
-   "id": 21,
-   "domain": "att",
-   "question": "Compte le nombre de fois où la lettre « e » apparaît dans ce mot : « developpement »",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "3"
-    },
-    {
-     "text": "4"
-    },
-    {
-     "text": "5"
-    },
-    {
-     "text": "6"
-    }
-   ],
-   "correctIndex": 2,
-   "explanation": "« d-e-v-e-l-o-p-p-e-m-e-n-t » contient la lettre e en positions 2, 4, 9 et 11 : soit 4 occurrences. Recompte : e,e,e,e = 4."
-  },
-  {
-   "id": 22,
-   "domain": "att",
-   "question": "Parmi ces quatre séries de chiffres, laquelle est strictement identique à « 8493751 » ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "8493751"
-    },
-    {
-     "text": "8493571"
-    },
-    {
-     "text": "8439751"
-    },
-    {
-     "text": "8493715"
-    }
-   ],
-   "correctIndex": 0,
-   "explanation": "Seule la première série reproduit exactement l'ordre des chiffres 8-4-9-3-7-5-1."
-  },
-  {
-   "id": 23,
-   "domain": "att",
-   "question": "Combien de fois le chiffre « 7 » apparaît-il dans cette liste : 7, 27, 71, 17, 77, 47 ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "5"
-    },
-    {
-     "text": "6"
-    },
-    {
-     "text": "7"
-    },
-    {
-     "text": "8"
-    }
-   ],
-   "correctIndex": 2,
-   "explanation": "7(1) + 27(1) + 71(1) + 17(1) + 77(2) + 47(1) = 7 occurrences au total."
-  },
-  {
-   "id": 24,
-   "domain": "att",
-   "question": "Dans la phrase « le petit chat noir dort sur le tapis bleu », quel est le 5e mot ?",
-   "series": null,
-   "figure": null,
-   "grid": false,
-   "options": [
-    {
-     "text": "chat"
-    },
-    {
-     "text": "noir"
-    },
-    {
-     "text": "dort"
-    },
-    {
-     "text": "petit"
-    }
-   ],
-   "correctIndex": 2,
-   "explanation": "En comptant : 1.le 2.petit 3.chat 4.noir 5.dort, le 5e mot est « dort »."
-  }
- ]
+  ]
 }

@@ -109,6 +109,7 @@ export function SosieQuiz({
           setShownAt(Date.now());
         }}
         isPreview={!hasAccess}
+        questionCount={items.length}
         demo={
           <AnswerDemo
             kind="plusminus"
@@ -172,11 +173,6 @@ export function SosieQuiz({
 
   return (
     <div className="mt-6">
-      {!hasAccess && (
-        <span className="inline-block rounded-full bg-gold/15 px-3 py-1 text-xs font-medium text-gold">
-          Réponses gratuites, résultat payant
-        </span>
-      )}
 
       <div className="mt-4 flex items-baseline justify-between text-sm text-muted">
         <span>{part} · {n} / {total}</span>

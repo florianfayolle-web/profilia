@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "FlyUp — \"Pilot Profile\" Situational Judgment Test",
+    "title": "FlyUp, \"Pilot Profile\" Situational Judgment Test",
     "language": "en",
     "testType": "situational_judgment",
     "inspiredBy": "TD12 (not a reproduction of the proprietary instrument)",
@@ -3279,7 +3279,7 @@
         "bands": {
           "Low": "Your answer choices depart fairly often from best practice in crew communication. This area is worth specific attention: in the tested situations, information flows better when a doubt is checked and shared immediately rather than deferred.",
           "Mid": "You generally identify the right CRM communication reflexes, with a few situations where a more cautious or more direct response would have been preferable.",
-          "High": "You consistently identify the responses that favor clear communication and immediate verification of a doubt — a clear strength in CRM."
+          "High": "You consistently identify the responses that favor clear communication and immediate verification of a doubt, a clear strength in CRM."
         },
         "strengths": "Your ability to identify the right CRM communication reflexes is a direct safety asset.",
         "suitableWork": "Roles with a strong CRM component and frequent crew communication.",
@@ -3299,7 +3299,7 @@
         "bands": {
           "Low": "In emergency scenarios, your choices sometimes depart from the strict, immediate application of memorized procedures. This is a core safety point and deserves priority attention.",
           "Mid": "You generally apply the right emergency reflexes, with a few situations where the procedure should have been applied more immediately.",
-          "High": "You consistently identify fast, rigorous procedure application as the appropriate response in an emergency — an essential strength."
+          "High": "You consistently identify fast, rigorous procedure application as the appropriate response in an emergency, an essential strength."
         },
         "strengths": "Your ability to identify rigorous application of emergency procedures is a safety strength.",
         "suitableWork": "Any role exposed to emergency situation management.",
@@ -3309,7 +3309,7 @@
         "bands": {
           "Low": "Your choices in fatigue-related situations tend to underestimate its impact on performance. Better recognition of fatigue signals, in yourself as much as in the crew, is a useful area to work on.",
           "Mid": "You generally recognize the impact of fatigue well, with a few situations where heightened vigilance would have been preferable.",
-          "High": "You consistently identify the responses that proactively account for fatigue — a strength for human-factors management."
+          "High": "You consistently identify the responses that proactively account for fatigue, a strength for human-factors management."
         },
         "strengths": "Your ability to identify fatigue's impact on performance is an asset for human-factors management.",
         "suitableWork": "Long rotations, night flying, missions with frequent time-zone changes.",
@@ -3319,7 +3319,7 @@
         "bands": {
           "Low": "Your choices show a tendency to accept procedural deviations in some pressure contexts. This area is fundamental to safety and deserves particular attention.",
           "Mid": "You generally respect procedures well, with a few situations where a shortcut was wrongly favored.",
-          "High": "You consistently identify full procedure compliance as the appropriate response, even under time pressure — a solid strength."
+          "High": "You consistently identify full procedure compliance as the appropriate response, even under time pressure, a solid strength."
         },
         "strengths": "Your ability to identify full procedure compliance is a pillar of operational safety.",
         "suitableWork": "Any technical role requiring strict compliance.",
@@ -3339,7 +3339,7 @@
         "bands": {
           "Low": "Your choices show a tendency to give in to commercial pressure at safety's expense in some scenarios. This point is central and deserves priority attention.",
           "Mid": "You generally prioritize safety over commercial pressure well, with a few situations where a compromise was wrongly accepted.",
-          "High": "You consistently identify prioritizing safety over any other consideration — an essential strength in this profession."
+          "High": "You consistently identify prioritizing safety over any other consideration, an essential strength in this profession."
         },
         "strengths": "Your ability to identify consistent prioritization of safety is a solid foundation for this profession.",
         "suitableWork": "Any role exposed to commercial pressure (line, charter).",
@@ -3349,7 +3349,7 @@
         "bands": {
           "Low": "Facing conflict, your choices sometimes lean toward avoidance or confrontation rather than seeking a fact-based solution. This area is worth specific attention.",
           "Mid": "You generally handle tension well, with a few situations where a calmer approach would have been preferable.",
-          "High": "You consistently identify the responses that defuse tension through a factual, composed approach — a strength in conflict management."
+          "High": "You consistently identify the responses that defuse tension through a factual, composed approach, a strength in conflict management."
         },
         "strengths": "Your ability to identify composed conflict management is an asset for crew cohesion.",
         "suitableWork": "Roles requiring frequent mediation (captain, cabin manager).",
@@ -3359,7 +3359,7 @@
         "bands": {
           "Low": "In situations calling for situational leadership, your choices don't always reflect the most effective way to structure the team. This area is worth specific attention.",
           "Mid": "You generally identify the right leadership reflexes, with a few situations where clearer role structuring would have been preferable.",
-          "High": "You consistently identify the responses that effectively structure the team and remotivate the group — a clear strength in situational leadership."
+          "High": "You consistently identify the responses that effectively structure the team and remotivate the group, a clear strength in situational leadership."
         },
         "strengths": "Your ability to identify effective team structuring in exceptional situations is a leadership asset.",
         "suitableWork": "Command or training roles, crew management in degraded situations.",
@@ -3369,7 +3369,7 @@
         "bands": {
           "Low": "Facing degraded conditions (weather, technical), your choices sometimes depart from a rigorous reassessment of the situation. This point is central to flight safety.",
           "Mid": "You generally reassess the situation well in degraded conditions, with a few situations where a more systematic recalculation would have helped.",
-          "High": "You consistently identify rigorous reassessment and systematic recalculation as the appropriate response in degraded conditions — a solid strength."
+          "High": "You consistently identify rigorous reassessment and systematic recalculation as the appropriate response in degraded conditions, a solid strength."
         },
         "strengths": "Your ability to identify the need for rigorous reassessment in degraded conditions is a flight-safety strength.",
         "suitableWork": "Long-haul flights, operations in marginal weather conditions.",

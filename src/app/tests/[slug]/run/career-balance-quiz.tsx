@@ -68,6 +68,7 @@ export function CareerBalanceQuiz({
       <QuizIntro
         onStart={() => setStarted(true)}
         isPreview={!hasAccess}
+        questionCount={items.length}
         demo={(() => {
           const pair = items.find((it) => it.kind === "pair");
           return pair ? (
@@ -91,11 +92,6 @@ export function CareerBalanceQuiz({
 
   return (
     <div className="mt-6">
-      {!hasAccess && (
-        <span className="inline-block rounded-full bg-gold/15 px-3 py-1 text-xs font-medium text-gold">
-          Réponses gratuites, résultat payant
-        </span>
-      )}
 
       <div className="mt-4 flex items-baseline justify-between text-sm text-muted">
         <span>Question {step + 1} / {items.length}</span>

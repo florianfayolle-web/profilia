@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { signup } from "@/app/actions/auth";
 import { GENDER_OPTIONS } from "@/lib/definitions";
+import { GoogleAuthButton } from "@/components/google-auth-button";
 
 export default function SignupPage() {
   return (
@@ -37,7 +38,17 @@ function SignupForm() {
           </Link>
         </p>
 
-        <form action={action} className="mt-8 flex flex-col gap-4">
+        <div className="mt-6">
+          <GoogleAuthButton next={next || undefined} />
+        </div>
+
+        <div className="my-6 flex items-center gap-3 text-xs text-muted-foreground">
+          <div className="h-px flex-1 bg-card-border" />
+          ou avec ton email
+          <div className="h-px flex-1 bg-card-border" />
+        </div>
+
+        <form action={action} className="flex flex-col gap-4">
           <input type="hidden" name="next" value={next} />
           <input type="hidden" name="testSlug" value={testSlug} />
           <div className="grid grid-cols-2 gap-3">

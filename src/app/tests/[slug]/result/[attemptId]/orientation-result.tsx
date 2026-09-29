@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { scoreOrientation } from "@/lib/assessments/scoring";
+import { RadarChart } from "@/components/dimension-charts";
 
 type OrientationResultData = ReturnType<typeof scoreOrientation>;
 
@@ -47,11 +48,62 @@ export function OrientationResult({ result }: { result: OrientationResultData })
     return list;
   }, [jobs, levelFilter]);
 
+  // The PDF export is the printed page itself (see DownloadPdfButton), so a
+  // report cut off at 15 jobs because the reader never clicked "voir plus"
+  // would silently ship an incomplete document. Expand to the full filtered
+  // list for the duration of the print, then restore the paginated view.
+  useEffect(() => {
+    function expandForPrint() {
+      setVisibleCount(filteredJobs.length);
+    }
+    function restoreAfterPrint() {
+      setVisibleCount(15);
+    }
+    window.addEventListener("beforeprint", expandForPrint);
+    window.addEventListener("afterprint", restoreAfterPrint);
+    return () => {
+      window.removeEventListener("beforeprint", expandForPrint);
+      window.removeEventListener("afterprint", restoreAfterPrint);
+    };
+  }, [filteredJobs.length]);
+
   const shownJobs = filteredJobs.slice(0, visibleCount);
+  const topJob = jobs[0];
 
   return (
     <div className="text-left">
-      <div className="flex flex-wrap items-center gap-2">
+      {topJob && (
+        <div className="rounded-2xl border-2 border-primary/40 bg-primary/5 p-6 text-center">
+          <p className="text-xs font-semibold uppercase tracking-wide text-primary">
+            Le métier qui vous correspond le mieux
+          </p>
+          <h2 className="mt-2 text-2xl font-bold text-foreground">{topJob.name}</h2>
+          <p className="mt-1 text-4xl font-bold text-primary tabular-nums">
+            {topJob.score}
+            <span className="text-lg font-medium text-muted-foreground">% de compatibilité</span>
+          </p>
+          <p className="mx-auto mt-3 max-w-md text-sm text-muted">{topJob.description}</p>
+          <div className="mt-3 flex flex-wrap justify-center gap-1.5">
+            <span className="rounded border border-card-border px-2 py-0.5 text-xs text-foreground">
+              {universLabels[topJob.univers] ?? topJob.univers}
+            </span>
+            <span className="rounded border border-card-border px-2 py-0.5 text-xs text-muted-foreground">
+              {LEVEL_LABELS[topJob.level]}
+            </span>
+            <span className="rounded border border-primary/40 px-2 py-0.5 text-xs font-semibold tracking-wide text-primary">
+              {topJob.code}
+            </span>
+          </div>
+          <p className="mt-4 text-xs text-muted-foreground">
+            D&apos;autres pistes suivent plus bas, classées par compatibilité.
+          </p>
+        </div>
+      )}
+
+      <div className="mt-6 hidden items-center gap-2 text-sm text-muted-foreground print:flex">
+        Pistes affichées pour : <strong className="text-foreground">{audience === "lyc" ? "Lycée / post-bac" : "Reconversion"}</strong>
+      </div>
+      <div className="mt-6 flex flex-wrap items-center gap-2 print:hidden">
         <span className="text-sm text-muted-foreground">Pistes affichées pour :</span>
         <button
           type="button"
@@ -83,6 +135,13 @@ export function OrientationResult({ result }: { result: OrientationResultData })
           .map((d) => d.label)
           .join(" · ")}
       </p>
+
+      <div className="mt-6 flex justify-center rounded-xl border border-card-border bg-card p-6">
+        <RadarChart
+          data={result.domainResults.map((d) => ({ label: d.label, value: d.interestPercent / 100 }))}
+          size={280}
+        />
+      </div>
 
       <div className="mt-8 rounded-xl border border-card-border bg-card p-6">
         <p className="text-lg font-semibold">Vos domaines, du plus fort au plus faible</p>
@@ -192,7 +251,7 @@ export function OrientationResult({ result }: { result: OrientationResultData })
         <p className="mt-1 text-sm text-muted">
           Classement par compatibilité avec vos activités, vos intérêts, vos compétences et vos valeurs. Un pourcentage élevé n&apos;est pas une recommandation : c&apos;est une invitation à aller lire la fiche du métier et à rencontrer quelqu&apos;un qui l&apos;exerce.
         </p>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2 print:hidden">
           {(
             [
               ["tous", "Tous les métiers"],

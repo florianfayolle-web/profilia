@@ -1,7 +1,7 @@
 {
   "testId": "big-five-express",
   "title": "Test de personnalité express",
-  "instructions": "20 affirmations en paires opposées, sur 5 grandes dimensions de la personnalité. Pour chaque paire, choisis l'affirmation qui te correspond le plus — sans trop réfléchir, la première impression est souvent la bonne.",
+  "instructions": "20 affirmations en paires opposées, sur 5 grandes dimensions de la personnalité. Pour chaque paire, choisis l'affirmation qui te correspond le plus, sans trop réfléchir, la première impression est souvent la bonne.",
   "responseScale": [
     { "value": -2, "anchor": "left", "label": "Tout à fait d'accord" },
     { "value": -1, "anchor": "left", "label": "D'accord" },
@@ -28,7 +28,7 @@
         "trait": "Le Pragmatique"
       },
       "report": {
-        "Amarque": "Ta curiosité est un moteur : tu vas naturellement vers les idées neuves, les sujets que tu ne maîtrises pas encore, les façons de faire différentes des tiennes. C'est une vraie force pour apprendre vite et sortir des sentiers battus — veille simplement à aller au bout des projets qui t'enthousiasment le moins sur la durée.",
+        "Amarque": "Ta curiosité est un moteur : tu vas naturellement vers les idées neuves, les sujets que tu ne maîtrises pas encore, les façons de faire différentes des tiennes. C'est une vraie force pour apprendre vite et sortir des sentiers battus, veille simplement à aller au bout des projets qui t'enthousiasment le moins sur la durée.",
         "Amodere": "Tu apprécies la nouveauté et les idées différentes des tiennes, sans en avoir un besoin permanent : tu sais t'enrichir d'une expérience inhabituelle tout en restant à l'aise dans un cadre plus classique.",
         "equilibre": "Tu navigues avec aisance entre le connu et l'inconnu selon ce que la situation demande : sans fermeture aux idées nouvelles, ni instabilité dans tes repères.",
         "Bmodere": "Tu préfères généralement ce qui est éprouvé à ce qui est incertain, sans pour autant fuir toute nouveauté quand elle a du sens pour toi.",
@@ -49,7 +49,7 @@
         "trait": "Le Spontané"
       },
       "report": {
-        "Amarque": "Tu as besoin d'un cadre clair et de repères précis pour te sentir efficace : tu planifies, tu anticipes, tu aimes savoir où tu vas avant d'agir. C'est un vrai atout pour mener les choses à terme — pense simplement à garder ta capacité d'ajustement quand la réalité s'écarte du plan prévu.",
+        "Amarque": "Tu as besoin d'un cadre clair et de repères précis pour te sentir efficace : tu planifies, tu anticipes, tu aimes savoir où tu vas avant d'agir. C'est un vrai atout pour mener les choses à terme, pense simplement à garder ta capacité d'ajustement quand la réalité s'écarte du plan prévu.",
         "Amodere": "Tu apprécies d'avancer avec une méthode, sans rigidité : tu sais t'organiser tout en laissant une marge de manœuvre quand c'est nécessaire.",
         "equilibre": "Tu ajustes ton degré de préparation selon ce que la situation demande : sans rigidité ni désorganisation.",
         "Bmodere": "Tu es à l'aise avec l'imprévu et tu préfères ajuster ton approche au fil de l'eau plutôt que de tout figer à l'avance.",
@@ -70,11 +70,11 @@
         "trait": "Le Réservé"
       },
       "report": {
-        "Amarque": "Tu tires ton énergie du contact avec les autres : les échanges, les groupes, l'imprévu social te stimulent plus qu'ils ne te coûtent. C'est un vrai atout relationnel — veille simplement à te ménager aussi des moments de retrait, même si tu n'en ressens pas toujours le besoin sur le moment.",
+        "Amarque": "Tu tires ton énergie du contact avec les autres : les échanges, les groupes, l'imprévu social te stimulent plus qu'ils ne te coûtent. C'est un vrai atout relationnel, veille simplement à te ménager aussi des moments de retrait, même si tu n'en ressens pas toujours le besoin sur le moment.",
         "Amodere": "Tu apprécies le contact social sans en avoir un besoin permanent : tu sais autant profiter d'un moment à plusieurs que d'un moment en solo.",
         "equilibre": "Tu alternes naturellement entre moments sociaux et moments de retrait selon ton énergie du jour, sans dépendre exclusivement de l'un ou de l'autre.",
         "Bmodere": "Tu apprécies les moments sociaux choisis, mais tu as besoin de temps en solitaire pour recharger, surtout après une période dense en interactions.",
-        "Bmarque": "Tu te ressources nettement mieux dans le calme et la réflexion que dans l'agitation sociale, même si cela ne t'empêche pas d'apprécier les gens que tu choisis de voir. C'est une vraie force de concentration et de profondeur — veille simplement à ne pas t'isoler quand une situation demanderait, elle, d'aller vers les autres."
+        "Bmarque": "Tu te ressources nettement mieux dans le calme et la réflexion que dans l'agitation sociale, même si cela ne t'empêche pas d'apprécier les gens que tu choisis de voir. C'est une vraie force de concentration et de profondeur, veille simplement à ne pas t'isoler quand une situation demanderait, elle, d'aller vers les autres."
       }
     },
     {
@@ -91,11 +91,11 @@
         "trait": "Le Direct"
       },
       "report": {
-        "Amarque": "Tu cherches naturellement l'harmonie et la coopération : tu fais confiance par défaut, et tu préfères arrondir les angles plutôt que d'entretenir une tension. C'est une vraie force pour fédérer — veille simplement à ne pas taire un désaccord réel par simple souci d'éviter le conflit.",
+        "Amarque": "Tu cherches naturellement l'harmonie et la coopération : tu fais confiance par défaut, et tu préfères arrondir les angles plutôt que d'entretenir une tension. C'est une vraie force pour fédérer, veille simplement à ne pas taire un désaccord réel par simple souci d'éviter le conflit.",
         "Amodere": "Tu privilégies généralement la coopération et l'écoute, sans pour autant renoncer à exprimer un désaccord quand c'est important.",
         "equilibre": "Tu sais aussi bien coopérer que t'affirmer selon ce que la situation demande, sans systématisme dans un sens ou dans l'autre.",
         "Bmodere": "Tu dis assez facilement ce que tu penses, même quand ça bouscule, tout en restant capable de faire des concessions quand elles ont du sens.",
-        "Bmarque": "Tu as une franchise marquée : tu dis les choses telles qu'elles sont, sans trop les enrober, et le consensus de façade ne t'intéresse pas. C'est un vrai gage de clarté — veille simplement à adapter ta forme selon les personnes en face de toi, ce qui est vrai n'a pas toujours besoin d'être dit de façon frontale."
+        "Bmarque": "Tu as une franchise marquée : tu dis les choses telles qu'elles sont, sans trop les enrober, et le consensus de façade ne t'intéresse pas. C'est un vrai gage de clarté, veille simplement à adapter ta forme selon les personnes en face de toi, ce qui est vrai n'a pas toujours besoin d'être dit de façon frontale."
       }
     },
     {
@@ -112,11 +112,11 @@
         "trait": "Le Sensible"
       },
       "report": {
-        "Amarque": "Tu gardes ton calme même sous pression : les imprévus, les tensions, les critiques te déstabilisent peu et tu retrouves vite ton équilibre. C'est un vrai atout dans les moments difficiles — veille simplement à ne pas minimiser ce que ressentent des personnes plus sensibles que toi aux mêmes situations.",
+        "Amarque": "Tu gardes ton calme même sous pression : les imprévus, les tensions, les critiques te déstabilisent peu et tu retrouves vite ton équilibre. C'est un vrai atout dans les moments difficiles, veille simplement à ne pas minimiser ce que ressentent des personnes plus sensibles que toi aux mêmes situations.",
         "Amodere": "Tu restes globalement stable face aux imprévus et aux tensions, sans être totalement imperméable aux événements marquants.",
         "equilibre": "Ta stabilité émotionnelle varie selon le contexte : certaines situations te déstabilisent, d'autres te laissent de marbre, sans logique systématique.",
         "Bmodere": "Tu ressens les choses assez intensément et les tensions autour de toi t'affectent réellement, tout en gardant la plupart du temps les moyens d'y faire face.",
-        "Bmarque": "Tu ressens les choses avec intensité : les tensions, les critiques, les imprévus t'affectent réellement, et tes humeurs peuvent varier nettement selon ce qui se passe autour de toi. C'est aussi ce qui aiguise ton attention à ce que vivent les autres — veille simplement à te ménager des soupapes de décompression, surtout dans les périodes denses."
+        "Bmarque": "Tu ressens les choses avec intensité : les tensions, les critiques, les imprévus t'affectent réellement, et tes humeurs peuvent varier nettement selon ce qui se passe autour de toi. C'est aussi ce qui aiguise ton attention à ce que vivent les autres, veille simplement à te ménager des soupapes de décompression, surtout dans les périodes denses."
       }
     }
   ],

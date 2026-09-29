@@ -20,11 +20,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME}, tests de personnalité en ligne`,
+    default: `${SITE_NAME}, tests de personnalité, QI et profil cognitif en ligne`,
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Tests de personnalité et de jugement situationnel en ligne, pour te connaître ou t'entraîner avant une sélection en compagnie aérienne, dans l'armée (EOPN, ALAT, AOPAN) ou en grande entreprise.",
+    "Test de QI, DISC, Big Five, orientation RIASEC, repérage TDAH et HPI : des tests de personnalité et de raisonnement sérieux, pour mieux te connaître ou t'entraîner avant une sélection (compagnie aérienne, armée, grande entreprise). Réponses gratuites, rapport détaillé.",
   keywords: [
     "test de personnalité",
     "test de personnalité en ligne",
@@ -113,7 +113,7 @@ export const metadata: Metadata = {
     "test TDAH adulte",
     "test TDAH en ligne",
     "questionnaire TDAH adulte",
-    "ASRS-6",
+    "DSM-5 TDAH",
     "repérage TDAH",
     "symptômes TDAH adulte",
     "suis-je HPI",
@@ -167,11 +167,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               "@type": "WebSite",
               name: SITE_NAME,
               url: SITE_URL,
-              potentialAction: {
-                "@type": "SearchAction",
-                target: `${SITE_URL}/tests?q={search_term_string}`,
-                "query-input": "required name=search_term_string",
-              },
+              // No SearchAction: /tests has no working ?q= search, and
+              // claiming one in structured data that doesn't actually work
+              // gets this markup discounted rather than rewarded.
             }),
           }}
         />
@@ -183,8 +181,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               "@type": "Organization",
               name: SITE_NAME,
               url: SITE_URL,
+              logo: `${SITE_URL}/brand/profilia-mark-512.png`,
               description:
-                "Tests de personnalité et de jugement situationnel en ligne, conçus par des professionnels du recrutement.",
+                "Tests de personnalité, de QI et de profil cognitif en ligne : DISC, Big Five, orientation RIASEC, repérage TDAH et HPI, conçus par des professionnels du recrutement.",
             }),
           }}
         />

@@ -144,7 +144,7 @@ export const ENTRIES = [
     lookupKey: "test_disc_onetime",
     title: "Test de personnalité DISC (Dominant, Influent, Stable, Conforme)",
     description:
-      "Test de personnalité en 80 groupes de 4 affirmations à choix forcé, basé sur le modèle DISC (Dominant, Influent, Stable, Conforme). Rapport détaillé avec ta roue de positionnement sur les 4 styles. Conçu par des psychologues spécialisés en recrutement. Modèle largement utilisé en entreprise, sans affiliation à une marque commerciale du DISC.",
+      "Test de personnalité en 80 groupes de 4 affirmations à choix forcé, basé sur le modèle DISC (Dominant, Influent, Stable, Conforme). Rapport détaillé avec ta roue de positionnement sur les 4 styles, et ton profil sur la roue élargie des 8 profils (Pilote, Entraîneur, Animateur, Pacificateur, Conseiller, Protecteur, Analyste, Planificateur). Conçu par des psychologues spécialisés en recrutement. Modèle largement utilisé en entreprise, sans affiliation à une marque commerciale du DISC.",
   },
   {
     file: "pcm.json",
@@ -205,7 +205,7 @@ export const ENTRIES = [
     lookupKey: "test_qi_onetime",
     title: "Test de QI, raisonnement logique, verbal, numérique et spatial",
     description:
-      "Test de raisonnement en 24 questions (numérique, verbal, spatial, déductif, inductif, attention) donnant un score indicatif façon QI. Ce n'est pas un quotient intellectuel clinique étalonné : seul un psychologue, avec un outil validé, peut délivrer un vrai QI certifié.",
+      "Test de raisonnement complet en 60 questions sur 8 domaines (numérique, verbal, spatial, déductif, inductif, attention, organisation, raisonnement mécanique), donnant un score indicatif façon QI (moyenne 100, écart-type 15). Ce n'est pas un quotient intellectuel clinique étalonné : seul un psychologue, avec un outil validé, peut délivrer un vrai QI certifié.",
   },
   {
     file: "tdah.json",
@@ -213,9 +213,9 @@ export const ENTRIES = [
     format: "adhd_screener",
     language: "fr",
     lookupKey: "test_tdah_screener",
-    title: "Repérage TDAH adulte, questionnaire inspiré de l'ASRS-6",
+    title: "Repérage TDAH adulte, questionnaire basé sur le DSM-5",
     description:
-      "Questionnaire de repérage du TDAH chez l'adulte en 6 questions, inspiré de l'ASRS-6, l'outil utilisé par les médecins en première intention. Ce n'est pas un diagnostic : seul un médecin ou un psychiatre peut poser un diagnostic de TDAH.",
+      "Questionnaire de repérage du TDAH chez l'adulte en 21 questions, rédigé à partir des critères du DSM-5 (attention, agitation et impulsivité, contexte). Ce n'est pas un diagnostic : seul un médecin ou un psychiatre peut poser un diagnostic de TDAH.",
   },
   {
     file: "hpi.json",
@@ -227,14 +227,11 @@ export const ENTRIES = [
     description:
       "Test en 30 affirmations explorant 6 traits souvent décrits chez les personnes à haut potentiel intellectuel (pensée arborescente, hypersensibilité, besoin de sens, ennui, décalage relationnel, créativité). Ce n'est pas un test de QI et ne peut pas diagnostiquer un haut potentiel : seul un bilan psychométrique complet (WAIS) avec un psychologue le permet.",
   },
-  {
-    file: "animal-totem.json",
-    slug: "animal-totem",
-    format: "bipolar_pairs",
-    language: "fr",
-    lookupKey: "test_animal_totem",
-    title: "Quel animal es-tu ? Ton profil de personnalité totem",
-    description:
-      "Test de personnalité en 20 affirmations, ludique et rapide, qui associe ton profil à un animal (loup, chat, dauphin, hibou, lion, renard, aigle, ours, abeille, papillon) sur 5 grandes facettes de ta personnalité. Parfait à faire entre amis ou en famille.",
-  },
+  // "animal-totem" is deliberately NOT listed here anymore: it moved from
+  // the rich bipolar_pairs format to the simple single_choice engine
+  // (questions/question_options/result_profiles tables), seeded directly in
+  // Supabase — re-adding it here and re-running this script would upsert
+  // `tests.format` back to "bipolar_pairs" and wipe its result_profiles-based
+  // content via test_content. Its title/description/price already live on
+  // the `tests` row in the database.
 ];

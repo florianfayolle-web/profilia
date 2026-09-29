@@ -3,7 +3,7 @@
 Ces fichiers sont les tests de personnalité/jugement fournis pour le site,
 originaires du dossier `Test personnalité` (projet FlyUp). Ils ont été
 conçus comme des **outils d'entraînement inspirés** de formats de tests
-psychométriques professionnels (SOSIE 2, TD12, ADAPT) — pas des
+psychométriques professionnels (SOSIE 2, TD12, ADAPT), pas des
 reproductions des instruments propriétaires eux-mêmes. Chaque fichier porte
 son propre avertissement dans `meta.disclaimer` (ou `instructions`), repris
 automatiquement dans la description publique du test par
@@ -20,7 +20,7 @@ automatiquement dans la description publique du test par
 Ces fichiers sont des **exports**, pas la source de vérité : si le contenu
 (questions, dimensions, textes de rapport) doit changer, les scripts
 Python générateurs originaux (livrés séparément, hors de ce dépôt) restent
-la référence — éditez-les puis ré-exportez, plutôt que d'éditer ces JSON
+la référence, éditez-les puis ré-exportez, plutôt que d'éditer ces JSON
 à la main.
 
 Pour les publier sur le site : voir `scripts/import-assessments.mjs` et la
