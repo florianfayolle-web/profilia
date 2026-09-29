@@ -9,6 +9,7 @@ export type AnswerDemoProps =
   | { kind: "plusminus"; prompt: string; options: string[]; plus: number; minus: number; caption: string }
   | { kind: "choice"; lead?: string; options: string[]; picked: number; caption: string }
   | { kind: "scale"; text: string; labels: string[]; picked: number; caption: string }
+  | { kind: "slider"; text: string; leftLabel: string; rightLabel: string; value: number; caption: string }
   | {
       kind: "bipolar";
       left: string;
@@ -128,6 +129,31 @@ function Body(props: AnswerDemoProps) {
                 <span className="text-center text-[10px] leading-tight text-muted">{label}</span>
               </div>
             ))}
+          </div>
+        </div>
+      );
+
+    case "slider":
+      return (
+        <div>
+          <p className="text-base font-medium leading-snug">{props.text}</p>
+          <div className="mt-4 rounded-lg border border-card-border bg-background p-4">
+            <div className="text-center">
+              <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xl font-bold tabular-nums text-primary">
+                {props.value}%
+              </span>
+            </div>
+            <div className="relative mt-3 h-2 rounded-full bg-card-border">
+              <div className="h-full rounded-full bg-primary" style={{ width: `${props.value}%` }} />
+              <div
+                className="absolute top-1/2 h-4 w-4 -translate-y-1/2 rounded-full border-2 border-primary bg-card shadow"
+                style={{ left: `calc(${props.value}% - 8px)` }}
+              />
+            </div>
+            <div className="mt-1 flex justify-between text-[10px] text-muted-foreground">
+              <span>{props.leftLabel}</span>
+              <span>{props.rightLabel}</span>
+            </div>
           </div>
         </div>
       );

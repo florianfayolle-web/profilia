@@ -5,23 +5,23 @@
  "scale": [
   {
    "label": "Pas du tout moi",
-   "value": 1
+   "value": 0
   },
   {
    "label": "Peu",
-   "value": 2
+   "value": 25
   },
   {
    "label": "Neutre",
-   "value": 3
+   "value": 50
   },
   {
    "label": "Assez",
-   "value": 4
+   "value": 75
   },
   {
    "label": "Tout à fait moi",
-   "value": 5
+   "value": 100
   }
  ],
  "dimensions": [

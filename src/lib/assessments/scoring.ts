@@ -300,10 +300,15 @@ export function scoreLikertScale(
     return def.levels[def.levels.length - 1]?.label ?? "";
   }
 
+  // Not hardcoded to 5: a test can use any scale, e.g. a continuous 0-100
+  // slider (see the "hpi" test) — the max per item is whatever the
+  // definition's own scale tops out at.
+  const scaleMax = Math.max(...def.scale.map((s) => s.value));
+
   const dimensionResults = def.dimensions.map((dim) => {
     const items = def.items.filter((i) => i.dimension === dim.key);
     const total = items.reduce((sum, item) => sum + Number(answers[String(item.id)] ?? 0), 0);
-    const maxScore = items.length * 5;
+    const maxScore = items.length * scaleMax;
     const scorePercent = maxScore === 0 ? 0 : total / maxScore;
     return {
       key: dim.key,

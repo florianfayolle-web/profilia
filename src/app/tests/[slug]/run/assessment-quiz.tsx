@@ -37,7 +37,8 @@ const SELECTION_HIGHLIGHT_MS = 300;
 function introDemo(
   format: Format,
   definition: Definition,
-  lang: "fr" | "en"
+  lang: "fr" | "en",
+  testSlug: string
 ): ReactNode {
   const fr = lang === "fr";
   switch (format) {
@@ -108,6 +109,18 @@ function introDemo(
     case "likert_scale": {
       const d = definition as LikertScaleDefinition;
       const sorted = [...d.scale].sort((a, b) => a.value - b.value);
+      if (SLIDER_SCALE_SLUGS.has(testSlug)) {
+        return (
+          <AnswerDemo
+            kind="slider"
+            text={d.items[0].text}
+            leftLabel={sorted[0]?.label ?? ""}
+            rightLabel={sorted[sorted.length - 1]?.label ?? ""}
+            value={62}
+            caption="Une affirmation s'affiche : place le curseur là où tu te situes, de 0 à 100%, puis valide."
+          />
+        );
+      }
       return (
         <AnswerDemo
           kind="scale"
@@ -358,7 +371,7 @@ function GenericAssessmentQuiz({
       <QuizIntro
         onStart={() => setStarted(true)}
         isPreview={!hasAccess}
-        demo={introDemo(format, definition, lang)}
+        demo={introDemo(format, definition, lang, testSlug)}
       />
     );
   }
@@ -423,7 +436,16 @@ function GenericAssessmentQuiz({
             selectedValue={selectedValue}
           />
         )}
-        {format === "likert_scale" && (
+        {format === "likert_scale" && SLIDER_SCALE_SLUGS.has(testSlug) && (
+          <SliderQuestion
+            item={item as LikertScaleDefinition["items"][number]}
+            scale={(definition as LikertScaleDefinition).scale}
+            onChoose={choose}
+            disabled={disabled}
+            selectedValue={selectedValue}
+          />
+        )}
+        {format === "likert_scale" && !SLIDER_SCALE_SLUGS.has(testSlug) && (
           <LikertQuestion
             item={item as LikertScaleDefinition["items"][number]}
             scale={(definition as LikertScaleDefinition).scale}
@@ -626,6 +648,76 @@ function IntensityDots({ level, total }: { level: number; total: number }) {
 // since a smiling face reads oddly on a more serious assessment.
 const FACES = ["😞", "🙁", "😐", "🙂", "😄"];
 const EMOJI_SCALE_SLUGS = new Set(["bp360"]);
+
+// HPI reads better as a continuous 0-100 position on a single track than as
+// 5 separate boxes — the traits it explores are a matter of degree, and a
+// slider makes that degree the whole point instead of forcing a coarse pick.
+const SLIDER_SCALE_SLUGS = new Set(["hpi"]);
+
+function SliderQuestion({
+  item,
+  scale,
+  onChoose,
+  disabled,
+  selectedValue,
+}: {
+  item: { id: number; text: string };
+  scale: LikertScaleDefinition["scale"];
+  onChoose: (value: number) => void;
+  disabled: boolean;
+  selectedValue: string | number | null;
+}) {
+  const sorted = [...scale].sort((a, b) => a.value - b.value);
+  const min = sorted[0]?.value ?? 0;
+  const max = sorted[sorted.length - 1]?.value ?? 100;
+  const startingValue = typeof selectedValue === "number" ? selectedValue : Math.round((min + max) / 2);
+  const [pos, setPos] = useState(startingValue);
+  const [touched, setTouched] = useState(selectedValue !== null);
+
+  return (
+    <div className="flex flex-col gap-6">
+      <p className="text-lg font-medium">{item.text}</p>
+
+      <div className="rounded-xl border border-card-border bg-card p-5">
+        <div className="text-center">
+          <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-2xl font-bold tabular-nums text-primary">
+            {pos}%
+          </span>
+        </div>
+
+        <input
+          type="range"
+          min={min}
+          max={max}
+          step={1}
+          value={pos}
+          disabled={disabled}
+          onChange={(e) => {
+            setPos(Number(e.target.value));
+            setTouched(true);
+          }}
+          className="mt-4 w-full accent-primary disabled:opacity-50"
+        />
+
+        <div className="mt-1 flex justify-between text-xs text-muted-foreground">
+          <span>{sorted[0]?.label}</span>
+          <span>{sorted[sorted.length - 1]?.label}</span>
+        </div>
+      </div>
+
+      {touched && (
+        <button
+          type="button"
+          disabled={disabled}
+          onClick={() => onChoose(pos)}
+          className="rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          Valider ma réponse →
+        </button>
+      )}
+    </div>
+  );
+}
 
 function LikertQuestion({
   item,
