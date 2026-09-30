@@ -756,79 +756,19 @@ export function ResultView({
         )}
 
         {r.iqScore == null && (
-        <div className="mt-10">
-          <h2 className="text-xl font-semibold">Corrigé détaillé</h2>
-          <div className="mt-4 divide-y divide-card-border">
-            {r.review.map((item) => (
-              <div key={item.id} className="py-5">
-                <div className="flex items-center gap-2 text-sm">
-                  <span
-                    className={`rounded-full px-2 py-0.5 text-xs font-medium ${
-                      item.isCorrect
-                        ? "bg-green-500/15 text-green-700 dark:text-green-400"
-                        : "bg-red-500/15 text-red-700 dark:text-red-400"
-                    }`}
-                  >
-                    {item.isCorrect ? "Juste" : "Faux"}
-                  </span>
-                  <span className="text-muted-foreground">
-                    Question {item.id}
-                  </span>
-                </div>
-                <p className="mt-2 font-medium">{item.question}</p>
-                {item.series && (
-                  <p className="mt-1 text-center font-semibold tracking-wide">
-                    {item.series}
-                  </p>
-                )}
-                {item.figure && (
-                  <div className="flex justify-center py-2 text-foreground [&_svg]:h-24 [&_svg]:w-24">
-                    <div dangerouslySetInnerHTML={{ __html: item.figure }} />
-                  </div>
-                )}
-                <div
-                  className={
-                    item.grid
-                      ? "mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4"
-                      : "mt-2 flex flex-col gap-1"
-                  }
-                >
-                  {item.options.map((opt, index) => {
-                    const isGiven = item.givenIndex === index;
-                    const isCorrectOpt = item.correctIndex === index;
-                    return (
-                      <div
-                        key={index}
-                        className={`flex items-center gap-2 rounded-lg border px-3 py-2 text-sm ${
-                          item.grid ? "flex-col" : ""
-                        } ${
-                          isCorrectOpt
-                            ? "border-green-500 bg-green-500/10"
-                            : isGiven
-                              ? "border-red-500 bg-red-500/10"
-                              : "border-card-border"
-                        }`}
-                      >
-                        <span className="text-xs font-medium text-muted-foreground">
-                          {String.fromCharCode(65 + index)}
-                        </span>
-                        {opt.svg ? (
-                          <div
-                            className="text-foreground [&_svg]:h-12 [&_svg]:w-12"
-                            dangerouslySetInnerHTML={{ __html: opt.svg }}
-                          />
-                        ) : (
-                          <span>{opt.text}</span>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-                <p className="mt-2 text-sm text-muted">{item.explanation}</p>
-              </div>
-            ))}
+          <div className="mt-10 rounded-xl border border-card-border bg-card p-6 text-sm text-muted">
+            <p className="font-medium text-foreground">Comment lire ce résultat</p>
+            <p className="mt-2">
+              Ton score est calculé sur l&apos;ensemble des familles de raisonnement testées
+              (voir le détail par domaine ci-dessus). Le détail question par question
+              n&apos;est pas affiché : un test de raisonnement ne donne jamais son corrigé,
+              pour que le score garde un sens si tu le repasses plus tard.
+            </p>
+            <p className="mt-2">
+              Regarde surtout le domaine où l&apos;écart est le plus marqué : c&apos;est
+              généralement là que l&apos;entraînement ferait le plus de différence.
+            </p>
           </div>
-        </div>
         )}
       </div>
     );
