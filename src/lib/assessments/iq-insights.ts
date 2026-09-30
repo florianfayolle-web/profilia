@@ -1,23 +1,37 @@
-// Extra explanatory content for the adult QI result page: which well-known
-// figures are popularly (not scientifically) associated with a given band,
+// Extra explanatory content for the adult QI result page: how to situate a
+// band (named figures where that's honest, a generic sentence otherwise),
 // and concrete advice per reasoning domain. Kept separate from scoring.ts
 // (pure computation) since this is display copy.
 //
-// Deliberately no named examples below "Supérieure": there is no honest
-// "famous people who are averagely intelligent" trope (average IS most
-// people, celebrity or not), and naming real people next to a low score
-// would be disrespectful for no informational gain.
+// Deliberately no NAMED examples below "Très supérieure": popular "IQ of
+// celebrities" lists only exist for the high end, and inventing names for
+// an average/above-average band would just be guessing. Below "Moyenne
+// faible" (Limite, Très faible) there's nothing here at all, named or
+// generic — those bandTexts already carry a relativizing message on their
+// own (see iqClassification in scoring.ts), and piling on would read as
+// patronizing rather than informative.
+export type IqBandInfo = { people?: string[]; generic?: string };
 
-export const IQ_BAND_PEOPLE: Partial<Record<string, string[]>> = {
-  "Très supérieure (Haut Potentiel Intellectuel)": [
-    "Albert Einstein",
-    "Marie Curie",
-    "Stephen Hawking",
-    "Léonard de Vinci",
-  ],
-  "Supérieure": [
-    "Beaucoup de chercheurs, ingénieurs et médecins spécialisés",
-  ],
+export const IQ_BAND_INFO: Partial<Record<string, IqBandInfo>> = {
+  "Très supérieure (Haut Potentiel Intellectuel)": {
+    people: ["Albert Einstein", "Marie Curie", "Stephen Hawking", "Léonard de Vinci"],
+  },
+  "Supérieure": {
+    generic:
+      "Beaucoup de chercheurs, d'ingénieurs et de médecins spécialisés se situent dans cette tranche.",
+  },
+  "Moyenne forte": {
+    generic:
+      "Une bonne partie des cadres, professionnels qualifiés et diplômés du supérieur, tous métiers confondus, se situent exactement dans cette tranche.",
+  },
+  "Moyenne / Normale": {
+    generic:
+      "C'est la tranche où se situe la majorité des gens, quel que soit leur métier ou leur parcours : ni un plafond, ni un point de départ, juste la norme statistique.",
+  },
+  "Moyenne faible": {
+    generic:
+      "Cette tranche ne dit rien de tes compétences réelles dans ton domaine : beaucoup de réussites professionnelles et personnelles s'appuient sur d'autres qualités que ce type de raisonnement (relationnel, créativité, persévérance).",
+  },
 };
 
 export const IQ_BAND_PEOPLE_NOTE =

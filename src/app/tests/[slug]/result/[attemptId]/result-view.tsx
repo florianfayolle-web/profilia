@@ -14,7 +14,7 @@ import type {
   scoreSosie,
 } from "@/lib/assessments/scoring";
 import { IqScale } from "@/components/iq-scale";
-import { IQ_BAND_PEOPLE, IQ_BAND_PEOPLE_NOTE, weakestDomains } from "@/lib/assessments/iq-insights";
+import { IQ_BAND_INFO, IQ_BAND_PEOPLE_NOTE, weakestDomains } from "@/lib/assessments/iq-insights";
 import { OrientationResult } from "./orientation-result";
 import {
   ChartLegend,
@@ -636,11 +636,17 @@ export function ResultView({
           </p>
         )}
 
-        {!r.childMode && IQ_BAND_PEOPLE[r.band] && (
+        {!r.childMode && IQ_BAND_INFO[r.band] && (
           <div className="mx-auto mt-6 max-w-xl rounded-lg border border-card-border bg-background p-4 text-center text-sm text-muted">
-            <p className="font-medium text-foreground">On associe souvent cette tranche à…</p>
-            <p className="mt-1">{IQ_BAND_PEOPLE[r.band]!.join(" · ")}</p>
-            <p className="mt-2 text-xs text-muted-foreground">{IQ_BAND_PEOPLE_NOTE}</p>
+            <p className="font-medium text-foreground">
+              {IQ_BAND_INFO[r.band]!.people ? "On associe souvent cette tranche à…" : "Pour te situer"}
+            </p>
+            <p className="mt-1">
+              {IQ_BAND_INFO[r.band]!.people?.join(" · ") ?? IQ_BAND_INFO[r.band]!.generic}
+            </p>
+            {IQ_BAND_INFO[r.band]!.people && (
+              <p className="mt-2 text-xs text-muted-foreground">{IQ_BAND_PEOPLE_NOTE}</p>
+            )}
           </div>
         )}
 
