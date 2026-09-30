@@ -14,6 +14,7 @@ import type {
   scoreSosie,
 } from "@/lib/assessments/scoring";
 import { IqScale } from "@/components/iq-scale";
+import { IQ_BAND_PEOPLE, IQ_BAND_PEOPLE_NOTE, weakestDomains } from "@/lib/assessments/iq-insights";
 import { OrientationResult } from "./orientation-result";
 import {
   ChartLegend,
@@ -635,6 +636,14 @@ export function ResultView({
           </p>
         )}
 
+        {!r.childMode && IQ_BAND_PEOPLE[r.band] && (
+          <div className="mx-auto mt-6 max-w-xl rounded-lg border border-card-border bg-background p-4 text-center text-sm text-muted">
+            <p className="font-medium text-foreground">On associe souvent cette tranche à…</p>
+            <p className="mt-1">{IQ_BAND_PEOPLE[r.band]!.join(" · ")}</p>
+            <p className="mt-2 text-xs text-muted-foreground">{IQ_BAND_PEOPLE_NOTE}</p>
+          </div>
+        )}
+
         <div className="mt-8 rounded-xl border border-card-border bg-card p-6">
           <p className="text-lg font-semibold">Ton score par domaine</p>
           <div className="mt-4 space-y-4">
@@ -653,6 +662,27 @@ export function ResultView({
             ))}
           </div>
         </div>
+
+        {(() => {
+          const tips = weakestDomains(r.dimensionResults);
+          if (tips.length === 0) return null;
+          return (
+            <div className="mt-8 rounded-xl border border-card-border bg-card p-6">
+              <p className="text-lg font-semibold">Conseils pour progresser</p>
+              <p className="mt-1 text-sm text-muted">
+                Sur les domaines où il reste le plus de marge :
+              </p>
+              <div className="mt-4 space-y-3">
+                {tips.map((t) => (
+                  <div key={t.code}>
+                    <p className="text-sm font-medium text-foreground">{t.label}</p>
+                    <p className="mt-0.5 text-sm text-muted">{t.tip}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
 
         {r.iqScore != null && r.childMode && (
           <div className="mt-10 rounded-xl border border-card-border bg-card p-6 text-sm text-muted">
