@@ -3,25 +3,39 @@ import { SITE_NAME } from "@/lib/site";
 import { AuthNav } from "@/components/auth-nav";
 import { MobileMenu } from "@/components/mobile-menu";
 import { ProfiliaMark } from "@/components/profilia-mark";
+import { createClient } from "@/lib/supabase/server";
+import { isAdmin } from "@/lib/admin";
 
-const NAV_LINKS = (
-  <>
-    <Link href="/" className="text-muted hover:text-foreground">
-      Accueil
-    </Link>
-    <Link href="/tests" className="text-muted hover:text-foreground">
-      Tests
-    </Link>
-    <Link href="/guides" className="text-muted hover:text-foreground">
-      Guides
-    </Link>
-    <Link href="/blog" className="text-muted hover:text-foreground">
-      Blog
-    </Link>
-  </>
-);
+function navLinks(showAdmin: boolean) {
+  return (
+    <>
+      <Link href="/" className="text-muted hover:text-foreground">
+        Accueil
+      </Link>
+      <Link href="/tests" className="text-muted hover:text-foreground">
+        Tests
+      </Link>
+      <Link href="/guides" className="text-muted hover:text-foreground">
+        Guides
+      </Link>
+      <Link href="/blog" className="text-muted hover:text-foreground">
+        Blog
+      </Link>
+      {showAdmin && (
+        <Link href="/admin" className="text-muted hover:text-foreground">
+          Admin
+        </Link>
+      )}
+    </>
+  );
+}
 
-export function SiteHeader() {
+export async function SiteHeader() {
+  const supabase = await createClient();
+  const { data: userData } = await supabase.auth.getUser();
+  const showAdmin = isAdmin(userData.user?.email);
+  const links = navLinks(showAdmin);
+
   return (
     <header className="sticky top-0 z-20 border-b border-card-border/80 bg-background/85 backdrop-blur-sm">
       <div className="relative mx-auto flex max-w-5xl items-center gap-3 px-4 py-4 sm:px-6">
@@ -34,14 +48,14 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden min-w-0 flex-1 items-center justify-end gap-5 text-sm whitespace-nowrap sm:flex">
-          {NAV_LINKS}
+          {links}
           <AuthNav />
         </nav>
 
         <div className="ml-auto flex items-center gap-2 sm:hidden">
           <AuthNav compact />
           <MobileMenu>
-            {NAV_LINKS}
+            {links}
             <div className="flex flex-col gap-3 border-t border-card-border pt-3">
               <AuthNav />
             </div>
