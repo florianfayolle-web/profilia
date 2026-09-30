@@ -1039,19 +1039,24 @@ export function scoreLogicMcq(
   });
 
   const scorePercent = score / def.items.length;
-  // Child mode never derives an IQ-style number — no real age-normed data
-  // backs one — regardless of what def.meta.showIqScore says for the adult
-  // bank this definition was cloned from.
-  const iqScore = def.meta.showIqScore && !opts.childMode ? iqFromPercent(scorePercent) : null;
-  // The IQ-styled test labels its band from the iqScore itself, using the
-  // published WAIS classification grid, instead of the generic
-  // percent-based logicBand() the 8-Logiques test uses — the whole point of
-  // computing an IQ-style number is to reuse the scale people already
-  // recognize.
-  const [band, bandText] = iqScore != null
-    ? iqClassification(iqScore)
-    : opts.childMode
-      ? logicBandChild(score, def.items.length)
+  // Child mode DOES show a number, on the same indicative mean-100/SD-15
+  // scale as the adult test, for the same reason the adult one has it: it's
+  // a familiar, readable scale — but it is computed from percent-correct on
+  // THIS age band's own item bank, not from any real age-normed WISC data,
+  // so it is never labeled "QI"/"IQ" and never uses the WAIS clinical
+  // classification grid (see below) — that would overstate what it is.
+  const iqScore = def.meta.showIqScore ? iqFromPercent(scorePercent) : null;
+  // Child mode always keeps the softer, child-worded band (logicBandChild)
+  // instead of iqClassification's WAIS labels ("Haut Potentiel
+  // Intellectuel" etc.) — those are real clinical categories and have no
+  // place attached to an unvalidated online exercise for a minor, number or
+  // not. Non-child logic_mcq tests keep the existing behavior: the WAIS
+  // grid when showIqScore is on, the generic percent-based logicBand()
+  // otherwise.
+  const [band, bandText] = opts.childMode
+    ? logicBandChild(score, def.items.length)
+    : iqScore != null
+      ? iqClassification(iqScore)
       : logicBand(score, def.items.length);
 
   return {

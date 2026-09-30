@@ -599,10 +599,16 @@ export function ResultView({
               Score indicatif
             </p>
             <p className="mt-1 text-5xl font-bold text-primary tabular-nums">{r.iqScore}</p>
-            <p className="mt-1 text-xs text-muted-foreground">Échelle de Wechsler — moyenne 100, écart-type 15</p>
+            <p className="mt-1 text-xs text-muted-foreground">
+              {r.childMode
+                ? "Échelle indicative Profilia — moyenne 100 (pas une échelle clinique)"
+                : "Échelle de Wechsler — moyenne 100, écart-type 15"}
+            </p>
             {r.percentile != null && (
               <p className="mt-2 text-sm font-medium text-foreground">
-                Plus élevé que {r.percentile}&nbsp;% de la population sur cette échelle
+                {r.childMode
+                  ? `Plus élevé que ${r.percentile} % des scores possibles sur cette échelle`
+                  : `Plus élevé que ${r.percentile} % de la population sur cette échelle`}
               </p>
             )}
           </div>
@@ -623,9 +629,9 @@ export function ResultView({
 
         {r.childMode && (
           <p className="mt-4 rounded-lg border border-card-border bg-background p-3 text-center text-xs text-muted-foreground">
-            Ce n&apos;est pas un score de QI : c&apos;est un niveau de raisonnement sur cet
-            exercice précis, à un instant donné. Seul un vrai WISC, passé avec un·e
-            psychologue, peut donner un score cliniquement valable pour un enfant.
+            Ce chiffre n&apos;est pas un score de QI : c&apos;est un repère indicatif, calculé sur
+            cet exercice précis et cette tranche d&apos;âge, à un instant donné. Seul un vrai WISC,
+            passé avec un·e psychologue, peut donner un score cliniquement valable pour un enfant.
           </p>
         )}
 
@@ -648,7 +654,32 @@ export function ResultView({
           </div>
         </div>
 
-        {r.iqScore != null && (
+        {r.iqScore != null && r.childMode && (
+          <div className="mt-10 rounded-xl border border-card-border bg-card p-6 text-sm text-muted">
+            <p className="font-medium text-foreground">Comment lire ce résultat</p>
+            <p className="mt-2">
+              Ce chiffre est calculé à partir du pourcentage de bonnes réponses sur les 8
+              familles de raisonnement testées, sur les 40 questions choisies pour cette tranche
+              d&apos;âge, puis replacé sur une échelle indicative (moyenne 100) — la même
+              présentation que la version adulte du test, pour rester lisible d&apos;un coup
+              d&apos;œil.
+            </p>
+            <p className="mt-2">
+              Ce n&apos;est pas un WISC ni un score étalonné sur une vraie population d&apos;enfants
+              du même âge : nous n&apos;avons pas ces données. Il compare seulement la performance
+              à cet exercice précis, pas les capacités réelles de l&apos;enfant. Le résultat peut
+              aussi varier d&apos;un jour à l&apos;autre selon la fatigue ou la familiarité avec ce
+              type d&apos;exercices — ce n&apos;est jamais une mesure figée.
+            </p>
+            <p className="mt-2">
+              Le détail par domaine ci-dessus et le corrigé ci-dessous sont plus utiles que le
+              chiffre seul : ils montrent où l&apos;enfant est à l&apos;aise et où reprendre
+              tranquillement, question par question.
+            </p>
+          </div>
+        )}
+
+        {r.iqScore != null && !r.childMode && (
           <div className="mt-10 rounded-xl border border-card-border bg-card p-6 text-sm text-muted">
             <p className="font-medium text-foreground">Comment lire ce résultat</p>
             <p className="mt-2">
@@ -684,7 +715,7 @@ export function ResultView({
           </div>
         )}
 
-        {r.iqScore == null && (
+        {(r.iqScore == null || r.childMode) && (
         <div className="mt-10">
           <h2 className="text-xl font-semibold">Corrigé détaillé</h2>
           <div className="mt-4 divide-y divide-card-border">
