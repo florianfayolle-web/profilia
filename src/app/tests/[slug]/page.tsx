@@ -90,6 +90,32 @@ export default async function TestDetailPage(
     },
   };
 
+  // Generic but test-accurate FAQ, generated from this test's own
+  // price/access fields rather than hand-written per test (20+ tests) —
+  // gives every /tests/[slug] page an FAQPage rich-result opportunity,
+  // which only the category hub pages had until now.
+  const testFaq = [
+    {
+      question: "Ce test est-il gratuit ?",
+      answer:
+        test.price_cents === 0
+          ? "Oui, toutes les questions et ton résultat complet sont gratuits, sans carte bancaire."
+          : `Les questions sont gratuites : tu réponds sans payer. Seul le rapport détaillé est payant (${formatPrice(test.price_cents, test.currency)})${test.included_in_subscription ? ", ou inclus dans l'abonnement illimité" : ""}.`,
+    },
+    {
+      question: "Faut-il créer un compte pour passer ce test ?",
+      answer:
+        test.price_cents === 0
+          ? "Non : tu réponds sans compte, une simple adresse email suffit pour voir ton résultat."
+          : "Tu peux répondre à toutes les questions sans créer de compte. Un compte gratuit est seulement nécessaire pour voir et débloquer ton rapport détaillé à la fin.",
+    },
+    {
+      question: "Puis-je repasser ce test plus tard ?",
+      answer:
+        "Oui, autant de fois que tu veux. Le contenu ne change pas, mais garde en tête que ton contexte du jour (fatigue, humeur, familiarité avec le format) peut légèrement influencer le résultat d'une fois sur l'autre.",
+    },
+  ];
+
   const category = getCategory(getTestCategory(test.slug));
   const relatedTests = category
     ? (await getActiveTests())
@@ -107,6 +133,20 @@ export default async function TestDetailPage(
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: testFaq.map((item) => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: { "@type": "Answer", text: item.answer },
+            })),
+          }),
+        }}
       />
       {category && (
         <BreadcrumbJsonLd
@@ -216,6 +256,18 @@ export default async function TestDetailPage(
             </Link>
           </>
         )}
+      </div>
+
+      <div className="mt-12 border-t border-card-border/60 pt-10">
+        <h2 className="text-xl font-semibold tracking-tight">Questions fréquentes</h2>
+        <div className="mt-5 space-y-5">
+          {testFaq.map((item) => (
+            <div key={item.question}>
+              <h3 className="font-medium">{item.question}</h3>
+              <p className="mt-1 text-sm text-muted">{item.answer}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       {relatedTests.length > 0 && category && (
