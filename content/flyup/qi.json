@@ -1457,5 +1457,2905 @@
       "explanation": "Une poulie fixe simple ne procure aucun avantage mécanique : la force à exercer est égale au poids de la charge, soit 50 kg.",
       "id": 60
     }
-  ]
+  ],
+  "childBands": {
+    "6-8": {
+      "label": "6-8 ans",
+      "ageRange": "6-8 ans",
+      "items": [
+        {
+          "id": 1,
+          "domain": "num",
+          "question": "Léa a 3 billes. Elle en gagne 2. Combien de billes a-t-elle maintenant ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "4"
+            },
+            {
+              "text": "5"
+            },
+            {
+              "text": "6"
+            },
+            {
+              "text": "7"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Léa avait 3 billes et en gagne 2 de plus : 3 + 2 = 5 billes."
+        },
+        {
+          "id": 2,
+          "domain": "num",
+          "question": "Quel nombre vient après dans la suite ?",
+          "series": "1, 2, 3, 4, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "4"
+            },
+            {
+              "text": "5"
+            },
+            {
+              "text": "6"
+            },
+            {
+              "text": "7"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "On compte un par un : après 4, vient 5."
+        },
+        {
+          "id": 3,
+          "domain": "num",
+          "question": "Quel nombre vient après dans la suite ?",
+          "series": "2, 4, 6, 8, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "9"
+            },
+            {
+              "text": "10"
+            },
+            {
+              "text": "11"
+            },
+            {
+              "text": "12"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "On ajoute 2 à chaque fois : 8 + 2 = 10."
+        },
+        {
+          "id": 4,
+          "domain": "num",
+          "question": "Tom a 5 bonbons. Il en mange 2. Combien de bonbons lui reste-t-il ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "2"
+            },
+            {
+              "text": "3"
+            },
+            {
+              "text": "4"
+            },
+            {
+              "text": "5"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Tom avait 5 bonbons et en mange 2 : 5 − 2 = 3 bonbons."
+        },
+        {
+          "id": 5,
+          "domain": "num",
+          "question": "Quel nombre complète la suite ?",
+          "series": "1, 2, 4, 8, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "10"
+            },
+            {
+              "text": "12"
+            },
+            {
+              "text": "16"
+            },
+            {
+              "text": "20"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Chaque nombre est le double du précédent : 8 × 2 = 16."
+        },
+        {
+          "id": 6,
+          "domain": "ver",
+          "question": "Quel mot ne va pas avec les autres ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Chien"
+            },
+            {
+              "text": "Chat"
+            },
+            {
+              "text": "Chaise"
+            },
+            {
+              "text": "Lapin"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Chien, chat et lapin sont des animaux ; la chaise n'est pas un animal."
+        },
+        {
+          "id": 7,
+          "domain": "ver",
+          "question": "Quel est le contraire de « Grand » ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Petit"
+            },
+            {
+              "text": "Rapide"
+            },
+            {
+              "text": "Fort"
+            },
+            {
+              "text": "Joyeux"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Le contraire de « grand » est « petit »."
+        },
+        {
+          "id": 8,
+          "domain": "ver",
+          "question": "Quel mot ne va pas avec les autres ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Pomme"
+            },
+            {
+              "text": "Carotte"
+            },
+            {
+              "text": "Banane"
+            },
+            {
+              "text": "Fraise"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Pomme, banane et fraise sont des fruits ; la carotte est un légume."
+        },
+        {
+          "id": 9,
+          "domain": "ver",
+          "question": "Quel mot veut dire la même chose que « Content » ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Triste"
+            },
+            {
+              "text": "Fâché"
+            },
+            {
+              "text": "Joyeux"
+            },
+            {
+              "text": "Fatigué"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "« Content » et « joyeux » veulent dire la même chose."
+        },
+        {
+          "id": 10,
+          "domain": "ver",
+          "question": "Quel mot est un fruit ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Chien"
+            },
+            {
+              "text": "Pomme"
+            },
+            {
+              "text": "Voiture"
+            },
+            {
+              "text": "Chaise"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "La pomme est le seul fruit parmi ces mots."
+        },
+        {
+          "id": 11,
+          "domain": "spa",
+          "question": "Léa est à gauche de Tom. Qui est à droite ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Léa"
+            },
+            {
+              "text": "Tom"
+            },
+            {
+              "text": "Les deux"
+            },
+            {
+              "text": "On ne sait pas"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Si Léa est à gauche de Tom, alors Tom est forcément à droite de Léa."
+        },
+        {
+          "id": 12,
+          "domain": "spa",
+          "question": "Regarde cette suite de couleurs : Rouge, Bleu, Rouge, Bleu, ? Quelle couleur vient ensuite ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Rouge"
+            },
+            {
+              "text": "Bleu"
+            },
+            {
+              "text": "Vert"
+            },
+            {
+              "text": "Jaune"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Les couleurs alternent Rouge, Bleu, Rouge, Bleu : après Bleu, c'est Rouge."
+        },
+        {
+          "id": 13,
+          "domain": "spa",
+          "question": "Trois enfants font la queue. Nina est devant Paul. Paul est devant Léo. Qui est le premier de la queue ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Nina"
+            },
+            {
+              "text": "Paul"
+            },
+            {
+              "text": "Léo"
+            },
+            {
+              "text": "On ne sait pas"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Nina est devant Paul, qui est lui-même devant Léo : Nina est donc la première."
+        },
+        {
+          "id": 14,
+          "domain": "spa",
+          "question": "Regarde cette suite de formes : Carré, Rond, Carré, Rond, ? Quelle forme vient ensuite ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Carré"
+            },
+            {
+              "text": "Rond"
+            },
+            {
+              "text": "Triangle"
+            },
+            {
+              "text": "Étoile"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Les formes alternent Carré, Rond, Carré, Rond : après Rond, c'est Carré."
+        },
+        {
+          "id": 15,
+          "domain": "spa",
+          "question": "Max marche derrière Zoé. Zoé marche derrière Léa. Qui est devant tout le monde ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Max"
+            },
+            {
+              "text": "Zoé"
+            },
+            {
+              "text": "Léa"
+            },
+            {
+              "text": "On ne sait pas"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Léa est devant Zoé, qui est devant Max : Léa est donc devant tout le monde."
+        },
+        {
+          "id": 16,
+          "domain": "ded",
+          "question": "Tous les chats miaulent. Minou est un chat. Que peut-on dire ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Minou miaule"
+            },
+            {
+              "text": "Minou aboie"
+            },
+            {
+              "text": "Minou vole"
+            },
+            {
+              "text": "On ne sait pas"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Puisque tous les chats miaulent et que Minou est un chat, Minou miaule aussi."
+        },
+        {
+          "id": 17,
+          "domain": "ded",
+          "question": "Tous les oiseaux ont des plumes. Le moineau est un oiseau. Que peut-on dire ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Le moineau a des plumes"
+            },
+            {
+              "text": "Le moineau a des poils"
+            },
+            {
+              "text": "Le moineau nage sous l'eau"
+            },
+            {
+              "text": "On ne sait pas"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Puisque tous les oiseaux ont des plumes et que le moineau est un oiseau, il a des plumes."
+        },
+        {
+          "id": 18,
+          "domain": "ded",
+          "question": "Tous les poissons vivent dans l'eau. Nemo est un poisson. Que peut-on dire ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Nemo vit dans l'eau"
+            },
+            {
+              "text": "Nemo vit dans un arbre"
+            },
+            {
+              "text": "Nemo vole dans le ciel"
+            },
+            {
+              "text": "On ne sait pas"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Puisque tous les poissons vivent dans l'eau et que Nemo est un poisson, il vit dans l'eau."
+        },
+        {
+          "id": 19,
+          "domain": "ded",
+          "question": "Tous les élèves de la classe ont un cahier. Léo est un élève de cette classe. Que peut-on dire ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Léo a un cahier"
+            },
+            {
+              "text": "Léo n'a pas de cahier"
+            },
+            {
+              "text": "Léo a un vélo"
+            },
+            {
+              "text": "On ne sait pas"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Puisque tous les élèves de la classe ont un cahier et que Léo en fait partie, Léo a un cahier."
+        },
+        {
+          "id": 20,
+          "domain": "ded",
+          "question": "Tous les chiens ont quatre pattes. Rex est un chien. Que peut-on dire ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Rex a quatre pattes"
+            },
+            {
+              "text": "Rex a deux pattes"
+            },
+            {
+              "text": "Rex a six pattes"
+            },
+            {
+              "text": "On ne sait pas"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Puisque tous les chiens ont quatre pattes et que Rex est un chien, Rex a quatre pattes."
+        },
+        {
+          "id": 21,
+          "domain": "ind",
+          "question": "Regarde cette suite de formes : Rond, Rond, Carré, Rond, Rond, Carré, ? Quelle forme vient ensuite ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Rond"
+            },
+            {
+              "text": "Carré"
+            },
+            {
+              "text": "Triangle"
+            },
+            {
+              "text": "Étoile"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Le motif se répète toujours par groupes de trois : Rond, Rond, Carré. Après le dernier Carré, on recommence par Rond."
+        },
+        {
+          "id": 22,
+          "domain": "ind",
+          "question": "Regarde cette suite de couleurs : Jaune, Jaune, Vert, Jaune, Jaune, Vert, ? Quelle couleur vient ensuite ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Jaune"
+            },
+            {
+              "text": "Vert"
+            },
+            {
+              "text": "Bleu"
+            },
+            {
+              "text": "Rouge"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Le motif se répète toujours par groupes de trois : Jaune, Jaune, Vert. Après le dernier Vert, on recommence par Jaune."
+        },
+        {
+          "id": 23,
+          "domain": "ind",
+          "question": "Quel nombre complète la suite ?",
+          "series": "5, 10, 15, 20, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "22"
+            },
+            {
+              "text": "24"
+            },
+            {
+              "text": "25"
+            },
+            {
+              "text": "30"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "On ajoute 5 à chaque fois : 20 + 5 = 25."
+        },
+        {
+          "id": 24,
+          "domain": "ind",
+          "question": "Quelle lettre complète la suite ?",
+          "series": "A, B, C, D, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "E"
+            },
+            {
+              "text": "F"
+            },
+            {
+              "text": "D"
+            },
+            {
+              "text": "G"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Ce sont les lettres de l'alphabet dans l'ordre : après D vient E."
+        },
+        {
+          "id": 25,
+          "domain": "ind",
+          "question": "Dans ce jeu, chaque nombre a un ami qui vaut le double : 2 va avec 4, 3 va avec 6, 5 va avec 10. Quel nombre va avec 4 ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "6"
+            },
+            {
+              "text": "7"
+            },
+            {
+              "text": "8"
+            },
+            {
+              "text": "9"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "La règle est de multiplier par 2 : le double de 4 est 8."
+        },
+        {
+          "id": 26,
+          "domain": "att",
+          "question": "Combien de fois la lettre « a » apparaît-elle dans le mot « banana » ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "2"
+            },
+            {
+              "text": "3"
+            },
+            {
+              "text": "4"
+            },
+            {
+              "text": "5"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "b-a-n-a-n-a : la lettre « a » apparaît 3 fois."
+        },
+        {
+          "id": 27,
+          "domain": "att",
+          "question": "Regarde cette liste de formes : rond, rond, étoile, rond, étoile, rond. Combien y a-t-il de ronds ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "3"
+            },
+            {
+              "text": "4"
+            },
+            {
+              "text": "5"
+            },
+            {
+              "text": "6"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "En comptant chaque rond un par un dans la liste, on en trouve 4."
+        },
+        {
+          "id": 28,
+          "domain": "att",
+          "question": "Parmi ces mots, lequel est écrit exactement comme « VELO » ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "VELO"
+            },
+            {
+              "text": "VELOS"
+            },
+            {
+              "text": "EVLO"
+            },
+            {
+              "text": "OLEV"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Les autres mots ont des lettres ajoutées ou mélangées ; seul « VELO » (1re option) est écrit pareil."
+        },
+        {
+          "id": 29,
+          "domain": "att",
+          "question": "Combien de mots commencent par la lettre « b » dans cette phrase : « Le petit bébé boit du lait avec sa maman. » ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "1"
+            },
+            {
+              "text": "2"
+            },
+            {
+              "text": "3"
+            },
+            {
+              "text": "4"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "« bébé » et « boit » commencent tous les deux par « b », soit 2 mots."
+        },
+        {
+          "id": 30,
+          "domain": "att",
+          "question": "Regarde cette liste de formes : carré, rond, carré, carré, rond, carré. Combien y a-t-il de carrés ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "3"
+            },
+            {
+              "text": "4"
+            },
+            {
+              "text": "5"
+            },
+            {
+              "text": "6"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "En comptant chaque carré un par un dans la liste, on en trouve 4."
+        },
+        {
+          "id": 31,
+          "domain": "org",
+          "question": "Après l'hiver, quelle saison vient ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Été"
+            },
+            {
+              "text": "Automne"
+            },
+            {
+              "text": "Printemps"
+            },
+            {
+              "text": "Hiver"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "L'ordre des saisons est printemps, été, automne, hiver : après l'hiver, le printemps revient."
+        },
+        {
+          "id": 32,
+          "domain": "org",
+          "question": "Pour se brosser les dents, que fait-on en premier ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Mettre le dentifrice sur la brosse"
+            },
+            {
+              "text": "Se rincer la bouche"
+            },
+            {
+              "text": "Ranger la brosse"
+            },
+            {
+              "text": "Se sécher les mains"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Avant de brosser ses dents, il faut d'abord mettre le dentifrice sur la brosse."
+        },
+        {
+          "id": 33,
+          "domain": "org",
+          "question": "Une fourmi, un chat et un éléphant : lequel est le plus grand ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "La fourmi"
+            },
+            {
+              "text": "Le chat"
+            },
+            {
+              "text": "L'éléphant"
+            },
+            {
+              "text": "Ils sont pareils"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "L'éléphant est bien plus grand qu'un chat, lui-même plus grand qu'une fourmi."
+        },
+        {
+          "id": 34,
+          "domain": "org",
+          "question": "Quel jour vient juste après le lundi ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Dimanche"
+            },
+            {
+              "text": "Mardi"
+            },
+            {
+              "text": "Mercredi"
+            },
+            {
+              "text": "Vendredi"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Dans la semaine, le mardi vient juste après le lundi."
+        },
+        {
+          "id": 35,
+          "domain": "org",
+          "question": "Pour faire un gâteau, que fait-on en premier ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Manger le gâteau"
+            },
+            {
+              "text": "Préparer les ingrédients"
+            },
+            {
+              "text": "Le mettre au four"
+            },
+            {
+              "text": "Le décorer"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Avant de cuisiner, il faut d'abord préparer les ingrédients."
+        },
+        {
+          "id": 36,
+          "domain": "mec",
+          "question": "Si tu lâches une balle en l'air, où tombe-t-elle ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Elle monte dans le ciel"
+            },
+            {
+              "text": "Elle tombe par terre"
+            },
+            {
+              "text": "Elle reste en l'air"
+            },
+            {
+              "text": "Elle vole"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Quand on lâche un objet, il tombe toujours vers le sol."
+        },
+        {
+          "id": 37,
+          "domain": "mec",
+          "question": "Qu'est-ce qui flotte sur l'eau ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Une pierre"
+            },
+            {
+              "text": "Un bateau en bois"
+            },
+            {
+              "text": "Une pièce de monnaie"
+            },
+            {
+              "text": "Un clou"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Le bois est léger et flotte sur l'eau, contrairement à la pierre, la pièce ou le clou qui coulent."
+        },
+        {
+          "id": 38,
+          "domain": "mec",
+          "question": "Si tu pousses une balançoire, que se passe-t-il ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Elle reste immobile"
+            },
+            {
+              "text": "Elle bouge d'avant en arrière"
+            },
+            {
+              "text": "Elle disparaît"
+            },
+            {
+              "text": "Elle devient plus lourde"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Quand on pousse une balançoire, elle se met à bouger d'avant en arrière."
+        },
+        {
+          "id": 39,
+          "domain": "mec",
+          "question": "Un aimant attire...",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Un morceau de bois"
+            },
+            {
+              "text": "Un clou en métal"
+            },
+            {
+              "text": "Une feuille de papier"
+            },
+            {
+              "text": "Un ballon"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Un aimant attire les objets en métal, comme un clou."
+        },
+        {
+          "id": 40,
+          "domain": "mec",
+          "question": "Si tu mets un glaçon au soleil, que se passe-t-il ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Il devient plus dur"
+            },
+            {
+              "text": "Il fond"
+            },
+            {
+              "text": "Il grossit"
+            },
+            {
+              "text": "Il ne change pas"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "La chaleur du soleil fait fondre la glace, qui se transforme en eau."
+        }
+      ]
+    },
+    "9-11": {
+      "label": "9-11 ans",
+      "ageRange": "9-11 ans",
+      "items": [
+        {
+          "id": 1,
+          "domain": "num",
+          "question": "Quel nombre complète la suite ?",
+          "series": "3, 6, 9, 12, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "14"
+            },
+            {
+              "text": "15"
+            },
+            {
+              "text": "16"
+            },
+            {
+              "text": "18"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Chaque nombre augmente de 3 : 3+3=6, 6+3=9, 9+3=12, 12+3=15."
+        },
+        {
+          "id": 2,
+          "domain": "num",
+          "question": "Quel nombre complète la suite ?",
+          "series": "5, 10, 20, 40, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "60"
+            },
+            {
+              "text": "70"
+            },
+            {
+              "text": "80"
+            },
+            {
+              "text": "90"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Chaque nombre double le précédent : 5×2=10, 10×2=20, 20×2=40, 40×2=80."
+        },
+        {
+          "id": 3,
+          "domain": "num",
+          "question": "Léa achète 3 paquets de 4 bonbons. Elle en mange 5. Combien lui en reste-t-il ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "5"
+            },
+            {
+              "text": "6"
+            },
+            {
+              "text": "7"
+            },
+            {
+              "text": "8"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "3 paquets de 4 bonbons font 3×4=12 bonbons. Après en avoir mangé 5, il en reste 12−5=7."
+        },
+        {
+          "id": 4,
+          "domain": "num",
+          "question": "Un gâteau est coupé en 4 parts égales. Tom mange une part. Quelle fraction du gâteau reste-t-il ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "1/4"
+            },
+            {
+              "text": "1/2"
+            },
+            {
+              "text": "3/4"
+            },
+            {
+              "text": "2/4"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Il y a 4 parts en tout, Tom en mange 1, donc il en reste 3 sur 4, c'est-à-dire 3/4 du gâteau."
+        },
+        {
+          "id": 5,
+          "domain": "num",
+          "question": "24 billes sont partagées également entre 6 enfants. Combien de billes reçoit chaque enfant ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "3"
+            },
+            {
+              "text": "4"
+            },
+            {
+              "text": "5"
+            },
+            {
+              "text": "6"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "24 billes partagées entre 6 enfants : 24 ÷ 6 = 4 billes par enfant."
+        },
+        {
+          "id": 6,
+          "domain": "ver",
+          "question": "Chat est à Chaton ce que Chien est à …",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Chiot"
+            },
+            {
+              "text": "Louveteau"
+            },
+            {
+              "text": "Poussin"
+            },
+            {
+              "text": "Veau"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Un chaton est le petit du chat, tout comme un chiot est le petit du chien."
+        },
+        {
+          "id": 7,
+          "domain": "ver",
+          "question": "Quel mot n'est pas synonyme des autres ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Content"
+            },
+            {
+              "text": "Joyeux"
+            },
+            {
+              "text": "Triste"
+            },
+            {
+              "text": "Heureux"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Content, joyeux et heureux veulent dire la même chose ; triste est le contraire."
+        },
+        {
+          "id": 8,
+          "domain": "ver",
+          "question": "Grand est à Petit ce que Rapide est à …",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Lent"
+            },
+            {
+              "text": "Vite"
+            },
+            {
+              "text": "Fort"
+            },
+            {
+              "text": "Haut"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Grand et petit sont opposés, tout comme rapide et lent."
+        },
+        {
+          "id": 9,
+          "domain": "ver",
+          "question": "Quel mot n'appartient pas à la même famille que les autres ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Pomme"
+            },
+            {
+              "text": "Poire"
+            },
+            {
+              "text": "Banane"
+            },
+            {
+              "text": "Carotte"
+            }
+          ],
+          "correctIndex": 3,
+          "explanation": "Pomme, poire et banane sont des fruits ; la carotte est un légume."
+        },
+        {
+          "id": 10,
+          "domain": "ver",
+          "question": "Que signifie le mot « minuscule » ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Très grand"
+            },
+            {
+              "text": "Très petit"
+            },
+            {
+              "text": "Très rapide"
+            },
+            {
+              "text": "Très lourd"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "« Minuscule » signifie tout petit, minuscule."
+        },
+        {
+          "id": 11,
+          "domain": "spa",
+          "question": "Une flèche pointe vers le haut. Tu la fais tourner d'un quart de tour dans le sens des aiguilles d'une montre. Vers quelle direction pointe-t-elle maintenant ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Bas"
+            },
+            {
+              "text": "Gauche"
+            },
+            {
+              "text": "Droite"
+            },
+            {
+              "text": "Haut"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Un quart de tour dans le sens des aiguilles d'une montre fait passer une flèche du haut vers la droite."
+        },
+        {
+          "id": 12,
+          "domain": "spa",
+          "question": "Trois amis sont assis sur un banc. Léa est à gauche de Sam. Sam est à gauche de Noa. Qui est assis au milieu ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Léa"
+            },
+            {
+              "text": "Sam"
+            },
+            {
+              "text": "Noa"
+            },
+            {
+              "text": "Impossible à savoir"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "L'ordre de gauche à droite est Léa, Sam, Noa : Sam est donc au milieu."
+        },
+        {
+          "id": 13,
+          "domain": "spa",
+          "question": "Une figure est symétrique par rapport à une ligne verticale. Un triangle bleu se trouve à 3 cases à gauche de cette ligne. Où doit se trouver son reflet ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "3 cases à droite de la ligne, à la même hauteur"
+            },
+            {
+              "text": "3 cases à gauche de la ligne, plus bas"
+            },
+            {
+              "text": "3 cases à droite de la ligne, plus haut"
+            },
+            {
+              "text": "Sur la ligne elle-même"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Dans une symétrie par rapport à une ligne verticale, le reflet est à la même distance de l'autre côté de la ligne, à la même hauteur."
+        },
+        {
+          "id": 14,
+          "domain": "spa",
+          "question": "Un carré a un point rouge collé sur son côté du haut. Tu tournes le carré d'un demi-tour (180°). Sur quel côté se trouve maintenant le point rouge ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Haut"
+            },
+            {
+              "text": "Bas"
+            },
+            {
+              "text": "Gauche"
+            },
+            {
+              "text": "Droite"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Un demi-tour (180°) fait passer le côté du haut vers le côté du bas."
+        },
+        {
+          "id": 15,
+          "domain": "spa",
+          "question": "Dans une rangée de 5 cases numérotées de 1 à 5 de gauche à droite, le chat est dans la case juste à droite du chien. Le chien est dans la case 2. Dans quelle case est le chat ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "1"
+            },
+            {
+              "text": "2"
+            },
+            {
+              "text": "3"
+            },
+            {
+              "text": "4"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Le chien est en case 2, donc la case juste à droite est la case 3, où se trouve le chat."
+        },
+        {
+          "id": 16,
+          "domain": "ded",
+          "question": "Léo est plus grand que Max. Max est plus grand que Nino. Qui est le plus petit des trois ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Léo"
+            },
+            {
+              "text": "Max"
+            },
+            {
+              "text": "Nino"
+            },
+            {
+              "text": "Impossible à savoir"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Léo est plus grand que Max, qui est plus grand que Nino : Nino est donc le plus petit des trois."
+        },
+        {
+          "id": 17,
+          "domain": "ded",
+          "question": "Tous les chiens aboient. Rex est un chien. Que peut-on affirmer avec certitude ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Rex aboie"
+            },
+            {
+              "text": "Rex miaule"
+            },
+            {
+              "text": "Rex n'aboie pas"
+            },
+            {
+              "text": "On ne sait pas"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Puisque tous les chiens aboient et que Rex est un chien, alors Rex aboie."
+        },
+        {
+          "id": 18,
+          "domain": "ded",
+          "question": "Trois filles, Anna, Bea et Cléo, ont chacune un âge différent parmi 8, 9 et 10 ans. Anna n'a pas 10 ans. Bea n'a pas 8 ans. Cléo est plus âgée que Bea. Quel âge a Anna ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "8"
+            },
+            {
+              "text": "9"
+            },
+            {
+              "text": "10"
+            },
+            {
+              "text": "Impossible à savoir"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Bea n'a pas 8 ans, et Cléo est plus âgée que Bea : si Bea avait 10 ans, personne ne pourrait être plus âgé, donc Bea a 9 ans et Cléo a 10 ans. Il reste 8 ans pour Anna, ce qui respecte bien « Anna n'a pas 10 ans »."
+        },
+        {
+          "id": 19,
+          "domain": "ded",
+          "question": "Si un animal est un poisson, alors il vit dans l'eau. Le saumon est un poisson. Que peut-on affirmer avec certitude ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Le saumon vit dans l'eau"
+            },
+            {
+              "text": "Le saumon vit sur terre"
+            },
+            {
+              "text": "Le saumon ne vit pas dans l'eau"
+            },
+            {
+              "text": "On ne sait pas"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Tout poisson vit dans l'eau, et le saumon est un poisson : donc le saumon vit dans l'eau."
+        },
+        {
+          "id": 20,
+          "domain": "ded",
+          "question": "Quatre amis font la queue. Sacha est juste derrière Tom. Tom est juste derrière Mia. Léo est le premier de la queue. Quel est l'ordre de la queue, du premier au dernier ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Léo, Mia, Tom, Sacha"
+            },
+            {
+              "text": "Mia, Léo, Tom, Sacha"
+            },
+            {
+              "text": "Léo, Tom, Mia, Sacha"
+            },
+            {
+              "text": "Sacha, Tom, Mia, Léo"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Mia précède immédiatement Tom, qui précède immédiatement Sacha, et Léo est premier : l'ordre est donc Léo, Mia, Tom, Sacha."
+        },
+        {
+          "id": 21,
+          "domain": "ind",
+          "question": "Quelle lettre complète la suite ?",
+          "series": "B, D, F, H, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "I"
+            },
+            {
+              "text": "J"
+            },
+            {
+              "text": "K"
+            },
+            {
+              "text": "H"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "On saute une lettre à chaque fois (+2 dans l'alphabet) : B, D, F, H, puis J."
+        },
+        {
+          "id": 22,
+          "domain": "ind",
+          "question": "Quel nombre complète la suite ?",
+          "series": "1, 2, 4, 8, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "12"
+            },
+            {
+              "text": "14"
+            },
+            {
+              "text": "16"
+            },
+            {
+              "text": "18"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Chaque nombre double le précédent : 1×2=2, 2×2=4, 4×2=8, 8×2=16."
+        },
+        {
+          "id": 23,
+          "domain": "ind",
+          "question": "Quelle est la prochaine figure de cette suite ?",
+          "series": "rond, carré, rond, carré, rond, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "rond"
+            },
+            {
+              "text": "carré"
+            },
+            {
+              "text": "triangle"
+            },
+            {
+              "text": "losange"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "La suite alterne rond puis carré : après « rond », c'est toujours « carré »."
+        },
+        {
+          "id": 24,
+          "domain": "ind",
+          "question": "Une règle relie deux nombres : (2, 4) la respecte, (3, 6) la respecte, (5, 10) la respecte. Quel nombre correspond à 7 selon cette règle ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "9"
+            },
+            {
+              "text": "12"
+            },
+            {
+              "text": "14"
+            },
+            {
+              "text": "21"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "La règle est « le deuxième nombre est le double du premier » (2→4, 3→6, 5→10). Donc 7 donne 7×2=14."
+        },
+        {
+          "id": 25,
+          "domain": "ind",
+          "question": "Quel jour complète la suite ?",
+          "series": "Lundi, Mercredi, Vendredi, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Samedi"
+            },
+            {
+              "text": "Dimanche"
+            },
+            {
+              "text": "Mardi"
+            },
+            {
+              "text": "Jeudi"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "On saute un jour à chaque fois : lundi, (mardi), mercredi, (jeudi), vendredi, (samedi), dimanche."
+        },
+        {
+          "id": 26,
+          "domain": "att",
+          "question": "Compte le nombre de fois où la lettre « e » apparaît dans ce mot : « anniversaire ».",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "1"
+            },
+            {
+              "text": "2"
+            },
+            {
+              "text": "3"
+            },
+            {
+              "text": "4"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "a-n-n-i-v-e-r-s-a-i-r-e : la lettre « e » apparaît 2 fois."
+        },
+        {
+          "id": 27,
+          "domain": "att",
+          "question": "Laquelle de ces suites est strictement identique à « 3B7K9 » ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "3B7Q9"
+            },
+            {
+              "text": "3B7K9"
+            },
+            {
+              "text": "387K9"
+            },
+            {
+              "text": "3B7K6"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Les trois autres suites changent une lettre ou un chiffre ; seule « 3B7K9 » (2e option) est identique."
+        },
+        {
+          "id": 28,
+          "domain": "att",
+          "question": "Combien de fois le chiffre « 2 » apparaît-il dans cette liste : 12, 22, 23, 24, 2, 21 ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "5"
+            },
+            {
+              "text": "6"
+            },
+            {
+              "text": "7"
+            },
+            {
+              "text": "8"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "12(1) + 22(2) + 23(1) + 24(1) + 2(1) + 21(1) = 7 occurrences du chiffre 2."
+        },
+        {
+          "id": 29,
+          "domain": "att",
+          "question": "Dans la phrase suivante, combien de mots commencent par la lettre « c » : « Le chat curieux court après le chien car il a vu une souris » ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "3"
+            },
+            {
+              "text": "4"
+            },
+            {
+              "text": "5"
+            },
+            {
+              "text": "6"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Les mots « chat », « curieux », « court » et « car » commencent par « c » : cela fait 4 mots."
+        },
+        {
+          "id": 30,
+          "domain": "att",
+          "question": "Dans cette série, combien de nombres sont des multiples de 4 : 8, 10, 12, 15, 16, 20, 22 ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "3"
+            },
+            {
+              "text": "4"
+            },
+            {
+              "text": "5"
+            },
+            {
+              "text": "6"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Les multiples de 4 dans la liste sont 8, 12, 16 et 20, soit 4 nombres."
+        },
+        {
+          "id": 31,
+          "domain": "org",
+          "question": "Pour préparer un sandwich, il faut faire ces étapes dans le bon ordre : couper le pain, tartiner le beurre, ajouter le jambon, fermer le sandwich. Quelle étape vient juste après « tartiner le beurre » ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Couper le pain"
+            },
+            {
+              "text": "Ajouter le jambon"
+            },
+            {
+              "text": "Fermer le sandwich"
+            },
+            {
+              "text": "Manger le sandwich"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Dans l'ordre donné, l'étape juste après « tartiner le beurre » est « ajouter le jambon »."
+        },
+        {
+          "id": 32,
+          "domain": "org",
+          "question": "On range des fruits d'abord par couleur (rouge avant vert), puis par taille (petite avant grande) : une pomme rouge petite, une pomme rouge grande, et une poire verte petite. Lequel de ces fruits est classé en dernier ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "La pomme rouge petite"
+            },
+            {
+              "text": "La pomme rouge grande"
+            },
+            {
+              "text": "La poire verte petite"
+            },
+            {
+              "text": "Impossible à dire"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Le rouge passe avant le vert quelle que soit la taille : les deux pommes rouges (petite puis grande) viennent avant la poire verte, qui est donc classée en dernier."
+        },
+        {
+          "id": 33,
+          "domain": "org",
+          "question": "Voici les étapes pour planter une graine : creuser un trou, arroser, placer la graine, recouvrir de terre. Dans quel ordre faut-il les faire ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Creuser, placer la graine, recouvrir, arroser"
+            },
+            {
+              "text": "Arroser, creuser, placer la graine, recouvrir"
+            },
+            {
+              "text": "Creuser, arroser, placer la graine, recouvrir"
+            },
+            {
+              "text": "Placer la graine, creuser, recouvrir, arroser"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "On creuse d'abord le trou, on y place la graine, on recouvre de terre, puis on arrose."
+        },
+        {
+          "id": 34,
+          "domain": "org",
+          "question": "Une classe range 24 livres dans des boîtes de 6 livres chacune. Combien de boîtes sont nécessaires ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "3"
+            },
+            {
+              "text": "4"
+            },
+            {
+              "text": "5"
+            },
+            {
+              "text": "6"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "24 livres à ranger par boîtes de 6 : 24 ÷ 6 = 4 boîtes."
+        },
+        {
+          "id": 35,
+          "domain": "org",
+          "question": "Trois enfants doivent ranger leurs jouets du plus petit au plus grand nombre de jouets : Théo a 5 jouets, Sofia a 8 jouets, Nael a 3 jouets. Qui doit ranger en deuxième ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Nael"
+            },
+            {
+              "text": "Théo"
+            },
+            {
+              "text": "Sofia"
+            },
+            {
+              "text": "Impossible à dire"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Du plus petit au plus grand nombre de jouets : Nael (3), Théo (5), Sofia (8). Théo est donc le deuxième."
+        },
+        {
+          "id": 36,
+          "domain": "mec",
+          "question": "Sur une balançoire (bascule), un enfant lourd s'assoit près du centre. Où doit s'asseoir un enfant plus léger pour équilibrer la bascule ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Près du centre"
+            },
+            {
+              "text": "Loin du centre"
+            },
+            {
+              "text": "Au centre exact"
+            },
+            {
+              "text": "Cela ne change rien"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Un enfant plus léger doit s'éloigner du centre pour compenser son poids plus faible et équilibrer la bascule."
+        },
+        {
+          "id": 37,
+          "domain": "mec",
+          "question": "Un objet en bois flotte sur l'eau, mais un objet en fer de même taille coule. Pourquoi ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Le fer est plus lourd que le bois à taille égale"
+            },
+            {
+              "text": "Le bois est magnétique"
+            },
+            {
+              "text": "Le fer est plus grand"
+            },
+            {
+              "text": "L'eau repousse le fer"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Pour une même taille, le fer pèse bien plus lourd que le bois : c'est pour cela qu'il coule alors que le bois flotte."
+        },
+        {
+          "id": 38,
+          "domain": "mec",
+          "question": "Deux roues dentées (engrenages) sont collées l'une à l'autre et tournent ensemble. Si la première tourne vers la droite, dans quel sens tourne la seconde ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Vers la droite (même sens)"
+            },
+            {
+              "text": "Vers la gauche (sens opposé)"
+            },
+            {
+              "text": "Elle ne tourne pas"
+            },
+            {
+              "text": "Cela dépend de sa couleur"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Deux engrenages en prise tournent toujours dans des sens opposés."
+        },
+        {
+          "id": 39,
+          "domain": "mec",
+          "question": "Pour soulever un sac lourd, est-il plus facile de tirer directement sur une corde, ou d'utiliser une poulie qui divise l'effort par deux ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Tirer directement"
+            },
+            {
+              "text": "Utiliser la poulie qui divise l'effort par deux"
+            },
+            {
+              "text": "Cela demande le même effort"
+            },
+            {
+              "text": "Cela dépend du sac"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Une poulie qui divise l'effort par deux rend le sac plus facile à soulever qu'en tirant directement."
+        },
+        {
+          "id": 40,
+          "domain": "mec",
+          "question": "Pourquoi est-il plus facile de couper du pain avec un couteau bien aiguisé qu'avec un couteau émoussé (pas pointu) ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Le couteau aiguisé est plus lourd"
+            },
+            {
+              "text": "Le tranchant fin concentre la force sur une petite surface"
+            },
+            {
+              "text": "Le couteau émoussé est magnétique"
+            },
+            {
+              "text": "Cela ne fait aucune différence"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Un tranchant fin concentre toute la force sur une toute petite surface, ce qui coupe plus facilement."
+        }
+      ]
+    },
+    "12-14": {
+      "label": "12-14 ans",
+      "ageRange": "12-14 ans",
+      "items": [
+        {
+          "id": 1,
+          "domain": "num",
+          "question": "Quel nombre complète la suite ?",
+          "series": "4, 9, 14, 19, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "24"
+            },
+            {
+              "text": "22"
+            },
+            {
+              "text": "23"
+            },
+            {
+              "text": "26"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Chaque terme augmente de 5 : 4+5=9, 9+5=14, 14+5=19, 19+5=24."
+        },
+        {
+          "id": 2,
+          "domain": "num",
+          "question": "Un pull coûte 40 €. Il est soldé avec une réduction de 10 %. Quel est son nouveau prix ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "34 €"
+            },
+            {
+              "text": "36 €"
+            },
+            {
+              "text": "35 €"
+            },
+            {
+              "text": "38 €"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "10 % de 40 € = 4 €. Le nouveau prix est 40 − 4 = 36 €."
+        },
+        {
+          "id": 3,
+          "domain": "num",
+          "question": "Quel nombre complète la suite ?",
+          "series": "2, 6, 18, 54, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "108"
+            },
+            {
+              "text": "144"
+            },
+            {
+              "text": "162"
+            },
+            {
+              "text": "180"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Chaque terme est multiplié par 3 : 2×3=6, 6×3=18, 18×3=54, 54×3=162."
+        },
+        {
+          "id": 4,
+          "domain": "num",
+          "question": "Une recette pour 4 personnes utilise 300 g de farine. Quelle quantité de farine faut-il pour 6 personnes, en gardant les mêmes proportions ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "400 g"
+            },
+            {
+              "text": "425 g"
+            },
+            {
+              "text": "475 g"
+            },
+            {
+              "text": "450 g"
+            }
+          ],
+          "correctIndex": 3,
+          "explanation": "300 g pour 4 personnes, soit 75 g par personne. Pour 6 personnes : 75 × 6 = 450 g."
+        },
+        {
+          "id": 5,
+          "domain": "num",
+          "question": "Un livre coûte 25 €. Son prix augmente d'abord de 20 %, puis est soldé de 20 %. Quel est son prix final ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "24 €"
+            },
+            {
+              "text": "23 €"
+            },
+            {
+              "text": "25 €"
+            },
+            {
+              "text": "26 €"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "25 × 1,20 = 30 €, puis 30 × 0,80 = 24 €. Les deux pourcentages ne s'annulent pas car ils portent sur des montants différents."
+        },
+        {
+          "id": 6,
+          "domain": "ver",
+          "question": "Médecin est à Hôpital ce que Professeur est à …",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Craie"
+            },
+            {
+              "text": "École"
+            },
+            {
+              "text": "Élève"
+            },
+            {
+              "text": "Classe"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Un médecin exerce son métier dans un hôpital, tout comme un professeur exerce le sien dans une école : c'est l'institution où il travaille, pas un objet (craie), une personne (élève) ou une simple salle (classe)."
+        },
+        {
+          "id": 7,
+          "domain": "ver",
+          "question": "Quel mot n'appartient pas à la même famille que les autres ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Enthousiaste"
+            },
+            {
+              "text": "Ravi"
+            },
+            {
+              "text": "Épuisé"
+            },
+            {
+              "text": "Joyeux"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Enthousiaste, ravi et joyeux expriment tous une forme de joie ; épuisé décrit la fatigue, sans rapport avec ce sentiment."
+        },
+        {
+          "id": 8,
+          "domain": "ver",
+          "question": "Le mot « laconique » signifie :",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Bavard"
+            },
+            {
+              "text": "Confus"
+            },
+            {
+              "text": "Bruyant"
+            },
+            {
+              "text": "Concis"
+            }
+          ],
+          "correctIndex": 3,
+          "explanation": "Laconique signifie « qui s'exprime en peu de mots », c'est-à-dire concis."
+        },
+        {
+          "id": 9,
+          "domain": "ver",
+          "question": "Quel est le contraire de « prudent » ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Imprudent"
+            },
+            {
+              "text": "Timide"
+            },
+            {
+              "text": "Sage"
+            },
+            {
+              "text": "Calme"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Timide, sage et calme ne s'opposent pas directement à prudent ; seul imprudent en est le contraire précis."
+        },
+        {
+          "id": 10,
+          "domain": "ver",
+          "question": "Graine est à Fleur ce qu'Œuf est à …",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Poule"
+            },
+            {
+              "text": "Poussin"
+            },
+            {
+              "text": "Oiseau"
+            },
+            {
+              "text": "Nid"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Une graine se transforme en fleur, tout comme un œuf se transforme en poussin : c'est le résultat direct de leur développement."
+        },
+        {
+          "id": 11,
+          "domain": "spa",
+          "question": "Tu es face à une rangée de commerces. Le magasin de vêtements est immédiatement à droite de la boulangerie. La pharmacie est immédiatement à gauche de la boulangerie. La librairie est à l'extrême droite, juste après le magasin de vêtements. Quel est l'ordre des commerces de gauche à droite ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Boulangerie, Pharmacie, Magasin de vêtements, Librairie"
+            },
+            {
+              "text": "Pharmacie, Magasin de vêtements, Boulangerie, Librairie"
+            },
+            {
+              "text": "Pharmacie, Boulangerie, Magasin de vêtements, Librairie"
+            },
+            {
+              "text": "Librairie, Pharmacie, Boulangerie, Magasin de vêtements"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "La pharmacie est juste avant la boulangerie, le magasin de vêtements juste après, et la librairie ferme la rangée : Pharmacie, Boulangerie, Magasin de vêtements, Librairie."
+        },
+        {
+          "id": 12,
+          "domain": "spa",
+          "question": "Une flèche pointe vers le Nord. Tu la fais pivoter de 90° dans le sens des aiguilles d'une montre, puis encore de 180°. Dans quelle direction pointe-t-elle finalement ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Nord"
+            },
+            {
+              "text": "Sud"
+            },
+            {
+              "text": "Est"
+            },
+            {
+              "text": "Ouest"
+            }
+          ],
+          "correctIndex": 3,
+          "explanation": "Nord + 90° (sens horaire) = Est. Est + 180° = Ouest."
+        },
+        {
+          "id": 13,
+          "domain": "spa",
+          "question": "Le mot « BOIS » est écrit sur une vitre. Si tu le regardes en transparence depuis l'autre côté de la vitre, quelle lettre se retrouve à l'extrême droite ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "B"
+            },
+            {
+              "text": "S"
+            },
+            {
+              "text": "I"
+            },
+            {
+              "text": "O"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Vu depuis l'autre côté de la vitre, l'ordre des lettres est inversé de gauche à droite : ce qui était la première lettre (B) devient la dernière, donc l'extrême droite."
+        },
+        {
+          "id": 14,
+          "domain": "spa",
+          "question": "Sur une table, le livre rouge est posé sur le livre bleu. Le livre vert est sous le livre bleu. Le livre jaune est au-dessus du livre rouge. En partant du bas de la pile, quel est l'ordre des livres ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Bleu, Vert, Rouge, Jaune"
+            },
+            {
+              "text": "Vert, Bleu, Rouge, Jaune"
+            },
+            {
+              "text": "Vert, Rouge, Bleu, Jaune"
+            },
+            {
+              "text": "Jaune, Rouge, Bleu, Vert"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Le vert est tout en bas, puis le bleu, puis le rouge posé dessus, puis le jaune au sommet : Vert, Bleu, Rouge, Jaune."
+        },
+        {
+          "id": 15,
+          "domain": "spa",
+          "question": "Tu marches 10 mètres vers le Nord, puis tu tournes à droite et marches 10 mètres, puis tu tournes encore à droite et marches 10 mètres. Dans quelle direction dois-tu marcher pour revenir directement à ton point de départ en ligne droite ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Nord"
+            },
+            {
+              "text": "Sud"
+            },
+            {
+              "text": "Ouest"
+            },
+            {
+              "text": "Est"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Tu marches Nord puis Est puis Sud : les déplacements Nord et Sud s'annulent, il ne reste qu'un déplacement de 10 m vers l'Est. Pour revenir, il faut donc marcher vers l'Ouest."
+        },
+        {
+          "id": 16,
+          "domain": "ded",
+          "question": "Tous les pommiers sont des arbres fruitiers. Certains arbres fruitiers perdent leurs feuilles en hiver. Que peut-on affirmer avec certitude au sujet des pommiers ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Tous les pommiers perdent leurs feuilles en hiver"
+            },
+            {
+              "text": "Certains pommiers perdent leurs feuilles en hiver"
+            },
+            {
+              "text": "Aucun pommier ne perd ses feuilles en hiver"
+            },
+            {
+              "text": "On ne peut rien affirmer avec certitude"
+            }
+          ],
+          "correctIndex": 3,
+          "explanation": "Rien n'indique que les arbres fruitiers qui perdent leurs feuilles sont justement des pommiers : cette information peut concerner d'autres arbres fruitiers uniquement."
+        },
+        {
+          "id": 17,
+          "domain": "ded",
+          "question": "Si un animal est un mammifère marin, alors il respire de l'air. Le dauphin respire de l'air. Peut-on en conclure que le dauphin est un mammifère marin ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "On ne peut pas le conclure avec certitude"
+            },
+            {
+              "text": "Oui, certainement"
+            },
+            {
+              "text": "Non, certainement pas"
+            },
+            {
+              "text": "Le dauphin est un poisson"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Respirer de l'air ne suffit pas à prouver qu'on est un mammifère marin : d'autres animaux respirent de l'air sans en être. On ne peut donc rien conclure avec certitude à partir de cette seule information."
+        },
+        {
+          "id": 18,
+          "domain": "ded",
+          "question": "Trois amis, Emma, Lucas et Zoé, possèdent chacun un animal différent : un chat, un chien ou un poisson. Lucas n'a ni chien ni poisson. Emma n'a pas de chien. Quel animal a chacun ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Emma-chat, Lucas-poisson, Zoé-chien"
+            },
+            {
+              "text": "Emma-poisson, Lucas-chat, Zoé-chien"
+            },
+            {
+              "text": "Emma-poisson, Lucas-chien, Zoé-chat"
+            },
+            {
+              "text": "Emma-chien, Lucas-chat, Zoé-poisson"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Lucas n'a ni chien ni poisson, donc il a le chat. Emma n'a pas de chien et le chat est déjà pris par Lucas, donc elle a le poisson. Il reste le chien pour Zoé."
+        },
+        {
+          "id": 19,
+          "domain": "ded",
+          "question": "Quatre élèves, Alice, Ben, Chloé et Dan, ont chacun une note différente parmi 12, 14, 16 et 18. Alice a une meilleure note que Ben. Chloé a la meilleure note de tous. Dan a une moins bonne note qu'Alice mais une meilleure note que Ben. Quel est l'ordre des notes, de la meilleure à la moins bonne ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Chloé, Dan, Alice, Ben"
+            },
+            {
+              "text": "Alice, Chloé, Dan, Ben"
+            },
+            {
+              "text": "Chloé, Alice, Dan, Ben"
+            },
+            {
+              "text": "Chloé, Alice, Ben, Dan"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Chloé a la meilleure note. Comme Alice est meilleure que Dan, qui est lui-même meilleur que Ben, l'ordre complet est : Chloé, Alice, Dan, Ben."
+        },
+        {
+          "id": 20,
+          "domain": "ded",
+          "question": "Si Léo fait ses devoirs, alors il a le droit de jouer aux jeux vidéo. Or Léo n'a pas le droit de jouer aux jeux vidéo. Que peut-on en conclure avec certitude ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Léo a fait ses devoirs"
+            },
+            {
+              "text": "On ne peut rien conclure"
+            },
+            {
+              "text": "Léo joue quand même aux jeux vidéo"
+            },
+            {
+              "text": "Léo n'a pas fait ses devoirs"
+            }
+          ],
+          "correctIndex": 3,
+          "explanation": "Par contraposée : si devoirs faits implique droit de jouer, alors l'absence de ce droit implique que les devoirs n'ont pas été faits."
+        },
+        {
+          "id": 21,
+          "domain": "ind",
+          "question": "Quel nombre complète la suite ?",
+          "series": "2, 4, 7, 11, 16, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "22"
+            },
+            {
+              "text": "20"
+            },
+            {
+              "text": "21"
+            },
+            {
+              "text": "24"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "L'écart entre les termes augmente de 1 à chaque fois : +2, +3, +4, +5, puis +6. 16 + 6 = 22."
+        },
+        {
+          "id": 22,
+          "domain": "ind",
+          "question": "Quelle lettre complète la suite ? (deux règles alternent selon la position)",
+          "series": "B, D, C, F, D, H, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "I"
+            },
+            {
+              "text": "E"
+            },
+            {
+              "text": "J"
+            },
+            {
+              "text": "D"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Les lettres en position impaire suivent l'ordre de l'alphabet (B, C, D, …) et celles en position paire avancent de 2 en 2 (D, F, H, …). La 7e position, impaire, suit B, C, D : c'est donc E."
+        },
+        {
+          "id": 23,
+          "domain": "ind",
+          "question": "Quel nombre complète la suite ? (deux opérations alternent : ×2 puis +1)",
+          "series": "3, 6, 7, 14, 15, 30, 31, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "32"
+            },
+            {
+              "text": "60"
+            },
+            {
+              "text": "62"
+            },
+            {
+              "text": "61"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Les opérations alternent ×2 et +1 : 3×2=6, 6+1=7, 7×2=14, 14+1=15, 15×2=30, 30+1=31, puis 31×2=62."
+        },
+        {
+          "id": 24,
+          "domain": "ind",
+          "question": "Quel jour complète la suite ?",
+          "series": "Lundi, Mercredi, Vendredi, Dimanche, ?",
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Lundi"
+            },
+            {
+              "text": "Jeudi"
+            },
+            {
+              "text": "Samedi"
+            },
+            {
+              "text": "Mardi"
+            }
+          ],
+          "correctIndex": 3,
+          "explanation": "Chaque terme saute un jour (+2 jours) : Lundi→Mercredi→Vendredi→Dimanche, puis Dimanche + 2 jours = Mardi."
+        },
+        {
+          "id": 25,
+          "domain": "ind",
+          "question": "Une règle relie deux nombres : (2, 7) la respecte, (3, 10) la respecte, (5, 16) la respecte, mais (4, 11) ne la respecte pas. Quel nombre doit accompagner 6 pour respecter la règle ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "19"
+            },
+            {
+              "text": "18"
+            },
+            {
+              "text": "20"
+            },
+            {
+              "text": "21"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "La règle est « second nombre = 3 × premier + 1 » : 3×2+1=7, 3×3+1=10, 3×5+1=16 ; pour 4, cela donnerait 13 et non 11, ce qui confirme la règle. Pour 6 : 3×6+1=19."
+        },
+        {
+          "id": 26,
+          "domain": "att",
+          "question": "Combien de fois la lettre « r » apparaît-elle dans le mot « extraordinaire » ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "2"
+            },
+            {
+              "text": "3"
+            },
+            {
+              "text": "4"
+            },
+            {
+              "text": "5"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "e-x-t-r-a-o-r-d-i-n-a-i-r-e : la lettre « r » apparaît 3 fois."
+        },
+        {
+          "id": 27,
+          "domain": "att",
+          "question": "Laquelle de ces suites est strictement identique à « MK7PQR9 » ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "MK7QPR9"
+            },
+            {
+              "text": "MK7PQR6"
+            },
+            {
+              "text": "MK7PQR9"
+            },
+            {
+              "text": "MKP7QR9"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Les trois autres suites inversent deux caractères ou changent un chiffre : seule la 3e option, « MK7PQR9 », est strictement identique."
+        },
+        {
+          "id": 28,
+          "domain": "att",
+          "question": "Combien de fois le chiffre « 7 » apparaît-il dans cette liste : 17, 27, 71, 77, 37, 47 ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "6"
+            },
+            {
+              "text": "8"
+            },
+            {
+              "text": "9"
+            },
+            {
+              "text": "7"
+            }
+          ],
+          "correctIndex": 3,
+          "explanation": "17(1) + 27(1) + 71(1) + 77(2) + 37(1) + 47(1) = 7 occurrences du chiffre 7."
+        },
+        {
+          "id": 29,
+          "domain": "att",
+          "question": "Combien de mots de cette liste contiennent à la fois la lettre « a » et la lettre « n » : banane, orange, tomate, ananas, citron, marron ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "4"
+            },
+            {
+              "text": "3"
+            },
+            {
+              "text": "5"
+            },
+            {
+              "text": "6"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Banane, orange, ananas et marron contiennent à la fois « a » et « n ». Tomate n'a pas de « n » et citron n'a pas de « a »."
+        },
+        {
+          "id": 30,
+          "domain": "att",
+          "question": "Sur chaque ligne, lue de gauche à droite, combien de fois la séquence « 4, 9 » apparaît-elle consécutivement au total ?\nLigne 1 : 4 9 2 4 9\nLigne 2 : 9 4 1 4 9\nLigne 3 : 4 9 4 9 3",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "3"
+            },
+            {
+              "text": "5"
+            },
+            {
+              "text": "4"
+            },
+            {
+              "text": "6"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Ligne 1 : deux « 4,9 » (positions 1-2 et 4-5). Ligne 2 : un « 4,9 » (positions 4-5). Ligne 3 : deux « 4,9 » (positions 1-2 et 3-4). Total : 2+1+2 = 5."
+        },
+        {
+          "id": 31,
+          "domain": "org",
+          "question": "Un devoir de 120 minutes est divisé en 5 parties égales, séparées par 4 pauses de 5 minutes chacune. Combien de temps dure chaque partie ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "15 min"
+            },
+            {
+              "text": "18 min"
+            },
+            {
+              "text": "20 min"
+            },
+            {
+              "text": "25 min"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Les 4 pauses totalisent 20 minutes. Il reste 100 minutes de travail, réparties en 5 parties égales : 100 / 5 = 20 min."
+        },
+        {
+          "id": 32,
+          "domain": "org",
+          "question": "Quatre colis doivent être triés d'abord par poids croissant, puis, en cas d'égalité, par ordre alphabétique de leur nom. Colis : Balle (2 kg), Ancre (2 kg), Corde (1 kg), Dé (3 kg). Quel est l'ordre correct ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Corde, Balle, Ancre, Dé"
+            },
+            {
+              "text": "Ancre, Balle, Corde, Dé"
+            },
+            {
+              "text": "Corde, Ancre, Dé, Balle"
+            },
+            {
+              "text": "Corde, Ancre, Balle, Dé"
+            }
+          ],
+          "correctIndex": 3,
+          "explanation": "Corde (1 kg) vient en premier. Ancre et Balle sont à égalité à 2 kg : par ordre alphabétique, Ancre passe avant Balle. Dé (3 kg) termine la liste."
+        },
+        {
+          "id": 33,
+          "domain": "org",
+          "question": "Le rangement doit se faire avant le nettoyage. Le nettoyage doit se faire avant la décoration. Quel est l'ordre correct de ces trois tâches ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Rangement, Nettoyage, Décoration"
+            },
+            {
+              "text": "Nettoyage, Rangement, Décoration"
+            },
+            {
+              "text": "Décoration, Nettoyage, Rangement"
+            },
+            {
+              "text": "Rangement, Décoration, Nettoyage"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Les deux contraintes imposent l'ordre : rangement avant nettoyage, puis nettoyage avant décoration."
+        },
+        {
+          "id": 34,
+          "domain": "org",
+          "question": "Une classe de 24 élèves doit répartir 96 photocopies en piles égales sur les 8 tables de la salle. Combien de photocopies par table ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "8"
+            },
+            {
+              "text": "12"
+            },
+            {
+              "text": "10"
+            },
+            {
+              "text": "14"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Le nombre d'élèves n'a pas d'importance ici : il faut répartir 96 photocopies sur 8 tables, soit 96 / 8 = 12 par table."
+        },
+        {
+          "id": 35,
+          "domain": "org",
+          "question": "Une bibliothécaire travaille seule et doit ranger 3 lots de livres l'un après l'autre : le lot A prend 20 minutes, le lot B prend 15 minutes et doit être fait après le lot A, le lot C prend 25 minutes et peut être fait à n'importe quel moment. Quelle est la durée totale minimale pour tout ranger ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "45 min"
+            },
+            {
+              "text": "50 min"
+            },
+            {
+              "text": "60 min"
+            },
+            {
+              "text": "55 min"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Comme elle travaille seule, les tâches s'enchaînent forcément l'une après l'autre : le temps total est toujours la somme des durées, quel que soit l'ordre choisi : 20 + 15 + 25 = 60 minutes."
+        },
+        {
+          "id": 36,
+          "domain": "mec",
+          "question": "Un système de poulies utilise 2 brins de corde porteurs pour soulever une charge de 60 kg. Sans frottement, quelle force minimale faut-il exercer sur la corde ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "15 kg"
+            },
+            {
+              "text": "20 kg"
+            },
+            {
+              "text": "60 kg"
+            },
+            {
+              "text": "30 kg"
+            }
+          ],
+          "correctIndex": 3,
+          "explanation": "Avec 2 brins porteurs, la force nécessaire est divisée par 2 : 60 / 2 = 30 kg."
+        },
+        {
+          "id": 37,
+          "domain": "mec",
+          "question": "Une balançoire a son point d'appui au centre. Un enfant de 25 kg est assis à 3 m du point d'appui. À quelle distance du point d'appui doit s'asseoir un enfant de 15 kg pour équilibrer la balançoire ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "5 m"
+            },
+            {
+              "text": "3 m"
+            },
+            {
+              "text": "4 m"
+            },
+            {
+              "text": "6 m"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": "Équilibre d'un levier : 25 × 3 = 75 = 15 × d, donc d = 75 / 15 = 5 m."
+        },
+        {
+          "id": 38,
+          "domain": "mec",
+          "question": "Une voiture roule à vitesse constante de 90 km/h. Combien de temps met-elle pour parcourir 45 km ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "20 min"
+            },
+            {
+              "text": "30 min"
+            },
+            {
+              "text": "25 min"
+            },
+            {
+              "text": "40 min"
+            }
+          ],
+          "correctIndex": 1,
+          "explanation": "Temps = distance / vitesse = 45 / 90 = 0,5 heure, soit 30 minutes."
+        },
+        {
+          "id": 39,
+          "domain": "mec",
+          "question": "Un engrenage de 8 dents entraîne un engrenage de 24 dents. Si le petit engrenage fait 90 tours par minute, combien de tours par minute fait le grand engrenage ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "20"
+            },
+            {
+              "text": "25"
+            },
+            {
+              "text": "30"
+            },
+            {
+              "text": "35"
+            }
+          ],
+          "correctIndex": 2,
+          "explanation": "Le produit (dents × vitesse) est constant entre deux engrenages en prise : 90 × 8 = 720 = vitesse_grand × 24, donc vitesse_grand = 720 / 24 = 30 tr/min."
+        },
+        {
+          "id": 40,
+          "domain": "mec",
+          "question": "Tu verses de l'eau chaude et de l'eau froide en quantités égales dans un même récipient. Que peux-tu dire, en bon sens, de la température du mélange ?",
+          "series": null,
+          "figure": null,
+          "grid": false,
+          "options": [
+            {
+              "text": "Elle sera plus chaude que l'eau chaude initiale"
+            },
+            {
+              "text": "Elle sera plus froide que l'eau froide initiale"
+            },
+            {
+              "text": "Elle restera identique à l'eau chaude initiale"
+            },
+            {
+              "text": "Elle sera intermédiaire entre les deux températures initiales"
+            }
+          ],
+          "correctIndex": 3,
+          "explanation": "En mélangeant deux quantités égales d'eau à des températures différentes, la température finale se situe entre les deux températures de départ."
+        }
+      ]
+    }
+  }
 }

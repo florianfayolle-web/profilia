@@ -1,0 +1,646 @@
+{
+  "label": "12-14 ans",
+  "ageRange": "12-14 ans",
+  "items": [
+    {
+      "id": 1,
+      "domain": "num",
+      "question": "Quel nombre complète la suite ?",
+      "series": "4, 9, 14, 19, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "24" },
+        { "text": "22" },
+        { "text": "23" },
+        { "text": "26" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Chaque terme augmente de 5 : 4+5=9, 9+5=14, 14+5=19, 19+5=24."
+    },
+    {
+      "id": 2,
+      "domain": "num",
+      "question": "Un pull coûte 40 €. Il est soldé avec une réduction de 10 %. Quel est son nouveau prix ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "34 €" },
+        { "text": "36 €" },
+        { "text": "35 €" },
+        { "text": "38 €" }
+      ],
+      "correctIndex": 1,
+      "explanation": "10 % de 40 € = 4 €. Le nouveau prix est 40 − 4 = 36 €."
+    },
+    {
+      "id": 3,
+      "domain": "num",
+      "question": "Quel nombre complète la suite ?",
+      "series": "2, 6, 18, 54, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "108" },
+        { "text": "144" },
+        { "text": "162" },
+        { "text": "180" }
+      ],
+      "correctIndex": 2,
+      "explanation": "Chaque terme est multiplié par 3 : 2×3=6, 6×3=18, 18×3=54, 54×3=162."
+    },
+    {
+      "id": 4,
+      "domain": "num",
+      "question": "Une recette pour 4 personnes utilise 300 g de farine. Quelle quantité de farine faut-il pour 6 personnes, en gardant les mêmes proportions ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "400 g" },
+        { "text": "425 g" },
+        { "text": "475 g" },
+        { "text": "450 g" }
+      ],
+      "correctIndex": 3,
+      "explanation": "300 g pour 4 personnes, soit 75 g par personne. Pour 6 personnes : 75 × 6 = 450 g."
+    },
+    {
+      "id": 5,
+      "domain": "num",
+      "question": "Un livre coûte 25 €. Son prix augmente d'abord de 20 %, puis est soldé de 20 %. Quel est son prix final ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "24 €" },
+        { "text": "23 €" },
+        { "text": "25 €" },
+        { "text": "26 €" }
+      ],
+      "correctIndex": 0,
+      "explanation": "25 × 1,20 = 30 €, puis 30 × 0,80 = 24 €. Les deux pourcentages ne s'annulent pas car ils portent sur des montants différents."
+    },
+    {
+      "id": 6,
+      "domain": "ver",
+      "question": "Médecin est à Hôpital ce que Professeur est à …",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Craie" },
+        { "text": "École" },
+        { "text": "Élève" },
+        { "text": "Classe" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Un médecin exerce son métier dans un hôpital, tout comme un professeur exerce le sien dans une école : c'est l'institution où il travaille, pas un objet (craie), une personne (élève) ou une simple salle (classe)."
+    },
+    {
+      "id": 7,
+      "domain": "ver",
+      "question": "Quel mot n'appartient pas à la même famille que les autres ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Enthousiaste" },
+        { "text": "Ravi" },
+        { "text": "Épuisé" },
+        { "text": "Joyeux" }
+      ],
+      "correctIndex": 2,
+      "explanation": "Enthousiaste, ravi et joyeux expriment tous une forme de joie ; épuisé décrit la fatigue, sans rapport avec ce sentiment."
+    },
+    {
+      "id": 8,
+      "domain": "ver",
+      "question": "Le mot « laconique » signifie :",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Bavard" },
+        { "text": "Confus" },
+        { "text": "Bruyant" },
+        { "text": "Concis" }
+      ],
+      "correctIndex": 3,
+      "explanation": "Laconique signifie « qui s'exprime en peu de mots », c'est-à-dire concis."
+    },
+    {
+      "id": 9,
+      "domain": "ver",
+      "question": "Quel est le contraire de « prudent » ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Imprudent" },
+        { "text": "Timide" },
+        { "text": "Sage" },
+        { "text": "Calme" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Timide, sage et calme ne s'opposent pas directement à prudent ; seul imprudent en est le contraire précis."
+    },
+    {
+      "id": 10,
+      "domain": "ver",
+      "question": "Graine est à Fleur ce qu'Œuf est à …",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Poule" },
+        { "text": "Poussin" },
+        { "text": "Oiseau" },
+        { "text": "Nid" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Une graine se transforme en fleur, tout comme un œuf se transforme en poussin : c'est le résultat direct de leur développement."
+    },
+    {
+      "id": 11,
+      "domain": "spa",
+      "question": "Tu es face à une rangée de commerces. Le magasin de vêtements est immédiatement à droite de la boulangerie. La pharmacie est immédiatement à gauche de la boulangerie. La librairie est à l'extrême droite, juste après le magasin de vêtements. Quel est l'ordre des commerces de gauche à droite ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Boulangerie, Pharmacie, Magasin de vêtements, Librairie" },
+        { "text": "Pharmacie, Magasin de vêtements, Boulangerie, Librairie" },
+        { "text": "Pharmacie, Boulangerie, Magasin de vêtements, Librairie" },
+        { "text": "Librairie, Pharmacie, Boulangerie, Magasin de vêtements" }
+      ],
+      "correctIndex": 2,
+      "explanation": "La pharmacie est juste avant la boulangerie, le magasin de vêtements juste après, et la librairie ferme la rangée : Pharmacie, Boulangerie, Magasin de vêtements, Librairie."
+    },
+    {
+      "id": 12,
+      "domain": "spa",
+      "question": "Une flèche pointe vers le Nord. Tu la fais pivoter de 90° dans le sens des aiguilles d'une montre, puis encore de 180°. Dans quelle direction pointe-t-elle finalement ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Nord" },
+        { "text": "Sud" },
+        { "text": "Est" },
+        { "text": "Ouest" }
+      ],
+      "correctIndex": 3,
+      "explanation": "Nord + 90° (sens horaire) = Est. Est + 180° = Ouest."
+    },
+    {
+      "id": 13,
+      "domain": "spa",
+      "question": "Le mot « BOIS » est écrit sur une vitre. Si tu le regardes en transparence depuis l'autre côté de la vitre, quelle lettre se retrouve à l'extrême droite ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "B" },
+        { "text": "S" },
+        { "text": "I" },
+        { "text": "O" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Vu depuis l'autre côté de la vitre, l'ordre des lettres est inversé de gauche à droite : ce qui était la première lettre (B) devient la dernière, donc l'extrême droite."
+    },
+    {
+      "id": 14,
+      "domain": "spa",
+      "question": "Sur une table, le livre rouge est posé sur le livre bleu. Le livre vert est sous le livre bleu. Le livre jaune est au-dessus du livre rouge. En partant du bas de la pile, quel est l'ordre des livres ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Bleu, Vert, Rouge, Jaune" },
+        { "text": "Vert, Bleu, Rouge, Jaune" },
+        { "text": "Vert, Rouge, Bleu, Jaune" },
+        { "text": "Jaune, Rouge, Bleu, Vert" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Le vert est tout en bas, puis le bleu, puis le rouge posé dessus, puis le jaune au sommet : Vert, Bleu, Rouge, Jaune."
+    },
+    {
+      "id": 15,
+      "domain": "spa",
+      "question": "Tu marches 10 mètres vers le Nord, puis tu tournes à droite et marches 10 mètres, puis tu tournes encore à droite et marches 10 mètres. Dans quelle direction dois-tu marcher pour revenir directement à ton point de départ en ligne droite ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Nord" },
+        { "text": "Sud" },
+        { "text": "Ouest" },
+        { "text": "Est" }
+      ],
+      "correctIndex": 2,
+      "explanation": "Tu marches Nord puis Est puis Sud : les déplacements Nord et Sud s'annulent, il ne reste qu'un déplacement de 10 m vers l'Est. Pour revenir, il faut donc marcher vers l'Ouest."
+    },
+    {
+      "id": 16,
+      "domain": "ded",
+      "question": "Tous les pommiers sont des arbres fruitiers. Certains arbres fruitiers perdent leurs feuilles en hiver. Que peut-on affirmer avec certitude au sujet des pommiers ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Tous les pommiers perdent leurs feuilles en hiver" },
+        { "text": "Certains pommiers perdent leurs feuilles en hiver" },
+        { "text": "Aucun pommier ne perd ses feuilles en hiver" },
+        { "text": "On ne peut rien affirmer avec certitude" }
+      ],
+      "correctIndex": 3,
+      "explanation": "Rien n'indique que les arbres fruitiers qui perdent leurs feuilles sont justement des pommiers : cette information peut concerner d'autres arbres fruitiers uniquement."
+    },
+    {
+      "id": 17,
+      "domain": "ded",
+      "question": "Si un animal est un mammifère marin, alors il respire de l'air. Le dauphin respire de l'air. Peut-on en conclure que le dauphin est un mammifère marin ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "On ne peut pas le conclure avec certitude" },
+        { "text": "Oui, certainement" },
+        { "text": "Non, certainement pas" },
+        { "text": "Le dauphin est un poisson" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Respirer de l'air ne suffit pas à prouver qu'on est un mammifère marin : d'autres animaux respirent de l'air sans en être. On ne peut donc rien conclure avec certitude à partir de cette seule information."
+    },
+    {
+      "id": 18,
+      "domain": "ded",
+      "question": "Trois amis, Emma, Lucas et Zoé, possèdent chacun un animal différent : un chat, un chien ou un poisson. Lucas n'a ni chien ni poisson. Emma n'a pas de chien. Quel animal a chacun ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Emma-chat, Lucas-poisson, Zoé-chien" },
+        { "text": "Emma-poisson, Lucas-chat, Zoé-chien" },
+        { "text": "Emma-poisson, Lucas-chien, Zoé-chat" },
+        { "text": "Emma-chien, Lucas-chat, Zoé-poisson" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Lucas n'a ni chien ni poisson, donc il a le chat. Emma n'a pas de chien et le chat est déjà pris par Lucas, donc elle a le poisson. Il reste le chien pour Zoé."
+    },
+    {
+      "id": 19,
+      "domain": "ded",
+      "question": "Quatre élèves, Alice, Ben, Chloé et Dan, ont chacun une note différente parmi 12, 14, 16 et 18. Alice a une meilleure note que Ben. Chloé a la meilleure note de tous. Dan a une moins bonne note qu'Alice mais une meilleure note que Ben. Quel est l'ordre des notes, de la meilleure à la moins bonne ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Chloé, Dan, Alice, Ben" },
+        { "text": "Alice, Chloé, Dan, Ben" },
+        { "text": "Chloé, Alice, Dan, Ben" },
+        { "text": "Chloé, Alice, Ben, Dan" }
+      ],
+      "correctIndex": 2,
+      "explanation": "Chloé a la meilleure note. Comme Alice est meilleure que Dan, qui est lui-même meilleur que Ben, l'ordre complet est : Chloé, Alice, Dan, Ben."
+    },
+    {
+      "id": 20,
+      "domain": "ded",
+      "question": "Si Léo fait ses devoirs, alors il a le droit de jouer aux jeux vidéo. Or Léo n'a pas le droit de jouer aux jeux vidéo. Que peut-on en conclure avec certitude ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Léo a fait ses devoirs" },
+        { "text": "On ne peut rien conclure" },
+        { "text": "Léo joue quand même aux jeux vidéo" },
+        { "text": "Léo n'a pas fait ses devoirs" }
+      ],
+      "correctIndex": 3,
+      "explanation": "Par contraposée : si devoirs faits implique droit de jouer, alors l'absence de ce droit implique que les devoirs n'ont pas été faits."
+    },
+    {
+      "id": 21,
+      "domain": "ind",
+      "question": "Quel nombre complète la suite ?",
+      "series": "2, 4, 7, 11, 16, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "22" },
+        { "text": "20" },
+        { "text": "21" },
+        { "text": "24" }
+      ],
+      "correctIndex": 0,
+      "explanation": "L'écart entre les termes augmente de 1 à chaque fois : +2, +3, +4, +5, puis +6. 16 + 6 = 22."
+    },
+    {
+      "id": 22,
+      "domain": "ind",
+      "question": "Quelle lettre complète la suite ? (deux règles alternent selon la position)",
+      "series": "B, D, C, F, D, H, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "I" },
+        { "text": "E" },
+        { "text": "J" },
+        { "text": "D" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Les lettres en position impaire suivent l'ordre de l'alphabet (B, C, D, …) et celles en position paire avancent de 2 en 2 (D, F, H, …). La 7e position, impaire, suit B, C, D : c'est donc E."
+    },
+    {
+      "id": 23,
+      "domain": "ind",
+      "question": "Quel nombre complète la suite ? (deux opérations alternent : ×2 puis +1)",
+      "series": "3, 6, 7, 14, 15, 30, 31, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "32" },
+        { "text": "60" },
+        { "text": "62" },
+        { "text": "61" }
+      ],
+      "correctIndex": 2,
+      "explanation": "Les opérations alternent ×2 et +1 : 3×2=6, 6+1=7, 7×2=14, 14+1=15, 15×2=30, 30+1=31, puis 31×2=62."
+    },
+    {
+      "id": 24,
+      "domain": "ind",
+      "question": "Quel jour complète la suite ?",
+      "series": "Lundi, Mercredi, Vendredi, Dimanche, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Lundi" },
+        { "text": "Jeudi" },
+        { "text": "Samedi" },
+        { "text": "Mardi" }
+      ],
+      "correctIndex": 3,
+      "explanation": "Chaque terme saute un jour (+2 jours) : Lundi→Mercredi→Vendredi→Dimanche, puis Dimanche + 2 jours = Mardi."
+    },
+    {
+      "id": 25,
+      "domain": "ind",
+      "question": "Une règle relie deux nombres : (2, 7) la respecte, (3, 10) la respecte, (5, 16) la respecte, mais (4, 11) ne la respecte pas. Quel nombre doit accompagner 6 pour respecter la règle ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "19" },
+        { "text": "18" },
+        { "text": "20" },
+        { "text": "21" }
+      ],
+      "correctIndex": 0,
+      "explanation": "La règle est « second nombre = 3 × premier + 1 » : 3×2+1=7, 3×3+1=10, 3×5+1=16 ; pour 4, cela donnerait 13 et non 11, ce qui confirme la règle. Pour 6 : 3×6+1=19."
+    },
+    {
+      "id": 26,
+      "domain": "att",
+      "question": "Combien de fois la lettre « r » apparaît-elle dans le mot « extraordinaire » ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "2" },
+        { "text": "3" },
+        { "text": "4" },
+        { "text": "5" }
+      ],
+      "correctIndex": 1,
+      "explanation": "e-x-t-r-a-o-r-d-i-n-a-i-r-e : la lettre « r » apparaît 3 fois."
+    },
+    {
+      "id": 27,
+      "domain": "att",
+      "question": "Laquelle de ces suites est strictement identique à « MK7PQR9 » ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "MK7QPR9" },
+        { "text": "MK7PQR6" },
+        { "text": "MK7PQR9" },
+        { "text": "MKP7QR9" }
+      ],
+      "correctIndex": 2,
+      "explanation": "Les trois autres suites inversent deux caractères ou changent un chiffre : seule la 3e option, « MK7PQR9 », est strictement identique."
+    },
+    {
+      "id": 28,
+      "domain": "att",
+      "question": "Combien de fois le chiffre « 7 » apparaît-il dans cette liste : 17, 27, 71, 77, 37, 47 ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "6" },
+        { "text": "8" },
+        { "text": "9" },
+        { "text": "7" }
+      ],
+      "correctIndex": 3,
+      "explanation": "17(1) + 27(1) + 71(1) + 77(2) + 37(1) + 47(1) = 7 occurrences du chiffre 7."
+    },
+    {
+      "id": 29,
+      "domain": "att",
+      "question": "Combien de mots de cette liste contiennent à la fois la lettre « a » et la lettre « n » : banane, orange, tomate, ananas, citron, marron ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "4" },
+        { "text": "3" },
+        { "text": "5" },
+        { "text": "6" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Banane, orange, ananas et marron contiennent à la fois « a » et « n ». Tomate n'a pas de « n » et citron n'a pas de « a »."
+    },
+    {
+      "id": 30,
+      "domain": "att",
+      "question": "Sur chaque ligne, lue de gauche à droite, combien de fois la séquence « 4, 9 » apparaît-elle consécutivement au total ?\nLigne 1 : 4 9 2 4 9\nLigne 2 : 9 4 1 4 9\nLigne 3 : 4 9 4 9 3",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "3" },
+        { "text": "5" },
+        { "text": "4" },
+        { "text": "6" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Ligne 1 : deux « 4,9 » (positions 1-2 et 4-5). Ligne 2 : un « 4,9 » (positions 4-5). Ligne 3 : deux « 4,9 » (positions 1-2 et 3-4). Total : 2+1+2 = 5."
+    },
+    {
+      "id": 31,
+      "domain": "org",
+      "question": "Un devoir de 120 minutes est divisé en 5 parties égales, séparées par 4 pauses de 5 minutes chacune. Combien de temps dure chaque partie ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "15 min" },
+        { "text": "18 min" },
+        { "text": "20 min" },
+        { "text": "25 min" }
+      ],
+      "correctIndex": 2,
+      "explanation": "Les 4 pauses totalisent 20 minutes. Il reste 100 minutes de travail, réparties en 5 parties égales : 100 / 5 = 20 min."
+    },
+    {
+      "id": 32,
+      "domain": "org",
+      "question": "Quatre colis doivent être triés d'abord par poids croissant, puis, en cas d'égalité, par ordre alphabétique de leur nom. Colis : Balle (2 kg), Ancre (2 kg), Corde (1 kg), Dé (3 kg). Quel est l'ordre correct ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Corde, Balle, Ancre, Dé" },
+        { "text": "Ancre, Balle, Corde, Dé" },
+        { "text": "Corde, Ancre, Dé, Balle" },
+        { "text": "Corde, Ancre, Balle, Dé" }
+      ],
+      "correctIndex": 3,
+      "explanation": "Corde (1 kg) vient en premier. Ancre et Balle sont à égalité à 2 kg : par ordre alphabétique, Ancre passe avant Balle. Dé (3 kg) termine la liste."
+    },
+    {
+      "id": 33,
+      "domain": "org",
+      "question": "Le rangement doit se faire avant le nettoyage. Le nettoyage doit se faire avant la décoration. Quel est l'ordre correct de ces trois tâches ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Rangement, Nettoyage, Décoration" },
+        { "text": "Nettoyage, Rangement, Décoration" },
+        { "text": "Décoration, Nettoyage, Rangement" },
+        { "text": "Rangement, Décoration, Nettoyage" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Les deux contraintes imposent l'ordre : rangement avant nettoyage, puis nettoyage avant décoration."
+    },
+    {
+      "id": 34,
+      "domain": "org",
+      "question": "Une classe de 24 élèves doit répartir 96 photocopies en piles égales sur les 8 tables de la salle. Combien de photocopies par table ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "8" },
+        { "text": "12" },
+        { "text": "10" },
+        { "text": "14" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Le nombre d'élèves n'a pas d'importance ici : il faut répartir 96 photocopies sur 8 tables, soit 96 / 8 = 12 par table."
+    },
+    {
+      "id": 35,
+      "domain": "org",
+      "question": "Une bibliothécaire travaille seule et doit ranger 3 lots de livres l'un après l'autre : le lot A prend 20 minutes, le lot B prend 15 minutes et doit être fait après le lot A, le lot C prend 25 minutes et peut être fait à n'importe quel moment. Quelle est la durée totale minimale pour tout ranger ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "45 min" },
+        { "text": "50 min" },
+        { "text": "60 min" },
+        { "text": "55 min" }
+      ],
+      "correctIndex": 2,
+      "explanation": "Comme elle travaille seule, les tâches s'enchaînent forcément l'une après l'autre : le temps total est toujours la somme des durées, quel que soit l'ordre choisi : 20 + 15 + 25 = 60 minutes."
+    },
+    {
+      "id": 36,
+      "domain": "mec",
+      "question": "Un système de poulies utilise 2 brins de corde porteurs pour soulever une charge de 60 kg. Sans frottement, quelle force minimale faut-il exercer sur la corde ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "15 kg" },
+        { "text": "20 kg" },
+        { "text": "60 kg" },
+        { "text": "30 kg" }
+      ],
+      "correctIndex": 3,
+      "explanation": "Avec 2 brins porteurs, la force nécessaire est divisée par 2 : 60 / 2 = 30 kg."
+    },
+    {
+      "id": 37,
+      "domain": "mec",
+      "question": "Une balançoire a son point d'appui au centre. Un enfant de 25 kg est assis à 3 m du point d'appui. À quelle distance du point d'appui doit s'asseoir un enfant de 15 kg pour équilibrer la balançoire ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "5 m" },
+        { "text": "3 m" },
+        { "text": "4 m" },
+        { "text": "6 m" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Équilibre d'un levier : 25 × 3 = 75 = 15 × d, donc d = 75 / 15 = 5 m."
+    },
+    {
+      "id": 38,
+      "domain": "mec",
+      "question": "Une voiture roule à vitesse constante de 90 km/h. Combien de temps met-elle pour parcourir 45 km ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "20 min" },
+        { "text": "30 min" },
+        { "text": "25 min" },
+        { "text": "40 min" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Temps = distance / vitesse = 45 / 90 = 0,5 heure, soit 30 minutes."
+    },
+    {
+      "id": 39,
+      "domain": "mec",
+      "question": "Un engrenage de 8 dents entraîne un engrenage de 24 dents. Si le petit engrenage fait 90 tours par minute, combien de tours par minute fait le grand engrenage ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "20" },
+        { "text": "25" },
+        { "text": "30" },
+        { "text": "35" }
+      ],
+      "correctIndex": 2,
+      "explanation": "Le produit (dents × vitesse) est constant entre deux engrenages en prise : 90 × 8 = 720 = vitesse_grand × 24, donc vitesse_grand = 720 / 24 = 30 tr/min."
+    },
+    {
+      "id": 40,
+      "domain": "mec",
+      "question": "Tu verses de l'eau chaude et de l'eau froide en quantités égales dans un même récipient. Que peux-tu dire, en bon sens, de la température du mélange ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Elle sera plus chaude que l'eau chaude initiale" },
+        { "text": "Elle sera plus froide que l'eau froide initiale" },
+        { "text": "Elle restera identique à l'eau chaude initiale" },
+        { "text": "Elle sera intermédiaire entre les deux températures initiales" }
+      ],
+      "correctIndex": 3,
+      "explanation": "En mélangeant deux quantités égales d'eau à des températures différentes, la température finale se situe entre les deux températures de départ."
+    }
+  ]
+}

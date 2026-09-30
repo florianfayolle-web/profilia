@@ -621,6 +621,14 @@ export function ResultView({
           </p>
         )}
 
+        {r.childMode && (
+          <p className="mt-4 rounded-lg border border-card-border bg-background p-3 text-center text-xs text-muted-foreground">
+            Ce n&apos;est pas un score de QI : c&apos;est un niveau de raisonnement sur cet
+            exercice précis, à un instant donné. Seul un vrai WISC, passé avec un·e
+            psychologue, peut donner un score cliniquement valable pour un enfant.
+          </p>
+        )}
+
         <div className="mt-8 rounded-xl border border-card-border bg-card p-6">
           <p className="text-lg font-semibold">Ton score par domaine</p>
           <div className="mt-4 space-y-4">

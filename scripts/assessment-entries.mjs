@@ -205,7 +205,7 @@ export const ENTRIES = [
     lookupKey: "test_qi_onetime",
     title: "Test de QI, raisonnement logique, verbal, numérique et spatial",
     description:
-      "Test de raisonnement complet en 60 questions sur 8 domaines (numérique, verbal, spatial, déductif, inductif, attention, organisation, raisonnement mécanique), donnant un score indicatif façon QI (moyenne 100, écart-type 15). Ce n'est pas un quotient intellectuel clinique étalonné : seul un psychologue, avec un outil validé, peut délivrer un vrai QI certifié.",
+      "Test de raisonnement complet en 60 questions sur 8 domaines (numérique, verbal, spatial, déductif, inductif, attention, organisation, raisonnement mécanique), donnant un score indicatif façon QI (moyenne 100, écart-type 15). Ce n'est pas un quotient intellectuel clinique étalonné : seul un psychologue, avec un outil validé, peut délivrer un vrai QI certifié. Une version adaptée par tranche d'âge (6-8, 9-11, 12-14 ans) est proposée pour les enfants et ados, avec un résultat exprimé en niveau de raisonnement plutôt qu'en chiffre de QI.",
   },
   {
     file: "tdah.json",

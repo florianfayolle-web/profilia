@@ -9,7 +9,7 @@ import { QuizIntro } from "@/components/quiz-intro";
 import { AnswerDemo } from "@/components/answer-demo";
 import { QuizLoading } from "@/components/quiz-loading";
 import { EmailGate } from "@/components/email-gate";
-import { QiAgeGate, QiChildNotice } from "@/components/qi-age-gate";
+import { QiAgeGate } from "@/components/qi-age-gate";
 import { TdahAgeGate, TdahChildNotice } from "@/components/tdah-age-gate";
 import { DiscQuiz } from "./disc-quiz";
 import { PcmQuiz } from "./pcm-quiz";
@@ -337,7 +337,23 @@ function GenericAssessmentQuiz({
 }) {
   const lang: "fr" | "en" = language === "en" ? "en" : "fr";
   const router = useRouter();
-  const items = useMemo(() => getItems(format, definition), [format, definition]);
+  // The TDAH screener has no child-appropriate item bank (see
+  // tdah-age-gate.tsx): a child/teen answer there blocks the quiz entirely
+  // rather than handing a minor an unvalidated ADHD screening result. The
+  // QI test does have age-banded item sets — qiAgeChoice is "adult" or a
+  // childBands key ("6-8" / "9-11" / "12-14").
+  const [qiAgeChoice, setQiAgeChoice] = useState<string | null>(null);
+  const [tdahAgeChoice, setTdahAgeChoice] = useState<"adult" | "child" | null>(null);
+  const qiChildBand =
+    testSlug === "qi" && qiAgeChoice && qiAgeChoice !== "adult" ? qiAgeChoice : null;
+
+  const items = useMemo(() => {
+    if (qiChildBand) {
+      const band = (definition as LogicMcqDefinition).childBands?.[qiChildBand];
+      return band?.items ?? [];
+    }
+    return getItems(format, definition);
+  }, [format, definition, qiChildBand]);
   const [started, setStarted] = useState(autoStart);
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string | number>>({});
@@ -347,12 +363,6 @@ function GenericAssessmentQuiz({
   const [showEmailGate, setShowEmailGate] = useState(false);
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
-  // Neither the QI test nor the TDAH screener has a child-appropriate item
-  // bank (see qi-age-gate.tsx / tdah-age-gate.tsx): a child/teen answer
-  // here blocks the quiz entirely rather than handing a minor an
-  // unvalidated "IQ number" or ADHD screening result.
-  const [qiAgeChoice, setQiAgeChoice] = useState<"adult" | "child" | null>(null);
-  const [tdahAgeChoice, setTdahAgeChoice] = useState<"adult" | "child" | null>(null);
 
   const item = items[step] as { id: number };
   const isLast = step === items.length - 1;
@@ -378,7 +388,7 @@ function GenericAssessmentQuiz({
       if (isLast) {
         setError(null);
         startTransition(async () => {
-          const result = await submitAssessmentAttempt(testSlug, nextAnswers);
+          const result = await submitAssessmentAttempt(testSlug, nextAnswers, qiChildBand);
           if ("error" in result) {
             setError(result.error);
             setSelectedValue(null);
@@ -397,10 +407,6 @@ function GenericAssessmentQuiz({
 
   if (testSlug === "qi" && qiAgeChoice === null) {
     return <QiAgeGate onChoose={setQiAgeChoice} />;
-  }
-
-  if (testSlug === "qi" && qiAgeChoice === "child") {
-    return <QiChildNotice onBack={() => setQiAgeChoice(null)} />;
   }
 
   if (testSlug === "tdah" && tdahAgeChoice === null) {

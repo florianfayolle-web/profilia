@@ -918,6 +918,18 @@ function logicBand(score: number, total: number): [string, string] {
   return ["À consolider", "Reprenez domaine par domaine : ce sont des méthodes qui s'apprennent, pas un plafond."];
 }
 
+// Same idea as logicBand() but worded for a child/teen and their parent
+// reading the result together: no "candidats", no implicit comparison to
+// other people, nothing that reads like a verdict. Deliberately never
+// converted to an IQ-style number — see QiAgeGate for why.
+function logicBandChild(score: number, total: number): [string, string] {
+  const p = total > 0 ? score / total : 0;
+  if (p >= 0.85) return ["Très à l'aise", "Il/elle a répondu juste sur presque toutes les familles de questions, y compris les plus difficiles."];
+  if (p >= 0.65) return ["Bon niveau", "Les bases sont solides sur la plupart des domaines, avec encore un peu de marge sur un ou deux d'entre eux."];
+  if (p >= 0.4) return ["Niveau en développement", "Certains domaines sont déjà bien acquis, d'autres méritent d'être retravaillés avec le temps."];
+  return ["Encore à construire", "Ce n'est qu'une photo à un instant donné : à cet âge, ces capacités continuent de se développer rapidement."];
+}
+
 // Indicative "IQ-style" number (mean 100, SD 15) derived from percent
 // correct — NOT a norm computed from real test-taker data, just a smooth,
 // monotonic curve through a few reference points chosen to feel like a
@@ -982,7 +994,11 @@ function iqPercentile(iq: number): number {
   return Math.round(normalCdf((iq - 100) / 15) * 1000) / 10;
 }
 
-export function scoreLogicMcq(def: LogicMcqDefinition, answers: Record<string, number>) {
+export function scoreLogicMcq(
+  def: LogicMcqDefinition,
+  answers: Record<string, number>,
+  opts: { childMode?: boolean } = {}
+) {
   const perDomain: Record<string, { ok: number; total: number }> = {};
   let score = 0;
 
@@ -1023,13 +1039,20 @@ export function scoreLogicMcq(def: LogicMcqDefinition, answers: Record<string, n
   });
 
   const scorePercent = score / def.items.length;
-  const iqScore = def.meta.showIqScore ? iqFromPercent(scorePercent) : null;
+  // Child mode never derives an IQ-style number — no real age-normed data
+  // backs one — regardless of what def.meta.showIqScore says for the adult
+  // bank this definition was cloned from.
+  const iqScore = def.meta.showIqScore && !opts.childMode ? iqFromPercent(scorePercent) : null;
   // The IQ-styled test labels its band from the iqScore itself, using the
   // published WAIS classification grid, instead of the generic
   // percent-based logicBand() the 8-Logiques test uses — the whole point of
   // computing an IQ-style number is to reuse the scale people already
   // recognize.
-  const [band, bandText] = iqScore != null ? iqClassification(iqScore) : logicBand(score, def.items.length);
+  const [band, bandText] = iqScore != null
+    ? iqClassification(iqScore)
+    : opts.childMode
+      ? logicBandChild(score, def.items.length)
+      : logicBand(score, def.items.length);
 
   return {
     score,
@@ -1041,6 +1064,7 @@ export function scoreLogicMcq(def: LogicMcqDefinition, answers: Record<string, n
     percentile: iqScore != null ? iqPercentile(iqScore) : null,
     dimensionResults,
     review,
+    childMode: opts.childMode ?? false,
   };
 }
 

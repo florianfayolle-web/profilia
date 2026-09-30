@@ -1,0 +1,646 @@
+{
+  "label": "6-8 ans",
+  "ageRange": "6-8 ans",
+  "items": [
+    {
+      "id": 1,
+      "domain": "num",
+      "question": "Léa a 3 billes. Elle en gagne 2. Combien de billes a-t-elle maintenant ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "4" },
+        { "text": "5" },
+        { "text": "6" },
+        { "text": "7" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Léa avait 3 billes et en gagne 2 de plus : 3 + 2 = 5 billes."
+    },
+    {
+      "id": 2,
+      "domain": "num",
+      "question": "Quel nombre vient après dans la suite ?",
+      "series": "1, 2, 3, 4, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "4" },
+        { "text": "5" },
+        { "text": "6" },
+        { "text": "7" }
+      ],
+      "correctIndex": 1,
+      "explanation": "On compte un par un : après 4, vient 5."
+    },
+    {
+      "id": 3,
+      "domain": "num",
+      "question": "Quel nombre vient après dans la suite ?",
+      "series": "2, 4, 6, 8, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "9" },
+        { "text": "10" },
+        { "text": "11" },
+        { "text": "12" }
+      ],
+      "correctIndex": 1,
+      "explanation": "On ajoute 2 à chaque fois : 8 + 2 = 10."
+    },
+    {
+      "id": 4,
+      "domain": "num",
+      "question": "Tom a 5 bonbons. Il en mange 2. Combien de bonbons lui reste-t-il ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "2" },
+        { "text": "3" },
+        { "text": "4" },
+        { "text": "5" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Tom avait 5 bonbons et en mange 2 : 5 − 2 = 3 bonbons."
+    },
+    {
+      "id": 5,
+      "domain": "num",
+      "question": "Quel nombre complète la suite ?",
+      "series": "1, 2, 4, 8, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "10" },
+        { "text": "12" },
+        { "text": "16" },
+        { "text": "20" }
+      ],
+      "correctIndex": 2,
+      "explanation": "Chaque nombre est le double du précédent : 8 × 2 = 16."
+    },
+    {
+      "id": 6,
+      "domain": "ver",
+      "question": "Quel mot ne va pas avec les autres ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Chien" },
+        { "text": "Chat" },
+        { "text": "Chaise" },
+        { "text": "Lapin" }
+      ],
+      "correctIndex": 2,
+      "explanation": "Chien, chat et lapin sont des animaux ; la chaise n'est pas un animal."
+    },
+    {
+      "id": 7,
+      "domain": "ver",
+      "question": "Quel est le contraire de « Grand » ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Petit" },
+        { "text": "Rapide" },
+        { "text": "Fort" },
+        { "text": "Joyeux" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Le contraire de « grand » est « petit »."
+    },
+    {
+      "id": 8,
+      "domain": "ver",
+      "question": "Quel mot ne va pas avec les autres ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Pomme" },
+        { "text": "Carotte" },
+        { "text": "Banane" },
+        { "text": "Fraise" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Pomme, banane et fraise sont des fruits ; la carotte est un légume."
+    },
+    {
+      "id": 9,
+      "domain": "ver",
+      "question": "Quel mot veut dire la même chose que « Content » ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Triste" },
+        { "text": "Fâché" },
+        { "text": "Joyeux" },
+        { "text": "Fatigué" }
+      ],
+      "correctIndex": 2,
+      "explanation": "« Content » et « joyeux » veulent dire la même chose."
+    },
+    {
+      "id": 10,
+      "domain": "ver",
+      "question": "Quel mot est un fruit ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Chien" },
+        { "text": "Pomme" },
+        { "text": "Voiture" },
+        { "text": "Chaise" }
+      ],
+      "correctIndex": 1,
+      "explanation": "La pomme est le seul fruit parmi ces mots."
+    },
+    {
+      "id": 11,
+      "domain": "spa",
+      "question": "Léa est à gauche de Tom. Qui est à droite ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Léa" },
+        { "text": "Tom" },
+        { "text": "Les deux" },
+        { "text": "On ne sait pas" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Si Léa est à gauche de Tom, alors Tom est forcément à droite de Léa."
+    },
+    {
+      "id": 12,
+      "domain": "spa",
+      "question": "Regarde cette suite de couleurs : Rouge, Bleu, Rouge, Bleu, ? Quelle couleur vient ensuite ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Rouge" },
+        { "text": "Bleu" },
+        { "text": "Vert" },
+        { "text": "Jaune" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Les couleurs alternent Rouge, Bleu, Rouge, Bleu : après Bleu, c'est Rouge."
+    },
+    {
+      "id": 13,
+      "domain": "spa",
+      "question": "Trois enfants font la queue. Nina est devant Paul. Paul est devant Léo. Qui est le premier de la queue ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Nina" },
+        { "text": "Paul" },
+        { "text": "Léo" },
+        { "text": "On ne sait pas" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Nina est devant Paul, qui est lui-même devant Léo : Nina est donc la première."
+    },
+    {
+      "id": 14,
+      "domain": "spa",
+      "question": "Regarde cette suite de formes : Carré, Rond, Carré, Rond, ? Quelle forme vient ensuite ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Carré" },
+        { "text": "Rond" },
+        { "text": "Triangle" },
+        { "text": "Étoile" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Les formes alternent Carré, Rond, Carré, Rond : après Rond, c'est Carré."
+    },
+    {
+      "id": 15,
+      "domain": "spa",
+      "question": "Max marche derrière Zoé. Zoé marche derrière Léa. Qui est devant tout le monde ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Max" },
+        { "text": "Zoé" },
+        { "text": "Léa" },
+        { "text": "On ne sait pas" }
+      ],
+      "correctIndex": 2,
+      "explanation": "Léa est devant Zoé, qui est devant Max : Léa est donc devant tout le monde."
+    },
+    {
+      "id": 16,
+      "domain": "ded",
+      "question": "Tous les chats miaulent. Minou est un chat. Que peut-on dire ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Minou miaule" },
+        { "text": "Minou aboie" },
+        { "text": "Minou vole" },
+        { "text": "On ne sait pas" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Puisque tous les chats miaulent et que Minou est un chat, Minou miaule aussi."
+    },
+    {
+      "id": 17,
+      "domain": "ded",
+      "question": "Tous les oiseaux ont des plumes. Le moineau est un oiseau. Que peut-on dire ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Le moineau a des plumes" },
+        { "text": "Le moineau a des poils" },
+        { "text": "Le moineau nage sous l'eau" },
+        { "text": "On ne sait pas" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Puisque tous les oiseaux ont des plumes et que le moineau est un oiseau, il a des plumes."
+    },
+    {
+      "id": 18,
+      "domain": "ded",
+      "question": "Tous les poissons vivent dans l'eau. Nemo est un poisson. Que peut-on dire ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Nemo vit dans l'eau" },
+        { "text": "Nemo vit dans un arbre" },
+        { "text": "Nemo vole dans le ciel" },
+        { "text": "On ne sait pas" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Puisque tous les poissons vivent dans l'eau et que Nemo est un poisson, il vit dans l'eau."
+    },
+    {
+      "id": 19,
+      "domain": "ded",
+      "question": "Tous les élèves de la classe ont un cahier. Léo est un élève de cette classe. Que peut-on dire ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Léo a un cahier" },
+        { "text": "Léo n'a pas de cahier" },
+        { "text": "Léo a un vélo" },
+        { "text": "On ne sait pas" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Puisque tous les élèves de la classe ont un cahier et que Léo en fait partie, Léo a un cahier."
+    },
+    {
+      "id": 20,
+      "domain": "ded",
+      "question": "Tous les chiens ont quatre pattes. Rex est un chien. Que peut-on dire ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Rex a quatre pattes" },
+        { "text": "Rex a deux pattes" },
+        { "text": "Rex a six pattes" },
+        { "text": "On ne sait pas" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Puisque tous les chiens ont quatre pattes et que Rex est un chien, Rex a quatre pattes."
+    },
+    {
+      "id": 21,
+      "domain": "ind",
+      "question": "Regarde cette suite de formes : Rond, Rond, Carré, Rond, Rond, Carré, ? Quelle forme vient ensuite ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Rond" },
+        { "text": "Carré" },
+        { "text": "Triangle" },
+        { "text": "Étoile" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Le motif se répète toujours par groupes de trois : Rond, Rond, Carré. Après le dernier Carré, on recommence par Rond."
+    },
+    {
+      "id": 22,
+      "domain": "ind",
+      "question": "Regarde cette suite de couleurs : Jaune, Jaune, Vert, Jaune, Jaune, Vert, ? Quelle couleur vient ensuite ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Jaune" },
+        { "text": "Vert" },
+        { "text": "Bleu" },
+        { "text": "Rouge" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Le motif se répète toujours par groupes de trois : Jaune, Jaune, Vert. Après le dernier Vert, on recommence par Jaune."
+    },
+    {
+      "id": 23,
+      "domain": "ind",
+      "question": "Quel nombre complète la suite ?",
+      "series": "5, 10, 15, 20, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "22" },
+        { "text": "24" },
+        { "text": "25" },
+        { "text": "30" }
+      ],
+      "correctIndex": 2,
+      "explanation": "On ajoute 5 à chaque fois : 20 + 5 = 25."
+    },
+    {
+      "id": 24,
+      "domain": "ind",
+      "question": "Quelle lettre complète la suite ?",
+      "series": "A, B, C, D, ?",
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "E" },
+        { "text": "F" },
+        { "text": "D" },
+        { "text": "G" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Ce sont les lettres de l'alphabet dans l'ordre : après D vient E."
+    },
+    {
+      "id": 25,
+      "domain": "ind",
+      "question": "Dans ce jeu, chaque nombre a un ami qui vaut le double : 2 va avec 4, 3 va avec 6, 5 va avec 10. Quel nombre va avec 4 ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "6" },
+        { "text": "7" },
+        { "text": "8" },
+        { "text": "9" }
+      ],
+      "correctIndex": 2,
+      "explanation": "La règle est de multiplier par 2 : le double de 4 est 8."
+    },
+    {
+      "id": 26,
+      "domain": "att",
+      "question": "Combien de fois la lettre « a » apparaît-elle dans le mot « banana » ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "2" },
+        { "text": "3" },
+        { "text": "4" },
+        { "text": "5" }
+      ],
+      "correctIndex": 1,
+      "explanation": "b-a-n-a-n-a : la lettre « a » apparaît 3 fois."
+    },
+    {
+      "id": 27,
+      "domain": "att",
+      "question": "Regarde cette liste de formes : rond, rond, étoile, rond, étoile, rond. Combien y a-t-il de ronds ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "3" },
+        { "text": "4" },
+        { "text": "5" },
+        { "text": "6" }
+      ],
+      "correctIndex": 1,
+      "explanation": "En comptant chaque rond un par un dans la liste, on en trouve 4."
+    },
+    {
+      "id": 28,
+      "domain": "att",
+      "question": "Parmi ces mots, lequel est écrit exactement comme « VELO » ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "VELO" },
+        { "text": "VELOS" },
+        { "text": "EVLO" },
+        { "text": "OLEV" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Les autres mots ont des lettres ajoutées ou mélangées ; seul « VELO » (1re option) est écrit pareil."
+    },
+    {
+      "id": 29,
+      "domain": "att",
+      "question": "Combien de mots commencent par la lettre « b » dans cette phrase : « Le petit bébé boit du lait avec sa maman. » ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "1" },
+        { "text": "2" },
+        { "text": "3" },
+        { "text": "4" }
+      ],
+      "correctIndex": 1,
+      "explanation": "« bébé » et « boit » commencent tous les deux par « b », soit 2 mots."
+    },
+    {
+      "id": 30,
+      "domain": "att",
+      "question": "Regarde cette liste de formes : carré, rond, carré, carré, rond, carré. Combien y a-t-il de carrés ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "3" },
+        { "text": "4" },
+        { "text": "5" },
+        { "text": "6" }
+      ],
+      "correctIndex": 1,
+      "explanation": "En comptant chaque carré un par un dans la liste, on en trouve 4."
+    },
+    {
+      "id": 31,
+      "domain": "org",
+      "question": "Après l'hiver, quelle saison vient ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Été" },
+        { "text": "Automne" },
+        { "text": "Printemps" },
+        { "text": "Hiver" }
+      ],
+      "correctIndex": 2,
+      "explanation": "L'ordre des saisons est printemps, été, automne, hiver : après l'hiver, le printemps revient."
+    },
+    {
+      "id": 32,
+      "domain": "org",
+      "question": "Pour se brosser les dents, que fait-on en premier ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Mettre le dentifrice sur la brosse" },
+        { "text": "Se rincer la bouche" },
+        { "text": "Ranger la brosse" },
+        { "text": "Se sécher les mains" }
+      ],
+      "correctIndex": 0,
+      "explanation": "Avant de brosser ses dents, il faut d'abord mettre le dentifrice sur la brosse."
+    },
+    {
+      "id": 33,
+      "domain": "org",
+      "question": "Une fourmi, un chat et un éléphant : lequel est le plus grand ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "La fourmi" },
+        { "text": "Le chat" },
+        { "text": "L'éléphant" },
+        { "text": "Ils sont pareils" }
+      ],
+      "correctIndex": 2,
+      "explanation": "L'éléphant est bien plus grand qu'un chat, lui-même plus grand qu'une fourmi."
+    },
+    {
+      "id": 34,
+      "domain": "org",
+      "question": "Quel jour vient juste après le lundi ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Dimanche" },
+        { "text": "Mardi" },
+        { "text": "Mercredi" },
+        { "text": "Vendredi" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Dans la semaine, le mardi vient juste après le lundi."
+    },
+    {
+      "id": 35,
+      "domain": "org",
+      "question": "Pour faire un gâteau, que fait-on en premier ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Manger le gâteau" },
+        { "text": "Préparer les ingrédients" },
+        { "text": "Le mettre au four" },
+        { "text": "Le décorer" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Avant de cuisiner, il faut d'abord préparer les ingrédients."
+    },
+    {
+      "id": 36,
+      "domain": "mec",
+      "question": "Si tu lâches une balle en l'air, où tombe-t-elle ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Elle monte dans le ciel" },
+        { "text": "Elle tombe par terre" },
+        { "text": "Elle reste en l'air" },
+        { "text": "Elle vole" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Quand on lâche un objet, il tombe toujours vers le sol."
+    },
+    {
+      "id": 37,
+      "domain": "mec",
+      "question": "Qu'est-ce qui flotte sur l'eau ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Une pierre" },
+        { "text": "Un bateau en bois" },
+        { "text": "Une pièce de monnaie" },
+        { "text": "Un clou" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Le bois est léger et flotte sur l'eau, contrairement à la pierre, la pièce ou le clou qui coulent."
+    },
+    {
+      "id": 38,
+      "domain": "mec",
+      "question": "Si tu pousses une balançoire, que se passe-t-il ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Elle reste immobile" },
+        { "text": "Elle bouge d'avant en arrière" },
+        { "text": "Elle disparaît" },
+        { "text": "Elle devient plus lourde" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Quand on pousse une balançoire, elle se met à bouger d'avant en arrière."
+    },
+    {
+      "id": 39,
+      "domain": "mec",
+      "question": "Un aimant attire...",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Un morceau de bois" },
+        { "text": "Un clou en métal" },
+        { "text": "Une feuille de papier" },
+        { "text": "Un ballon" }
+      ],
+      "correctIndex": 1,
+      "explanation": "Un aimant attire les objets en métal, comme un clou."
+    },
+    {
+      "id": 40,
+      "domain": "mec",
+      "question": "Si tu mets un glaçon au soleil, que se passe-t-il ?",
+      "series": null,
+      "figure": null,
+      "grid": false,
+      "options": [
+        { "text": "Il devient plus dur" },
+        { "text": "Il fond" },
+        { "text": "Il grossit" },
+        { "text": "Il ne change pas" }
+      ],
+      "correctIndex": 1,
+      "explanation": "La chaleur du soleil fait fondre la glace, qui se transforme en eau."
+    }
+  ]
+}

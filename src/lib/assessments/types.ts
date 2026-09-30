@@ -249,6 +249,16 @@ export type LogicMcqDefinition = {
   };
   domains: Record<string, string>;
   items: LogicMcqItem[];
+  // Alternative item banks for the child/teen branch of the QI test (see
+  // QiAgeGate): keyed by band id ("6-8" | "9-11" | "12-14"). When a band is
+  // chosen, its items replace `items` entirely for both the quiz and the
+  // scoring pass — never mixed with the adult bank. Deliberately never
+  // scored as an IQ number (no real age-normed data backs that), only as a
+  // plain reasoning-level band via scoreLogicMcq's child path.
+  childBands?: Record<
+    string,
+    { label: string; ageRange: string; items: LogicMcqItem[] }
+  >;
 };
 
 // --- adhd_screener ("Repérage TDAH adulte") --------------------------------

@@ -48,7 +48,8 @@ function scoreByFormat(
   format: string,
   definition: unknown,
   answers: AnyAssessmentAnswers,
-  lang: "fr" | "en"
+  lang: "fr" | "en",
+  childBand?: string | null
 ): { result: unknown } | { error: string } {
   switch (format) {
     case "forced_choice_pair":
@@ -105,13 +106,24 @@ function scoreByFormat(
           answers as Record<string, PcmAnswer>
         ),
       };
-    case "logic_mcq":
+    case "logic_mcq": {
+      const def = definition as LogicMcqDefinition;
+      // childBand picks the age-appropriate item bank (see QiAgeGate) —
+      // scored entirely on its own items, never mixed with the adult bank,
+      // and never turned into an IQ-style number (scoreLogicMcq's
+      // childMode forces that off).
+      const band = childBand ? def.childBands?.[childBand] : null;
+      if (childBand && !band) {
+        return { error: "Tranche d'âge invalide." };
+      }
       return {
         result: scoreLogicMcq(
-          definition as LogicMcqDefinition,
-          answers as Record<string, number>
+          band ? { ...def, items: band.items } : def,
+          answers as Record<string, number>,
+          { childMode: !!band }
         ),
       };
+    }
     case "career_balance":
       return {
         result: scoreCareerBalance(
@@ -150,7 +162,8 @@ function scoreByFormat(
 // <form>.
 export async function submitAssessmentAttempt(
   testSlug: string,
-  answers: AnyAssessmentAnswers
+  answers: AnyAssessmentAnswers,
+  childBand?: string | null
 ): Promise<{ redirectTo: string } | { error: string }> {
   const supabase = await createClient();
   const { data: userData } = await supabase.auth.getUser();
@@ -196,7 +209,7 @@ export async function submitAssessmentAttempt(
     return { error: "Réponses invalides." };
   }
 
-  const scored = scoreByFormat(test.format, content.definition, answers, lang);
+  const scored = scoreByFormat(test.format, content.definition, answers, lang, childBand);
   if ("error" in scored) {
     return scored;
   }
