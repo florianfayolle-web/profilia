@@ -139,16 +139,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     siteName: SITE_NAME,
-    title: `${SITE_NAME}, tests de personnalité en ligne`,
+    title: `${SITE_NAME}, tests de personnalité, QI et profil cognitif en ligne`,
     description:
-      "Des tests de personnalité et de jugement situationnel sérieux, pour toi ou pour préparer un entretien de sélection.",
+      "Test de QI, DISC, Big Five, orientation RIASEC, repérage TDAH et HPI : des tests de personnalité et de raisonnement sérieux, pour mieux te connaître ou t'entraîner avant une sélection.",
     url: SITE_URL,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME}, tests de personnalité en ligne`,
+    title: `${SITE_NAME}, tests de personnalité, QI et profil cognitif en ligne`,
     description:
-      "Des tests de personnalité et de jugement situationnel sérieux, pour toi ou pour préparer un entretien de sélection.",
+      "Test de QI, DISC, Big Five, orientation RIASEC, repérage TDAH et HPI : des tests de personnalité et de raisonnement sérieux, pour mieux te connaître ou t'entraîner avant une sélection.",
   },
 };
 
