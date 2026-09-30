@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import type { Metadata } from "next";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
@@ -81,6 +82,7 @@ export default async function AdminResultsPage() {
               <th className="px-4 py-3 font-medium">Résultat</th>
               <th className="px-4 py-3 font-medium">Payé</th>
               <th className="px-4 py-3 font-medium"></th>
+              <th className="px-4 py-3 font-medium"></th>
             </tr>
           </thead>
           <tbody className="divide-y divide-card-border">
@@ -115,6 +117,17 @@ export default async function AdminResultsPage() {
                     <span className="text-muted-foreground">Non</span>
                   )}
                 </td>
+                <td className="px-4 py-3 whitespace-nowrap">
+                  {slugById.get(a.test_id) && (
+                    <Link
+                      href={`/tests/${slugById.get(a.test_id)}/result/${a.id}`}
+                      target="_blank"
+                      className="text-xs font-medium text-primary hover:underline"
+                    >
+                      Voir le résultat →
+                    </Link>
+                  )}
+                </td>
                 <td className="px-4 py-3">
                   <details>
                     <summary className="cursor-pointer text-xs text-primary hover:underline">
@@ -129,7 +142,7 @@ export default async function AdminResultsPage() {
             ))}
             {(!attempts || attempts.length === 0) && (
               <tr>
-                <td colSpan={6} className="px-4 py-6 text-center text-muted">
+                <td colSpan={7} className="px-4 py-6 text-center text-muted">
                   Aucun résultat pour le moment.
                 </td>
               </tr>

@@ -12,6 +12,7 @@ import { getTestThemeStyle } from "@/lib/test-theme";
 import { DownloadPdfButton } from "@/components/download-pdf-button";
 import { PaidLockedResult, type PartialTeaser } from "./paid-locked-result";
 import { getTestAccess } from "@/lib/access";
+import { isAdmin } from "@/lib/admin";
 import { SITE_NAME } from "@/lib/site";
 import { AnimalIllustration } from "@/components/animal-illustration";
 import { ProfiliaMark } from "@/components/profilia-mark";
@@ -137,13 +138,16 @@ export default async function ResultPage(
 
   const supabase = await createClient();
   const { data: userData } = await supabase.auth.getUser();
+  const admin = isAdmin(userData.user?.email);
 
   // RLS only lets this query through for a row the caller owns (auth.uid()
   // = user_id) — there is deliberately no public SELECT policy for guest
   // (user_id null) rows, since that would let anyone enumerate every free
   // test taker's email/answers/result, not just the one whose URL they
   // hold. A guest attempt is instead fetched below via the admin client,
-  // scoped to this exact id from the URL — never a public listing.
+  // scoped to this exact id from the URL — never a public listing. An admin
+  // account additionally gets a final fallback that fetches ANY attempt by
+  // id regardless of owner, for the /admin/results "voir le résultat" link.
   const { data: ownedAttempt } = await supabase
     .from("attempts")
     .select("*")
@@ -160,19 +164,31 @@ export default async function ResultPage(
       .maybeSingle<Attempt>();
     attempt = guestAttempt;
   }
+  if (!attempt && admin) {
+    const { data: anyAttempt } = await createAdminClient()
+      .from("attempts")
+      .select("*")
+      .eq("id", attemptId)
+      .maybeSingle<Attempt>();
+    attempt = anyAttempt;
+  }
 
   if (!attempt) {
     notFound();
   }
 
+  // Always the actual test-taker's name/email, never the viewer's — matters
+  // when an admin is looking at someone else's attempt. Admin client since
+  // a regular visitor's own RLS-readable profile already matches this id
+  // when it's their own attempt, so this is never less correct than before.
   let candidateName = attempt.guest_email ?? "";
-  if (userData.user) {
-    const { data: profile } = await supabase
+  if (attempt.user_id) {
+    const { data: profile } = await createAdminClient()
       .from("profiles")
-      .select("full_name")
-      .eq("id", userData.user.id)
-      .maybeSingle<{ full_name: string | null }>();
-    candidateName = profile?.full_name?.trim() || userData.user.email || "";
+      .select("full_name, email")
+      .eq("id", attempt.user_id)
+      .maybeSingle<{ full_name: string | null; email: string | null }>();
+    candidateName = profile?.full_name?.trim() || profile?.email || "";
   }
 
   const { data: test } = await supabase
@@ -222,15 +238,29 @@ export default async function ResultPage(
       ? await getTestAccess(test.id, test.price_cents, test.included_in_subscription)
       : null;
 
-  const isLocked = isFreeTest ? !attempt.unlocked : !(access?.hasAccess ?? false);
+  // Admins always see the full, unlocked report — that's the whole point
+  // of /admin/results linking here.
+  const isLocked = admin
+    ? false
+    : isFreeTest
+      ? !attempt.unlocked
+      : !(access?.hasAccess ?? false);
   const pendingUnlock =
     isLocked && (searchParams.unlock === "success" || searchParams.checkout === "success");
+
+  const viewingAsAdmin = admin && attempt.user_id !== userData.user?.id;
 
   return (
     <div
       className="sky-gradient mx-auto max-w-2xl px-6 py-16"
       style={getTestThemeStyle(slug)}
     >
+      {viewingAsAdmin && (
+        <div className="mb-6 rounded-lg border border-primary/30 bg-primary/5 px-4 py-2 text-center text-xs font-medium text-primary print:hidden">
+          Vue admin — résultat de {candidateName || "cette personne"}
+        </div>
+      )}
+
       <div className="print-report-header">
         <div className="mx-auto flex h-full max-w-2xl items-center justify-between px-6">
           <span className="flex items-center gap-2 text-base font-semibold tracking-tight text-primary">
