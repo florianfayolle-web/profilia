@@ -2,19 +2,10 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
+import { isAdmin } from "@/lib/admin";
+import { AdminNav } from "@/components/admin-nav";
 
 export const metadata: Metadata = { robots: { index: false, follow: false } };
-
-// Only the site owner can see this — everyone else gets a plain 404, same
-// as a route that doesn't exist, rather than a "forbidden" page that would
-// reveal there's something here to protect.
-function isAdmin(email: string | undefined) {
-  const allowed = (process.env.ADMIN_EMAILS ?? "")
-    .split(",")
-    .map((e) => e.trim().toLowerCase())
-    .filter(Boolean);
-  return !!email && allowed.includes(email.toLowerCase());
-}
 
 export default async function AdminLeadsPage() {
   const supabase = await createClient();
@@ -40,6 +31,7 @@ export default async function AdminLeadsPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-6 py-16">
+      <AdminNav active="leads" />
       <h1 className="text-2xl font-semibold tracking-tight">
         Inscriptions ({profiles?.length ?? 0})
       </h1>
