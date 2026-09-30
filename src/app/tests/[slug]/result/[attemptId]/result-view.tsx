@@ -672,9 +672,13 @@ export function ResultView({
               type d&apos;exercices — ce n&apos;est jamais une mesure figée.
             </p>
             <p className="mt-2">
-              Le détail par domaine ci-dessus et le corrigé ci-dessous sont plus utiles que le
-              chiffre seul : ils montrent où l&apos;enfant est à l&apos;aise et où reprendre
-              tranquillement, question par question.
+              Regarde surtout le détail par domaine ci-dessus : il montre où l&apos;enfant est à
+              l&apos;aise et où il pourrait reprendre tranquillement, plus utile au quotidien
+              qu&apos;un chiffre seul.
+            </p>
+            <p className="mt-3 text-center text-xs text-muted-foreground">
+              Le détail question par question n&apos;est pas affiché sur ce test, pour que le
+              résultat garde un sens si l&apos;enfant le repasse plus tard.
             </p>
           </div>
         )}
@@ -715,7 +719,7 @@ export function ResultView({
           </div>
         )}
 
-        {(r.iqScore == null || r.childMode) && (
+        {r.iqScore == null && (
         <div className="mt-10">
           <h2 className="text-xl font-semibold">Corrigé détaillé</h2>
           <div className="mt-4 divide-y divide-card-border">
