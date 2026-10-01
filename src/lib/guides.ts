@@ -11,6 +11,17 @@ export type Guide = {
   intro: string;
   sections: { heading: string; body: string[] }[];
   faq: { question: string; answer: string }[];
+  // Optional visual block (currently only the TDAH guide): a colored card
+  // per emotion instead of flowing prose, since this maps better to "one
+  // emotion, one role, one TDAH-specific twist" than a paragraph would.
+  // Original wording throughout — not adapted from any third-party source.
+  emotions?: {
+    heading: string;
+    intro: string;
+    cards: { name: string; color: string; role: string; withAdhd: string }[];
+    helpHeading: string;
+    helpTips: { title: string; text: string }[];
+  };
 };
 
 export const GUIDES: Guide[] = [
@@ -1186,6 +1197,78 @@ GUIDES.push({
       answer: "21 questions, environ 5 minutes.",
     },
   ],
+  emotions: {
+    heading: "Les émotions, au cœur du TDAH",
+    intro:
+      "La régulation émotionnelle est une dimension souvent sous-estimée du TDAH : on pense « attention » et « agitation », rarement au fait que les émotions elles-mêmes peuvent monter plus vite, plus fort, et redescendre moins facilement. Ce n'est un défaut de caractère ni un problème de volonté : c'est une différence de fonctionnement du cerveau, qui a tendance à moins freiner l'intensité d'une émotion une fois qu'elle démarre.",
+    cards: [
+      {
+        name: "Joie",
+        color: "#eab308",
+        role: "Porte l'enthousiasme, l'envie de se lancer dans de nouveaux projets.",
+        withAdhd:
+          "Démarre souvent avec une énergie débordante, mais s'essouffle vite : l'enthousiasme du début tient rarement jusqu'au bout de la tâche.",
+      },
+      {
+        name: "Tristesse",
+        color: "#3b82f6",
+        role: "Signale une perte, un besoin de ralentir ou d'être entendu.",
+        withAdhd:
+          "Arrive souvent après un échec, une remarque ou un sentiment répété de ne pas y arriver comme les autres — l'estime de soi est une vraie fragilité du TDAH, construite échec après échec.",
+      },
+      {
+        name: "Colère",
+        color: "#ef4444",
+        role: "Réagit à une injustice ressentie ou à une frustration.",
+        withAdhd:
+          "Peut exploser très vite, surtout face à l'attente, à un refus ou à une consigne vécue comme injuste : le temps entre « je ressens » et « j'agis » est naturellement plus court.",
+      },
+      {
+        name: "Peur",
+        color: "#8b5cf6",
+        role: "Anticipe un danger pour nous protéger.",
+        withAdhd:
+          "Se transforme facilement en peur de l'échec ou du jugement des autres, nourrie par les expériences répétées de ne pas être « à la hauteur » des attentes.",
+      },
+      {
+        name: "Anxiété",
+        color: "#f97316",
+        role: "Pousse à anticiper et à se préparer au pire pour l'éviter.",
+        withAdhd:
+          "Est particulièrement fréquente en cas de TDAH : elle prend souvent le relais pour « compenser » les oublis et l'imprévisibilité, au prix d'une fatigue mentale importante.",
+      },
+      {
+        name: "Ennui",
+        color: "#64748b",
+        role: "Signale qu'une activité ne mobilise plus assez l'attention.",
+        withAdhd:
+          "S'installe très vite dès qu'une tâche n'est pas assez stimulante, et peut déclencher une recherche immédiate d'autre chose à faire, même au mauvais moment.",
+      },
+    ],
+    helpHeading: "Comment aider au quotidien",
+    helpTips: [
+      {
+        title: "Accueillir l'émotion, pas la juger",
+        text: "Aucune émotion n'est « mauvaise » en soi : chacune porte une information. Mieux vaut l'accueillir que la faire taire.",
+      },
+      {
+        title: "Mettre des mots dessus",
+        text: "Nommer ce qu'on ressent (« tu es frustré parce que... ») aide à transformer une sensation confuse en quelque chose qu'on peut gérer.",
+      },
+      {
+        title: "Faire une vraie pause",
+        text: "Respirer, bouger, boire un verre d'eau : un cerveau TDAH en surcharge a besoin de ralentir physiquement avant de pouvoir se calmer mentalement.",
+      },
+      {
+        title: "S'appuyer sur des repères visuels",
+        text: "Routines, plannings, rappels visuels : ils réduisent l'imprévu, qui est souvent ce qui déclenche la montée émotionnelle.",
+      },
+      {
+        title: "Valoriser l'effort, pas seulement le résultat",
+        text: "Reconnaître les progrès et les tentatives, pas uniquement la réussite finale, construit une estime de soi plus solide sur la durée.",
+      },
+    ],
+  },
 });
 
 GUIDES.push({

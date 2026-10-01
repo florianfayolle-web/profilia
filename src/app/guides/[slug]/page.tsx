@@ -134,6 +134,52 @@ export default async function GuidePage(props: PageProps<"/guides/[slug]">) {
         ))}
       </div>
 
+      {guide.emotions && (
+        <div className="mt-12">
+          <h2 className="text-xl font-semibold tracking-tight">
+            {guide.emotions.heading}
+          </h2>
+          <p className="mt-3 text-muted">{guide.emotions.intro}</p>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {guide.emotions.cards.map((card) => (
+              <div
+                key={card.name}
+                className="rounded-xl border border-card-border bg-card p-4"
+              >
+                <span
+                  className="inline-flex items-center gap-2 text-sm font-semibold"
+                  style={{ color: card.color }}
+                >
+                  <span
+                    className="h-2.5 w-2.5 rounded-full"
+                    style={{ backgroundColor: card.color }}
+                  />
+                  {card.name}
+                </span>
+                <p className="mt-2 text-sm text-muted">{card.role}</p>
+                <p className="mt-2 text-sm">
+                  <span className="font-medium text-foreground">Avec le TDAH : </span>
+                  <span className="text-muted">{card.withAdhd}</span>
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="mt-10 text-lg font-semibold tracking-tight">
+            {guide.emotions.helpHeading}
+          </h3>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {guide.emotions.helpTips.map((tip) => (
+              <div key={tip.title}>
+                <p className="text-sm font-medium text-foreground">{tip.title}</p>
+                <p className="mt-1 text-sm text-muted">{tip.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="mt-12">
         <h2 className="text-xl font-semibold tracking-tight">
           Questions fréquentes
