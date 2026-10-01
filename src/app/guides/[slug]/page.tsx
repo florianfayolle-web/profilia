@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { GUIDES, getGuideBySlug } from "@/lib/guides";
 import { SITE_URL } from "@/lib/site";
 import { Illustration, motifForTest } from "@/components/illustration";
+import { EmotionFace } from "@/components/emotion-face";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { createAdminClient } from "@/lib/supabase/admin";
 import type { ArticleRow } from "@/lib/article-types";
@@ -147,16 +148,12 @@ export default async function GuidePage(props: PageProps<"/guides/[slug]">) {
                 key={card.name}
                 className="rounded-xl border border-card-border bg-card p-4"
               >
-                <span
-                  className="inline-flex items-center gap-2 text-sm font-semibold"
-                  style={{ color: card.color }}
-                >
-                  <span
-                    className="h-2.5 w-2.5 rounded-full"
-                    style={{ backgroundColor: card.color }}
-                  />
-                  {card.name}
-                </span>
+                <div className="flex items-center gap-3">
+                  <EmotionFace kind={card.kind} color={card.color} size={40} />
+                  <span className="text-sm font-semibold" style={{ color: card.color }}>
+                    {card.name}
+                  </span>
+                </div>
                 <p className="mt-2 text-sm text-muted">{card.role}</p>
                 <p className="mt-2 text-sm">
                   <span className="font-medium text-foreground">Avec le TDAH : </span>

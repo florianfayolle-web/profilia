@@ -3,6 +3,8 @@
 // "comment se préparer à X") that the short product page on /tests/[slug]
 // doesn't have room to cover. Each guide links back to its matching test.
 
+import type { EmotionKind } from "@/components/emotion-face";
+
 export type Guide = {
   slug: string;
   testSlug: string;
@@ -18,7 +20,7 @@ export type Guide = {
   emotions?: {
     heading: string;
     intro: string;
-    cards: { name: string; color: string; role: string; withAdhd: string }[];
+    cards: { name: string; kind: EmotionKind; color: string; role: string; withAdhd: string }[];
     helpHeading: string;
     helpTips: { title: string; text: string }[];
   };
@@ -1204,6 +1206,7 @@ GUIDES.push({
     cards: [
       {
         name: "Joie",
+        kind: "joy",
         color: "#eab308",
         role: "Porte l'enthousiasme, l'envie de se lancer dans de nouveaux projets.",
         withAdhd:
@@ -1211,6 +1214,7 @@ GUIDES.push({
       },
       {
         name: "Tristesse",
+        kind: "sadness",
         color: "#3b82f6",
         role: "Signale une perte, un besoin de ralentir ou d'être entendu.",
         withAdhd:
@@ -1218,6 +1222,7 @@ GUIDES.push({
       },
       {
         name: "Colère",
+        kind: "anger",
         color: "#ef4444",
         role: "Réagit à une injustice ressentie ou à une frustration.",
         withAdhd:
@@ -1225,6 +1230,7 @@ GUIDES.push({
       },
       {
         name: "Peur",
+        kind: "fear",
         color: "#8b5cf6",
         role: "Anticipe un danger pour nous protéger.",
         withAdhd:
@@ -1232,6 +1238,7 @@ GUIDES.push({
       },
       {
         name: "Anxiété",
+        kind: "anxiety",
         color: "#f97316",
         role: "Pousse à anticiper et à se préparer au pire pour l'éviter.",
         withAdhd:
@@ -1239,6 +1246,7 @@ GUIDES.push({
       },
       {
         name: "Ennui",
+        kind: "boredom",
         color: "#64748b",
         role: "Signale qu'une activité ne mobilise plus assez l'attention.",
         withAdhd:
