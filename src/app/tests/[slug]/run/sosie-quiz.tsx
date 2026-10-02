@@ -175,7 +175,12 @@ export function SosieQuiz({
     <div className="mt-6">
 
       <div className="mt-4 flex items-baseline justify-between text-sm text-muted">
-        <span>{part} · {n} / {total}</span>
+        <span>
+          Question {step + 1} / {items.length}
+          <span className="block text-xs text-muted-foreground">
+            {part} · {n} sur {total}
+          </span>
+        </span>
         <span>{answeredCount === items.length ? "Terminé" : `Reste ${fmtMin(remainingMs)}`}</span>
       </div>
       <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-card-border/60">

@@ -86,7 +86,7 @@ export function PcmQuiz({
             text={items[0].text}
             labels={definition.scale.map((x) => x.label)}
             picked={3}
-            caption="Une phrase s'affiche : clique sur le niveau qui indique à quel point elle te ressemble. Une première partie parle de toi depuis toujours, une seconde de cette dernière année."
+            caption={`Une phrase s'affiche : clique sur le niveau qui indique à quel point elle te ressemble. Une première partie (${effectiveSplit} questions) parle de toi depuis toujours, une seconde (${items.length - effectiveSplit} questions) de cette dernière année.`}
           />
         }
       />
@@ -156,7 +156,7 @@ export function PcmQuiz({
           </svg>
           {isBase ? "Depuis toujours" : "Cette année"}
         </span>
-        <span className="text-sm text-muted">{n} / {total}</span>
+        <span className="text-sm text-muted">{step + 1} / {items.length}</span>
       </div>
       <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-card-border/60">
         <div
@@ -164,6 +164,9 @@ export function PcmQuiz({
           style={{ width: `${percent}%`, backgroundColor: partColor }}
         />
       </div>
+      <p className="mt-1.5 text-xs text-muted-foreground">
+        Partie {isBase ? 1 : 2} sur 2 · question {n} sur {total}
+      </p>
 
       <div key={step} className="fade-in mt-6">
         <p className="text-xl font-medium leading-snug">{item.text}</p>
