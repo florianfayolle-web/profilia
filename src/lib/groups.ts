@@ -63,7 +63,7 @@ export function summarizeResult(
       break;
     case "pcm_likert":
       summary.headline = str(asObj(r.baseType).name);
-      summary.bars = dims.map((d) => ({ label: str(d.label), value: clamp01((num(d.basePercent) ?? 0) / 100) }));
+      summary.bars = dims.map((d) => ({ label: str(d.label), value: clamp01(num(d.basePercent) ?? 0) }));
       break;
     case "orientation_riasec": {
       const domains = Array.isArray(r.domainResults) ? (r.domainResults as Obj[]) : [];
