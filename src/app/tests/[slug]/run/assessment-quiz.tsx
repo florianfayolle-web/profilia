@@ -883,11 +883,11 @@ function BipolarQuestion({
           {item.right.text}
         </p>
       </div>
-      <div className="flex items-center gap-2 sm:gap-3">
-        <span className="w-16 shrink-0 text-xs text-muted-foreground">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
+        <span className="hidden w-16 shrink-0 text-xs text-muted-foreground sm:block">
           {scale[0]?.label}
         </span>
-        <div className="flex flex-1 justify-between gap-2 sm:gap-3">
+        <div className="flex w-full justify-between gap-1 sm:flex-1 sm:gap-3">
           {scale.map((step) => {
             const indexInPole =
               step.anchor === "left"
@@ -908,7 +908,7 @@ function BipolarQuestion({
                 aria-pressed={selected}
                 onClick={() => onChoose(step.value)}
                 style={{ backgroundColor: color }}
-                className={`h-10 w-10 shrink-0 rounded-full border-2 transition disabled:opacity-40 ${
+                className={`h-11 w-11 shrink-0 rounded-full border-2 transition disabled:opacity-40 sm:h-10 sm:w-10 ${
                   selected
                     ? "scale-110 border-foreground shadow-md"
                     : "border-transparent hover:scale-105 hover:border-foreground/40"
@@ -917,9 +917,13 @@ function BipolarQuestion({
             );
           })}
         </div>
-        <span className="w-16 shrink-0 text-right text-xs text-muted-foreground">
+        <span className="hidden w-16 shrink-0 text-right text-xs text-muted-foreground sm:block">
           {scale[scale.length - 1]?.label}
         </span>
+        <div className="flex justify-between gap-4 text-xs text-muted-foreground sm:hidden">
+          <span>{scale[0]?.label}</span>
+          <span className="text-right">{scale[scale.length - 1]?.label}</span>
+        </div>
       </div>
     </div>
   );
