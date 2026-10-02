@@ -63,6 +63,30 @@ const euros = (cents: number) =>
 
 const DAYS_TREND = 14;
 
+const SOURCE_NAMES: [RegExp, string][] = [
+  [/(^|\.)google\./, "Google"],
+  [/(^|\.)bing\.com$/, "Bing"],
+  [/duckduckgo\.com$/, "DuckDuckGo"],
+  [/ecosia\.org$/, "Ecosia"],
+  [/qwant\.com$/, "Qwant"],
+  [/(^|\.)yahoo\./, "Yahoo"],
+  [/(^|\.)(facebook|fb)\.com$|^l\.facebook\.com$|^lm\.facebook\.com$/, "Facebook"],
+  [/instagram\.com$/, "Instagram"],
+  [/^t\.co$|(^|\.)(twitter|x)\.com$/, "X / Twitter"],
+  [/linkedin\.com$|^lnkd\.in$/, "LinkedIn"],
+  [/youtube\.com$|^youtu\.be$/, "YouTube"],
+  [/tiktok\.com$/, "TikTok"],
+  [/pinterest\./, "Pinterest"],
+  [/reddit\.com$/, "Reddit"],
+  [/whatsapp\.com$/, "WhatsApp"],
+];
+
+function sourceLabel(e: { referrer_host: string | null; utm_source: string | null }) {
+  if (e.utm_source) return `${e.utm_source} (UTM)`;
+  if (!e.referrer_host) return "Direct / inconnu";
+  return SOURCE_NAMES.find(([re]) => re.test(e.referrer_host!))?.[1] ?? e.referrer_host;
+}
+
 export default async function AdminStatsPage() {
   const supabase = await createClient();
   const { data: userData } = await supabase.auth.getUser();
@@ -93,6 +117,7 @@ export default async function AdminStatsPage() {
     { data: attemptsByTest },
     { data: tests },
     { data: recentAttempts },
+    { data: entries, error: entriesError },
   ] = await Promise.all([
     admin.from("profiles").select("id", { count: "exact", head: true }),
     admin.from("profiles").select("id", { count: "exact", head: true }).gte("created_at", d7),
@@ -112,7 +137,22 @@ export default async function AdminStatsPage() {
     admin.from("attempts").select("test_id"),
     admin.from("tests").select("id, slug, title, price_cents"),
     admin.from("attempts").select("completed_at").gte("completed_at", dTrend),
+    admin
+      .from("page_views")
+      .select("referrer_host, utm_source")
+      .eq("is_entry", true)
+      .gte("viewed_at", d30),
   ]);
+
+  const countBySource = new Map<string, number>();
+  for (const e of entries ?? []) {
+    const label = sourceLabel(e);
+    countBySource.set(label, (countBySource.get(label) ?? 0) + 1);
+  }
+  const sources = [...countBySource.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 12)
+    .map(([label, value]) => ({ key: label, label, value }));
 
   const titleById = new Map((tests ?? []).map((t) => [t.id, t.title]));
   const priceById = new Map((tests ?? []).map((t) => [t.id, t.price_cents]));
@@ -190,6 +230,21 @@ export default async function AdminStatsPage() {
 
       <h2 className="mt-14 text-xl font-semibold tracking-tight">Activité — {DAYS_TREND} derniers jours</h2>
       <BarList items={trend} />
+
+      <h2 className="mt-14 text-xl font-semibold tracking-tight">D&apos;où viennent les visites (30j)</h2>
+      {entriesError ? (
+        <p className="mt-4 text-sm text-muted">
+          Le suivi de provenance n&apos;est pas encore activé : lance le bloc « Traffic source
+          tracking » de supabase/schema.sql dans l&apos;éditeur SQL de Supabase.
+        </p>
+      ) : (
+        <>
+          <p className="mt-1 text-xs text-muted-foreground">
+            Une visite = une arrivée sur le site. Les données commencent à l&apos;activation du suivi.
+          </p>
+          <BarList items={sources} />
+        </>
+      )}
 
       <h2 className="mt-14 text-xl font-semibold tracking-tight">Tests les plus passés</h2>
       <BarList items={topTests} />

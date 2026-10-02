@@ -361,6 +361,15 @@ create table if not exists public.page_views (
 
 create index if not exists page_views_viewed_at_idx on public.page_views (viewed_at);
 
+-- Traffic source tracking: only the first page of a visit (is_entry) carries
+-- the referrer host and UTM tags, since document.referrer doesn't change on
+-- client-side navigations. Host only, never the full referrer URL.
+alter table public.page_views add column if not exists is_entry boolean not null default false;
+alter table public.page_views add column if not exists referrer_host text;
+alter table public.page_views add column if not exists utm_source text;
+alter table public.page_views add column if not exists utm_medium text;
+alter table public.page_views add column if not exists utm_campaign text;
+
 alter table public.page_views enable row level security;
 -- No policies: only the service-role key can read or write this table.
 
