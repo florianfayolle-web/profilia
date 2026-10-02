@@ -323,8 +323,11 @@ export async function submitFreeAttempt(
       result: scored.result,
       guest_email: trimmedEmail,
       // Blurred teaser until the visitor pays the unlock micro-payment —
-      // see createUnlockCheckoutSession / the Stripe webhook.
-      unlocked: false,
+      // see createUnlockCheckoutSession / the Stripe webhook. Only the
+      // bipolar_pairs result has a teaser view (TeaserResult), so any other
+      // free test (e.g. the Boussole orientation test) is fully free: its
+      // result is unlocked immediately.
+      unlocked: test.format !== "bipolar_pairs",
     })
     .select("id")
     .single();

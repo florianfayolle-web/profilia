@@ -182,6 +182,7 @@ export const ENTRIES = [
     format: "orientation_riasec",
     language: "fr",
     lookupKey: "test_orientation_riasec_onetime",
+    priceCents: 0,
     title: "Boussole — test d'orientation",
     description:
       "Test d'orientation en 88 propositions, basé sur le modèle RIASEC utilisé par la plupart des questionnaires d'orientation (dont ceux de l'Onisep). Croise tes activités préférées, tes centres d'intérêt, tes valeurs et tes compétences pour dresser ton profil sur 6 dimensions et te proposer des pistes parmi 122 métiers, avec des conseils adaptés selon que tu es au lycée/post-bac ou en reconversion professionnelle.",

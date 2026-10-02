@@ -82,9 +82,10 @@ export function PcmQuiz({
         questionCount={items.length}
         demo={
           <AnswerDemo
-            kind="scale"
-            text={items[0].text}
-            labels={definition.scale.map((x) => x.label)}
+            kind="choice"
+            numbered
+            lead={items[0].text}
+            options={definition.scale.map((x) => x.label)}
             picked={3}
             caption={`Une phrase s'affiche : clique sur le niveau qui indique à quel point elle te ressemble. Une première partie (${effectiveSplit} questions) parle de toi depuis toujours, une seconde (${items.length - effectiveSplit} questions) de cette dernière année.`}
           />

@@ -7,8 +7,8 @@ import type { ReactNode } from "react";
 
 export type AnswerDemoProps =
   | { kind: "plusminus"; prompt: string; options: string[]; plus: number; minus: number; caption: string }
-  | { kind: "choice"; lead?: string; options: string[]; picked: number; caption: string }
-  | { kind: "scale"; text: string; labels: string[]; picked: number; caption: string }
+  | { kind: "choice"; lead?: string; options: string[]; picked: number; caption: string; numbered?: boolean }
+  | { kind: "scale"; text: string; labels: string[]; picked: number; caption: string; faces?: string[] }
   | { kind: "slider"; text: string; leftLabel: string; rightLabel: string; value: number; caption: string }
   | {
       kind: "bipolar";
@@ -101,7 +101,7 @@ function Body(props: AnswerDemoProps) {
               }`}
             >
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md border border-card-border text-xs font-semibold text-muted-foreground">
-                {String.fromCharCode(65 + i)}
+                {props.numbered ? i + 1 : String.fromCharCode(65 + i)}
               </span>
               <span className="flex-1">{text}</span>
               {i === props.picked && <Tag>Ton choix</Tag>}
@@ -122,10 +122,14 @@ function Body(props: AnswerDemoProps) {
                   i === props.picked ? "border-green-500 bg-green-500/15" : "border-card-border"
                 }`}
               >
-                <span
-                  className="rounded-full border-2 border-foreground/70"
-                  style={{ width: 12 + i * 5, height: 12 + i * 5 }}
-                />
+                {props.faces ? (
+                  <span className="text-2xl">{props.faces[i] ?? "🙂"}</span>
+                ) : (
+                  <span
+                    className="rounded-full border-2 border-foreground/70"
+                    style={{ width: 12 + i * 5, height: 12 + i * 5 }}
+                  />
+                )}
                 <span className="text-center text-[11px] leading-tight text-muted">{label}</span>
               </div>
             ))}

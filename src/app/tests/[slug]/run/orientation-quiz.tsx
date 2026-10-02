@@ -2,7 +2,8 @@
 
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
-import { submitAssessmentAttempt } from "@/app/actions/assessments";
+import { submitAssessmentAttempt, submitFreeAttempt } from "@/app/actions/assessments";
+import { EmailGate } from "@/components/email-gate";
 import { QuizIntro } from "@/components/quiz-intro";
 import { AnswerDemo } from "@/components/answer-demo";
 import { QuizLoading } from "@/components/quiz-loading";
@@ -39,14 +40,19 @@ export function OrientationQuiz({
   testSlug,
   definition,
   hasAccess,
+  needsEmailGate = false,
+  autoStart = false,
 }: {
   testSlug: string;
   definition: OrientationDefinition;
   hasAccess: boolean;
+  needsEmailGate?: boolean;
+  autoStart?: boolean;
 }) {
   const router = useRouter();
   const items = definition.items;
-  const [started, setStarted] = useState(false);
+  const [started, setStarted] = useState(autoStart);
+  const [showEmailGate, setShowEmailGate] = useState(false);
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [isPending, startTransition] = useTransition();
@@ -63,6 +69,10 @@ export function OrientationQuiz({
     const nextAnswers = { ...answers, [String(item.id)]: value };
     setAnswers(nextAnswers);
 
+    if (isLast && needsEmailGate) {
+      setShowEmailGate(true);
+      return;
+    }
     if (isLast) {
       setError(null);
       startTransition(async () => {
@@ -81,6 +91,26 @@ export function OrientationQuiz({
   function goPrev() {
     if (step === 0) return;
     setStep((s) => s - 1);
+  }
+
+  if (showEmailGate) {
+    return (
+      <EmailGate
+        pending={isPending}
+        error={error}
+        onSubmit={(email, consent) => {
+          setError(null);
+          startTransition(async () => {
+            const result = await submitFreeAttempt(testSlug, answers, email, consent);
+            if ("error" in result) {
+              setError(result.error);
+            } else {
+              router.push(result.redirectTo);
+            }
+          });
+        }}
+      />
+    );
   }
 
   if (!started) {

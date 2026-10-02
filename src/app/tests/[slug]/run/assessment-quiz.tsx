@@ -128,6 +128,7 @@ function introDemo(
           kind="scale"
           text={d.items[0].text}
           labels={sorted.map((x) => x.label)}
+          faces={EMOJI_SCALE_SLUGS.has(testSlug) ? FACES : undefined}
           picked={3}
           caption={
             fr
@@ -301,6 +302,8 @@ export function AssessmentQuiz({
         testSlug={testSlug}
         definition={definition as OrientationDefinition}
         hasAccess={hasAccess}
+        needsEmailGate={needsEmailGate}
+        autoStart={autoStart}
       />
     );
   }

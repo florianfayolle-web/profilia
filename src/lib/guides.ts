@@ -1032,7 +1032,7 @@ GUIDES.push({
     {
       question: "Quelle différence avec les autres tests de personnalité du site ?",
       answer:
-        "C'est le format le plus court et le seul entièrement gratuit du site : 20 questions contre 50 à 150 pour les autres tests, qui explorent chacun un modèle différent (SOSIE 2, DISC, Process Communication...) avec un rapport plus détaillé.",
+        "C'est le format le plus court, et l'un des deux tests entièrement gratuits du site (avec la Boussole, un test d'orientation) : 20 questions contre 30 à 150 pour les autres tests, qui explorent chacun un modèle différent (SOSIE 2, DISC, Process Communication...) avec un rapport plus détaillé.",
     },
   ],
 });
