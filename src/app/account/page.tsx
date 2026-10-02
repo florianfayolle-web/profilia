@@ -97,6 +97,8 @@ export default async function AccountPage(props: PageProps<"/account">) {
     }
   }
 
+  const latestShareable = (attempts ?? []).find((a) => GROUP_TEST_SLUGS.has(a.tests.slug)) ?? null;
+
   return (
     <div className="mx-auto max-w-2xl px-6 py-16">
       <h1 className="text-3xl font-semibold tracking-tight">Mon compte</h1>
@@ -110,6 +112,44 @@ export default async function AccountPage(props: PageProps<"/account">) {
             : ""}
         </p>
       )}
+
+      <section className="mt-8 overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-700 via-violet-700 to-pink-600 p-6 text-white shadow-md">
+        <h2 className="text-xl font-bold tracking-tight">Défie tes amis et ta famille</h2>
+        {latestShareable ? (
+          <>
+            <p className="mt-2 text-sm text-white/90">
+              Compare ton résultat « {latestShareable.tests.title} » avec des proches, ou montre-le sur Instagram.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href={`/tests/${latestShareable.tests.slug}/result/${latestShareable.id}#groupe`}
+                className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-indigo-700 shadow transition hover:bg-white/90"
+              >
+                Comparer avec mes amis
+              </Link>
+              <Link
+                href={`/tests/${latestShareable.tests.slug}/result/${latestShareable.id}#partager`}
+                className="rounded-full border border-white/60 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10"
+              >
+                Publier sur Instagram
+              </Link>
+            </div>
+          </>
+        ) : (
+          <>
+            <p className="mt-2 text-sm text-white/90">
+              Passe un test de personnalité (test express gratuit, DISC, Boussole…), puis invite tes proches à le
+              faire pour comparer vos profils.
+            </p>
+            <Link
+              href="/tests/personnalite"
+              className="mt-4 inline-block rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-indigo-700 shadow transition hover:bg-white/90"
+            >
+              Faire un test de personnalité
+            </Link>
+          </>
+        )}
+      </section>
 
       <section className="mt-10">
         <h2 className="text-lg font-medium">Abonnement</h2>
@@ -217,16 +257,16 @@ export default async function AccountPage(props: PageProps<"/account">) {
                     </span>
                   </Link>
                   {GROUP_TEST_SLUGS.has(attempt.tests.slug) && (
-                    <div className="flex flex-wrap gap-x-5 gap-y-1 border-t border-card-border/60 px-4 py-2 text-xs">
+                    <div className="flex flex-wrap gap-2 border-t border-card-border/60 px-4 py-3 text-xs">
                       <Link
                         href={`/tests/${attempt.tests.slug}/result/${attempt.id}#groupe`}
-                        className="font-medium text-primary hover:underline"
+                        className="rounded-full bg-primary px-3.5 py-1.5 font-medium text-primary-foreground transition hover:opacity-90"
                       >
                         Défier mes amis
                       </Link>
                       <Link
                         href={`/tests/${attempt.tests.slug}/result/${attempt.id}#partager`}
-                        className="font-medium text-primary hover:underline"
+                        className="rounded-full border border-card-border px-3.5 py-1.5 font-medium transition hover:border-primary/40"
                       >
                         Publier sur Instagram
                       </Link>
