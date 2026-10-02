@@ -8,6 +8,7 @@ import { formatPrice, type Test } from "@/lib/types";
 import { createTestCheckoutSession } from "@/app/actions/checkout";
 import { ConsentCheckoutButton } from "@/components/consent-checkout-button";
 import { PaymentPendingNotice } from "@/components/payment-pending";
+import { clipDescription, clipTitle } from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 import { getTestThemeStyle } from "@/lib/test-theme";
 import { GUIDES } from "@/lib/guides";
@@ -44,12 +45,12 @@ export async function generateMetadata(
   if (!test) return {};
 
   return {
-    title: test.title,
-    description: test.description,
+    title: clipTitle(test.title),
+    description: clipDescription(test.description),
     alternates: { canonical: `/tests/${test.slug}` },
     openGraph: {
       title: test.title,
-      description: test.description,
+      description: clipDescription(test.description),
       url: `${SITE_URL}/tests/${test.slug}`,
       type: "website",
     },

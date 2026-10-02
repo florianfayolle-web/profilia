@@ -37,7 +37,7 @@ export const revalidate = 300;
 export const metadata: Metadata = {
   title: category.title,
   description:
-    "Passe un test de personnalité en ligne complet et détaillé, pour mieux te connaître : profil psychologique, points forts, axes de progression, rapport par dimension téléchargeable en PDF.",
+    "Passe un test de personnalité en ligne complet pour mieux te connaître : profil, points forts, axes de progression, rapport par dimension en PDF.",
   alternates: { canonical: "/tests/personnalite" },
 };
 

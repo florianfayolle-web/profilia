@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { GUIDES, getGuideBySlug } from "@/lib/guides";
+import { clipDescription, clipTitle } from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 import { Illustration, motifForTest } from "@/components/illustration";
 import { EmotionFace } from "@/components/emotion-face";
@@ -21,12 +22,12 @@ export async function generateMetadata(
   if (!guide) return {};
 
   return {
-    title: guide.title,
-    description: guide.metaDescription,
+    title: clipTitle(guide.title),
+    description: clipDescription(guide.metaDescription),
     alternates: { canonical: `/guides/${guide.slug}` },
     openGraph: {
       title: guide.title,
-      description: guide.metaDescription,
+      description: clipDescription(guide.metaDescription),
       url: `${SITE_URL}/guides/${guide.slug}`,
       type: "article",
     },

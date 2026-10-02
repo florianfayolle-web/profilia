@@ -32,7 +32,7 @@ export const revalidate = 300;
 export const metadata: Metadata = {
   title: category.title,
   description:
-    "Un test de raisonnement façon QI et un questionnaire de repérage du TDAH basé sur les critères du DSM-5, des outils indicatifs et d'auto-réflexion, jamais un diagnostic médical.",
+    "Un test de raisonnement façon QI, un repérage du TDAH (critères DSM-5) et un test HPI : des outils indicatifs, jamais un diagnostic médical.",
   alternates: { canonical: "/tests/qi-sante-mentale" },
 };
 

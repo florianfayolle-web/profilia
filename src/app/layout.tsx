@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Test de QI, DISC, Big Five, orientation RIASEC, repérage TDAH et HPI : des tests de personnalité et de raisonnement sérieux, pour mieux te connaître ou t'entraîner avant une sélection (compagnie aérienne, armée, grande entreprise). Réponses gratuites, rapport détaillé.",
+    "Test de QI, DISC, Big Five, orientation, repérage TDAH et HPI : tests de personnalité et de raisonnement sérieux. Questions gratuites, rapport détaillé.",
   keywords: [
     "test de personnalité",
     "test de personnalité en ligne",

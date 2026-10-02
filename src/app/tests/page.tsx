@@ -6,7 +6,7 @@ import { CategoryIcon } from "@/components/category-icon";
 export const metadata: Metadata = {
   title: "Tous les tests",
   description:
-    "Tests de personnalité à choix forcé, tests de jugement situationnel et bilans de personnalité. Réponds à toutes les questions gratuitement, seul le rapport complet est payant.",
+    "QI, DISC, Big Five, orientation, TDAH, HPI : tous les tests de personnalité et de raisonnement. Questions gratuites, seul le rapport complet est payant.",
   alternates: { canonical: "/tests" },
 };
 

@@ -1354,7 +1354,7 @@ GUIDES.push({
     {
       heading: "Comment ça marche",
       body: [
-        "20 affirmations en paires opposées explorent 5 grandes facettes de ta personnalité : ton rapport au groupe (Loup ou Chat), ton énergie sociale (Dauphin ou Hibou), ta façon de décider (Lion ou Renard), ton rapport au temps (Aigle ou Ours), et ton rapport au travail (Abeille ou Papillon). Ton profil final retient la facette la plus marquée chez toi, celle où tu penches le plus nettement d'un côté.",
+        "12 questions à choix multiple, construites sur de petites mises en situation du quotidien (ton week-end idéal, ta réaction face à un imprévu…), te placent face à plusieurs façons de réagir. Chaque réponse te rapproche d'un des 10 animaux (loup, chat, dauphin, hibou, lion, renard, aigle, ours, abeille, papillon) : ton profil final est celui qui revient le plus souvent dans tes choix.",
       ],
     },
     {
@@ -1378,7 +1378,7 @@ GUIDES.push({
     },
     {
       question: "Combien de temps ça prend ?",
-      answer: "20 affirmations, environ 5 minutes.",
+      answer: "12 questions, environ 3 minutes.",
     },
   ],
 });

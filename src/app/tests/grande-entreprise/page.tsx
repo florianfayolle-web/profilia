@@ -34,7 +34,7 @@ export const revalidate = 300;
 export const metadata: Metadata = {
   title: category.title,
   description:
-    "Tests de personnalité pour préparer un entretien ou un recrutement en grande entreprise : bilan de personnalité complet et test DISC (Dominant, Influent, Stable, Conforme).",
+    "Tests de personnalité pour préparer un entretien ou un recrutement en grande entreprise : bilan de personnalité complet et test DISC.",
   alternates: { canonical: "/tests/grande-entreprise" },
 };
 

@@ -34,7 +34,7 @@ export const revalidate = 300;
 export const metadata: Metadata = {
   title: category.title,
   description:
-    "Tests de personnalité et de jugement situationnel pour préparer une sélection de pilote de ligne, pilote militaire ou personnel naviguant commercial : formats SOSIE 2, TD12, ADAPT, OCEAN.",
+    "Tests de personnalité et de jugement situationnel pour préparer une sélection de pilote de ligne ou militaire, ou de PNC : SOSIE 2, TD12, ADAPT, OCEAN.",
   alternates: { canonical: "/tests/pilote" },
 };
 

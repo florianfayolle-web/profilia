@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import { ARTICLE_CATEGORY_LABELS, type ArticleRow } from "@/lib/article-types";
+import { clipDescription, clipTitle } from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 import { GUIDES } from "@/lib/guides";
 import { Illustration, motifForArticle } from "@/components/illustration";
@@ -29,12 +30,12 @@ export async function generateMetadata(
   if (!article) return {};
 
   return {
-    title: article.title,
-    description: article.meta_description,
+    title: clipTitle(article.title),
+    description: clipDescription(article.meta_description),
     alternates: { canonical: `/blog/${article.slug}` },
     openGraph: {
       title: article.title,
-      description: article.meta_description,
+      description: clipDescription(article.meta_description),
       url: `${SITE_URL}/blog/${article.slug}`,
       type: "article",
     },
