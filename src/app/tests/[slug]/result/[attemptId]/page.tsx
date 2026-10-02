@@ -15,6 +15,7 @@ import { getTestAccess } from "@/lib/access";
 import { isAdmin } from "@/lib/admin";
 import { GROUP_TEST_SLUGS } from "@/lib/groups";
 import { GroupCard } from "@/components/group-card";
+import { ShareResultCard } from "@/components/share-result-card";
 import { SITE_NAME } from "@/lib/site";
 import { AnimalIllustration } from "@/components/animal-illustration";
 import { ProfiliaMark } from "@/components/profilia-mark";
@@ -254,10 +255,9 @@ export default async function ResultPage(
 
   // "Compare with friends" only appears once the schema for it exists
   // (supabase/schema.sql, comparison_groups) and for allow-listed tests.
+  const canShareResult = !isLocked && !viewingAsAdmin && GROUP_TEST_SLUGS.has(slug);
   const showGroupCard =
-    !isLocked &&
-    !viewingAsAdmin &&
-    GROUP_TEST_SLUGS.has(slug) &&
+    canShareResult &&
     !(await createAdminClient().from("comparison_groups").select("id").limit(1)).error;
 
   return (
@@ -405,6 +405,9 @@ export default async function ResultPage(
         </div>
       )}
 
+      {canShareResult && test && (
+        <ShareResultCard attemptId={attemptId} testSlug={slug} testTitle={test.title} />
+      )}
       {showGroupCard && <GroupCard attemptId={attemptId} testSlug={slug} />}
 
       <div className="mt-10 flex justify-center gap-4 print:hidden">

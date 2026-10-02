@@ -258,6 +258,27 @@ export default async function Home() {
         </section>
       )}
 
+      <section className="mx-auto max-w-5xl px-6 py-6">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-700 via-violet-700 to-pink-600 px-6 py-12 text-center text-white shadow-lg sm:px-12">
+          <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-amber-300/20" />
+          <div className="pointer-events-none absolute -bottom-20 -left-10 h-56 w-56 rounded-full bg-sky-300/20" />
+          <h2 className="relative text-3xl font-bold tracking-tight sm:text-4xl">
+            Viens défier tes amis et ta famille
+          </h2>
+          <p className="relative mx-auto mt-4 max-w-2xl text-base text-white/90 sm:text-lg">
+            Passe un test, crée un groupe, envoie le lien par WhatsApp, SMS ou email et comparez vos profils côte à
+            côte. Qui est le plus Dominant ? Le plus Créatif ? Les contraires s&apos;attirent-ils vraiment ?
+            Partage aussi ton résultat sur Instagram.
+          </p>
+          <Link
+            href="/tests"
+            className="relative mt-8 inline-block rounded-full bg-white px-8 py-3 text-sm font-semibold text-indigo-700 shadow transition hover:bg-white/90"
+          >
+            Choisir un test à faire ensemble
+          </Link>
+        </div>
+      </section>
+
       <section id="comment-ca-marche" className="mx-auto max-w-5xl px-6 py-16 scroll-mt-20">
         <h2 className="text-center text-2xl font-semibold tracking-tight">
           Comment ça marche

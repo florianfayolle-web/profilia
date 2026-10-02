@@ -47,7 +47,7 @@ export function GroupCard({ attemptId, testSlug }: { attemptId: string; testSlug
     "mt-1 w-full rounded-md border border-card-border bg-background px-3 py-2 text-sm outline-none focus:border-primary";
 
   return (
-    <div className="mt-10 rounded-xl border border-primary/30 bg-card p-6 text-left print:hidden">
+    <div id="groupe" className="mt-10 scroll-mt-24 rounded-xl border border-primary/30 bg-card p-6 text-left print:hidden">
       <p className="text-lg font-semibold">
         {pendingGroup ? `Rejoindre le groupe${pendingGroup.name ? ` « ${pendingGroup.name} »` : ""}` : "Compare ton profil avec tes amis"}
       </p>
