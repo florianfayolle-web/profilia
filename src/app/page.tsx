@@ -168,13 +168,13 @@ export default async function Home() {
               </div>
               <div className="mt-2 flex flex-wrap justify-center gap-2">
                 <span className="rounded-full border border-card-border px-2.5 py-1 text-[11px] text-muted">
-                  6 à 15 dimensions
+                  4 à 20 dimensions
                 </span>
                 <span className="rounded-full border border-card-border px-2.5 py-1 text-[11px] text-muted">
                   Rapport PDF
                 </span>
                 <span className="rounded-full border border-card-border px-2.5 py-1 text-[11px] text-muted">
-                  5-30 min
+                  5-45 min
                 </span>
               </div>
             </div>

@@ -28,7 +28,7 @@ const FAQ = [
   {
     question: "Combien de temps prend un test de personnalité ?",
     answer:
-      "Entre 10 et 30 minutes selon le format et le nombre de questions, indiqué avant de commencer. Réponds de façon spontanée plutôt qu'en réfléchissant trop longtemps à chaque item : c'est ce qui donne le profil le plus fidèle.",
+      "De quelques minutes à 30 minutes selon le format et le nombre de questions, indiqué avant de commencer. Réponds de façon spontanée plutôt qu'en réfléchissant trop longtemps à chaque item : c'est ce qui donne le profil le plus fidèle.",
   },
 ];
 
