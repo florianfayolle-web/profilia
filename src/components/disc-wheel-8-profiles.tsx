@@ -54,15 +54,25 @@ function labelRotation(centerDeg: number) {
   return centerDeg > 90 && centerDeg < 270 ? centerDeg - 180 : centerDeg;
 }
 
-export function DiscWheel8Profiles({ className = "" }: { className?: string }) {
+// `highlight` is the name of one profile (e.g. "Pilote"): that segment keeps
+// full color and gets a bold outline, the others fade back, and the name is
+// written in the hole. Without it the wheel is the plain reference chart.
+export function DiscWheel8Profiles({
+  className = "",
+  highlight,
+}: {
+  className?: string;
+  highlight?: string;
+}) {
   return (
     <svg viewBox="-50 -50 740 740" className={className} role="img" aria-label="Roue DISC des 8 profils">
       <circle cx={CX} cy={CY} r={R_OUTER + 2} fill="none" stroke="#ffffff" strokeWidth="2" />
       {SEGMENTS.map((seg, i) => {
         const start = i * 45 - 22.5;
         const end = start + 45;
+        const dim = highlight && highlight !== seg.label;
         return (
-          <g key={seg.label}>
+          <g key={seg.label} opacity={dim ? 0.3 : 1}>
             <path d={ringPath(R_OUTER, R_MID, start, end)} fill={seg.outer} stroke="#ffffff" strokeWidth="2" />
             <path d={ringPath(R_MID, R_HOLE, start, end)} fill={seg.inner} stroke="#ffffff" strokeWidth="2" />
             <line
@@ -87,7 +97,33 @@ export function DiscWheel8Profiles({ className = "" }: { className?: string }) {
         );
       })}
 
+      {highlight &&
+        SEGMENTS.map((seg, i) => {
+          if (seg.label !== highlight) return null;
+          const start = i * 45 - 22.5;
+          return (
+            <path
+              key="hl"
+              d={ringPath(R_OUTER + 6, R_HOLE, start, start + 45)}
+              fill="none"
+              stroke="var(--foreground, #111827)"
+              strokeWidth="5"
+              strokeLinejoin="round"
+            />
+          );
+        })}
+
       <circle cx={CX} cy={CY} r={R_HOLE - 2} fill="var(--card, #ffffff)" />
+      {highlight && (
+        <g textAnchor="middle" fill="var(--foreground, #111827)">
+          <text x={CX} y={CY - 12} fontSize="16" opacity={0.6}>
+            Ton profil
+          </text>
+          <text x={CX} y={CY + 14} fontSize="21" fontWeight="800">
+            {highlight}
+          </text>
+        </g>
+      )}
 
       {SEGMENTS.map((seg, i) => {
         const centerDeg = i * 45;
@@ -103,6 +139,7 @@ export function DiscWheel8Profiles({ className = "" }: { className?: string }) {
             fontSize="22"
             fontWeight="800"
             fill={seg.outer}
+            opacity={highlight && highlight !== seg.label ? 0.45 : 1}
             transform={`rotate(${rot} ${p.x} ${p.y})`}
           >
             {seg.label}

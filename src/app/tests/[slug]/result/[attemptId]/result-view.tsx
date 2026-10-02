@@ -22,7 +22,9 @@ import {
   RadarChart,
   type ChartPoint,
 } from "@/components/dimension-charts";
-import { DISC_COLORS, DiscWheel } from "@/components/disc-wheel";
+import { DISC_COLORS } from "@/components/disc-wheel";
+import { DiscWheel8Profiles } from "@/components/disc-wheel-8-profiles";
+import { DISC_ARCHETYPE_INFO } from "@/lib/assessments/disc-archetypes";
 import { BalanceScale } from "@/components/balance-scale";
 import type { PcmKey } from "@/lib/assessments/types";
 
@@ -418,9 +420,6 @@ export function ResultView({
 
   if (format === "disc_quad") {
     const r = result as DiscResult;
-    const scores = Object.fromEntries(
-      r.dimensionResults.map((d) => [d.code, d.scorePercent])
-    ) as { D: number; I: number; S: number; C: number };
     return (
       <div className="text-left">
         <div className="text-center">
@@ -429,9 +428,31 @@ export function ResultView({
           </span>
           <h1 className="mt-3 text-3xl font-bold tracking-tight">{r.archetype}</h1>
         </div>
-        <div className="mt-6 rounded-xl border border-card-border bg-card p-6">
-          <DiscWheel scores={scores} />
+        <div className="mx-auto mt-6 max-w-md">
+          <DiscWheel8Profiles className="w-full" highlight={r.archetype} />
         </div>
+        {DISC_ARCHETYPE_INFO[r.archetype] && (
+          <div className="mt-6 rounded-xl border border-card-border bg-card p-6">
+            <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              {DISC_ARCHETYPE_INFO[r.archetype].styles}
+            </p>
+            <p className="mt-2">{DISC_ARCHETYPE_INFO[r.archetype].summary}</p>
+            <p className="mt-4 text-sm">
+              <span className="font-medium">Tes points forts : </span>
+              <span className="text-muted">
+                {DISC_ARCHETYPE_INFO[r.archetype].strengths.join(" · ")}
+              </span>
+            </p>
+            <p className="mt-2 text-sm">
+              <span className="font-medium">Point de vigilance : </span>
+              <span className="text-muted">{DISC_ARCHETYPE_INFO[r.archetype].watch}</span>
+            </p>
+            <p className="mt-2 text-sm">
+              <span className="font-medium">Pour progresser : </span>
+              <span className="text-muted">{DISC_ARCHETYPE_INFO[r.archetype].tip}</span>
+            </p>
+          </div>
+        )}
         <div className="mt-6 text-center">
           <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
             {r.tag}
