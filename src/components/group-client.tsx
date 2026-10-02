@@ -92,6 +92,15 @@ export function ShareLinks({ url, text }: { url: string; text: string }) {
       <a className={btn} target="_blank" rel="noopener noreferrer" href={`https://wa.me/?text=${encodeURIComponent(`${text} ${url}`)}`}>
         WhatsApp
       </a>
+      <a
+        className={btn}
+        href={`mailto:?subject=${encodeURIComponent("Compare ton profil avec le mien")}&body=${encodeURIComponent(`${text}\n\n${url}`)}`}
+      >
+        Email
+      </a>
+      <a className={btn} href={`sms:?&body=${encodeURIComponent(`${text} ${url}`)}`}>
+        SMS
+      </a>
       {canShare && (
         <button type="button" className={btn} onClick={() => navigator.share({ text, url }).catch(() => {})}>
           Partager…
