@@ -404,3 +404,37 @@ create index if not exists articles_status_idx on public.articles (status);
 
 alter table public.articles enable row level security;
 -- No policies: only the service-role key can read or write this table.
+
+-- ---------------------------------------------------------------------------
+-- Comparison groups: after a personality test, people can invite friends to
+-- take the same test and compare profiles. Only a SUMMARY (headline + per-
+-- dimension bars/notes) is copied into comparison_members, only after the
+-- person explicitly consents, and they can remove it any time with their
+-- manage_token. Sensitive tests (IQ, ADHD, HPI) are excluded in code.
+-- Service-role only, same as marketing_leads: the group page is read
+-- server-side by the unguessable `code`.
+-- ---------------------------------------------------------------------------
+create table if not exists public.comparison_groups (
+  id uuid primary key default gen_random_uuid(),
+  code text unique not null,
+  test_id uuid not null references public.tests (id) on delete cascade,
+  name text,
+  created_at timestamptz not null default now()
+);
+
+create table if not exists public.comparison_members (
+  id uuid primary key default gen_random_uuid(),
+  group_id uuid not null references public.comparison_groups (id) on delete cascade,
+  attempt_id uuid not null references public.attempts (id) on delete cascade,
+  display_name text not null,
+  summary jsonb not null,
+  manage_token text not null,
+  consented_at timestamptz not null default now(),
+  unique (group_id, attempt_id)
+);
+
+create index if not exists comparison_members_group_idx on public.comparison_members (group_id);
+
+alter table public.comparison_groups enable row level security;
+alter table public.comparison_members enable row level security;
+-- No policies: only the service-role key can read or write these tables.

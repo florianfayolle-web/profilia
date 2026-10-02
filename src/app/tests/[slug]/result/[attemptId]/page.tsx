@@ -13,6 +13,8 @@ import { DownloadPdfButton } from "@/components/download-pdf-button";
 import { PaidLockedResult, type PartialTeaser } from "./paid-locked-result";
 import { getTestAccess } from "@/lib/access";
 import { isAdmin } from "@/lib/admin";
+import { GROUP_TEST_SLUGS } from "@/lib/groups";
+import { GroupCard } from "@/components/group-card";
 import { SITE_NAME } from "@/lib/site";
 import { AnimalIllustration } from "@/components/animal-illustration";
 import { ProfiliaMark } from "@/components/profilia-mark";
@@ -250,6 +252,14 @@ export default async function ResultPage(
 
   const viewingAsAdmin = admin && attempt.user_id !== userData.user?.id;
 
+  // "Compare with friends" only appears once the schema for it exists
+  // (supabase/schema.sql, comparison_groups) and for allow-listed tests.
+  const showGroupCard =
+    !isLocked &&
+    !viewingAsAdmin &&
+    GROUP_TEST_SLUGS.has(slug) &&
+    !(await createAdminClient().from("comparison_groups").select("id").limit(1)).error;
+
   return (
     <div
       className="sky-gradient mx-auto max-w-2xl px-6 py-16"
@@ -394,6 +404,8 @@ export default async function ResultPage(
           <UpsellSection />
         </div>
       )}
+
+      {showGroupCard && <GroupCard attemptId={attemptId} testSlug={slug} />}
 
       <div className="mt-10 flex justify-center gap-4 print:hidden">
         <Link
