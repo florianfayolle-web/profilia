@@ -24,10 +24,10 @@ export default function TestsPage() {
           <Link
             key={category.slug}
             href={`/tests/${category.slug}`}
-            className="group relative flex aspect-square flex-col overflow-hidden rounded-2xl border border-card-border shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-card-border shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
           >
             <div
-              className="relative flex flex-1 items-center justify-center overflow-hidden"
+              className="relative flex h-28 shrink-0 items-center justify-center overflow-hidden sm:h-44"
               style={{ background: category.gradient }}
             >
               <div
@@ -43,13 +43,13 @@ export default function TestsPage() {
               />
             </div>
 
-            <div className="flex flex-col bg-card p-4 sm:p-6">
-              <h2 className="text-sm font-semibold sm:text-lg">{category.title}</h2>
+            <div className="flex flex-1 flex-col bg-card p-4 sm:p-6">
+              <h2 className="min-h-10 text-sm font-semibold sm:min-h-0 sm:text-lg">{category.title}</h2>
               <p className="mt-1 line-clamp-2 text-xs text-muted sm:mt-2 sm:text-sm">
                 {category.description}
               </p>
               <span
-                className="mt-2 inline-flex items-center gap-1 text-xs font-semibold sm:mt-4 sm:text-sm"
+                className="mt-auto inline-flex items-center gap-1 pt-2 text-xs font-semibold sm:pt-4 sm:text-sm"
                 style={{ color: category.accent }}
               >
                 Voir les tests
