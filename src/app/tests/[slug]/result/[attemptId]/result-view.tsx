@@ -987,6 +987,33 @@ export function ResultView({
   }
 
   if (format === "adhd_screener") {
+    // Results stored before the questionnaire was rebuilt on the DSM-5
+    // criteria have a different shape (no per-dimension data) and used to
+    // crash this page. They can't be re-scored (different questions), so
+    // say so and point to the current version.
+    if (!(result as { attention?: unknown } | null)?.attention) {
+      return (
+        <div className="rounded-xl border border-card-border bg-card p-6 text-left">
+          <p className="text-lg font-semibold">Ancienne version du questionnaire</p>
+          <p className="mt-3 text-sm text-muted">
+            Ce résultat a été calculé avec une ancienne version du questionnaire, depuis remplacée
+            par une version plus complète basée sur les 18 critères du DSM-5 (attention, agitation
+            et impulsivité) et leur contexte. Les deux ne sont pas comparables, et l&apos;ancien
+            résultat ne peut pas être converti.
+          </p>
+          <p className="mt-3 text-sm text-muted">
+            Pour obtenir un résultat détaillé, refais le questionnaire : il dure environ 5 minutes.
+            Dans tous les cas, ce repérage ne remplace jamais l&apos;avis d&apos;un médecin.
+          </p>
+          <a
+            href="/tests/tdah/run"
+            className="mt-5 inline-block rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
+          >
+            Refaire le questionnaire
+          </a>
+        </div>
+      );
+    }
     const r = result as AdhdScreenerResult;
 
     const typeTxt: Record<string, string> = {
