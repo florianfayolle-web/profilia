@@ -54,7 +54,7 @@ export function summarizeResult(
       summary.headline = profileTitle ?? "";
       break;
     case "disc_quad":
-      summary.headline = str(r.archetype);
+      summary.headline = str(r.archetype) || str(r.title);
       summary.bars = dims.map((d) => ({ label: str(d.label), value: clamp01(num(d.scorePercent) ?? 0) }));
       break;
     case "likert_scale":
