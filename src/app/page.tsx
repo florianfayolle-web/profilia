@@ -293,7 +293,7 @@ export default async function Home() {
         <section className="mx-auto max-w-5xl px-6 py-16">
           <div className="flex items-end justify-between gap-4">
             <h2 className="text-2xl font-semibold tracking-tight">Derniers articles</h2>
-            <Link href="/blog" className="text-sm font-medium text-primary hover:underline">
+            <Link href="/blog" className="inline-block py-2.5 text-sm font-medium text-primary hover:underline">
               Tout le blog →
             </Link>
           </div>

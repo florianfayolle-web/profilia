@@ -31,7 +31,7 @@ const BIPOLAR_COLORS = ["#3730a3", "#6366f1", "#9ca3af", "#f97316", "#c2410c"];
 
 function Tag({ children }: { children: ReactNode }) {
   return (
-    <span className="rounded-full bg-green-500 px-2 py-0.5 text-[10px] font-semibold text-white">
+    <span className="rounded-full bg-green-500 px-2 py-0.5 text-[11px] font-semibold text-white">
       {children}
     </span>
   );
@@ -46,8 +46,8 @@ function Body(props: AnswerDemoProps) {
           <div className="mt-3 flex items-center justify-between px-1 text-[11px] font-medium text-muted-foreground">
             <span>Affirmation</span>
             <span className="flex gap-3 pr-1">
-              <span className="w-10 whitespace-nowrap text-center text-[10px]">Le plus</span>
-              <span className="w-10 whitespace-nowrap text-center text-[10px]">Le moins</span>
+              <span className="w-12 whitespace-nowrap text-center text-[11px]">Le plus</span>
+              <span className="w-12 whitespace-nowrap text-center text-[11px]">Le moins</span>
             </span>
           </div>
           <div className="mt-1 space-y-2">
@@ -126,7 +126,7 @@ function Body(props: AnswerDemoProps) {
                   className="rounded-full border-2 border-foreground/70"
                   style={{ width: 12 + i * 5, height: 12 + i * 5 }}
                 />
-                <span className="text-center text-[10px] leading-tight text-muted">{label}</span>
+                <span className="text-center text-[11px] leading-tight text-muted">{label}</span>
               </div>
             ))}
           </div>
@@ -150,7 +150,7 @@ function Body(props: AnswerDemoProps) {
                 style={{ left: `calc(${props.value}% - 8px)` }}
               />
             </div>
-            <div className="mt-1 flex justify-between text-[10px] text-muted-foreground">
+            <div className="mt-1 flex justify-between text-[11px] text-muted-foreground">
               <span>{props.leftLabel}</span>
               <span>{props.rightLabel}</span>
             </div>
@@ -168,7 +168,7 @@ function Body(props: AnswerDemoProps) {
             </p>
           </div>
           <div className="mt-3 flex items-center gap-2">
-            <span className="w-14 shrink-0 text-[10px] text-muted-foreground">{props.labels.left}</span>
+            <span className="w-14 shrink-0 text-[11px] text-muted-foreground">{props.labels.left}</span>
             <div className="flex flex-1 justify-between gap-2">
               {BIPOLAR_COLORS.map((color, i) => (
                 <span
@@ -180,7 +180,7 @@ function Body(props: AnswerDemoProps) {
                 />
               ))}
             </div>
-            <span className="w-14 shrink-0 text-right text-[10px] text-muted-foreground">{props.labels.right}</span>
+            <span className="w-14 shrink-0 text-right text-[11px] text-muted-foreground">{props.labels.right}</span>
           </div>
         </div>
       );
@@ -196,7 +196,7 @@ function Body(props: AnswerDemoProps) {
                   Math.floor(props.picked / 2) === i ? "border-primary bg-primary/10" : "border-card-border"
                 }`}
               >
-                <span className="mb-1.5 inline-block rounded bg-foreground px-1.5 py-0.5 text-[10px] font-bold text-background">
+                <span className="mb-1.5 inline-block rounded bg-foreground px-1.5 py-0.5 text-[11px] font-bold text-background">
                   {i === 0 ? "A" : "B"}
                 </span>
                 <p>{text}</p>

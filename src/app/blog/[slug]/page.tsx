@@ -99,7 +99,7 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
         ]}
       />
 
-      <Link href="/blog" className="text-sm text-muted hover:text-foreground">
+      <Link href="/blog" className="inline-block py-2.5 text-sm text-muted hover:text-foreground">
         ← Tout le blog
       </Link>
 

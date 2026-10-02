@@ -93,7 +93,7 @@ export default async function GuidePage(props: PageProps<"/guides/[slug]">) {
         ]}
       />
 
-      <Link href="/guides" className="text-sm text-muted hover:text-foreground">
+      <Link href="/guides" className="inline-block py-2.5 text-sm text-muted hover:text-foreground">
         ← Tous les guides
       </Link>
 
