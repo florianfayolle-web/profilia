@@ -22,7 +22,7 @@ import {
   RadarChart,
   type ChartPoint,
 } from "@/components/dimension-charts";
-import { DISC_COLORS } from "@/components/disc-wheel";
+import { DISC_COLORS, DiscWheel } from "@/components/disc-wheel";
 import { DiscWheel8Profiles } from "@/components/disc-wheel-8-profiles";
 import { DISC_ARCHETYPE_INFO } from "@/lib/assessments/disc-archetypes";
 import { BalanceScale } from "@/components/balance-scale";
@@ -420,6 +420,9 @@ export function ResultView({
 
   if (format === "disc_quad") {
     const r = result as DiscResult;
+    const scores = Object.fromEntries(
+      r.dimensionResults.map((d) => [d.code, d.scorePercent])
+    ) as { D: number; I: number; S: number; C: number };
     return (
       <div className="text-left">
         <div className="text-center">
@@ -461,6 +464,18 @@ export function ResultView({
           <p className="mt-3 text-muted">{r.summary}</p>
         </div>
         <div className="mt-8 rounded-xl border border-card-border bg-card p-6">
+          <p className="text-lg font-semibold">Ta position sur les 4 styles</p>
+          <p className="mt-1 text-sm text-muted">
+            Le point indique où te placent tes réponses : en haut, un style plutôt actif (Dominant,
+            Influent), en bas plutôt réfléchi (Stable, Conforme) ; à droite, plutôt tourné vers les
+            autres, à gauche plutôt tourné vers la tâche.
+          </p>
+          <div className="mt-4">
+            <DiscWheel scores={scores} />
+          </div>
+        </div>
+
+        <div className="mt-6 rounded-xl border border-card-border bg-card p-6">
           <p className="text-lg font-semibold">Tes scores par style</p>
           <div className="mt-4 space-y-4">
             {r.dimensionResults.map((d) => (
