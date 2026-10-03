@@ -60,7 +60,7 @@ export async function createTestCheckoutSession(
 
   const { data: test } = await supabase
     .from("tests")
-    .select("id, slug, title, price_cents, currency, stripe_price_id")
+    .select("id, slug, title, price_cents, currency")
     .eq("slug", testSlug)
     .single();
 
@@ -68,10 +68,8 @@ export async function createTestCheckoutSession(
     throw new Error("Test introuvable.");
   }
 
-  if (!test.stripe_price_id) {
-    throw new Error(
-      `Le test "${test.title}" n'a pas de stripe_price_id configuré.`
-    );
+  if (!test.price_cents || test.price_cents <= 0) {
+    throw new Error(`Le test "${test.title}" n'est pas payant.`);
   }
 
   const customerId = await getOrCreateStripeCustomer(user.id, user.email);
@@ -80,7 +78,19 @@ export async function createTestCheckoutSession(
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
     customer: customerId,
-    line_items: [{ price: test.stripe_price_id, quantity: 1 }],
+    // The amount comes straight from tests.price_cents (the same number every
+    // page displays), not from a pre-created Stripe Price, so a price change is
+    // one DB update and the page and the charge can never drift apart.
+    line_items: [
+      {
+        price_data: {
+          currency: test.currency,
+          unit_amount: test.price_cents,
+          product_data: { name: test.title },
+        },
+        quantity: 1,
+      },
+    ],
     metadata: { supabase_user_id: user.id, test_id: test.id },
     success_url: `${siteUrl}${returnPath ?? `/tests/${test.slug}`}?checkout=success`,
     cancel_url: `${siteUrl}${returnPath ?? `/tests/${test.slug}`}?checkout=cancelled`,

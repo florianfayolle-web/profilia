@@ -99,7 +99,9 @@ export default async function TestDetailPage(
     {
       question: "Ce test est-il gratuit ?",
       answer:
-        test.price_cents === 0
+        test.price_cents === 0 && test.format === "bipolar_pairs"
+          ? "Oui, les questions et ton profil principal sont gratuits, sans carte bancaire. Le détail complet de tes dimensions et le rapport PDF sont optionnels (0,99 €)."
+          : test.price_cents === 0
           ? "Oui, toutes les questions et ton résultat complet sont gratuits, sans carte bancaire."
           : `Les questions sont gratuites : tu réponds sans payer. Seul le rapport détaillé est payant (${formatPrice(test.price_cents, test.currency)})${test.included_in_subscription ? ", ou inclus dans l'abonnement illimité" : ""}.`,
     },
@@ -107,7 +109,7 @@ export default async function TestDetailPage(
       question: "Faut-il créer un compte pour passer ce test ?",
       answer:
         test.price_cents === 0
-          ? "Non : tu réponds sans compte, une simple adresse email suffit pour voir ton résultat."
+          ? "Non : tu réponds sans compte, une simple adresse email suffit pour voir ton résultat (ou ton profil principal pour le test express)."
           : "Tu peux répondre à toutes les questions sans créer de compte. Un compte gratuit est seulement nécessaire pour voir et débloquer ton rapport détaillé à la fin.",
     },
     {

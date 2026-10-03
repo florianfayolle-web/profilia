@@ -89,7 +89,7 @@ export function UpsellSection({
             À partir de
           </p>
           <p className="mt-1 text-3xl font-semibold">
-            1,99&nbsp;€
+            0,99&nbsp;€
             <span className="text-base font-normal text-muted"> / test</span>
           </p>
           <p className="mt-1 text-sm text-muted">
