@@ -7,7 +7,7 @@ import { useId, useState } from "react";
 // (art. L221-28): the buyer must expressly waive the 14-day right before
 // paying, not just accept it buried in the CGV. This wraps any checkout
 // server action with that checkbox, and keeps the submit button disabled
-// until it's ticked — never pre-checked.
+// from going through until it's ticked — never pre-checked.
 export function ConsentCheckoutButton({
   action,
   label,
@@ -20,6 +20,7 @@ export function ConsentCheckoutButton({
   note?: string;
 }) {
   const [consent, setConsent] = useState(false);
+  const [showHint, setShowHint] = useState(false);
   const id = useId();
 
   return (
@@ -29,8 +30,11 @@ export function ConsentCheckoutButton({
           id={id}
           type="checkbox"
           checked={consent}
-          onChange={(e) => setConsent(e.target.checked)}
-          className="mt-0.5 h-4 w-4 shrink-0 rounded border-card-border"
+          onChange={(e) => {
+            setConsent(e.target.checked);
+            if (e.target.checked) setShowHint(false);
+          }}
+          className={`mt-0.5 h-4 w-4 shrink-0 rounded ${showHint ? "border-red-500 outline outline-2 outline-red-500" : "border-card-border"}`}
         />
         <span>
           Je demande l&apos;accès immédiat à ce contenu numérique et je
@@ -38,10 +42,24 @@ export function ConsentCheckoutButton({
           (article L221-28 du Code de la consommation).
         </span>
       </label>
+      {showHint && (
+        <p className="mt-2 text-left text-xs font-medium text-red-600">
+          Coche la case ci-dessus pour continuer vers le paiement.
+        </p>
+      )}
+      {/* Not `disabled`: a greyed-out button gave no hint why it did nothing.
+          The waiver still has to be ticked — submitting without it just
+          shows what's missing. */}
       <button
         type="submit"
-        disabled={!consent}
-        className={`${className} disabled:cursor-not-allowed disabled:opacity-50`}
+        onClick={(e) => {
+          if (!consent) {
+            e.preventDefault();
+            setShowHint(true);
+          }
+        }}
+        aria-disabled={!consent}
+        className={`${className} ${consent ? "" : "opacity-60"}`}
       >
         {label}
       </button>
