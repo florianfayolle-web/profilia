@@ -81,8 +81,8 @@ const SOURCE_NAMES: [RegExp, string][] = [
   [/whatsapp\.com$/, "WhatsApp"],
 ];
 
-function sourceLabel(e: { referrer_host: string | null; utm_source: string | null }) {
-  if (e.utm_source) return `${e.utm_source} (UTM)`;
+function sourceLabel(e: { referrer_host: string | null; utm_source: string | null; utm_campaign?: string | null }) {
+  if (e.utm_source) return e.utm_campaign ? `${e.utm_source} · ${e.utm_campaign}` : `${e.utm_source} (UTM)`;
   if (!e.referrer_host) return "Direct / inconnu";
   return SOURCE_NAMES.find(([re]) => re.test(e.referrer_host!))?.[1] ?? e.referrer_host;
 }
@@ -139,7 +139,7 @@ export default async function AdminStatsPage() {
     admin.from("attempts").select("completed_at").gte("completed_at", dTrend),
     admin
       .from("page_views")
-      .select("referrer_host, utm_source")
+      .select("referrer_host, utm_source, utm_campaign")
       .eq("is_entry", true)
       .gte("viewed_at", d30),
   ]);
