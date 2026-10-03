@@ -1,5 +1,6 @@
 "use server";
 
+import { SUBSCRIPTION_PRICE_CENTS } from "@/lib/pricing";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
@@ -117,6 +118,11 @@ export async function createSubscriptionCheckoutSession() {
   if (!priceId) {
     throw new Error("STRIPE_SUBSCRIPTION_PRICE_ID n'est pas configuré.");
   }
+  // The existing price only tells us which Stripe product the subscription
+  // belongs to; the amount charged is SUBSCRIPTION_PRICE_CENTS (a Stripe
+  // Price can't be edited, and this keeps the page and the charge in sync).
+  const existing = await stripe.prices.retrieve(priceId);
+  const productId = typeof existing.product === "string" ? existing.product : existing.product.id;
 
   const customerId = await getOrCreateStripeCustomer(user.id, user.email);
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL!;
@@ -124,7 +130,17 @@ export async function createSubscriptionCheckoutSession() {
   const session = await stripe.checkout.sessions.create({
     mode: "subscription",
     customer: customerId,
-    line_items: [{ price: priceId, quantity: 1 }],
+    line_items: [
+      {
+        price_data: {
+          currency: existing.currency,
+          unit_amount: SUBSCRIPTION_PRICE_CENTS,
+          recurring: { interval: "month" },
+          product: productId,
+        },
+        quantity: 1,
+      },
+    ],
     metadata: { supabase_user_id: user.id },
     success_url: `${siteUrl}/account?checkout=success`,
     cancel_url: `${siteUrl}/pricing?checkout=cancelled`,

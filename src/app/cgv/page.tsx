@@ -66,7 +66,7 @@ export default function CGVPage() {
               également proposé à 0,99 € TTC, limité au rapport de ce test.
             </li>
             <li>
-              Abonnement illimité : 5,99 € TTC par mois, sans engagement de
+              Abonnement illimité : 4,99 € TTC par mois, sans engagement de
               durée, donnant accès à tous les tests du site, y compris les
               nouveaux tests ajoutés pendant la durée de l&apos;abonnement.
               Reconduction automatique chaque mois.
