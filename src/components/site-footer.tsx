@@ -18,7 +18,7 @@ export function SiteFooter() {
               sélection.
             </p>
           </div>
-          <nav className="flex gap-8 text-sm">
+          <nav className="flex flex-wrap gap-x-8 gap-y-2 text-sm">
             <div className="flex flex-col">
               <p className="font-medium text-foreground/80">Le site</p>
               <Link href="/tests" className="py-2 text-muted hover:text-foreground">
@@ -60,6 +60,21 @@ export function SiteFooter() {
               <Link href="/cgv" className="py-2 text-muted hover:text-foreground">
                 CGV
               </Link>
+            </div>
+            <div className="flex flex-col">
+              <p className="font-medium text-foreground/80">Ressources</p>
+              <a
+                href="https://creermoncv.fr"
+                className="py-2 text-muted hover:text-foreground"
+              >
+                Créer ton CV en ligne
+              </a>
+              <a
+                href="https://creermoncv.fr/guides/comment-faire-un-cv"
+                className="py-2 text-muted hover:text-foreground"
+              >
+                Conseils pour ton CV
+              </a>
             </div>
           </nav>
         </div>
