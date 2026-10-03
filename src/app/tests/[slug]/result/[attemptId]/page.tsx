@@ -5,7 +5,7 @@ import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import type { Attempt, ResultProfile, Test } from "@/lib/types";
 import { ResultView } from "./result-view";
-import { UpsellSection } from "./upsell-section";
+import { UpsellSection, NEXT_TEST_HOOKS, type NextTest } from "./upsell-section";
 import { TeaserResult, type TeaserData } from "./teaser-result";
 import type { scoreBipolarPairs } from "@/lib/assessments/scoring";
 import { getTestThemeStyle } from "@/lib/test-theme";
@@ -253,6 +253,24 @@ export default async function ResultPage(
 
   const viewingAsAdmin = admin && attempt.user_id !== userData.user?.id;
 
+  // "Ta prochaine étape" under a free test's result: free tests first (a
+  // zero-friction next step), then the best complements, never the test
+  // just taken.
+  let nextTests: NextTest[] = [];
+  if (test?.price_cents === 0 && !isLocked) {
+    const order = ["orientation", "disc", "pcm", "animal-totem", "type-cognitif-16"].filter((x) => x !== slug);
+    const { data: rows } = await createAdminClient()
+      .from("tests")
+      .select("slug, title, price_cents")
+      .in("slug", order)
+      .eq("is_active", true);
+    nextTests = order
+      .map((x) => rows?.find((r) => r.slug === x))
+      .filter((r): r is { slug: string; title: string; price_cents: number } => !!r)
+      .slice(0, 3)
+      .map((r) => ({ slug: r.slug, title: r.title, priceCents: r.price_cents, hook: NEXT_TEST_HOOKS[r.slug] ?? "" }));
+  }
+
   // "Compare with friends" only appears once the schema for it exists
   // (supabase/schema.sql, comparison_groups) and for allow-listed tests.
   const canShareResult = !isLocked && !viewingAsAdmin && GROUP_TEST_SLUGS.has(slug);
@@ -399,16 +417,20 @@ export default async function ResultPage(
         </div>
       )}
 
-      {test?.price_cents === 0 && !isLocked && (
-        <div className="print:hidden">
-          <UpsellSection />
-        </div>
-      )}
-
       {canShareResult && test && (
         <ShareResultCard attemptId={attemptId} testSlug={slug} testTitle={test.title} />
       )}
       {showGroupCard && <GroupCard attemptId={attemptId} testSlug={slug} />}
+
+      {test?.price_cents === 0 && !isLocked && (
+        <div className="print:hidden">
+          <UpsellSection
+            suggestions={nextTests}
+            isGuest={!userData.user}
+            currentPath={`/tests/${slug}/result/${attemptId}`}
+          />
+        </div>
+      )}
 
       <div className="mt-10 flex justify-center gap-4 print:hidden">
         <Link
