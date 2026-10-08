@@ -342,7 +342,7 @@ GUIDES.push({
       heading: "Comment se déroule notre test DISC gratuit",
       body: [
         "Le test présente 80 groupes de 4 affirmations. Pour chaque groupe, tu choisis l'affirmation qui te ressemble le plus (+) et celle qui te ressemble le moins (−), un format à choix forcé qui t'oblige à trancher plutôt que de rester neutre partout, ce qui donne un profil plus net.",
-        "Les 5 premiers groupes sont gratuits, sans engagement ni carte bancaire, pour te permettre de tester le format avant d'aller plus loin.",
+        "Tous les groupes sont gratuits, sans engagement ni carte bancaire : seul le rapport complet se débloque ensuite, à 0,99 €.",
       ],
     },
     {
@@ -1032,7 +1032,7 @@ GUIDES.push({
     {
       question: "Quelle différence avec les autres tests de personnalité du site ?",
       answer:
-        "C'est le format le plus court, et l'un des deux tests entièrement gratuits du site (avec la Boussole, un test d'orientation) : 20 questions contre 30 à 150 pour les autres tests, qui explorent chacun un modèle différent (SOSIE 2, DISC, Process Communication...) avec un rapport plus détaillé.",
+        "C'est le format le plus court, et le seul test dont le profil principal est gratuit (avec la Boussole, entièrement gratuite) : 20 questions contre 30 à 150 pour les autres tests, qui explorent chacun un modèle différent (SOSIE 2, DISC, Process Communication...) avec un rapport plus détaillé.",
     },
   ],
 });
