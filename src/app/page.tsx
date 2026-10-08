@@ -119,9 +119,6 @@ export default async function Home() {
 
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 pb-40 pt-20 lg:grid-cols-2 lg:pb-48 lg:pt-28">
           <div className="flex flex-col items-center gap-5 text-center lg:items-start lg:text-left">
-            <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-semibold text-green-700 dark:text-green-400">
-              5 minutes, gratuit, sans compte
-            </span>
             <h1 className="max-w-xl text-4xl font-semibold tracking-tight sm:text-5xl">
               Découvre{" "}
               <span className="text-primary">qui tu es vraiment</span>, avec
