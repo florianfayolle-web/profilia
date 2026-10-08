@@ -1,0 +1,19 @@
+# Profilia
+
+> Tests de personnalité, de QI et de profil cognitif en ligne, en français. Questions gratuites, résultat détaillé à 0,99 € par test ou abonnement à 4,99 €/mois.
+
+## Tests
+- [Tous les tests](https://profilia-test.fr/tests)
+- [Test de QI (adulte et enfant)](https://profilia-test.fr/tests/qi)
+- [Test DISC](https://profilia-test.fr/tests/disc)
+- [Repérage TDAH adulte](https://profilia-test.fr/tests/tdah)
+- [Test de personnalité express (Big Five)](https://profilia-test.fr/tests/big-five-express)
+- [Test d'orientation](https://profilia-test.fr/tests/orientation)
+
+## Ressources
+- [Guides](https://profilia-test.fr/guides)
+- [Blog](https://profilia-test.fr/blog)
+- [Tarifs](https://profilia-test.fr/pricing)
+
+## Remarque
+Les tests sont des outils d'auto-exploration, pas des diagnostics médicaux ou psychologiques.

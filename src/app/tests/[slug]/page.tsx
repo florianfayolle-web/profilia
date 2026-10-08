@@ -37,6 +37,17 @@ const getActiveTests = cache(async () => {
   return data ?? [];
 });
 
+const SEO_TITLES: Record<string, string> = {
+  qi: "Test de QI gratuit : 40 questions + courbe de Gauss",
+  disc: "Test DISC gratuit : trouve ton profil (8 profils)",
+  tdah: "Test TDAH adulte gratuit : questionnaire DSM-5",
+  hpi: "Test HPI gratuit : suis-je haut potentiel ?",
+  "big-five-express": "Test de personnalité gratuit (Big Five) en 5 min",
+  orientation: "Test d'orientation gratuit : quel métier pour toi ?",
+  pcm: "Test Process Communication gratuit : ton profil",
+  "type-cognitif-16": "Test des 16 personnalités (type MBTI) gratuit",
+};
+
 export async function generateMetadata(
   props: PageProps<"/tests/[slug]">
 ): Promise<Metadata> {
@@ -44,8 +55,12 @@ export async function generateMetadata(
   const test = await getTestBySlug(slug);
   if (!test) return {};
 
+  // Search-intent titles for the tests people actually google ("gratuit"
+  // is the highest-volume modifier); the page <h1> keeps the full name.
+  const seoTitle = SEO_TITLES[test.slug] ?? clipTitle(test.title);
+
   return {
-    title: clipTitle(test.title),
+    title: seoTitle,
     description: clipDescription(test.description),
     alternates: { canonical: `/tests/${test.slug}` },
     openGraph: {
