@@ -235,6 +235,34 @@ export default async function Home() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-5xl px-6 pt-4">
+        <Link
+          href="/trois-cercles"
+          className="group flex flex-col items-center gap-5 overflow-hidden rounded-3xl bg-gradient-to-br from-violet-700 via-fuchsia-600 to-pink-500 px-6 py-8 text-white shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl sm:flex-row sm:px-10"
+        >
+          <svg viewBox="0 0 160 160" className="h-24 w-24 shrink-0" aria-hidden="true">
+            <circle cx="80" cy="80" r="76" fill="#FFB84A" stroke="#fff" strokeWidth="3" />
+            <circle cx="80" cy="80" r="52" fill="#E0267F" stroke="#fff" strokeWidth="3" />
+            <circle cx="80" cy="80" r="28" fill="#5B21B6" stroke="#fff" strokeWidth="3" />
+          </svg>
+          <div className="text-center sm:text-left">
+            <p className="text-xs font-semibold uppercase tracking-wide text-white/80">
+              Nouveau · test gratuit
+            </p>
+            <h2 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">
+              Agir, influencer, accepter : où te situes-tu ?
+            </h2>
+            <p className="mt-2 text-white/90">
+              Dix scènes du quotidien, un résultat immédiat sur tes trois cercles d&apos;énergie.
+              Gratuit, sans compte.
+            </p>
+          </div>
+          <span className="shrink-0 rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-violet-700 shadow transition group-hover:bg-white/90">
+            Faire le test
+          </span>
+        </Link>
+      </section>
+
       {flagshipTests.length > 0 && (
         <section className="border-t border-card-border/60 bg-card/40">
           <div className="mx-auto max-w-5xl px-6 py-16">
