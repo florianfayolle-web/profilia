@@ -8,6 +8,7 @@
 - [Test DISC](https://profilia-test.fr/tests/disc)
 - [Repérage TDAH adulte](https://profilia-test.fr/tests/tdah)
 - [Test de personnalité express (Big Five)](https://profilia-test.fr/tests/big-five-express)
+- [Agir, influencer, accepter (3 cercles, gratuit)](https://profilia-test.fr/trois-cercles)
 - [Test d'orientation](https://profilia-test.fr/tests/orientation)
 
 ## Ressources

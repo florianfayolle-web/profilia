@@ -19,6 +19,22 @@ export default function TestsPage() {
         engagement : seul ton rapport complet est payant, à la fin. Choisis une catégorie selon ton objectif :
       </p>
 
+      <Link
+        href="/trois-cercles"
+        className="mt-8 flex items-center gap-4 rounded-2xl border border-card-border bg-card p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md sm:p-5"
+      >
+        <svg viewBox="0 0 160 160" className="h-14 w-14 shrink-0" aria-hidden="true">
+          <circle cx="80" cy="80" r="76" fill="#FFB84A" />
+          <circle cx="80" cy="80" r="52" fill="#E0267F" />
+          <circle cx="80" cy="80" r="28" fill="#5B21B6" />
+        </svg>
+        <div className="min-w-0 flex-1">
+          <p className="font-semibold">Agir, influencer, accepter : où te situes-tu ?</p>
+          <p className="text-sm text-muted">Test gratuit en 10 scènes, résultat immédiat, sans compte.</p>
+        </div>
+        <span className="text-sm font-semibold text-primary">Faire le test →</span>
+      </Link>
+
       <div className="mt-10 grid grid-cols-2 gap-6">
         {CATEGORIES.map((category) => (
           <Link
