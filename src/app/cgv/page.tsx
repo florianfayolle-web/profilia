@@ -14,7 +14,7 @@ export default function CGVPage() {
         Conditions générales de vente
       </h1>
       <p className="mt-3 text-sm text-muted">
-        Dernière mise à jour : 19 septembre 2026
+        Dernière mise à jour : 19 novembre 2026
       </p>
 
       <div className="mt-10 flex flex-col gap-8 text-sm leading-relaxed text-muted">
@@ -60,13 +60,13 @@ export default function CGVPage() {
           <p>Deux façons d&apos;accéder aux rapports complets sont proposées :</p>
           <ul className="list-disc pl-5">
             <li>
-              À l&apos;unité : 0,99 € TTC pour débloquer le rapport complet
+              À l&apos;unité : 4,99 € TTC pour débloquer le rapport complet
               d&apos;un test, à vie. Depuis le résultat du test gratuit
               d&apos;introduction, le déblocage du détail de ce test est
               également proposé à 0,99 € TTC, limité au rapport de ce test.
             </li>
             <li>
-              Abonnement illimité : 4,99 € TTC par mois, sans engagement de
+              Abonnement illimité : 9,99 € TTC par mois, sans engagement de
               durée, donnant accès à tous les tests du site, y compris les
               nouveaux tests ajoutés pendant la durée de l&apos;abonnement.
               Reconduction automatique chaque mois.
@@ -102,7 +102,7 @@ export default function CGVPage() {
             la page « Mon compte » du site. La résiliation prend effet à la
             fin de la période en cours déjà payée ; aucun remboursement au
             prorata n&apos;est effectué pour la période entamée. Un
-            déblocage à l&apos;unité (0,99 €) n&apos;est pas un
+            déblocage à l&apos;unité (4,99 €) n&apos;est pas un
             abonnement et n&apos;est donc pas concerné par une résiliation.
           </p>
         </section>

@@ -365,15 +365,10 @@ export default async function ResultPage(
             currency={test.currency}
             includedInSubscription={test.included_in_subscription}
             pendingUnlock={pendingUnlock}
-            teaser={{
-              headline: resultProfile ? { label: "Ton résultat", value: resultProfile.title } : null,
-              dimensionNames: [],
-            }}
-            visual={
-              slug === "animal-totem" && resultProfile ? (
-                <AnimalIllustration animal={resultProfile.trait_key} className="aspect-[2/1] w-full" />
-              ) : undefined
-            }
+            // Nothing of the actual result before payment (owner decision
+            // 2026-11-19: the free headline answered the question, so nobody
+            // paid). No real visual either: a CSS blur still ships it in the DOM.
+            teaser={{ headline: null, dimensionNames: [] }}
           />
         </div>
       )}
@@ -401,7 +396,7 @@ export default async function ResultPage(
             currency={test.currency}
             includedInSubscription={test.included_in_subscription}
             pendingUnlock={pendingUnlock}
-            teaser={buildPartialTeaser(test.format, attempt.result)}
+            teaser={{ ...buildPartialTeaser(test.format, attempt.result), headline: null }}
           />
         </div>
       )}

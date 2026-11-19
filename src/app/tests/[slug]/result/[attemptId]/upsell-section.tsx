@@ -89,11 +89,11 @@ export function UpsellSection({
             À partir de
           </p>
           <p className="mt-1 text-3xl font-semibold">
-            0,99&nbsp;€
+            4,99&nbsp;€
             <span className="text-base font-normal text-muted"> / test</span>
           </p>
           <p className="mt-1 text-sm text-muted">
-            ou 4,99&nbsp;€/mois pour tous les tests en illimité, sans
+            ou 9,99&nbsp;€/mois pour tous les tests en illimité, sans
             engagement.
           </p>
           <Link

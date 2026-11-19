@@ -6,7 +6,7 @@ import { ConsentCheckoutButton } from "@/components/consent-checkout-button";
 export const metadata: Metadata = {
   title: "Tarifs",
   description:
-    "0,99€ pour débloquer un test à l'unité, ou 4,99€/mois pour débloquer tous les tests en illimité. Annulable à tout moment.",
+    "4,99€ pour débloquer un test à l'unité, ou 9,99€/mois pour débloquer tous les tests en illimité. Annulable à tout moment.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -25,7 +25,7 @@ export default function PricingPage() {
           <div className="flex flex-col rounded-xl border border-card-border bg-card p-8 shadow-sm">
             <p className="text-sm font-medium text-muted">À l&apos;unité</p>
             <p className="mt-2 text-4xl font-semibold">
-              0,99&nbsp;€
+              4,99&nbsp;€
               <span className="text-base font-normal text-muted">
                 {" "}
                 / test
@@ -52,7 +52,7 @@ export default function PricingPage() {
               Abonnement illimité
             </p>
             <p className="mt-2 text-4xl font-semibold">
-              4,99&nbsp;€
+              9,99&nbsp;€
               <span className="text-base font-normal text-muted">
                 {" "}
                 / mois
