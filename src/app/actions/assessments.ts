@@ -169,10 +169,6 @@ export async function submitAssessmentAttempt(
   const { data: userData } = await supabase.auth.getUser();
   const user = userData.user;
 
-  if (!user) {
-    return { redirectTo: `/login?next=/tests/${testSlug}/run` };
-  }
-
   const { data: test } = await supabase
     .from("tests")
     .select("id, format, language, price_cents, included_in_subscription")
@@ -181,6 +177,14 @@ export async function submitAssessmentAttempt(
 
   if (!test) {
     return { error: "Test introuvable." };
+  }
+
+  // A visitor without an account who finishes a paid test used to be bounced
+  // to /login and lost every answer. They now get a guest attempt (no
+  // account, no email yet) whose result stays locked until the per-attempt
+  // checkout flips `unlocked`; Stripe collects the email at that point.
+  if (!user) {
+    return submitGuestPaidAttempt(test, testSlug, answers, childBand);
   }
 
   const lang = test.language === "en" ? "en" : "fr";
@@ -234,11 +238,74 @@ export async function submitAssessmentAttempt(
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+
 // Sanity ceilings on what an anonymous visitor can make us store: no real
 // test has more than a few hundred answers, so anything bigger is abuse.
 const MAX_ANSWERS_JSON_CHARS = 60_000;
 const MAX_GUEST_ATTEMPTS_PER_EMAIL_PER_DAY = 5;
 const MAX_GUEST_ATTEMPTS_PER_HOUR = 300;
+
+// Guest attempt on a PAID test: stored through the admin client (there is no
+// session to satisfy the owner RLS policy), scored server-side exactly like a
+// signed-in attempt, and locked (`unlocked: false`) until the guest unlock
+// checkout is paid. Same anti-abuse ceilings as the free guest path.
+async function submitGuestPaidAttempt(
+  test: { id: string; format: string; language: string; price_cents: number },
+  testSlug: string,
+  answers: AnyAssessmentAnswers,
+  childBand?: string | null
+): Promise<{ redirectTo: string } | { error: string }> {
+  if (test.price_cents <= 0) {
+    // Fully free tests go through the email gate (submitFreeAttempt).
+    return { redirectTo: `/login?next=/tests/${testSlug}/run` };
+  }
+  if (JSON.stringify(answers ?? null).length > MAX_ANSWERS_JSON_CHARS) {
+    return { error: "Réponses invalides." };
+  }
+
+  const admin = createAdminClient();
+  const { data: content } = await admin
+    .from("test_content")
+    .select("definition")
+    .eq("test_id", test.id)
+    .single();
+  if (!content) {
+    return { error: "Contenu du test introuvable." };
+  }
+
+  const lang = test.language === "en" ? "en" : "fr";
+  const scored = scoreByFormat(test.format, content.definition, answers, lang, childBand);
+  if ("error" in scored) {
+    return scored;
+  }
+
+  const hourAgo = new Date(Date.now() - 3600_000).toISOString();
+  const { count: hourCount } = await admin
+    .from("attempts")
+    .select("id", { count: "exact", head: true })
+    .is("user_id", null)
+    .gte("completed_at", hourAgo);
+  if ((hourCount ?? 0) >= MAX_GUEST_ATTEMPTS_PER_HOUR) {
+    return { error: "Beaucoup de monde en ce moment. Réessaie dans quelques minutes." };
+  }
+
+  const { data: attempt, error } = await admin
+    .from("attempts")
+    .insert({
+      user_id: null,
+      test_id: test.id,
+      answers,
+      result: scored.result,
+      unlocked: false,
+    })
+    .select("id")
+    .single();
+  if (error || !attempt) {
+    return { error: "Impossible d'enregistrer ta réponse." };
+  }
+
+  return { redirectTo: `/tests/${testSlug}/result/${attempt.id}` };
+}
 
 // Guest path for fully free tests (price_cents === 0): no account, just an
 // email address (and an explicit marketing opt-in) traded for the result.
@@ -300,12 +367,12 @@ export async function submitFreeAttempt(
       .from("attempts")
       .select("id", { count: "exact", head: true })
       .eq("guest_email", trimmedEmail)
-      .gte("created_at", dayAgo),
+      .gte("completed_at", dayAgo),
     admin
       .from("attempts")
       .select("id", { count: "exact", head: true })
       .is("user_id", null)
-      .gte("created_at", hourAgo),
+      .gte("completed_at", hourAgo),
   ]);
   if ((emailCount ?? 0) >= MAX_GUEST_ATTEMPTS_PER_EMAIL_PER_DAY) {
     return { error: "Trop de tests pour cette adresse aujourd'hui. Réessaie demain." };

@@ -76,6 +76,16 @@ export async function POST(request: Request) {
             console.error("attempt unlock failed", error);
             return NextResponse.json({ error: "db" }, { status: 500 });
           }
+          // Keep the buyer's email (collected by Stripe) on a guest attempt
+          // that had none, so the report can be traced back to them.
+          const buyerEmail = session.customer_details?.email?.trim().toLowerCase();
+          if (buyerEmail) {
+            await supabase
+              .from("attempts")
+              .update({ guest_email: buyerEmail })
+              .eq("id", attemptId)
+              .is("guest_email", null);
+          }
         }
       }
       // Subscription checkouts are handled by the subscription.* events below,

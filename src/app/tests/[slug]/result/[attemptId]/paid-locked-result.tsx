@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { PaymentPendingNotice } from "@/components/payment-pending";
 import { ConsentCheckoutButton } from "@/components/consent-checkout-button";
 import { Illustration, motifForTest } from "@/components/illustration";
-import { createTestCheckoutSession } from "@/app/actions/checkout";
+import { createGuestPaidUnlockSession, createTestCheckoutSession } from "@/app/actions/checkout";
 import { formatPrice } from "@/lib/types";
 import Link from "next/link";
 
@@ -35,6 +35,7 @@ export function PaidLockedResult({
   pendingUnlock,
   teaser,
   visual,
+  guest = false,
 }: {
   testSlug: string;
   attemptId: string;
@@ -49,6 +50,8 @@ export function PaidLockedResult({
   // rendered blurred by this component, so callers pass the real visual at
   // full opacity and let the lock screen do the blurring.
   visual?: ReactNode;
+  // A visitor without an account: pays for this exact attempt, no login.
+  guest?: boolean;
 }) {
   if (pendingUnlock) {
     return (
@@ -131,13 +134,23 @@ export function PaidLockedResult({
 
         <div className="mt-5">
           <ConsentCheckoutButton
-            action={createTestCheckoutSession.bind(null, testSlug, returnPath)}
+            action={
+              guest
+                ? createGuestPaidUnlockSession.bind(null, testSlug, attemptId)
+                : createTestCheckoutSession.bind(null, testSlug, returnPath)
+            }
             label={`Débloquer mon rapport complet, ${formatPrice(priceCents, currency)}`}
             className="w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
           />
         </div>
 
-        {includedInSubscription && (
+        {guest && (
+          <p className="mt-3 text-center text-xs text-muted-foreground">
+            Pas besoin de compte : tu paies une seule fois, ton rapport s&apos;affiche tout de suite.
+          </p>
+        )}
+
+        {includedInSubscription && !guest && (
           <p className="mt-3 text-center text-xs text-muted-foreground">
             Ou{" "}
             <Link href="/pricing" className="font-medium text-primary hover:underline">

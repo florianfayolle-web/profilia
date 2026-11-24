@@ -243,9 +243,10 @@ export default async function ResultPage(
 
   // Admins always see the full, unlocked report — that's the whole point
   // of /admin/results linking here.
+  const isGuestAttempt = attempt.user_id === null;
   const isLocked = admin
     ? false
-    : isFreeTest
+    : isFreeTest || isGuestAttempt
       ? !attempt.unlocked
       : !(access?.hasAccess ?? false);
   const pendingUnlock =
@@ -322,6 +323,19 @@ export default async function ResultPage(
         </div>
       </div>
 
+      {!isLocked && isGuestAttempt && !isFreeTest && !viewingAsAdmin && (
+        <div className="mb-6 rounded-xl border border-primary/30 bg-card p-4 text-sm print:hidden">
+          <p className="font-medium">Garde ton rapport</p>
+          <p className="mt-1 text-muted">
+            Enregistre cette page (ajoute-la à tes favoris) ou télécharge le PDF.{" "}
+            <Link href="/signup" className="font-medium text-primary hover:underline">
+              Crée un compte gratuit
+            </Link>{" "}
+            pour retrouver tes résultats sur tous tes appareils.
+          </p>
+        </div>
+      )}
+
       {!isLocked && (
         <div className="mb-6 flex justify-end print:hidden">
           <DownloadPdfButton />
@@ -365,6 +379,7 @@ export default async function ResultPage(
             currency={test.currency}
             includedInSubscription={test.included_in_subscription}
             pendingUnlock={pendingUnlock}
+            guest={isGuestAttempt}
             teaser={{
               headline: resultProfile ? { label: "Ton résultat", value: resultProfile.title } : null,
               dimensionNames: [],
@@ -401,6 +416,7 @@ export default async function ResultPage(
             currency={test.currency}
             includedInSubscription={test.included_in_subscription}
             pendingUnlock={pendingUnlock}
+            guest={isGuestAttempt}
             teaser={buildPartialTeaser(test.format, attempt.result)}
           />
         </div>

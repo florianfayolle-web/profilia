@@ -104,6 +104,65 @@ export async function createTestCheckoutSession(
   redirect(session.url);
 }
 
+// One-off purchase of the full report for a GUEST attempt on a paid test: no
+// account, the attempt's own id is the only key (the webhook flips
+// `attempts.unlocked` from metadata.attempt_id, see api/webhooks/stripe).
+// The amount comes from tests.price_cents like every other checkout; Stripe
+// collects the buyer's email itself.
+export async function createGuestPaidUnlockSession(
+  testSlug: string,
+  attemptId: string
+) {
+  const admin = createAdminClient();
+  const { data: attempt } = await admin
+    .from("attempts")
+    .select("id, unlocked, test_id")
+    .eq("id", attemptId)
+    .is("user_id", null)
+    .maybeSingle();
+
+  if (!attempt || attempt.unlocked) {
+    redirect(`/tests/${testSlug}/result/${attemptId}`);
+  }
+
+  const { data: test } = await admin
+    .from("tests")
+    .select("id, slug, title, price_cents, currency")
+    .eq("id", attempt.test_id)
+    .single();
+
+  if (!test || test.slug !== testSlug || !test.price_cents || test.price_cents <= 0) {
+    throw new Error("Test introuvable ou non payant.");
+  }
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL!;
+  const returnPath = `/tests/${test.slug}/result/${attempt.id}`;
+  const session = await stripe.checkout.sessions.create({
+    mode: "payment",
+    line_items: [
+      {
+        price_data: {
+          currency: test.currency,
+          unit_amount: test.price_cents,
+          product_data: { name: test.title },
+        },
+        quantity: 1,
+      },
+    ],
+    // Only attempt_id: no supabase_user_id / test_id, which would route the
+    // webhook to the account-purchase branch instead of the attempt unlock.
+    metadata: { attempt_id: attempt.id },
+    success_url: `${siteUrl}${returnPath}?unlock=success`,
+    cancel_url: `${siteUrl}${returnPath}?unlock=cancelled`,
+  });
+
+  if (!session.url) {
+    throw new Error("Impossible de créer la session de paiement Stripe.");
+  }
+
+  redirect(session.url);
+}
+
 // Recurring subscription giving unlimited access to included tests.
 export async function createSubscriptionCheckoutSession() {
   const supabase = await createClient();

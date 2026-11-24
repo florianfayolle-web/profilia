@@ -19,10 +19,6 @@ export async function submitAttempt(
   const { data: userData } = await supabase.auth.getUser();
   const user = userData.user;
 
-  if (!user) {
-    return { redirectTo: `/login?next=/tests/${testSlug}/run` };
-  }
-
   const { data: test } = await supabase
     .from("tests")
     .select("id, price_cents, included_in_subscription")
@@ -33,11 +29,17 @@ export async function submitAttempt(
     return { error: "Test introuvable." };
   }
 
-  const access = await getTestAccess(
-    test.id,
-    test.price_cents,
-    test.included_in_subscription
-  );
+  // Visitors without an account used to be sent to /login and lost every
+  // answer. They now get a locked guest attempt (see assessments.ts for the
+  // same reasoning); the unlock checkout flips `unlocked` after payment.
+  const isGuest = !user;
+  if (isGuest && test.price_cents <= 0) {
+    return { redirectTo: `/login?next=/tests/${testSlug}/run` };
+  }
+
+  const access = isGuest
+    ? { hasAccess: false }
+    : await getTestAccess(test.id, test.price_cents, test.included_in_subscription);
 
   // Payment only gates the *result*, not the questions. Re-fetch the
   // authoritative scoring from the database — never trust point values
@@ -85,20 +87,41 @@ export async function submitAttempt(
     (profile) => profile.trait_key === winningTrait
   );
 
-  const { data: attempt, error } = await supabase
-    .from("attempts")
-    .insert({
-      user_id: user.id,
-      test_id: test.id,
-      answers: answers.map((a) => ({
-        question_id: a.questionId,
-        option_id: a.optionId,
-      })),
-      scores,
-      result_profile_id: resultProfile?.id ?? null,
-    })
-    .select("id")
-    .single();
+  const row = {
+    test_id: test.id,
+    answers: answers.map((a) => ({
+      question_id: a.questionId,
+      option_id: a.optionId,
+    })),
+    scores,
+    result_profile_id: resultProfile?.id ?? null,
+  };
+
+  let attemptRes;
+  if (user) {
+    attemptRes = await supabase
+      .from("attempts")
+      .insert({ ...row, user_id: user.id })
+      .select("id")
+      .single();
+  } else {
+    const admin = createAdminClient();
+    const hourAgo = new Date(Date.now() - 3600_000).toISOString();
+    const { count: hourCount } = await admin
+      .from("attempts")
+      .select("id", { count: "exact", head: true })
+      .is("user_id", null)
+      .gte("completed_at", hourAgo);
+    if ((hourCount ?? 0) >= 300) {
+      return { error: "Beaucoup de monde en ce moment. Réessaie dans quelques minutes." };
+    }
+    attemptRes = await admin
+      .from("attempts")
+      .insert({ ...row, user_id: null, unlocked: false })
+      .select("id")
+      .single();
+  }
+  const { data: attempt, error } = attemptRes;
 
   if (error || !attempt) {
     return { error: "Impossible d'enregistrer ta réponse." };
