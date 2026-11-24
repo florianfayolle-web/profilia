@@ -60,7 +60,7 @@ export default function CGVPage() {
           <p>Deux façons d&apos;accéder aux rapports complets sont proposées :</p>
           <ul className="list-disc pl-5">
             <li>
-              À l&apos;unité : 4,99 € TTC pour débloquer le rapport complet
+              À l&apos;unité : 1,99 € TTC pour débloquer le rapport complet
               d&apos;un test, à vie. Depuis le résultat du test gratuit
               d&apos;introduction, le déblocage du détail de ce test est
               également proposé à 0,99 € TTC, limité au rapport de ce test.
@@ -102,7 +102,7 @@ export default function CGVPage() {
             la page « Mon compte » du site. La résiliation prend effet à la
             fin de la période en cours déjà payée ; aucun remboursement au
             prorata n&apos;est effectué pour la période entamée. Un
-            déblocage à l&apos;unité (4,99 €) n&apos;est pas un
+            déblocage à l&apos;unité (1,99 €) n&apos;est pas un
             abonnement et n&apos;est donc pas concerné par une résiliation.
           </p>
         </section>

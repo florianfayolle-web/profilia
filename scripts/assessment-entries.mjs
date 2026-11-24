@@ -9,7 +9,7 @@
 // price_cents 0 and no stripe_price_id — getTestAccess() already treats
 // price_cents === 0 as unconditional access, same as the free preview logic.
 
-export const DEFAULT_PRICE_CENTS = 99;
+export const DEFAULT_PRICE_CENTS = 199;
 export const SUBSCRIPTION_PRICE_CENTS = 599;
 export const SUBSCRIPTION_LOOKUP_KEY = "sub_unlimited_monthly";
 

@@ -342,7 +342,7 @@ GUIDES.push({
       heading: "Comment se déroule notre test DISC gratuit",
       body: [
         "Le test présente 80 groupes de 4 affirmations. Pour chaque groupe, tu choisis l'affirmation qui te ressemble le plus (+) et celle qui te ressemble le moins (−), un format à choix forcé qui t'oblige à trancher plutôt que de rester neutre partout, ce qui donne un profil plus net.",
-        "Tous les groupes sont gratuits, sans engagement ni carte bancaire : seul le rapport complet se débloque ensuite, à 4,99 €.",
+        "Tous les groupes sont gratuits, sans engagement ni carte bancaire : seul le rapport complet se débloque ensuite, à 1,99 €.",
       ],
     },
     {

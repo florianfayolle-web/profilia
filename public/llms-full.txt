@@ -1,0 +1,37 @@
+# Profilia (profilia-test.fr)
+
+> Profilia est un site français de tests de personnalité, de QI et de profil cognitif en ligne. Les questions sont gratuites, le profil principal est offert, le rapport détaillé coûte 1,99 € par test ou 9,99 €/mois en illimité. Les tests sont des outils de réflexion personnelle, pas des diagnostics médicaux ou psychologiques.
+
+## À propos
+- Site indépendant, en français. Tests originaux inspirés de modèles connus (DISC, Big Five, RIASEC, Process Communication), sans reproduction d'instruments officiels ni affiliation à une compagnie ou à un éditeur de tests.
+- Conçus pour se connaître ou s'entraîner avant un entretien de sélection (recrutement, aérien compris).
+- Pas de compte nécessaire pour répondre aux questions. Les réponses du test « Agir, influencer, accepter » ne sont pas enregistrées.
+
+## Tests disponibles
+- Test de personnalité express (Big Five) : 20 questions, environ 5 minutes. https://profilia-test.fr/tests/big-five-express
+- Test DISC : 80 groupes de 4 affirmations (choix forcé), résultat sur la roue des 8 profils. https://profilia-test.fr/tests/disc
+- Test de QI (adulte et enfant par tranches d'âge) : 40 questions, note de QI et courbe de Gauss, sans correction des questions affichée. https://profilia-test.fr/tests/qi
+- Repérage TDAH adulte : questionnaire de repérage inspiré du DSM-5, non diagnostique. https://profilia-test.fr/tests/tdah
+- Six façons d'habiter sa vie (inspiré de la Process Communication) : 72 affirmations, 6 profils. https://profilia-test.fr/tests/pcm
+- Boussole d'orientation (RIASEC) : 88 propositions, entièrement gratuite. https://profilia-test.fr/tests/orientation
+- Agir, influencer, accepter : 10 scènes du quotidien, trois cercles d'énergie (ce que je contrôle, ce que j'influence, ce qui m'échappe). Gratuit, sans compte. https://profilia-test.fr/trois-cercles
+- Liste complète : https://profilia-test.fr/tests
+
+## Tarifs
+- Questions : gratuites. Profil principal : offert.
+- Rapport détaillé d'un test, téléchargeable en PDF : 1,99 € (achat unique, débloqué à vie).
+- Abonnement illimité : 9,99 €/mois, résiliable à tout moment.
+- Paiement sécurisé par Stripe. Droit de rétractation de 14 jours renoncé à l'achat d'un contenu numérique immédiat (art. L221-28 du Code de la consommation).
+- Détails : https://profilia-test.fr/pricing
+
+## Comparer avec des amis
+Après un test, on peut créer un groupe de comparaison et envoyer le lien par WhatsApp, SMS ou email. Les résultats ne sont partagés qu'avec l'accord de chaque membre. https://profilia-test.fr/blog
+
+## Guides et blog
+- Guides sur le déroulé de chaque test et comment s'y préparer : https://profilia-test.fr/guides
+- Articles sur les tests de personnalité, le recrutement et les jeux entre amis : https://profilia-test.fr/blog
+
+## Questions fréquentes
+- Les tests sont-ils fiables ? Ce sont des outils d'auto-exploration et d'entraînement. Ils ne remplacent ni un bilan réalisé par un psychologue, ni un avis médical.
+- Faut-il un compte ? Non pour répondre ; une adresse email suffit pour voir son résultat.
+- Peut-on refaire un test ? Oui, autant de fois que souhaité.

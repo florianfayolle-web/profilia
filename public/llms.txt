@@ -1,6 +1,6 @@
 # Profilia
 
-> Tests de personnalité, de QI et de profil cognitif en ligne, en français. Questions gratuites, résultat détaillé à 0,99 € par test ou abonnement à 4,99 €/mois.
+> Tests de personnalité, de QI et de profil cognitif en ligne, en français. Questions gratuites, résultat détaillé à 1,99 € par test ou abonnement à 9,99 €/mois.
 
 ## Tests
 - [Tous les tests](https://profilia-test.fr/tests)
@@ -10,6 +10,9 @@
 - [Test de personnalité express (Big Five)](https://profilia-test.fr/tests/big-five-express)
 - [Agir, influencer, accepter (3 cercles, gratuit)](https://profilia-test.fr/trois-cercles)
 - [Test d'orientation](https://profilia-test.fr/tests/orientation)
+
+## Version détaillée
+- [llms-full.txt](https://profilia-test.fr/llms-full.txt)
 
 ## Ressources
 - [Guides](https://profilia-test.fr/guides)
