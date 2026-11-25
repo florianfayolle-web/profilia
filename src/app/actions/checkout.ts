@@ -1,15 +1,10 @@
 "use server";
 
-import { SUBSCRIPTION_PRICE_CENTS } from "@/lib/pricing";
+import { GUEST_UNLOCK_PRICE_CENTS, SUBSCRIPTION_PRICE_CENTS } from "@/lib/pricing";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { stripe } from "@/lib/stripe";
-
-// Kept in sync with scripts/assessment-entries.mjs's UNLOCK_RESULT_LOOKUP_KEY
-// (that file is a standalone Node script, not part of the app bundle, so the
-// key is duplicated here rather than imported across that boundary).
-const UNLOCK_RESULT_LOOKUP_KEY = "unlock_guest_result";
 
 async function getOrCreateStripeCustomer(
   userId: string,
@@ -253,7 +248,7 @@ export async function createUnlockCheckoutSession(
   const admin = createAdminClient();
   const { data: attempt } = await admin
     .from("attempts")
-    .select("id, guest_email, unlocked")
+    .select("id, guest_email, unlocked, test_id")
     .eq("id", attemptId)
     .is("user_id", null)
     .maybeSingle();
@@ -265,22 +260,26 @@ export async function createUnlockCheckoutSession(
     redirect(`/tests/${testSlug}/result/${attemptId}`);
   }
 
-  const prices = await stripe.prices.list({
-    lookup_keys: [UNLOCK_RESULT_LOOKUP_KEY],
-    limit: 1,
-  });
-  const priceId = prices.data[0]?.id;
-  if (!priceId) {
-    throw new Error(
-      `Aucun prix Stripe trouvé pour "${UNLOCK_RESULT_LOOKUP_KEY}". Lance scripts/setup-stripe.mjs.`
-    );
-  }
+  const { data: unlockTest } = await admin
+    .from("tests")
+    .select("title, currency")
+    .eq("id", attempt.test_id)
+    .single();
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL!;
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
     customer_email: attempt.guest_email ?? undefined,
-    line_items: [{ price: priceId, quantity: 1 }],
+    line_items: [
+      {
+        price_data: {
+          currency: unlockTest?.currency ?? "eur",
+          unit_amount: GUEST_UNLOCK_PRICE_CENTS,
+          product_data: { name: unlockTest?.title ?? "Rapport complet" },
+        },
+        quantity: 1,
+      },
+    ],
     metadata: { attempt_id: attempt.id },
     success_url: `${siteUrl}/tests/${testSlug}/result/${attemptId}?unlock=success`,
     cancel_url: `${siteUrl}/tests/${testSlug}/result/${attemptId}?unlock=cancelled`,

@@ -1008,7 +1008,7 @@ GUIDES.push({
       heading: "Gratuit, sans compte, résultat immédiat",
       body: [
         "Aucune création de compte n'est nécessaire : tu laisses simplement ton email à la fin du test pour voir ton résultat, sans mot de passe. Le test se lance automatiquement et prend environ 5 minutes.",
-        "Ton profil principal (le trait qui ressort le plus nettement de tes réponses) t'est offert immédiatement. Le détail complet des 5 dimensions, avec l'explication de chaque tendance, se débloque ensuite pour 0,99€.",
+        "Ton profil principal (le trait qui ressort le plus nettement de tes réponses) t'est offert immédiatement. Le détail complet des 5 dimensions, avec l'explication de chaque tendance, se débloque ensuite pour 1,99€.",
       ],
     },
     {
@@ -1022,7 +1022,7 @@ GUIDES.push({
     {
       question: "Le test est-il vraiment gratuit ?",
       answer:
-        "Oui : les 20 questions et ton profil principal sont entièrement gratuits, sans carte bancaire. Seul le détail complet des 5 dimensions (0,99€) est optionnel.",
+        "Oui : les 20 questions et ton profil principal sont entièrement gratuits, sans carte bancaire. Seul le détail complet des 5 dimensions (1,99€) est optionnel.",
     },
     {
       question: "Faut-il créer un compte ?",

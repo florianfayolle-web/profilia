@@ -115,7 +115,7 @@ export default async function TestDetailPage(
       question: "Ce test est-il gratuit ?",
       answer:
         test.price_cents === 0 && test.format === "bipolar_pairs"
-          ? "Oui, les questions et ton profil principal sont gratuits, sans carte bancaire. Le détail complet de tes dimensions et le rapport PDF sont optionnels (0,99 €)."
+          ? "Oui, les questions et ton profil principal sont gratuits, sans carte bancaire. Le détail complet de tes dimensions et le rapport PDF sont optionnels (1,99 €)."
           : test.price_cents === 0
           ? "Oui, toutes les questions et ton résultat complet sont gratuits, sans carte bancaire."
           : `Les questions sont gratuites et ton profil principal est offert. Seul le rapport détaillé est payant (${formatPrice(test.price_cents, test.currency)})${test.included_in_subscription ? ", ou inclus dans l'abonnement illimité" : ""}.`,

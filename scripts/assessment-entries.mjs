@@ -15,7 +15,7 @@ export const SUBSCRIPTION_LOOKUP_KEY = "sub_unlimited_monthly";
 
 // Micro-payment to unblur the free test's result — not tied to any one
 // test row, so it isn't in ENTRIES below.
-export const UNLOCK_RESULT_PRICE_CENTS = 99;
+export const UNLOCK_RESULT_PRICE_CENTS = 199;
 export const UNLOCK_RESULT_LOOKUP_KEY = "unlock_guest_result";
 
 export const ENTRIES = [
@@ -196,7 +196,7 @@ export const ENTRIES = [
     priceCents: 0,
     title: "Test de personnalité express, gratuit",
     description:
-      "Test de personnalité gratuit et rapide (20 affirmations, environ 5 minutes) sur 5 grandes dimensions inspirées du modèle Big Five : ouverture d'esprit, organisation, extraversion, agréabilité, stabilité émotionnelle. Les 20 questions et ton profil principal sont gratuits, sans carte bancaire ; le détail des 5 dimensions et le rapport PDF sont optionnels (0,99 €).",
+      "Test de personnalité gratuit et rapide (20 affirmations, environ 5 minutes) sur 5 grandes dimensions inspirées du modèle Big Five : ouverture d'esprit, organisation, extraversion, agréabilité, stabilité émotionnelle. Les 20 questions et ton profil principal sont gratuits, sans carte bancaire ; le détail des 5 dimensions et le rapport PDF sont optionnels (1,99 €).",
   },
   {
     file: "qi.json",

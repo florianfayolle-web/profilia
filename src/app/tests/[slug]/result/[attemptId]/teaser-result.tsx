@@ -215,7 +215,7 @@ export function TeaserResult({
                 href="#unlock-cta"
                 className="mt-3 block w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
               >
-                Voir mon graphique, 0,99&nbsp;€
+                Voir mon graphique, 1,99&nbsp;€
               </a>
             </div>
           </div>
@@ -252,7 +252,7 @@ export function TeaserResult({
           <div id="unlock-cta" className="mt-5 scroll-mt-20">
             <ConsentCheckoutButton
               action={createUnlockCheckoutSession.bind(null, testSlug, attemptId)}
-              label="Débloquer mon rapport complet, 0,99 €"
+              label="Débloquer mon rapport complet, 1,99 €"
               className="w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
             />
           </div>

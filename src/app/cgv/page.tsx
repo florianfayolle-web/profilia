@@ -63,7 +63,7 @@ export default function CGVPage() {
               À l&apos;unité : 1,99 € TTC pour débloquer le rapport complet
               d&apos;un test, à vie. Depuis le résultat du test gratuit
               d&apos;introduction, le déblocage du détail de ce test est
-              également proposé à 0,99 € TTC, limité au rapport de ce test.
+              également proposé à 1,99 € TTC, limité au rapport de ce test.
             </li>
             <li>
               Abonnement illimité : 9,99 € TTC par mois, sans engagement de
