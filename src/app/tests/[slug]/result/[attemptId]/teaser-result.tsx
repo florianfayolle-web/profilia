@@ -284,7 +284,10 @@ export function TeaserResult({
             />
           </div>
           <p className="mt-2 text-center text-xs text-muted-foreground">
-            Moins cher qu&apos;un café, pour te connaître un peu mieux.
+            Un seul paiement, accès à vie, sans abonnement.{" "}
+            <a href="/#exemple-rapport" className="font-medium text-primary hover:underline">
+              Voir un exemple de rapport
+            </a>
           </p>
         </div>
       </div>

@@ -29,11 +29,14 @@ export function verifyUnsubscribeToken(email: string, token: string) {
 const esc = (v: string) =>
   v.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]!));
 
-function buildMail(opts: { title: string; resultUrl: string; unsubUrl: string }) {
-  const subject = `Ton profil « ${opts.title} » t'attend`;
+function buildMail(opts: { free: boolean; title: string; resultUrl: string; unsubUrl: string }) {
+  const subject = opts.free ? `Ton résultat « ${opts.title} », et la suite` : `Ton profil « ${opts.title} » t'attend`;
+  const offer = opts.free
+    ? "Ton résultat est toujours disponible. Pour aller plus loin, chaque rapport complet (avec PDF) coûte 1,99 €, une seule fois, sans abonnement."
+    : "Ton profil principal est offert, et le détail complet de tes dimensions (avec le rapport PDF) est à 1,99 €, sans abonnement.";
   const text = `Salut,
 
-Hier, tu as passé le test « ${opts.title} » sur Profilia. Ton profil principal est offert, et le détail complet de tes dimensions (avec le rapport PDF) est à 1,99 €, sans abonnement.
+Hier, tu as passé le test « ${opts.title} » sur Profilia. ${offer}
 
 Retrouve ton résultat : ${opts.resultUrl}
 
@@ -41,7 +44,7 @@ Se désinscrire : ${opts.unsubUrl}
 Profilia, profilia-test.fr`;
   const html = `<div style="font-family:system-ui,sans-serif;max-width:520px;margin:auto;color:#1c1c28;line-height:1.5">
 <p>Salut,</p>
-<p>Hier, tu as passé le test « ${esc(opts.title)} » sur Profilia. Ton profil principal est offert, et le détail complet de tes dimensions (avec le rapport PDF) est à <strong>1,99 €</strong>, sans abonnement.</p>
+<p>Hier, tu as passé le test « ${esc(opts.title)} » sur Profilia. ${esc(offer)}</p>
 <p><a href="${esc(opts.resultUrl)}" style="display:inline-block;background:#8B1E3F;color:#fff;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600">Retrouver mon résultat</a></p>
 <p style="font-size:12px;color:#777">Tu reçois ce message car tu as accepté de recevoir des conseils par email. <a href="${esc(opts.unsubUrl)}">Se désinscrire</a></p></div>`;
   return { subject, text, html };
@@ -88,11 +91,18 @@ export async function runRelance({ dryRun }: { dryRun: boolean }) {
       .select("unlocked")
       .eq("id", lead.attempt_id!)
       .maybeSingle();
-    if (!attempt || attempt.unlocked) continue;
+    const { data: test } = await admin
+      .from("tests")
+      .select("title, price_cents")
+      .eq("slug", lead.test_slug)
+      .maybeSingle();
+    // A paid-feature test already unlocked needs no reminder; a free test
+    // (always "unlocked") still gets one, pointing to the next step.
+    if (!attempt || (attempt.unlocked && (test?.price_cents ?? 0) > 0)) continue;
     eligible++;
     if (!transporter) continue;
-    const { data: test } = await admin.from("tests").select("title").eq("slug", lead.test_slug).maybeSingle();
     const mail = buildMail({
+      free: (test?.price_cents ?? 0) === 0 && !!attempt.unlocked,
       title: test?.title ?? "Profilia",
       resultUrl: `${SITE_URL}/tests/${lead.test_slug}/result/${lead.attempt_id}?utm_source=email&utm_medium=relance&utm_campaign=j1`,
       unsubUrl: `${SITE_URL}/api/unsubscribe?e=${encodeURIComponent(lead.email)}&t=${unsubscribeToken(lead.email)}`,

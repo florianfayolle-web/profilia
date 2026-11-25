@@ -5,6 +5,8 @@ import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import type { Attempt, ResultProfile, Test } from "@/lib/types";
 import { ResultView } from "./result-view";
+import { OrientationNext } from "./orientation-next";
+import { ReminderOptIn } from "@/components/reminder-optin";
 import { UpsellSection, NEXT_TEST_HOOKS, type NextTest } from "./upsell-section";
 import { TeaserResult, type TeaserData } from "./teaser-result";
 import type { scoreBipolarPairs } from "@/lib/assessments/scoring";
@@ -260,7 +262,10 @@ export default async function ResultPage(
   let nextTests: NextTest[] = [];
   if (test?.price_cents === 0 && !isLocked) {
     // pcm first: it is the paid test that actually sold (2026-11-24).
-    const order = ["pcm", "orientation", "disc", "animal-totem", "type-cognitif-16"].filter((x) => x !== slug);
+    const order = (slug === "orientation"
+      ? ["disc", "animal-totem", "type-cognitif-16"]
+      : ["pcm", "orientation", "disc", "animal-totem", "type-cognitif-16"]
+    ).filter((x) => x !== slug);
     const { data: rows } = await createAdminClient()
       .from("tests")
       .select("slug, title, price_cents")
@@ -279,6 +284,18 @@ export default async function ResultPage(
   const showGroupCard =
     canShareResult &&
     !(await createAdminClient().from("comparison_groups").select("id").limit(1)).error;
+
+  // Guest on a free test who left an email without ticking the opt-in: offer
+  // it again here, at the moment they are looking at their result.
+  let showReminderOptIn = false;
+  if (isGuestAttempt && isFreeTest && !isLocked && !viewingAsAdmin) {
+    const { data: lead } = await createAdminClient()
+      .from("marketing_leads")
+      .select("consent")
+      .eq("attempt_id", attemptId)
+      .maybeSingle();
+    showReminderOptIn = !!lead && lead.consent === false;
+  }
 
   return (
     <div
@@ -424,6 +441,12 @@ export default async function ResultPage(
         </div>
       )}
 
+      {showReminderOptIn && (
+        <div className="mt-6">
+          <ReminderOptIn attemptId={attemptId} />
+        </div>
+      )}
+
       {isRichFormat && test && !isLocked && (
         <div className="mt-6">
           <ResultView
@@ -434,6 +457,8 @@ export default async function ResultPage(
           />
         </div>
       )}
+
+      {slug === "orientation" && test && !isLocked && !viewingAsAdmin && <OrientationNext />}
 
       {canShareResult && test && (
         <ShareResultCard attemptId={attemptId} testSlug={slug} testTitle={test.title} />

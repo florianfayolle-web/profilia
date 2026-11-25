@@ -164,7 +164,7 @@ export default async function Home() {
             </p>
           </div>
 
-          <div className="relative mx-auto w-full max-w-md">
+          <div id="exemple-rapport" className="relative mx-auto w-full max-w-md scroll-mt-24">
             <div className="rounded-2xl border border-card-border bg-card/90 p-6 shadow-xl backdrop-blur-sm">
               <div className="flex items-center justify-between">
                 <p className="text-sm font-medium text-muted-foreground">

@@ -144,6 +144,13 @@ export function PaidLockedResult({
           />
         </div>
 
+        <p className="mt-3 text-center text-xs text-muted-foreground">
+          Un seul paiement, accès à vie, sans abonnement.{" "}
+          <Link href="/#exemple-rapport" className="font-medium text-primary hover:underline">
+            Voir un exemple de rapport
+          </Link>
+        </p>
+
         {guest && (
           <p className="mt-3 text-center text-xs text-muted-foreground">
             Pas besoin de compte : tu paies une seule fois, ton rapport s&apos;affiche tout de suite.
