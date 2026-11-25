@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { trackEvent } from "@/lib/track-event";
+import { ShareLinkButtons } from "@/components/share-link-buttons";
 
 // "Post my result on Instagram": builds the story image from the stored
 // result (/api/share-card), then hands it to the phone's share sheet, where
@@ -21,6 +23,7 @@ export function ShareResultCard({
   const [error, setError] = useState<string | null>(null);
 
   async function share() {
+    trackEvent("share_click", testSlug);
     setBusy(true);
     setError(null);
     setMessage(null);
@@ -84,6 +87,7 @@ export function ShareResultCard({
           >
             {busy ? "Préparation…" : "Publier sur Instagram"}
           </button>
+          <ShareLinkButtons testSlug={testSlug} testTitle={testTitle} className="mt-3" />
           {message && <p className="mt-3 text-sm text-muted">{message}</p>}
           {error && <p className="mt-3 text-sm text-red-600">{error}</p>}
         </div>

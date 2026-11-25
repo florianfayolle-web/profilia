@@ -457,9 +457,17 @@ export function ThreeCirclesTest() {
     var copy = el("button", "pf-btn", "Copier mon résultat");
     copy.type = "button";
     copy.addEventListener("click", function () { copyResult(p, copy); });
+    var wa = el("button", "pf-btn", "Envoyer à un ami (WhatsApp)");
+    wa.type = "button";
+    wa.addEventListener("click", function () {
+      var msg = "J'ai fait ce test « Agir, influencer, accepter » : " + p[1] + " % j'agis, " + p[2] + " % j'influence, " + p[3] + " % ce qui m'échappe. Et toi, où te situes-tu ? https://profilia-test.fr/trois-cercles?utm_source=whatsapp&utm_medium=share&utm_campaign=trois-cercles";
+      try { fetch("/api/track-view", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ path: "/_event/share_click/trois-cercles" }), keepalive: true }); } catch (e) {}
+      window.open("https://wa.me/?text=" + encodeURIComponent(msg), "_blank", "noopener");
+    });
     var again = el("button", "pf-btn ghost", "Refaire le test");
     again.type = "button";
     again.addEventListener("click", function () { showIntro(); scrollTop(); });
+    actions.appendChild(wa);
     actions.appendChild(copy);
     actions.appendChild(again);
     root.appendChild(actions);

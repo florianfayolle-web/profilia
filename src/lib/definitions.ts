@@ -9,19 +9,12 @@ export const GENDER_OPTIONS = [
 
 export const SignupFormSchema = z.object({
   firstName: z.string().trim().min(1, "Merci d'indiquer ton prénom."),
-  lastName: z.string().trim().min(1, "Merci d'indiquer ton nom."),
-  gender: z.enum(["femme", "homme", "autre", "non_precise"], {
-    message: "Merci de sélectionner une option.",
-  }),
-  birthDate: z
-    .string()
-    .min(1, "Merci d'indiquer ta date de naissance.")
-    .refine((v) => !Number.isNaN(Date.parse(v)), "Date invalide.")
-    .refine((v) => new Date(v) <= new Date(), "La date ne peut pas être dans le futur.")
-    .refine((v) => {
-      const age = (Date.now() - new Date(v).getTime()) / (365.25 * 24 * 3600 * 1000);
-      return age >= 13;
-    }, "Tu dois avoir au moins 13 ans pour créer un compte."),
+  // Last name, gender and birth date are no longer asked at signup (they
+  // cost conversions and nothing needs them to unlock a report): they stay
+  // optional so older accounts and the account page keep working.
+  lastName: z.string().trim().optional(),
+  gender: z.enum(["femme", "homme", "autre", "non_precise"]).optional(),
+  birthDate: z.string().optional(),
   email: z.string().trim().email("Merci d'entrer un email valide."),
   password: z
     .string()

@@ -125,8 +125,8 @@ export default async function AdminStatsPage() {
     admin.from("attempts").select("id", { count: "exact", head: true }),
     admin.from("attempts").select("id", { count: "exact", head: true }).gte("completed_at", d7),
     admin.from("attempts").select("id", { count: "exact", head: true }).gte("completed_at", d30),
-    admin.from("page_views").select("id", { count: "exact", head: true }).gte("viewed_at", d7),
-    admin.from("page_views").select("id", { count: "exact", head: true }).gte("viewed_at", d30),
+    admin.from("page_views").select("id", { count: "exact", head: true }).not("path", "like", "/_event/%").gte("viewed_at", d7),
+    admin.from("page_views").select("id", { count: "exact", head: true }).not("path", "like", "/_event/%").gte("viewed_at", d30),
     admin
       .from("subscriptions")
       .select("id", { count: "exact", head: true })
@@ -143,6 +143,32 @@ export default async function AdminStatsPage() {
       .eq("is_entry", true)
       .gte("viewed_at", d30),
   ]);
+
+  // Conversion funnel (30 days), from page_views (pageviews + /_event/ rows),
+  // attempts and purchases.
+  const pvBase = () =>
+    admin.from("page_views").select("id", { count: "exact", head: true }).gte("viewed_at", d30);
+  const [home30, run30, result30, unlock30, blocked30, share30, entry30] = await Promise.all([
+    pvBase().eq("path", "/"),
+    pvBase().like("path", "/tests/%/run"),
+    pvBase().like("path", "/tests/%/result/%"),
+    pvBase().like("path", "/_event/unlock_click%"),
+    pvBase().like("path", "/_event/unlock_blocked_consent%"),
+    pvBase().like("path", "/_event/share_click%"),
+    pvBase().eq("is_entry", true),
+  ]);
+  const purchases30 = (paidPurchases ?? []).filter((p) => p.created_at >= d30).length;
+  const funnel = [
+    { key: "entry", label: "Visites (arrivées)", value: entry30.count ?? 0 },
+    { key: "home", label: "Pages d'accueil vues", value: home30.count ?? 0 },
+    { key: "run", label: "Questionnaires ouverts", value: run30.count ?? 0 },
+    { key: "attempts", label: "Tests terminés", value: attempts30 ?? 0 },
+    { key: "result", label: "Pages résultat vues", value: result30.count ?? 0 },
+    { key: "unlock", label: "Clic « Débloquer » (case cochée)", value: unlock30.count ?? 0 },
+    { key: "blocked", label: "Clic « Débloquer » sans cocher la case", value: blocked30.count ?? 0 },
+    { key: "paid", label: "Paiements à l'unité", value: purchases30 },
+    { key: "share", label: "Clics sur partager", value: share30.count ?? 0 },
+  ];
 
   const countBySource = new Map<string, number>();
   for (const e of entries ?? []) {
@@ -230,6 +256,12 @@ export default async function AdminStatsPage() {
 
       <h2 className="mt-14 text-xl font-semibold tracking-tight">Activité — {DAYS_TREND} derniers jours</h2>
       <BarList items={trend} />
+
+      <h2 className="mt-14 text-xl font-semibold tracking-tight">Entonnoir de conversion (30j)</h2>
+      <p className="mt-1 text-xs text-muted-foreground">
+        Les clics « Débloquer » et « partager » sont comptés depuis leur mise en place.
+      </p>
+      <BarList items={funnel} />
 
       <h2 className="mt-14 text-xl font-semibold tracking-tight">D&apos;où viennent les visites (30j)</h2>
       {entriesError ? (

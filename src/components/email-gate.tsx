@@ -51,9 +51,9 @@ export function EmailGate({
             className="mt-0.5 h-4 w-4 shrink-0 rounded border-card-border"
           />
           <span>
-            (Facultatif) J&apos;accepte de recevoir par email des conseils et
-            des offres sur les autres tests Profilia. Désinscription possible
-            à tout moment.
+            (Facultatif) Rappelle-moi demain par email de retrouver mon résultat,
+            et envoie-moi des conseils sur les autres tests Profilia.
+            Désinscription en un clic à tout moment.
           </span>
         </label>
 

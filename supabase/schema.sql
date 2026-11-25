@@ -345,6 +345,9 @@ create table if not exists public.marketing_leads (
 
 create index if not exists marketing_leads_email_idx on public.marketing_leads (email);
 
+-- J+1 reminder email (src/lib/relance.ts): set once the reminder was sent.
+alter table public.marketing_leads add column if not exists relance_sent_at timestamptz;
+
 alter table public.marketing_leads enable row level security;
 -- No policies: only the service-role key (used by the server action and by
 -- the admin leads page) can read or write this table.

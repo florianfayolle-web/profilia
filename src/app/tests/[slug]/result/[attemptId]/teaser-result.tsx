@@ -3,6 +3,7 @@ import { PaymentPendingNotice } from "@/components/payment-pending";
 import { createUnlockCheckoutSession } from "@/app/actions/checkout";
 import { RadarChart } from "@/components/dimension-charts";
 import { ConsentCheckoutButton } from "@/components/consent-checkout-button";
+import { ShareLinkButtons } from "@/components/share-link-buttons";
 
 // Deliberately NOT the real scoring.ts result type: this is a redacted view
 // built server-side in page.tsx for the locked (unpaid) state. It must
@@ -119,11 +120,13 @@ export function TeaserResult({
   testSlug,
   attemptId,
   pendingUnlock,
+  testTitle,
 }: {
   result: TeaserData;
   testSlug: string;
   attemptId: string;
   pendingUnlock: boolean;
+  testTitle?: string;
 }) {
   if (pendingUnlock) {
     return (
@@ -149,6 +152,15 @@ export function TeaserResult({
           <p className="mt-3 text-sm font-medium text-primary">
             Et ce n&apos;est qu&apos;un début : 5 dimensions complètes t&apos;attendent plus bas.
           </p>
+        </div>
+      )}
+
+      {testTitle && (
+        <div className="mt-4 rounded-2xl border border-card-border bg-card px-5 py-4">
+          <p className="text-sm font-medium text-foreground">
+            Curieux de savoir ce que donnent tes amis ?
+          </p>
+          <ShareLinkButtons testSlug={testSlug} testTitle={testTitle} className="mt-3" />
         </div>
       )}
 
@@ -226,12 +238,27 @@ export function TeaserResult({
             5 dimensions. 5 vérités sur toi. Prêt&#8239;?
           </p>
           <ul className="mt-4 space-y-3 text-sm text-muted">
-            {result.dimensions.map((d) => (
+            {result.dimensions.map((d, i) => (
               <li key={d.key} className="flex items-start gap-3">
                 <DimensionIcon dimKey={d.key} />
-                <span>
+                <span className="min-w-0 flex-1">
                   <span className="font-medium text-foreground">{d.name}</span> , {" "}
                   {DIMENSION_MEDIA[d.key]?.hook ?? "ta tendance, expliquée en détail"}
+                  <span
+                    aria-hidden="true"
+                    className="mt-2 flex items-center gap-2 select-none"
+                  >
+                    <span className="h-2 flex-1 overflow-hidden rounded-full bg-card-border/60">
+                      <span
+                        className="block h-full rounded-full blur-[2px]"
+                        style={{
+                          width: `${[62, 78, 48, 70, 56][i % 5]}%`,
+                          backgroundColor: DIMENSION_MEDIA[d.key]?.color ?? "var(--primary)",
+                        }}
+                      />
+                    </span>
+                    <span className="text-[11px] text-muted-foreground">🔒 rapport complet</span>
+                  </span>
                 </span>
               </li>
             ))}

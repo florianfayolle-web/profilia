@@ -15,7 +15,12 @@ export async function POST(request: Request) {
 
   const body = await request.json().catch(() => ({}));
   const { path } = body;
-  if (typeof path !== "string" || !path.startsWith("/") || path.length > 300) {
+  if (
+    typeof path !== "string" ||
+    !path.startsWith("/") ||
+    path.length > 300 ||
+    (path.startsWith("/_event/") && !/^\/_event\/[a-z_]+(\/[a-z0-9-]+)?$/.test(path))
+  ) {
     return NextResponse.json({ ok: false }, { status: 400 });
   }
 

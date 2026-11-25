@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import { trackEvent } from "@/lib/track-event";
 
 // A digital-content purchase (unlocking a result right away) falls under
 // the French Code de la consommation's withdrawal-right exception
@@ -56,6 +57,9 @@ export function ConsentCheckoutButton({
           if (!consent) {
             e.preventDefault();
             setShowHint(true);
+            trackEvent("unlock_blocked_consent");
+          } else {
+            trackEvent("unlock_click", window.location.pathname.split("/")[2]);
           }
         }}
         aria-disabled={!consent}

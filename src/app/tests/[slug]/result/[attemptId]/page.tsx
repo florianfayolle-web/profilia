@@ -402,6 +402,7 @@ export default async function ResultPage(
             testSlug={slug}
             attemptId={attemptId}
             pendingUnlock={pendingUnlock}
+            testTitle={test.title}
           />
         </div>
       )}

@@ -98,6 +98,18 @@ export default async function Home() {
     flagshipTests = [];
   }
 
+  // Social proof only once the number is big enough to be one (real count,
+  // never inflated).
+  let attemptsCount = 0;
+  try {
+    const { count } = await createAdminClient()
+      .from("attempts")
+      .select("id", { count: "exact", head: true });
+    attemptsCount = count ?? 0;
+  } catch {
+    attemptsCount = 0;
+  }
+
   return (
     <div>
       <section className="sky-gradient relative overflow-hidden border-b border-card-border/60">
@@ -147,6 +159,8 @@ export default async function Home() {
             </div>
             <p className="text-sm text-muted-foreground">
               *Aucune connexion requise, résultat immédiat.
+              {attemptsCount >= 500 &&
+                ` Déjà ${Math.floor(attemptsCount / 100) * 100}+ tests passés.`}
             </p>
           </div>
 
@@ -230,9 +244,29 @@ export default async function Home() {
         </Link>
       </section>
 
+      {flagshipTests.length > 0 && (
+        <section className="border-t border-card-border/60 bg-card/40">
+          <div className="mx-auto max-w-5xl px-6 py-16">
+            <h2 className="text-center text-2xl font-semibold tracking-tight">
+              Nos tests les plus complets
+            </h2>
+            <p className="mx-auto mt-3 max-w-xl text-center text-muted">
+              Modèle DISC sur la roue des 8 profils, test de QI sur l&apos;échelle de Wechsler,
+              boussole d&apos;orientation RIASEC, repérage TDAH et HPI : un aperçu de ce que
+              couvrent nos rapports.
+            </p>
+            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {flagshipTests.map((test) => (
+                <TestCard key={test.id} test={test} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="mx-auto max-w-5xl px-6 py-16">
         <h2 className="text-center text-2xl font-semibold tracking-tight">
-          4 espaces, un objectif à chaque fois différent
+          Et pour aller plus loin : 4 espaces
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-center text-muted">
           Raisonnement et repérage, personnalité au sens large, ou préparation ciblée à un
@@ -262,26 +296,6 @@ export default async function Home() {
           ))}
         </div>
       </section>
-
-      {flagshipTests.length > 0 && (
-        <section className="border-t border-card-border/60 bg-card/40">
-          <div className="mx-auto max-w-5xl px-6 py-16">
-            <h2 className="text-center text-2xl font-semibold tracking-tight">
-              Nos tests les plus complets
-            </h2>
-            <p className="mx-auto mt-3 max-w-xl text-center text-muted">
-              Modèle DISC sur la roue des 8 profils, test de QI sur l&apos;échelle de Wechsler,
-              boussole d&apos;orientation RIASEC, repérage TDAH et HPI : un aperçu de ce que
-              couvrent nos rapports.
-            </p>
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {flagshipTests.map((test) => (
-                <TestCard key={test.id} test={test} />
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
 
       <section className="mx-auto max-w-5xl px-6 py-6">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-700 via-violet-700 to-pink-600 px-6 py-12 text-center text-white shadow-lg sm:px-12">

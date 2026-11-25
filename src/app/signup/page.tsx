@@ -4,7 +4,6 @@ import { Suspense, useActionState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { signup } from "@/app/actions/auth";
-import { GENDER_OPTIONS } from "@/lib/definitions";
 import { GoogleAuthButton } from "@/components/google-auth-button";
 
 export default function SignupPage() {
@@ -51,78 +50,19 @@ function SignupForm() {
         <form action={action} className="flex flex-col gap-4">
           <input type="hidden" name="next" value={next} />
           <input type="hidden" name="testSlug" value={testSlug} />
-          <div className="grid grid-cols-2 gap-3">
-            <div>
-              <label htmlFor="firstName" className="text-sm font-medium">
-                Prénom
-              </label>
-              <input
-                id="firstName"
-                name="firstName"
-                className="mt-1 w-full rounded-md border border-card-border bg-background px-3 py-2 outline-none focus:border-primary"
-              />
-              {state?.errors?.firstName && (
-                <p className="mt-1 text-sm text-red-600">
-                  {state.errors.firstName[0]}
-                </p>
-              )}
-            </div>
-            <div>
-              <label htmlFor="lastName" className="text-sm font-medium">
-                Nom
-              </label>
-              <input
-                id="lastName"
-                name="lastName"
-                className="mt-1 w-full rounded-md border border-card-border bg-background px-3 py-2 outline-none focus:border-primary"
-              />
-              {state?.errors?.lastName && (
-                <p className="mt-1 text-sm text-red-600">
-                  {state.errors.lastName[0]}
-                </p>
-              )}
-            </div>
-          </div>
-
           <div>
-            <label htmlFor="gender" className="text-sm font-medium">
-              Sexe
-            </label>
-            <select
-              id="gender"
-              name="gender"
-              defaultValue=""
-              className="mt-1 w-full rounded-md border border-card-border bg-background px-3 py-2 outline-none focus:border-primary"
-            >
-              <option value="" disabled>
-                Choisis une option
-              </option>
-              {GENDER_OPTIONS.map((opt) => (
-                <option key={opt.value} value={opt.value}>
-                  {opt.label}
-                </option>
-              ))}
-            </select>
-            {state?.errors?.gender && (
-              <p className="mt-1 text-sm text-red-600">
-                {state.errors.gender[0]}
-              </p>
-            )}
-          </div>
-
-          <div>
-            <label htmlFor="birthDate" className="text-sm font-medium">
-              Date de naissance
+            <label htmlFor="firstName" className="text-sm font-medium">
+              Prénom
             </label>
             <input
-              id="birthDate"
-              name="birthDate"
-              type="date"
+              id="firstName"
+              name="firstName"
+              autoComplete="given-name"
               className="mt-1 w-full rounded-md border border-card-border bg-background px-3 py-2 outline-none focus:border-primary"
             />
-            {state?.errors?.birthDate && (
+            {state?.errors?.firstName && (
               <p className="mt-1 text-sm text-red-600">
-                {state.errors.birthDate[0]}
+                {state.errors.firstName[0]}
               </p>
             )}
           </div>
@@ -134,6 +74,7 @@ function SignupForm() {
             <input
               id="email"
               name="email"
+              autoComplete="email"
               type="email"
               className="mt-1 w-full rounded-md border border-card-border bg-background px-3 py-2 outline-none focus:border-primary"
             />
@@ -152,6 +93,7 @@ function SignupForm() {
               id="password"
               name="password"
               type="password"
+              autoComplete="new-password"
               className="mt-1 w-full rounded-md border border-card-border bg-background px-3 py-2 outline-none focus:border-primary"
             />
             {state?.errors?.password && (

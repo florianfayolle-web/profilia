@@ -22,9 +22,9 @@ export async function signup(
 ): Promise<SignupFormState> {
   const validatedFields = SignupFormSchema.safeParse({
     firstName: formData.get("firstName"),
-    lastName: formData.get("lastName"),
-    gender: formData.get("gender"),
-    birthDate: formData.get("birthDate"),
+    lastName: formData.get("lastName") || undefined,
+    gender: formData.get("gender") || undefined,
+    birthDate: formData.get("birthDate") || undefined,
     email: formData.get("email"),
     password: formData.get("password"),
   });
@@ -35,7 +35,7 @@ export async function signup(
 
   const { firstName, lastName, gender, birthDate, email, password } =
     validatedFields.data;
-  const fullName = `${firstName} ${lastName}`.trim();
+  const fullName = `${firstName} ${lastName ?? ""}`.trim();
   const testSlug = formData.get("testSlug");
   const supabase = await createClient();
 
@@ -57,10 +57,10 @@ export async function signup(
       .from("profiles")
       .update({
         first_name: firstName,
-        last_name: lastName,
         full_name: fullName,
-        gender,
-        birth_date: birthDate,
+        ...(lastName ? { last_name: lastName } : {}),
+        ...(gender ? { gender } : {}),
+        ...(birthDate ? { birth_date: birthDate } : {}),
         ...(typeof testSlug === "string" && testSlug
           ? { interested_test_slug: testSlug }
           : {}),
