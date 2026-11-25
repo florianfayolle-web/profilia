@@ -49,11 +49,12 @@ export default async function AdminResultsPage() {
       .select("id, user_id, guest_email, test_id, result, completed_at, unlocked")
       .order("completed_at", { ascending: false })
       .limit(RESULTS_LIMIT),
-    admin.from("tests").select("id, slug, title"),
+    admin.from("tests").select("id, slug, title, price_cents"),
   ]);
 
   const titleById = new Map((tests ?? []).map((t) => [t.id, t.title]));
   const slugById = new Map((tests ?? []).map((t) => [t.id, t.slug]));
+  const freeIds = new Set((tests ?? []).filter((t) => t.price_cents === 0).map((t) => t.id));
 
   const userIds = [...new Set((attempts ?? []).map((a) => a.user_id).filter((id): id is string => !!id))];
   const { data: profiles } =
@@ -111,7 +112,9 @@ export default async function AdminResultsPage() {
                   {summarize(a.result as Record<string, unknown> | null)}
                 </td>
                 <td className="px-4 py-3">
-                  {a.unlocked ? (
+                  {freeIds.has(a.test_id) ? (
+                    <span className="text-muted-foreground">Gratuit</span>
+                  ) : a.unlocked ? (
                     <span className="text-green-600 dark:text-green-400">Oui</span>
                   ) : (
                     <span className="text-muted-foreground">Non</span>
