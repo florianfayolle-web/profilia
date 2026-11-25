@@ -259,7 +259,8 @@ export default async function ResultPage(
   // just taken.
   let nextTests: NextTest[] = [];
   if (test?.price_cents === 0 && !isLocked) {
-    const order = ["orientation", "disc", "pcm", "animal-totem", "type-cognitif-16"].filter((x) => x !== slug);
+    // pcm first: it is the paid test that actually sold (2026-11-24).
+    const order = ["pcm", "orientation", "disc", "animal-totem", "type-cognitif-16"].filter((x) => x !== slug);
     const { data: rows } = await createAdminClient()
       .from("tests")
       .select("slug, title, price_cents")
