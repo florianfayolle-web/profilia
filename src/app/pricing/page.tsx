@@ -4,7 +4,7 @@ import { createSubscriptionCheckoutSession } from "@/app/actions/checkout";
 import { ConsentCheckoutButton } from "@/components/consent-checkout-button";
 
 export const metadata: Metadata = {
-  title: "Tarifs",
+  title: "Tarifs : 1,99 € par test ou 9,99 €/mois",
   description:
     "1,99€ pour débloquer un test à l'unité, ou 9,99€/mois pour débloquer tous les tests en illimité. Annulable à tout moment.",
   alternates: { canonical: "/pricing" },

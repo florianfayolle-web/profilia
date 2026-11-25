@@ -15,7 +15,7 @@ const STYLES = `.pf-card { --pf-ink: #1E1B3A; --pf-muted: #5E5A7D; --pf-line: #E
   }
   @media (min-width: 640px) { .pf-card { padding: 38px 40px 34px; } }
   h1, h2, h3 { margin: 0; line-height: 1.2; }
-  .pf-card h1 { font-size: clamp(28px, 6vw, 38px); font-weight: 700; }
+  .pf-card h1, .pf-card h2.pf-title { font-size: clamp(28px, 6vw, 38px); font-weight: 700; }
   .pf-card h2 { font-size: clamp(20px, 4.6vw, 25px); font-weight: 700; }
   .pf-card h3 { font-size: 17px; font-weight: 700; }
   .pf-card [tabindex="-1"]:focus { outline: none; }
@@ -267,7 +267,7 @@ export function ThreeCirclesTest() {
       '<circle cx="80" cy="80" r="52" fill="none" stroke="#fff" stroke-width="3"/>' +
       '<circle cx="80" cy="80" r="28" fill="none" stroke="#fff" stroke-width="3"/></svg>';
     wrap.appendChild(el("p", "pf-kicker pf-kicker-intro", "Test gratuit"));
-    var h = el("h1", "", "Agir, influencer, accepter");
+    var h = el("h2", "pf-title", "Agir, influencer, accepter");
     wrap.appendChild(h);
     wrap.appendChild(el("p", "pf-subtitle", "Où est-ce que je me situe ?"));
     wrap.appendChild(el("p", "pf-lead", "Dix scènes du quotidien : au travail, à la maison, en famille, dans l'actu. Pour chacune, choisis la pensée qui te ressemble le plus. À la fin, tu verras comment ton énergie se répartit entre les trois cercles."));

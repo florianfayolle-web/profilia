@@ -28,7 +28,7 @@ const FAQ = [
 ];
 
 export const metadata: Metadata = {
-  title: "Agir, influencer, accepter : test gratuit des 3 cercles",
+  title: "Test gratuit : agir, influencer, accepter (3 cercles)",
   description:
     "Test gratuit en dix scènes du quotidien : où te situes-tu entre agir, influencer et accepter ? Résultat immédiat, sans compte.",
   alternates: { canonical: "/trois-cercles" },
@@ -44,6 +44,7 @@ export const metadata: Metadata = {
 export default function ThreeCirclesPage() {
   return (
     <div className="px-4 py-10">
+      <h1 className="sr-only">Test gratuit : agir, influencer, accepter, où te situes-tu ?</h1>
       <p className="mx-auto mb-4 max-w-[640px] text-sm text-muted">
         <Link href="/tests" className="hover:text-foreground">
           Tous les tests

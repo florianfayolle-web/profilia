@@ -30,7 +30,7 @@ export async function generateMetadata(
   if (!article) return {};
 
   return {
-    title: clipTitle(article.title),
+    title: clipTitle(article.title, 62),
     description: clipDescription(article.meta_description),
     alternates: { canonical: `/blog/${article.slug}` },
     openGraph: {

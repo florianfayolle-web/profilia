@@ -22,7 +22,7 @@ export async function generateMetadata(
   if (!guide) return {};
 
   return {
-    title: clipTitle(guide.title),
+    title: clipTitle(guide.title, 62),
     description: clipDescription(guide.metaDescription),
     alternates: { canonical: `/guides/${guide.slug}` },
     openGraph: {

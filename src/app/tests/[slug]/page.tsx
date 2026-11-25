@@ -46,6 +46,11 @@ const SEO_TITLES: Record<string, string> = {
   orientation: "Test d'orientation gratuit : quel métier pour toi ?",
   pcm: "Test Process Communication gratuit : ton profil",
   "type-cognitif-16": "Test des 16 personnalités (type MBTI) gratuit",
+  "personnalite-50": "Test « Qui suis-je ? » : 50 paires, 5 dimensions",
+  "sosie2-fr": "Test de personnalité pilote inspiré du SOSIE 2",
+  "adapt-fr": "Test de personnalité pilote inspiré de l'ADAPT",
+  "sosie2-en": "Pilot Personality Test inspired by SOSIE 2",
+  "adapt-en": "Pilot Personality Test inspired by ADAPT",
 };
 
 export async function generateMetadata(
