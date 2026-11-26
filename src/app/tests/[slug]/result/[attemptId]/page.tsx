@@ -7,6 +7,7 @@ import type { Attempt, ResultProfile, Test } from "@/lib/types";
 import { ResultView } from "./result-view";
 import { OrientationNext } from "./orientation-next";
 import { ReminderOptIn } from "@/components/reminder-optin";
+import { SavePendingReport, ClearPendingReport } from "@/components/pending-report";
 import { UpsellSection, NEXT_TEST_HOOKS, type NextTest } from "./upsell-section";
 import { TeaserResult, type TeaserData } from "./teaser-result";
 import type { scoreBipolarPairs } from "@/lib/assessments/scoring";
@@ -439,6 +440,22 @@ export default async function ResultPage(
             teaser={buildPartialTeaser(test.format, attempt.result)}
           />
         </div>
+      )}
+
+      {isGuestAttempt && !isFreeTest && test && !viewingAsAdmin &&
+        (isLocked ? (
+          <SavePendingReport path={`/tests/${slug}/result/${attemptId}`} title={test.title.split(/ [—:(]/)[0]} />
+        ) : (
+          <ClearPendingReport />
+        ))}
+
+      {slug === "orientation" && test && !isLocked && !viewingAsAdmin && (
+        <a
+          href="#suite"
+          className="mt-6 block rounded-xl border border-primary/30 bg-primary/5 px-4 py-3 text-center text-sm font-medium text-primary print:hidden"
+        >
+          Voir les 2 rapports qui complètent ta Boussole, 1,99&nbsp;€ chacun ↓
+        </a>
       )}
 
       {showReminderOptIn && (

@@ -132,7 +132,10 @@ export function PaidLockedResult({
           </span>
         </div>
 
-        <div className="mt-5">
+        <p className="mt-5 text-center text-xs text-muted">
+          Tu reçois : ton profil complet sur chaque dimension, tes points forts, tes axes de progression et le rapport en PDF.
+        </p>
+        <div className="mt-3">
           <ConsentCheckoutButton
             action={
               guest

@@ -17,7 +17,7 @@ const CARDS = [
 
 export function OrientationNext() {
   return (
-    <div className="mt-8 rounded-2xl border border-primary/30 bg-primary/5 p-6 text-left print:hidden">
+    <div id="suite" className="mt-8 scroll-mt-20 rounded-2xl border border-primary/30 bg-primary/5 p-6 text-left print:hidden">
       <p className="text-lg font-semibold tracking-tight">
         Tu sais quels métiers te correspondent. Reste à savoir comment tu fonctionnes.
       </p>

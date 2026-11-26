@@ -6,6 +6,19 @@ import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { stripe } from "@/lib/stripe";
 
+
+// The Stripe account is shared by several sites and named "4F": show this
+// site's name on the hosted payment page instead.
+const CHECKOUT_BRANDING = {
+  display_name: "Profilia",
+} as const;
+const CHECKOUT_SUBMIT_TEXT = {
+  submit: {
+    message:
+      "Paiement sécurisé pour Profilia. Ton rapport s'affiche tout de suite après le paiement.",
+  },
+} as const;
+
 async function getOrCreateStripeCustomer(
   userId: string,
   email: string | undefined
@@ -73,6 +86,8 @@ export async function createTestCheckoutSession(
 
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
+    branding_settings: CHECKOUT_BRANDING,
+    custom_text: CHECKOUT_SUBMIT_TEXT,
     customer: customerId,
     // The amount comes straight from tests.price_cents (the same number every
     // page displays), not from a pre-created Stripe Price, so a price change is
@@ -134,6 +149,8 @@ export async function createGuestPaidUnlockSession(
   const returnPath = `/tests/${test.slug}/result/${attempt.id}`;
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
+    branding_settings: CHECKOUT_BRANDING,
+    custom_text: CHECKOUT_SUBMIT_TEXT,
     line_items: [
       {
         price_data: {
@@ -183,6 +200,8 @@ export async function createSubscriptionCheckoutSession() {
 
   const session = await stripe.checkout.sessions.create({
     mode: "subscription",
+    branding_settings: CHECKOUT_BRANDING,
+    custom_text: CHECKOUT_SUBMIT_TEXT,
     customer: customerId,
     line_items: [
       {
@@ -269,6 +288,8 @@ export async function createUnlockCheckoutSession(
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL!;
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
+    branding_settings: CHECKOUT_BRANDING,
+    custom_text: CHECKOUT_SUBMIT_TEXT,
     customer_email: attempt.guest_email ?? undefined,
     line_items: [
       {

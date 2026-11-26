@@ -64,6 +64,8 @@ const FAQ = [
   },
 ];
 
+import { PendingReportBanner } from "@/components/pending-report";
+
 export default async function Home() {
   let latest: Pick<ArticleRow, "slug" | "title" | "category" | "meta_description">[] = [];
   try {
@@ -112,6 +114,7 @@ export default async function Home() {
 
   return (
     <div>
+      <PendingReportBanner />
       <section className="sky-gradient relative overflow-hidden border-b border-card-border/60">
         <div
           className="pointer-events-none absolute -top-24 -left-24 h-80 w-80 rounded-full opacity-40 blur-3xl"
