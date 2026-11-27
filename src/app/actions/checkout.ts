@@ -1,6 +1,11 @@
 "use server";
 
-import { GUEST_UNLOCK_PRICE_CENTS, SUBSCRIPTION_PRICE_CENTS } from "@/lib/pricing";
+import {
+  GUEST_UNLOCK_PRICE_CENTS,
+  PACK_BASE_PRICE_CENTS,
+  PACK_PRICE_CENTS,
+  SUBSCRIPTION_PRICE_CENTS,
+} from "@/lib/pricing";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
@@ -310,5 +315,76 @@ export async function createUnlockCheckoutSession(
     throw new Error("Impossible de créer la session de paiement Stripe.");
   }
 
+  redirect(session.url);
+}
+
+
+// Pack of two reports in one payment (2,99 EUR instead of 3,98): the test
+// the buyer is looking at + a second one chosen on the locked result page.
+// Logged-in buyers only (the access lives in `purchases`, one row per test:
+// the webhook writes both). Both tests must be paid at the standard price.
+export async function createPackCheckoutSession(
+  testSlug: string,
+  returnPath: string,
+  formData: FormData
+) {
+  const secondSlug = String(formData.get("second") ?? "");
+  const supabase = await createClient();
+  const { data: userData } = await supabase.auth.getUser();
+  const user = userData.user;
+  if (!user) redirect(`/login?next=/tests/${testSlug}`);
+  if (!secondSlug || secondSlug === testSlug) throw new Error("Choisis un deuxième rapport.");
+
+  const admin = createAdminClient();
+  const { data: tests } = await admin
+    .from("tests")
+    .select("id, slug, title, price_cents, currency, is_active")
+    .in("slug", [testSlug, secondSlug]);
+  const first = tests?.find((t) => t.slug === testSlug);
+  const second = tests?.find((t) => t.slug === secondSlug);
+  if (!first || !second || !first.is_active || !second.is_active) throw new Error("Test introuvable.");
+  if (
+    first.price_cents !== PACK_BASE_PRICE_CENTS ||
+    second.price_cents !== PACK_BASE_PRICE_CENTS ||
+    first.currency !== second.currency
+  ) {
+    throw new Error("Ce pack n'est pas disponible pour ces tests.");
+  }
+  // Never charge for a report the buyer already owns.
+  const { data: owned } = await admin
+    .from("purchases")
+    .select("test_id")
+    .eq("user_id", user.id)
+    .eq("status", "paid")
+    .in("test_id", [first.id, second.id]);
+  if ((owned?.length ?? 0) > 0) throw new Error("Tu possèdes déjà l'un de ces rapports.");
+
+  const customerId = await getOrCreateStripeCustomer(user.id, user.email);
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL!;
+  const session = await stripe.checkout.sessions.create({
+    mode: "payment",
+    branding_settings: CHECKOUT_BRANDING,
+    custom_text: CHECKOUT_SUBMIT_TEXT,
+    customer: customerId,
+    line_items: [
+      {
+        price_data: {
+          currency: first.currency,
+          unit_amount: PACK_PRICE_CENTS,
+          product_data: { name: `Pack 2 rapports : ${first.title} + ${second.title}` },
+        },
+        quantity: 1,
+      },
+    ],
+    metadata: {
+      supabase_user_id: user.id,
+      test_id: first.id,
+      pack_test_id: second.id,
+      pack_second_cents: String(PACK_PRICE_CENTS - PACK_BASE_PRICE_CENTS),
+    },
+    success_url: `${siteUrl}${returnPath}?checkout=success`,
+    cancel_url: `${siteUrl}${returnPath}?checkout=cancelled`,
+  });
+  if (!session.url) throw new Error("Impossible de créer la session de paiement Stripe.");
   redirect(session.url);
 }

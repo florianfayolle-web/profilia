@@ -286,6 +286,20 @@ export default async function ResultPage(
     canShareResult &&
     !(await createAdminClient().from("comparison_groups").select("id").limit(1)).error;
 
+  // Pack offer: other paid tests the logged-in buyer does not own yet.
+  let packOptions: { slug: string; title: string }[] = [];
+  if (isLocked && !isFreeTest && !isGuestAttempt && test?.price_cents === 199 && userData.user && !viewingAsAdmin) {
+    const adm = createAdminClient();
+    const [{ data: cands }, { data: mine }] = await Promise.all([
+      adm.from("tests").select("id, slug, title").eq("is_active", true).eq("price_cents", 199).neq("slug", slug).eq("language", test.language).order("title"),
+      adm.from("purchases").select("test_id").eq("user_id", userData.user.id).eq("status", "paid"),
+    ]);
+    const owned = new Set((mine ?? []).map((m) => m.test_id));
+    packOptions = (cands ?? [])
+      .filter((c) => !owned.has(c.id))
+      .map((c) => ({ slug: c.slug, title: c.title.split(/ [—:(]/)[0].slice(0, 60) }));
+  }
+
   // Guest on a free test who left an email without ticking the opt-in: offer
   // it again here, at the moment they are looking at their result.
   let showReminderOptIn = false;
@@ -399,6 +413,7 @@ export default async function ResultPage(
             includedInSubscription={test.included_in_subscription}
             pendingUnlock={pendingUnlock}
             guest={isGuestAttempt}
+            packOptions={packOptions}
             teaser={{
               headline: resultProfile ? { label: "Ton résultat", value: resultProfile.title } : null,
               dimensionNames: [],
@@ -437,6 +452,7 @@ export default async function ResultPage(
             includedInSubscription={test.included_in_subscription}
             pendingUnlock={pendingUnlock}
             guest={isGuestAttempt}
+            packOptions={packOptions}
             teaser={buildPartialTeaser(test.format, attempt.result)}
           />
         </div>

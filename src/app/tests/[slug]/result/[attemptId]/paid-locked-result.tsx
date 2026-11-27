@@ -5,6 +5,7 @@ import { Illustration, motifForTest } from "@/components/illustration";
 import { createGuestPaidUnlockSession, createTestCheckoutSession } from "@/app/actions/checkout";
 import { formatPrice } from "@/lib/types";
 import Link from "next/link";
+import { PackOffer } from "@/components/pack-offer";
 
 // A single safe, real fact pulled from the visitor's own result — a
 // dominant style/type/trait *name*, never a score, percentage, or
@@ -36,6 +37,7 @@ export function PaidLockedResult({
   teaser,
   visual,
   guest = false,
+  packOptions = [],
 }: {
   testSlug: string;
   attemptId: string;
@@ -52,6 +54,8 @@ export function PaidLockedResult({
   visual?: ReactNode;
   // A visitor without an account: pays for this exact attempt, no login.
   guest?: boolean;
+  // Second-report choices for the 2,99 EUR pack (logged-in buyers only).
+  packOptions?: { slug: string; title: string }[];
 }) {
   if (pendingUnlock) {
     return (
@@ -146,6 +150,10 @@ export function PaidLockedResult({
             className="w-full rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm shadow-primary/25 transition hover:opacity-90"
           />
         </div>
+
+        {!guest && packOptions.length > 0 && priceCents === 199 && (
+          <PackOffer testSlug={testSlug} returnPath={returnPath} options={packOptions} />
+        )}
 
         <p className="mt-3 text-center text-xs text-muted-foreground">
           Un seul paiement, accès à vie, sans abonnement.{" "}

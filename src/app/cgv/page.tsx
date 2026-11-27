@@ -66,6 +66,11 @@ export default function CGVPage() {
               également proposé à 1,99 € TTC, limité au rapport de ce test.
             </li>
             <li>
+              Pack de deux rapports : 2,99 € TTC pour débloquer, en un seul
+              paiement et à vie, le rapport complet de deux tests payants au
+              prix unitaire de 1,99 €, pour les utilisateurs connectés.
+            </li>
+            <li>
               Abonnement illimité : 9,99 € TTC par mois, sans engagement de
               durée, donnant accès à tous les tests du site, y compris les
               nouveaux tests ajoutés pendant la durée de l&apos;abonnement.

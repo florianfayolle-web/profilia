@@ -65,6 +65,35 @@ export async function POST(request: Request) {
             console.error("purchases upsert failed", error);
             return NextResponse.json({ error: "db" }, { status: 500 });
           }
+          // Pack of two reports: second purchase row, with its share of the price.
+          const packTestId = session.metadata?.pack_test_id;
+          if (!error && packTestId) {
+            const secondCents = Number(session.metadata?.pack_second_cents ?? 0) || 0;
+            const intent =
+              typeof session.payment_intent === "string"
+                ? session.payment_intent
+                : session.payment_intent?.id ?? null;
+            await supabase.from("purchases").upsert(
+              {
+                user_id: userId,
+                test_id: packTestId,
+                stripe_checkout_session_id: session.id,
+                stripe_payment_intent_id: intent,
+                amount_cents: secondCents,
+                currency: session.currency ?? undefined,
+                status: "paid",
+              },
+              { onConflict: "user_id,test_id" }
+            );
+            // First row carries the rest, so the two add up to what was charged.
+            if (session.amount_total != null) {
+              await supabase
+                .from("purchases")
+                .update({ amount_cents: session.amount_total - secondCents })
+                .eq("user_id", userId)
+                .eq("test_id", testId);
+            }
+          }
         } else if (attemptId) {
           // Guest micro-payment to unblur a free test's result — no
           // user_id, the attempt's own id is the only key we have.
